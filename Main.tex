@@ -1,0 +1,91 @@
+
+%% http://blog.dorian-depriester.fr
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Fichier maitre				%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 12pt, twoside,openright]{report}
+\input{Preambule}		% Liste des packages et de leurs options
+\input{CommandesPerso}	% Commandes et environnements perso
+\input{PageDeGarde}
+%\includefrom{pageDeGarde/}{PageDeGarde}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   			Liste des fichiers à compiler					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%\includeonly{Chapitre1,Chapitre2,Annexes}
+	%\includeonly{Part1,Part2,Annexes}
+
+
+
+% Infos de la page de garde
+\author{Robin \scshape{Gueguen}}
+\title{\scshape{Virtualisation architecturale visuelle et auditive du théâtre antique d'Orange}}
+\specialite{Mathématiques appliquées}
+\directeur{Pascal \scshape{Frey}}
+\encadrant{Emmanuelle \scshape{Rosso}}
+\date{01 octobre 2018}
+\jurya{M. Ilde Fluck}{Professeur}{Examinateur}
+\juryb{M. MC Grobi}{Professeur}{Rapporteur}
+\juryc{Mme Dominique de Pégomas}{Professeur}{Examinateur}
+\juryd{M. Carton Boy}{Professeur}{Examinateur}
+\ecole{Sorbonne Université}
+
+% Méta-données du PDF
+\hypersetup{
+    pdfauthor={Robin Gueguen},
+    pdfsubject={Manuscrit de thèse de doctorat},
+    pdftitle={Virtualisation architecturale visuelle et auditive du théâtre antique d'Orange},
+    pdfkeywords={Archéologie, réalité virtuelle, graphisme, acoustique}
+}
+
+
+
+\begin{document}
+% Préambule
+	\pagenumbering{roman}
+	\pagedegarde
+
+	\clearpage
+	
+	\includefrom{Intro/}{Remerciements}
+	
+% Table des matières
+	\setcounter{tocdepth}{1}	% Pas besoin de trop détailler le sommaire ici (chapitres/sections)
+	\dominitoc						% Génération des mini-toc	\pagenumbering{arabic}
+	\tableofcontents
+% Liste des figures
+	\renewcommand*\listfigurename{Liste des figures}
+	\listoffigures
+% Liste des tableaux
+	\listoftables
+	
+	\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+%        Contenu du document        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{mtc}{3}	% "Corrige" les minitocs décallés à cause des chapter* (ex : table des matières)
+	\pagenumbering{arabic}
+	
+	
+		\includefrom{Intro/}{Intro}
+		\includefrom{Part1/}{Part1}
+		\includefrom{Part2/}{Part2} 
+		\includefrom{Part3/}{Part3} 
+		
+	
+	% Annexes
+	\begin{appendix}
+		\pagenumbering{Roman}
+		\includefrom{Annexes/}{Annexes}				% Figures en annexe
+			
+		% Liste des acronymes, glossaire et liste des symboles (dans l'ordre)		
+		\printglossary[type=\acronymtype , title={Liste des acronymes}, toctitle={Liste des acronymes}]
+		\printglossary[title=Glossaire,toctitle=Glossaire]
+		\printglossary[type=notation,title={Liste des symboles}, toctitle={Liste des symboles}]
+	
+	\end{appendix}
+	
+\end{document}

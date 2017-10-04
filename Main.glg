@@ -1,0 +1,18 @@
+;; This logfile was generated automatically by `xindy'
+;; at 28.09.2017  15:21:37
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/Gv6hApvqsP", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/l7LNNxIcuP", Output: "Main.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "»€†´—" -> "M"
+Letter-group: "ËàÚ¨´—" -> "R"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»€†´—" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ËàÚ¨´—" -> "R"

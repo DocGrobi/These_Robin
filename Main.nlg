@@ -1,0 +1,19 @@
+;; This logfile was generated automatically by `xindy'
+;; at 28.09.2017  15:21:37
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/EBoaU0JAiG", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/IuylmeaqAB", Output: "Main.not"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "€´È¤€" -> "A"
+Letter-group: "€»»€" -> "G"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "€´È¤€" -> "A"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "€»»€" -> "G"
+WARNING: location-reference "{}{I}" did match multiple location-classes! (taking first one)
