@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  4 OCT 2017 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  4 OCT 2017 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2649,14 +2649,14 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<pageDeGarde/logo_upmc.jpg, id=151, 1395.2125pt x 469.755pt>
+<pageDeGarde/logo_upmc.jpg, id=232, 1395.2125pt x 469.755pt>
 File: pageDeGarde/logo_upmc.jpg Graphic file (type jpg)
 
 <use pageDeGarde/logo_upmc.jpg>
 Package pdftex.def Info: pageDeGarde/logo_upmc.jpg used on input line 48.
 (pdftex.def)             Requested size: 153.64644pt x 51.73055pt.
 
-<pageDeGarde/logoISCD_NOIR.png, id=152, 1027.84pt x 243.91125pt>
+<pageDeGarde/logoISCD_NOIR.png, id=233, 1027.84pt x 243.91125pt>
 File: pageDeGarde/logoISCD_NOIR.png Graphic file (type png)
 
 <use pageDeGarde/logoISCD_NOIR.png>
@@ -2678,25 +2678,16 @@ LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <12> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 48.
-
-<pageDeGarde/Bordure.png, id=153, 63.23625pt x 522.95375pt>
-File: pageDeGarde/Bordure.png Graphic file (type png)
-
-<use pageDeGarde/Bordure.png>
-Package pdftex.def Info: pageDeGarde/Bordure.png used on input line 48.
-(pdftex.def)             Requested size: 45.98355pt x 380.2685pt.
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 \openout5 = `Main.xdy'.
 
 
 
- <./pageDeGarde/Bordure.png> <./pageDeGarde/logo_upmc.jpg (PNG copy)> <./pageDe
-Garde/logoISCD_NOIR.png>]
+ <./pageDeGarde/logo_upmc.jpg (PNG copy)> <./pageDeGarde/logoISCD_NOIR.png>]
 \openout2 = `Remerciements.aux'.
 
- (./Intro/Remerciements.tex
-[2
+ (./Intro/Remerciements.tex [2
 
 
 
@@ -2792,7 +2783,8 @@ Package minitoc Info: I0033
  [4
 
 
-] (./Main.toc [5])
+] (./Main.toc
+[5])
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
@@ -2808,14 +2800,14 @@ Package minitoc Info: I0033
 \tf@lot=\write12
 \openout12 = `Main.lot'.
 
- [9]
-[10
+ [9] [10
 
 
 ]
 \openout2 = `Intro.aux'.
 
- (./Intro/Intro.tex) [1
+ (./Intro/Intro.tex)
+[1
 
 
 
@@ -2845,111 +2837,167 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 9.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 9.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc4 is empty on input line 11.
-[7] <Part1/Antibes.jpg, id=292, 803.0pt x 602.25pt>
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc4
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
+) [7]
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+<Part1/Antibes.jpg, id=403, 803.0pt x 602.25pt>
 File: Part1/Antibes.jpg Graphic file (type jpg)
  <use Part1/Antibes.jpg>
-Package pdftex.def Info: Part1/Antibes.jpg used on input line 33.
+Package pdftex.def Info: Part1/Antibes.jpg used on input line 44.
 (pdftex.def)             Requested size: 176.40439pt x 132.30241pt.
 
-<Part1/SaintJeannet.jpg, id=293, 803.0pt x 602.25pt>
+<Part1/SaintJeannet.jpg, id=404, 803.0pt x 602.25pt>
 File: Part1/SaintJeannet.jpg Graphic file (type jpg)
 
 <use Part1/SaintJeannet.jpg>
-Package pdftex.def Info: Part1/SaintJeannet.jpg used on input line 38.
+Package pdftex.def Info: Part1/SaintJeannet.jpg used on input line 49.
 (pdftex.def)             Requested size: 176.40439pt x 132.30241pt.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 47.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 58.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [8 <./Part1/Antibes.jpg> <./Part1/SaintJeannet.jpg>] [9] [10
+) [8] [9 <./Part1/Antibes.jpg> <./Part1/SaintJeannet.jpg>] [10
 
 ]
 Chapitre 2.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc5 is empty on input line 66.
-[11] [12
+(minitoc)             Main.mtc5 is empty on input line 77.
+[11]
 
-]
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 89.
+
+
+Package natbib Warning: Citation `ref' on page 12 undefined on input line 91.
+
+
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+
+
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+
+
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+
+[12]
+
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 95.
+
+
+Package natbib Warning: Citation `ref' on page 13 undefined on input line 98.
+
+
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 102.
+
+
+
+Package natbib Warning: Citation `ref' on page 13 undefined on input line 109.
+
+
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 109.
+
+
+[13] <Part1/images/gradinCoupe.png, id=457, 510.90875pt x 409.53pt>
+File: Part1/images/gradinCoupe.png Graphic file (type png)
+
+<use Part1/images/gradinCoupe.png>
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 113.
+(pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
+
+<Part1/images/escaliers.png, id=459, 551.05875pt x 433.62pt>
+File: Part1/images/escaliers.png Graphic file (type png)
+
+<use Part1/images/escaliers.png>
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 120.
+(pdftex.def)             Requested size: 165.3189pt x 130.087pt.
+ [14 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>]
 Chapitre 3.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc6 is empty on input line 73.
-[13] [14
+(minitoc)             Main.mtc6 is empty on input line 132.
+[15
 
-] [15] (./Part1.bbl (./Main.brf)
+] [16
+
+] [17] (./Part1.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [16
+ [18
 
-] (./francaisbst.tex))) [17]
+] (./francaisbst.tex))) [19]
 \openout2 = `Part2.aux'.
 
 
-(./Part2/Part2.tex [18
+(./Part2/Part2.tex [20
 
 
 
 
-] [19] [20] [21
+] [21] [22] [23
 
-] [22
+] [24
 
 ]
 Chapitre 4.
 Package minitoc Info: I0006
 (minitoc)             Main.mtc7 is empty on input line 15.
-[23] [24]
+[25] [26]
 Chapitre 5.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc8 is empty on input line 29.
-[25
+(minitoc)             Main.mtc8 is empty on input line 31.
+[27
 
-] [26
-
-]
+] [28]
 Chapitre 6.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc9
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-) [27] [28
+(./Main.mtc9) [29
 
-] [29] (./Part2.bbl (./Main.brf) [30
+] [30] [31
+
+] (./Part2.bbl (./Main.brf) [32
 
 ] (./francaisbst.tex)
 
 Package natbib Warning: Empty `thebibliography' environment on input line 19.
 
-)) [31]
+)) [33]
 \openout2 = `Part3.aux'.
 
- (./Part3/Part3.tex [32
+ (./Part3/Part3.tex [34
 
 
 
 
-] [33] [34] [35
+] [35] [36] [37
 
-] [36
+] [38
 
 ]
 Chapitre 7.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc10 is empty on input line 19.
-[37] [38] [39
+\openout3 = `Main.mtc'.
 
-] (./Part3.bbl (./Main.brf) [40
+\openout3 = `Main.mtc'.
+
+(./Main.mtc10) [39] [40] [41
+
+] (./Part3.bbl (./Main.brf) [42
 
 ] (./francaisbst.tex)
 
 Package natbib Warning: Empty `thebibliography' environment on input line 19.
 
-)) [41] [42
+)) [43] [44
 
 
 ]
@@ -2979,31 +3027,40 @@ Annexe C.
 ]
 Annexe D.
 )
+
+Package natbib Warning: There were undefined citations.
+
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Main.maf file.
 \openout3 = `Main.maf'.
 
- [7
+[7
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
- (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux)
-(./Part2.aux) (./Part3.aux) (./Annexes.aux))
+ (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux) (./Part2.aux) (.
+/Part3.aux) (./Annexes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: DBA5229429C35EDB92FB86154C77BBFF;2257.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 3F694438610C80865236BCBB4D06E011;164.
+(rerunfilecheck)             Checksum: D187EEDA9CE1708C3BC0CEB8510A56C4;3593.
+
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E8461425F55665B3B0149BE56A7CF24A;164.
  ) 
 Here is how much of TeX's memory you used:
- 50445 strings out of 493014
- 1094014 string characters out of 6133351
- 1344161 words of memory out of 5000000
- 52589 multiletter control sequences out of 15000+600000
- 175701 words of font info for 147 fonts, out of 8000000 for 9000
+ 50511 strings out of 493014
+ 1094911 string characters out of 6133351
+ 1345327 words of memory out of 5000000
+ 52617 multiletter control sequences out of 15000+600000
+ 180350 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,13n,87p,10450b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -3014,10 +3071,10 @@ ive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (59 pages, 629612 bytes).
+Output written on Main.pdf (61 pages, 2386907 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 725 PDF objects out of 1000 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,46 +9,71 @@
 \contentsline {xpart}{Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{5}{part.1}
 \contentsline {chapter}{Introduction}{5}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Architecture g\IeC {\'e}n\IeC {\'e}rale du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Exemple minimal}{8}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Glossaire et citations}{8}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Tableaux et figures}{8}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Symboles math\IeC {\'e}matiques}{8}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}Deuxi\IeC {\`e}me paragraphe}{9}{section.1.2}
+\contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}Introduction}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Exemple minimal}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Exemple Glossaire et citations}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Exemple Tableaux et figures}{8}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Exemple Symboles math\IeC {\'e}matiques}{8}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Deuxi\IeC {\`e}me paragraphe}{9}{section.1.4}
 \contentsline {chapter}{\numberline {2}Mod\IeC {\'e}lisation}{11}{chapter.2}
-\contentsline {chapter}{\numberline {3}Propositions de reconstitution}{13}{chapter.3}
-\contentsline {chapter}{Conclusion}{15}{chapter*.9}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{17}{chapter*.10}
+\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}
+\contentsline {section}{\numberline {2.2}Le mur de sc\IeC {\`e}ne et ses basiliques}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Le pulpitum et l'orchestra}{13}{section.2.3}
+\contentsline {section}{\numberline {2.4}La colline Saint-Europe}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}La cavea}{13}{section.2.5}
+\contentsline {section}{\numberline {2.6}Maenianum}{13}{section.2.6}
+\contentsline {section}{\numberline {2.7}Aditus}{14}{section.2.7}
+\contentsline {chapter}{\numberline {3}Propositions de reconstitution}{15}{chapter.3}
+\contentsline {chapter}{Conclusion}{17}{chapter*.11}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{19}{chapter*.12}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {part}{II\hspace {1em}Calculs acoustiques}{19}{part.2}
-\contentsline {xpart}{Calculs acoustiques}{21}{part.2}
-\contentsline {chapter}{Introduction}{21}{chapter*.11}
-\contentsline {chapter}{\numberline {4}Acoustique de salle}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Encore un autre exemple}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}En plus concis}{24}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Conclusion}{24}{section.4.2}
-\contentsline {chapter}{\numberline {5}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{27}{chapter.6}
-\contentsline {chapter}{Conclusion}{29}{chapter*.12}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{31}{chapter*.13}
+\contentsline {part}{II\hspace {1em}Calculs acoustiques}{21}{part.2}
+\contentsline {xpart}{Calculs acoustiques}{23}{part.2}
+\contentsline {chapter}{Introduction}{23}{chapter*.13}
+\contentsline {chapter}{\numberline {4}Acoustique de salle}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction \IeC {\`a} l'acoustique de salle}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}FEM/BEM}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}RayTracing}{26}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Sources-image}{26}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Statistique}{26}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}M\IeC {\'e}thode coupl\IeC {\'e}e}{26}{section.4.3}
+\contentsline {chapter}{\numberline {5}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lecture de maillage}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Calcul de rayon}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}Calcul de sources-images}{28}{section.5.4}
+\contentsline {section}{\numberline {5.5}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnel}{28}{section.5.5}
+\contentsline {section}{\numberline {5.6}M\IeC {\'e}thode d'octree}{28}{section.5.6}
+\contentsline {section}{\numberline {5.7}Vue d'ensemble}{28}{section.5.7}
+\contentsline {chapter}{\numberline {6}Validation}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Comparaison aux cas test}{30}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Salle rectangulaire}{30}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\`e}rique}{30}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Analyse de complexit\IeC {\'e}}{30}{section.6.3}
+\contentsline {chapter}{Conclusion}{31}{chapter*.14}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{33}{chapter*.15}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{33}{part.3}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{35}{part.3}
-\contentsline {chapter}{Introduction}{35}{chapter*.14}
-\contentsline {section}{\numberline {6.1}Maillage en test}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Materiaux}{35}{section.6.2}
-\contentsline {chapter}{\numberline {7}R\IeC {\'e}sultats}{37}{chapter.7}
-\contentsline {section}{\numberline {7.1}position des spectateurs}{38}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Devant}{38}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Derri\IeC {\`e}re}{38}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Jardin}{38}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Cours}{38}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}Pr\IeC {\'e}sence de spectateurs}{38}{section.7.2}
-\contentsline {section}{\numberline {7.3}Pr\IeC {\'e}sence de velum}{38}{section.7.3}
-\contentsline {section}{\numberline {7.4}Forme et mat\IeC {\'e}riaux du toit}{38}{section.7.4}
-\contentsline {chapter}{Conclusion}{39}{chapter*.15}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{41}{chapter*.16}
+\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{35}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{37}{part.3}
+\contentsline {chapter}{Introduction}{37}{chapter*.16}
+\contentsline {section}{\numberline {6.4}Maillage en test}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Materiaux}{37}{section.6.5}
+\contentsline {chapter}{\numberline {7}R\IeC {\'e}sultats}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}position des spectateurs}{40}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Devant}{40}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Derri\IeC {\`e}re}{40}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Jardin}{40}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Cours}{40}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Pr\IeC {\'e}sence de spectateurs}{40}{section.7.2}
+\contentsline {section}{\numberline {7.3}Pr\IeC {\'e}sence de velum}{40}{section.7.3}
+\contentsline {section}{\numberline {7.4}Forme et mat\IeC {\'e}riaux du toit}{40}{section.7.4}
+\contentsline {chapter}{Conclusion}{41}{chapter*.17}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{43}{chapter*.18}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}
