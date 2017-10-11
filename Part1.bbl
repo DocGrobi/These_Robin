@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{5}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -16,22 +16,41 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
-\bibitem[{\textsc{Alain} \bbletal{}(2013{\natexlab{a}})\textsc{Alain},
-  \textsc{Myriam}, \textsc{Jean-Charles}, \textsc{Liliane}, \textsc{Emmanuelle}
-  \bbland{} \textsc{Dominique}}]{orangePl}
-\textsc{Alain, B.}, \textsc{F.~Myriam}, \textsc{M.~Jean-Charles},
-  \textsc{R.~Liliane}, \textsc{R.~Emmanuelle} \bbland{} \textsc{T.~Dominique}.
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangePl}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
   2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
   d'op{\'e}ration - planches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
-  087 0031 - Patriarche 9827 n$\,^{\circ}$ 2012-203.
+  087 0031 - Patriarche 9827 n2012-203.
 
-\bibitem[{\textsc{Alain} \bbletal{}(2013{\natexlab{b}})\textsc{Alain},
-  \textsc{Myriam}, \textsc{Jean-Charles}, \textsc{Liliane}, \textsc{Emmanuelle}
-  \bbland{} \textsc{Dominique}}]{orangeTxt}
-\textsc{Alain, B.}, \textsc{F.~Myriam}, \textsc{M.~Jean-Charles},
-  \textsc{R.~Liliane}, \textsc{R.~Emmanuelle} \bbland{} \textsc{T.~Dominique}.
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{b}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangeTxt}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
   2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
-  d'op{\'e}ration - texte}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
-  087 0031 - Patriarche 9827 n$\,^{\circ}$ 2012-203.
+  d'op{\'e}ration - texte}, \bbltechrep{}. PACA Vaucluse, Orange
+  Th{\'e}{\^a}tre antique 84 087 0031 - Patriarche 9827 n2012-203.
+
+\bibitem[{\textsc{Badie} \bbletal{}(2007)\textsc{Badie}, \textsc{Moretti}
+  \bbland{} \textsc{Tardy}}]{PouvoirDuTheatre}
+\textsc{Badie, A.}, \textsc{J.-C. Moretti} \bbland{} \textsc{D.~Tardy}. 2007,
+  \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
+  recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
+
+\bibitem[{\textsc{Roum{\'e}gous} \bbland{}
+  \textsc{Provost}(2009)}]{carteArcheo}
+\textsc{Roum{\'e}gous, A.} \bbland{} \textsc{M.~Provost}. 2009, \emph{CARTE
+  ARCHEOLOGIQUE DE LA GAULE}, Acad{\'e}mie des Inscriptions et Belles-Lettres
+  Minist{\`e}re de l'Education Nationale, Minist{\`e}re de la Recherche
+  Minist{\`e}re de la Culture et de la Communication Acad{\'e}mie des
+  Inscriptions et Belles-Lettres Minist{\`e}re de l'Education Nationale,
+  Minist{\`e}re de la Recherche Minist{\`e}re de la Culture et de la
+  Communication.
+
+\bibitem[{\textsc{Vitruve}(-15)}]{vitruve}
+\textsc{Vitruve}. -15, \emph{De Architectura}, \bblvol{}~V.
 
 \end{thebibliography}

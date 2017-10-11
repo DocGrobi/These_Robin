@@ -1,2 +1,6 @@
-(indexentry :tkey (("macle" "\\glossentry{macle}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("rutile" "\\glossentry{rutile}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Cavea" "\\glossentry{cavea}") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("\\scshape {Hyposcaenium}" "\\glossentry{hyposcaenium}") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("modifier \"Array\"" "\\glossentry{array}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("modifier \"Boolean\"" "\\glossentry{boolean}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("modifier \"Array\"" "\\glossentry{array}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Podium" "\\glossentry{podium}") ) :locref "{}{V}" :attr "pageglsnumberformat" ) 

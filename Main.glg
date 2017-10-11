@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 28.09.2017  15:21:37
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/Gv6hApvqsP", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/l7LNNxIcuP", Output: "Main.gls"
+;; at 11.10.2017  17:05:21
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/0_33hM6C52", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/YdoZn73PCg", Output: "Main.gls"
 
 
 Building indexentry-tree:
@@ -8,11 +8,30 @@ Hierdepth of index is :TREE
 
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "»€†´—" -> "M"
-Letter-group: "ËàÚ¨´—" -> "R"
+Letter-group: "†€å—€" -> "C"
+Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
+Letter-group: "»Ã¨œ¨—Ë \"€ËË€í\"" -> "M"
+Letter-group: "»Ã¨œ¨—Ë \"„ÃÃ´—€¼\"" -> "M"
+Letter-group: "ÃË†¤—ÐÚË€" -> "O"
+Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
+Letter-group: "ÈÃ¨à»" -> "P"
+Letter-group: "»€—¼¨€¼à»" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "»€†´—" -> "M"
+Letter-group: "†€å—€" -> "C"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "ËàÚ¨´—" -> "R"
+Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»€—¼¨€¼à»" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ÃË†¤—ÐÚË€" -> "O"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
+WARNING: location-reference "{}{V}" did match multiple location-classes! (taking first one)

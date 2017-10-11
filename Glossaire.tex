@@ -2,33 +2,163 @@
 %% 					Acronymes						%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newacronym{bc}{BC}{band contrast}
+%\newacronym{asb}{ASB}{bande de cisaillement adiabatique --ou \emph{Adiabatic Shear Band}--}
 
-\newacronym{asb}{ASB}{bande de cisaillement adiabatique --ou \emph{Adiabatic Shear Band}--}
-
-\newglossaryentry{csl}{
+\newglossaryentry{upmc}{
 	type=\acronymtype,
-	name={CSL},
-	description={maille de coïncidences, ou \emph{Coincendence Site Lattice}},
-	first={mailles de coïncidences, ou \emph{Coincendence Site Lattice} (CSL)},
+	name={UPMC},
+	description={Université Pierre et Marie Curie},
+	first={Université Pierre et Marie Curie (UPMC)},
+	}
+	
+\newglossaryentry{cmap}{
+	type=\acronymtype,
+	name={CMAP},
+	description={Centre de mathématiques appliquées de l'école Polytechnique},
+	first={Centre de mathématiques appliquées de l'école Polytechnique (CMAP)},
+	}
+	
+\newglossaryentry{iraa}{
+	type=\acronymtype,
+	name={IRAA},
+	description={Institut de recherche sur l'architecture antique},
+	first={Institut de recherche sur l'architecture antique (IRAA)},
+	}
+	
+\newglossaryentry{cnrs}{
+	type=\acronymtype,
+	name={CNRS},
+	description={Centre national de recherche scientifique},
+	}
+	
+\newglossaryentry{iscd}{
+	type=\acronymtype,
+	name={ISCD},
+	description={Institut des sciences du calcul et des données},
+	first={Institut des sciences du calcul et des données (ISCD)},
+	}
+	
+\newglossaryentry{rir}{
+	type=\acronymtype,
+	name={RIR},
+	description={Réponse impulsionnelle d'une salle, ou  \emph{Room Impulse Response}},
+	first={réponse impulsionnelle d'une salle, ou  \emph{Room Impulse Response} (RIR)},
 	}
 
-
+\newglossaryentry{fir}{
+	type=\acronymtype,
+	name={FIR},
+	description={Filtre à réponse impulsionnelle finie, ou  \emph{Finite Impulse Response filter}},
+	first={Filtre à réponse impulsionnelle finie, ou  \emph{Finite Impulse Response filter} (FIR)},
+	}	
+%\newacronym{iscd}{ISCD}{Institut des sciences du calcul et des données}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 			Définitions (glossaires standard)		%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newglossaryentry{rutile}{
-	name={rutile},
-	description={Espèce minérale composée de dioxyde de titane (\ce{TiO2}) et de traces de fer},
+%% BLENDER 
+
+\newglossaryentry{array}{
+	name={modifier "Array"},
+	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour repéter les colonne du Porticus in Summa Cavea.},
+	first={modifier "Array" qui permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers}
 	}
 	
-\newglossaryentry{macle}{
-	name={macle},
-	description={association orientée de deux ou plusieurs cristaux identiques, dits individus, reliés par une opération de groupe ponctuel de symétrie.},
+
+\newglossaryentry{boolean}{
+	name={modifier "Boolean"},
+	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes.},
+	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
+	}
+	
+%% ARCHEO
+
+\newglossaryentry{aditus}{
+	name={\scshape{Aditus}},
+	text={aditus},
+	description={Portes conduisant de l'exterieur à l'\gls{orchestra}},
+	}
+	
+\newglossaryentry{architrave}{
+	name={Architrave},
+	description={Support horizontal posé au-dessus de colonnes ou d'un fronton},
+	}
+
+\newglossaryentry{basilique}{
+	name={Basilique},
+	description={Large pièce de forme quasi-carré qui flanque le mur de scène et les \gls{parascaenium}},
+	}
+		
+\newglossaryentry{cavea}{
+	name={Cavea},
+	description={Désigne l'ensemble des rangées concentriques composant les gradins},
+	}
+	
+\newglossaryentry{chapiteau}{
+	name={Chapiteau},
+	description={Evasement au sommet d'une colonne},
 	}	
+\newglossaryentry{hyposcaenium}{
+	name={\scshape{Hyposcaenium}},
+	text={hyposcaenium},
+	description={Fosse situé sous la scène comportant notamment le mécanisme du rideau de scène},
+	}
+	
+\newglossaryentry{maenianum}{
+	name={Maenianum},
+	description={Portions de la cavea séparées par un \gls{podium} et rassemblant un ensemble de gradins},
+	}
+	
+\newglossaryentry{orchestra}{
+	name={Orchestra},
+	description={Espace semi-circulaire (chez les romains) ou circulaire (chez les Grecs) se situant entre la scène et le premier gradin},
+	}	
+
+\newglossaryentry{parascaenium}{
+	name={Parascaenium},
+	description={Espace intermédiaire entre la scène et les basilliques comportant des escaliers pour atteindre les niveaux supérieurs},
+	}
+		
+\newglossaryentry{pilastre}{
+	name={Pilastre},
+	description={Faux pilier intégré au mur en ornement},
+	}
+\newglossaryentry{podium}{
+	name={Podium},
+	description={Massif de maçonnerie élevé au-dessus du sol et servant de soubassement},
+	}
+
+\newglossaryentry{postscaenium}{
+	name={Postscaenium},
+	description={Mur séparant la scène de l'extérieur comportant des salles pouvant servir de coulisses},
+	}
+
+\newglossaryentry{precinction}{
+	name={Precinction},
+	description={Palier situé au-dessus de chaque \gls{maenianum} et sur lequel s’ouvre les vomitorium},
+	}
+
+\newglossaryentry{porticus isc}{
+	name={Porticus in summa cavea},
+	description={Arcade bordée de colonnes située au dessus du troisième \gls{maenianum}},
+	}	
+
+\newglossaryentry{porticus ps}{
+	name={Porticus post scaenam},
+	description={Arcade bordée de colonnes située à l'extérieur du théâtre et adossée au mur de scène},
+	}	
+
+\newglossaryentry{pulpitum}{
+	name={Pulpitum},
+	description={Petit mur bordant la scène côté orchestre},
+	}
+
+\newglossaryentry{vomitorium}{
+	name={Vomitorium},
+	description={Issues permettant aux spectateurs d'accéder aux gradins},
+	}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%					Symboles						%	

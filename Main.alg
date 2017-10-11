@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 28.09.2017  15:21:38
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/PHL0ilhs4u", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/bv3GV6W4vR", Output: "Main.acr"
+;; at 11.10.2017  17:05:22
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/8pCIBMLPre", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/M_g1CzWCEg", Output: "Main.acr"
 
 
 Building indexentry-tree:
@@ -8,11 +8,19 @@ Hierdepth of index is :TREE
 
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "€Ð„" -> "A"
-Letter-group: "†Ð´" -> "C"
+Letter-group: "àÈ»†" -> "U"
+Letter-group: "†¼ËÐ" -> "C"
+Letter-group: "¨Ð†" -> "I"
+Letter-group: "†»€È" -> "C"
+Letter-group: "¨Ë€€" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "€Ð„" -> "A"
+Letter-group: "†»€È" -> "C"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "†Ð´" -> "C"
+Letter-group: "¨Ë€€" -> "I"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "àÈ»†" -> "U"

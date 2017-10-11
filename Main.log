@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  4 OCT 2017 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  11 OCT 2017 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2806,7 +2806,17 @@ Package minitoc Info: I0033
 ]
 \openout2 = `Intro.aux'.
 
- (./Intro/Intro.tex)
+ (./Intro/Intro.tex
+
+Package natbib Warning: Citation `PouvoirDuTheatre' on page 1 undefined on inpu
+t line 10.
+
+)
+Overfull \hbox (15.2065pt too wide) in paragraph at lines 12--73
+[]\T1/futs/m/n/12 Cette dé-marche a na-tu-rel-le-ment ou-vert la voie à une étu
+de plus large du théâtre d'Orange.
+ []
+
 [1
 
 
@@ -2821,22 +2831,20 @@ Package minitoc Info: I0033
 
 ] [3] [4] [5
 
-] [6
-
-]
+] [6]
 Chapitre 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 9.
+(Font)              scaled to size 10.07397pt on input line 20.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 9.
+(Font)              scaled to size 7.63599pt on input line 20.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 9.
+(Font)              scaled to size 5.51999pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 9.
+(Font)              scaled to size 10.07397pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 9.
+(Font)              scaled to size 7.63599pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 9.
+(Font)              scaled to size 5.51999pt on input line 20.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
@@ -2844,84 +2852,86 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (./Main.mtc4
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+) [7
 
- []
-
-<Part1/Antibes.jpg, id=403, 803.0pt x 602.25pt>
+] <Part1/Antibes.jpg, id=425, 803.0pt x 602.25pt>
 File: Part1/Antibes.jpg Graphic file (type jpg)
- <use Part1/Antibes.jpg>
-Package pdftex.def Info: Part1/Antibes.jpg used on input line 44.
-(pdftex.def)             Requested size: 176.40439pt x 132.30241pt.
 
-<Part1/SaintJeannet.jpg, id=404, 803.0pt x 602.25pt>
+<use Part1/Antibes.jpg>
+Package pdftex.def Info: Part1/Antibes.jpg used on input line 56.
+(pdftex.def)             Requested size: 176.40439pt x 132.30241pt.
+ <Part1/SaintJeannet.jpg, id=426, 803.0pt x 602.25pt>
 File: Part1/SaintJeannet.jpg Graphic file (type jpg)
 
 <use Part1/SaintJeannet.jpg>
-Package pdftex.def Info: Part1/SaintJeannet.jpg used on input line 49.
+Package pdftex.def Info: Part1/SaintJeannet.jpg used on input line 61.
 (pdftex.def)             Requested size: 176.40439pt x 132.30241pt.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 58.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 70.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [8] [9 <./Part1/Antibes.jpg> <./Part1/SaintJeannet.jpg>] [10
+) [8 <./Part1/Antibes.jpg> <./Part1/SaintJeannet.jpg>] [9] [10
 
 ]
 Chapitre 2.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc5 is empty on input line 77.
+(minitoc)             Main.mtc5 is empty on input line 89.
 [11]
 
-Package natbib Warning: Citation `ref2' on page 12 undefined on input line 89.
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 101.
 
 
-Package natbib Warning: Citation `ref' on page 12 undefined on input line 91.
+
+Package natbib Warning: Citation `ref' on page 12 undefined on input line 103.
 
 
-Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 103.
 
 
-Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 103.
 
 
-Package natbib Warning: Citation `ref2' on page 12 undefined on input line 91.
+
+Package natbib Warning: Citation `ref2' on page 12 undefined on input line 103.
+
 
 [12]
 
-Package natbib Warning: Citation `ref2' on page 13 undefined on input line 95.
-
-
-Package natbib Warning: Citation `ref' on page 13 undefined on input line 98.
-
-
-Package natbib Warning: Citation `ref2' on page 13 undefined on input line 102.
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 107.
 
 
 
-Package natbib Warning: Citation `ref' on page 13 undefined on input line 109.
+Package natbib Warning: Citation `ref' on page 13 undefined on input line 110.
 
 
-Package natbib Warning: Citation `ref2' on page 13 undefined on input line 109.
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 114.
 
 
-[13] <Part1/images/gradinCoupe.png, id=457, 510.90875pt x 409.53pt>
+
+Package natbib Warning: Citation `ref' on page 13 undefined on input line 121.
+
+
+Package natbib Warning: Citation `ref2' on page 13 undefined on input line 121.
+
+
+[13] <Part1/images/gradinCoupe.png, id=478, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
-Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 113.
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 125.
 (pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
 
-<Part1/images/escaliers.png, id=459, 551.05875pt x 433.62pt>
+<Part1/images/escaliers.png, id=480, 551.05875pt x 433.62pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
-Package pdftex.def Info: Part1/images/escaliers.png used on input line 120.
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 132.
 (pdftex.def)             Requested size: 165.3189pt x 130.087pt.
  [14 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>]
 Chapitre 3.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc6 is empty on input line 132.
+(minitoc)             Main.mtc6 is empty on input line 144.
 [15
 
 ] [16
@@ -3038,12 +3048,12 @@ Package minitoc Info: I0009
 [7
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux) (./Part2.aux) (.
 /Part3.aux) (./Annexes.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: D187EEDA9CE1708C3BC0CEB8510A56C4;3593.
 
@@ -3052,29 +3062,28 @@ Package rerunfilecheck Warning: File `Main.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `Main.brf':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  E8461425F55665B3B0149BE56A7CF24A;164.
+(rerunfilecheck)             Before: 5C5B132A40D78C16D412BCD0B80A6528;199
+(rerunfilecheck)             After:  3F53F6814A091B8536DE63E5D904CCAB;251.
  ) 
 Here is how much of TeX's memory you used:
- 50511 strings out of 493014
- 1094911 string characters out of 6133351
- 1345327 words of memory out of 5000000
- 52617 multiletter control sequences out of 15000+600000
- 180350 words of font info for 150 fonts, out of 8000000 for 9000
+ 51173 strings out of 493014
+ 1107847 string characters out of 6133351
+ 1353125 words of memory out of 5000000
+ 53269 multiletter control sequences out of 15000+600000
+ 179933 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,87p,10450b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,12n,87p,10450b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (61 pages, 2386907 bytes).
+live/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on Main.pdf (61 pages, 2395464 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 152 named destinations out of 1000 (max. 500000)
+ 767 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 164 named destinations out of 1000 (max. 500000)
  491 words of extra memory for PDF output out of 10000 (max. 10000000)
 

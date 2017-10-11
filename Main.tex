@@ -1,5 +1,5 @@
 
-%% http://blog.dorian-depriester.fr
+% http://blog.dorian-depriester.fr/latex/template-these/template-complet-pour-manuscrit-de-these
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           Fichier maitre				%
@@ -82,9 +82,11 @@
 		\includefrom{Annexes/}{Annexes}				% Figures en annexe
 			
 		% Liste des acronymes, glossaire et liste des symboles (dans l'ordre)		
+		%\glsaddall
+		%\forallglsentries[main]{\glsname}{\renewcommand{\glsname}{\scshape{\glstext}}}
 		\printglossary[type=\acronymtype , title={Liste des acronymes}, toctitle={Liste des acronymes}]
 		\printglossary[title=Glossaire,toctitle=Glossaire]
-		\printglossary[type=notation,title={Liste des symboles}, toctitle={Liste des symboles}]
+		\printglossary[type=notation, title={Liste des symboles}, toctitle={Liste des symboles}]
 	
 	\end{appendix}
 	
