@@ -5,4 +5,4 @@
 (indexentry :tkey (("CMAP" "\\glossentry{cmap}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("ISCD" "\\glossentry{iscd}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
