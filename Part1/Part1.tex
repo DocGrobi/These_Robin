@@ -12,7 +12,22 @@
 			 Ce n'est pourtant qu'au XIX\up{e} siècle que débuta un vaste chantier de déblaiement de l'enceinte dans le but de restituer au bâtiment son rôle premier. Avec ce projet apparurent les premières images d'archive du théâtre. En charge du chantier, Augustin Caristie fait paraitre en 1846, \textit{"Monuments antiques à Orange, arc triomphe et théâtre"} oeuvre de référence qui recense l'état des vestiges avant et après la destruction des maisons. Ces textes et dessins bien que, comme le stipule l'auteur, parfois hypothétiques sont par la suite complétés par d'autres architectes comme Pierre-Honoré Daumet qui réalisa en 1873 le relevé des élévations du monument. Les premières représentations théâtrales modernes purent alors avoir lieu. \`{A} la fin du siècle l'architecte Jean-Camille Formigé fut chargé de restaurer la cavea selon les indications de Caristie et en s'inspirant du modele de Vitruve. Son fils Jules Formigé poursuivit son travail et mis à jour de nombreux éléments de décors notamment en creusant au niveau de l'\gls{hyposcaenium}. Depuis les années 20 jusqu'aux années 80 de nombreuse reconstructions ont été effectués avec une rigueur archéologique contestable dans le but principalement d'habiller le lieu plus que pour le restituer. En 1981 le théâtre entre au patrimoine mondiale de l'UNESCO et quelques années plus tard d'autres constructions modernes tels que la couverture métallique de la scène viennent s'ajouter, détériorant au passage une partie de la maçonnerie antique. Certains projets ont pu être stoppés avant que des dégâts irréparables ne soient créer comme la créations d'ascenseurs dans le mur de scène. Malgré tout, ces travaux ont souvent été entrepris sans le moindre regard archéologique et de nombreuses données ont été perdues \citep{carteArcheo}.
 			 
 			 Depuis la fin du XX\up{e} siècle l'\gls{iraa} a relancé une étude approfondie du bâtiment et de sa décoration avec une approche archéologique rigoureuse. C'est dans cette démarche que cette thèse s'interface avec pour objectif la modélisation numérique du théâtre. Dans cette première partie nous allons donc présenter l'agencement architectural du bâtiment sans entrer dans les détails de sa décoration. Nous détaillerons ensuite les méthodes de modélisation graphique utilisées et finirons par exposer les nouveaux éléments archéologiques découlant de ce travail.
+			 
+		
+\begin{figureth}
+	\begin{subfigureth}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{images/av_deblaiement}
+		\caption{Vue de la scène avant le déblaiement par A. Caristie, 1856 (cliché Médiathèque de l’Architecture et du Patrimoine, Charenton)}
+	\end{subfigureth}
+	\begin{subfigureth}{0.47\textwidth}
+		\includegraphics[width=\linewidth]{images/asselineau}
+		\caption{Vue intérieure du théâtre, par Asselineau, XIX\up{e} siècle, Musée d'Art et d'Histoire d'Orange}
+	\end{subfigureth}
+	\caption[Théâtre d'Orange avant restauration]{Dessins du théâtre d'Orange avant et après déblaiement par A.Caristie}		
+	%\label{fig:caristie}
+\end{figureth}		
 
+		
 	\chapter{Architecture générale du théâtre d'Orange}
 		\citationChap{
 		L'architecture, c'est ce qui fait les belles ruines
@@ -26,19 +41,62 @@
 		
 		Le théâtre d'Orange a été bâtie en partie selon les indications de \cite{vitruve} et suit donc les préceptes de l'architecture romaine de l'époque impériale. Comme la plupart de ces édifices, il se présente en demi-cercle fermé par un mur rectiligne. Sa \gls{cavea} tournée vers le Nord est adossée à la colline Saint-Eutrope offrant ainsi un support naturel à l'édifice. A la différence des \glspl{odeon} seul un \gls{velum} servait de toiture aux spectateurs.
 
+\begin{figureth}
+		\includegraphics[width=\linewidth]{images/vuensemble}
+		\caption[Vue d'ensemble du théâtre d'Orange]{Vue d'ensemble du théâtre d'Orange (cliché de Boudereaux sur choregies.fr)}
+\end{figureth}
+
+
 		\section{Le \gls{postscaenium} et les \glspl{basilique} }
 		
-		Le \gls{postscaenium} (ou mur de scène) constituant la façade nord du bâtiment ainsi que les deux \glspl{basilique} l'enclavant constituent les parties les mieux conservées du théâtre. Le \gls{postscaenium} servait de décor pour les représentations et tenait probablement un rôle acoustique également (voir \Nameref{part3}). Les côtés est et ouest donnaient sur des rues, alors qu'adossé au mur nord se trouvait un \gls{porticus ps} servant de galerie commerçante. Celui-ci se trouvant à l'extérieur du théâtre ne fait pas partie de l'étude. Il donne néanmoins accès au \gls{postscaenium} par le biais de dix-sept portes reparties de manière symétrique par rapport à la porte centrale. Le mur de façade du bâtiment de scène est flanqué de part et d'autres de deux \glspl{basilique} de forme carrée auxquelles on accède depuis la scène par une grande porte rectangulaire et un \gls{parascaenium}. Les \glspl{basilique} servaient à entreposer des décors volumineux et permettaient l'entrée des artistes. Elles données également accès à l'extérieur par deux portes voutées ou aux \gls{aditus} par deux autres portes voutées.
+		Le \gls{postscaenium} (ou mur de scène) constituant la façade nord du bâtiment ainsi que les deux \glspl{basilique} l'enclavant constituent les parties les mieux conservées du théâtre. Le \gls{postscaenium} servait de décor pour les représentations et tenait probablement un rôle acoustique (voir \Nameref{part3}). Les côtés est et ouest donnaient sur des rues, alors qu'adossé à la façade nord se trouvait une \gls{porticus ps} servant de galerie commerçante. Celui-ci se trouvant à l'extérieur du théâtre, il ne fera pas partie de l'étude. Il donne néanmoins accès au \gls{postscaenium} par le biais de dix-sept portes reparties de manière symétrique par rapport à la porte centrale. Sur la partie haute de la façade se trouve deux séries de \glspl{console} ainsi qu'une assise de bouches d'eau qui permettaient d'évacuer les eaux qui tombaient sur le toit du bâtiment de scène. Les \glspl{console} de la série supérieure (mis à part les deux situées aux extrémités) présentent un trou traversant permettant d'accueillir le mât. Celles de la série inférieure sont creusées à leur lit d'attented'une grande mortaise circulaire prolongée par un petit trou permettant l'écoulement de l'eau de pluie. Pour pouvoir placer un mât dans un couple \glspl{console} il fallait également que l'assise de bouche d'eau soit percée. Or cela n'est le cas que pour douze emplacements correspondant aux mâts n\no4 à 9 à partir des deux extrémités du mur. Il semble que les mâts n'aient été présents qu'à ces emplacements, c'est à dire au niveau des \glspl{basilique} et non du mur de scène pour soulager ce dernier d'une trop forte tension liée au poids du \gls{velum}. L'intérieur du \gls{postscaenium} comporte huit pièces donnant uniquement sur la \gls{porticus ps} à l'extérieur du théâtre. Trois portes dont la porte royale donnent directement accès à la scène. Deux portes de part et d'autre amène aux \glspl{basilique} et une au \gls{parascaenium} et à des escaliers permettant de monter aux étages supérieurs. \`{A} l'intérieur du \gls{postscaenium}, en plus du rez-de-chaussé et des combles, on compte deux étages assurés par la présence de baies à arcature permettant de passer d'une pièce à l'autre à l'intérieur du mur. Cela permettait aux acteurs d'accéder à des niches traversante en hauteur pour faire apparaitre par exemple des personnages divins ou effectuer des bruits de tonnerre. 
 		
-		\section{Les \gls{aditus}, l'\gls{orchestra} et la \gls{cavea}}
+		La façade sud du mur (ou front de scène) est celle qui servait de décor aux spectacles. Aujourd'hui, il ne reste que le mur en calcaire de Courthézon (calcaire de couleur jaune foncé-beige) qui été jadis caché par des ornementations en marbre. On y trouve plusieurs niches de diverse profondeurs ainsi que les traces d'encastrement du placage de marbre qui servent de repère aux archéologues pour reconstituer la décoration. Le mur a une géométrie symétrique par rapport à l'axe décrit par la porte royale rectangulaire et la niche voutée située au dessus et accueillant aujourd'hui une statue dite "d'Auguste" (faite de ciment et de fragments antiques et placée là en guise de décoration en 1944). Cet axe est placé sur une paroi rectiligne qui fait saillie au fond d'une \gls{exedre} curviligne ce qui donne un effet de "focus" vers la porte royale et la niche voutée. De part et d'autre se trouvent deux  \glspl{exedre} rectangulaires peu profondes. Le mur est découpé verticalement en trois ordres sur les extrémités et seulement deux sur la partie centrale. Au dessus se trouve l'espace réservé au toit qui couvrait le \gls{postscaenium} et la scène. On y voit aujourd'hui les trous d'encastrement dans lesquelles venaient s'insérer les poutres.
+		
+		Le mur de façade du bâtiment de scène est flanqué de part et d'autres de deux \glspl{basilique} de forme presque carrée auxquelles on accède depuis la scène par une grande porte rectangulaire et un \gls{parascaenium}. Les \glspl{basilique} servaient à entreposer des décors volumineux et permettaient l'entrée des artistes. Elles donnaient également accès à l'extérieur ou aux \gls{aditus} par un couple de baies à arcature.
+		
+				
+		\section{L'\gls{orchestra}, les \gls{aditus} et la \gls{cavea}}
 		
 	
-	L'orchestra est actuellement limitée d'une part par le front du plateau scénique et del'autre par un passage dallé semi-circulaire, qui couvre un caniveau. En bordure interne dece dallage, qui est presque entièrement moderne, apparaissent les maigres vestiges d'unbalteus. De l'extérieur du théâtre, l'aire est accessible par deux larges passages rectilignes,les aditus. Chacune est partiellement couverte de la succession de trois voûtes endécrochement — deux inclinées et une horizontale — qui portaient les tribunes et lesextrémités de la cavea.
+	L'\gls{orchestra} est la partie semi-circulaire situé entre la scène et le premier gradin. Anciennement nommée "choros", chez les grecs qu'elle y accueillait le choeur, elle ne sert plus aux représentations chez les romains et certains spectateur de marque pouvaient s'y installer. Aujourd'hui recouverte de graviers compact elle pouvait être à l'époque dallée de marbre ou pavé de pierres colorées. L'\gls{orchestra} était limité par un \gls{balteus} qui marquait la séparation avec la \gls{cavea} et qui surplombait un petit caniveau permettant d'évacuer l'eau de pluie.
 	
-		La cavea, telle qu'elle a été restaurée, comprend trois maenianums, chacun séparéde son conjoint par un podium.Le premier maenianum, ou ima cavea, comprend un repose-pied à sa base et vingtgradins séparés par des escaliers en quatre cuneus. Ils sont couronnés par une profondeprécinction sur laquelle donnent neuf ouvertures d'un couloir souterrain aux extrémitésduquel conduisent deux escaliers radiaux prenant naissance au rez-de-chaussée dumonument. Le couloir ouvre aussi sur dix-huit pièces aveugles, construites ou aménagéesdans des grottes naturelles. Deux autres escaliers installés sous les gradins conduisaient àmi-hauteur du maenianum, à partir des parodos. Ils n'ont pas été remis en fonction.Le deuxième maenianum, ou media cavea, repose, dans sa partie inférieure, sur lecouloir souterrain qui dessert le premier maenianum et, dans sa partie supérieure, sur de laterre ou du remblai que complète, à proximité des aditus, deux niveaux de chambresvoûtées. Il comporte, entre deux circulations horizontales peu profondes, neuf gradinsdivisés en huit cuneus par neuf escaliers. On accède à son niveau supérieur par une série depassages radiaux reliés à un second couloir annulaire, dont la paroi extérieure s'identifie aumur périphérique du théâtre. Cinq de ces passages, qui devaient être neuf dans l'Antiquité,sont aujourd'hui utilisables. Le couloir est souterrain dans la zone où la cavea est adossée etconstruit sur deux niveaux de chambres voûtées dans sa partie la plus orientale. Il estdirectement accessible de l'extérieur par une porte à l'est et une autre à l'ouest.Le troisième maenianum, ou summa cavea, est entièrement construit sur structure creuse. Il comporte cinq gradins à l'origine divisés par neuf escaliers. Il est couronné par uneplate-forme aménagée au-dessus du second couloir annulaire. Celle-ci était jadis occupéepar un portique, une porticus in summa cavea, dont la reconstruction partielle de deuxcolonnes évoque la présence. Dans sa partie centrale, le mur périphérique de la cavea estpercé de portes donnant accès au portique et à la summa cavea à partir du chemin qui bordel'édifice à sa périphérie. Les portes sont axées sur les escaliers de la cavea.
+Depuis l'extérieur du théâtre on accède à ce lieu par deux larges \gls{parodos} formant les \gls{aditus}. Chacune est composée d'une succession de trois voûtes en décrochement qui portaient les tribunes et les extrémités de la  \gls{cavea}.
+	
+		La  \gls{cavea}, telle qu'elle a été restaurée, comprend trois hémicycles appelés \gls{maenianum}, séparée l'un de l'autre par une \gls{precinction} et un \gls{podium}. Cela a été déduit par Caristie de par la forme des \gls{aditus}, les vestiges du premier gradin et de la première \gls{precinction} et reconstruit en ce sens par Formigé. Chaque \gls{maenianum} est divisé en un certains nombre de sections appelées \gls{cuneus} par des escaliers.Le premier \gls{maenianum}, ou \textit{ima cavea} séparé en quatre \gls{cuneus}, comprend un repose-pied à sa base et vingt gradins. Au niveau de la première \gls{precinction} neuf ouvertures donnent  sur un couloir souterrain (premier \gls{ambulacre}). Ce dernier est accessible depuis l'extérieur du théâtre au rez-de-chaussée par deux escaliers longeant les \gls{aditus}. Le couloir ouvre aussi sur dix-huit pièces aveugles, mais seule les salles numérotées de 1 à 8 (\ref{1erniveau}) sont des constructions antiques. Il était également possible de rejoindre le premier \gls{maenianum} à mi-hauteur depuis les \gls{parodos} par le biais de deux escaliers installés sous les gradins. Ceux-ci n'ont pas été remis en fonction lors de la restauration.
+		
+	\begin{figureth}
+		\includegraphics[width=\linewidth]{images/1erniveau}
+		\caption[Vue de dessus - 1er niveau]{Plan du théâtre au niveau du premier ambulacre \cite[Pl. XVII]{orangePl}}
+		\label{1erniveau}
+	\end{figureth}		
+		Le deuxième \gls{maenianum}, ou \textit{media cavea}, repose, dans sa partie inférieure, sur l'\gls{ambulacre} du premier niveau et, dans sa partie supérieure, sur de la terre ou du remblai que complète, à proximité des aditus, deux niveaux de chambres voûtées. 
+		
+		
+		Il comporte, entre deux circulations horizontales peu profondes, neuf gradinsdivisés en huit cuneus par neuf escaliers. On accède à son niveau supérieur par une série depassages radiaux reliés à un second couloir annulaire, dont la paroi extérieure s'identifie aumur périphérique du théâtre. Cinq de ces passages, qui devaient être neuf dans l'Antiquité,sont aujourd'hui utilisables. Le couloir est souterrain dans la zone où la cavea est adossée etconstruit sur deux niveaux de chambres voûtées dans sa partie la plus orientale. Il estdirectement accessible de l'extérieur par une porte à l'est et une autre à l'ouest.
+		
+	\begin{figureth}
+		\includegraphics[width=\linewidth]{images/2emeniveau}
+		\caption[Vue de dessus - 2ème niveau]{Plan du théâtre au niveau du second ambulacre \cite[Pl. XVIII]{orangePl}}
+		\label{2emeniveau}
+	\end{figureth}		
+		
+		Le troisième maenianum, ou summa cavea, est entièrement construit sur structure creuse. Il comporte cinq gradins à l'origine divisés par neuf escaliers. Il est couronné par uneplate-forme aménagée au-dessus du second couloir annulaire. Celle-ci était jadis occupéepar un portique, une porticus in summa cavea, dont la reconstruction partielle de deuxcolonnes évoque la présence. Dans sa partie centrale, le mur périphérique de la cavea estpercé de portes donnant accès au portique et à la summa cavea à partir du chemin qui bordel'édifice à sa périphérie. Les portes sont axées sur les escaliers de la cavea.
+
+	\begin{figureth}
+		\includegraphics[width=\linewidth]{images/3emeniveau}
+		\caption[Vue de dessus - 3ème niveau]{Plan du théâtre au niveau de la rue périphérique \cite[Pl. XIX]{orangePl}}
+		\label{2emeniveau}
+	\end{figureth}	
 		
 		
 		\section{Les couvertures et le velum}
+		
+\begin{figureth}
+		%\includegraphics[width=\linewidth]{images/velumCaristie}
+		\caption[Velum]{proposition de restitution du velum d'Orange par A.Caristie}
+		
+\end{figureth}		
 
 		\section{Exemple minimal}
 		
@@ -54,21 +112,6 @@
 					maman	& papa
 				\end{tabular}
 			\end{tableth}
-
-			\begin{figureth}
-				\begin{subfigureth}{0.4\textwidth}
-					\includegraphics[width=\linewidth]{Antibes}
-					\caption{Photo du Cap d'Antibes}
-					\label{sub:Antibes}
-				\end{subfigureth}
-				\begin{subfigureth}{0.4\textwidth}
-					\includegraphics[width=\linewidth]{SaintJeannet}
-					\caption{Saint Jeannet, depuis son Baou}
-					\label{sub:SaintJeannet}
-				\end{subfigureth}
-				\caption[Légende courte pour la figure]{Exemple d'utilisation des sous-figures. J'utilise ici volontairement une légende longue.}		
-				\label{fig:exemple}
-			\end{figureth}
 	
 			\subsection{Exemple Symboles mathématiques}
 			Rien de spécial à propos des math, hormis l'illustration des symboles listés en fin de document, tels \gls{alpha} ou \gls{gamma}, qui peuvent être utilisés indifféremment en mode \emph{in-line} ou dans des équations\footnote{Le lecteur notera que \texttt{hyperref} ajoute un lien cliquable sur chaque entrée des différents glossaires.} :
@@ -78,9 +121,6 @@
 			\end{equation}
 			Les entrées des glossaires peuvent même être appelés dans des figures (PDF avec surcouche \LaTeX, ou Ti\textit{k}Z).
 	
-
-		\section{Deuxième paragraphe}
-			\blindtext
 
 
 
@@ -126,15 +166,15 @@ Les Maenianum sont modélisés à partir d'un plan de coupe d'un bloc formant un
 
 		\begin{figure}[!h] %on ouvre l'environnement figure
 			\center
-			\includegraphics[scale=0.3]{images/gradinCoupe.png}
-			\caption{Le repose pied et le premier gradin du premier cuneus : vu de l'extrémité nord avec au premier plan, le mur bordant l'aditus est} %la légende
+			\includegraphics[scale=0.3]{images/gradinCoupe}
+			\caption[Repose pied et premier gradin du premier cuneus]{Le repose pied et le premier gradin du premier cuneus : vu de l'extrémité nord avec au premier plan, le mur bordant l'aditus est} %la légende
 			\label{coupeGradin} %l'étiquette pour faire référence à cette image	
 		\end{figure} %on ferme l'environnement figure 
 		
 		\begin{figure}[!h] 
 			\center
-			\includegraphics[scale=0.3]{images/escaliers.png}
-			\caption{Modélisation des maenianum et de l'emprunte des escaliers à retirer apres application des modifers Array et Screw}
+			\includegraphics[scale=0.3]{images/escaliers}
+			\caption[Modélisation des maenianum]{Modélisation des maenianum et de l'emprunte des escaliers à retirer apres application des modifers Array et Screw}
 		\end{figure}
 		
 		\section{Aditus} 
