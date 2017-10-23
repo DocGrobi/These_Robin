@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -39,6 +39,21 @@
 \textsc{Badie, A.}, \textsc{J.-C. Moretti} \bbland{} \textsc{D.~Tardy}. 2007,
   \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
   recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
+
+\bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
+\textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
+  th{\'e}{\^a}tres romains, {\`a} propose de ceux d'Arles et d'Orange},
+  \emph{Sujets Sujets divers d'{\'e}rudition}, \bblvol{}~13, M{\'e}moires
+  pr{\'e}sent{\'e}s par divers savants {\`a} l'Acad{\'e}mie des inscriptions et
+  belles-lettres de l'Institut de France.
+
+\bibitem[{\textsc{Moretti}(1993)}]{moretti}
+\textsc{Moretti, J.-C.} 1993, \emph{{\'E}tude sur la nomenclature grecque de
+  l'architecture th{\'e}{\^a}trale. $\Pi$ETA$\Sigma$O$\Sigma$ et la
+  d{\'e}nomination grecque des v{\'e}lums}, \bblvol{}~2, Anatolia Antiqua.
+
+\bibitem[{\textsc{Pline}(77)}]{pline}
+\textsc{Pline}. 77, \emph{Naturalis historia}, \bblvol{} XIX.
 
 \bibitem[{\textsc{Roum{\'e}gous} \bbland{}
   \textsc{Provost}(2009)}]{carteArcheo}

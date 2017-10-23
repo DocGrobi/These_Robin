@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 16.10.2017  16:02:13
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/H9bc92LPRj", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/xAcLgMFrQE", Output: "Main.gls"
+;; at 23.10.2017  16:47:49
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/F8XCLPztni", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/_q32fO9aOx", Output: "Main.gls"
 
 
 Building indexentry-tree:
@@ -18,20 +18,42 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
 Letter-group: "ÈÃÐÚÐ†€—¼¨à»" -> "P"
 Letter-group: "„€Ð¨´¨Êà—" -> "B"
-Letter-group: "€¨ÚàÐ" -> "A"
 Letter-group: "ÃË†¤—ÐÚË€" -> "O"
+Letter-group: "€¨ÚàÐ" -> "A"
 Letter-group: "†€å—€" -> "C"
 Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
+Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
+Letter-group: "Èà´È¨Úà»" -> "P"
 Letter-group: "Ã—Ã¼" -> "O"
 Letter-group: "å—´à»" -> "V"
 Letter-group: "ÈÃËÚ¨†àÐ ÈÃÐÚ Ð†€—¼€»" -> "P"
 Letter-group: "†Ã¼ÐÃ´—" -> "C"
-Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
 Letter-group: "—ë—Ë—" -> "E"
+Letter-group: "„´€Ú—àÐ" -> "B"
+Letter-group: "È€ËÃÃÐ" -> "P"
+Letter-group: "»€—¼¨€¼à»" -> "M"
+Letter-group: "ÈË—†¨¼†Ú¨Ã¼" -> "P"
+Letter-group: "ÈÃ¨à»" -> "P"
+Letter-group: "†à¼—àÐ" -> "C"
+Letter-group: "€»„à´€†Ë—" -> "A"
+Letter-group: "åÃ»¨ÚÃË¨à»" -> "V"
+Letter-group: "ÈÃËÚ¨†àÐ ¨¼ Ðà»»€ †€å—€" -> "P"
+Letter-group: "€Ë—Ú¨—Ë" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "€¨ÚàÐ" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -43,10 +65,11 @@ Letter-group: "—ë—Ë—" -> "E"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»€—¼¨€¼à»" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ã—Ã¼" -> "O"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "å—´à»" -> "V"
-WARNING: location-reference "{}{v}" did match multiple location-classes! (taking first one)
 WARNING: location-reference "{}{V}" did match multiple location-classes! (taking first one)

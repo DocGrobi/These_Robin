@@ -3,51 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part1.aux
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
-Warning--I didn't find a database entry for "ref2"
-Warning--I didn't find a database entry for "ref"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
+Warning--can't use both volume and number fields in moretti
+Warning--missing publisher in pline
 Warning--missing publisher in vitruve
-You've used 5 entries,
+You've used 8 entries,
             3493 wiz_defined-function locations,
-            730 strings with 7062 characters,
-and the built_in function-call counts, 3180 in all, are:
-= -- 190
-> -- 174
-< -- 3
-+ -- 60
-- -- 55
-* -- 304
-:= -- 458
-add.period$ -- 11
-call.type$ -- 5
-change.case$ -- 44
-chr.to.int$ -- 6
-cite$ -- 7
-duplicate$ -- 271
-empty$ -- 245
-format.name$ -- 69
-if$ -- 594
+            746 strings with 7583 characters,
+and the built_in function-call counts, 4540 in all, are:
+= -- 267
+> -- 207
+< -- 9
++ -- 72
+- -- 64
+* -- 399
+:= -- 655
+add.period$ -- 17
+call.type$ -- 8
+change.case$ -- 59
+chr.to.int$ -- 9
+cite$ -- 12
+duplicate$ -- 404
+empty$ -- 388
+format.name$ -- 81
+if$ -- 865
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 51
-newline$ -- 33
-num.names$ -- 20
-pop$ -- 118
+missing$ -- 81
+newline$ -- 42
+num.names$ -- 32
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 53
 quote$ -- 0
-skip$ -- 91
+skip$ -- 146
 stack$ -- 0
-substring$ -- 59
-swap$ -- 145
-text.length$ -- 1
+substring$ -- 92
+swap$ -- 204
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 39
-warning$ -- 2
-while$ -- 15
+type$ -- 57
+warning$ -- 4
+while$ -- 24
 width$ -- 0
-write$ -- 68
+write$ -- 100
 (There were 4 warnings)

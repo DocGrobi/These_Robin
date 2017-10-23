@@ -25,10 +25,8 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax\glsresetentrylist
 \glossentry{alpha}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{10}, 
 \glsXpageXglsnumberformat{}{I}}}\glsgroupskip
 \glsgroupheading{G}\relax\glsresetentrylist
 \glossentry{gamma}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{10}, 
 \glsXpageXglsnumberformat{}{I}}}%
 \end{theglossary}\glossarypostamble
