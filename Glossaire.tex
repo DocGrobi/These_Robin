@@ -17,6 +17,13 @@
 	description={Centre de mathématiques appliquées de l'école Polytechnique},
 	first={Centre de mathématiques appliquées de l'école Polytechnique (CMAP)},
 	}
+
+\newglossaryentry{cao}{
+	type=\acronymtype,
+	name={CAO},
+	description={Conception assistée par ordinateur},
+	first={CAO (conception assistée par ordinateur)},
+	}
 	
 \newglossaryentry{iraa}{
 	type=\acronymtype,
@@ -61,17 +68,25 @@
 %% BLENDER 
 
 \newglossaryentry{array}{
-	name={modifier "Array"},
-	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour repéter les colonne du Porticus in Summa Cavea.},
-	first={modifier "Array" qui permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers}
+	name={\scshape{Modifier "Array"}}
+	text   = {modifier "Array"},
+	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}.},
+	first={modifier "Array" qui permet de répéter n fois un objet}
 	}
 	
-
 \newglossaryentry{boolean}{
-	name={modifier "Boolean"},
+	name={\scshape{Modifier "Boolean"}}
+	text   = {modifier "Boolean"},
 	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes.},
 	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
+	
+\newglossaryentry{screw}{
+	name={\scshape{Modifier "Screw"}}
+	text   = {modifier "Screw"},
+	description={Permet de faire une extrusion circulaire autour du centre de l'objet. Il est possible de choisir le raffinement de l'extrusion donc le nombre d'extrusion linéaire. Il est utilisé par exemple pour créer la \gls{cavea} à partir de son plan de coupe},
+	first={modifier "Screw" qui permet de faire une extrusion circulaire autour du centre de l'objet}
+	}	
 	
 %% ARCHEO
 
@@ -111,7 +126,7 @@
 \newglossaryentry{balteus}{
 	name={\scshape{Blateus}},
 	text={balteus},
-	description={Mur de pierre ne dépassant pas un mètre de hauteur qui ceinturait l'arrière de l'\gls{orchestra} et le séparait de la \gls{cavea}. Il ménageait un couloir de circulation au pied de la \gls{cavea} et isolait les sièges des notables placés sur les gradins de l'\gls{orchestra}},
+	description={Balustrade de pierre ne dépassant pas un mètre de hauteur qui ceinturait l'arrière de l'\gls{orchestra} et le séparait de la \gls{cavea}. Il ménageait un couloir de circulation au pied de la \gls{cavea} et isolait les sièges des notables placés sur les gradins de l'\gls{orchestra}},
 	}	
 		
 \newglossaryentry{cavea}{
@@ -222,7 +237,7 @@
 
 \newglossaryentry{pulpitum}{
 	name={Pulpitum},
-	description={Petit mur bordant la scène côté orchestre},
+	description={Ensemble de l'estrade sur lequel jouent les acteurs orné en son front par un petit mur de marbre décoré},
 	}
 
 \newglossaryentry{vomitorium}{
