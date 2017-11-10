@@ -17,24 +17,27 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Mod\IeC {\'e}lisation}{17}{chapter.2}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Coupe th\IeC {\'e}orique sur la \gls {cavea}}}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Plan du rez-de-chauss\IeC {\'e}e au b\IeC {\^a}timent de sc\IeC {\`e}ne}}{22}{figure.caption.19}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Plan topographique de la colline Saint-Eutrope}}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Plan du rez-de-chauss\IeC {\'e}e au b\IeC {\^a}timent de sc\IeC {\`e}ne}}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a}l'\textit {ima cavea}}}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Plan topographique de la colline Saint-Eutrope}}{28}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Propositions de reconstitution}{25}{chapter.3}
+\contentsline {xchapter}{Propositions de reconstitution}{29}{chapter.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {xpart}{Calculs acoustiques}{33}{part.2}
+\contentsline {xpart}{Calculs acoustiques}{37}{part.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Acoustique de salle}{35}{chapter.4}
+\contentsline {xchapter}{Acoustique de salle}{39}{chapter.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{37}{chapter.5}
+\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{41}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Validation}{39}{chapter.6}
+\contentsline {xchapter}{Validation}{43}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{47}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{51}{part.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{R\IeC {\'e}sultats}{49}{chapter.7}
+\contentsline {xchapter}{R\IeC {\'e}sultats sur le th\IeC {\'e}\IeC {\^a}tre d'Orange}{53}{chapter.7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{55}{chapter.8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \addvspace {10\p@ }
@@ -45,4 +48,4 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Glossaire}{V}{appendix.C}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Liste des symboles}{VII}{appendix.D}
+\contentsline {xchapter}{Liste des symboles}{IX}{appendix.D}

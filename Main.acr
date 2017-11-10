@@ -24,6 +24,8 @@
 \providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{C}\relax\glsresetentrylist
+\glossentry{cao}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
 \glossentry{cmap}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
 \glossentry{cnrs}{\glossaryentrynumbers{\relax 

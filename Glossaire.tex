@@ -68,24 +68,31 @@
 %% BLENDER 
 
 \newglossaryentry{array}{
-	name={\scshape{Modifier "Array"}}
+	name={\scshape{Modifier "Array"}},
 	text   = {modifier "Array"},
 	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}.},
 	first={modifier "Array" qui permet de répéter n fois un objet}
 	}
 	
 \newglossaryentry{boolean}{
-	name={\scshape{Modifier "Boolean"}}
+	name={\scshape{Modifier "Boolean"}},
 	text   = {modifier "Boolean"},
 	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes.},
 	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
 	
 \newglossaryentry{screw}{
-	name={\scshape{Modifier "Screw"}}
+	name={\scshape{Modifier "Screw"}},
 	text   = {modifier "Screw"},
 	description={Permet de faire une extrusion circulaire autour du centre de l'objet. Il est possible de choisir le raffinement de l'extrusion donc le nombre d'extrusion linéaire. Il est utilisé par exemple pour créer la \gls{cavea} à partir de son plan de coupe},
 	first={modifier "Screw" qui permet de faire une extrusion circulaire autour du centre de l'objet}
+	}	
+	
+\newglossaryentry{solidify}{
+	name={\scshape{Modifier "Solidify"}},
+	text   = {modifier "Solidify"},
+	description={Permet de donner une épaisseur paramétrable à un objet plan. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}},
+	first={modifier "Solidify" qui permet de donner une épaisseur paramétrable à un objet plan}
 	}	
 	
 %% ARCHEO
@@ -116,11 +123,11 @@
 \newglossaryentry{basilique}{
 	name={\scshape{Basilique}},
 	text={basilique},
-	description={
+	description={Large pièce de forme quasi-carré qui flanque le mur de scène et les \gls{parascaenium} 
 	\begin{center}
-		\includegraphics[width=0.4\linewidth]{glossaire/basiliques}
-	\end{center}
-	Large pièce de forme quasi-carré qui flanque le mur de scène et les \gls{parascaenium}},
+		\includegraphics[width=\linewidth]{glossaire/basiliques}
+	\end{center} 
+	},
 	}
 
 \newglossaryentry{balteus}{
@@ -132,7 +139,10 @@
 \newglossaryentry{cavea}{
 	name={\scshape{Cavea}},
 	text={cavea},
-	description={Désigne l'ensemble des rangées concentriques composant les gradins},
+	description={Désigne l'ensemble des rangées concentriques composant les gradins
+		\begin{center}
+		\includegraphics[width=\linewidth]{glossaire/modCavea}
+		\end{center}},
 	}
 	
 \newglossaryentry{console}{
@@ -208,9 +218,9 @@
 	text={postscaenium},
 	description={Mur séparant la scène de l'extérieur comportant des salles pouvant servir de coulisses  
 	\begin{center}
-		\includegraphics[width=0.4\linewidth]{glossaire/frondescene}
-		\includegraphics[width=0.4\linewidth]{glossaire/murnord}
-	\end{center}},
+		\includegraphics[width=\linewidth]{glossaire/modMur}
+	\end{center} 
+	},
 	}
 
 \newglossaryentry{precinction}{
