@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  10 NOV 2017 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  13 NOV 2017 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2926,91 +2926,82 @@ Overfull \hbox (20.00714pt too wide) in paragraph at lines 214--215
 ore dif-fé-rentes (455+270+95).
  []
 
+
+LaTeX Warning: Reference `CoupeCavea' on page 20 undefined on input line 216.
+
 [20 <./Part1/images/CoupeCavea.jpg>]
-<Part1/images/cotes.jpg, id=763, 1092.08pt x 2484.28125pt>
-File: Part1/images/cotes.jpg Graphic file (type jpg)
-
-<use Part1/images/cotes.jpg>
-Package pdftex.def Info: Part1/images/cotes.jpg used on input line 219.
-(pdftex.def)             Requested size: 297.18181pt x 676.04005pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `CoupeCavea' on page 21 undefined on input line 226.
-
-
-Overfull \hbox (14.6697pt too wide) in paragraph at lines 226--227
-\T1/futs/m/n/12 chaque cais-son va être sé-paré de son voi-sin lais-sant l'es-p
-ace pour les vo-mi-toires du deuxième
+Overfull \hbox (81.71472pt too wide) in paragraph at lines 218--219
+\T1/futs/m/n/12 pro-blème de cotes puisque la lar-geur de la ba-si-lique est, d
+'après la fi-gure [][]A.1[][], de 1,34+14,22+1,17+3,55+1,19
  []
 
-<Part1/images/parodos.png, id=788, 372.39125pt x 331.2375pt>
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [21]
+<Part1/images/parodos.png, id=794, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
 Package pdftex.def Info: Part1/images/parodos.png used on input line 235.
 (pdftex.def)             Requested size: 220.50887pt x 196.14613pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1137) has occurred while \output is active []
-
- [21]
-[22] [23 <./Part1/images/cotes.jpg>] [24 <./Part1/images/parodos.png>]
-<Part1/images/gradinCoupe.png, id=832, 510.90875pt x 409.53pt>
+<Part1/images/gradinCoupe.png, id=804, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
-Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 256.
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 252.
 (pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
 
-<Part1/images/escaliers.png, id=837, 551.05875pt x 433.62pt>
+<Part1/images/escaliers.png, id=809, 551.05875pt x 433.62pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
-Package pdftex.def Info: Part1/images/escaliers.png used on input line 261.
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 257.
 (pdftex.def)             Requested size: 165.3189pt x 130.087pt.
- [25
 
- <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>]
-<Part1/images/aditusOccidental.jpg, id=858, 2581.645pt x 2370.8575pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22 <./Part1/images/parodos.png>] [23 <./Part1/images/gradinCoupe.png> <./Part1
+/images/escaliers.png>]
+<Part1/images/aditusOccidental.jpg, id=847, 2581.645pt x 2370.8575pt>
 File: Part1/images/aditusOccidental.jpg Graphic file (type jpg)
 
 <use Part1/images/aditusOccidental.jpg>
 Package pdftex.def Info: Part1/images/aditusOccidental.jpg used on input line 2
-78.
+77.
 (pdftex.def)             Requested size: 216.1011pt x 198.42714pt.
 
-<Part1/images/aditusOriental.jpg, id=865, 1919.17pt x 1755.55875pt>
+<Part1/images/aditusOriental.jpg, id=854, 1919.17pt x 1755.55875pt>
 File: Part1/images/aditusOriental.jpg Graphic file (type jpg)
 
 <use Part1/images/aditusOriental.jpg>
-Package pdftex.def Info: Part1/images/aditusOriental.jpg used on input line 283
+Package pdftex.def Info: Part1/images/aditusOriental.jpg used on input line 282
 .
 (pdftex.def)             Requested size: 216.1011pt x 197.66595pt.
- [26 <./Part1/images/aditusOccidental.jpg> <./Part1/images/aditusOriental.jpg>]
+ [24 <./Part1/images/aditusOccidental.jpg> <./Part1/images/aditusOriental.jpg>]
 
-<Part1/images/colline.png, id=890, 556.0775pt x 720.6925pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+<Part1/images/colline.png, id=920, 556.0775pt x 720.6925pt>
 File: Part1/images/colline.png Graphic file (type png)
 
 <use Part1/images/colline.png>
-Package pdftex.def Info: Part1/images/colline.png used on input line 307.
+Package pdftex.def Info: Part1/images/colline.png used on input line 312.
 (pdftex.def)             Requested size: 441.01773pt x 571.58421pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27] [28 <./Part1/images/colline.png>]
+[26] [27 <./Part1/images/colline.png>] [28
+
+]
 Chapitre 3.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc5 is empty on input line 319.
-[29
-
-] [30
+(minitoc)             Main.mtc5 is empty on input line 324.
+[29] [30
 
 ] [31] (./Part1.bbl (./Main.brf)
 \tf@brf=\write13
@@ -3103,29 +3094,49 @@ LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
 
 LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
 
-) [1
+<Annexes/images/cotes.jpg, id=1100, 1092.08pt x 2484.28125pt>
+File: Annexes/images/cotes.jpg Graphic file (type jpg)
+
+<use Annexes/images/cotes.jpg>
+Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 14.
+(pdftex.def)             Requested size: 297.18181pt x 676.04005pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
+5.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
+5.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
 
 
 
-] (./Main.acr [2
+] [2 <./Annexes/images/cotes.jpg>]) [3
+
+] (./Main.acr [4
 
 
 ]
 Annexe B.
-) (./Main.gls [3
+) (./Main.gls [5
 
-] [4
+] [6
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=1112, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=1155, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
 Package pdftex.def Info: glossaire/basiliques.jpg used on input line 52.
 (pdftex.def)             Requested size: 411.64304pt x 225.11261pt.
 
-<glossaire/modCavea.png, id=1126, 1032.85875pt x 394.47375pt>
+<glossaire/modCavea.png, id=1169, 1032.85875pt x 394.47375pt>
 File: glossaire/modCavea.png Graphic file (type png)
 
 <use glossaire/modCavea.png>
@@ -3134,36 +3145,39 @@ Package pdftex.def Info: glossaire/modCavea.png used on input line 69.
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [5
+ [7
 
- <./glossaire/basiliques.jpg>] [6 <./glossaire/modCavea.png>]
-<glossaire/modMur.png, id=1210, 923.45pt x 312.16624pt>
+ <./glossaire/basiliques.jpg>] [8 <./glossaire/modCavea.png>]
+<glossaire/modMur.png, id=1253, 923.45pt x 312.16624pt>
 File: glossaire/modMur.png Graphic file (type png)
 
 <use glossaire/modMur.png>
 Package pdftex.def Info: glossaire/modMur.png used on input line 143.
 (pdftex.def)             Requested size: 411.64304pt x 139.15408pt.
-) (./Main.not [7 <./glossaire/modMur.png>] [8
+) (./Main.not [9 <./glossaire/modMur.png>] [10
 
 ]
 Annexe D.
 )
+
+Package natbib Warning: There were undefined citations.
+
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Main.maf file.
 \openout3 = `Main.maf'.
 
- [9
+[11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
- (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux)
-(./Part2.aux) (./Part3.aux) (./Annexes.aux))
+ (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux) (./Part2.aux) (.
+/Part3.aux) (./Annexes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 27898B2E1D69ABE4CB51819033B8131D;3797.
+(rerunfilecheck)             Checksum: 7B35C6B932265D1CC3F1179B8092BD2B;3797.
 
 
 Package rerunfilecheck Warning: File `Main.brf' has changed.
@@ -3171,30 +3185,33 @@ Package rerunfilecheck Warning: File `Main.brf' has changed.
 
 Package rerunfilecheck Info: Checksums for `Main.brf':
 (rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  4120B181125E3F23C706038535B50AE2;1815.
+(rerunfilecheck)             After:  F4E24F35FBC1EB31C6F9184E6CFF1AF6;1868.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 51716 strings out of 493014
- 1117764 string characters out of 6133351
- 1364428 words of memory out of 5000000
- 53749 multiletter control sequences out of 15000+600000
+ 51754 strings out of 493014
+ 1118395 string characters out of 6133351
+ 1364189 words of memory out of 5000000
+ 53783 multiletter control sequences out of 15000+600000
  178774 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,87p,10450b,1504s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (81 pages, 17608362 bytes).
+pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/adobe/utopia/putri8a.pfb>
+Output written on Main.pdf (83 pages, 17618617 bytes).
 PDF statistics:
- 1330 PDF objects out of 1440 (max. 8388607)
- 1164 compressed objects within 12 object streams
- 218 named destinations out of 1000 (max. 500000)
+ 1374 PDF objects out of 1440 (max. 8388607)
+ 1207 compressed objects within 13 object streams
+ 221 named destinations out of 1000 (max. 500000)
  584 words of extra memory for PDF output out of 10000 (max. 10000000)
 
