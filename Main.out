@@ -9,49 +9,56 @@
 \BOOKMARK [0][-]{chapter.2}{Mod\351lisation}{part.1}% 9
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.2}{La cavea et ses substructures}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Maenianum}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Aditus}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Les maenianum}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Les aditus et les tribunes}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.5}{Le mur de sc\350ne et ses basiliques}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.6}{Le pulpitum et l'orchestra}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.7}{La colline Saint-Eutrope}{chapter.2}% 16
 \BOOKMARK [0][-]{chapter.3}{Propositions de reconstitution}{part.1}% 17
-\BOOKMARK [0][-]{chapter*.21}{Conclusion}{part.1}% 18
-\BOOKMARK [0][-]{chapter*.22}{R\351f\351rences}{part.1}% 19
-\BOOKMARK [-1][-]{part.2}{II Calculs acoustiques}{}% 20
-\BOOKMARK [0][-]{chapter*.23}{Introduction}{part.2}% 21
-\BOOKMARK [0][-]{chapter.4}{Acoustique de salle}{part.2}% 22
-\BOOKMARK [1][-]{section.4.1}{Introduction \340 l'acoustique de salle}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.2}{M\351thodes de calcul acoustique}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.3}{M\351thode coupl\351e}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Logiciel d\351velopp\351}{part.2}% 26
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Lecture de maillage}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Calcul de rayon}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnel}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.6}{M\351thode d'octree}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.7}{Vue d'ensemble}{chapter.5}% 33
-\BOOKMARK [0][-]{chapter.6}{Validation}{part.2}% 34
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.2}{Comparaison aux cas test}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.3}{Analyse de complexit\351}{chapter.6}% 37
-\BOOKMARK [0][-]{chapter*.24}{Conclusion}{part.2}% 38
-\BOOKMARK [0][-]{chapter*.25}{R\351f\351rences}{part.2}% 39
-\BOOKMARK [-1][-]{part.3}{III Analyse acoustique du th\351\342tre d'Orange}{}% 40
-\BOOKMARK [0][-]{chapter*.26}{Introduction}{part.3}% 41
-\BOOKMARK [1][-]{section.6.4}{Maillage en test}{chapter*.26}% 42
-\BOOKMARK [1][-]{section.6.5}{Mat\351riaux}{chapter*.26}% 43
-\BOOKMARK [0][-]{chapter.7}{R\351sultats sur le th\351\342tre d'Orange}{part.3}% 44
-\BOOKMARK [1][-]{section.7.1}{position des spectateurs}{chapter.7}% 45
-\BOOKMARK [1][-]{section.7.2}{Pr\351sence de spectateurs}{chapter.7}% 46
-\BOOKMARK [1][-]{section.7.3}{Pr\351sence de velum}{chapter.7}% 47
-\BOOKMARK [1][-]{section.7.4}{Forme et mat\351riaux du toit}{chapter.7}% 48
-\BOOKMARK [0][-]{chapter.8}{Comparaison avec d'autres th\351\342tres antiques}{part.3}% 49
-\BOOKMARK [0][-]{chapter*.27}{Conclusion}{part.3}% 50
-\BOOKMARK [0][-]{chapter*.28}{R\351f\351rences}{part.3}% 51
-\BOOKMARK [0][-]{appendix.A}{Annexes}{part.3}% 52
-\BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 53
-\BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 54
-\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.3}% 55
-\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.3}% 56
-\BOOKMARK [0][-]{appendix.D}{Liste des symboles}{part.3}% 57
+\BOOKMARK [1][-]{section.3.1}{Les couvertures du b\342timent de sc\350ne et les circulations internes}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{La porticus isc}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Le velum}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Les escaliers}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Les rambardes et le balteus}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter*.21}{Conclusion}{part.1}% 23
+\BOOKMARK [0][-]{chapter*.22}{R\351f\351rences}{part.1}% 24
+\BOOKMARK [-1][-]{part.2}{II Calculs acoustiques}{}% 25
+\BOOKMARK [0][-]{chapter*.23}{Introduction}{part.2}% 26
+\BOOKMARK [0][-]{chapter.4}{Acoustique de salle}{part.2}% 27
+\BOOKMARK [1][-]{section.4.1}{Introduction \340 l'acoustique de salle}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{M\351thodes de calcul acoustique}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{M\351thode coupl\351e}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Logiciel d\351velopp\351}{part.2}% 31
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Lecture de maillage}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.3}{Calcul de rayon}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnel}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.6}{M\351thode d'octree}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.7}{Vue d'ensemble}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{Validation}{part.2}% 39
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.2}{Comparaison aux cas test}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.3}{Analyse de complexit\351}{chapter.6}% 42
+\BOOKMARK [0][-]{chapter*.24}{Conclusion}{part.2}% 43
+\BOOKMARK [0][-]{chapter*.25}{R\351f\351rences}{part.2}% 44
+\BOOKMARK [-1][-]{part.3}{III Analyse acoustique du th\351\342tre d'Orange}{}% 45
+\BOOKMARK [0][-]{chapter*.26}{Introduction}{part.3}% 46
+\BOOKMARK [0][-]{chapter.7}{Configuration initiale}{part.3}% 47
+\BOOKMARK [1][-]{section.7.1}{Configuration du maillage}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.2}{Les mat\351riaux}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.3}{RIR du th\351\342tre d'Orange}{chapter.7}% 50
+\BOOKMARK [0][-]{chapter.8}{Test de configurations}{part.3}% 51
+\BOOKMARK [1][-]{section.8.1}{position des spectateurs}{chapter.8}% 52
+\BOOKMARK [1][-]{section.8.2}{Pr\351sence de spectateurs}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.3}{Pr\351sence de velum}{chapter.8}% 54
+\BOOKMARK [1][-]{section.8.4}{Forme et mat\351riaux du toit}{chapter.8}% 55
+\BOOKMARK [0][-]{chapter.9}{Comparaison avec d'autres th\351\342tres antiques}{part.3}% 56
+\BOOKMARK [0][-]{chapter*.27}{Conclusion}{part.3}% 57
+\BOOKMARK [0][-]{chapter*.28}{R\351f\351rences}{part.3}% 58
+\BOOKMARK [0][-]{appendix.A}{Annexes}{part.3}% 59
+\BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 61
+\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.3}% 62
+\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.3}% 63
+\BOOKMARK [0][-]{appendix.D}{Liste des symboles}{part.3}% 64

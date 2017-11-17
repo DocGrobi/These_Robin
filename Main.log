@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  13 NOV 2017 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  17 NOV 2017 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2394,8 +2394,11 @@ Package glossaries Info: Writing glossary file Main.acn on input line 146.
 
 Package glossaries Info: Writing glossary file Main.ntn on input line 146.
  (./Glossaire.tex)) (./CommandesPerso.tex) (./PageDeGarde.tex) (./Main.aux
-(./Remerciements.aux) (./Intro.aux) (./Part1.aux) (./Part2.aux) (./Part3.aux)
-(./Annexes.aux))
+(./Remerciements.aux) (./Intro.aux) (./Part1.aux
+
+LaTeX Warning: Label `modCavea' multiply defined.
+
+) (./Part2.aux) (./Part3.aux) (./Annexes.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -2651,14 +2654,14 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<pageDeGarde/logo_upmc.jpg, id=236, 1395.2125pt x 469.755pt>
+<pageDeGarde/logo_upmc.jpg, id=264, 1395.2125pt x 469.755pt>
 File: pageDeGarde/logo_upmc.jpg Graphic file (type jpg)
 
 <use pageDeGarde/logo_upmc.jpg>
 Package pdftex.def Info: pageDeGarde/logo_upmc.jpg used on input line 48.
 (pdftex.def)             Requested size: 153.64644pt x 51.73055pt.
 
-<pageDeGarde/logoISCD_NOIR.png, id=237, 1027.84pt x 243.91125pt>
+<pageDeGarde/logoISCD_NOIR.png, id=265, 1027.84pt x 243.91125pt>
 File: pageDeGarde/logoISCD_NOIR.png Graphic file (type png)
 
 <use pageDeGarde/logoISCD_NOIR.png>
@@ -2706,7 +2709,12 @@ Overfull \hbox (4.28973pt too wide) in paragraph at lines 13--14
 ) [5] [6
 
 
-] (./Main.toc [7])
+] (./Main.toc [7]
+Overfull \hbox (2.18394pt too wide) detected at line 89
+ []\T1/futs/m/n/12 VIII
+ []
+
+)
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
@@ -2728,8 +2736,7 @@ Overfull \hbox (4.28973pt too wide) in paragraph at lines 13--14
 ]
 \openout2 = `Intro.aux'.
 
-
-(./Intro/Intro.tex)
+ (./Intro/Intro.tex)
 Overfull \hbox (15.2065pt too wide) in paragraph at lines 12--73
 []\T1/futs/m/n/12 Cette dé-marche a na-tu-rel-le-ment ou-vert la voie à une étu
 de plus large du théâtre d'Orange.
@@ -2750,67 +2757,67 @@ de plus large du théâtre d'Orange.
 ] [3] [4] [5
 
 ]
-<Part1/images/av_deblaiement.png, id=442, 1001.7425pt x 584.1825pt>
+<Part1/images/av_deblaiement.png, id=501, 1001.7425pt x 584.1825pt>
 File: Part1/images/av_deblaiement.png Graphic file (type png)
 
 <use Part1/images/av_deblaiement.png>
-Package pdftex.def Info: Part1/images/av_deblaiement.png used on input line 19.
+Package pdftex.def Info: Part1/images/av_deblaiement.png used on input line 20.
 
 (pdftex.def)             Requested size: 216.1011pt x 126.01573pt.
 
-<Part1/images/asselineau.jpg, id=444, 1834.855pt x 1110.1475pt>
+<Part1/images/asselineau.jpg, id=503, 1834.855pt x 1110.1475pt>
 File: Part1/images/asselineau.jpg Graphic file (type jpg)
 
 <use Part1/images/asselineau.jpg>
-Package pdftex.def Info: Part1/images/asselineau.jpg used on input line 24.
+Package pdftex.def Info: Part1/images/asselineau.jpg used on input line 25.
 (pdftex.def)             Requested size: 207.27887pt x 125.40285pt.
  [6 <./Part1/images/av_deblaiement.png> <./Part1/images/asselineau.jpg>]
 Chapitre 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 35.
+(Font)              scaled to size 10.07397pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 35.
+(Font)              scaled to size 7.63599pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
+(Font)              scaled to size 5.51999pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 35.
+(Font)              scaled to size 10.07397pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 35.
+(Font)              scaled to size 7.63599pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
+(Font)              scaled to size 5.51999pt on input line 36.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc3
+(./Main.mtc2
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 ) [7
 
 ]
-Overfull \hbox (13.47859pt too wide) in paragraph at lines 41--42
+Overfull \hbox (13.47859pt too wide) in paragraph at lines 42--43
 []\T1/futs/m/n/12 En 2013, l'[][][]IRAA[][] lance une sé-rie de cam-pagnes de m
 e-sure et d'ana-lyse du théâtre d'Orange
  []
 
-<Part1/images/vuensemble.jpg, id=488, 1445.4pt x 962.59625pt>
+<Part1/images/vuensemble.jpg, id=548, 1445.4pt x 962.59625pt>
 File: Part1/images/vuensemble.jpg Graphic file (type jpg)
 
 <use Part1/images/vuensemble.jpg>
-Package pdftex.def Info: Part1/images/vuensemble.jpg used on input line 46.
+Package pdftex.def Info: Part1/images/vuensemble.jpg used on input line 47.
 (pdftex.def)             Requested size: 441.01773pt x 293.70158pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 51.
+(hyperref)                removing `\gls' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\glspl' on input line 51.
+(hyperref)                removing `\glspl' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 51.
+(hyperref)                removing `\gls' on input line 52.
 
 [8 <./Part1/images/vuensemble.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2818,64 +2825,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 61.
+(hyperref)                removing `\gls' on input line 62.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 61.
+(hyperref)                removing `\gls' on input line 62.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 61.
+(hyperref)                removing `\gls' on input line 62.
 
-[10] <Part1/images/1erniveau.jpg, id=593, 1595.9625pt x 1226.5825pt>
+[10] <Part1/images/1erniveau.jpg, id=652, 1595.9625pt x 1226.5825pt>
 File: Part1/images/1erniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/1erniveau.jpg>
-Package pdftex.def Info: Part1/images/1erniveau.jpg used on input line 74.
+Package pdftex.def Info: Part1/images/1erniveau.jpg used on input line 75.
 (pdftex.def)             Requested size: 441.01773pt x 338.94888pt.
 
-Overfull \hbox (26.45291pt too wide) in paragraph at lines 79--80
+Overfull \hbox (26.45291pt too wide) in paragraph at lines 80--81
 []\T1/futs/m/n/12 Le deuxième [][][]mae-nia-num[][], ou \T1/futs/m/it/12 me-dia
  ca-vea\T1/futs/m/n/12 , re-pose, dans sa par-tie in-fé-rieure, sur l'[][][]amb
 ulacre[][]
  []
 
-<Part1/images/2emeniveau.jpg, id=605, 1609.01125pt x 1226.5825pt>
+<Part1/images/2emeniveau.jpg, id=664, 1609.01125pt x 1226.5825pt>
 File: Part1/images/2emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/2emeniveau.jpg>
-Package pdftex.def Info: Part1/images/2emeniveau.jpg used on input line 82.
+Package pdftex.def Info: Part1/images/2emeniveau.jpg used on input line 83.
 (pdftex.def)             Requested size: 441.01773pt x 336.19762pt.
  [11 <./Part1/images/1erniveau.jpg>] [12 <./Part1/images/2emeniveau.jpg>]
-<Part1/images/3emeniveau.jpg, id=636, 1609.01125pt x 1228.59pt>
+<Part1/images/3emeniveau.jpg, id=693, 1609.01125pt x 1228.59pt>
 File: Part1/images/3emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/3emeniveau.jpg>
-Package pdftex.def Info: Part1/images/3emeniveau.jpg used on input line 92.
+Package pdftex.def Info: Part1/images/3emeniveau.jpg used on input line 93.
 (pdftex.def)             Requested size: 441.01773pt x 336.74786pt.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 103
-.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-) [13 <./Part1/images/3emeniveau.jpg>]
-<Part1/images/couvertureBadie.png, id=655, 369.38pt x 315.67938pt>
+<Part1/images/couvertureBadie.png, id=705, 369.38pt x 315.67938pt>
 File: Part1/images/couvertureBadie.png Graphic file (type png)
 
 <use Part1/images/couvertureBadie.png>
 Package pdftex.def Info: Part1/images/couvertureBadie.png used on input line 10
 6.
 (pdftex.def)             Requested size: 441.01773pt x 376.90587pt.
- [14 <./Part1/images/couvertureBadie.png>] <Part1/images/toitCaristie.png, id=6
-82, 309.155pt x 212.795pt>
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 114
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [13 <./Part1/images/3emeniveau.jpg>] [14 <./Part1/images/couvertureBadie.png>
+]
+<Part1/images/toitCaristie.png, id=737, 309.155pt x 212.795pt>
 File: Part1/images/toitCaristie.png Graphic file (type png)
 
 <use Part1/images/toitCaristie.png>
 Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 120.
 (pdftex.def)             Requested size: 216.1011pt x 148.7509pt.
 
-<Part1/images/toitBadie.png, id=683, 289.08pt x 201.75375pt>
+<Part1/images/toitBadie.png, id=738, 289.08pt x 201.75375pt>
 File: Part1/images/toitBadie.png Graphic file (type png)
 
 <use Part1/images/toitBadie.png>
@@ -2886,8 +2894,11 @@ Underfull \hbox (badness 1308) in paragraph at lines 126--126
 []\T1/futs/m/n/10.95 (b) |Re-levé de la par-tie som-mi-tale du re-tour
  []
 
-[15 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
-<Part1/images/velumCaristie.jpg, id=711, 622.325pt x 448.67625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
+<Part1/images/velumCaristie.jpg, id=766, 622.325pt x 448.67625pt>
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
@@ -2900,7 +2911,7 @@ Chapitre 2.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc4) [17
+(./Main.mtc3) [17
 
 ]
 Overfull \hbox (6.34222pt too wide) in paragraph at lines 167--168
@@ -2914,149 +2925,174 @@ Overfull \hbox (2.5299pt too wide) in paragraph at lines 167--168
  les mêmes in-for-ma-tions qu'avec
  []
 
-[18] [19] <Part1/images/CoupeCavea.jpg, id=750, 2343.75626pt x 1427.3325pt>
-File: Part1/images/CoupeCavea.jpg Graphic file (type jpg)
+[18] [19] <Part1/images/modCavea.png, id=807, 1032.85875pt x 394.47375pt>
+File: Part1/images/modCavea.png Graphic file (type png)
 
-<use Part1/images/CoupeCavea.jpg>
-Package pdftex.def Info: Part1/images/CoupeCavea.jpg used on input line 209.
-(pdftex.def)             Requested size: 441.01773pt x 268.5607pt.
+<use Part1/images/modCavea.png>
+Package pdftex.def Info: Part1/images/modCavea.png used on input line 210.
+(pdftex.def)             Requested size: 441.01773pt x 168.43462pt.
 
-Overfull \hbox (20.00714pt too wide) in paragraph at lines 214--215
-[]\T1/futs/m/n/12 Pour cette même lon-gueur, A.Carisite donne des me-sures en-c
-ore dif-fé-rentes (455+270+95).
+
+LaTeX Warning: Reference `CoupeCavea' on page 20 undefined on input line 218.
+
+
+LaTeX Warning: Reference `CoupeCavea' on page 20 undefined on input line 220.
+
+
+Overfull \hbox (81.71472pt too wide) in paragraph at lines 220--221
+\T1/futs/m/n/12 pro-blème de cotes puisque la lar-geur de la ba-si-lique est, d
+'après la fi-gure [][]A.3[][], de 1,34+14,22+1,17+3,55+1,19
  []
 
-
-LaTeX Warning: Reference `CoupeCavea' on page 20 undefined on input line 216.
-
-[20 <./Part1/images/CoupeCavea.jpg>]
-Overfull \hbox (81.71472pt too wide) in paragraph at lines 218--219
-\T1/futs/m/n/12 pro-blème de cotes puisque la lar-geur de la ba-si-lique est, d
-'après la fi-gure [][]A.1[][], de 1,34+14,22+1,17+3,55+1,19
+[20 <./Part1/images/modCavea.png>]
+Overfull \hbox (3.32066pt too wide) in paragraph at lines 225--226
+\T1/futs/m/n/12 est don-née par le plan de A.Caristie [[][][]\T1/futs/m/sc/12 B
+a-die \T1/futs/m/n/12 et col-lab.[][], [][]2013a[][], Pl. XXXIII] en es-ti-mant
+ qu'elles
  []
 
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
  [21]
-<Part1/images/parodos.png, id=794, 372.39125pt x 331.2375pt>
+<Part1/images/parodos.png, id=851, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
-Package pdftex.def Info: Part1/images/parodos.png used on input line 235.
+Package pdftex.def Info: Part1/images/parodos.png used on input line 232.
 (pdftex.def)             Requested size: 220.50887pt x 196.14613pt.
 
-<Part1/images/gradinCoupe.png, id=804, 510.90875pt x 409.53pt>
+<Part1/images/gradinCoupe.png, id=861, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
-Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 252.
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 249.
 (pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
 
-<Part1/images/escaliers.png, id=809, 551.05875pt x 433.62pt>
+<Part1/images/escaliers.png, id=866, 551.05875pt x 433.62pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
-Package pdftex.def Info: Part1/images/escaliers.png used on input line 257.
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 254.
 (pdftex.def)             Requested size: 165.3189pt x 130.087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./Part1/images/parodos.png>] [23 <./Part1/images/gradinCoupe.png> <./Part1
-/images/escaliers.png>]
-<Part1/images/aditusOccidental.jpg, id=847, 2581.645pt x 2370.8575pt>
-File: Part1/images/aditusOccidental.jpg Graphic file (type jpg)
+[22 <./Part1/images/parodos.png>]
 
-<use Part1/images/aditusOccidental.jpg>
-Package pdftex.def Info: Part1/images/aditusOccidental.jpg used on input line 2
-77.
-(pdftex.def)             Requested size: 216.1011pt x 198.42714pt.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 267.
 
-<Part1/images/aditusOriental.jpg, id=854, 1919.17pt x 1755.55875pt>
-File: Part1/images/aditusOriental.jpg Graphic file (type jpg)
+<Part1/images/modAditus.png, id=893, 984.67876pt x 782.925pt>
+File: Part1/images/modAditus.png Graphic file (type png)
 
-<use Part1/images/aditusOriental.jpg>
-Package pdftex.def Info: Part1/images/aditusOriental.jpg used on input line 282
-.
-(pdftex.def)             Requested size: 216.1011pt x 197.66595pt.
- [24 <./Part1/images/aditusOccidental.jpg> <./Part1/images/aditusOriental.jpg>]
+<use Part1/images/modAditus.png>
+Package pdftex.def Info: Part1/images/modAditus.png used on input line 270.
+(pdftex.def)             Requested size: 441.01773pt x 350.65244pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-<Part1/images/colline.png, id=920, 556.0775pt x 720.6925pt>
-File: Part1/images/colline.png Graphic file (type png)
+ [23 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>] [24 <./Pa
+rt1/images/modAditus.png>] <Part1/images/modMur.png, id=937, 923.45pt x 312.166
+24pt>
+File: Part1/images/modMur.png Graphic file (type png)
 
-<use Part1/images/colline.png>
-Package pdftex.def Info: Part1/images/colline.png used on input line 312.
-(pdftex.def)             Requested size: 441.01773pt x 571.58421pt.
+<use Part1/images/modMur.png>
+Package pdftex.def Info: Part1/images/modMur.png used on input line 288.
+(pdftex.def)             Requested size: 441.01773pt x 149.08073pt.
+ [25 <./Part1/images/modMur.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26] [27 <./Part1/images/colline.png>] [28
+ [26]
+[27] [28
 
 ]
 Chapitre 3.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc5 is empty on input line 324.
-[29] [30
+\openout3 = `Main.mtc'.
 
-] [31] (./Part1.bbl (./Main.brf)
+\openout3 = `Main.mtc'.
+
+(./Main.mtc4) [29]
+Overfull \hbox (0.10588pt too wide) in paragraph at lines 319--319
+|[]\T1/futs/b/n/17.28 Les cou-ver-tures du bâ-ti-ment de scène et les cir-cu-la
+-tions
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 325.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--347
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 358.
+
+[31] [32
+
+] [33] (./Part1.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [32
+ [34
 
-] (./francaisbst.tex))) [33]
+] (./francaisbst.tex))) [35]
 \openout2 = `Part2.aux'.
 
 
-(./Part2/Part2.tex [34
+(./Part2/Part2.tex [36
 
 
 
 
-] [35] [36] [37
+] [37] [38] [39
 
-] [38
+] [40
 
 ]
 Chapitre 4.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc6 is empty on input line 15.
-[39] [40]
+(minitoc)             Main.mtc5 is empty on input line 15.
+[41] [42]
 Chapitre 5.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc7 is empty on input line 31.
-[41
-
-] [42]
-Chapitre 6.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc8 is empty on input line 47.
+(minitoc)             Main.mtc6 is empty on input line 31.
 [43
 
-] [44] [45
+] [44]
+Chapitre 6.
+Package minitoc Info: I0006
+(minitoc)             Main.mtc7 is empty on input line 47.
+[45
 
-] (./Part2.bbl (./Main.brf) [46
+] [46] [47
+
+] (./Part2.bbl (./Main.brf) [48
 
 ] (./francaisbst.tex)
 
 Package natbib Warning: Empty `thebibliography' environment on input line 19.
 
-)) [47]
+)) [49]
 \openout2 = `Part3.aux'.
 
- (./Part3/Part3.tex [48
+ (./Part3/Part3.tex [50
 
 
 
 
-] [49] [50] [51
+] [51] [52] [53
 
-] [52
+] [54
 
 ]
 Chapitre 7.
@@ -3064,23 +3100,31 @@ Chapitre 7.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc9) [53] [54]
+(./Main.mtc8) [55] [56]
 Chapitre 8.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc10) [55
+(./Main.mtc9) [57
 
-] [56
+] [58]
+Chapitre 9.
+\openout3 = `Main.mtc'.
 
-] [57] (./Part3.bbl (./Main.brf) [58
+\openout3 = `Main.mtc'.
+
+(./Main.mtc10) [59
+
+] [60
+
+] [61] (./Part3.bbl (./Main.brf) [62
 
 ] (./francaisbst.tex)
 
 Package natbib Warning: Empty `thebibliography' environment on input line 19.
 
-)) [59] [60
+)) [63] [64
 
 
 ]
@@ -3094,20 +3138,164 @@ LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
 
 LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
 
-<Annexes/images/cotes.jpg, id=1100, 1092.08pt x 2484.28125pt>
+<Annexes/images/CoupeCavea.jpg, id=1256, 2343.75626pt x 1427.3325pt>
+File: Annexes/images/CoupeCavea.jpg Graphic file (type jpg)
+
+<use Annexes/images/CoupeCavea.jpg>
+Package pdftex.def Info: Annexes/images/CoupeCavea.jpg used on input line 14.
+(pdftex.def)             Requested size: 441.01773pt x 268.5607pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
+5.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
+5.
+
+<Annexes/images/caristieDessus.jpg, id=1259, 1922.18124pt x 2571.6075pt>
+File: Annexes/images/caristieDessus.jpg Graphic file (type jpg)
+
+<use Annexes/images/caristieDessus.jpg>
+Package pdftex.def Info: Annexes/images/caristieDessus.jpg used on input line 2
+0.
+(pdftex.def)             Requested size: 441.01773pt x 590.00543pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
+1.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
+1.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Annexes/images/cotes.jpg, id=1260, 1092.08pt x 2484.28125pt>
 File: Annexes/images/cotes.jpg Graphic file (type jpg)
 
 <use Annexes/images/cotes.jpg>
-Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 14.
+Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 26.
 (pdftex.def)             Requested size: 297.18181pt x 676.04005pt.
 
 
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
-5.
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
+7.
 
 
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
-5.
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
+7.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Annexes/images/aditusOccidental.jpg, id=1261, 2581.645pt x 2370.8575pt>
+File: Annexes/images/aditusOccidental.jpg Graphic file (type jpg)
+
+<use Annexes/images/aditusOccidental.jpg>
+Package pdftex.def Info: Annexes/images/aditusOccidental.jpg used on input line
+ 33.
+(pdftex.def)             Requested size: 216.1011pt x 198.42714pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
+4.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
+4.
+
+<Annexes/images/aditusOriental.jpg, id=1264, 1919.17pt x 1755.55875pt>
+File: Annexes/images/aditusOriental.jpg Graphic file (type jpg)
+
+<use Annexes/images/aditusOriental.jpg>
+Package pdftex.def Info: Annexes/images/aditusOriental.jpg used on input line 3
+8.
+(pdftex.def)             Requested size: 216.1011pt x 197.66595pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
+9.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
+9.
+
+<Annexes/images/frontdescene.jpg, id=1267, 1694.33pt x 1696.3375pt>
+File: Annexes/images/frontdescene.jpg Graphic file (type jpg)
+
+<use Annexes/images/frontdescene.jpg>
+Package pdftex.def Info: Annexes/images/frontdescene.jpg used on input line 46.
+
+(pdftex.def)             Requested size: 441.01773pt x 441.52914pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 4
+7.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 4
+7.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Annexes/images/retourOccidentalMur.jpg, id=1268, 965.6075pt x 2384.91pt>
+File: Annexes/images/retourOccidentalMur.jpg Graphic file (type jpg)
+
+<use Annexes/images/retourOccidentalMur.jpg>
+Package pdftex.def Info: Annexes/images/retourOccidentalMur.jpg used on input l
+ine 52.
+(pdftex.def)             Requested size: 273.71286pt x 676.04005pt.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
+3.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
+3.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Annexes/images/grenierOcci.png, id=1269, 961.5925pt x 449.68pt>
+File: Annexes/images/grenierOcci.png Graphic file (type png)
+
+<use Annexes/images/grenierOcci.png>
+Package pdftex.def Info: Annexes/images/grenierOcci.png used on input line 58.
+(pdftex.def)             Requested size: 1445.80396pt x 676.04005pt.
+
+Overfull \hbox (1004.78622pt too wide) in paragraph at lines 58--59
+[][] 
+ []
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
+9.
+
+
+Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
+9.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Annexes/images/colline.png, id=1270, 556.0775pt x 720.6925pt>
+File: Annexes/images/colline.png Graphic file (type png)
+
+<use Annexes/images/colline.png>
+Package pdftex.def Info: Annexes/images/colline.png used on input line 64.
+(pdftex.def)             Requested size: 441.01773pt x 571.58421pt.
+
+
+Package natbib Warning: Citation `orangeTxt' on page I undefined on input line 
+65.
+
+
+Package natbib Warning: Citation `orangeTxt' on page I undefined on input line 
+65.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3116,45 +3304,32 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-] [2 <./Annexes/images/cotes.jpg>]) [3
+ <./Annexes/images/CoupeCavea.jpg>] [2 <./Annexes/images/caristieDessus.jpg>] [
+3 <./Annexes/images/cotes.jpg>] [4 <./Annexes/images/aditusOccidental.jpg> <./A
+nnexes/images/aditusOriental.jpg> <./Annexes/images/frontdescene.jpg>]
+[5 <./Annexes/images/retourOccidentalMur.jpg>] [6 <./Annexes/images/grenierOcci
+.png>] [7 <./Annexes/images/colline.png>]) [8
 
-] (./Main.acr [4
-
-
-]
+] (./Main.acr
 Annexe B.
-) (./Main.gls [5
+) (./Main.gls [9
 
-] [6
+
+
+] [10
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=1155, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=1344, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
 Package pdftex.def Info: glossaire/basiliques.jpg used on input line 52.
 (pdftex.def)             Requested size: 411.64304pt x 225.11261pt.
+ [11
 
-<glossaire/modCavea.png, id=1169, 1032.85875pt x 394.47375pt>
-File: glossaire/modCavea.png Graphic file (type png)
-
-<use glossaire/modCavea.png>
-Package pdftex.def Info: glossaire/modCavea.png used on input line 69.
-(pdftex.def)             Requested size: 411.64304pt x 157.21487pt.
-
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [7
-
- <./glossaire/basiliques.jpg>] [8 <./glossaire/modCavea.png>]
-<glossaire/modMur.png, id=1253, 923.45pt x 312.16624pt>
-File: glossaire/modMur.png Graphic file (type png)
-
-<use glossaire/modMur.png>
-Package pdftex.def Info: glossaire/modMur.png used on input line 143.
-(pdftex.def)             Requested size: 411.64304pt x 139.15408pt.
-) (./Main.not [9 <./glossaire/modMur.png>] [10
+ <./glossaire/basiliques.jpg>] [12])
+(./Main.not [13] [14
 
 ]
 Annexe D.
@@ -3167,7 +3342,7 @@ Package minitoc Info: I0009
 (minitoc)             Creating the Main.maf file.
 \openout3 = `Main.maf'.
 
-[11
+[15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
@@ -3177,41 +3352,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B35C6B932265D1CC3F1179B8092BD2B;3797.
+(rerunfilecheck)             Checksum: F7A330CE98AB2A0ED302D56972F0B9C4;4319.
+Package rerunfilecheck Info: File `Main.brf' has not changed.
+(rerunfilecheck)             Checksum: 2559310F6AB29E9A18E987A49A3B2BB0;1832.
 
-
-Package rerunfilecheck Warning: File `Main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `Main.brf':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  F4E24F35FBC1EB31C6F9184E6CFF1AF6;1868.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 51754 strings out of 493014
- 1118395 string characters out of 6133351
- 1364189 words of memory out of 5000000
- 53783 multiletter control sequences out of 15000+600000
- 178774 words of font info for 144 fonts, out of 8000000 for 9000
+ 51827 strings out of 493014
+ 1119806 string characters out of 6133351
+ 1366661 words of memory out of 5000000
+ 53819 multiletter control sequences out of 15000+600000
+ 180287 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,87p,10450b,1504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,12n,87p,10450b,1466s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (83 pages, 17618617 bytes).
+ve/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/adobe/utopia/putri8a.pfb>
+Output written on Main.pdf (91 pages, 24637559 bytes).
 PDF statistics:
- 1374 PDF objects out of 1440 (max. 8388607)
- 1207 compressed objects within 13 object streams
- 221 named destinations out of 1000 (max. 500000)
- 584 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1568 PDF objects out of 1728 (max. 8388607)
+ 1387 compressed objects within 14 object streams
+ 244 named destinations out of 1000 (max. 500000)
+ 665 words of extra memory for PDF output out of 10000 (max. 10000000)
 
