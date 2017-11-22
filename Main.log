@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  17 NOV 2017 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  22 NOV 2017 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2654,14 +2654,14 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<pageDeGarde/logo_upmc.jpg, id=264, 1395.2125pt x 469.755pt>
+<pageDeGarde/logo_upmc.jpg, id=111, 1395.2125pt x 469.755pt>
 File: pageDeGarde/logo_upmc.jpg Graphic file (type jpg)
 
 <use pageDeGarde/logo_upmc.jpg>
 Package pdftex.def Info: pageDeGarde/logo_upmc.jpg used on input line 48.
 (pdftex.def)             Requested size: 153.64644pt x 51.73055pt.
 
-<pageDeGarde/logoISCD_NOIR.png, id=265, 1027.84pt x 243.91125pt>
+<pageDeGarde/logoISCD_NOIR.png, id=112, 1027.84pt x 243.91125pt>
 File: pageDeGarde/logoISCD_NOIR.png Graphic file (type png)
 
 <use pageDeGarde/logoISCD_NOIR.png>
@@ -2689,24 +2689,10 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
 
 
- <./pageDeGarde/logo_upmc.jpg (PNG copy)> <./pageDeGarde/logoISCD_NOIR.png>]
-\openout2 = `Remerciements.aux'.
-
- (./Intro/Remerciements.tex [2
+ <./pageDeGarde/logo_upmc.jpg (PNG copy)> <./pageDeGarde/logoISCD_NOIR.png>] [6
 
 
 
-
-
-] [3] [4
-
-]
-Overfull \hbox (4.28973pt too wide) in paragraph at lines 13--14
-\T1/futs/m/n/12 leurs re-le-vés et do-cu-ments in-dis-pen-sables à la réa-li-sa
--tion du mo-dèle nu-mé-rique du théâtre
- []
-
-) [5] [6
 
 
 ] (./Main.toc [7]
@@ -2734,19 +2720,6 @@ Overfull \hbox (2.18394pt too wide) detected at line 89
 
 
 ]
-\openout2 = `Intro.aux'.
-
- (./Intro/Intro.tex)
-Overfull \hbox (15.2065pt too wide) in paragraph at lines 12--73
-[]\T1/futs/m/n/12 Cette dé-marche a na-tu-rel-le-ment ou-vert la voie à une étu
-de plus large du théâtre d'Orange.
- []
-
-[1
-
-
-
-]
 \openout2 = `Part1.aux'.
 
  (./Part1/Part1.tex [2
@@ -2754,10 +2727,12 @@ de plus large du théâtre d'Orange.
 
 
 
-] [3] [4] [5
 
 ]
-<Part1/images/av_deblaiement.png, id=501, 1001.7425pt x 584.1825pt>
+[3] [4] [5
+
+]
+<Part1/images/av_deblaiement.png, id=352, 1001.7425pt x 584.1825pt>
 File: Part1/images/av_deblaiement.png Graphic file (type png)
 
 <use Part1/images/av_deblaiement.png>
@@ -2765,7 +2740,7 @@ Package pdftex.def Info: Part1/images/av_deblaiement.png used on input line 20.
 
 (pdftex.def)             Requested size: 216.1011pt x 126.01573pt.
 
-<Part1/images/asselineau.jpg, id=503, 1834.855pt x 1110.1475pt>
+<Part1/images/asselineau.jpg, id=354, 1834.855pt x 1110.1475pt>
 File: Part1/images/asselineau.jpg Graphic file (type jpg)
 
 <use Part1/images/asselineau.jpg>
@@ -2800,7 +2775,7 @@ Overfull \hbox (13.47859pt too wide) in paragraph at lines 42--43
 e-sure et d'ana-lyse du théâtre d'Orange
  []
 
-<Part1/images/vuensemble.jpg, id=548, 1445.4pt x 962.59625pt>
+<Part1/images/vuensemble.jpg, id=399, 1445.4pt x 962.59625pt>
 File: Part1/images/vuensemble.jpg Graphic file (type jpg)
 
 <use Part1/images/vuensemble.jpg>
@@ -2835,7 +2810,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 62.
 
-[10] <Part1/images/1erniveau.jpg, id=652, 1595.9625pt x 1226.5825pt>
+[10] <Part1/images/1erniveau.jpg, id=503, 1595.9625pt x 1226.5825pt>
 File: Part1/images/1erniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/1erniveau.jpg>
@@ -2848,21 +2823,21 @@ Overfull \hbox (26.45291pt too wide) in paragraph at lines 80--81
 ulacre[][]
  []
 
-<Part1/images/2emeniveau.jpg, id=664, 1609.01125pt x 1226.5825pt>
+<Part1/images/2emeniveau.jpg, id=515, 1609.01125pt x 1226.5825pt>
 File: Part1/images/2emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/2emeniveau.jpg>
 Package pdftex.def Info: Part1/images/2emeniveau.jpg used on input line 83.
 (pdftex.def)             Requested size: 441.01773pt x 336.19762pt.
  [11 <./Part1/images/1erniveau.jpg>] [12 <./Part1/images/2emeniveau.jpg>]
-<Part1/images/3emeniveau.jpg, id=693, 1609.01125pt x 1228.59pt>
+<Part1/images/3emeniveau.jpg, id=545, 1609.01125pt x 1228.59pt>
 File: Part1/images/3emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/3emeniveau.jpg>
 Package pdftex.def Info: Part1/images/3emeniveau.jpg used on input line 93.
 (pdftex.def)             Requested size: 441.01773pt x 336.74786pt.
 
-<Part1/images/couvertureBadie.png, id=705, 369.38pt x 315.67938pt>
+<Part1/images/couvertureBadie.png, id=557, 369.38pt x 315.67938pt>
 File: Part1/images/couvertureBadie.png Graphic file (type png)
 
 <use Part1/images/couvertureBadie.png>
@@ -2876,14 +2851,14 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 114
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [13 <./Part1/images/3emeniveau.jpg>] [14 <./Part1/images/couvertureBadie.png>
 ]
-<Part1/images/toitCaristie.png, id=737, 309.155pt x 212.795pt>
+<Part1/images/toitCaristie.png, id=588, 309.155pt x 212.795pt>
 File: Part1/images/toitCaristie.png Graphic file (type png)
 
 <use Part1/images/toitCaristie.png>
 Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 120.
 (pdftex.def)             Requested size: 216.1011pt x 148.7509pt.
 
-<Part1/images/toitBadie.png, id=738, 289.08pt x 201.75375pt>
+<Part1/images/toitBadie.png, id=589, 289.08pt x 201.75375pt>
 File: Part1/images/toitBadie.png Graphic file (type png)
 
 <use Part1/images/toitBadie.png>
@@ -2898,7 +2873,7 @@ Underfull \hbox (badness 1308) in paragraph at lines 126--126
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
-<Part1/images/velumCaristie.jpg, id=766, 622.325pt x 448.67625pt>
+<Part1/images/velumCaristie.jpg, id=617, 622.325pt x 448.67625pt>
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
@@ -2925,7 +2900,7 @@ Overfull \hbox (2.5299pt too wide) in paragraph at lines 167--168
  les mêmes in-for-ma-tions qu'avec
  []
 
-[18] [19] <Part1/images/modCavea.png, id=807, 1032.85875pt x 394.47375pt>
+[18] [19] <Part1/images/modCavea.png, id=658, 1032.85875pt x 394.47375pt>
 File: Part1/images/modCavea.png Graphic file (type png)
 
 <use Part1/images/modCavea.png>
@@ -2945,31 +2920,24 @@ Overfull \hbox (81.71472pt too wide) in paragraph at lines 220--221
  []
 
 [20 <./Part1/images/modCavea.png>]
-Overfull \hbox (3.32066pt too wide) in paragraph at lines 225--226
-\T1/futs/m/n/12 est don-née par le plan de A.Caristie [[][][]\T1/futs/m/sc/12 B
-a-die \T1/futs/m/n/12 et col-lab.[][], [][]2013a[][], Pl. XXXIII] en es-ti-mant
- qu'elles
- []
-
-
-Underfull \vbox (badness 2698) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-<Part1/images/parodos.png, id=851, 372.39125pt x 331.2375pt>
+<Part1/images/parodos.png, id=702, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
 Package pdftex.def Info: Part1/images/parodos.png used on input line 232.
 (pdftex.def)             Requested size: 220.50887pt x 196.14613pt.
 
-<Part1/images/gradinCoupe.png, id=861, 510.90875pt x 409.53pt>
+<Part1/images/gradinCoupe.png, id=712, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
 Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 249.
 (pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
 
-<Part1/images/escaliers.png, id=866, 551.05875pt x 433.62pt>
+<Part1/images/escaliers.png, id=717, 551.05875pt x 433.62pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
@@ -2979,23 +2947,20 @@ Package pdftex.def Info: Part1/images/escaliers.png used on input line 254.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./Part1/images/parodos.png>]
+[22 <./Part1/images/parodos.png>] [23 <./Part1/images/gradinCoupe.png> <./Part1
+/images/escaliers.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 267.
 
-<Part1/images/modAditus.png, id=893, 984.67876pt x 782.925pt>
+<Part1/images/modAditus.png, id=753, 984.67876pt x 782.925pt>
 File: Part1/images/modAditus.png Graphic file (type png)
 
 <use Part1/images/modAditus.png>
 Package pdftex.def Info: Part1/images/modAditus.png used on input line 270.
 (pdftex.def)             Requested size: 441.01773pt x 350.65244pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>] [24 <./Pa
-rt1/images/modAditus.png>] <Part1/images/modMur.png, id=937, 923.45pt x 312.166
-24pt>
+ [24 <./Part1/images/modAditus.png>]
+<Part1/images/modMur.png, id=789, 923.45pt x 312.16624pt>
 File: Part1/images/modMur.png Graphic file (type png)
 
 <use Part1/images/modMur.png>
@@ -3033,282 +2998,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--347
 
  []
 
+[31]
+Overfull \hbox (6.9626pt too wide) in paragraph at lines 382--383
+[]\T1/futs/m/n/12 On uti-li-sera en-suite un [][][]mo-di-fier "Ar-ray"[][] pour
+ ré-pé-ter une fois l'en-semble mât-consoles-
+ []
+
+[32]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 358.
+(hyperref)                removing `\gls' on input line 393.
 
-[31] [32
+[33] [34
 
-] [33] (./Part1.bbl (./Main.brf)
+] [35] (./Part1.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [34
+ [36
 
-] (./francaisbst.tex))) [35]
-\openout2 = `Part2.aux'.
+] (./francaisbst.tex))) [37]
+[64
 
 
-(./Part2/Part2.tex [36
 
 
 
-
-] [37] [38] [39
-
-] [40
-
-]
-Chapitre 4.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc5 is empty on input line 15.
-[41] [42]
-Chapitre 5.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc6 is empty on input line 31.
-[43
-
-] [44]
-Chapitre 6.
-Package minitoc Info: I0006
-(minitoc)             Main.mtc7 is empty on input line 47.
-[45
-
-] [46] [47
-
-] (./Part2.bbl (./Main.brf) [48
-
-] (./francaisbst.tex)
-
-Package natbib Warning: Empty `thebibliography' environment on input line 19.
-
-)) [49]
-\openout2 = `Part3.aux'.
-
- (./Part3/Part3.tex [50
-
-
-
-
-] [51] [52] [53
-
-] [54
-
-]
-Chapitre 7.
-\openout3 = `Main.mtc'.
-
-\openout3 = `Main.mtc'.
-
-(./Main.mtc8) [55] [56]
-Chapitre 8.
-\openout3 = `Main.mtc'.
-
-\openout3 = `Main.mtc'.
-
-(./Main.mtc9) [57
-
-] [58]
-Chapitre 9.
-\openout3 = `Main.mtc'.
-
-\openout3 = `Main.mtc'.
-
-(./Main.mtc10) [59
-
-] [60
-
-] [61] (./Part3.bbl (./Main.brf) [62
-
-] (./francaisbst.tex)
-
-Package natbib Warning: Empty `thebibliography' environment on input line 19.
-
-)) [63] [64
-
-
-]
-\openout2 = `Annexes.aux'.
-
- (./Annexes/Annexes.tex
-Annexe A.
-
-LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
-
-
-LaTeX Warning: Reference `eq:alphagamma' on page I undefined on input line 11.
-
-<Annexes/images/CoupeCavea.jpg, id=1256, 2343.75626pt x 1427.3325pt>
-File: Annexes/images/CoupeCavea.jpg Graphic file (type jpg)
-
-<use Annexes/images/CoupeCavea.jpg>
-Package pdftex.def Info: Annexes/images/CoupeCavea.jpg used on input line 14.
-(pdftex.def)             Requested size: 441.01773pt x 268.5607pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
-5.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 1
-5.
-
-<Annexes/images/caristieDessus.jpg, id=1259, 1922.18124pt x 2571.6075pt>
-File: Annexes/images/caristieDessus.jpg Graphic file (type jpg)
-
-<use Annexes/images/caristieDessus.jpg>
-Package pdftex.def Info: Annexes/images/caristieDessus.jpg used on input line 2
-0.
-(pdftex.def)             Requested size: 441.01773pt x 590.00543pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
-1.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
-1.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Annexes/images/cotes.jpg, id=1260, 1092.08pt x 2484.28125pt>
-File: Annexes/images/cotes.jpg Graphic file (type jpg)
-
-<use Annexes/images/cotes.jpg>
-Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 26.
-(pdftex.def)             Requested size: 297.18181pt x 676.04005pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
-7.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 2
-7.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Annexes/images/aditusOccidental.jpg, id=1261, 2581.645pt x 2370.8575pt>
-File: Annexes/images/aditusOccidental.jpg Graphic file (type jpg)
-
-<use Annexes/images/aditusOccidental.jpg>
-Package pdftex.def Info: Annexes/images/aditusOccidental.jpg used on input line
- 33.
-(pdftex.def)             Requested size: 216.1011pt x 198.42714pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
-4.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
-4.
-
-<Annexes/images/aditusOriental.jpg, id=1264, 1919.17pt x 1755.55875pt>
-File: Annexes/images/aditusOriental.jpg Graphic file (type jpg)
-
-<use Annexes/images/aditusOriental.jpg>
-Package pdftex.def Info: Annexes/images/aditusOriental.jpg used on input line 3
-8.
-(pdftex.def)             Requested size: 216.1011pt x 197.66595pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
-9.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 3
-9.
-
-<Annexes/images/frontdescene.jpg, id=1267, 1694.33pt x 1696.3375pt>
-File: Annexes/images/frontdescene.jpg Graphic file (type jpg)
-
-<use Annexes/images/frontdescene.jpg>
-Package pdftex.def Info: Annexes/images/frontdescene.jpg used on input line 46.
-
-(pdftex.def)             Requested size: 441.01773pt x 441.52914pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 4
-7.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 4
-7.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Annexes/images/retourOccidentalMur.jpg, id=1268, 965.6075pt x 2384.91pt>
-File: Annexes/images/retourOccidentalMur.jpg Graphic file (type jpg)
-
-<use Annexes/images/retourOccidentalMur.jpg>
-Package pdftex.def Info: Annexes/images/retourOccidentalMur.jpg used on input l
-ine 52.
-(pdftex.def)             Requested size: 273.71286pt x 676.04005pt.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
-3.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
-3.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Annexes/images/grenierOcci.png, id=1269, 961.5925pt x 449.68pt>
-File: Annexes/images/grenierOcci.png Graphic file (type png)
-
-<use Annexes/images/grenierOcci.png>
-Package pdftex.def Info: Annexes/images/grenierOcci.png used on input line 58.
-(pdftex.def)             Requested size: 1445.80396pt x 676.04005pt.
-
-Overfull \hbox (1004.78622pt too wide) in paragraph at lines 58--59
-[][] 
- []
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
-9.
-
-
-Package natbib Warning: Citation `orangePl' on page I undefined on input line 5
-9.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Annexes/images/colline.png, id=1270, 556.0775pt x 720.6925pt>
-File: Annexes/images/colline.png Graphic file (type png)
-
-<use Annexes/images/colline.png>
-Package pdftex.def Info: Annexes/images/colline.png used on input line 64.
-(pdftex.def)             Requested size: 441.01773pt x 571.58421pt.
-
-
-Package natbib Warning: Citation `orangeTxt' on page I undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `orangeTxt' on page I undefined on input line 
-65.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1
-
-
-
- <./Annexes/images/CoupeCavea.jpg>] [2 <./Annexes/images/caristieDessus.jpg>] [
-3 <./Annexes/images/cotes.jpg>] [4 <./Annexes/images/aditusOccidental.jpg> <./A
-nnexes/images/aditusOriental.jpg> <./Annexes/images/frontdescene.jpg>]
-[5 <./Annexes/images/retourOccidentalMur.jpg>] [6 <./Annexes/images/grenierOcci
-.png>] [7 <./Annexes/images/colline.png>]) [8
 
 ] (./Main.acr
 Annexe B.
@@ -3316,11 +3031,12 @@ Annexe B.
 
 
 
+
 ] [10
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=1344, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=996, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3334,28 +3050,36 @@ Package pdftex.def Info: glossaire/basiliques.jpg used on input line 52.
 ]
 Annexe D.
 )
-
-Package natbib Warning: There were undefined citations.
-
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Main.maf file.
 \openout3 = `Main.maf'.
 
-[15
+ [15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
- (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux) (./Part2.aux) (.
-/Part3.aux) (./Annexes.aux))
+ (./Main.aux (./Remerciements.aux) (./Intro.aux) (./Part1.aux)
+(./Part2.aux) (./Part3.aux) (./Annexes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: F7A330CE98AB2A0ED302D56972F0B9C4;4319.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 2559310F6AB29E9A18E987A49A3B2BB0;1832.
 
+
+Package rerunfilecheck Warning: File `Main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Main.out':
+(rerunfilecheck)             Before: 10D774462465C5D4C005FFA2A445EB6C;1810
+(rerunfilecheck)             After:  C9393A4F2D98C442DD120FCE0BE3A032;1811.
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  9571023ACCDE783869CFB4CA6D6CBE83;1927.
 
 LaTeX Warning: There were undefined references.
 
@@ -3364,15 +3088,177 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 51827 strings out of 493014
- 1119806 string characters out of 6133351
- 1366661 words of memory out of 5000000
- 53819 multiletter control sequences out of 15000+600000
+ 51725 strings out of 493014
+ 1118153 string characters out of 6133351
+ 1367477 words of memory out of 5000000
+ 53799 multiletter control sequences out of 15000+600000
  180287 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,87p,10450b,1466s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exis
+ 64i,12n,87p,10450b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.I} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{page.VII} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{page.V} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{page.VI} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{page.1} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{glo:baking} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:keyframe} has been referenced but does not exis
 t, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:pilastre} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.28} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.27} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.26} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{part.3} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.25} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.24} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.23} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{part.2} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+ replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
@@ -3383,10 +3269,10 @@ e/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (91 pages, 24637559 bytes).
+Output written on Main.pdf (52 pages, 14551724 bytes).
 PDF statistics:
- 1568 PDF objects out of 1728 (max. 8388607)
- 1387 compressed objects within 14 object streams
- 244 named destinations out of 1000 (max. 500000)
- 665 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1216 PDF objects out of 1440 (max. 8388607)
+ 1091 compressed objects within 11 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

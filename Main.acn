@@ -1,8 +1,3 @@
-(indexentry :tkey (("UPMC" "\\glossentry{upmc}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("CNRS" "\\glossentry{cnrs}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("ISCD" "\\glossentry{iscd}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("UPMC" "\\glossentry{upmc}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("CMAP" "\\glossentry{cmap}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IRAA" "\\glossentry{iraa}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 

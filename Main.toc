@@ -7,7 +7,7 @@
 \gdef \the@ipfilectr {@-3}
 \contentsline {part}{I\hspace {1em}Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{3}{part.1}
 \contentsline {xpart}{Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{5}{part.1}
-\contentsline {starchapter}{Introduction}{5}{chapter*.7}
+\contentsline {starchapter}{Introduction}{5}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Architecture g\IeC {\'e}n\IeC {\'e}rale du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}
 \contentsline {section}{\numberline {1.2}Le \gls {postscaenium}, les \glspl {basilique} et le \gls {pulpitum}}{8}{section.1.2}
@@ -28,10 +28,10 @@
 \contentsline {section}{\numberline {3.1}Les couvertures du b\IeC {\^a}timent de sc\IeC {\`e}ne et les circulations internes}{30}{section.3.1}
 \contentsline {section}{\numberline {3.2}La \gls {porticus isc}}{30}{section.3.2}
 \contentsline {section}{\numberline {3.3}Le velum}{31}{section.3.3}
-\contentsline {section}{\numberline {3.4}Les escaliers}{31}{section.3.4}
-\contentsline {section}{\numberline {3.5}Les rambardes et le \gls {balteus}}{31}{section.3.5}
-\contentsline {chapter}{Conclusion}{33}{chapter*.21}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{35}{chapter*.22}
+\contentsline {section}{\numberline {3.4}Les escaliers}{33}{section.3.4}
+\contentsline {section}{\numberline {3.5}Les rambardes et le \gls {balteus}}{33}{section.3.5}
+\contentsline {chapter}{Conclusion}{35}{chapter*.18}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{37}{chapter*.19}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {part}{II\hspace {1em}Calculs acoustiques}{37}{part.2}
