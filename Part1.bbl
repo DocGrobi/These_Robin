@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{16}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,6 +15,9 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{doc()}]{doc_blender}
+ \urlprefix\url{docs.blender.org/manual/fr/dev/}.
 
 \bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
   \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
@@ -40,12 +43,30 @@
   \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
   recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
 
+\bibitem[{\textsc{Fincker} \bbland{} \textsc{Moretti}(2009)}]{rideau}
+\textsc{Fincker, M.} \bbland{} \textsc{J.-C. Moretti}. 2009, \enquote{Le rideau
+  de sc{\`e}ne dans le th{\'e}{\^a}tre romain}, \bblin{} \emph{La scaenae frons
+  en la arquitectura teatral romana}, \bbledby{} S.~Ramallo~Asensio \bbland{}
+  N.~R{\"o}ring, Actas del Symposium Internacional celebrado en Cartagena,
+  Universidad de Murcia Fundaci{\'o}n Teatro Romano de Cartagena, Museo del
+  Teatro Romano, \bblpp{} 309--329.
+
+\bibitem[{\textsc{Fleury} \bbland{} \textsc{Madeleine}(2007)}]{fleury}
+\textsc{Fleury, P.} \bbland{} \textsc{S.~Madeleine}. 2007,
+  \enquote{R{\'e}alit{\'e} virtuelle et restitution de la rome antique du ive
+  si{\`e}cle apr{\`e}s j.-c}, \emph{Histoire urbaine}, \bblvol{}~1,
+  \bblno{}~18, \bblpp{} 157--165.
+
 \bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
 \textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
   th{\'e}{\^a}tres romains, {\`a} propose de ceux d'Arles et d'Orange},
   \emph{Sujets Sujets divers d'{\'e}rudition}, \bblvol{}~13, M{\'e}moires
   pr{\'e}sent{\'e}s par divers savants {\`a} l'Acad{\'e}mie des inscriptions et
   belles-lettres de l'Institut de France.
+
+\bibitem[{\textsc{Golvin}(2005)}]{golvin}
+\textsc{Golvin, J.-C.} 2005, \enquote{L'image de restitution et la restitution
+  de l'image}, \bblin{} \emph{Cours de Tunis}, \bblvol{}~1.
 
 \bibitem[{\textsc{Moretti}(1993)}]{moretti}
 \textsc{Moretti, J.-C.} 1993, \emph{{\'E}tude sur la nomenclature grecque de
@@ -54,6 +75,11 @@
 
 \bibitem[{\textsc{Pline}(77)}]{pline}
 \textsc{Pline}. 77, \emph{Naturalis historia}, \bblvol{} XIX.
+
+\bibitem[{\textsc{Rocheleau}(2010)}]{rocheleau}
+\textsc{Rocheleau, M.} 2010, \enquote{La mod{\'e}lisation 3d comme m{\'e}thode
+  de recherche en sciences historiques}, \bblin{} \emph{ACTES DU 10e COLLOQUE
+  INTERNATIONAL {\'E}TUDIANT DU D{\'E}PARTEMENT D'HISTOIRE}.
 
 \bibitem[{\textsc{Roum{\'e}gous} \bbland{}
   \textsc{Provost}(2009)}]{carteArcheo}
@@ -65,7 +91,23 @@
   Minist{\`e}re de la Recherche Minist{\`e}re de la Culture et de la
   Communication.
 
+\bibitem[{\textsc{Tan} \bbletal{}(2014)\textsc{Tan}, \textsc{Croft} \bbland{}
+  \textsc{Tan}}]{tan}
+\textsc{Tan, A.}, \textsc{F.~J. Croft} \bbland{} \textsc{F.~Tan}. 2014,
+  \enquote{Simulating the construction process of the roman colosseum using
+  digital graphics}, \bblin{} \emph{16TH INTERNATIONAL CONFERENCE ON GEOMETRY
+  AND GRAPHICS}, \bbledby{} ISGG, Innsbruch, Autriche.
+
+\bibitem[{\textsc{Vergnieux}(2005)}]{archeogrid}
+\textsc{Vergnieux, R.} 2005, \enquote{Arch{\'e}ogrid : vers un conservatoire
+  national des donn{\'e}es}, \bblin{} \emph{Virtual Retrospect}, \bblpp{}
+  157--162.
+
 \bibitem[{\textsc{Vitruve}(-15)}]{vitruve}
 \textsc{Vitruve}. -15, \emph{De Architectura}, \bblvol{}~V.
+
+\bibitem[{\textsc{Wikip{\'e}dia}(2017)}]{precisionmachine}
+\textsc{Wikip{\'e}dia}. 2017, \enquote{Epsilon d'une machine},
+  \urlprefix\url{https://fr.wikipedia.org/wiki/Epsilon_d'une_machine}.
 
 \end{thebibliography}

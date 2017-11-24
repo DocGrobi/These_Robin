@@ -3,51 +3,60 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part1.aux
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
+Warning--entry type for "precisionmachine" isn't style-file defined
+--line 11 of file Part1/Biblio.bib
+Warning--entry type for "doc_blender" isn't style-file defined
+--line 86 of file Part1/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in doc_blender
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty year in doc_blender
 Warning--missing institution in orangeTxt
+Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
 Warning--missing publisher in pline
+Warning--empty pages in rocheleau
+Warning--empty pages in tan
 Warning--missing publisher in vitruve
-You've used 8 entries,
+You've used 16 entries,
             3493 wiz_defined-function locations,
-            746 strings with 7583 characters,
-and the built_in function-call counts, 4540 in all, are:
-= -- 267
-> -- 207
-< -- 9
-+ -- 72
-- -- 64
-* -- 399
-:= -- 655
-add.period$ -- 17
-call.type$ -- 8
-change.case$ -- 59
-chr.to.int$ -- 9
-cite$ -- 12
-duplicate$ -- 404
-empty$ -- 388
-format.name$ -- 81
-if$ -- 865
+            791 strings with 8854 characters,
+and the built_in function-call counts, 10380 in all, are:
+= -- 821
+> -- 329
+< -- 21
++ -- 134
+- -- 100
+* -- 771
+:= -- 1327
+add.period$ -- 33
+call.type$ -- 16
+change.case$ -- 109
+chr.to.int$ -- 17
+cite$ -- 27
+duplicate$ -- 1016
+empty$ -- 853
+format.name$ -- 135
+if$ -- 2065
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 81
-newline$ -- 42
-num.names$ -- 32
-pop$ -- 181
+missing$ -- 151
+newline$ -- 66
+num.names$ -- 62
+pop$ -- 428
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 96
 quote$ -- 0
-skip$ -- 146
+skip$ -- 457
 stack$ -- 0
-substring$ -- 92
-swap$ -- 204
-text.length$ -- 4
+substring$ -- 329
+swap$ -- 626
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 57
-warning$ -- 4
-while$ -- 24
+type$ -- 129
+warning$ -- 9
+while$ -- 56
 width$ -- 0
-write$ -- 100
-(There were 4 warnings)
+write$ -- 183
+(There were 11 warnings)
