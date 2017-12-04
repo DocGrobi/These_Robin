@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  24 NOV 2017 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  4 DEC 2017 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2855,17 +2855,17 @@ File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 File: Part1/images/toitCaristie.png Graphic file (type png)
 
 <use Part1/images/toitCaristie.png>
-Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 122.
+Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 121.
 (pdftex.def)             Requested size: 216.1011pt x 148.7509pt.
 
 <Part1/images/toitBadie.png, id=626, 289.08pt x 201.75375pt>
 File: Part1/images/toitBadie.png Graphic file (type png)
 
 <use Part1/images/toitBadie.png>
-Package pdftex.def Info: Part1/images/toitBadie.png used on input line 127.
+Package pdftex.def Info: Part1/images/toitBadie.png used on input line 126.
 (pdftex.def)             Requested size: 216.1011pt x 150.81929pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 128--128
+Underfull \hbox (badness 1308) in paragraph at lines 127--127
 []\T1/futs/m/n/10.95 (b) |Re-levé de la par-tie som-mi-tale du re-tour
  []
 
@@ -2874,7 +2874,7 @@ Underfull \hbox (badness 1308) in paragraph at lines 128--128
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
-Package pdftex.def Info: Part1/images/velumCaristie.jpg used on input line 142.
+Package pdftex.def Info: Part1/images/velumCaristie.jpg used on input line 141.
 
 (pdftex.def)             Requested size: 441.01773pt x 317.9599pt.
  [16 <./Part1/images/velumCaristie.jpg>]
@@ -2886,141 +2886,156 @@ Chapitre 2.
 (./Main.mtc3) [17
 
 ]
-Overfull \hbox (6.34222pt too wide) in paragraph at lines 169--171
+Overfull \hbox (6.34222pt too wide) in paragraph at lines 168--169
 \T1/futs/m/n/12 cheurs s'orientent au-jour-d'hui vers la mo-dé-li-sa-tion 3D. E
 f-fec-ti-ve-ment, jus-qu'à ces quelques
  []
 
 
-Overfull \hbox (2.5299pt too wide) in paragraph at lines 169--171
+Overfull \hbox (2.5299pt too wide) in paragraph at lines 168--169
 \T1/futs/m/n/12 ciennes tech-niques. Tout d'abord, il est pos-sible d'ob-te-nir
  les mêmes in-for-ma-tions qu'avec
  []
 
-[18] [19] <Part1/images/modCavea.png, id=706, 1032.85875pt x 394.47375pt>
+[18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+<Part1/images/modCavea.png, id=729, 1032.85875pt x 394.47375pt>
 File: Part1/images/modCavea.png Graphic file (type png)
 
 <use Part1/images/modCavea.png>
-Package pdftex.def Info: Part1/images/modCavea.png used on input line 226.
+Package pdftex.def Info: Part1/images/modCavea.png used on input line 244.
 (pdftex.def)             Requested size: 441.01773pt x 168.43462pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `CoupeCavea' on page 20 undefined on input line 234.
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
-[20]
+ []
 
-LaTeX Warning: Reference `CoupeCavea' on page 21 undefined on input line 240.
+[21]
+
+LaTeX Warning: Reference `CoupeCavea' on page 22 undefined on input line 258.
 
 
-Underfull \vbox (badness 4726) has occurred while \output is active []
+LaTeX Warning: Reference `CoupeCavea' on page 22 undefined on input line 275.
 
- [21 <./Part1/images/modCavea.png>]
-<Part1/images/parodos.png, id=747, 372.39125pt x 331.2375pt>
+[22 <./Part1/images/modCavea.png>]
+
+LaTeX Warning: Reference `CoupeCavea' on page 23 undefined on input line 282.
+
+
+LaTeX Warning: Reference `CoupeCavea' on page 23 undefined on input line 287.
+
+[23] <Part1/images/parodos.png, id=787, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
-Package pdftex.def Info: Part1/images/parodos.png used on input line 252.
+Package pdftex.def Info: Part1/images/parodos.png used on input line 296.
 (pdftex.def)             Requested size: 220.50887pt x 196.14613pt.
 
+Underfull \vbox (badness 1102) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22] <Part1/images/gradinCoupe.png, id=767, 510.90875pt x 409.53pt>
+ [24 <./Part1/images/parodos.png>]
+<Part1/images/gradinCoupe.png, id=803, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
-Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 269.
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 313.
 (pdftex.def)             Requested size: 153.2738pt x 122.85994pt.
 
-<Part1/images/escaliers.png, id=772, 551.05875pt x 433.62pt>
+<Part1/images/escaliers.png, id=808, 551.05875pt x 433.62pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
-Package pdftex.def Info: Part1/images/escaliers.png used on input line 274.
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 318.
 (pdftex.def)             Requested size: 165.3189pt x 130.087pt.
- [23 <./Part1/images/parodos.png> <./Part1/images/gradinCoupe.png> <./Part1/ima
-ges/escaliers.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 287.
-
-<Part1/images/modAditus.png, id=802, 984.67876pt x 782.925pt>
-File: Part1/images/modAditus.png Graphic file (type png)
-
-<use Part1/images/modAditus.png>
-Package pdftex.def Info: Part1/images/modAditus.png used on input line 290.
-(pdftex.def)             Requested size: 441.01773pt x 350.65244pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24] [25 <./Part1/images/modAditus.png>]
-<Part1/images/modMur.png, id=846, 923.45pt x 312.16624pt>
-File: Part1/images/modMur.png Graphic file (type png)
-
-<use Part1/images/modMur.png>
-Package pdftex.def Info: Part1/images/modMur.png used on input line 308.
-(pdftex.def)             Requested size: 441.01773pt x 149.08073pt.
- [26 <./Part1/images/modMur.png>]
-Overfull \hbox (0.10588pt too wide) in paragraph at lines 325--325
-|[]\T1/futs/b/n/17.28 Les cou-ver-tures du bâ-ti-ment de scène et les cir-cu-la
--tions
- []
-
-
-Underfull \vbox (badness 7326) has occurred while \output is active []
-
- [27]
+ [25 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 331.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 344--348
+<Part1/images/modAditus.png, id=836, 984.67876pt x 782.925pt>
+File: Part1/images/modAditus.png Graphic file (type png)
 
+<use Part1/images/modAditus.png>
+Package pdftex.def Info: Part1/images/modAditus.png used on input line 334.
+(pdftex.def)             Requested size: 441.01773pt x 350.65244pt.
+ [26 <./Part1/images/modAditus.png>]
+<Part1/images/modMur.png, id=870, 923.45pt x 312.16624pt>
+File: Part1/images/modMur.png Graphic file (type png)
+
+<use Part1/images/modMur.png>
+Package pdftex.def Info: Part1/images/modMur.png used on input line 352.
+(pdftex.def)             Requested size: 441.01773pt x 149.08073pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28 <./Part1/images/modMur.png>]
+Overfull \hbox (0.10588pt too wide) in paragraph at lines 369--369
+|[]\T1/futs/b/n/17.28 Les cou-ver-tures du bâ-ti-ment de scène et les cir-cu-la
+-tions
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--353
-
- []
-
+[29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 367.
+(hyperref)                removing `\gls' on input line 375.
 
-[29] [30]
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--397
+
+ []
+
+[30]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 411.
+
+[31] [32
+
+]
 Chapitre 3.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc4) [31
-
-]
-Overfull \hbox (6.9626pt too wide) in paragraph at lines 403--404
+(./Main.mtc4) [33]
+Overfull \hbox (6.9626pt too wide) in paragraph at lines 447--448
 []\T1/futs/m/n/12 On uti-li-sera en-suite un [][][]mo-di-fier "Ar-ray"[][] pour
  ré-pé-ter une fois l'en-semble mât-consoles-
  []
 
-[32] [33] [34] [35
-
-] (./Part1.bbl (./Main.brf)
+[34] [35] [36] (./Part1.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [36
+ [37
+
+] [38
 
 ] (./francaisbst.tex)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 21.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 46.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [37])) [38]
-[64
+)
+Underfull \hbox (badness 3792) in paragraph at lines 46--46
+[]\T1/futs/m/sc/12 Blender\T1/futs/m/n/12 . 2017, ^^SMa-nuel blen-der^^T, URL [
+][]$\T1/aett/m/n/12 https : / / docs . blender . org / manual / fr /
+ []
+
+[39])) [40] [64
 
 
 
@@ -3038,7 +3053,7 @@ Annexe B.
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=1103, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=1132, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3068,9 +3083,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 8F836159B243C3C94A7BEBB9F4FB1622;2149.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 0AD20D2E5218AA57BF73449D50E98AF6;2075.
 
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: CE8037D288AE4E63F8A1B647414BB127;2211
+(rerunfilecheck)             After:  63989DA3094CBC9CDD38F59830DE8A5A;2211.
 
 LaTeX Warning: There were undefined references.
 
@@ -3079,13 +3099,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 51897 strings out of 493014
- 1120986 string characters out of 6133351
- 1369760 words of memory out of 5000000
- 53942 multiletter control sequences out of 15000+600000
+ 51932 strings out of 493014
+ 1121557 string characters out of 6133351
+ 1370290 words of memory out of 5000000
+ 53974 multiletter control sequences out of 15000+600000
  181590 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,87p,10450b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,12n,87p,10450b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.I} has been referenced but does not exist, r
 eplaced by a fixed one
 
@@ -3116,10 +3136,13 @@ t, replaced by a fixed one
 pdfTeX warning (dest): name{glo:pilastre} has been referenced but does not exis
 t, replaced by a fixed one
 
+pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exist,
+ replaced by a fixed one
+
 pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:mirror} has been referenced but does not exist,
+pdfTeX warning (dest): name{glo:cireve} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
@@ -3267,10 +3290,10 @@ e/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
 exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/font
 s/type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (55 pages, 14571787 bytes).
+Output written on Main.pdf (57 pages, 14580712 bytes).
 PDF statistics:
- 1332 PDF objects out of 1440 (max. 8388607)
- 1201 compressed objects within 13 object streams
- 224 named destinations out of 1000 (max. 500000)
+ 1361 PDF objects out of 1440 (max. 8388607)
+ 1228 compressed objects within 13 object streams
+ 227 named destinations out of 1000 (max. 500000)
  356 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,9 +16,6 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
-\bibitem[{doc()}]{doc_blender}
- \urlprefix\url{docs.blender.org/manual/fr/dev/}.
-
 \bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
   \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
   \bbland{} \textsc{Tardy}}]{orangePl}
@@ -42,6 +39,10 @@
 \textsc{Badie, A.}, \textsc{J.-C. Moretti} \bbland{} \textsc{D.~Tardy}. 2007,
   \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
   recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
+
+\bibitem[{\textsc{Blender}(2017)}]{doc_blender}
+\textsc{Blender}. 2017, \enquote{Manuel blender},
+  \urlprefix\url{https://docs.blender.org/manual/fr/dev/}.
 
 \bibitem[{\textsc{Fincker} \bbland{} \textsc{Moretti}(2009)}]{rideau}
 \textsc{Fincker, M.} \bbland{} \textsc{J.-C. Moretti}. 2009, \enquote{Le rideau

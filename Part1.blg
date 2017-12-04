@@ -6,11 +6,9 @@ Database file #1: Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
 --line 11 of file Part1/Biblio.bib
 Warning--entry type for "doc_blender" isn't style-file defined
---line 86 of file Part1/Biblio.bib
+--line 87 of file Part1/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--to sort, need author or key in doc_blender
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty year in doc_blender
 Warning--missing institution in orangeTxt
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
@@ -20,43 +18,43 @@ Warning--empty pages in tan
 Warning--missing publisher in vitruve
 You've used 16 entries,
             3493 wiz_defined-function locations,
-            791 strings with 8854 characters,
-and the built_in function-call counts, 10380 in all, are:
-= -- 821
-> -- 329
-< -- 21
-+ -- 134
-- -- 100
-* -- 771
-:= -- 1327
+            793 strings with 8883 characters,
+and the built_in function-call counts, 10485 in all, are:
+= -- 828
+> -- 340
+< -- 22
++ -- 137
+- -- 103
+* -- 777
+:= -- 1357
 add.period$ -- 33
 call.type$ -- 16
-change.case$ -- 109
+change.case$ -- 111
 chr.to.int$ -- 17
-cite$ -- 27
-duplicate$ -- 1016
-empty$ -- 853
-format.name$ -- 135
-if$ -- 2065
+cite$ -- 23
+duplicate$ -- 1025
+empty$ -- 857
+format.name$ -- 139
+if$ -- 2083
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 151
+missing$ -- 152
 newline$ -- 66
-num.names$ -- 62
-pop$ -- 428
+num.names$ -- 66
+pop$ -- 419
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 97
 quote$ -- 0
-skip$ -- 457
+skip$ -- 461
 stack$ -- 0
-substring$ -- 329
-swap$ -- 626
+substring$ -- 327
+swap$ -- 634
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 129
-warning$ -- 9
-while$ -- 56
+warning$ -- 7
+while$ -- 59
 width$ -- 0
-write$ -- 183
-(There were 11 warnings)
+write$ -- 186
+(There were 9 warnings)
