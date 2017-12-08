@@ -10,7 +10,7 @@
 \contentsline {starchapter}{Introduction}{5}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Architecture g\IeC {\'e}n\IeC {\'e}rale du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}
-\contentsline {section}{\numberline {1.2}Le \gls {postscaenium}, les \glspl {basilique} et le \gls {pulpitum}}{8}{section.1.2}
+\contentsline {section}{\numberline {1.2}Le \gls {postscaenium}, les \glspl {basilique} et le \gls {pulpitum}}{9}{section.1.2}
 \contentsline {section}{\numberline {1.3}L'\gls {orchestra}, les \gls {aditus} et la \gls {cavea}}{10}{section.1.3}
 \contentsline {section}{\numberline {1.4}Les couvertures et le velum}{14}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}La couverture des \glspl {basilique} et du \gls {parascaenium}}{14}{subsection.1.4.1}
@@ -22,27 +22,30 @@
 \contentsline {section}{\numberline {2.3}La cavea et ses substructures}{21}{section.2.3}
 \contentsline {section}{\numberline {2.4}Les maenianum}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}Les \gls {aditus} et les tribunes}{27}{section.2.5}
-\contentsline {section}{\numberline {2.6}Le mur de sc\IeC {\`e}ne et ses basiliques}{28}{section.2.6}
-\contentsline {section}{\numberline {2.7}Le pulpitum et l'orchestra}{30}{section.2.7}
-\contentsline {section}{\numberline {2.8}Les couvertures du b\IeC {\^a}timent de sc\IeC {\`e}ne et les circulations internes}{30}{section.2.8}
-\contentsline {section}{\numberline {2.9}La \gls {porticus isc}}{31}{section.2.9}
-\contentsline {section}{\numberline {2.10}Les escaliers}{32}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Acc\IeC {\`e}s aux tribunes par les aditus}{32}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Acc\IeC {\`e}s \IeC {\`a} la cavea depuis l'ext\IeC {\'e}rieur}{33}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}Les cages escaliers des \gls {parascaenium}}{33}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}Les escaliers ext\IeC {\'e}rieurs}{33}{subsection.2.10.4}
-\contentsline {section}{\numberline {2.11}Les rambardes et le \gls {balteus}}{33}{section.2.11}
-\contentsline {section}{\numberline {2.12}La colline Saint-Eutrope}{33}{section.2.12}
-\contentsline {chapter}{\numberline {3}Applications}{35}{chapter.3}
-\contentsline {section}{\numberline {3.1}Le velum}{36}{section.3.1}
-\contentsline {section}{\numberline {3.2}Le rideau de sc\IeC {\`e}ne}{37}{section.3.2}
-\contentsline {section}{\numberline {3.3}Les syst\IeC {\`e}me de particules}{37}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Les spectateurs}{37}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Les arbres}{38}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Texturing}{38}{section.3.4}
-\contentsline {section}{\numberline {3.5}Autres projets ayant utilis\IeC {\'e}s le mod\IeC {\`e}le}{38}{section.3.5}
-\contentsline {chapter}{Conclusion}{39}{chapter*.19}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{42}{chapter*.20}
+\contentsline {section}{\numberline {2.6}Le mur de sc\IeC {\`e}ne et ses basiliques}{29}{section.2.6}
+\contentsline {section}{\numberline {2.7}Le pulpitum et l'orchestra}{31}{section.2.7}
+\contentsline {section}{\numberline {2.8}Les couvertures du b\IeC {\^a}timent de sc\IeC {\`e}ne}{31}{section.2.8}
+\contentsline {section}{\numberline {2.9}La \gls {porticus isc}}{33}{section.2.9}
+\contentsline {section}{\numberline {2.10}Les escaliers}{34}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Acc\IeC {\`e}s aux tribunes par les aditus}{34}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Acc\IeC {\`e}s \IeC {\`a} la cavea depuis l'ext\IeC {\'e}rieur}{34}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Les cages escaliers des \gls {parascaenium} et les paliers internes}{34}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}Les escaliers ext\IeC {\'e}rieurs}{35}{subsection.2.10.4}
+\contentsline {section}{\numberline {2.11}Les rambardes et le \gls {balteus}}{35}{section.2.11}
+\contentsline {section}{\numberline {2.12}La colline Saint-Eutrope}{35}{section.2.12}
+\contentsline {chapter}{\numberline {3}Applications}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{38}{section.3.1}
+\contentsline {section}{\numberline {3.2}Le velum}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Le rideau de sc\IeC {\`e}ne}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Les syst\IeC {\`e}me de particules}{39}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Les spectateurs}{39}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Les arbres}{40}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Autres projets ayant utilis\IeC {\'e}s le mod\IeC {\`e}le}{40}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Restitution du d\IeC {\'e}cor du front de sc\IeC {\`e}ne}{40}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Graphisme et animation}{40}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}R\IeC {\'e}alit\IeC {\'e} virtuelle}{40}{subsection.3.5.3}
+\contentsline {chapter}{Conclusion}{41}{chapter*.23}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{44}{chapter*.24}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {part}{II\hspace {1em}Calculs acoustiques}{37}{part.2}
