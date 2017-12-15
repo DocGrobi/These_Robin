@@ -14,8 +14,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%   			Liste des fichiers à compiler					%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%\includeonly{Chapitre1,Chapitre2,Annexes}
-	\includeonly{Part1}
+	\includeonly{Part1, Annexes}
+	%\includeonly{Part1}
 
 
 
@@ -53,7 +53,7 @@
 	
 % Table des matières
 	\setcounter{tocdepth}{1}	% Pas besoin de trop détailler le sommaire ici (chapitres/sections)
-	%\dominitoc						% Génération des mini-toc	\pagenumbering{arabic}
+	\dominitoc						% Génération des mini-toc	\pagenumbering{arabic}
 	\tableofcontents
 % Liste des figures
 	\renewcommand*\listfigurename{Liste des figures}
@@ -66,7 +66,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 %        Contenu du document        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%\setcounter{mtc}{2}	% "Corrige" les minitocs décallés à cause des chapter* (ex : table des matières)
+	\setcounter{mtc}{1}	% "Corrige" les minitocs décallés à cause des chapter* (ex : table des matières)
 	\pagenumbering{arabic}
 	
 	

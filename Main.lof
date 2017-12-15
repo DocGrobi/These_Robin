@@ -16,50 +16,51 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Velum}}{16}{figure.caption.12}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Mod\IeC {\'e}lisation}{17}{chapter.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration de quatre exemples de "modifier" Blender\relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration de quatre exemples de \gls {modifier} Blender\relax }}{21}{figure.caption.13}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {cavea}\relax }}{22}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a}l'\textit {ima cavea}}}{25}{figure.caption.15}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {cavea}\relax }}{26}{figure.caption.16}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mod\IeC {\'e}lisation de l'\gls {aditus} occidental et de sa tribune\relax }}{28}{figure.caption.18}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Mod\IeC {\'e}lisation du \gls {postscaenium} et de ses \glspl {basilique}\relax }}{29}{figure.caption.19}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mod\IeC {\'e}lisation de la sc\IeC {\`e}ne, l'\gls {orchestra} et le sol des \gls {parodos}}}{31}{figure.caption.20}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Mod\IeC {\'e}lisation des couvertures de sc\IeC {\`e}ne et des basiliques\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {porticus isc}\relax }}{33}{figure.caption.22}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mod\IeC {\'e}lisation des \gls {maenianum}\relax }}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mod\IeC {\'e}lisation de l'\gls {aditus} occidental et de sa tribune\relax }}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mod\IeC {\'e}lisation du \gls {postscaenium} et de ses \glspl {basilique}\relax }}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Mod\IeC {\'e}lisation de la sc\IeC {\`e}ne, l'\gls {orchestra} et le sol des \gls {parodos}}}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Mod\IeC {\'e}lisation des couvertures de sc\IeC {\`e}ne et des basiliques\relax }}{32}{figure.caption.20}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {porticus isc}\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a} l' \gls {ima cavea}}}{35}{figure.caption.22}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Applications}{37}{chapter.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {xpart}{Calculs acoustiques}{39}{part.2}
+\contentsline {xpart}{Calculs acoustiques}{49}{part.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Acoustique de salle}{41}{chapter.4}
+\contentsline {xchapter}{Acoustique de salle}{51}{chapter.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{43}{chapter.5}
+\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{53}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Validation}{45}{chapter.6}
+\contentsline {xchapter}{Validation}{55}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{53}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Configuration initiale}{55}{chapter.7}
+\contentsline {xchapter}{Configuration initiale}{65}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Test de configurations}{57}{chapter.8}
+\contentsline {xchapter}{Test de configurations}{67}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{59}{chapter.9}
+\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{69}{chapter.9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Annexes}{I}{appendix.A}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Coupe th\IeC {\'e}orique sur la \gls {cavea}}}{I}{figure.caption.29}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Vue de dessus par A. Caristie 1856}}{II}{figure.caption.30}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Plan du rez-de-chauss\IeC {\'e}e au b\IeC {\^a}timent de sc\IeC {\`e}ne}}{III}{figure.caption.31}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces El\IeC {\'e}vation du front de sc\IeC {\`e}ne}}{IV}{figure.caption.33}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces El\IeC {\'e}vation du retour du mur de sc\IeC {\`e}ne}}{V}{figure.caption.34}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces El\IeC {\'e}vation de la partie sommitale de la basilique occidentale}}{VI}{figure.caption.35}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Plan topographique de la colline Saint-Eutrope}}{VII}{figure.caption.36}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Coupe th\IeC {\'e}orique sur la \gls {cavea}}}{I}{figure.caption.25}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Vue de dessus par A. Caristie 1856}}{II}{figure.caption.26}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Plan du rez-de-chauss\IeC {\'e}e au b\IeC {\^a}timent de sc\IeC {\`e}ne}}{III}{figure.caption.27}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Coupe sur l'\gls {aditus} occidental}}{IV}{figure.caption.28}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Coupe sur l'\gls {aditus} oriental}}{V}{figure.caption.29}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces El\IeC {\'e}vation du front de sc\IeC {\`e}ne}}{VI}{figure.caption.30}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces El\IeC {\'e}vation du retour du mur de sc\IeC {\`e}ne}}{VII}{figure.caption.31}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces El\IeC {\'e}vation de la partie sommitale de la basilique occidentale}}{VIII}{figure.caption.32}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Coupe de l'\gls {aditus} occidental par A.Caristie - 1856}}{IX}{figure.caption.33}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Plan topographique de la colline Saint-Eutrope}}{X}{figure.caption.34}
 \gdef \the@ipfilectr {}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Liste des acronymes}{IX}{appendix.B}
+\contentsline {xchapter}{Liste des acronymes}{XV}{appendix.B}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Glossaire}{XI}{appendix.C}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Liste des symboles}{XV}{appendix.D}
+\contentsline {xchapter}{Glossaire}{XVII}{appendix.C}
