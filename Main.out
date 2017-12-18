@@ -1,33 +1,22 @@
-\BOOKMARK [-1][-]{part.1}{I Mod\351lisation du th\351\342tre d\220Orange}{}% 2
-\BOOKMARK [0][-]{chapter*.4}{Introduction}{part.1}% 3
-\BOOKMARK [0][-]{chapter.1}{Architecture g\351n\351rale du th\351\342tre d'Orange}{part.1}% 4
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Le postscaenium, les basilique et le pulpitum}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.3}{L'orchestra, les aditus et la cavea}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{Les couvertures et le velum}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Mod\351lisation}{part.1}% 9
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{M\351thodologie}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{La cavea et ses substructures}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Les maenianum}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{Les aditus et les tribunes}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.6}{Le mur de sc\350ne et ses basilique}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.7}{Le pulpitum et l'orchestra}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.8}{Les couvertures du b\342timent de sc\350ne}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.9}{La porticus isc}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.10}{Les escaliers}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.11}{Les rambardes et le balteus}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.12}{La colline Saint-Eutrope}{chapter.2}% 21
-\BOOKMARK [0][-]{chapter.3}{Applications}{part.1}% 22
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.2}{Le velum}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.3}{Le rideau de sc\350ne}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Les syst\350mes de particule}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.5}{Autres projets ayant utilis\351 le mod\350le}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter*.23}{Conclusion}{part.1}% 28
-\BOOKMARK [0][-]{chapter*.24}{R\351f\351rences}{part.1}% 29
-\BOOKMARK [0][-]{appendix.A}{Annexes}{part.1}% 64
-\BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 65
-\BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 66
-\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.1}% 67
-\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.1}% 68
+\BOOKMARK [-1][-]{part.2}{II Calculs acoustiques}{}% 30
+\BOOKMARK [0][-]{chapter*.4}{Introduction}{part.2}% 31
+\BOOKMARK [0][-]{chapter.4}{Acoustique de salle}{part.2}% 32
+\BOOKMARK [1][-]{section.4.1}{Introduction \340 l'acoustique de salle}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{M\351thodes de calcul acoustique}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{M\351thode coupl\351e}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Logiciel d\351velopp\351}{part.2}% 36
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Lecture de maillage}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.3}{Calcul de rayon}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnel}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.6}{M\351thode d'octree}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.7}{Vue d'ensemble}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Validation}{part.2}% 44
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Comparaison aux cas test}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.3}{Analyse de complexit\351}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter*.6}{Conclusion}{part.2}% 48
+\BOOKMARK [0][-]{chapter*.7}{R\351f\351rences}{part.2}% 49
+\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.2}% 67
+\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.2}% 68

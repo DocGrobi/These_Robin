@@ -32,10 +32,11 @@
 \contentsline {xpart}{Calculs acoustiques}{49}{part.2}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Acoustique de salle}{51}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces R\IeC {\'e}ponse sch\IeC {\'e}matique temporelle d'une impulsion sonore dans une salle\relax }}{52}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{53}{chapter.5}
+\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{55}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Validation}{55}{chapter.6}
+\contentsline {xchapter}{Validation}{57}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}
