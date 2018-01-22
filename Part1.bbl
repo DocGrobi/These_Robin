@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{20}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,6 +15,14 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{cha(1856)}]{charenton}
+ 1856, \enquote{Vue de la sc{\`e}ne avant le d{\'e}blaiement par a.caristie},
+  M{\'e}diath{\`e}que de l'Architecture et du Patrimoine de Charenton.
+
+\bibitem[{\textsc{Asselineau}(XIX\up{e} si{\`e}cle)}]{museeOrange}
+\textsc{Asselineau}. XIX\up{e} si{\`e}cle, \enquote{Vue int{\'e}rieure du
+  th{\'e}{\^a}tre}, Mus{\'e}e d'Art et d'Histoire d'Orange.
 
 \bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
   \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
@@ -44,6 +52,15 @@
 \textsc{Blender}. 2017, \enquote{Manuel blender},
   \urlprefix\url{https://docs.blender.org/manual/fr/dev/}.
 
+\bibitem[{\textsc{Bourdereaux}()}]{vuEnsemble}
+\textsc{Bourdereaux}. \enquote{Vue d'ensemble du th{\'e}{\^a}tre d'orange},
+  \urlprefix\url{choregies.fr}.
+
+\bibitem[{\textsc{Ducaroy} \bbland{} \textsc{Audin}(1960)}]{rideau2}
+\textsc{Ducaroy, A.} \bbland{} \textsc{A.~Audin}. 1960, \enquote{Le rideau de
+  sc{\`e}ne du th{\'e}{\^a}tre de lyon}, \emph{Gallia}, \bblvol{}~18,
+  \bblno{}~1, \bblpp{} 57--82.
+
 \bibitem[{\textsc{Fincker} \bbland{} \textsc{Moretti}(2009)}]{rideau}
 \textsc{Fincker, M.} \bbland{} \textsc{J.-C. Moretti}. 2009, \enquote{Le rideau
   de sc{\`e}ne dans le th{\'e}{\^a}tre romain}, \bblin{} \emph{La scaenae frons
@@ -69,6 +86,10 @@
 \textsc{Golvin, J.-C.} 2005, \enquote{L'image de restitution et la restitution
   de l'image}, \bblin{} \emph{Cours de Tunis}, \bblvol{}~1.
 
+\bibitem[{\textsc{Littr{\'e}}(1848-1850)}]{pline}
+\textsc{Littr{\'e}, {\'E}.} 1848-1850, \emph{Pline l'ancien : Histoire
+  Naturelle}, \bblvol{} XIX, Dubochet.
+
 \bibitem[{\textsc{Maufras}(1847)}]{vitruve}
 \textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
   \bblvol{}~V, Panckoucke.
@@ -77,9 +98,6 @@
 \textsc{Moretti, J.-C.} 1993, \emph{{\'E}tude sur la nomenclature grecque de
   l'architecture th{\'e}{\^a}trale. $\Pi$ETA$\Sigma$O$\Sigma$ et la
   d{\'e}nomination grecque des v{\'e}lums}, \bblvol{}~2, Anatolia Antiqua.
-
-\bibitem[{\textsc{Pline}(77)}]{pline}
-\textsc{Pline}. 77, \emph{Naturalis historia}, \bblvol{} XIX.
 
 \bibitem[{\textsc{Rocheleau}(2010)}]{rocheleau}
 \textsc{Rocheleau, M.} 2010, \enquote{La mod{\'e}lisation 3d comme m{\'e}thode

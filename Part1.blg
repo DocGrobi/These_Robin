@@ -1,71 +1,62 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part1.aux
-White space in argument---line 4 of file Part1.aux
- : \citation{Livre
- :                 V}
-I'm skipping whatever remains of this command
-White space in argument---line 5 of file Part1.aux
- : \citation{p.
- :              31}
-I'm skipping whatever remains of this command
-White space in argument---line 6 of file Part1.aux
- : \citation{p
- :             231- 236}
-I'm skipping whatever remains of this command
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
+Warning--entry type for "vuEnsemble" isn't style-file defined
+--line 37 of file Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
---line 11 of file Part1/Biblio.bib
+--line 44 of file Part1/Biblio.bib
 Warning--entry type for "doc_blender" isn't style-file defined
---line 87 of file Part1/Biblio.bib
+--line 120 of file Part1/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in charenton
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
+Warning--empty year in vuEnsemble
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
-Warning--missing publisher in pline
 Warning--empty pages in rocheleau
 Warning--empty pages in tan
-You've used 16 entries,
+You've used 20 entries,
             3493 wiz_defined-function locations,
-            794 strings with 8916 characters,
-and the built_in function-call counts, 10491 in all, are:
-= -- 829
-> -- 340
-< -- 22
-+ -- 137
-- -- 103
-* -- 776
-:= -- 1358
-add.period$ -- 33
-call.type$ -- 16
-change.case$ -- 111
-chr.to.int$ -- 17
-cite$ -- 22
-duplicate$ -- 1026
-empty$ -- 860
-format.name$ -- 139
-if$ -- 2087
+            816 strings with 9421 characters,
+and the built_in function-call counts, 12547 in all, are:
+= -- 1024
+> -- 382
+< -- 28
++ -- 157
+- -- 115
+* -- 912
+:= -- 1626
+add.period$ -- 41
+call.type$ -- 20
+change.case$ -- 135
+chr.to.int$ -- 21
+cite$ -- 29
+duplicate$ -- 1223
+empty$ -- 1028
+format.name$ -- 158
+if$ -- 2508
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 152
-newline$ -- 66
-num.names$ -- 66
-pop$ -- 419
+missing$ -- 173
+newline$ -- 78
+num.names$ -- 78
+pop$ -- 491
 preamble$ -- 1
-purify$ -- 97
+purify$ -- 117
 quote$ -- 0
-skip$ -- 460
+skip$ -- 553
 stack$ -- 0
-substring$ -- 327
-swap$ -- 633
-text.length$ -- 10
+substring$ -- 408
+swap$ -- 755
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 129
-warning$ -- 6
-while$ -- 59
+type$ -- 165
+warning$ -- 7
+while$ -- 71
 width$ -- 0
-write$ -- 187
-(There were 3 error messages)
+write$ -- 227
+(There were 10 warnings)

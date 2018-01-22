@@ -58,9 +58,15 @@
 	\oldpagenumbering{#1}
 }
 
-%\newcommand{\MyCite}[2]{\footnote{\cite[#2]{#1}}}
+%Pour mettre une virgule entre deux footnotes
+\newcommand\nextToken\relax
+\newcommand\iscite{\ifx\cite\nextToken\textsuperscript{,}\fi}
+
+%Macro pour mettre les citations en bas de page
 \let\oldcite\cite
-\renewcommand*\cite[2][texte complet]{\footnote{\oldcite[#1]{#2}}}
+\renewcommand*\cite[2][oeuvre intégrale]{\footnote{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
 \let\oldcitep\citep
-\renewcommand*\citep[2][texte complet]{\footnote{\oldcitep[#1]{#2}}}
-\newcommand*\citefnt[2][texte complet]{\footnotetext{\oldcite[#1]{#2}}}
+\renewcommand*\citep[2][oeuvre intégrale]{\footnote{\oldcitep[#1]{#2}}\futurelet\nextToken\iscite}
+\newcommand*\citefnt[2][oeuvre intégrale]{\footnotetext{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
+
+%\newcommand{\footref}[1]{\textsuperscript{\ref{#1}}}
