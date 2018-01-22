@@ -21,9 +21,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Mod\IeC {\'e}lisation des \gls {maenianum}\relax }}{26}{figure.caption.15}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Mod\IeC {\'e}lisation de l'\gls {aditus} occidental et de sa tribune\relax }}{28}{figure.caption.17}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Mod\IeC {\'e}lisation du \gls {postscaenium} et de ses \glspl {basilique}\relax }}{29}{figure.caption.18}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Mod\IeC {\'e}lisation de la sc\IeC {\`e}ne, l'\gls {orchestra} et le sol des \gls {parodos}}}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Mod\IeC {\'e}lisation de la sc\IeC {\`e}ne, l'\gls {orchestra} et le sol des \gls {parodos}}}{32}{figure.caption.19}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Mod\IeC {\'e}lisation des couvertures de sc\IeC {\`e}ne et des basiliques\relax }}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {porticus isc}\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {porticus isc}\relax }}{34}{figure.caption.21}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a} l' \gls {ima cavea}}}{35}{figure.caption.22}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Applications}{37}{chapter.3}
@@ -32,11 +32,13 @@
 \contentsline {xpart}{Calculs acoustiques}{49}{part.2}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Acoustique de salle}{51}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces R\IeC {\'e}ponse sch\IeC {\'e}matique temporelle d'une impulsion sonore dans une salle\relax }}{52}{figure.caption.5}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces R\IeC {\'e}ponse temporelle d'une impulsion sonore dans une salle\relax }}{52}{figure.caption.5}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparaison d'un th\IeC {\'e}\IeC {\^a}tre simplifi\IeC {\'e} avec gradins coniques ou gradins cubiques par \gls {bem} \IeC {\`a} 50Hz\relax }}{54}{figure.caption.6}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sch\IeC {\'e}ma d'un r\IeC {\'e}cepteur captant au moins un rayon.\relax }}{57}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{55}{chapter.5}
+\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{59}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Validation}{57}{chapter.6}
+\contentsline {xchapter}{Validation}{61}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}

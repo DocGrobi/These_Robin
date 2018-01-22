@@ -19,17 +19,21 @@
 \usepackage[utf8]{inputenc}		% LaTeX, comprend les accents !
 \usepackage[T1]{fontenc}
 
+
 \usepackage[square,sort&compress,sectionbib]{natbib}		% Doit être chargé avant babel
 
-
 \usepackage{chapterbib}
-	\renewcommand{\bibsection}{\chapter*{Références}}		% Met les références biblio dans un \section (au lieu de \section*)
+	\renewcommand{\bibsection}{\chapter*{Références}}		% Met les références biblio dans un \section (au lieu de \section*)	
 		
 \usepackage[frenchb]{babel}
 \usepackage{lmodern}
 \usepackage{ae,aecompl}										% Utilisation des fontes vectorielles modernes
 \usepackage[upright]{fourier}
 
+\AddThinSpaceBeforeFootnotes % à insérer si on utilise \usepackage[french]{babel}
+\FrenchFootnotes % à insérer si on utilise \usepackage[french]{babel}
+
+\usepackage{fnpos}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Allure générale du document

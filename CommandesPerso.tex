@@ -57,3 +57,10 @@
 	\cleardoublepage
 	\oldpagenumbering{#1}
 }
+
+%\newcommand{\MyCite}[2]{\footnote{\cite[#2]{#1}}}
+\let\oldcite\cite
+\renewcommand*\cite[2][texte complet]{\footnote{\oldcite[#1]{#2}}}
+\let\oldcitep\citep
+\renewcommand*\citep[2][texte complet]{\footnote{\oldcitep[#1]{#2}}}
+\newcommand*\citefnt[2][texte complet]{\footnotetext{\oldcite[#1]{#2}}}

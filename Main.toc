@@ -12,8 +12,8 @@
 \contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}
 \contentsline {section}{\numberline {1.2}Le \gls {postscaenium}, les \glspl {basilique} et le \gls {pulpitum}}{9}{section.1.2}
 \contentsline {section}{\numberline {1.3}L'\gls {orchestra}, les \gls {aditus} et la \gls {cavea}}{10}{section.1.3}
-\contentsline {section}{\numberline {1.4}Les couvertures et le \gls {velum}}{14}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}La couverture des \glspl {basilique} et du \gls {parascaenium}}{14}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.4}Les couvertures et le \gls {velum}}{13}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}La couverture des \glspl {basilique} et du \gls {parascaenium}}{13}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}La couverture du \gls {postscaenium} et du \gls {pulpitum}}{14}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}La couverture de la \gls {cavea}}{15}{subsection.1.4.3}
 \contentsline {chapter}{\numberline {2}Mod\IeC {\'e}lisation}{17}{chapter.2}
@@ -21,18 +21,18 @@
 \contentsline {section}{\numberline {2.2}M\IeC {\'e}thodologie}{19}{section.2.2}
 \contentsline {section}{\numberline {2.3}La \gls {cavea} et ses substructures}{21}{section.2.3}
 \contentsline {section}{\numberline {2.4}Les \glspl {maenianum}}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}Les \gls {aditus} et les tribunes}{27}{section.2.5}
+\contentsline {section}{\numberline {2.5}Les \gls {aditus} et les tribunes}{28}{section.2.5}
 \contentsline {section}{\numberline {2.6}Le mur de sc\IeC {\`e}ne et ses \glspl {basilique}}{29}{section.2.6}
 \contentsline {section}{\numberline {2.7}Le \gls {pulpitum} et l'\gls {orchestra}}{31}{section.2.7}
 \contentsline {section}{\numberline {2.8}Les couvertures du b\IeC {\^a}timent de sc\IeC {\`e}ne}{32}{section.2.8}
 \contentsline {section}{\numberline {2.9}La \gls {porticus isc}}{33}{section.2.9}
-\contentsline {section}{\numberline {2.10}Les escaliers}{34}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Acc\IeC {\`e}s aux tribunes par les \gls {aditus}}{34}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Acc\IeC {\`e}s \IeC {\`a} la \gls {cavea} depuis l'ext\IeC {\'e}rieur}{35}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}Les cages escaliers des \gls {parascaenium} et les paliers internes}{35}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}Les escaliers ext\IeC {\'e}rieurs}{35}{subsection.2.10.4}
-\contentsline {section}{\numberline {2.11}Les rambardes et le \gls {balteus}}{35}{section.2.11}
-\contentsline {section}{\numberline {2.12}La colline Saint-Eutrope}{35}{section.2.12}
+\contentsline {section}{\numberline {2.10}Les escaliers}{35}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Acc\IeC {\`e}s aux tribunes par les \gls {aditus}}{35}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Acc\IeC {\`e}s \IeC {\`a} la \gls {cavea} depuis l'ext\IeC {\'e}rieur}{36}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Les cages escaliers des \gls {parascaenium} et les paliers internes}{36}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}Les escaliers ext\IeC {\'e}rieurs}{36}{subsection.2.10.4}
+\contentsline {section}{\numberline {2.11}Les rambardes et le \gls {balteus}}{36}{section.2.11}
+\contentsline {section}{\numberline {2.12}La colline Saint-Eutrope}{36}{section.2.12}
 \contentsline {chapter}{\numberline {3}Applications}{37}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{38}{section.3.1}
 \contentsline {section}{\numberline {3.2}Le \gls {velum}}{38}{section.3.2}
@@ -54,28 +54,28 @@
 \contentsline {chapter}{\numberline {4}Acoustique de salle}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction \IeC {\`a} l'acoustique de salle}{52}{section.4.1}
 \contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{53}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}M\IeC {\'e}thode de r\IeC {\'e}solution exacte}{53}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}M\IeC {\'e}thode de trac\IeC {\'e} de rayon}{53}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}M\IeC {\'e}thode des sources-image}{53}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.1}Principe statistique}{53}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}M\IeC {\'e}thode de r\IeC {\'e}solution exacte}{53}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}M\IeC {\'e}thode de trac\IeC {\'e} de rayon}{54}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}M\IeC {\'e}thode de lanc\IeC {\'e} de particules}{54}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Statistique}{54}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}M\IeC {\'e}thode coupl\IeC {\'e}e}{54}{section.4.3}
-\contentsline {chapter}{\numberline {5}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{55}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{56}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lecture de maillage}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}Calcul de rayon}{56}{section.5.3}
-\contentsline {section}{\numberline {5.4}Calcul de sources-images}{56}{section.5.4}
-\contentsline {section}{\numberline {5.5}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnel}{56}{section.5.5}
-\contentsline {section}{\numberline {5.6}M\IeC {\'e}thode d'octree}{56}{section.5.6}
-\contentsline {section}{\numberline {5.7}Vue d'ensemble}{56}{section.5.7}
-\contentsline {chapter}{\numberline {6}Validation}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{58}{section.6.1}
-\contentsline {section}{\numberline {6.2}Comparaison aux cas test}{58}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Salle rectangulaire}{58}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\`e}rique}{58}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Analyse de complexit\IeC {\'e}}{58}{section.6.3}
-\contentsline {chapter}{Conclusion}{59}{chapter*.6}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{61}{chapter*.7}
+\contentsline {subsection}{\numberline {4.2.5}M\IeC {\'e}thode des sources-image}{55}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}M\IeC {\'e}thode coupl\IeC {\'e}e}{55}{section.4.3}
+\contentsline {chapter}{\numberline {5}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{60}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lecture de maillage}{60}{section.5.2}
+\contentsline {section}{\numberline {5.3}Calcul de rayon}{60}{section.5.3}
+\contentsline {section}{\numberline {5.4}Calcul de sources-images}{60}{section.5.4}
+\contentsline {section}{\numberline {5.5}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnel}{60}{section.5.5}
+\contentsline {section}{\numberline {5.6}M\IeC {\'e}thode d'octree}{60}{section.5.6}
+\contentsline {section}{\numberline {5.7}Vue d'ensemble}{60}{section.5.7}
+\contentsline {chapter}{\numberline {6}Validation}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{62}{section.6.1}
+\contentsline {section}{\numberline {6.2}Comparaison aux cas test}{62}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Salle rectangulaire}{62}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\`e}rique}{62}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Analyse de complexit\IeC {\'e}}{62}{section.6.3}
+\contentsline {chapter}{Conclusion}{63}{chapter*.10}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{65}{chapter*.11}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{61}{part.3}

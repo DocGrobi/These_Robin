@@ -69,6 +69,10 @@
 \textsc{Golvin, J.-C.} 2005, \enquote{L'image de restitution et la restitution
   de l'image}, \bblin{} \emph{Cours de Tunis}, \bblvol{}~1.
 
+\bibitem[{\textsc{Maufras}(1847)}]{vitruve}
+\textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
+  \bblvol{}~V, Panckoucke.
+
 \bibitem[{\textsc{Moretti}(1993)}]{moretti}
 \textsc{Moretti, J.-C.} 1993, \emph{{\'E}tude sur la nomenclature grecque de
   l'architecture th{\'e}{\^a}trale. $\Pi$ETA$\Sigma$O$\Sigma$ et la
@@ -103,9 +107,6 @@
 \textsc{Vergnieux, R.} 2005, \enquote{Arch{\'e}ogrid : vers un conservatoire
   national des donn{\'e}es}, \bblin{} \emph{Virtual Retrospect}, \bblpp{}
   157--162.
-
-\bibitem[{\textsc{Vitruve}(-15)}]{vitruve}
-\textsc{Vitruve}. -15, \emph{De Architectura}, \bblvol{}~V.
 
 \bibitem[{\textsc{Wikip{\'e}dia}(2017)}]{precisionmachine}
 \textsc{Wikip{\'e}dia}. 2017, \enquote{Epsilon d'une machine},
