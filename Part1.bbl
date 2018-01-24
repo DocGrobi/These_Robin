@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{23}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -52,6 +52,10 @@
 \textsc{Blender}. 2017, \enquote{Manuel blender},
   \urlprefix\url{https://docs.blender.org/manual/fr/dev/}.
 
+\bibitem[{\textsc{Boissier}()}]{boissier}
+\textsc{Boissier, G.} \enquote{article mimvs}, \emph{Dictionnaire des
+  Antiquit{\'e}s grecques et romaines}.
+
 \bibitem[{\textsc{Bourdereaux}()}]{vuEnsemble}
 \textsc{Bourdereaux}. \enquote{Vue d'ensemble du th{\'e}{\^a}tre d'orange},
   \urlprefix\url{choregies.fr}.
@@ -75,6 +79,11 @@
   si{\`e}cle apr{\`e}s j.-c}, \emph{Histoire urbaine}, \bblvol{}~1,
   \bblno{}~18, \bblpp{} 157--165.
 
+\bibitem[{\textsc{Formige}(1916)}]{formigeBis}
+\textsc{Formige, J.} 1916, \enquote{Observations sur le th{\'e}{\^a}tre romain
+  d'orange}, \emph{Comptes rendus des s{\'e}ances de l'Acad{\'e}mie des
+  Inscriptions et Belles-Lettres}, \bblvol{}~5, \bblpp{} 455--458.
+
 \bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
 \textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
   th{\'e}{\^a}tres romains, {\`a} propose de ceux d'Arles et d'Orange},
@@ -85,6 +94,11 @@
 \bibitem[{\textsc{Golvin}(2005)}]{golvin}
 \textsc{Golvin, J.-C.} 2005, \enquote{L'image de restitution et la restitution
   de l'image}, \bblin{} \emph{Cours de Tunis}, \bblvol{}~1.
+
+\bibitem[{\textsc{Lachaux}(1970)}]{lachaux}
+\textsc{Lachaux, J.~C.} 1970, \enquote{Th{\'e}{\^a}tres et
+  amphith{\'e}{\^a}tres d'afrique proconsulaire}, \emph{Aix-en-Provence :
+  Diffusion {\'E}disud}.
 
 \bibitem[{\textsc{Littr{\'e}}(1848-1850)}]{pline}
 \textsc{Littr{\'e}, {\'E}.} 1848-1850, \emph{Pline l'ancien : Histoire

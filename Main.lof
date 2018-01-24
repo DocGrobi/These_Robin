@@ -7,27 +7,26 @@
 \contentsline {xpart}{Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{5}{part.1}
 \contentsline {figure}{\numberline {1}{\ignorespaces Th\IeC {\'e}\IeC {\^a}tre d'Orange avant restauration}}{6}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Architecture g\IeC {\'e}n\IeC {\'e}rale du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
+\contentsline {xchapter}{Pr\IeC {\'e}sentation synth\IeC {\'e}tique de l'architecture du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Vue d'ensemble du th\IeC {\'e}\IeC {\^a}tre d'Orange}}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Perspective d\IeC {\textquoteright }une section de la fosse du rideau de sc\IeC {\`e}ne au th\IeC {\'e}\IeC {\^a}tre de Lyon}}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Vue de dessus - 1er niveau}}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Vue de dessus - 1er niveau}}{13}{figure.caption.8}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Vue de dessus - 2\IeC {\`e}me niveau}}{13}{figure.caption.9}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Vue de dessus - 3\IeC {\`e}me niveau}}{14}{figure.caption.10}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Toitures de basiliques par A.Badie}}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Velum}}{17}{figure.caption.13}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Mod\IeC {\'e}lisation}{19}{chapter.2}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration de quatre exemples de \gls {modifier} Blender\relax }}{23}{figure.caption.14}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {cavea}\relax }}{24}{figure.caption.15}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Mod\IeC {\'e}lisation des \gls {maenianum}\relax }}{28}{figure.caption.16}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Mod\IeC {\'e}lisation de l'\gls {aditus} occidental et de sa tribune\relax }}{30}{figure.caption.18}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mod\IeC {\'e}lisation du \gls {postscaenium} et de ses \glspl {basilique}\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mod\IeC {\'e}lisation du \gls {postscaenium} et de ses \glspl {basilique}\relax }}{32}{figure.caption.19}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Mod\IeC {\'e}lisation de la sc\IeC {\`e}ne, l'\gls {orchestra} et le sol des \gls {parodos}}}{34}{figure.caption.20}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mod\IeC {\'e}lisation des couvertures de sc\IeC {\`e}ne et des basiliques\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Mod\IeC {\'e}lisation des couvertures de sc\IeC {\`e}ne et des basiliques\relax }}{35}{figure.caption.21}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Mod\IeC {\'e}lisation de la \gls {porticus isc}\relax }}{36}{figure.caption.22}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a} l' \gls {ima cavea}}}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \Gls {parodos} oriental et entr\IeC {\'e}e menant \IeC {\`a} l' \gls {ima cavea}}}{38}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Applications}{39}{chapter.3}
+\contentsline {xchapter}{Applications}{41}{chapter.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {xpart}{Calculs acoustiques}{49}{part.2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  22 JAN 2018 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  24 JAN 2018 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2794,7 +2794,7 @@ Package minitoc Info: I0033
 \openout10 = `Main.toc'.
 
  [8] (./Main.lof
-Overfull \hbox (2.18394pt too wide) detected at line 63
+Overfull \hbox (2.18394pt too wide) detected at line 62
  []\T1/futs/m/n/12 VIII
  []
 
@@ -2825,7 +2825,7 @@ Overfull \hbox (2.18394pt too wide) detected at line 63
 ] [3] [4] [5
 
 ]
-<Part1/images/av_deblaiement.png, id=424, 1001.7425pt x 584.1825pt>
+<Part1/images/av_deblaiement.png, id=422, 1001.7425pt x 584.1825pt>
 File: Part1/images/av_deblaiement.png Graphic file (type png)
 
 <use Part1/images/av_deblaiement.png>
@@ -2845,7 +2845,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 22.
 
-<Part1/images/asselineau.jpg, id=428, 1834.855pt x 1110.1475pt>
+<Part1/images/asselineau.jpg, id=426, 1834.855pt x 1110.1475pt>
 File: Part1/images/asselineau.jpg Graphic file (type jpg)
 
 <use Part1/images/asselineau.jpg>
@@ -2857,8 +2857,8 @@ Package pdftex.def Info: Part1/images/asselineau.jpg used on input line 26.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.37 	\chapter
-              {Architecture gÃ©nÃ©rale du thÃ©Ã¢tre d'Orange} <./Part1/images/a
-v_deblaiement.png> <./Part1/images/asselineau.jpg>]
+              {PrÃ©sentation synthÃ©tique de l'architecture du thÃ©Ã¢tre d'O...
+ <./Part1/images/av_deblaiement.png> <./Part1/images/asselineau.jpg>]
 Chapitre 1.
 \openout3 = `Main.mtc'.
 
@@ -2872,7 +2872,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <10.95> not available
 ) [7
 
 ]
-<Part1/images/vuensemble.jpg, id=488, 1445.4pt x 962.59625pt>
+<Part1/images/vuensemble.jpg, id=486, 1445.4pt x 962.59625pt>
 File: Part1/images/vuensemble.jpg Graphic file (type jpg)
 
 <use Part1/images/vuensemble.jpg>
@@ -2893,28 +2893,53 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 58.
 
-[8 <./Part1/images/vuensemble.jpg>] [9]
-<Part1/images/rideau.png, id=567, 570.13pt x 604.2575pt>
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./Part1/images/vuensemble.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9] <Part1/images/rideau.png, id=576, 570.13pt x 604.2575pt>
 File: Part1/images/rideau.png Graphic file (type png)
 
 <use Part1/images/rideau.png>
 Package pdftex.def Info: Part1/images/rideau.png used on input line 72.
-(pdftex.def)             Requested size: 220.50887pt x 233.70479pt.
- [10]
+(pdftex.def)             Requested size: 264.61333pt x 280.45128pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 78.
+(hyperref)                removing `\glspl' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 78.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [11 <./Part1/images/rideau.png>]
-<Part1/images/1erniveau.jpg, id=634, 1591.9475pt x 1187.43625pt>
+<Part1/images/1erniveau.jpg, id=661, 1591.9475pt x 1187.43625pt>
 File: Part1/images/1erniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/1erniveau.jpg>
@@ -2927,27 +2952,41 @@ n/12 , ou [][][]\T1/futs/m/it/12 me-dia ca-vea[][]\T1/futs/m/n/12 , re-pose, da
 ns sa par-tie in-fé-rieure, sur l'[][][]ambulacre[][]
  []
 
-<Part1/images/2emeniveau.jpg, id=650, 1606.0pt x 1179.40625pt>
+<Part1/images/2emeniveau.jpg, id=677, 1606.0pt x 1179.40625pt>
 File: Part1/images/2emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/2emeniveau.jpg>
 Package pdftex.def Info: Part1/images/2emeniveau.jpg used on input line 99.
 (pdftex.def)             Requested size: 441.01773pt x 323.86082pt.
- [12 <./Part1/images/1erniveau.jpg>]
-<Part1/images/3emeniveau.jpg, id=683, 1597.97pt x 1192.455pt>
+
+<Part1/images/3emeniveau.jpg, id=697, 1597.97pt x 1192.455pt>
 File: Part1/images/3emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/3emeniveau.jpg>
 Package pdftex.def Info: Part1/images/3emeniveau.jpg used on input line 109.
 (pdftex.def)             Requested size: 441.01773pt x 329.09975pt.
- [13 <./Part1/images/2emeniveau.jpg>]
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./Part1/images/1erniveau.jpg> <./Part1/images/2emeniveau.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 115.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/it' tried instead on input line 117.
-<Part1/images/couvertureBadie.png, id=702, 369.38pt x 315.67938pt>
+<Part1/images/couvertureBadie.png, id=740, 369.38pt x 315.67938pt>
 File: Part1/images/couvertureBadie.png Graphic file (type png)
 
 <use Part1/images/couvertureBadie.png>
@@ -2959,15 +2998,29 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 131
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-) [14 <./Part1/images/3emeniveau.jpg>]
-<Part1/images/toitCaristie.png, id=731, 309.155pt x 212.795pt>
+)
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./Part1/images/3emeniveau.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./Part1/images/couvertureBadie.png>]
+<Part1/images/toitCaristie.png, id=789, 307.1475pt x 204.26312pt>
 File: Part1/images/toitCaristie.png Graphic file (type png)
 
 <use Part1/images/toitCaristie.png>
 Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 136.
-(pdftex.def)             Requested size: 216.1011pt x 148.7509pt.
+(pdftex.def)             Requested size: 216.1011pt x 143.71565pt.
 
-<Part1/images/toitBadie.png, id=732, 289.08pt x 201.75375pt>
+<Part1/images/toitBadie.png, id=790, 289.08pt x 201.75375pt>
 File: Part1/images/toitBadie.png Graphic file (type png)
 
 <use Part1/images/toitBadie.png>
@@ -2978,25 +3031,55 @@ Underfull \hbox (badness 1308) in paragraph at lines 142--142
 []\T1/futs/m/n/10.95 (b) |Re-levé de la par-tie som-mi-tale du re-tour
  []
 
+pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.35}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146 		\citefnt[fig. 24]{orangeTxt}
+                                    
+<Part1/images/velumArles.png, id=812, 101.37875pt x 95.35625pt>
+File: Part1/images/velumArles.png Graphic file (type png)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use Part1/images/velumArles.png>
+Package pdftex.def Info: Part1/images/velumArles.png used on input line 157.
+(pdftex.def)             Requested size: 154.35889pt x 145.19324pt.
 
- [15pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
-.23}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.151 
-       <./Part1/images/couvertureBadie.png>]
-<Part1/images/velumCaristie.jpg, id=763, 622.325pt x 448.67625pt>
+<Part1/images/velumCaristie.jpg, id=815, 622.325pt x 448.67625pt>
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
-Package pdftex.def Info: Part1/images/velumCaristie.jpg used on input line 156.
+Package pdftex.def Info: Part1/images/velumCaristie.jpg used on input line 163.
 
-(pdftex.def)             Requested size: 441.01773pt x 317.9599pt.
- [16 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>] [17 <./P
-art1/images/velumCaristie.jpg>] [18
+(pdftex.def)             Requested size: 242.5611pt x 174.88034pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
+40}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.190 \chapter
+              {ModÃ©lisation} <./Part1/images/velumArles.png> <./Part1/images/v
+elumCaristie.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.73203pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18
 
 ]
 Chapitre 2.
@@ -3005,235 +3088,260 @@ Chapitre 2.
 \openout3 = `Main.mtc'.
 
 (./Main.mtc4) [19]
-Overfull \hbox (6.34222pt too wide) in paragraph at lines 183--184
+Overfull \hbox (6.34222pt too wide) in paragraph at lines 198--199
 \T1/futs/m/n/12 cheurs s'orientent au-jour-d'hui vers la mo-dé-li-sa-tion 3D. E
 f-fec-ti-ve-ment, jus-qu'à ces quelques
  []
 
-[20] [21] <Part1/images/array.jpeg, id=867, 992.70876pt x 573.14125pt>
+[20] [21] <Part1/images/array.jpeg, id=929, 992.70876pt x 573.14125pt>
 File: Part1/images/array.jpeg Graphic file (type jpg)
 
 <use Part1/images/array.jpeg>
-Package pdftex.def Info: Part1/images/array.jpeg used on input line 224.
+Package pdftex.def Info: Part1/images/array.jpeg used on input line 239.
 (pdftex.def)             Requested size: 198.45662pt x 114.57375pt.
 
-<Part1/images/boolean.png, id=870, 689.57625pt x 520.94624pt>
+<Part1/images/boolean.png, id=932, 689.57625pt x 520.94624pt>
 File: Part1/images/boolean.png Graphic file (type png)
 
 <use Part1/images/boolean.png>
-Package pdftex.def Info: Part1/images/boolean.png used on input line 231.
+Package pdftex.def Info: Part1/images/boolean.png used on input line 246.
 (pdftex.def)             Requested size: 198.45662pt x 149.92589pt.
 
-<Part1/images/screw.jpeg, id=873, 964.60374pt x 304.13625pt>
+<Part1/images/screw.jpeg, id=935, 964.60374pt x 304.13625pt>
 File: Part1/images/screw.jpeg Graphic file (type jpg)
 
 <use Part1/images/screw.jpeg>
-Package pdftex.def Info: Part1/images/screw.jpeg used on input line 236.
+Package pdftex.def Info: Part1/images/screw.jpeg used on input line 251.
 (pdftex.def)             Requested size: 198.45662pt x 62.57108pt.
 
-<Part1/images/solidify.jpeg, id=876, 868.24374pt x 236.885pt>
+<Part1/images/solidify.jpeg, id=938, 868.24374pt x 236.885pt>
 File: Part1/images/solidify.jpeg Graphic file (type jpg)
 
 <use Part1/images/solidify.jpeg>
-Package pdftex.def Info: Part1/images/solidify.jpeg used on input line 241.
+Package pdftex.def Info: Part1/images/solidify.jpeg used on input line 256.
 (pdftex.def)             Requested size: 198.45662pt x 54.14262pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 255.
+(hyperref)                removing `\gls' on input line 270.
 
-<Part1/images/modCavea.png, id=901, 1094.0875pt x 771.88374pt>
+<Part1/images/modCavea.png, id=962, 1094.0875pt x 771.88374pt>
 File: Part1/images/modCavea.png Graphic file (type png)
 
 <use Part1/images/modCavea.png>
-Package pdftex.def Info: Part1/images/modCavea.png used on input line 259.
+Package pdftex.def Info: Part1/images/modCavea.png used on input line 274.
 (pdftex.def)             Requested size: 441.01773pt x 311.13895pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./Part1/images/array.jpeg> <./Part1/images/boolean.png> <./Part1/images/sc
-rew.jpeg> <./Part1/images/solidify.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./Part1/images/array.jpeg> <./Part1/images/boolean.png> <./Part1/images/s
+crew.jpeg> <./Part1/images/solidify.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 [24 <./Part1/images/modCavea.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
-[25] [26]
+[25] [26] [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\glspl' on input line 334.
+(hyperref)                removing `\glspl' on input line 349.
 
-<Part1/images/modMaenianum.png, id=1045, 998.73125pt x 578.16pt>
+<Part1/images/modMaenianum.png, id=1118, 998.73125pt x 578.16pt>
 File: Part1/images/modMaenianum.png Graphic file (type png)
 
 <use Part1/images/modMaenianum.png>
-Package pdftex.def Info: Part1/images/modMaenianum.png used on input line 337.
+Package pdftex.def Info: Part1/images/modMaenianum.png used on input line 352.
 (pdftex.def)             Requested size: 441.01773pt x 255.29985pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[27] [28 <./Part1/images/modMaenianum.png>]
-<Part1/images/gradinCoupe.png, id=1091, 510.90875pt x 409.53pt>
+ [28 <./Part1/images/modMaenianum.png>]
+<Part1/images/gradinCoupe.png, id=1153, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
-Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 350.
+Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 365.
 (pdftex.def)             Requested size: 189.03328pt x 151.52371pt.
 
-<Part1/images/escaliers.png, id=1096, 910.40125pt x 744.7825pt>
+<Part1/images/escaliers.png, id=1158, 910.40125pt x 744.7825pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
-Package pdftex.def Info: Part1/images/escaliers.png used on input line 356.
+Package pdftex.def Info: Part1/images/escaliers.png used on input line 371.
 (pdftex.def)             Requested size: 200.2889pt x 163.85265pt.
 
-Overfull \hbox (16.07248pt too wide) in paragraph at lines 349--360
+Overfull \hbox (16.07248pt too wide) in paragraph at lines 364--375
 [][]   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--360
+Underfull \hbox (badness 10000) in paragraph at lines 364--375
 
  []
 
 [29 <./Part1/images/gradinCoupe.png> <./Part1/images/escaliers.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 366.
+(hyperref)                removing `\glspl' on input line 381.
 
-<Part1/images/modAditus.png, id=1133, 984.67876pt x 782.925pt>
+<Part1/images/modAditus.png, id=1196, 984.67876pt x 782.925pt>
 File: Part1/images/modAditus.png Graphic file (type png)
 
 <use Part1/images/modAditus.png>
-Package pdftex.def Info: Part1/images/modAditus.png used on input line 369.
+Package pdftex.def Info: Part1/images/modAditus.png used on input line 384.
 (pdftex.def)             Requested size: 441.01773pt x 350.65244pt.
  [30 <./Part1/images/modAditus.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\glspl' on input line 380.
+(hyperref)                removing `\glspl' on input line 395.
 
-<Part1/images/modMur2.png, id=1191, 957.5775pt x 339.2675pt>
+<Part1/images/modMur2.png, id=1254, 957.5775pt x 339.2675pt>
 File: Part1/images/modMur2.png Graphic file (type png)
 
 <use Part1/images/modMur2.png>
-Package pdftex.def Info: Part1/images/modMur2.png used on input line 385.
+Package pdftex.def Info: Part1/images/modMur2.png used on input line 400.
 (pdftex.def)             Requested size: 441.01773pt x 156.2513pt.
- [31 <./Part1/images/modMur2.png>] [32]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 401.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 401.
-
-<Part1/images/modOrchestre.png, id=1276, 1109.14375pt x 448.67625pt>
-File: Part1/images/modOrchestre.png Graphic file (type png)
-
-<use Part1/images/modOrchestre.png>
-Package pdftex.def Info: Part1/images/modOrchestre.png used on input line 404.
-(pdftex.def)             Requested size: 441.01773pt x 178.3993pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33]
-Overfull \hbox (40.8909pt too wide) in paragraph at lines 411--412
+[31] [32 <./Part1/images/modMur2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 416.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 416.
+
+<Part1/images/modOrchestre.png, id=1340, 1109.14375pt x 448.67625pt>
+File: Part1/images/modOrchestre.png Graphic file (type png)
+
+<use Part1/images/modOrchestre.png>
+Package pdftex.def Info: Part1/images/modOrchestre.png used on input line 419.
+(pdftex.def)             Requested size: 441.01773pt x 178.3993pt.
+ [33]
+Overfull \hbox (40.8909pt too wide) in paragraph at lines 426--427
 \T1/futs/m/n/12 être, dans une pro-chaine étape, creusé à l'aide de [][][]mo-di
 -fier "Boo-lean"[][] pour réa-li-ser l'[][][]\T1/futs/m/it/12 hyposcaenium[][]
  []
 
-<Part1/images/modCouvertures.png, id=1302, 1151.30125pt x 600.2425pt>
+<Part1/images/modCouvertures.png, id=1383, 1151.30125pt x 600.2425pt>
 File: Part1/images/modCouvertures.png Graphic file (type png)
 
 <use Part1/images/modCouvertures.png>
-Package pdftex.def Info: Part1/images/modCouvertures.png used on input line 417
+Package pdftex.def Info: Part1/images/modCouvertures.png used on input line 432
 .
 (pdftex.def)             Requested size: 441.01773pt x 229.9263pt.
- [34 <./Part1/images/modOrchestre.png> <./Part1/images/modCouvertures.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 426.
-
-<Part1/images/modPorticus.png, id=1336, 978.65625pt x 578.16pt>
-File: Part1/images/modPorticus.png Graphic file (type png)
-
-<use Part1/images/modPorticus.png>
-Package pdftex.def Info: Part1/images/modPorticus.png used on input line 429.
-(pdftex.def)             Requested size: 441.01773pt x 260.54012pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 446--450
+[34 <./Part1/images/modOrchestre.png>] [35 <./Part1/images/modCouvertures.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 441.
+
+<Part1/images/modPorticus.png, id=1431, 978.65625pt x 578.16pt>
+File: Part1/images/modPorticus.png Graphic file (type png)
+
+<use Part1/images/modPorticus.png>
+Package pdftex.def Info: Part1/images/modPorticus.png used on input line 444.
+(pdftex.def)             Requested size: 441.01773pt x 260.54012pt.
+ [36 <./Part1/images/modPorticus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 461--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--455
+Underfull \hbox (badness 10000) in paragraph at lines 466--470
 
  []
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 457.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 472.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 457.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 472.
 
-[36 <./Part1/images/modPorticus.png>]
-<Part1/images/parodos.png, id=1401, 372.39125pt x 331.2375pt>
+<Part1/images/parodos.png, id=1487, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
-Package pdftex.def Info: Part1/images/parodos.png used on input line 475.
+Package pdftex.def Info: Part1/images/parodos.png used on input line 490.
 (pdftex.def)             Requested size: 220.50887pt x 196.14613pt.
- [37 <./Part1/images/parodos.png>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 497.
+(hyperref)                removing `\gls' on input line 512.
 
-[38]
+[38 <./Part1/images/parodos.png>] [39] [40
+
+]
 Chapitre 3.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc5) [39
-
-]
+(./Main.mtc5) [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 523.
+(hyperref)                removing `\gls' on input line 538.
 
-[40]
-Overfull \hbox (6.9626pt too wide) in paragraph at lines 547--548
+[42]
+Overfull \hbox (6.9626pt too wide) in paragraph at lines 562--563
 []\T1/futs/m/n/12 On uti-li-sera en-suite un [][][]mo-di-fier "Ar-ray"[][] pour
  ré-pé-ter une fois l'en-semble mât-consoles-
  []
 
+<Part1/images/velum2.png, id=1610, 501.875pt x 225.84375pt>
+File: Part1/images/velum2.png Graphic file (type png)
+
+<use Part1/images/velum2.png>
+Package pdftex.def Info: Part1/images/velum2.png used on input line 585.
+(pdftex.def)             Requested size: 198.45662pt x 89.30551pt.
+
+<Part1/images/dessinvelum.png, id=1613, 703.62875pt x 294.09875pt>
+File: Part1/images/dessinvelum.png Graphic file (type png)
+
+<use Part1/images/dessinvelum.png>
+Package pdftex.def Info: Part1/images/dessinvelum.png used on input line 591.
+(pdftex.def)             Requested size: 216.1011pt x 90.3215pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--595
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\glspl' on input line 557.
+(hyperref)                removing `\glspl' on input line 606.
 
-[41] [42] [43] [44
+[44 <./Part1/images/velum2.png> <./Part1/images/dessinvelum.png>] [45] [46
 
-] (./Part1.bbl (./Main.brf)
+]
+(./Part1.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [45] [46
+ [47] [48
 
 ] (./francaisbst.tex)
 LaTeX Font Info:    Try loading font information for T1+aett on input line 54.
@@ -3246,7 +3354,13 @@ Underfull \hbox (badness 3792) in paragraph at lines 54--54
 ][]$\T1/aett/m/n/12 https : / / docs . blender . org / manual / fr /
  []
 
-[47])) [48] [74
+[49]
+Underfull \hbox (badness 1478) in paragraph at lines 102--102
+[]\T1/futs/m/sc/12 Lachaux, J. C. \T1/futs/m/n/12 1970, ^^SThéâtres et am-phi-t
+héâtres d'afrique pro-con-su-laire^^T, \T1/futs/m/it/12 Aix-en-
+ []
+
+)) [50] [74
 
 
 
@@ -3278,7 +3392,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 Package natbib Warning: Citation `doc_blender' on page XVII undefined on input 
 line 55.
 
-<glossaire/basiliques.jpg, id=1675, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=1811, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3304,24 +3418,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: A8C9F0474B693BAEDC6D3CD0B0289697;2060.
+(rerunfilecheck)             Checksum: C57351A6E53AB98B7E16D3BD6862D4F5;2081.
 
 
 Package rerunfilecheck Warning: File `Main.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `Main.brf':
-(rerunfilecheck)             Before: DAF02F2443EEE9E7FCC9FC86FB8CE76F;3786
-(rerunfilecheck)             After:  4FEC6E8E9F8C16CED4FA4FC6CDE40BCC;3832.
+(rerunfilecheck)             Before: D3C260C3F638B4C2D10DDC4B4A0C3233;4797
+(rerunfilecheck)             After:  79A285FD687D7D285E2E08B0EEEED1E7;4797.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 52388 strings out of 493014
- 1129415 string characters out of 6133351
- 1376841 words of memory out of 5000000
- 54318 multiletter control sequences out of 15000+600000
+ 52459 strings out of 493014
+ 1130578 string characters out of 6133351
+ 1378545 words of memory out of 5000000
+ 54358 multiletter control sequences out of 15000+600000
  211952 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,87p,10450b,1270s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3336,6 +3450,9 @@ laced by a fixed one
 
 pdfTeX warning (dest): name{page.IV} has been referenced but does not exist, re
 placed by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.39} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:summa\040cavea} has been referenced but does no
 t exist, replaced by a fixed one
@@ -3501,10 +3618,10 @@ exmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (62 pages, 16372632 bytes).
+Output written on Main.pdf (64 pages, 16923532 bytes).
 PDF statistics:
- 2007 PDF objects out of 2073 (max. 8388607)
- 1837 compressed objects within 19 object streams
- 303 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2148 PDF objects out of 2487 (max. 8388607)
+ 1968 compressed objects within 20 object streams
+ 331 named destinations out of 1000 (max. 500000)
+ 408 words of extra memory for PDF output out of 10000 (max. 10000000)
 

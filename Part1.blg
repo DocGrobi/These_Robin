@@ -4,59 +4,61 @@ The top-level auxiliary file: Part1.aux
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
 Warning--entry type for "vuEnsemble" isn't style-file defined
---line 37 of file Part1/Biblio.bib
+--line 62 of file Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
---line 44 of file Part1/Biblio.bib
+--line 70 of file Part1/Biblio.bib
 Warning--entry type for "doc_blender" isn't style-file defined
---line 120 of file Part1/Biblio.bib
+--line 146 of file Part1/Biblio.bib
+Warning--I didn't find a database entry for "formige2"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--to sort, need author or key in charenton
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
+Warning--empty year in boissier
 Warning--empty year in vuEnsemble
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
 Warning--empty pages in rocheleau
 Warning--empty pages in tan
-You've used 20 entries,
+You've used 23 entries,
             3493 wiz_defined-function locations,
-            816 strings with 9421 characters,
-and the built_in function-call counts, 12547 in all, are:
-= -- 1024
-> -- 382
-< -- 28
-+ -- 157
-- -- 115
-* -- 912
-:= -- 1626
-add.period$ -- 41
-call.type$ -- 20
-change.case$ -- 135
-chr.to.int$ -- 21
-cite$ -- 29
-duplicate$ -- 1223
-empty$ -- 1028
-format.name$ -- 158
-if$ -- 2508
+            833 strings with 9828 characters,
+and the built_in function-call counts, 14450 in all, are:
+= -- 1211
+> -- 415
+< -- 33
++ -- 175
+- -- 124
+* -- 1016
+:= -- 1860
+add.period$ -- 47
+call.type$ -- 23
+change.case$ -- 153
+chr.to.int$ -- 24
+cite$ -- 33
+duplicate$ -- 1423
+empty$ -- 1177
+format.name$ -- 170
+if$ -- 2899
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 173
-newline$ -- 78
-num.names$ -- 78
-pop$ -- 491
+missing$ -- 196
+newline$ -- 87
+num.names$ -- 90
+pop$ -- 573
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 132
 quote$ -- 0
-skip$ -- 553
+skip$ -- 653
 stack$ -- 0
-substring$ -- 408
-swap$ -- 755
-text.length$ -- 13
+substring$ -- 490
+swap$ -- 887
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
-warning$ -- 7
-while$ -- 71
+type$ -- 192
+warning$ -- 8
+while$ -- 83
 width$ -- 0
-write$ -- 227
-(There were 10 warnings)
+write$ -- 257
+(There were 12 warnings)
