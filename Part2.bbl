@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,10 +15,6 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
-
-\bibitem[{ang()}]{angle_solide}
- \enquote{Angle solide},
-  \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
 
 \bibitem[{\textsc{Funkhouser} \bbletal{}(2004)\textsc{Funkhouser},
   \textsc{Tsingos}, \textsc{Carlbom}, \textsc{Elko}, \textsc{Sondhi},
@@ -39,6 +35,15 @@
 \textsc{Kandelman, M.} 2007, \emph{Simulation acoustique par la m{\'e}thode des
   sources images}, \bblmthesis{}, Ecole Nationale Sup{\'e}rieur
   Louis-Lumi{\`e}re.
+
+\bibitem[{\textsc{M'HENNI}(2010)}]{angle_solide}
+\textsc{M'HENNI, H.} 2010, \enquote{L'angle solide correspond {\`a} un c{\^o}ne
+  de r{\'e}volution d'angle au sommet inscrit dans la sph{\`e}re de
+  projection}, Wikip{\'e}dia.
+  \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
+
+\bibitem[{\textsc{Odeon}()}]{odeon}
+\textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.
 
 \bibitem[{\textsc{Picaut}(2005)}]{picaut}
 \textsc{Picaut, J.} 2005, \enquote{Application num{\'e}rique du concept de

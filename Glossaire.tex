@@ -96,20 +96,20 @@
 \newglossaryentry{armature}{
 	name={\scshape{Armature}},
 	text   = {armature},
-	description={Une Armature dans Blender peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, une Armature peut être constituée de nombreux Os. Ces Os peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \cite{doc_blender}.}
+	description={Une Armature dans Blender peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, une Armature peut être constituée de nombreux Os. Ces Os peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \footnote{Manuel Blender - Armatures}}
 	}
 
 \newglossaryentry{array}{
 	name={\scshape{Modifier "Array"}},
 	text   = {modifier "Array"},
-	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}.},
+	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}},
 	first={modifier "Array" qui permet de répéter n fois un objet}
 	}
 	
 \newglossaryentry{boolean}{
 	name={\scshape{Modifier "Boolean"}},
 	text   = {modifier "Boolean"},
-	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes.},
+	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes},
 	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
 	
@@ -123,12 +123,27 @@
 	name={\scshape{Baking}},
 	text   = {baking},
 	description={Action permettant d'interpoler une animation et d'affecter à chaque \gls{keyframe} les valeurs correspondantes}
-	}		
+	}
+
+\newglossaryentry{obj}{
+	name={\scshape{Wavefront OBJ}},
+	text   = {OBJ},
+	description={Format de fichier contenant la description d'une géométrie 3D. Les fichiers OBJ sont au format ASCII et se présente de la façon suivante :\\
+	\begin{itemize}
+	\item Le nom de l'objet est précédé d'un o
+	\item Le nom du matériau est précédé de usemtl (un fichier .mtl accompagne en général les fichier obj
+	\item Les coordonnées de sommets sont précédés d'un v
+	\item Les coordonnées de textures sont précédés d'un vt
+	\item  Les coordonnées de normales sont précédés d'un vn
+	\item Chaque face est ensuite définie par un ensemble d'indices faisant référence aux coordonnées des points, de texture et des normales définies précédemment	
+	\end{itemize}
+	},
+	}				
 	
 \newglossaryentry{mirror}{
 	name={\scshape{Modifier "Mirror"}},
 	text   = {modifier "Mirror"},
-	description={Permet de recopier un objet en miroir par rapport à un ou plusieurs axes. Il est utilisé par exemple pour symétriser les marches d'escalier longeant les \gls{aditus}.},
+	description={Permet de recopier un objet en miroir par rapport à un ou plusieurs axes. Il est utilisé par exemple pour symétriser les marches d'escalier longeant les \gls{aditus}},
 	first={modifier "Mirror" (qui permet de recopier des objets en symétrie)}
 	}	
 
@@ -141,7 +156,7 @@
 \newglossaryentry{particule}{
 	name={\scshape{Particule}},
 	text   = {particule},
-	description={L'outil physique "Système de Particules" est utilisé lorsque l'on veut émettre quelque chose depuis un objet en quantité importante. Ces particules peuvent ensuite être soumise à des effets physiques pour simuler des cheveux, de la fumée, du feu ou autres.}
+	description={L'outil physique "Système de Particules" est utilisé lorsque l'on veut émettre quelque chose depuis un objet en quantité importante. Ces particules peuvent ensuite être soumise à des effets physiques pour simuler des cheveux, de la fumée, du feu ou autres}
 	}
 	
 \newglossaryentry{screw}{
@@ -360,4 +375,3 @@
   description={Angle de dépouille de la molette},
   sort={gamma}
 }
-

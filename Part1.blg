@@ -7,9 +7,6 @@ Warning--entry type for "vuEnsemble" isn't style-file defined
 --line 62 of file Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
 --line 70 of file Part1/Biblio.bib
-Warning--entry type for "doc_blender" isn't style-file defined
---line 146 of file Part1/Biblio.bib
-Warning--I didn't find a database entry for "formige2"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--to sort, need author or key in charenton
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -19,46 +16,45 @@ Warning--empty year in vuEnsemble
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
 Warning--empty pages in rocheleau
-Warning--empty pages in tan
-You've used 23 entries,
+You've used 20 entries,
             3493 wiz_defined-function locations,
-            833 strings with 9828 characters,
-and the built_in function-call counts, 14450 in all, are:
-= -- 1211
-> -- 415
-< -- 33
-+ -- 175
-- -- 124
-* -- 1016
-:= -- 1860
-add.period$ -- 47
-call.type$ -- 23
-change.case$ -- 153
-chr.to.int$ -- 24
-cite$ -- 33
-duplicate$ -- 1423
-empty$ -- 1177
-format.name$ -- 170
-if$ -- 2899
+            811 strings with 9181 characters,
+and the built_in function-call counts, 12110 in all, are:
+= -- 1003
+> -- 346
+< -- 30
++ -- 145
+- -- 103
+* -- 846
+:= -- 1574
+add.period$ -- 41
+call.type$ -- 20
+change.case$ -- 132
+chr.to.int$ -- 21
+cite$ -- 29
+duplicate$ -- 1186
+empty$ -- 995
+format.name$ -- 139
+if$ -- 2427
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 196
-newline$ -- 87
-num.names$ -- 90
-pop$ -- 573
+missing$ -- 166
+newline$ -- 78
+num.names$ -- 76
+pop$ -- 480
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 114
 quote$ -- 0
-skip$ -- 653
+skip$ -- 547
 stack$ -- 0
-substring$ -- 490
-swap$ -- 887
-text.length$ -- 15
+substring$ -- 408
+swap$ -- 722
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
-warning$ -- 8
-while$ -- 83
+type$ -- 165
+warning$ -- 7
+while$ -- 69
 width$ -- 0
-write$ -- 257
-(There were 12 warnings)
+write$ -- 223
+(There were 9 warnings)
