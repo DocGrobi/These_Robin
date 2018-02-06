@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -41,6 +41,10 @@
   de r{\'e}volution d'angle au sommet inscrit dans la sph{\`e}re de
   projection}, Wikip{\'e}dia.
   \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
+
+\bibitem[{\textsc{Norme-ISO}(1993)}]{iso}
+\textsc{Norme-ISO}. 1993, \enquote{Acoustics - attenuation of sound during
+  propagation outdoors}, Norme ISO 9613-1.
 
 \bibitem[{\textsc{Odeon}()}]{odeon}
 \textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.

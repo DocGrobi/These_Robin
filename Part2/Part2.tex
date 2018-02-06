@@ -20,7 +20,7 @@ Pour débuter, nous ferons un tour d'horizon de la physique de l'acoustique et p
 		\newpage
 		
 \section{Introduction à l'acoustique de salle}
-L'acoustique de salle est une discipline à part entière qui consiste principalement à étudier la réverbération d'une pièce soumis à une onde sonore. Le principe de cette étude est le suivant : Il s'agit en général de placer une source sonore à l'intérieur d'une salle, fermée ou non, et de la faire rayonner dans toutes les directions. L'onde se propage alors jusqu'aux parois et subit un phénomène de diffusion. Il s'agit en réalité d'une combinaison de trois phénomènes : la réflexion, la réfraction et la diffraction. Par réfraction on entend la notion d'absorption suivant les lois de Descartes sur la propagation entre deux milieux (\cite{jouhaneau}). La diffraction quant à elle opère lorsque la longueur d'onde est proche de la taille de l'obstacle. En se plaçant en un point à l'intérieur de la salle, on pourra alors recevoir un signal sonore comme étant la somme d'un champ direct et d’un champ réverbéré. Le son direct provient directement de la source sans n'avoir touché aucune surface. Le son réverbéré se distingue en deux catégories : les premières réflexions dont l'ensemble forment la texture du son et le champ diffus qui peut être assimilé à une somme infinie d'ondes se propageant dans toutes les directions. 
+L'acoustique de salle est une discipline à part entière qui consiste principalement à étudier la réverbération d'une pièce soumis à une onde sonore. Le principe de cette étude est le suivant : Il s'agit en général de placer une source sonore à l'intérieur d'une salle, fermée ou non, et de la faire rayonner dans toutes les directions. L'onde se propage alors jusqu'aux parois et subit un phénomène de diffusion. Il s'agit en réalité d'une combinaison de trois phénomènes : la réflexion, la réfraction et la diffraction. Par réfraction on entend la notion d'absorption suivant les lois de Descartes sur la propagation entre deux milieux \cite[p. 3]{jouhaneau}. La diffraction quant à elle opère lorsque la longueur d'onde est proche de la taille de l'obstacle. En se plaçant en un point à l'intérieur de la salle, on pourra alors recevoir un signal sonore comme étant la somme d'un champ direct et d’un champ réverbéré. Le son direct provient directement de la source sans n'avoir touché aucune surface. Le son réverbéré se distingue en deux catégories : les premières réflexions dont l'ensemble forment la texture du son et le champ diffus qui peut être assimilé à une somme infinie d'ondes se propageant dans toutes les directions \cite[p. 9]{jouhaneau}.
 On comprend alors que les principaux facteurs qui vont influer sur l'acoustique perçue dans une salle sont : la source sonore, le milieu de propagation et la nature des parois et des obstacles.
 
 \begin{figureth}
@@ -274,18 +274,135 @@ Voici quelques exemple de coefficients d'absorption :
 
 
 \subsection{Lecture de maillage}
-Comme évoqué précédemment, l'outil traite les données à partir d'un fichier \gls{obj}. Pour faciliter la lecture du maillages, on s'assurera de n'avoir que des faces triangulaires.  permet cela et cette Cela est réalisé automatiquement lors de l'exportation du fichier par un \gls{modifier} "triangulate" inclue dans le script d'export. Dans fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Les données sont transformées en un vecteur de coordonnées des sommets et un vecteur de coordonnées des normales. Les textures ne nous sont pas utile. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant dans le même ordre que les normales.
-Les sources et récepteurs sont positionnés dans Blender. Il suffit d'utiliser les objets volumiques et que leur nom comporte respectivement "source" et "listener". L'outil de calcul déterminera alors le centre des objets sources et récepteurs en calculant la moyenne des coordonnées des sommets ainsi que le rayon du récepteur grâce à la distance entre son centre et une extrémité.
+Comme évoqué précédemment, l'outil traite les données à partir d'un fichier \gls{obj}. Pour faciliter la lecture du maillages, on s'assurera de n'avoir que des faces triangulaires. Cela est réalisé automatiquement lors de l'exportation du fichier par un \gls{modifier} "triangulate" inclue dans le script d'export. Dans fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Un vecteur de sommets et un vecteur de normales sont remplis face par face en conservant le même ordre. Ces deux vecteurs stockent ainsi la totalité du maillage. Les textures quant à elles ne nous sont pas utile. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant également face par face en respectant l'ordre établi précédemment.
+Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur est de 1m. Cependant, l'utilisateur pourra changer ces paramètre en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure du récepteur correspond au rayon de la sphère circonscrite à l'objet "\textit{listener}". Il lest possible de placer plusieurs sources. L'ensemble des calculs se réaliserons séquentiellement pour une source après l'autre. Un seul récepteur est pris en compte. L'addon Blender permet de mettre à jours les informations sur les sources et récepteurs simplement avant de relancer un nouveau calcul.
+
+
 
 \subsection{Création d'une boite englobante}
 
+\begin{figureth}
+	\begin{subfigureth}{0.55\textwidth}
+		\includegraphics[width=\linewidth]{images/boiteenglobante}
+		%\caption{Illustration d'une boite englobant un maillage quelconque}
+		\label{boiteenglobante}
+	\end{subfigureth}
+	\qquad
+	\begin{subfigureth}{0.35\textwidth}
+		\includegraphics[width=\linewidth]{images/boiteenglobante2}
+		%\caption{Illustration d'une boite englobant un maillage quelconque}
+		\label{boiteenglobante2}
+	\end{subfigureth}
+	\caption{Illustration d'une boite englobant un maillage quelconque}
+\end{figureth}
+
+La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} que pour pouvoir itérer les rebonds des rayons sur les parois, il est nécessaire que tous les rayons rencontrent une face. Or, pour une salle ouverte, comme c'est le cas du théâtre d'Orange, certains rayons peuvent ne rencontrer aucune surface. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées aux vecteurs afin de créer une boite englobant le maillage. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par les parois ouvertes. Par ailleurs, cette boite ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondues avec une paroi du maillage et que le rayons soit absorbé par la boite englobante au lieu d'être réfléchi par la paroi.
 
 \subsection{Calcul de l'absorption de l'air}
+Pour se rapprocher d'un modèle réaliste de propagation d'onde, il est important de prendre en compte l'absorption atmosphérique. Ce phénomène est dû à la viscosité et la conduction thermique du milieu ainsi qu'à l'absorption des molécules. C'est effets vont provoquer une décroissance exponentielle de l'énergie d'onde \cite[p. 68-70]{jouhaneau}. Selon leur distance parcourue dans l'air, les rayons vont donc subir une atténuation de leur énergie en prenant en compte trois facteurs principaux : la température, l'humidité et le pression. La température et la pression atmosphérique de référence sont respectivement de 20°C et 101,325 kPa \footnote{International Standard Atmosphere}. Nous déterminons le coefficient d'atténuation pour chaque bande de fréquence par formules analytiques. 
 
+% view-source:http://resource.npl.co.uk/acoustics/techguides/absorption/
+Tout d'abord, nous calculons le facteur d'humidité $h$ correspondant à la concentration molaire de vapeur d'eau \cite[Annexe B, B.1]{iso} :
+
+\begin{align}
+	C_h & = 4,6151 - 6,8346 \times \frac{273,15}{T}^{1,261} \\
+	h & = hum \times 10^{\frac{C_h}{P_r}} \\ 
+\end{align}
+
+Avec : \\
+$T$ : La température en Kelvin \\
+$P_r$ : La pression relative à 101,325kPa ($\frac{Pression}{101,325}$) \\
+$hum$ : L'humidité relative \\
+
+Nous exprimons ensuite les fréquences de relaxation de l'oxygène et de l'azote \cite[6.2, eq. 3 et 4]{iso}:
+
+\begin{align}
+	fr_O & =  P_r \times (24 + \frac{40400 \times h \times (0,02 + h)}{0,391 + h})  \\
+	fr_A & =  \frac{P_r}{\sqrt{T_r}} \times (9 + 280 \times h \times \exp^{-4,17 \times (\frac{1}{\sqrt[3]{T_r}} - 1)})
+\end{align}
+
+
+Avec : \\
+$T_r$ : La température relative à 20°C ($\frac{T}{293,15}$) \\
+$f$ : La fréquence en Hz \\
+
+Nous pouvons alors exprimer le coefficient d'absorption de l'air en dB/m en fonction de la fréquence  \cite[6.2, eq. 5]{iso} :
+
+\begin{equation}
+	Abs = 8,686 \times f^2 \times (\frac{1,84 \times 10^{-11}}{P_r} \times \sqrt{T_r} + T_r^{\frac{-5}{2}} \times (0,01275 \times \frac{\exp{\frac{-2239,1}{T}}}{fr_O + \frac{f^2}{fr_O}} + 0,1068 \times  \frac{\exp{\frac{-3352}{T}}}{fr_A + \frac{f^2}{fr_A}}))
+\end{equation}
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/courbesAbs}
+	\caption{Courbes d'absorption de l'air en fonction de l'humidité relative (\%)}
+	\label{courbesAbs}
+\end{figureth}
 
 \section{Méthode d'octree}
-\section{Calcul de rayon}
+Au moment de l'initialisation, le maillage va également être classé dans un \gls{octree}. Cette méthode va permettre par la suite d'accélérer considérablement la vitesse de calcul (voir \ref{complexite}). Le principe consiste à créer une boite cubique dite "boite mère" contenant l'ensemble des éléments du maillage. Celle-ci est alors subdivisée en son milieu sur chacun de ses axes pour créer huit "boites filles" qui elles-même vont être subdivisée en huit boites filles, etc. De manière séquentielle et en descendant dans l'arborescence de l'arbre, chaque élément d'une "boite mère" va être assigné à la "boite fille" qui le contient jusqu'à ce que plus aucune "boite fille" ne contienne plus de $n$ éléments.
+
+\begin{figureth}
+	\includegraphics[width=0.6\linewidth]{images/octree}
+	\caption{Illustration du principe d'\gls{octree}. Gauche : Subdivision d'un cube en "octants". Droite : L'arbre correspondant}
+	\label{octree}
+\end{figureth}
+
+Le problème que nous avons à résoudre nous impose de pouvoir traiter plusieurs dizaines, voire centaines de milliers d'éléments. Les algorithmes permettant de gérer ce genre de cas utilisent souvent des méthodes de "diviser pour régner ("\textit{divide and conquer}"). Cela permet, notamment dans des environnements 3D de pré-trier les données afin de ne réaliser les calculs couteux en temps que sur une quantité de données restreinte. Dans notre cas, l'utilisation d'un arbre nous permettra de ne tester les interactions qu'entre certains rayons et certains éléments : ceux qui seront situés dans la même subdivision de l'espace. Sans ce tri, il serai nécessaire de tester l'intersection de chaque rayon avec chaque élément et ce, pour chaque itération. Cela revient à assembler plusieurs fois une matrice pleine et qui est extrêmement couteux en temps de calcul.
+
+Il existe d'autres types d'arbres permettant également l'optimisation des calculs tels que les arbres binaire ou les arbres kd ...
+
+Ainsi, l'algorithme a été développé de la manière suivante :
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/DiagOctree}
+	\caption{Diagramme d'activité résumant le processus de création d'un arbre d'octree}
+	\label{DiagOctree}
+\end{figureth}
+
+Une première boite contenant l'ensemble des éléments est créée. On y associe donc l'ensemble des indices des éléments. On va ensuite, de manière récursive descendre dans des étages successif. Passer de l'étage $e$ à l'étage $e+1$ revient à découper toute les boites non-vides de l'étage $e$ en huit boites-filles de tailles égales qui deviendront à leur tour les boites-mères de l'étage $e+1$. Les indices des éléments assignés à une boite-mère sont répartis dans les huit boites-filles. Pour savoir quel élément appartient à quelle boite, on utilise les coordonnées du premier point de l'élément. Effectivement, un élément peut géométriquement appartenir à plusieurs boites mais il est nécessaire d'avoir une unicité, c'est à dire, d'un élément ne puisse se retrouver que dans une boite à la fois. Ainsi, chaque face triangulaire sera traité d'après son premier point. La boucle récursive s'arrête lorsque les boites possèdent toutes moins d'éléments d'une valeur seuil. Ainsi nous nous assurons que l'octree se raffine de la même manière que le maillage et que chaque boite ne content qu'un faible nombre d'éléments.
+Il reste néanmoins une dernière étape qui permettra de s'assurer que les rayons rencontrent les bons éléments. Il s'agit de redimensionner les boites non-vides pour que cette fois, elle englobent bien géométriquement les faces qu'elles contiennent.
+
+\section{Calcul de rayon} \label{sect_rayon}
+Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un élément du maillage. Il est bon de noter que dans la nature les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources telles que la voix humaine ou les instruments de musique ne sont pas omnidirectionnelle mais possède une répartition de l'énergie qui lui est propre. Notre étude se place dans le cas générale d'une source ayant une répartition uniforme de son énergie dans toutes les direction de l'espace et pourra ensuite être enrichie par différent type de sources. 
+
+Pour générer une émission omnidirectionnelle de rayons nous avions dans un premier temps pensé à utiliser une "Ico Sphère" générée par Blender. L'idée étant d'utiliser le centre comme point d'émission et chaque vertice pour calculer le vecteur directeur des rayons. Effectivement Blender propose dans ses objets de base une sphère formée à la base par un icosaèdre régulier dont chaque segment est redécoupé en son milieu pour raffiner la sphère (voir fig. \ref{icosphere}). La répartition est donc uniforme. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque (avec l'icosphère il ne s'agit que de multiple de 4). Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons. La formule utilisée est la suivante :
+
+\begin{figureth}
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/icosphere}
+		\caption{Icosphère de Blender subdivisée 2, 3, 4 et 5 fois}
+		\label{icosphere}
+	\end{subfigureth}
+	\qquad
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/fibonacci}
+		\caption[Sphère de Fibonacci]{Sphère de Fibonacci \footnotemark}
+		\label{fibonacci}
+	\end{subfigureth}
+\end{figureth}
+\citefnt[fig. 1]{fibonacci}
+
+\begin{align}
+G_r &= \frac{1 + \sqrt{5}}{2} \\
+\theta &= \frac{2 \Pi \times n}{G_r}  \pmod{2\Pi} \\
+\phi &= \arcsin{(\frac{2n}{N}-1)} 
+\end{align}
+
+Avec : \\
+$G_r$ : le golden ratio \\
+$\theta$ et $\phi$ : les coordonnées sphériques \\
+$n$ : le numéro du rayon \\
+$N$ : le nombre total de rayons
+
+A partir de ces coordonnées sphériques, on en déduit les coordonnées cartésiennes des vecteurs directeurs que l'on normalisera par la suite.
+\begin{align}
+x &= \cos{\phi} \times \cos{\theta} \\
+y &= \cos{\phi} \times \sin{\theta} \\
+z &= \sin{\phi}
+\end{align}
+
 \section{Calcul de sources-images}
+\label{sect_si}
 \section{Génération de réponse impulsionnelle}
 \section{Vue d'ensemble}
 Add-on blender, traitement du signal, etc
@@ -301,7 +418,7 @@ Add-on blender, traitement du signal, etc
 	\section{Comparaison aux cas test}
 		\subsection{Salle rectangulaire}
 		\subsection{Salle sphèrique}
-	\section{Analyse de complexité}
+	\section{Analyse de complexité} \label{complexite}
 	
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
