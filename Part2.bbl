@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{12}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -26,6 +26,10 @@
   \enquote{A beam tracing method for interactive architectural acoustics},
   \emph{Acoustical Society of America}, , \bblno{} 115, \bblpp{} 739--756.
 
+\bibitem[{\textsc{ISO-9613-1}(1993)}]{iso}
+\textsc{ISO-9613-1}. 1993, \enquote{Acoustics - attenuation of sound during
+  propagation outdoors}, .
+
 \bibitem[{\textsc{Jouhaneau}(1997)}]{jouhaneau}
 \textsc{Jouhaneau, J.} 1997, \emph{Acoustique des salles et sonorisation},
   \emph{Acoustique appliqu{\'e}e}, \bblvol{}~3, Conservatoire national des arts
@@ -36,15 +40,26 @@
   sources images}, \bblmthesis{}, Ecole Nationale Sup{\'e}rieur
   Louis-Lumi{\`e}re.
 
+\bibitem[{\textsc{Keinert} \bbletal{}(2015)\textsc{Keinert}, \textsc{Innmann},
+  \textsc{Sanger} \bbland{} \textsc{Stamminger}}]{fibonacci}
+\textsc{Keinert, B.}, \textsc{M.~Innmann}, \textsc{M.~Sanger} \bbland{}
+  \textsc{M.~Stamminger}. 2015, \enquote{Spherical fibonacci mapping},
+  \emph{ACM Transactions on Graphics}, \bblvol{}~34.
+
+\bibitem[{\textsc{Meagher}(1982)}]{octree}
+\textsc{Meagher, D.} 1982, \emph{Octree Generation, Analysis and Manipulation},
+  \bblvol{}~TR, Image processing laboratory.
+
 \bibitem[{\textsc{M'HENNI}(2010)}]{angle_solide}
 \textsc{M'HENNI, H.} 2010, \enquote{L'angle solide correspond {\`a} un c{\^o}ne
   de r{\'e}volution d'angle au sommet inscrit dans la sph{\`e}re de
   projection}, Wikip{\'e}dia.
   \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
 
-\bibitem[{\textsc{Norme-ISO}(1993)}]{iso}
-\textsc{Norme-ISO}. 1993, \enquote{Acoustics - attenuation of sound during
-  propagation outdoors}, Norme ISO 9613-1.
+\bibitem[{\textsc{M{\"o}ller} \bbland{} \textsc{Trumbore}(1997)}]{moller}
+\textsc{M{\"o}ller, T.} \bbland{} \textsc{B.~Trumbore}. 1997, \enquote{Fast,
+  minimum storage ray-triangle intersection}, \emph{Journal of Graphics Tools},
+  \bblvol{}~2, \bblno{}~1, \bblpp{} 21--28.
 
 \bibitem[{\textsc{Odeon}()}]{odeon}
 \textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.
@@ -59,5 +74,11 @@
 \bibitem[{\textsc{Sabine}(1900)}]{sabine}
 \textsc{Sabine, W.~C.} 1900, \emph{Architectural Acoustics}, \bblvol{} Part I.
   Reverberation, Reprints of the American Architect.
+
+\bibitem[{\textsc{Williams} \bbletal{}(2005)\textsc{Williams}, \textsc{Barrus},
+  \textsc{Morley} \bbland{} \textsc{Shirley}}]{AABB}
+\textsc{Williams, A.}, \textsc{S.~Barrus}, \textsc{R.~Morley} \bbland{}
+  \textsc{P.~Shirley}. 2005, \enquote{An efficient and robust ray--box
+  intersection algorithm}, \emph{ACM SIGGRAPH}, , \bblno{}~9.
 
 \end{thebibliography}

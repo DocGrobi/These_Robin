@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  6 FEB 2018 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  8 FEB 2018 12:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2794,17 +2794,17 @@ Package minitoc Info: I0033
 \openout10 = `Main.toc'.
 
  [8] (./Main.lof
-Overfull \hbox (2.18394pt too wide) detected at line 67
+Overfull \hbox (2.18394pt too wide) detected at line 69
  []\T1/futs/m/n/12 VIII
  []
 
-)
+[9
+
+])
 \tf@lof=\write11
 \openout11 = `Main.lof'.
 
- [9
-
-] [10] (./Main.lot)
+ [10] (./Main.lot)
 \tf@lot=\write12
 \openout12 = `Main.lot'.
 
@@ -2868,7 +2868,7 @@ Package minitoc Info: I0006
 (minitoc)             Main.mtc6 is empty on input line 20.
 [55
 
-] <Part2/images/RIR_schematique.png, id=394, 721.69624pt x 421.575pt>
+] <Part2/images/RIR_schematique.png, id=396, 721.69624pt x 421.575pt>
 File: Part2/images/RIR_schematique.png Graphic file (type png)
 
 <use Part2/images/RIR_schematique.png>
@@ -2880,14 +2880,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
  []
 
-[57] <Part2/images/BEM.png, id=436, 657.45625pt x 116.435pt>
+[57] <Part2/images/BEM.png, id=438, 657.45625pt x 116.435pt>
 File: Part2/images/BEM.png Graphic file (type png)
 
 <use Part2/images/BEM.png>
 Package pdftex.def Info: Part2/images/BEM.png used on input line 76.
 (pdftex.def)             Requested size: 441.01773pt x 78.1052pt.
  [58 <./Part2/images/BEM.png>]
-<Part2/images/schema_propagation.png, id=468, 318.18875pt x 218.8175pt>
+<Part2/images/schema_propagation.png, id=470, 318.18875pt x 218.8175pt>
 File: Part2/images/schema_propagation.png Graphic file (type png)
 
 <use Part2/images/schema_propagation.png>
@@ -2895,7 +2895,7 @@ Package pdftex.def Info: Part2/images/schema_propagation.png used on input line
  103.
 (pdftex.def)             Requested size: 242.5611pt x 166.80719pt.
 
-<Part2/images/angle_solide.png, id=469, 441.65pt x 441.65pt>
+<Part2/images/angle_solide.png, id=471, 441.65pt x 441.65pt>
 File: Part2/images/angle_solide.png Graphic file (type png)
 
 <use Part2/images/angle_solide.png>
@@ -2907,7 +2907,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--130
 
  []
 
-<Part2/images/schema_rayon.png, id=486, 313.17pt x 199.74625pt>
+<Part2/images/schema_rayon.png, id=488, 313.17pt x 199.74625pt>
 File: Part2/images/schema_rayon.png Graphic file (type png)
 
 <use Part2/images/schema_rayon.png>
@@ -2919,7 +2919,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--165
  []
 
 [60] [61 <./Part2/images/schema_rayon.png>]
-<Part2/images/schema_SI.png, id=514, 189.20688pt x 207.27437pt>
+<Part2/images/schema_SI.png, id=516, 189.20688pt x 207.27437pt>
 File: Part2/images/schema_SI.png Graphic file (type png)
 
 <use Part2/images/schema_SI.png>
@@ -2930,7 +2930,7 @@ Underfull \hbox (badness 2197) in paragraph at lines 200--200
 []\T1/futs/m/n/10.95 (a) |Schéma de la créa-tion d'une source
  []
 
-<Part2/images/constellation.png, id=515, 269.005pt x 312.16624pt>
+<Part2/images/constellation.png, id=517, 269.005pt x 312.16624pt>
 File: Part2/images/constellation.png Graphic file (type png)
 
 <use Part2/images/constellation.png>
@@ -2943,7 +2943,7 @@ Package minitoc Info: I0006
 (minitoc)             Main.mtc7 is empty on input line 217.
 [63
 
-] <Part2/images/synopsis.jpg, id=534, 1603.9925pt x 2389.92876pt>
+] <Part2/images/synopsis.jpg, id=536, 1603.9925pt x 2389.92876pt>
 File: Part2/images/synopsis.jpg Graphic file (type jpg)
 
 <use Part2/images/synopsis.jpg>
@@ -2979,7 +2979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--266
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.279 
-      ] <Part2/images/boiteenglobante.png, id=562, 735.74875pt x 664.4825pt>
+      ] <Part2/images/boiteenglobante.png, id=564, 735.74875pt x 664.4825pt>
 File: Part2/images/boiteenglobante.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante.png>
@@ -2987,7 +2987,7 @@ Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 28
 6.
 (pdftex.def)             Requested size: 242.5611pt x 219.06697pt.
 
-<Part2/images/boiteenglobante2.png, id=563, 551.05875pt x 792.9625pt>
+<Part2/images/boiteenglobante2.png, id=565, 551.05875pt x 792.9625pt>
 File: Part2/images/boiteenglobante2.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante2.png>
@@ -3010,14 +3010,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--328
 
  []
 
-<Part2/images/courbesAbs.png, id=588, 829.59938pt x 532.99126pt>
+<Part2/images/courbesAbs.png, id=590, 829.59938pt x 532.99126pt>
 File: Part2/images/courbesAbs.png Graphic file (type png)
 
 <use Part2/images/courbesAbs.png>
 Package pdftex.def Info: Part2/images/courbesAbs.png used on input line 336.
 (pdftex.def)             Requested size: 441.01773pt x 283.33797pt.
  [68]
-<Part2/images/octree.png, id=607, 1204.5pt x 691.58376pt>
+<Part2/images/octree.png, id=612, 1204.5pt x 691.58376pt>
 File: Part2/images/octree.png Graphic file (type png)
 
 <use Part2/images/octree.png>
@@ -3030,53 +3030,111 @@ ur ré-gner ("\T1/futs/m/it/12 di-vide and conquer\T1/futs/m/n/12 ").
  []
 
 [69 <./Part2/images/courbesAbs.png> <./Part2/images/octree.png>]
-<Part2/images/DiagOctree.jpg, id=616, 1160.335pt x 985.6825pt>
+<Part2/images/DiagOctree.jpg, id=623, 990.70125pt x 922.44624pt>
 File: Part2/images/DiagOctree.jpg Graphic file (type jpg)
 
 <use Part2/images/DiagOctree.jpg>
 Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 357.
-(pdftex.def)             Requested size: 441.01773pt x 374.63844pt.
+(pdftex.def)             Requested size: 352.81552pt x 328.50525pt.
  [70 <./Part2/images/DiagOctree.jpg>]
-<Part2/images/icosphere.png, id=622, 817.0525pt x 759.83875pt>
+<Part2/images/DiagRay.jpg, id=628, 363.3575pt x 701.62125pt>
+File: Part2/images/DiagRay.jpg Graphic file (type jpg)
+
+<use Part2/images/DiagRay.jpg>
+Package pdftex.def Info: Part2/images/DiagRay.jpg used on input line 368.
+(pdftex.def)             Requested size: 264.61333pt x 510.96948pt.
+ [71 <./Part2/images/DiagRay.jpg>]
+<Part2/images/icosphere.png, id=634, 817.0525pt x 759.83875pt>
 File: Part2/images/icosphere.png Graphic file (type png)
 
 <use Part2/images/icosphere.png>
-Package pdftex.def Info: Part2/images/icosphere.png used on input line 372.
+Package pdftex.def Info: Part2/images/icosphere.png used on input line 379.
 (pdftex.def)             Requested size: 198.45662pt x 184.55632pt.
 
-<Part2/images/fibonacci.png, id=623, 175.65625pt x 166.6225pt>
+<Part2/images/fibonacci.png, id=635, 175.65625pt x 166.6225pt>
 File: Part2/images/fibonacci.png Graphic file (type png)
 
 <use Part2/images/fibonacci.png>
-Package pdftex.def Info: Part2/images/fibonacci.png used on input line 378.
+Package pdftex.def Info: Part2/images/fibonacci.png used on input line 385.
 (pdftex.def)             Requested size: 198.45662pt x 188.26596pt.
+ [72 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>]
+Overfull \hbox (1.68936pt too wide) in paragraph at lines 412--413
+\T1/futs/m/n/12 soient consi-dé-rés comme "morts". Ce cri-tère est dé-ter-miné 
+en com-pa-rant la va-leur d'éner-
+ []
+
+<Part2/images/AABB.png, id=657, 367.87437pt x 297.61188pt>
+File: Part2/images/AABB.png Graphic file (type png)
+
+<use Part2/images/AABB.png>
+Package pdftex.def Info: Part2/images/AABB.png used on input line 434.
+(pdftex.def)             Requested size: 198.45662pt x 160.55815pt.
+
+<Part2/images/AABB2.png, id=658, 366.36874pt x 298.11375pt>
+File: Part2/images/AABB2.png Graphic file (type png)
+
+<use Part2/images/AABB2.png>
+Package pdftex.def Info: Part2/images/AABB2.png used on input line 440.
+(pdftex.def)             Requested size: 198.45662pt x 161.48395pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 383.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 459.
 
 
-Package natbib Warning: Citation `fibonacci' on page 71 undefined on input line
- 383.
+Package natbib Warning: Citation `arenberg' on page 74 undefined on input line 
+459.
 
-[71 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>] [72]
+
+Package natbib Warning: Citation `badouel' on page 74 undefined on input line 4
+59.
+
+[74 <./Part2/images/AABB.png> <./Part2/images/AABB2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--531
+
+ []
+
+[75] <Part2/images/rayRefl.png, id=739, 458.71375pt x 355.3275pt>
+File: Part2/images/rayRefl.png Graphic file (type png)
+
+<use Part2/images/rayRefl.png>
+Package pdftex.def Info: Part2/images/rayRefl.png used on input line 566.
+(pdftex.def)             Requested size: 264.61333pt x 204.98402pt.
+
+Underfull \vbox (badness 4316) has occurred while \output is active []
+
+ [76 <./Part2/images/rayRefl.png>] [77] [78
+
+]
 Chapitre 6.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc8 is empty on input line 415.
-[73
-
-] [74] [75
+(minitoc)             Main.mtc8 is empty on input line 587.
+[79] [80] [81
 
 ] (./Part2.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [76
+ [82
 
 ] (./francaisbst.tex)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 44.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 58.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))) [77]pdfTeX warning (ext4): destination with the same identifier (name{page.
+))) [83]pdfTeX warning (ext4): destination with the same identifier (name{page.
 74}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3098,7 +3156,7 @@ Annexe B.
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=713, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=832, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3134,24 +3192,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 1FF2624B27ADA4ACEA3B5B48338EE57A;1424.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 3C36073229F129342E64630483FCF96D;4997.
+(rerunfilecheck)             Checksum: FC9615FFA3D3A94CD52481A4453518D2;1424.
 
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: 1D318C893E85B7269675C805FEC57099;5417
+(rerunfilecheck)             After:  EE5CC08C6907A1D36F14FF38CDDDCC4D;5417.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 52289 strings out of 493014
- 1127652 string characters out of 6133351
- 1379880 words of memory out of 5000000
- 54307 multiletter control sequences out of 15000+600000
+ 52452 strings out of 493014
+ 1130053 string characters out of 6133351
+ 1384286 words of memory out of 5000000
+ 54422 multiletter control sequences out of 15000+600000
  212594 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,18n,87p,10450b,1252s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,18n,87p,10450b,1250s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:hyposcaenium} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ambulacre} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:OBB} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:AABB} has been referenced but does not exist, r
+eplaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.90} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3199,12 +3274,6 @@ pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.18} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
@@ -3348,15 +3417,16 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (41 pages, 3544066 bytes).
+/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/adobe/utopia/putri8a.pfb>
+Output written on Main.pdf (47 pages, 3700151 bytes).
 PDF statistics:
- 856 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
- 231 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 986 PDF objects out of 1000 (max. 8388607)
+ 875 compressed objects within 9 object streams
+ 275 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

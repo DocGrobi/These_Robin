@@ -339,7 +339,7 @@ Nous pouvons alors exprimer le coefficient d'absorption de l'air en dB/m en fonc
 \end{figureth}
 
 \section{Méthode d'octree}
-Au moment de l'initialisation, le maillage va également être classé dans un \gls{octree}. Cette méthode va permettre par la suite d'accélérer considérablement la vitesse de calcul (voir \ref{complexite}). Le principe consiste à créer une boite cubique dite "boite mère" contenant l'ensemble des éléments du maillage. Celle-ci est alors subdivisée en son milieu sur chacun de ses axes pour créer huit "boites filles" qui elles-même vont être subdivisée en huit boites filles, etc. De manière séquentielle et en descendant dans l'arborescence de l'arbre, chaque élément d'une "boite mère" va être assigné à la "boite fille" qui le contient jusqu'à ce que plus aucune "boite fille" ne contienne plus de $n$ éléments.
+Au moment de l'initialisation, le maillage va également être classé dans un \gls{octree}. Cette méthode va permettre par la suite d'accélérer considérablement la vitesse de calcul \cite[p. 5]{octree} (voir \ref{complexite}). Le principe consiste à créer une boite cubique dite "boite mère" contenant l'ensemble des éléments du maillage. Celle-ci est alors subdivisée en son milieu sur chacun de ses axes pour créer huit "boites filles" qui elles-même vont être subdivisée en huit boites filles, etc. De manière séquentielle et en descendant dans l'arborescence de l'arbre, chaque élément d'une "boite mère" va être assigné à la "boite fille" qui le contient jusqu'à ce que plus aucune "boite fille" ne contienne plus de $n$ éléments.
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octree}
@@ -354,7 +354,7 @@ Il existe d'autres types d'arbres permettant également l'optimisation des calcu
 Ainsi, l'algorithme a été développé de la manière suivante :
 
 \begin{figureth}
-	\includegraphics[width=\linewidth]{images/DiagOctree}
+	\includegraphics[width=0.8\linewidth]{images/DiagOctree}
 	\caption{Diagramme d'activité résumant le processus de création d'un arbre d'octree}
 	\label{DiagOctree}
 \end{figureth}
@@ -363,6 +363,13 @@ Une première boite contenant l'ensemble des éléments est créée. On y associ
 Il reste néanmoins une dernière étape qui permettra de s'assurer que les rayons rencontrent les bons éléments. Il s'agit de redimensionner les boites non-vides pour que cette fois, elle englobent bien géométriquement les faces qu'elles contiennent.
 
 \section{Calcul de rayon} \label{sect_rayon}
+
+\begin{figureth}
+	\includegraphics[width=0.6\linewidth]{images/DiagRay}
+	\caption{Diagramme d'activité résumant le processus de création des rayons}
+	\label{DiagRay}
+\end{figureth}
+
 Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un élément du maillage. Il est bon de noter que dans la nature les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources telles que la voix humaine ou les instruments de musique ne sont pas omnidirectionnelle mais possède une répartition de l'énergie qui lui est propre. Notre étude se place dans le cas générale d'une source ayant une répartition uniforme de son énergie dans toutes les direction de l'espace et pourra ensuite être enrichie par différent type de sources. 
 
 Pour générer une émission omnidirectionnelle de rayons nous avions dans un premier temps pensé à utiliser une "Ico Sphère" générée par Blender. L'idée étant d'utiliser le centre comme point d'émission et chaque vertice pour calculer le vecteur directeur des rayons. Effectivement Blender propose dans ses objets de base une sphère formée à la base par un icosaèdre régulier dont chaque segment est redécoupé en son milieu pour raffiner la sphère (voir fig. \ref{icosphere}). La répartition est donc uniforme. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque (avec l'icosphère il ne s'agit que de multiple de 4). Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons. La formule utilisée est la suivante :
@@ -391,8 +398,8 @@ G_r &= \frac{1 + \sqrt{5}}{2} \\
 Avec : \\
 $G_r$ : le golden ratio \\
 $\theta$ et $\phi$ : les coordonnées sphériques \\
-$n$ : le numéro du rayon \\
-$N$ : le nombre total de rayons
+$N$ : le nombre total de rayons \\
+$n \in[0, 1, 2, ... N-1]$ : le numéro du rayon 
 
 A partir de ces coordonnées sphériques, on en déduit les coordonnées cartésiennes des vecteurs directeurs que l'on normalisera par la suite.
 \begin{align}
@@ -401,9 +408,174 @@ y &= \cos{\phi} \times \sin{\theta} \\
 z &= \sin{\phi}
 \end{align}
 
-\section{Calcul de sources-images}
-\label{sect_si}
-\section{Génération de réponse impulsionnelle}
+
+A l'initialisation nous émettrons donc $N$ rayons depuis le centre de l'objet source et dirigés dans toutes les directions de manière uniforme. On leur assigne une énergie normalisée à 1. L'algorithme va ensuite fonctionner par itération jusqu'à ce que tous les rayons soient considérés comme "morts". Ce critère est déterminé en comparant la valeur d'énergie du rayon à une valeur seuil. A chaque itération, on va dans un premier temps classer les rayons dans l'octree en assignant à chaque feuille (c'est à dire, boite non-vide) l'indice des rayons qui la traverse. Pour cela, nous utilisons un algorithme d'intersection Rayon/Boite optimisé \cite{AABB}. La particularité des boites d'un octree est qu'elles sont toutes alignées selon les axes du repère cartésien. On appel communément ce type de boite \gls{AABB} en opposition aux \gls{OBB}. Nous allons donc utiliser cette propriété pour vérifier si un rayon intersecte une boite. Pour cela rappelons qu'un rayons peut s'écrire sous la forme : 
+\begin{equation}
+f(t) = D \times t + O
+\end{equation}
+
+Avec : \\
+$D$ : le vecteur directeur du rayon de coordonnées $(D_x ; D_y ; D_z)$ \\
+$O$ : le point d'origine du rayon de coordonnées $(O_x ; O_y ; O_z)$
+
+On peut également exprimer les axes délimitant la boite par les équations suivantes :
+\begin{align}
+f(t) &= X_{min}  \\
+f(t) &= X_{max}  \\
+f(t) &= Y_{min}  \\
+f(t) &= Y_{max} \\
+f(t) &= Z_{min} \\
+f(t) &= Z_{max}
+\end{align}
+
+
+\begin{figureth}
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/AABB}
+		\caption{Vue 2D d'un rayon intersectant la boite}
+		\label{AABB}
+	\end{subfigureth}
+	\qquad
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/AABB2}
+		\caption{Vue 2D de rayons n'intersectant pas la boite}
+		\label{AABB2}
+	\end{subfigureth}
+\end{figureth}
+
+Ainsi, on peut exprimer les points d'intersection entre le rayon et les plans délimitant la boite de type \gls{AABB} avec le système d'équations suivant :
+
+\begin{align}
+X_{min} &= x_0 \times D_x - O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x} \\
+X_{max} &= x_1 \times D_x - O_x 	& \Rightarrow 	& &	x_1 = \frac{X_{max} - O_x}{D_x} \\
+Y_{min} &= y_0 \times D_y - O_y 	& \Rightarrow	& &	y_0 = \frac{Y_{min} - O_y}{D_y} \\
+Y_{max} &= y_1 \times D_y - O_y 	& \Rightarrow	& &	y_1 = \frac{Y_{max} - O_y}{D_y} \\
+Z_{min} &= z_0 \times D_z - O_z	& \Rightarrow 	& &	z_0 = \frac{Z_{min} - O_z}{D_z} \\
+Z_{max} &= z_1 \times D_z - O_z 	& \Rightarrow 	& &	z_1 = \frac{Z_{max} - O_z}{D_z} 
+\end{align}
+
+On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pourvoir déterminer si un rayon intersecte une boite en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boite (voir fig \ref{AABB2}. Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$.
+
+De cette façon les feuilles de l'octree prendront comme arguments les indices des rayons les traversant. On pourra ainsi ne tester les intersections d'entre les rayons et les éléments situés dans les mêmes subdivisions de l'espace. Boite par boite, l'algorithme va donc déterminer pour chaque face les rayons qui l'intersecte et le cas échéant, sa longueur. Pour cela, nous utilisons l'algorithme de Möller-Trumbore \cite[p. 2-3]{moller} développé à la fin des années 90 d'après les travaux de J.Arenberg \cite{arenberg} et D.Badouel \cite[p. 390-393]{badouel} et reconnu pour être rapide et efficace. Il s'agit d'opérer un changement de base pour le vecteur directeur du rayon et d'exprimer le point d'intersection à l'aide de coordonnées barycentriques. Cela permet d'éviter de devoir travailler avec des équations de plan et soulage ainsi les calculs.
+
+Nous cherchons donc l'intersection entre un rayons d'équation : $R(t) = O + Dt$ \\
+Et une face triangulaire de sommets $ V_0, V_1, V_2$.
+
+Un point T appartient au triangle si : 
+\begin{equation} \label{eq_2moller}
+T(u,v) = (1-u-v)V_0 + uV_1 + vV_2 \footnotemark
+\end{equation}
+\citefnt[eq. 2]{moller}
+
+Avec :  \\
+$(u,v)$ : les coordonnées barycentrique tels que $u\geqslant0, v\geqslant0$ et $(u+v)\leqslant1$. \\
+
+Ainsi, l'intersection entre le rayon et le triangle s'écrit :
+\begin{equation}
+O + Dt = (1-u-v)V_0 + uV_1 + vV_2 \footnotemark
+\end{equation}
+\citefnt[eq. 3]{moller}
+
+Avec : \\
+$t$ : la distance entre le point d'origine du rayon et le point d'intersection. \\
+
+D'après la règle de Cramer, nous pouvons réarranger cette équation sous la forme :
+
+
+\begin{equation}
+	\begin{bmatrix}
+ 	  -D, & V_1-V_0, & V_2-V_0
+	\end{bmatrix}
+	\begin{bmatrix}
+ 	 t \\
+	 u \\
+	 v
+	\end{bmatrix}
+	= O-V_0
+	\footnotemark
+\end{equation}
+\citefnt[eq. 4]{moller}
+
+Ainsi, on aura :
+\begin{equation}
+	\begin{bmatrix}
+ 	 t \\
+	 u \\
+	 v
+	\end{bmatrix}
+	=
+	\frac{1}{
+	\begin{vmatrix}
+ 	  -D, & E_1, & E_2
+	\end{vmatrix}
+	}
+	\begin{bmatrix}
+ 	 	\begin{vmatrix}
+ 		  T, & E_1, & E_2
+		\end{vmatrix} \\
+ 	 	\begin{vmatrix}
+ 		  -D, & T, & E_2
+		\end{vmatrix} \\
+ 	 	\begin{vmatrix}
+ 		  -D, & E_1, & T
+		\end{vmatrix}
+	\end{bmatrix}	
+	\footnotemark
+\end{equation}
+\citefnt[eq. 5]{moller}
+
+Avec : \\
+$E_1 =  V_1-V_0$ \\
+$E_2 =  V_2-V_0$ \\
+$T = O - V_0$ \\
+
+Ce qui équivaut à : 
+
+\begin{equation}
+	\begin{bmatrix}
+ 	 t \\
+	 u \\
+	 v
+	\end{bmatrix}
+	=
+	\frac{1}{
+ 	  (D \times E_2).E_1
+	}
+	\begin{bmatrix}
+ 		  (T \times E_1).E_2
+ \\ 
+ 		  (D \times E_2).T
+ \\
+ 		  (T \times E_1).D
+	\end{bmatrix}	
+	\footnotemark
+\end{equation}
+\citefnt[eq. 6]{moller}
+
+Ainsi on pourra connaitre toutes les faces que rencontre chaque rayon et on conservera le point d'intersection pour la face la plus proche dans le sens de propagation du rayon. Effectivement, on admet que les faces peuvent absorber les rayons mais pas les transmettre. Cela ne pose pas de réel problème à partir du moment où l'auditeur est dans la même pièce que la source et que les matériaux ne sont pas trop transmitifs. Dans ce cas, les effets de réflexions sur les parois seront majoritaires sur la résonance du son. Par contre si la source et l'auditeur sont séparé par une paroi, ce modèle devient faux. Dans le théâtre d'Orange, les parois sont très dense, ainsi, même si les mesure sont effectuée dans les \glspl{ambulacre} ou les coulisses, un modèle purement basé sur les réflexions/absorptions s'approche de la réalité. Néanmoins, certains cas ne pourront pas être testés comme par exemple l'écoute "portes fermées" ou dans l'\gls{hyposcaenium} car outre la vibro-acoustique et les phénomènes de résonance non pris en compte, le bois ne laissera pas passer le son ce qui ne reflète pas la réalité.
+
+Une fois que l'on sait sur quelle paroi va se réflechir chaque rayon, on peut multiplier leur énergie pour chaque bande de fréquence par $(1-\alpha_i)$, les $\alpha$ étant les coefficients d'absorption de la face rencontrée. On stock également la longueur totale du rayon de pouvoir prendre en compte l'absorption de l'air. Effectivement, étant donnée que celle-ci est assez négligeable, on ne l'affectera à l'énergies des rayons qu'à la fin du processus (voir \ref{sect_si}), c'est à dire quand tous les rayons seront considérés comme "morts". C'est d'ailleurs suite au calcul de l'énergie que l'on déterminera si un rayon est "morts". Pour cela, il il faut que l'énergie sur chacune des ses 8 bandes fréquence soit inférieur à un seuil. En général, ce seuil est fixé à 60dB, ce qui assure que le son ne soit plus audible. On pourra néanmoins rehausser ce seuil grâce à l'utilisation d'une queue de réverbération approchée (voir \ref{sect_rir}).
+
+La dernière étape de la boucle d'itération est de calculer, si le rayon n'est pas "mort", le vecteur directeur du rayon réfléchi. Pour cela, il suffit d'utiliser le vecteur normal à la face rencontrée (de norme 1) et d'utiliser la formule suivante :
+
+\begin{equation}
+\overrightarrow{r} - \overrightarrow{i} = 2 \times (-\overrightarrow{i}.\overrightarrow{n})\overrightarrow{n}
+\end{equation}
+
+\begin{figureth}
+	\includegraphics[width=0.6\linewidth]{images/rayRefl}
+	\caption{Calcul d'un rayon réfléchi à partir d'un rayon incident et d'une normale}
+	\label{rayRefl}
+\end{figureth}
+
+Nous pouvons ainsi mettre à jour les informations sur les rayons (origine et vecteur directeur) et boucler afin de propager ce rayon réfléchi vers une nouvelle face.
+
+Notons tout de même qu'il peut se produire des problèmes d'arrondi qui peuvent faire fuire des rayons (c'est à dire qu'il ne rencontre aucune face). Pour éviter cela, on ajoute transforme la condition de l'équation \ref{eq_2moller} par $(u+v)\leqslant1.00001$. De même, si un rayon tombe dans un coin, son rayon réfléchi pourra sortir du maillage. Pour éviter cela on enlèvera systématique $1\mu m$ à la longueur des rayons.
+
+\section{Calcul de sources-images} \label{sect_si}
+
+\section{Génération de réponse impulsionnelle} \label{sect_rir}
+
 \section{Vue d'ensemble}
 Add-on blender, traitement du signal, etc
 

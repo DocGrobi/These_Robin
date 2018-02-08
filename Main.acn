@@ -6,3 +6,6 @@
 (indexentry :tkey (("RT60" "\\glossentry{RT60}") ) :locref "{}{62}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("RIR" "\\glossentry{rir}") ) :locref "{}{62}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CAO" "\\glossentry{cao}") ) :locref "{}{64}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("AABB" "\\glossentry{AABB}") ) :locref "{}{73}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OBB" "\\glossentry{OBB}") ) :locref "{}{73}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("AABB" "\\glossentry{AABB}") ) :locref "{}{73}" :attr "pageglsnumberformat" ) 

@@ -4,50 +4,52 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 19 of file Part2/Biblio.bib
+--line 63 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there's a number but no volume in beamtracing
+Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
-You've used 8 entries,
+Warning--there's a number but no volume in AABB
+You've used 12 entries,
             3493 wiz_defined-function locations,
-            749 strings with 7262 characters,
-and the built_in function-call counts, 4605 in all, are:
-= -- 366
-> -- 160
-< -- 11
-+ -- 64
-- -- 49
-* -- 333
-:= -- 644
-add.period$ -- 17
-call.type$ -- 8
-change.case$ -- 53
-chr.to.int$ -- 9
-cite$ -- 10
-duplicate$ -- 427
-empty$ -- 363
-format.name$ -- 58
-if$ -- 897
+            772 strings with 7734 characters,
+and the built_in function-call counts, 7420 in all, are:
+= -- 579
+> -- 267
+< -- 19
++ -- 107
+- -- 82
+* -- 568
+:= -- 1000
+add.period$ -- 25
+call.type$ -- 12
+change.case$ -- 83
+chr.to.int$ -- 13
+cite$ -- 16
+duplicate$ -- 702
+empty$ -- 582
+format.name$ -- 103
+if$ -- 1450
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 60
-newline$ -- 42
-num.names$ -- 32
-pop$ -- 169
+missing$ -- 101
+newline$ -- 54
+num.names$ -- 48
+pop$ -- 270
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 75
 quote$ -- 0
-skip$ -- 184
+skip$ -- 304
 stack$ -- 0
-substring$ -- 146
-swap$ -- 250
-text.length$ -- 4
+substring$ -- 227
+swap$ -- 429
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
-warning$ -- 2
-while$ -- 28
+type$ -- 99
+warning$ -- 4
+while$ -- 43
 width$ -- 0
-write$ -- 102
-(There were 3 warnings)
+write$ -- 145
+(There were 5 warnings)
