@@ -44,8 +44,10 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation d'un arbre d'octree\relax }}{70}{figure.caption.15}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons\relax }}{71}{figure.caption.16}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Calcul d'un rayon r\IeC {\'e}fl\IeC {\'e}chi \IeC {\`a} partir d'un rayon incident et d'une normale\relax }}{76}{figure.caption.19}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des sources-images\relax }}{77}{figure.caption.20}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Sch\IeC {\'e}ma d'un rayon et de la sph\IeC {\`e}re r\IeC {\'e}cepteur\relax }}{78}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Validation}{79}{chapter.6}
+\contentsline {xchapter}{Validation}{81}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}

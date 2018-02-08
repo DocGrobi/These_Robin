@@ -115,10 +115,10 @@ Nous comprenons qu'aucune de ces méthodes pourrait convenir parfaitement à not
 
 Nous nous plaçons dans le cas d'une source impulsionnelle. Effectivement, un signal sonore continu peut-être discretisé par une suite d'impulsions. C'est d'ailleurs le cas de tout signal numérique qui est échantillonné à une certaine fréquence. Nous prenons également le cas, le plus courant, d'une source omnidirectionnelle qui émet de l'énergie de manière uniforme dans toutes les directions de l'espace. Une impulsion étant un signal d'un temps infiniment court, l'énergie émise depuis la source sera répartie sur la surface d'une sphère en expansion. Si l'on mesure à différents instants une portion de taille constante de la sphère, on obtient une valeur inversement proportionnelle au carré de la distance. En d'autres mots, on considère que l'énergie mesurée est l'intersection entre un récepteur de forme sphérique, de rayon $r$, constant et de la sphère supportant l'énergie totale. Ainsi, si on considère que :
 
-\begin{center}
-   	$E_{tot} \propto S_{tot}$\\
-	et $E_m \propto S_m$
-\end{center}
+\begin{align}
+   	E_{tot} &\propto S_{tot}\\
+	E_m &\propto S_m
+\end{align}
 
 Avec	: \\
 $E_{tot}$ l'énergie totale \\
@@ -127,10 +127,10 @@ $E_m$ l'énergie mesurée \\
 $S_m$ la surface de la sphère de mesure \\
 \\
 Alors :
-\begin{center}
-   	$E_{tot} \propto d^2$\\
-	et $S_m$ est constante\\
-\end{center}
+\begin{align}
+   	E_{tot} & \propto d^2\\
+	S_m & = cste\\
+\end{align}
 
 Donc :
 \begin{equation}
@@ -173,8 +173,9 @@ Alors, d'après Pythagore (voir fig. \ref{schema_rayon}) :
 Car on suppose que le rayon de mesure $r$ sera petit devant la distance $d$ parcourue par l'onde. On a alors :
 
 \begin{align} 
-	& 2\pi(1-(1-\frac{1}{2}\frac{r^2}{d^2})) = \frac{4\pi.d^2}{N} \\
-	\Rightarrow & \qquad d^2 = \frac{r}{2}\sqrt{N} \label{seuil_arret}
+	& 2\pi(1-(1-\frac{1}{2}\frac{r^2}{d^2})) = \frac{4\pi.d^2}{N} 
+	 \quad \Rightarrow  \quad 
+	 d^2 = \frac{r}{2}\sqrt{N} \label{seuil_arret}
 \end{align}
 
 Nous constatons alors que nous pourrons fixer $N$, le nombre de rayons d'énergie total émis depuis la source et $r$, le rayon de la sphère de mesure, pour connaitre la distance $d$ au bout de laquel la probabilité de ne capter aucun rayon sera non nulle. En pratique, on voudra réduire encore l'erreur et il faudra arrêter la mesure avant d'arriver à cet extreme. On pourra alors fixer un nombre $n$ de rayons minimum à capter. Par exemple si on fixe $n$ à 100 rayons, on s'assure que la mesure comprend au moins 100 portions de la sphère énergie et on revient statistiquement à un modèle quasi-continu.
@@ -298,7 +299,7 @@ Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. L
 
 La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} que pour pouvoir itérer les rebonds des rayons sur les parois, il est nécessaire que tous les rayons rencontrent une face. Or, pour une salle ouverte, comme c'est le cas du théâtre d'Orange, certains rayons peuvent ne rencontrer aucune surface. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées aux vecteurs afin de créer une boite englobant le maillage. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par les parois ouvertes. Par ailleurs, cette boite ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondues avec une paroi du maillage et que le rayons soit absorbé par la boite englobante au lieu d'être réfléchi par la paroi.
 
-\subsection{Calcul de l'absorption de l'air}
+\subsection{Calcul de l'absorption de l'air} \label{sect_absAIr}
 Pour se rapprocher d'un modèle réaliste de propagation d'onde, il est important de prendre en compte l'absorption atmosphérique. Ce phénomène est dû à la viscosité et la conduction thermique du milieu ainsi qu'à l'absorption des molécules. C'est effets vont provoquer une décroissance exponentielle de l'énergie d'onde \cite[p. 68-70]{jouhaneau}. Selon leur distance parcourue dans l'air, les rayons vont donc subir une atténuation de leur énergie en prenant en compte trois facteurs principaux : la température, l'humidité et le pression. La température et la pression atmosphérique de référence sont respectivement de 20°C et 101,325 kPa \footnote{International Standard Atmosphere}. Nous déterminons le coefficient d'atténuation pour chaque bande de fréquence par formules analytiques. 
 
 % view-source:http://resource.npl.co.uk/acoustics/techguides/absorption/
@@ -573,6 +574,76 @@ Nous pouvons ainsi mettre à jour les informations sur les rayons (origine et ve
 Notons tout de même qu'il peut se produire des problèmes d'arrondi qui peuvent faire fuire des rayons (c'est à dire qu'il ne rencontre aucune face). Pour éviter cela, on ajoute transforme la condition de l'équation \ref{eq_2moller} par $(u+v)\leqslant1.00001$. De même, si un rayon tombe dans un coin, son rayon réfléchi pourra sortir du maillage. Pour éviter cela on enlèvera systématique $1\mu m$ à la longueur des rayons.
 
 \section{Calcul de sources-images} \label{sect_si}
+
+\begin{figureth}
+	\includegraphics[width=0.8\linewidth]{images/DiagSi}
+	\caption{Diagramme d'activité résumant le processus de création des sources-images}
+	\label{DiagSi}
+\end{figureth}
+
+\begin{figureth}
+	\includegraphics[width=0.8\linewidth]{images/touche}
+	\caption{Schéma d'un rayon et de la sphère récepteur}
+	\label{touche}
+\end{figureth}
+
+A chaque itération, c'est à dire à chaque fois que les $N$ rayons sont entrés en contact avec une paroi et avant qu'ils ne soient réfléchis, on détermine ceux qui ont traversé le récepteur. Nous allons ainsi pouvoir ajouter au fur et à mesure des itérations de nouvelles sources-images. Pour savoir si un rayon (parmi les rayons "vivants") donnera naissance à une source image, on vérifie dans un premier temps si le point d'origine du rayon est à l'intérieur de la sphère réceptrice:
+
+\begin{equation}
+||\overrightarrow{OL}|| \leqslant r
+\end{equation}
+
+Avec : \\
+$O$ : L'origine du rayon. \\
+$L$ : Le centre du récepteur (Listener). \\
+$r$ : Le rayon de la sphère récepteur. \\
+
+Si c'est le cas, alors le rayon est perçu par le récepteur et une source image va être créée. Sinon, on vérifie si le rayon se dirige bien vers le récepteur. Pour cela il suffit de vérifier que :
+
+\begin{equation}
+\cos{\alpha} \geqslant 0
+\end{equation}
+
+Avec : \\
+$\alpha$ : L'angle entre le rayon de vecteur directeur $\overrightarrow{D}$ et $\overrightarrow{OL}$  \\
+
+Par ailleurs, on vérifie que le rayon est assez grand pour atteindre le récepteur (donc qu'il n'est pas interrompu par une paroi avant) :
+
+\begin{equation}
+||\overrightarrow{OL}|| \leqslant l
+\end{equation}
+
+Avec : \\
+$l$ : La longueur du rayon. \\
+
+Pour finir, on s'assure que le rayons intersecte bien la sphère récepteur :
+
+\begin{align}
+\sin{\alpha} \times ||\overrightarrow{OL}||  \leqslant r 
+\quad \Rightarrow \quad
+\alpha  \leqslant \arcsin{\frac{r}{||\overrightarrow{OL}||}}
+\end{align}
+
+Si ces conditions sont réunies, alors le rayon traverse bien le récepteur et une source image va être générée. Ses coordonnées seront données en traçant un vecteur de même origine mais de sens opposé au rayon courant et dont la norme sera égale à la distance totale parcourue par le rayon avant sa dernière réflexion (voir fig. \ref{schema_SI}). On assigne à cette source-image huit coefficient d'énergie correspondant aux coefficients d'énergie finaux du rayon atténués par l'absorption de l'air sur le trajet total :
+
+\begin{equation}
+E_{si, i} = E_{r, i} \times 10^{\frac{abs_i \times l_{tot} }{10}}
+\end{equation}
+
+Avec : \\
+$E_{si, i}$ : L'énergie portée par la source image sur la i-ème bande de fréquence. \\
+$E_{r, i}$ : L'énergie finale portée par le rayon sur la i-ème bande de fréquence. \\
+$abs_i$ : Le coefficient d'absorption de l'air sur la i-ème bande de fréquence (voir \ref{sect_absAIr}). \\
+$ l_{tot}$ :La distance totale parcourue par le rayon entre la source et le récepteur. \\
+
+Pour finir, on converti  $l_{tot}$ en temps pour pouvoir tracer le graphe temporel.
+
+\begin{equation}
+ t_{tot} =  \frac{l_{tot}}{v}
+\end{equation}
+
+Avec : \\
+$v$ : la vitesse du son dans l'air (340m/s)
 
 \section{Génération de réponse impulsionnelle} \label{sect_rir}
 

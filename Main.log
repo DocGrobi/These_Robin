@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  8 FEB 2018 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  8 FEB 2018 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2793,14 +2793,14 @@ Package minitoc Info: I0033
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
- [8] (./Main.lof
-Overfull \hbox (2.18394pt too wide) detected at line 69
+ [8] (./Main.lof [9
+
+]
+Overfull \hbox (2.18394pt too wide) detected at line 71
  []\T1/futs/m/n/12 VIII
  []
 
-[9
-
-])
+)
 \tf@lof=\write11
 \openout11 = `Main.lof'.
 
@@ -2868,7 +2868,7 @@ Package minitoc Info: I0006
 (minitoc)             Main.mtc6 is empty on input line 20.
 [55
 
-] <Part2/images/RIR_schematique.png, id=396, 721.69624pt x 421.575pt>
+] <Part2/images/RIR_schematique.png, id=398, 721.69624pt x 421.575pt>
 File: Part2/images/RIR_schematique.png Graphic file (type png)
 
 <use Part2/images/RIR_schematique.png>
@@ -2880,14 +2880,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
  []
 
-[57] <Part2/images/BEM.png, id=438, 657.45625pt x 116.435pt>
+[57] <Part2/images/BEM.png, id=440, 657.45625pt x 116.435pt>
 File: Part2/images/BEM.png Graphic file (type png)
 
 <use Part2/images/BEM.png>
 Package pdftex.def Info: Part2/images/BEM.png used on input line 76.
 (pdftex.def)             Requested size: 441.01773pt x 78.1052pt.
  [58 <./Part2/images/BEM.png>]
-<Part2/images/schema_propagation.png, id=470, 318.18875pt x 218.8175pt>
+<Part2/images/schema_propagation.png, id=472, 318.18875pt x 218.8175pt>
 File: Part2/images/schema_propagation.png Graphic file (type png)
 
 <use Part2/images/schema_propagation.png>
@@ -2895,7 +2895,7 @@ Package pdftex.def Info: Part2/images/schema_propagation.png used on input line
  103.
 (pdftex.def)             Requested size: 242.5611pt x 166.80719pt.
 
-<Part2/images/angle_solide.png, id=471, 441.65pt x 441.65pt>
+<Part2/images/angle_solide.png, id=473, 441.65pt x 441.65pt>
 File: Part2/images/angle_solide.png Graphic file (type png)
 
 <use Part2/images/angle_solide.png>
@@ -2907,7 +2907,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--130
 
  []
 
-<Part2/images/schema_rayon.png, id=488, 313.17pt x 199.74625pt>
+<Part2/images/schema_rayon.png, id=490, 313.17pt x 199.74625pt>
 File: Part2/images/schema_rayon.png Graphic file (type png)
 
 <use Part2/images/schema_rayon.png>
@@ -2919,57 +2919,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--165
  []
 
 [60] [61 <./Part2/images/schema_rayon.png>]
-<Part2/images/schema_SI.png, id=516, 189.20688pt x 207.27437pt>
+<Part2/images/schema_SI.png, id=521, 189.20688pt x 207.27437pt>
 File: Part2/images/schema_SI.png Graphic file (type png)
 
 <use Part2/images/schema_SI.png>
-Package pdftex.def Info: Part2/images/schema_SI.png used on input line 199.
+Package pdftex.def Info: Part2/images/schema_SI.png used on input line 200.
 (pdftex.def)             Requested size: 158.7659pt x 173.92899pt.
 
-Underfull \hbox (badness 2197) in paragraph at lines 200--200
+Underfull \hbox (badness 2197) in paragraph at lines 201--201
 []\T1/futs/m/n/10.95 (a) |Schéma de la créa-tion d'une source
  []
 
-<Part2/images/constellation.png, id=517, 269.005pt x 312.16624pt>
+<Part2/images/constellation.png, id=522, 269.005pt x 312.16624pt>
 File: Part2/images/constellation.png Graphic file (type png)
 
 <use Part2/images/constellation.png>
-Package pdftex.def Info: Part2/images/constellation.png used on input line 205.
+Package pdftex.def Info: Part2/images/constellation.png used on input line 206.
 
 (pdftex.def)             Requested size: 158.7659pt x 184.2384pt.
  [62 <./Part2/images/schema_SI.png> <./Part2/images/constellation.png>]
 Chapitre 5.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc7 is empty on input line 217.
+(minitoc)             Main.mtc7 is empty on input line 218.
 [63
 
-] <Part2/images/synopsis.jpg, id=536, 1603.9925pt x 2389.92876pt>
+] <Part2/images/synopsis.jpg, id=542, 1603.9925pt x 2389.92876pt>
 File: Part2/images/synopsis.jpg Graphic file (type jpg)
 
 <use Part2/images/synopsis.jpg>
-Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 240.
+Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 241.
 (pdftex.def)             Requested size: 441.01773pt x 657.10481pt.
  [64] [65 <./Part2/images/synopsis.jpg>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 255.
+(Font)              scaled to size 9.19998pt on input line 256.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 255.
+(Font)              scaled to size 6.99199pt on input line 256.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 255.
+(Font)              scaled to size 9.19998pt on input line 256.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 255.
+(Font)              scaled to size 6.99199pt on input line 256.
 
-Underfull \hbox (badness 7379) in paragraph at lines 257--257
+Underfull \hbox (badness 7379) in paragraph at lines 258--258
 []|\T1/futs/m/n/10 Nom du ma-té-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 []|\T1/futs/m/n/10 Concrete block,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []|\T1/futs/m/n/10 Hollow woo-den
  []
 
@@ -2978,163 +2978,201 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--266
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.279 
-      ] <Part2/images/boiteenglobante.png, id=564, 735.74875pt x 664.4825pt>
+l.280 
+      ] <Part2/images/boiteenglobante.png, id=570, 735.74875pt x 664.4825pt>
 File: Part2/images/boiteenglobante.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante.png>
 Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 28
-6.
+7.
 (pdftex.def)             Requested size: 242.5611pt x 219.06697pt.
 
-<Part2/images/boiteenglobante2.png, id=565, 551.05875pt x 792.9625pt>
+<Part2/images/boiteenglobante2.png, id=571, 551.05875pt x 792.9625pt>
 File: Part2/images/boiteenglobante2.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante2.png>
 Package pdftex.def Info: Part2/images/boiteenglobante2.png used on input line 2
-92.
+93.
 (pdftex.def)             Requested size: 154.35889pt x 222.11267pt.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 302
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 303
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [67 <./Part2/images/boiteenglobante.png> <./Part2/images/boiteenglobante2.png
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
+Underfull \hbox (badness 10000) in paragraph at lines 313--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
+Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
-<Part2/images/courbesAbs.png, id=590, 829.59938pt x 532.99126pt>
+<Part2/images/courbesAbs.png, id=596, 829.59938pt x 532.99126pt>
 File: Part2/images/courbesAbs.png Graphic file (type png)
 
 <use Part2/images/courbesAbs.png>
-Package pdftex.def Info: Part2/images/courbesAbs.png used on input line 336.
+Package pdftex.def Info: Part2/images/courbesAbs.png used on input line 337.
 (pdftex.def)             Requested size: 441.01773pt x 283.33797pt.
  [68]
-<Part2/images/octree.png, id=612, 1204.5pt x 691.58376pt>
+<Part2/images/octree.png, id=618, 1204.5pt x 691.58376pt>
 File: Part2/images/octree.png Graphic file (type png)
 
 <use Part2/images/octree.png>
-Package pdftex.def Info: Part2/images/octree.png used on input line 345.
+Package pdftex.def Info: Part2/images/octree.png used on input line 346.
 (pdftex.def)             Requested size: 264.61333pt x 151.92728pt.
 
-Overfull \hbox (6.22176pt too wide) in paragraph at lines 350--351
+Overfull \hbox (6.22176pt too wide) in paragraph at lines 351--352
 \T1/futs/m/n/12 genre de cas uti-lisent sou-vent des mé-thodes de "di-vi-ser po
 ur ré-gner ("\T1/futs/m/it/12 di-vide and conquer\T1/futs/m/n/12 ").
  []
 
 [69 <./Part2/images/courbesAbs.png> <./Part2/images/octree.png>]
-<Part2/images/DiagOctree.jpg, id=623, 990.70125pt x 922.44624pt>
+<Part2/images/DiagOctree.jpg, id=629, 990.70125pt x 922.44624pt>
 File: Part2/images/DiagOctree.jpg Graphic file (type jpg)
 
 <use Part2/images/DiagOctree.jpg>
-Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 357.
+Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 358.
 (pdftex.def)             Requested size: 352.81552pt x 328.50525pt.
  [70 <./Part2/images/DiagOctree.jpg>]
-<Part2/images/DiagRay.jpg, id=628, 363.3575pt x 701.62125pt>
+<Part2/images/DiagRay.jpg, id=634, 363.3575pt x 701.62125pt>
 File: Part2/images/DiagRay.jpg Graphic file (type jpg)
 
 <use Part2/images/DiagRay.jpg>
-Package pdftex.def Info: Part2/images/DiagRay.jpg used on input line 368.
+Package pdftex.def Info: Part2/images/DiagRay.jpg used on input line 369.
 (pdftex.def)             Requested size: 264.61333pt x 510.96948pt.
  [71 <./Part2/images/DiagRay.jpg>]
-<Part2/images/icosphere.png, id=634, 817.0525pt x 759.83875pt>
+<Part2/images/icosphere.png, id=640, 817.0525pt x 759.83875pt>
 File: Part2/images/icosphere.png Graphic file (type png)
 
 <use Part2/images/icosphere.png>
-Package pdftex.def Info: Part2/images/icosphere.png used on input line 379.
+Package pdftex.def Info: Part2/images/icosphere.png used on input line 380.
 (pdftex.def)             Requested size: 198.45662pt x 184.55632pt.
 
-<Part2/images/fibonacci.png, id=635, 175.65625pt x 166.6225pt>
+<Part2/images/fibonacci.png, id=641, 175.65625pt x 166.6225pt>
 File: Part2/images/fibonacci.png Graphic file (type png)
 
 <use Part2/images/fibonacci.png>
-Package pdftex.def Info: Part2/images/fibonacci.png used on input line 385.
+Package pdftex.def Info: Part2/images/fibonacci.png used on input line 386.
 (pdftex.def)             Requested size: 198.45662pt x 188.26596pt.
  [72 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>]
-Overfull \hbox (1.68936pt too wide) in paragraph at lines 412--413
+Overfull \hbox (1.68936pt too wide) in paragraph at lines 413--414
 \T1/futs/m/n/12 soient consi-dé-rés comme "morts". Ce cri-tère est dé-ter-miné 
 en com-pa-rant la va-leur d'éner-
  []
 
-<Part2/images/AABB.png, id=657, 367.87437pt x 297.61188pt>
+<Part2/images/AABB.png, id=663, 367.87437pt x 297.61188pt>
 File: Part2/images/AABB.png Graphic file (type png)
 
 <use Part2/images/AABB.png>
-Package pdftex.def Info: Part2/images/AABB.png used on input line 434.
+Package pdftex.def Info: Part2/images/AABB.png used on input line 435.
 (pdftex.def)             Requested size: 198.45662pt x 160.55815pt.
 
-<Part2/images/AABB2.png, id=658, 366.36874pt x 298.11375pt>
+<Part2/images/AABB2.png, id=664, 366.36874pt x 298.11375pt>
 File: Part2/images/AABB2.png Graphic file (type png)
 
 <use Part2/images/AABB2.png>
-Package pdftex.def Info: Part2/images/AABB2.png used on input line 440.
+Package pdftex.def Info: Part2/images/AABB2.png used on input line 441.
 (pdftex.def)             Requested size: 198.45662pt x 161.48395pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 459.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 460.
 
 
 Package natbib Warning: Citation `arenberg' on page 74 undefined on input line 
-459.
+460.
 
 
 Package natbib Warning: Citation `badouel' on page 74 undefined on input line 4
-59.
+60.
 
 [74 <./Part2/images/AABB.png> <./Part2/images/AABB2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--481
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--531
+Underfull \hbox (badness 10000) in paragraph at lines 528--532
 
  []
 
-[75] <Part2/images/rayRefl.png, id=739, 458.71375pt x 355.3275pt>
+[75] <Part2/images/rayRefl.png, id=745, 458.71375pt x 355.3275pt>
 File: Part2/images/rayRefl.png Graphic file (type png)
 
 <use Part2/images/rayRefl.png>
-Package pdftex.def Info: Part2/images/rayRefl.png used on input line 566.
+Package pdftex.def Info: Part2/images/rayRefl.png used on input line 567.
 (pdftex.def)             Requested size: 264.61333pt x 204.98402pt.
+
+<Part2/images/DiagSi.jpg, id=747, 491.8375pt x 738.76pt>
+File: Part2/images/DiagSi.jpg Graphic file (type jpg)
+
+<use Part2/images/DiagSi.jpg>
+Package pdftex.def Info: Part2/images/DiagSi.jpg used on input line 579.
+(pdftex.def)             Requested size: 352.81552pt x 529.96791pt.
+
+<Part2/images/touche.png, id=748, 647.41875pt x 423.5825pt>
+File: Part2/images/touche.png Graphic file (type png)
+
+<use Part2/images/touche.png>
+Package pdftex.def Info: Part2/images/touche.png used on input line 585.
+(pdftex.def)             Requested size: 352.81552pt x 230.8382pt.
 
 Underfull \vbox (badness 4316) has occurred while \output is active []
 
- [76 <./Part2/images/rayRefl.png>] [77] [78
+ [76 <./Part2/images/rayRefl.png>] [77 <./Part2/images/DiagSi.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 596--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
+
+ []
+
+[78 <./Part2/images/touche.png>]
+
+LaTeX Warning: Reference `sect_absAIr' on page 79 undefined on input line 636.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--638
+
+ []
+
+[79] [80
 
 ]
 Chapitre 6.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc8 is empty on input line 587.
-[79] [80] [81
+(minitoc)             Main.mtc8 is empty on input line 658.
+[81] [82] [83
 
 ] (./Part2.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
- [82
+ [84
 
 ] (./francaisbst.tex)
 LaTeX Font Info:    Try loading font information for T1+aett on input line 58.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))) [83]pdfTeX warning (ext4): destination with the same identifier (name{page.
+))) [85]pdfTeX warning (ext4): destination with the same identifier (name{page.
 74}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3156,7 +3194,7 @@ Annexe B.
 
 ]
 Annexe C.
-<glossaire/basiliques.jpg, id=832, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=856, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3192,27 +3230,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: FC9615FFA3D3A94CD52481A4453518D2;1424.
+(rerunfilecheck)             Checksum: 5F56140DF63C7DED8C36B96930479C55;1424.
+Package rerunfilecheck Info: File `Main.brf' has not changed.
+(rerunfilecheck)             Checksum: EE5CC08C6907A1D36F14FF38CDDDCC4D;5417.
 
 
-Package rerunfilecheck Warning: File `Main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `Main.brf':
-(rerunfilecheck)             Before: 1D318C893E85B7269675C805FEC57099;5417
-(rerunfilecheck)             After:  EE5CC08C6907A1D36F14FF38CDDDCC4D;5417.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 52452 strings out of 493014
- 1130053 string characters out of 6133351
- 1384286 words of memory out of 5000000
- 54422 multiletter control sequences out of 15000+600000
+ 52477 strings out of 493014
+ 1130488 string characters out of 6133351
+ 1384480 words of memory out of 5000000
+ 54433 multiletter control sequences out of 15000+600000
  212594 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,18n,87p,10450b,1250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,22n,87p,10450b,1250s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist,
  replaced by a fixed one
 
@@ -3268,12 +3304,6 @@ pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
@@ -3423,10 +3453,10 @@ live/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
 mf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (47 pages, 3700151 bytes).
+Output written on Main.pdf (49 pages, 3920538 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 875 compressed objects within 9 object streams
- 275 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1013 PDF objects out of 1200 (max. 8388607)
+ 897 compressed objects within 9 object streams
+ 287 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
