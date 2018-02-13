@@ -92,7 +92,7 @@ Le problème de cette méthode est que l'on génère l'ensemble des sources-imag
 
 	
 	
-\section{Méthode couplée}
+\section{Méthode couplée} \label{sect_methodecouplee}
 
 "\textit{Il faut également signaler que la plupart de ces approches, comme celles fondées sur les sources images et le tracé de rayons sonores, prennent difficilement en compte les effets météorologiques tels que le vent, les gradients de célérité du son et la turbulence atmosphérique, pourtant très importants en milieu ouvert}" \cite[p. 60]{picaut}.
 
@@ -177,6 +177,7 @@ Car on suppose que le rayon de mesure $r$ sera petit devant la distance $d$ parc
 	 \quad \Rightarrow  \quad 
 	 d^2 = \frac{r}{2}\sqrt{N} \label{seuil_arret}
 \end{align}
+
 
 Nous constatons alors que nous pourrons fixer $N$, le nombre de rayons d'énergie total émis depuis la source et $r$, le rayon de la sphère de mesure, pour connaitre la distance $d$ au bout de laquel la probabilité de ne capter aucun rayon sera non nulle. En pratique, on voudra réduire encore l'erreur et il faudra arrêter la mesure avant d'arriver à cet extreme. On pourra alors fixer un nombre $n$ de rayons minimum à capter. Par exemple si on fixe $n$ à 100 rayons, on s'assure que la mesure comprend au moins 100 portions de la sphère énergie et on revient statistiquement à un modèle quasi-continu.
 
@@ -555,7 +556,11 @@ Ce qui équivaut à :
 
 Ainsi on pourra connaitre toutes les faces que rencontre chaque rayon et on conservera le point d'intersection pour la face la plus proche dans le sens de propagation du rayon. Effectivement, on admet que les faces peuvent absorber les rayons mais pas les transmettre. Cela ne pose pas de réel problème à partir du moment où l'auditeur est dans la même pièce que la source et que les matériaux ne sont pas trop transmitifs. Dans ce cas, les effets de réflexions sur les parois seront majoritaires sur la résonance du son. Par contre si la source et l'auditeur sont séparé par une paroi, ce modèle devient faux. Dans le théâtre d'Orange, les parois sont très dense, ainsi, même si les mesure sont effectuée dans les \glspl{ambulacre} ou les coulisses, un modèle purement basé sur les réflexions/absorptions s'approche de la réalité. Néanmoins, certains cas ne pourront pas être testés comme par exemple l'écoute "portes fermées" ou dans l'\gls{hyposcaenium} car outre la vibro-acoustique et les phénomènes de résonance non pris en compte, le bois ne laissera pas passer le son ce qui ne reflète pas la réalité.
 
-Une fois que l'on sait sur quelle paroi va se réflechir chaque rayon, on peut multiplier leur énergie pour chaque bande de fréquence par $(1-\alpha_i)$, les $\alpha$ étant les coefficients d'absorption de la face rencontrée. On stock également la longueur totale du rayon de pouvoir prendre en compte l'absorption de l'air. Effectivement, étant donnée que celle-ci est assez négligeable, on ne l'affectera à l'énergies des rayons qu'à la fin du processus (voir \ref{sect_si}), c'est à dire quand tous les rayons seront considérés comme "morts". C'est d'ailleurs suite au calcul de l'énergie que l'on déterminera si un rayon est "morts". Pour cela, il il faut que l'énergie sur chacune des ses 8 bandes fréquence soit inférieur à un seuil. En général, ce seuil est fixé à 60dB, ce qui assure que le son ne soit plus audible. On pourra néanmoins rehausser ce seuil grâce à l'utilisation d'une queue de réverbération approchée (voir \ref{sect_rir}).
+Une fois que l'on sait sur quelle paroi va se réfléchir chaque rayon, on peut multiplier leur énergie pour chaque bande de fréquence par $(1-\alpha_i)$, les $\alpha$ étant les coefficients d'absorption de la face rencontrée. On stock également la longueur totale du rayon de pouvoir prendre en compte l'absorption de l'air. Effectivement, étant donnée que celle-ci est assez négligeable, on ne l'affectera à l'énergies des rayons qu'à la fin du processus (voir \ref{sect_si}), c'est à dire quand tous les rayons seront considérés comme "morts". Il y a deux possibilité pour considérer un rayon comme "mort" : 
+\begin{itemize}
+	\item Les énergies des huit bandes de fréquence portées par le rayon sont toutes en dessous d'un seuil. En général, ce seuil est fixé à 60dB, ce qui assure que le son ne soit plus audible.
+	\item La distance totale parcourue par le rayon a dépassé un seuil déterminé par l'équation \ref{seuil_arret}. Cela assure que l'angle solide soit négligeable devant le rayon du récepteur et ainsi 	que la répartition discrète d'énergie puisse être considérée comme quasi-continue (voir \ref{sect_methodecouplee}).
+\end{itemize}
 
 La dernière étape de la boucle d'itération est de calculer, si le rayon n'est pas "mort", le vecteur directeur du rayon réfléchi. Pour cela, il suffit d'utiliser le vecteur normal à la face rencontrée (de norme 1) et d'utiliser la formule suivante :
 
@@ -571,7 +576,7 @@ La dernière étape de la boucle d'itération est de calculer, si le rayon n'est
 
 Nous pouvons ainsi mettre à jour les informations sur les rayons (origine et vecteur directeur) et boucler afin de propager ce rayon réfléchi vers une nouvelle face.
 
-Notons tout de même qu'il peut se produire des problèmes d'arrondi qui peuvent faire fuire des rayons (c'est à dire qu'il ne rencontre aucune face). Pour éviter cela, on ajoute transforme la condition de l'équation \ref{eq_2moller} par $(u+v)\leqslant1.00001$. De même, si un rayon tombe dans un coin, son rayon réfléchi pourra sortir du maillage. Pour éviter cela on enlèvera systématique $1\mu m$ à la longueur des rayons.
+Notons tout de même qu'il peut se produire des problèmes d'arrondi qui peuvent faire fuir des rayons (c'est à dire qu'il ne rencontre aucune face). Pour éviter cela, on ajoute transforme la condition de l'équation \ref{eq_2moller} par $(u+v)\leqslant1.00001$. De même, si un rayon tombe dans un coin, son rayon réfléchi pourra sortir du maillage. Pour éviter cela on enlèvera systématique $1\mu m$ à la longueur des rayons.
 
 \section{Calcul de sources-images} \label{sect_si}
 
@@ -647,21 +652,149 @@ $v$ : la vitesse du son dans l'air (340m/s)
 
 \section{Génération de réponse impulsionnelle} \label{sect_rir}
 
+Disposant de la distance temporelle entre les sources-images et le récepteur, il est possible d'afficher les courbes de pression sonore en fonction du temps. La pression acoustique s'exprime comme le carré de l'énergie : 
+
+\begin{equation}
+P = E^2
+\end{equation}
+
+Aussi, pour chaque bande d'octave aura nous sommons les énergies par tranches temporelles. Ces tranches sont déterminées par la fréquence d'échantillonnage. Celle-ci devra être identique à celle du signal audio avec lequel la réponse impulsionnelle sera convoluée (voir \ref{sect_TDS}). Typiquement, pour une fréquence standard de 44100Hz chaque échantillons concatènera les énergies des sources-images par tranches de $22,7\mu s$. Les énergie seront ensuite normalisées avant d'être converties en pression. 
+
+On a vu dans les sections \ref{sect_methodecouplee} et \ref{sect_rayon} que la mesure pouvait être arrêtée avant d'atteindre le seuil limite d'audition, c'est à dire -60dB. Ce cas se présente lorsque le nombre de rayons est faible, lorsque le rayon de la sphère récepteur est petit ou bien lorsque les rayons ont une longue distance à parcourir avant d'être suffisamment atténué (dans le cas d'une pièce fermée avec des parois très réfléchissantes par exemple). Dans ce cas, la \gls{rir} doit être complétée pour atteindre le niveau de pression minimum demandé (-60dB). Pour cela, les courbes vont être complétée par régression linéaire afin de générer de manière statistique la queue de réverbération. D'après Sabine \cite[]{sabine} ...
+
+
 \section{Vue d'ensemble}
 Add-on blender, traitement du signal, etc
-
+\subsection{Traitement du signal} \label{sect_TDS}
 \chapter{Validation}
 	\citationChap{
 	L'observateur modifie ce qu'il observe. Certains événements ne se produisent que parce qu'ils sont observés. Sans personne pour les voir ils n'existeraient pas. 
 	}{Bernard Werber}
 	\minitoc
 	\newpage
-	\section{Introduction}
-	Rappel cahier des charges
-	\section{Comparaison aux cas test}
-		\subsection{Salle rectangulaire}
-		\subsection{Salle sphèrique}
-	\section{Analyse de complexité} \label{complexite}
+	
+\section{Introduction}
+
+Dans le chapitre précédent, nous avons détailler le fonctionnement de l'algorithme conçu pour analyser l'acoustique d'une salle. La méthode utilisée couple les principes de lancé de rayons, de sources-images et d'extrapolation stochastique. Elle vise à répondre aux problématiques de calcul acoustique en environnement complexe de manière géométrique et disrètisée. Géométrique car seuls les effets de réflexion et absorption sont pris en compte et discrétisée car l'énergie d'onde n'est pas protée par une sphère mais par un grand nombre de rayons repartis de manière uniformes. Ainsi, il est essentiel de confirmer la justesse de ses approximations en les confrontant à des modèles théoriques. Dans ce chapitre, nous allons donc valider l'algorithme d'un point de vu physique et analyser ses performances.
+
+Avant cela, nous vérifions que les rayons ne traversent pas les parois et que la boite englobante assure bien son rôle.
+
+\begin{figureth}
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/test0}
+		\caption{Propagation des rayons dans un labyrinthe}
+		\label{test0}
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/test0bis}
+		\caption{Absorption des rayons par une boite englobante autour d'un cylindre ouvert}
+		\label{test0bis}
+	\end{subfigureth}
+\end{figureth}
+
+Nous vérifions aussi que les rayons captés par le récepteur sont bien portés par des cônes. Pour cela nous affichons sur blender uniquement les rayons générant une source image et les traçons depuis celle-ci.
+
+\begin{figureth}
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/testBeam}
+		\caption{Propagation des rayons depuis la source vers le récepteur (100000 rayons au total)}
+		\label{testBeam}
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/testBeam2}
+		\caption{Propagation des rayons depuis les sources-images à l'ordre vers le récepteur 0 et 1  (100000 rayons au total)}
+		\label{testBeam2}
+	\end{subfigureth}
+\end{figureth}
+
+\section{Comparaison aux cas test}
+		\subsection{Décroissance quadratique}
+Le premier test à réaliser est celui décrit dans la section \ref{sect_methodecouplee}. Il s'agit de vérifier si l'utilisation d'un grand nombre de rayons et d'un récepteur de diamètre fixe permet de retrouver la loi de décroissance en $d^2$. Pour effectuer ce test, nous plaçons une source et un récepteur de rayons $1m$ au centre d'un cube de $2m$ de coté. Afin de simuler des mesures en espace libre où le récepteur s'éloigne de la source, nous allons affecter au cube des matériaux $100\%$ absorbant sur toutes ses parois sauf celles sur l'axe des $X$ qui seront $100\%$ réfléchissantes. Ainsi, cela revient à effectuer une mesure tous les $4m$, soit le temps d'aller retour des rayons du centre du cube jusqu'aux parois. N'ayant des réflexions que sur un axe, on reproduit une propagation en espace libre puisque seuls les rayons contenus dans le cône autour de l'axe $X$ conserveront leur énergie. Nous obtenons la figure suivante pour 30 intérations et un million de rayons :
+
+\begin{figureth}
+	\includegraphics[width=0.8\linewidth]{images/test1}
+	\caption{Réponse impulsionnelle en espace libre}
+	\label{test1}
+\end{figureth}
+
+Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en compte que la décroissance d'énergie portée par les rayons perçus. On observe bien que l'énergie diminue comme le carré de la distance entre la source et le récepteur.
+ 		
+\subsection{Salle sphérique}
+
+Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons de la même façon une source et un récepteur de rayons $1m$ au centre d'une sphère $100\%$ réfléchissante de rayon $15m$. Ainsi à chaque itération, l'ensemble des $100000$ rayons revient se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons ainsi une réponse impulsionnelle de la forme d'une peigne de Dirac. Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède $20000$ triangles. Par ailleurs, la fréquence d'échantillonnage est descendue à 100Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisée dans le calcul de l'énergie.
+
+\begin{figureth}
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/test2RIR}
+		\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 15 itérations}
+		\label{test2RIR}
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{images/test2SI}
+		\caption{Position des sources images dans le cas d'une sphère 100\% réfléchissante pour 4 itérations}
+		\label{test2SI}
+	\end{subfigureth}
+\end{figureth}
+
+Si l'on active l'absorption de l'air, on constate bien que les hautes fréquences sont plus absorbées que les basses fréquences en fonction de la distance.
+
+On peut aussi vérifier ce comportement dans le cas plus général d'un ellipsoïde de révolution. Celui-ci peut être créé sous blender à l'aide de l'add-on "\textit{Extra Objects}" en configurant un objet de type "\textit{XYZ Math Surface}". Nous créons alors un ellipsoïde avec les équations suivantes :
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/test2absair}
+	\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 30 itérations avec absorption de l'air}
+	\label{test2absair}
+\end{figureth}
+
+\subsection{Salle rectangulaire}
+
+Le dernier test consiste à comparer les résultats de calcul avec une formule analytique pour une pièce de type pavé droit. La formule \cite[p. 182-189]{mcgovern} est la suivante : 
+
+\begin{align}
+A &=  (-1)^i \\
+B &= i + 0,5 - 0,5 \times (-1)^i \\
+P_{si} &= A \times P_s + B \times D
+\end{align}
+
+Que l'on peut plus simplement écrire :
+
+\begin{align}
+P_{si} = i \times D + P_s \times (-1)^i
+\end{align}
+
+Avec : \\
+$i \in (-n, n)$ et $n \in \mathbb{N}$ \\
+$P_{si}$ : La coordonnée de la position de la source image selon X, Y ou Z \\
+$P_s$ : La coordonnée de la position de la source selon X, Y ou Z \\
+$D$ : La dimension de la salle selon X, Y ou Z \\
+
+On constate alors qu'on a un superposition des sources-images dans l'espace. Cette précision se dégrade légèrement lorsque le nombre de rayons ou le nombre d'itérations augmente à cause de l'imprécision machine mais reste acceptable. Typiquement, pour un million de rayons et 20 itération, l'écart entre les sources-images obtenues par lancé de rayons et celles obtenue par formule analytique est inférieur au millimètre.
+
+En terme de mesure d'énérgie
+		
+\section{Analyse de \gls{complexite}} \label{complexite}
+
+Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. La lecture du maillage et le classement dans l'\gls{octree} est assez rapide puisque ceci s'effectue de manière linéaire. Cela va dépendre du nombre d'élément mais ne sera effectué qu'une fois au lancement du programme. La partie la plus complexe qui va nous intéresser est le calcul d'interaction entre les rayons et les éléments. Effectivement, sans utiliser d'\gls{octree}, chaque rayon doit être testé avec chaque élément. Cela revient à assembler une matrice plein et comporte une \gls{complexite} en $N^2$. Cependant, lorsque l'on utilise un \gls{octree}, seules les interactions entre les rayons et les éléments compris dans la même boite sont calculées. Il faut par ailleurs classer les rayons dans les boites à chaque itération, mais cela est linéaire. Le calcul revient finalement à assembler une matrice creuse et porte une \gls{complexite} théorique de type $N\log{N}$. 
+Pour vérifier ce comportement nous mesurons les temps de calcul avec et sans utilisation d'\gls{octree}.
+
+
+\begin{figureth}
+	\begin{subfigureth}{0.7\textwidth}
+		\includegraphics[width=\linewidth]{images/complexite1}
+		\caption{Temps (s) d'une itération en fonction du nombre d'éléments pour 100000 rayons (échelle log)}
+		\label{complexite1}
+	\end{subfigureth} \\
+\bigskip
+	\begin{subfigureth}{0.7\textwidth}
+		\includegraphics[width=\linewidth]{images/complexite2}
+		\caption{Temps (s) d'une itération en fonction du nombre d'éléments pour 100000 éléments (échelle log)}
+		\label{complexite2}
+	\end{subfigureth}
+	\caption{Courbes de complexité}
+\end{figureth}
 	
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}

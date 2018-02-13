@@ -68,17 +68,19 @@
 \contentsline {subsection}{\numberline {5.2.4}Calcul de l'absorption de l'air}{67}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}M\IeC {\'e}thode d'octree}{69}{section.5.3}
 \contentsline {section}{\numberline {5.4}Calcul de rayon}{71}{section.5.4}
-\contentsline {section}{\numberline {5.5}Calcul de sources-images}{78}{section.5.5}
+\contentsline {section}{\numberline {5.5}Calcul de sources-images}{77}{section.5.5}
 \contentsline {section}{\numberline {5.6}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnelle}{79}{section.5.6}
 \contentsline {section}{\numberline {5.7}Vue d'ensemble}{79}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Traitement du signal}{80}{subsection.5.7.1}
 \contentsline {chapter}{\numberline {6}Validation}{81}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{82}{section.6.1}
-\contentsline {section}{\numberline {6.2}Comparaison aux cas test}{82}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Salle rectangulaire}{82}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\`e}rique}{82}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Analyse de complexit\IeC {\'e}}{82}{section.6.3}
-\contentsline {chapter}{Conclusion}{83}{chapter*.22}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{85}{chapter*.23}
+\contentsline {section}{\numberline {6.2}Comparaison aux cas test}{83}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}D\IeC {\'e}croissance quadratique}{83}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\'e}rique}{83}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Salle rectangulaire}{85}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Analyse de \gls {complexite}}{86}{section.6.3}
+\contentsline {chapter}{Conclusion}{89}{chapter*.28}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{91}{chapter*.29}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{61}{part.3}
