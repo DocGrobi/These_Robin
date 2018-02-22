@@ -97,8 +97,9 @@
 	type=\acronymtype,
 	name={RT60},
 	description={Temps de réverbération pour que l'énergie diminue de 60dB  : \emph{Reverberation Time at 60dB}},
-	first={Temps de Réverbération à 60dB}
-	}		
+	first={Temps de Réverbération à 60dB (RT60)}
+	}
+			
 	
 %\newacronym{iscd}{ISCD}{Institut des sciences du calcul et des données}
 
@@ -200,6 +201,18 @@
 	description={Permet de donner une épaisseur paramétrable à un objet plan. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}},
 	first={modifier "Solidify" qui permet de donner une épaisseur paramétrable à un objet plan}
 	}	
+	
+\newglossaryentry{wav}{
+	name={\scshape{Wavefront Audio File Format}},
+	text={WAV},
+	description={Le format RIFF, sur lequel repose le format WAV, définit une structure de fichier qui repose sur une succession de blocs de données (chunks).\\
+Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du bloc codé sur 4 octets. Si un lecteur rencontre un bloc qu'il ne connaît pas, il passe au suivant. Un fichier wav doit au minimum contenir un bloc appelé <fmt> (format) et un bloc appelé <data>. Le bloc <fmt > doit être positionné en amont du bloc <data>.\\
+	\begin{itemize}
+		\item Le bloc <fmt> contient les métadonnées techniques, c'est-à-dire les informations relatives au codage du flux audio, informations indispensables pour interpréter les données.
+		\item Le bloc <data> contient la charge (payload), c'est-à-dire les données audio utiles.
+	\end{itemize}
+	},
+	}		
 	
 %% ARCHEO
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{16}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,6 +15,14 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Arenberg}(1988)}]{arenberg}
+\textsc{Arenberg, J.} 1988, \enquote{Ray/triangle intersection with barycentric
+  coordinates}, \emph{Ray Tracing News}, \bblvol{}~1, \bblno{}~11.
+
+\bibitem[{\textsc{Badouel}(1990)}]{badouel}
+\textsc{Badouel, D.} 1990, \enquote{An efficient ray-polygon intersection},
+  \emph{Graphics Gems}.
 
 \bibitem[{\textsc{Funkhouser} \bbletal{}(2004)\textsc{Funkhouser},
   \textsc{Tsingos}, \textsc{Carlbom}, \textsc{Elko}, \textsc{Sondhi},
@@ -46,6 +54,11 @@
   \textsc{M.~Stamminger}. 2015, \enquote{Spherical fibonacci mapping},
   \emph{ACM Transactions on Graphics}, \bblvol{}~34.
 
+\bibitem[{\textsc{McGovern}(2009)}]{mcgovern}
+\textsc{McGovern, S.} 2009, \enquote{Fast image method for impulse response
+  calculations of box-shaped rooms}, \emph{Applied Acoustics}, \bblvol{}~70,
+  \bblno{}~1.
+
 \bibitem[{\textsc{Meagher}(1982)}]{octree}
 \textsc{Meagher, D.} 1982, \emph{Octree Generation, Analysis and Manipulation},
   \bblvol{}~TR, Image processing laboratory.
@@ -74,6 +87,10 @@
 \bibitem[{\textsc{Sabine}(1900)}]{sabine}
 \textsc{Sabine, W.~C.} 1900, \emph{Architectural Acoustics}, \bblvol{} Part I.
   Reverberation, Reprints of the American Architect.
+
+\bibitem[{\textsc{Wikip{\'e}dia}()}]{cone}
+\textsc{Wikip{\'e}dia}. \enquote{Angle solide},
+  \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
 
 \bibitem[{\textsc{Williams} \bbletal{}(2005)\textsc{Williams}, \textsc{Barrus},
   \textsc{Morley} \bbland{} \textsc{Shirley}}]{AABB}

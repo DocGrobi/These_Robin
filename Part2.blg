@@ -3,53 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
+Warning--entry type for "cone" isn't style-file defined
+--line 11 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 63 of file Part2/Biblio.bib
+--line 100 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there's a number but no volume in beamtracing
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
+Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 12 entries,
+You've used 16 entries,
             3493 wiz_defined-function locations,
-            772 strings with 7734 characters,
-and the built_in function-call counts, 7420 in all, are:
-= -- 579
-> -- 267
-< -- 19
-+ -- 107
-- -- 82
-* -- 568
-:= -- 1000
-add.period$ -- 25
-call.type$ -- 12
-change.case$ -- 83
-chr.to.int$ -- 13
-cite$ -- 16
-duplicate$ -- 702
-empty$ -- 582
-format.name$ -- 103
-if$ -- 1450
+            792 strings with 8047 characters,
+and the built_in function-call counts, 9153 in all, are:
+= -- 700
+> -- 311
+< -- 27
++ -- 125
+- -- 94
+* -- 689
+:= -- 1269
+add.period$ -- 33
+call.type$ -- 16
+change.case$ -- 107
+chr.to.int$ -- 17
+cite$ -- 21
+duplicate$ -- 867
+empty$ -- 746
+format.name$ -- 119
+if$ -- 1790
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 101
-newline$ -- 54
-num.names$ -- 48
-pop$ -- 270
+missing$ -- 128
+newline$ -- 66
+num.names$ -- 64
+pop$ -- 330
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 95
 quote$ -- 0
-skip$ -- 304
+skip$ -- 366
 stack$ -- 0
-substring$ -- 227
-swap$ -- 429
-text.length$ -- 10
+substring$ -- 273
+swap$ -- 502
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 4
-while$ -- 43
+type$ -- 135
+warning$ -- 5
+while$ -- 55
 width$ -- 0
-write$ -- 145
-(There were 5 warnings)
+write$ -- 186
+(There were 7 warnings)
