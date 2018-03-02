@@ -2,8 +2,6 @@
 \gdef \the@ipfilectr {@-1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-3}
 \contentsline {xpart}{Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{5}{part.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Pr\IeC {\'e}sentation synth\IeC {\'e}tique de l'architecture du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
@@ -12,7 +10,7 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Applications}{41}{chapter.3}
 \gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-4}
+\gdef \the@ipfilectr {@-3}
 \contentsline {xpart}{Calculs acoustiques}{53}{part.2}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Acoustique de salle}{55}{chapter.4}
@@ -22,20 +20,20 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Validation}{87}{chapter.6}
 \gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-5}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}
+\gdef \the@ipfilectr {@-4}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{99}{part.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Configuration initiale}{65}{chapter.7}
+\contentsline {xchapter}{Configuration initiale}{101}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Test de configurations}{67}{chapter.8}
+\contentsline {xchapter}{Test de configurations}{103}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{69}{chapter.9}
+\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{105}{chapter.9}
 \gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-6}
+\gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Annexes}{I}{appendix.A}
 \gdef \the@ipfilectr {}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Liste des acronymes}{XV}{appendix.B}
+\contentsline {xchapter}{Liste des acronymes}{XIII}{appendix.B}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Glossaire}{XVII}{appendix.C}
+\contentsline {xchapter}{Glossaire}{XV}{appendix.C}

@@ -1,13 +1,11 @@
 \select@language {french}
 \gdef \the@ipfilectr {@-1}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{Introduction}{1}{chapter*.6}
 \gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-3}
+\gdef \the@ipfilectr {@-2}
 \contentsline {part}{I\hspace {1em}Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{3}{part.1}
 \contentsline {xpart}{Mod\IeC {\'e}lisation du th\IeC {\'e}\IeC {\^a}tre d\IeC {\textquoteright }Orange}{5}{part.1}
-\contentsline {starchapter}{Introduction}{5}{chapter*.4}
+\contentsline {starchapter}{Introduction}{5}{chapter*.7}
 \contentsline {chapter}{\numberline {1}Pr\IeC {\'e}sentation synth\IeC {\'e}tique de l'architecture du th\IeC {\'e}\IeC {\^a}tre d'Orange}{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}
 \contentsline {section}{\numberline {1.2}Le \gls {postscaenium}, les \glspl {basilique} et le \gls {pulpitum}}{9}{section.1.2}
@@ -43,13 +41,13 @@
 \contentsline {subsection}{\numberline {3.5.1}Restitution du d\IeC {\'e}cor du front de sc\IeC {\`e}ne}{45}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Graphisme et animation}{45}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}R\IeC {\'e}alit\IeC {\'e} virtuelle}{45}{subsection.3.5.3}
-\contentsline {chapter}{Conclusion}{47}{chapter*.25}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{50}{chapter*.26}
+\contentsline {chapter}{Conclusion}{47}{chapter*.28}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{50}{chapter*.29}
 \gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-4}
+\gdef \the@ipfilectr {@-3}
 \contentsline {part}{II\hspace {1em}Calculs acoustiques}{51}{part.2}
 \contentsline {xpart}{Calculs acoustiques}{53}{part.2}
-\contentsline {chapter}{Introduction}{53}{chapter*.4}
+\contentsline {starchapter}{Introduction}{53}{chapter*.4}
 \contentsline {chapter}{\numberline {4}Acoustique de salle}{55}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction \IeC {\`a} l'acoustique de salle}{56}{section.4.1}
 \contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{57}{section.4.2}
@@ -71,7 +69,7 @@
 \contentsline {section}{\numberline {5.5}Calcul de sources-images}{79}{section.5.5}
 \contentsline {section}{\numberline {5.6}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnelle}{82}{section.5.6}
 \contentsline {section}{\numberline {5.7}Traitement du signal}{83}{section.5.7}
-\contentsline {section}{\numberline {5.8}Add-on Blender}{84}{section.5.8}
+\contentsline {section}{\numberline {5.8}Add-on Blender}{85}{section.5.8}
 \contentsline {chapter}{\numberline {6}Validation}{87}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{88}{section.6.1}
 \contentsline {section}{\numberline {6.2}Comparaison aux cas test}{89}{section.6.2}
@@ -79,34 +77,34 @@
 \contentsline {subsection}{\numberline {6.2.2}Salle sph\IeC {\'e}rique}{89}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Salle rectangulaire}{90}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Analyse de \gls {complexite}}{91}{section.6.3}
-\contentsline {chapter}{Conclusion}{93}{chapter*.32}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{96}{chapter*.33}
+\contentsline {chapter}{Conclusion}{93}{chapter*.33}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{96}{chapter*.34}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{97}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{99}{part.3}
+\contentsline {chapter}{Introduction}{99}{chapter*.61}
+\contentsline {chapter}{\numberline {7}Configuration initiale}{101}{chapter.7}
+\contentsline {section}{\numberline {7.1}Configuration du maillage}{102}{section.7.1}
+\contentsline {section}{\numberline {7.2}Les mat\IeC {\'e}riaux}{102}{section.7.2}
+\contentsline {section}{\numberline {7.3}RIR du th\IeC {\'e}\IeC {\^a}tre d'Orange}{102}{section.7.3}
+\contentsline {chapter}{\numberline {8}Test de configurations}{103}{chapter.8}
+\contentsline {section}{\numberline {8.1}position des spectateurs}{104}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Devant}{104}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Derri\IeC {\`e}re}{104}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Jardin}{104}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Cours}{104}{subsection.8.1.4}
+\contentsline {section}{\numberline {8.2}Pr\IeC {\'e}sence de spectateurs}{104}{section.8.2}
+\contentsline {section}{\numberline {8.3}Pr\IeC {\'e}sence de velum}{104}{section.8.3}
+\contentsline {section}{\numberline {8.4}Forme et mat\IeC {\'e}riaux du toit}{104}{section.8.4}
+\contentsline {chapter}{\numberline {9}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{105}{chapter.9}
+\contentsline {chapter}{Conclusion}{107}{chapter*.62}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{109}{chapter*.63}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{61}{part.3}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{63}{part.3}
-\contentsline {chapter}{Introduction}{63}{chapter*.31}
-\contentsline {chapter}{\numberline {7}Configuration initiale}{65}{chapter.7}
-\contentsline {section}{\numberline {7.1}Configuration du maillage}{66}{section.7.1}
-\contentsline {section}{\numberline {7.2}Les mat\IeC {\'e}riaux}{66}{section.7.2}
-\contentsline {section}{\numberline {7.3}RIR du th\IeC {\'e}\IeC {\^a}tre d'Orange}{66}{section.7.3}
-\contentsline {chapter}{\numberline {8}Test de configurations}{67}{chapter.8}
-\contentsline {section}{\numberline {8.1}position des spectateurs}{68}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Devant}{68}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Derri\IeC {\`e}re}{68}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Jardin}{68}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Cours}{68}{subsection.8.1.4}
-\contentsline {section}{\numberline {8.2}Pr\IeC {\'e}sence de spectateurs}{68}{section.8.2}
-\contentsline {section}{\numberline {8.3}Pr\IeC {\'e}sence de velum}{68}{section.8.3}
-\contentsline {section}{\numberline {8.4}Forme et mat\IeC {\'e}riaux du toit}{68}{section.8.4}
-\contentsline {chapter}{\numberline {9}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{69}{chapter.9}
-\contentsline {chapter}{Conclusion}{71}{chapter*.32}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{73}{chapter*.33}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}
 \contentsline {section}{\numberline {A.1}Figures annexes}{I}{section.A.1}
-\contentsline {section}{\numberline {A.2}Tableaux annexes}{XI}{section.A.2}
+\contentsline {section}{\numberline {A.2}Tableaux annexes}{X}{section.A.2}
 \gdef \the@ipfilectr {}
-\contentsline {chapter}{\numberline {B}Liste des acronymes}{XV}{appendix.B}
-\contentsline {chapter}{\numberline {C}Glossaire}{XVII}{appendix.C}
+\contentsline {chapter}{\numberline {B}Liste des acronymes}{XIII}{appendix.B}
+\contentsline {chapter}{\numberline {C}Glossaire}{XV}{appendix.C}

@@ -4,9 +4,9 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 11 of file Part2/Biblio.bib
+--line 23 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 100 of file Part2/Biblio.bib
+--line 113 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there's a number but no volume in beamtracing
@@ -14,45 +14,45 @@ Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 16 entries,
+You've used 17 entries,
             3493 wiz_defined-function locations,
-            792 strings with 8047 characters,
-and the built_in function-call counts, 9153 in all, are:
-= -- 700
-> -- 311
-< -- 27
-+ -- 125
-- -- 94
-* -- 689
-:= -- 1269
-add.period$ -- 33
-call.type$ -- 16
-change.case$ -- 107
-chr.to.int$ -- 17
-cite$ -- 21
-duplicate$ -- 867
-empty$ -- 746
-format.name$ -- 119
-if$ -- 1790
+            800 strings with 8252 characters,
+and the built_in function-call counts, 9683 in all, are:
+= -- 737
+> -- 331
+< -- 28
++ -- 132
+- -- 100
+* -- 736
+:= -- 1346
+add.period$ -- 35
+call.type$ -- 17
+change.case$ -- 114
+chr.to.int$ -- 18
+cite$ -- 22
+duplicate$ -- 916
+empty$ -- 792
+format.name$ -- 130
+if$ -- 1893
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 128
-newline$ -- 66
-num.names$ -- 64
-pop$ -- 330
+missing$ -- 136
+newline$ -- 69
+num.names$ -- 68
+pop$ -- 350
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 101
 quote$ -- 0
-skip$ -- 366
+skip$ -- 383
 stack$ -- 0
-substring$ -- 273
-swap$ -- 502
+substring$ -- 284
+swap$ -- 525
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 135
+type$ -- 144
 warning$ -- 5
-while$ -- 55
+while$ -- 58
 width$ -- 0
-write$ -- 186
+write$ -- 196
 (There were 7 warnings)

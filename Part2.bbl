@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -23,6 +23,11 @@
 \bibitem[{\textsc{Badouel}(1990)}]{badouel}
 \textsc{Badouel, D.} 1990, \enquote{An efficient ray-polygon intersection},
   \emph{Graphics Gems}.
+
+\bibitem[{\textsc{Battenberg} \bbland{} \textsc{Avizienis}(2011)}]{partition}
+\textsc{Battenberg, E.} \bbland{} \textsc{R.~Avizienis}. 2011,
+  \enquote{Implementing real-time partitioned convolution algorithms on
+  conventional operating systems}, \emph{DAFx-11}.
 
 \bibitem[{\textsc{Funkhouser} \bbletal{}(2004)\textsc{Funkhouser},
   \textsc{Tsingos}, \textsc{Carlbom}, \textsc{Elko}, \textsc{Sondhi},
