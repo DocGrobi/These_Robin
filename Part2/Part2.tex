@@ -827,12 +827,12 @@ Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en c
 		
 \subsection{Salle sphérique}
 
-Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons une source et un récepteur de diamètre $2m$ au centre d'une sphère $100\%$ réfléchissante de diamètre $30m$. Ainsi à chaque itération, l'ensemble des $100000$ rayons revient se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons une réponse impulsionnelle de la forme d'une peigne de Dirac (voir fig. \ref{test2RIR}). Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède $20000$ triangles. Par ailleurs, la fréquence d'échantillonnage est descendue à 100Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisées dans le calcul de l'énergie. On pourra par ailleurs importer les source-images sous Blender et constater qu'elles sont bien réparties sur des sphères dont le diamètre est doublé à chaque itération (voir fig. \ref{test2SI})
+Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons une source et un récepteur de diamètre $1m$ au centre d'une sphère $100\%$ réfléchissante de diamètre $4m$. Ainsi à chaque itération, l'ensemble des $1000$ rayons revient se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons une réponse impulsionnelle de la forme d'une peigne de Dirac (voir fig. \ref{test2RIR}). L'écart entre chaque pic est de $11,76 ms$ ce qui correspond bien à une distance de $4m$ parcourue à la vitesse du son fixée à $340m/s$. Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède $320000$ triangles. Par ailleurs, la fréquence d'échantillonnage est descendue à 1000Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisées dans le calcul de l'énergie. On pourra par ailleurs importer les source-images sous Blender et constater qu'elles sont bien réparties sur des sphères dont le diamètre est doublé à chaque itération (voir fig. \ref{test2SI})
 
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/test2RIR}
-		\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 15 itérations}
+		\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 12 itérations}
 		\label{test2RIR}
 	\end{subfigureth}
 	\quad
@@ -843,13 +843,13 @@ Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour
 	\end{subfigureth}
 \end{figureth}
 
-Si l'on active l'absorption de l'air, on constate bien que les hautes fréquences sont plus absorbées que les basses fréquences en fonction de la distance (voir fig. \ref{test2absair}).
+Si l'on active l'absorption de l'air, on constate bien que les hautes fréquences sont plus absorbées que les basses fréquences en fonction de la distance (voir fig. \ref{test2absair}). Notamment au bout de 1700ms soit 578m, les fréquences à 8kHz ont quasiment totalement été absorbées par l'air, pour une température de 20°C et une pression relative de 50\%.
 
 %On peut aussi vérifier ce comportement dans le cas plus général d'un ellipsoïde de révolution. Celui-ci peut être créé sous Blender à l'aide de l'add-on "\textit{Extra Objects}" en configurant un objet de type "\textit{XYZ Math Surface}". Nous créons alors un ellipsoïde avec les équations suivantes :
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/test2absair}
-	\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 30 itérations avec absorption de l'air}
+	\caption{Réponse impulsionnelle dans une sphère de $20m$ de diamètre, 100\% réfléchissante, pour 30 itérations avec absorption de l'air}
 	\label{test2absair}
 \end{figureth}
 
@@ -894,7 +894,7 @@ Pour vérifier ce comportement nous mesurons les temps de calcul avec et sans ut
 \bigskip
 	\begin{subfigureth}{0.7\textwidth}
 		\includegraphics[width=\linewidth]{images/complexite2}
-		\caption{Temps (s) d'une itération en fonction du nombre d'éléments pour 100000 éléments (échelle log)}
+		\caption{Temps (s) d'une itération en fonction du nombre de rayons pour 100000 éléments (échelle log)}
 		\label{complexite2}
 	\end{subfigureth}
 	\caption{Courbes de complexité}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  2 MAR 2018 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  6 MAR 2018 13:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3253,12 +3253,12 @@ File: Part2/images/test1.png Graphic file (type png)
 Package pdftex.def Info: Part2/images/test1.png used on input line 820.
 (pdftex.def)             Requested size: 352.81552pt x 188.227pt.
  [89 <./Part2/images/testBeam.png> <./Part2/images/testBeam2.png>] <Part2/image
-s/test2RIR.png, id=964, 651.43375pt x 441.65pt>
+s/test2RIR.png, id=964, 414.54875pt x 309.155pt>
 File: Part2/images/test2RIR.png Graphic file (type png)
 
 <use Part2/images/test2RIR.png>
 Package pdftex.def Info: Part2/images/test2RIR.png used on input line 834.
-(pdftex.def)             Requested size: 198.45662pt x 134.54468pt.
+(pdftex.def)             Requested size: 198.45662pt x 148.00116pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 835--835
 []\T1/futs/m/n/10.95 (a) |Ré-ponse im-pul-sion-nelle dans une
@@ -3271,12 +3271,15 @@ File: Part2/images/test2SI.png Graphic file (type png)
 Package pdftex.def Info: Part2/images/test2SI.png used on input line 840.
 (pdftex.def)             Requested size: 198.45662pt x 174.38905pt.
 
-<Part2/images/test2absair.png, id=967, 884.30376pt x 386.44376pt>
+<Part2/images/test2absair.png, id=967, 830.10126pt x 307.1475pt>
 File: Part2/images/test2absair.png Graphic file (type png)
 
 <use Part2/images/test2absair.png>
 Package pdftex.def Info: Part2/images/test2absair.png used on input line 851.
-(pdftex.def)             Requested size: 441.01773pt x 192.72607pt.
+(pdftex.def)             Requested size: 441.01773pt x 163.18108pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [90 <./Part2/images/test1.png> <./Part2/images/test2RIR.png> <./Part2/images/t
 est2SI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 872--877
@@ -3301,7 +3304,10 @@ File: Part2/images/complexite2.png Graphic file (type png)
 <use Part2/images/complexite2.png>
 Package pdftex.def Info: Part2/images/complexite2.png used on input line 896.
 (pdftex.def)             Requested size: 308.71106pt x 218.47621pt.
- [92 <./Part2/images/complexite1.png> <./Part2/images/complexite2.png>]
+ [92] [93 <./Part2/images/complexite1.png> <./Part2/images/complexite2.png>] [9
+4
+
+]
 Overfull \hbox (14.58931pt too wide) in paragraph at lines 908--909
 \T1/futs/m/n/12 ce qui est sou-vent li-mi-tant dans ce genre d'étude. L'im-plé-
 men-ta-tion d'une [][][]In-ter-face Homme-
@@ -3313,9 +3319,7 @@ Overfull \hbox (18.09854pt too wide) in paragraph at lines 912--913
  l'étude comme par exemple l'écoute
  []
 
-[93
-
-] [94] (./Part2.bbl (./Main.brf)
+[95] [96] (./Part2.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
@@ -3324,9 +3328,9 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 76.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [95
+) [97
 
-])) [96]
+])) [98]
 [110
 
 
@@ -3346,7 +3350,7 @@ Annexe B.
 Annexe C.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <12> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 31.
-<glossaire/basiliques.jpg, id=1099, 1284.8pt x 702.625pt>
+<glossaire/basiliques.jpg, id=1107, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
@@ -3380,16 +3384,16 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: D87751198EC515882CF09CC31F27A5DD;1500.
 Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 63F963D0D042600ED6B440EEB72A1ACD;5161.
+(rerunfilecheck)             Checksum: 61ABD5F36C24209D262BC538473A0EB0;5161.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 52752 strings out of 493014
- 1135133 string characters out of 6133351
- 1388640 words of memory out of 5000000
+ 52754 strings out of 493014
+ 1135147 string characters out of 6133351
+ 1388634 words of memory out of 5000000
  54657 multiletter control sequences out of 15000+600000
  186266 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3602,10 +3606,10 @@ ive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (59 pages, 4936868 bytes).
+Output written on Main.pdf (61 pages, 4849997 bytes).
 PDF statistics:
- 1281 PDF objects out of 1440 (max. 8388607)
- 1121 compressed objects within 12 object streams
- 332 named destinations out of 1000 (max. 500000)
+ 1290 PDF objects out of 1440 (max. 8388607)
+ 1128 compressed objects within 12 object streams
+ 334 named destinations out of 1000 (max. 500000)
  382 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -56,8 +56,8 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Validation}{87}{chapter.6}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces R\IeC {\'e}ponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) \IeC {\'e}chantillonn\IeC {\'e}e \IeC {\`a} 100Hz et fonction $f(x)=\frac {2}{x^2}$ (rouge)\relax }}{90}{figure.caption.29}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces R\IeC {\'e}ponse impulsionnelle dans une sph\IeC {\`e}re 100\% r\IeC {\'e}fl\IeC {\'e}chissante pour 30 it\IeC {\'e}rations avec absorption de l'air\relax }}{91}{figure.caption.31}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Courbes de complexit\IeC {\'e}\relax }}{92}{figure.caption.32}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces R\IeC {\'e}ponse impulsionnelle dans une sph\IeC {\`e}re de $20m$ de diam\IeC {\`e}tre, 100\% r\IeC {\'e}fl\IeC {\'e}chissante, pour 30 it\IeC {\'e}rations avec absorption de l'air\relax }}{91}{figure.caption.31}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Courbes de complexit\IeC {\'e}\relax }}{93}{figure.caption.32}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{99}{part.3}
