@@ -3,56 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
+Warning--entry type for "aquaterra" isn't style-file defined
+--line 19 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 23 of file Part2/Biblio.bib
+--line 63 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 113 of file Part2/Biblio.bib
+--line 153 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there's a number but no volume in beamtracing
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
+Warning--empty year in aquaterra
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 17 entries,
+You've used 22 entries,
             3493 wiz_defined-function locations,
-            800 strings with 8252 characters,
-and the built_in function-call counts, 9683 in all, are:
-= -- 737
-> -- 331
-< -- 28
-+ -- 132
-- -- 100
-* -- 736
-:= -- 1346
-add.period$ -- 35
-call.type$ -- 17
-change.case$ -- 114
-chr.to.int$ -- 18
-cite$ -- 22
-duplicate$ -- 916
-empty$ -- 792
-format.name$ -- 130
-if$ -- 1893
+            822 strings with 8839 characters,
+and the built_in function-call counts, 11610 in all, are:
+= -- 876
+> -- 386
+< -- 33
++ -- 152
+- -- 115
+* -- 864
+:= -- 1669
+add.period$ -- 45
+call.type$ -- 22
+change.case$ -- 141
+chr.to.int$ -- 23
+cite$ -- 28
+duplicate$ -- 1084
+empty$ -- 971
+format.name$ -- 150
+if$ -- 2267
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 136
-newline$ -- 69
-num.names$ -- 68
-pop$ -- 350
+missing$ -- 162
+newline$ -- 84
+num.names$ -- 88
+pop$ -- 415
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 126
 quote$ -- 0
-skip$ -- 383
+skip$ -- 455
 stack$ -- 0
-substring$ -- 284
-swap$ -- 525
+substring$ -- 339
+swap$ -- 587
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
-warning$ -- 5
-while$ -- 58
+type$ -- 186
+warning$ -- 6
+while$ -- 73
 width$ -- 0
-write$ -- 196
-(There were 7 warnings)
+write$ -- 246
+(There were 9 warnings)

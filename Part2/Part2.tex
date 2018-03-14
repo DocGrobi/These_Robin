@@ -20,30 +20,187 @@ Pour débuter, nous ferons un tour d'horizon de la physique de l'acoustique et p
 		\minitoc
 		\newpage
 		
-\section{Introduction à l'acoustique de salle}
-L'acoustique de salle est une discipline à part entière qui consiste principalement à étudier la réverbération d'une pièce soumis à une onde sonore. Le principe de cette étude est le suivant : il s'agit en général de placer une source sonore à l'intérieur d'une salle, fermée ou non, et de la faire rayonner dans toutes les directions. L'onde se propage alors jusqu'aux parois et subit un phénomène de diffusion. Il s'agit en réalité d'une combinaison de trois phénomènes : la réflexion, la réfraction et la diffraction. Par réfraction on entend la notion d'absorption suivant les lois de Descartes sur la propagation entre deux milieux \cite[p. 3]{jouhaneau}. La diffraction quant à elle opère lorsque la longueur d'onde est proche de la taille de l'obstacle. 
+\section{Généralités sur l'acoustique de salle}
+\subsection{Notion de révérberation}
+L'acoustique de salle est une discipline à part entière qui consiste principalement à étudier la réverbération d'une pièce soumis à une onde sonore. Le principe de cette étude est le suivant : il s'agit en général de placer une source sonore à l'intérieur d'une salle, fermée ou non, et de la faire rayonner dans toutes les directions. L'onde se propage alors jusqu'aux parois et subit un phénomène de diffusion. Il s'agit en réalité d'une combinaison de trois phénomènes : la réflexion, la réfraction et la diffraction (fig. \ref{schema_absorption}). Par réfraction on entend la notion d'absorption suivant les lois de Descartes sur la propagation entre deux milieux \cite[p. 3]{jouhaneau}. La diffraction quant à elle opère lorsque la longueur d'onde est proche de la taille de l'obstacle. 
+\begin{figureth}
+	\includegraphics[width=0.5\linewidth]{images/schema_ecran_antibruit}
+	\caption[Les différents comportements d'une onde lorsqu'elle rencontre une paroi]{Les différents comportements d'une onde lorsqu'elle rencontre une paroi \footnotemark}
+	\label{schema_absorption}
+\end{figureth}
+\citefnt[Chap. 1]{aquaterra}
 
 En se plaçant en un point à l'intérieur de la salle, on pourra alors recevoir un signal sonore comme étant la somme d'un champ direct et d’un champ réverbéré. Le son direct provient directement de la source sans avoir touché aucune surface. Le son réverbéré se distingue en deux catégories : les premières réflexions dont l'ensemble forment la texture du son et le champ diffus qui peut être assimilé à une somme infinie d'ondes se propageant dans toutes les directions \cite[p. 9]{jouhaneau}.
 On comprend alors que les principaux facteurs qui vont influer sur l'acoustique perçue dans une salle sont : la source sonore, le milieu de propagation et la nature des parois et des obstacles.
 
 \begin{figureth}
-%\begin{subfigureth}{0.3\textwidth}
-%	\includegraphics[width=\linewidth]{images/schema_absorption}
-%	\caption{Schéma d'une onde en contact avec une paroi}
-%	\label{schema_absorption}
-%	\qquad
-%\end{subfigureth}
-%\begin{subfigureth}{0.65\textwidth}
-	\includegraphics[width=\linewidth]{images/RIR_schematique}
+	\includegraphics[width=0.7\linewidth]{images/RIR_schematique}
 	\caption{Réponse temporelle d'une impulsion sonore dans une salle}
 	\label{RIR_schematique}
-%	\end{subfigureth}
 \end{figureth}
 
-La figure \ref{RIR_schematique}, illustrant la \gls{rir}, montre que l'information perçue est une succession d'ondes sonores arrivant décalées dans le temps. Si l'écart entre ces ondes est long, alors d'auditeur pourra les différencier et entendra le phénomène d'écho. Au contraire, si l'écart est suffisamment restreint et que les ondes sont mélangées au moment d'arriver à l'auditeur, alors celui-ci n'entendra qu'un son prolongé dont l'intensité diminue. Il s'agit de la réverbération (\cite[p. 39]{sabine}). 
+La figure \ref{RIR_schematique}, illustrant la \gls{rir}, montre que l'information perçue est une succession d'ondes sonores arrivant décalées dans le temps. Si l'écart entre ces ondes est long, alors d'auditeur pourra les différencier et entendra le phénomène d'écho. Au contraire, si l'écart est suffisamment restreint et que les ondes sont mélangées au moment d'arriver à l'auditeur, alors celui-ci n'entendra qu'un son prolongé dont l'intensité diminue. Il s'agit de la réverbération \cite[p. 39]{sabine}. 
+
+\subsection{Notion de flux d'intensité acoustique}
+On définit par intensité acoustique la puissance transportée par les ondes sonores, par unité de surface, mesurée perpendiculairement à la direction de ce transfert \cite[IEC 60050]{cei}. Cette notion permet d'étudier le son perçu par les humains on la reliant à la pression acoustique qui va s'exercer de proche en proche dans l'air jusqu'à atteindre le tympan. Ainsi, la puissance sonore transportée par l'onde acoustique sera mesurable en un point de l'espace. Toute la puissance sonore mesurée en un point a une origine (actuelle ou passée) dans un flux d'énergie provenant d'une ou plusieurs directions identifiables. L'intensité acoustique mesure le flux résultant de ces transferts. 
+
+L'intensité acoustique est un vecteur ayant pour origine le point de mesure et de même direction que le vecteur vitesse de l'onde. On peut l'écrire comme la moyenne dans le temps de l'intensité acoustique instantannée :
+
+\begin{equation} 
+\overrightarrow{I}(\overrightarrow{x},t) = \frac{1}{T} \int^T_0 p.\overrightarrow{v}dt
+\end{equation}
+
+Le flux de l'intensité acoustique instantanée à travers une surface $S$ donnée correspond à l'énergie acoustique $E$ transférée à travers cette surface, à l'instant considéré :
+
+\begin{equation} 
+E_i = \int_S \overrightarrow{I_i}.\overrightarrow{dS}
+\end{equation}
+
+Au niveau de la source, au temps 0, l'énergie totale est concentrée en un point et va ensuite être portée sur la surface d'une sphère dont le diamètre augmente avec le temps. L'acoustique suit le premier principe de la thermodynamique selon lequel il y a conservation d'énergie.
+
+\begin{figureth}
+	\includegraphics[width=0.5\linewidth]{images/flux}
+	\caption{Représentation de la répartition du flux énergétique dans la propagation d'une onde sphérique}
+	\label{flux}
+\end{figureth}
+
+Une portion d'énergie considérée va donc être portée par un angle solide (voir fig. \ref{flux}). Ainsi la surface portant l'énergie augmente comme le carré de la distance :
+\begin{equation} 
+\overrightarrow{I}(\overrightarrow{d}) \propto \frac{\overrightarrow{u}}{d^2}
+\end{equation}
+
+Par ailleurs en conditions de champ libre, l'intensité acoustique est proportionnelle au carré de la pression acoustique :
+\begin{equation} 
+E_i \propto p^2
+\end{equation}
+
+\subsection{Notion de matériau}
+
+
+
 
 \section{Méthodes de calcul acoustique} 
 Le calcul de l'acoustique d'une salle peut se faire selon différentes méthodes. Nous allons succinctement en présenter quelques unes afin d'en dégager les grands principes et les limites.
+
+ 
+	\subsection{Méthode de résolution exacte} \label{sect_resExacte}
+
+La méthode de calcul exacte d'un champs sonore consiste à résoudre une équation aux dérivées partielles avec comme conditions aux limites, les parois de la pièce. Il s'agit ainsi de mailler le domaine d'étude par des petits éléments linéiques (\gls{bem}) ou surfaciques (\gls{fem}). Sur chacun de ces éléments, on pourra calculer la pression acoustique $p(x,y,z,t)$ par résolution de l'équation d'onde de D'Alembert :
+\begin{equation} 
+\Delta p-\frac{1}{c^2}\frac{\partial^2p}{\partial t^2} = 0
+\footnotemark
+\label{alembert}
+\end{equation}
+\citefnt[p. 10]{Kandelman}
+
+Avec : \\
+$\Delta$ : l'opérateur laplacien\\
+$c$ : la célérité de l'onde\\
+
+Pour cela, il faudra se placer dans les conditions de l'acoustique linéaire tels que \cite[p. 19]{jot}:
+
+\begin{itemize}
+\item l'air est un fluide parfait\item la température et la pression restent constantes\item la vitesse macroscopique du fluide est faible devant la célérité du son\item les fluctuations dues aux déplacements d'air sont faibles devant ces valeurs moyennes
+\end{itemize}
+
+
+
+On pourra ensuite définir les impédances complexes des parois de la salle comme conditions aux limites (\gls{Dirichlet}, \gls{Neumann}, ...). \\
+
+Les solutions de cette équation sont les $p_i$ tels que :
+\begin{equation}
+p_i(x_i,t) = f_+(t-\frac{x_i}{c}) + f_-(t-\frac{x_i}{c})
+\footnotemark
+\end{equation}
+\citefnt[p. 214-249]{alembert}
+
+Avec : \\
+$x_i$ : chacune des coordonnées de l'espace\\
+$ f_+$ et  $f_-$ : des fonctions ne dépendant que d'une variable et définies à partir des conditions initiales. Elles représentent respectivement une onde se propageant sans se déformer vers $+\infty$ et $-\infty$.\\
+
+L'équation d'Helmholtz apparait lorsque l'on cherche des solutions "stationnaires" de l'équation \ref{alembert} de D'Alembert :
+\begin{equation} \label{helmoltz}
+(\Delta + k^2)p(M) = f(M),	 	\qquad  \forall M  \in \Omega
+\footnotemark
+\end{equation}
+\citefnt[eq. 2.1]{fem-bem}
+
+Avec : \\
+$f(M)$ : la distribution des sources, \\
+$k$ : le nombre d'onde, \\
+$\Omega  \subset R^n$ : le domaine d'étude\\
+
+La fonction de Green est une solution élémentaire pour la source $S$ de l'équation \ref{helmoltz} de Helmoltz qui s'écrit :
+\begin{equation} \label{green}
+(\Delta + k^2)G(S,M) = \delta_s(M),	 	\qquad  \forall M  \in \Omega
+\footnotemark
+\end{equation}
+\citefnt[eq. 2.2]{fem-bem}
+
+Avec : \\
+$\delta_s$ : la mesure de \gls{Dirac}, \\
+
+\begin{figureth}
+	\includegraphics[width=0.6\linewidth]{images/green}
+	\caption[Schéma général pour l'établissement de la représentation de Green]{Schéma général pour l'établissement de la représentation de Green \footnotemark}
+	%\label{green}
+\end{figureth}
+\citefnt[fig. 2.1]{fem-bem}
+
+Alors en combinant les équations \ref{helmoltz} et \ref{green}, on obtient :
+\begin{equation}
+G(S,M)f(M)-p(M)\delta_s(M) = G(S,M)\Delta p(M)-p(M)\Delta G(S,M),	 	\qquad  \forall M  \in \Omega
+\footnotemark
+\end{equation}
+\citefnt[eq. 2.4]{fem-bem}
+
+En intégrant alors cette équation sur un volume V englobant le volume D et la source S, il s'ensuit :
+\begin{equation}
+\int_V G(S,M) f(M) dV - \int_Vp(M)\delta_s(M) dV = \int_V [G(S,M)\Delta p(M) - p(M)\Delta G(S,M)] dV,	 	\qquad  \forall M  \in \Omega
+ \footnotemark
+\end{equation}
+\citefnt[eq. 2.5]{fem-bem}
+
+La  première  intégrale  dans  l'expression  ci-dessus  représente  le  champ  incident  c'est-à-dire  le  champ  rayonné  si  l'ensemble  de  sources  f(M)  était  seul  en  milieu  infini.  La deuxième  intégrale  est  le  champ  de  pression  en  un  point  M  de  l'espace  pour  une  source ponctuelle  S  (ce  facteur  serait  nul  si  la  source  S  n'était  pas  située  dans  le  volume  V).  Le membre  de  droite  peut  être  transformé  en  une  intégrale  de  surface  en  appliquant  le théorème  de  Green. Lorsque  l'on  fait  tendre  le  volume  V  vers  l'infini,  en  utilisant  la condition de Sommerfeld :
+\begin{equation}
+   \left \{
+	\begin{array}{r c l}
+		\underset{r \to \infty}{\lim} G &=& O(r^{(1-n)/2} \\
+		\underset{r \to \infty}{\lim} (\delta_r G - ikG) &=& O(r^{(1-n)/2} 
+	\end{array}
+   \right .
+   \footnotemark
+\end{equation}   
+\citefnt[eq. 2.3]{fem-bem}
+
+on aboutit à une intégrale sur la surface $\sigma$ du domaine D. On obtient alors :
+\begin{equation}
+p(M) = p_0 - \int_\sigma [G(S,M) \frac{\partial p}{\partial n_S}(M) - p(M) \frac{\partial G}{\partial n_S}(S,M)] dS,	 	\qquad  \forall M  \in \Omega
+\footnotemark
+\end{equation}
+\citefnt[eq. 2.6]{fem-bem}
+
+
+C'est à partir de cette équation que l'on pourra calculer la valeur de pression acoustique en tout point M de l'espace $\Omega$ non situé sur la frontière $\sigma$ du domaine D. Sachant cela, on comprend que l'implémentation mathématique est parfaitement réalisable mais un problème subvient lorsque la géométrie de la salle se complique. Effectivement, le nombre d'éléments et donc la taille de la matrice à résoudre, dépendra de la longueur d'onde \cite[p. 740]{beamtracing}. Dans un cas comme le théâtre d'Orange où les longueurs se comptent en dizaines de mètres et les fréquences en kilo-Hertz (fréquences audibles), il faudra raffiner les mailles à l'échelle du millimètre, ce qui générera des milliards d'éléments. Ce genre de problème est aujourd'hui quasi-impossible à mettre en place de part la puissance de calcul et l'espace mémoire nécessaire. Par ailleurs la création d'un maillage de ce type, qui plus est conforme, c'est à dire avec des triangles de taille régulière et dont les angles ne sont pas trop aigus, représente une difficulté à part entière.
+Au début du projet, nous avons tenté d'analyser une version très simplifiée du théâtre à des fréquences très faibles. Nous voulions notamment tester l'impact de la forme incurvée des gradins en comparant de manière récursive différents maillages. Le raffinement fut effectué à l'aide de l'outil "\textit{mmg}" développé à l'\gls{iscd}. Les calculs acoustiques ont été fait avec l'outil "\textit{MyBEM}" développé par le \gls{cmap}. En conservant à peu près des dimensions du théâtre, nous obtenions plusieurs centaines de milliers d'éléments et des temps de calcul déjà de quelques dizaines de minutes avec un ordinateur standard. Le constat a alors été que ce type d'étude serait trop complexe et les résultats difficiles à interpréter.
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/BEM}
+	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par méthode des éléments finis de frontière à 50Hz}
+	\label{BEM}
+\end{figureth}
+
+Il est alors possible de se tourner vers des solutions approchées utilisant des méthodes de calcul de type géométrique.
+
+	\subsection{Méthode de tracé de rayon}
+Tout d'abord, la méthode dite de tracé de rayon (\textit{ray-tracing}) qui est très souvent utilisée dans les logiciels d'acoustique de salle. Cette approche suppose que l’énergie sonore émise depuis une source est repartie sur un certain nombre de rayons rectilignes déviés de manière spéculaire lors de leur rencontre avec les parois. L'énergie d'un rayon sera atténuée selon le coefficient d'absorption des parois lors du rebond et décroitra comme la distance de propagation au carré afin de simuler l'effet de dispersion géométrique d'une onde sphérique. La mesure d'énergie est alors réalisée par comptage du nombre de rayons qui traversent le récepteur. La précision de mesure sera ainsi fonction du nombre de rayons émis et de la taille du récepteur. Il peut notamment y avoir beaucoup de perte d'information si le domaine de propagation est complexe \cite[p. 60]{picaut}. Il s'agit donc d'une méthode très puissante pour simuler les réflexions géométriques sur les parois mais qui devient compliquée pour simuler les effets de diffraction. C'est aussi la seule méthode géométrique permettant de simuler des réflexions sur des parois courbes \cite[p. 13]{Kandelman}.
+
+	\subsection{Méthode de lancer de particules}
+Le lancer de particules est très similaire au tracé de rayon. Cependant, dans le concept des particules sonores, chaque particule est porteuse d’une énergie constante qui ne décroit donc pas comme la distance au carré. Lors du contact avec une paroi, la particule sera réfléchie de manière statistique. Par exemple, si $\alpha$ est le coefficient d'absorption de la paroi, alors, la particule aura une probabilité de $(1-\alpha)$ d'être réfléchie et une probabilité $\alpha$ d'être absorbée. En ce sens, il est également possible de déterminer, selon une loi de probabilité, l'angle de réflexion et simuler ainsi une "pseudo-diffusion" des matériaux. \cite[p. 62]{picaut}.
+	
+	\subsection{Méthode des sources-image}
+Cette méthode est fondée sur la construction de sources virtuelles, images de la source réelle, construite par symétrie par rapport aux parois de l'enceinte. La contribution énergétique de chaque source-image est celle habituellement rencontrée dans le cas de la propagation en champ libre, pondérée par le coefficient d’absorption des parois considérées \cite[p. 60]{picaut}.
+Le problème de cette méthode est que l'on génère l'ensemble des sources-images d'une salle et qu'il est ensuite difficile de discriminer celles qui sont perçues et celles qui sont bloquées par des obstacles. Cela est donc plutôt adapté aux pièces de forme concave et vide. Par ailleurs, comme pour le tracé de rayons, les effets de diffraction ne sont pas pris en compte. 
 
 	\subsection{Principe statistique}
 
@@ -66,33 +223,7 @@ $m$ est l'amortissement du milieu (par exemple l'air) \\
 $S_{i}$ est la surface de la i\up{e} paroi \\
 $N$ est le nombre de parois total \\
 
-La théorie de Sabine, est encore aujourd'hui couramment employée par les acousticiens des salles. Pourtant, cette hypothèse dite de "champ diffus" n’est plus vérifiée en pratique, dès lors que la forme du milieu de propagation n’est plus homogène et que l’absorption acoustique devient importante et non uniforme. De plus, cette théorie s’applique mal aux géométries présentant des ouvertures et, en particulier, dans le théâtre d'Orange. \cite[p. 60]{picaut}.
-
- 
-	\subsection{Méthode de résolution exacte} \label{sect_resExacte}
-
-La méthode de résolution exacte utilise le principe des éléments finis ou des éléments aux frontières. Il s'agit de mailler le domaine d'étude par des petits éléments linéiques (2D) ou surfaciques (3D). Sur chacun de ces éléments, on pourra calculer la pression acoustique par résolution de l'équation d'onde (modèle de Green ou Helmotz-Kirchhoff) en considérant les conditions aux limites. Cependant, même si l'implémentation mathématique ne présente pas de difficulté majeure, le problème se complique nettement selon la géométrie de la salle. Effectivement, le nombre d'éléments et donc la taille de la matrice à résoudre, dépendra de la longueur d'onde \cite[p. 740]{beamtracing}. Dans un cas comme le théâtre d'Orange où les longueurs se comptent en dizaines de mètres et les fréquences en kilo-Hertz (fréquences audibles), il faudra raffiner les mailles à l'échelle du millimètre, ce qui générera des milliard d'éléments. Ce genre de problème est aujourd'hui quasi-impossible à mettre en place de part la puissance de calcul et l'espace mémoire nécessaire. Par ailleurs la création d'un maillage de ce type, qui plus est conforme, c'est à dire avec des triangles de taille régulière et dont les angles ne sont pas trop aigus, représente une difficulté à part entière.
-Au début du projet, nous avons tenté d'analyser une version très simplifiée du théâtre à des fréquences très faibles. Nous voulions notamment tester l'impact de la forme incurvée des gradins en comparant de manière récursive différents maillages. Le raffinement fut effectué à l'aide de l'outil "\textit{mmg}" développé à l'\gls{iscd}. Les calculs acoustiques ont été fait avec l'outil "\textit{MyBEM}" développé par le \gls{cmap}. En conservant à peu près des dimensions du théâtre, nous obtenions plusieurs centaines de milliers d'éléments et des temps de calcul déjà de quelques dizaines de minutes avec un ordinateur standard. Le constat a alors été que ce type d'étude serait trop complexe et les résultats difficiles à interpréter.
-
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/BEM}
-	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par \gls{bem} à 50Hz}
-	\label{BEM}
-\end{figureth}
-
-La solution est alors d'utiliser des méthodes de type géométrique.
-
-	\subsection{Méthode de tracé de rayon}
-Tout d'abord, la méthode dite de tracé de rayon (\textit{ray-tracing}) qui est très souvent utilisée dans les logiciels d'acoustique de salle. Cette approche suppose que l’énergie sonore émise depuis une source est repartie sur un certain nombre de rayons rectilignes déviés de manière spéculaire lors de leur rencontre avec les parois. L'énergie d'un rayon sera atténuée selon le coefficient d'absorption des parois lors du rebond et décroitra comme la distance de propagation au carré afin de simuler l'effet de dispersion géométrique d'une onde sphérique. La mesure d'énergie est alors réalisée par comptage du nombre de rayons qui traversent le récepteur. La précision de mesure sera ainsi fonction du nombre de rayons émis et de la taille du récepteur. Il peut notamment y avoir beaucoup de perte d'information si le domaine de propagation est complexe \cite[p. 60]{picaut}. Il s'agit donc d'une méthode très puissante pour simuler les réflexions géométriques sur les parois mais qui devient compliquée pour simuler les effets de diffraction. C'est aussi la seule méthode géométrique permettant de simuler des réflexions sur des parois courbes \cite[p. 13]{Kandelman}.
-
-	\subsection{Méthode de lancer de particules}
-Le lancer de particules est très similaire au tracé de rayon. Cependant, dans le concept des particules sonores, chaque particule est porteuse d’une énergie constante qui ne décroit donc pas comme la distance au carré. Lors du contact avec une paroi, la particule sera réfléchie de manière statistique. Par exemple, si $\alpha$ est le coefficient d'absorption de la paroi, alors, la particule aura une probabilité de $(1-\alpha)$ d'être réfléchie et une probabilité $\alpha$ d'être absorbée. En ce sens, il est également possible de déterminer, selon une loi de probabilité, l'angle de réflexion et simuler ainsi une "pseudo-diffusion" des matériaux. \cite[p. 62]{picaut}.
-	
-	\subsection{Méthode des sources-image}
-Cette méthode est fondée sur la construction de sources virtuelles, images de la source réelle, construite par symétrie par rapport aux parois de l'enceinte. La contribution énergétique de chaque source-image est celle habituellement rencontrée dans le cas de la propagation en champ libre, pondérée par le coefficient d’absorption des parois considérées \cite[p. 60]{picaut}.
-Le problème de cette méthode est que l'on génère l'ensemble des sources-images d'une salle et qu'il est ensuite difficile de discriminer celles qui sont perçues et celles qui sont bloquées par des obstacles. Cela est donc plutôt adapté aux pièces de forme concave et vide. Par ailleurs, comme pour le tracé de rayons, les effets de diffraction ne sont pas pris en compte. 
-
-	
+La théorie de Sabine, est encore aujourd'hui couramment employée par les acousticiens des salles. Pourtant, cette hypothèse dite de "champ diffus" n’est plus vérifiée en pratique, dès lors que la forme du milieu de propagation n’est plus homogène et que l’absorption acoustique devient importante et non uniforme. De plus, cette théorie s’applique mal aux géométries présentant des ouvertures et, en particulier, dans le théâtre d'Orange. \cite[p. 60]{picaut}.	
 	
 \section{Méthode couplée} \label{sect_methodecouplee}
 
@@ -822,7 +953,7 @@ f(x) = \frac{2}{x^2}
 	\label{test1}
 \end{figureth}
 
-Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en compte que la décroissance d'énergie portée par les rayons perçus. On observe bien sur la figure \ref{test1} que l'énergie suit la courbe de décroissance quadratique et décroche légèrement vers la fin prouvant que le nombre de rayons n'est plus suffisamment important.
+Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en compte que la décroissance d'énergie portée par les rayons perçus. On observe bien sur la figure \ref{test1} que l'énergie suit la courbe de décroissance quadratique.
  		
 		
 \subsection{Salle sphérique}
@@ -875,9 +1006,30 @@ $P_{si}$ : La coordonnée de la position de la source image selon X, Y ou Z \\
 $P_s$ : La coordonnée de la position de la source selon X, Y ou Z \\
 $D$ : La dimension de la salle selon X, Y ou Z \\
 
-On constate alors qu'on a une superposition des sources-images dans l'espace. Cette précision se dégrade légèrement lorsque le nombre de rayons ou le nombre d'itérations augmente à cause de l'imprécision machine; elle reste cependant acceptable. Typiquement, pour un million de rayons et 20 itérations, l'écart entre les sources-images obtenues par lancer de rayons et celles obtenues par formule analytique est inférieur au millimètre.
+On constate alors qu'on a une superposition des sources-images dans l'espace. Cette précision se dégrade légèrement lorsque le nombre de rayons ou le nombre d'itérations augmente à cause de l'imprécision machine; elle reste cependant acceptable. Nous calculons l'erreur relative de la distance au récepteur pour les sources-images expérimentales obtenues par lancer de rayons et les sources-images théoriques obtenues par formule analytique.
+\begin{align}
+\epsilon_{rel} = \frac{D_{exp}-D_{theo}}{D_{theo}}
+\end{align}
 
-En terme de mesure d'énergie ...
+La précision est de l'ordre du centième de pour-cent et augmente légèrement lorsqu'on s'éloigne du récepteur (voir fig. \ref{test3}).
+En terme de mesure d'énergie, on assigne à chaque source-image une énergie de $\frac{1}{d^2}$ où $d$ est sa distance par rapport au récepteur. Nous traçons de la même manière l'erreur relative sur les énergies.
+
+
+On constate que celle-ci à une valeur moyenne de $0,6\%$ est qu'elle reste toujours inférieure à 1\% jusqu'à un certain seuil (voir fig. \ref{test3bis}).
+
+\begin{figureth}
+	\begin{subfigureth}{0.8\textwidth}
+		\includegraphics[width=\linewidth]{images/test3}
+		\caption{Erreur relative des distances (\% en échelle log) pour une salle cubique de 10m de coté, 1000000 rayons et 20 itérations}
+		\label{test3}
+	\end{subfigureth}
+	%\quad
+	\begin{subfigureth}{0.8\textwidth}
+		\includegraphics[width=\linewidth]{images/test3bis}
+		\caption{Erreur relative des énergies (\%) pour une salle cubique de 10m de coté, 100000 rayons et 10 itérations}
+		\label{test3bis}
+	\end{subfigureth}
+\end{figureth}
 		
 \section{Analyse de \gls{complexite}} \label{complexite}
 

@@ -1,11 +1,14 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 22.02.2018  11:41:01
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/m3Nr7Umrfq", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/wsUsqDkDme", Output: "Main.gls"
+;; at 14.03.2018  15:23:51
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/qtGSp0_bHM", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/L5ECvbT3wk", Output: "Main.gls"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -44,11 +47,14 @@ Letter-group: "»Ã¨œ¨—Ë" -> "M"
 Letter-group: "È€ËÃÃÐ" -> "P"
 Letter-group: "¨»€ †€å—€" -> "I"
 Letter-group: "Ã†ÚË——" -> "O"
+Letter-group: "¨Ë¨†¤´—Ú" -> "D"
+Letter-group: "¼—à»€¼¼" -> "N"
+Letter-group: "¨Ë€†" -> "D"
 Letter-group: "æ€å—œËÃ¼Ú Ã„¬" -> "W"
 Letter-group: "€»„à´€†Ë—" -> "A"
+Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
 Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
 Letter-group: "æ€å—œËÃ¼Ú €à¨Ã œ¨´— œÃË»€Ú" -> "W"
-Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
 Letter-group: "ÈÃ¨à»" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "€¨ÚàÐ" -> "A"
@@ -57,11 +63,15 @@ Letter-group: "„€Ð¨´¨Êà—" -> "B"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "†€å—€" -> "C"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨Ë€†" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¨»€ †€å—€" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "»€—¼¨€¼à»" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¼—à»€¼¼" -> "N"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ã†ÚË——" -> "O"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -70,4 +80,4 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "å—´à»" -> "V"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "æ€å—œËÃ¼Ú €à¨Ã œ¨´— œÃË»€Ú" -> "W"
-WARNING: location-reference "{}{x}" did match multiple location-classes! (taking first one)
+WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)

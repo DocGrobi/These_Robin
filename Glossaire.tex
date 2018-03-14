@@ -40,10 +40,18 @@
 	first={Centre de mathématiques appliquées de l'école Polytechnique (CMAP)},
 	}
 
+\newglossaryentry{fem}{
+	type=\acronymtype,
+	name={FEM},
+	description={ \emph{Finite Element Method}},
+	first={Finite Element Method - FEM},
+	}
+	
 \newglossaryentry{bem}{
 	type=\acronymtype,
 	name={BEM},
-	description={ \emph{Boundary Element Method}},
+	description={\emph{Boundary Element Method}},
+	first={Boundary Element Method - BEM},
 	}
 
 \newglossaryentry{cao}{
@@ -121,7 +129,84 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 			Définitions (glossaires standard)		%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AUTRES
+\newglossaryentry{complexite}{
+	name={\scshape{Complexité}},
+	text   = {complexité},
+	description={Domaine de l'informatique qui étudie la quantité de ressources (temps, espace mémoire, etc) dont a besoin un algorithme pour résoudre un problème},
+	}
+	
+\newglossaryentry{Dirichlet}{
+	name={\scshape{Dirichlet}},
+	text   = {Dirichlet},
+	description={Pour une équation aux dérivées partielles, par exemple :
+	\begin{equation*}
+\Delta y + y = 0
+\end{equation*}
+la condition aux limites de Dirichlet sur le domaine $\Omega \subset R^n$ s'exprime par :
+	\begin{equation*}
+y(x) = f(x),		 \qquad \forall x  \in \partial \Omega
+\end{equation*}
+où $f$ est une fonction définie sur la frontière $\partial \Omega$
+	},
+	}	
 
+\newglossaryentry{Dirac}{
+	name={\scshape{Dirac}},
+	text   = {Dirac},
+	description={La distribution de Dirac vérifie la propriété fondamentale que, pour toute fonction :
+$x \mapsto  \varphi (x)$ lisse : $< \delta , \varphi > = \varphi(0)$
+	},
+	}	
+
+\newglossaryentry{Neumann}{
+	name={\scshape{Neumann}},
+	text   = {Neumann},
+	description={Pour une équation aux dérivées partielles, par exemple :
+	\begin{equation*}
+\Delta y + y = 0
+\end{equation*}
+la condition aux limites de Neumann sur le domaine $\Omega \subset R^n$ s'exprime par :
+	\begin{equation*}
+\frac{\partial y}{\partial \overrightarrow{n}}(x) = f(x),	 \qquad \forall x  \in \partial \Omega
+\end{equation*}
+où $f$ est une fonction scalaire connue définie sur la limite $\partial \Omega$ et $ \overrightarrow{n}$ est le vecteur normal à la frontière $\partial \Omega$
+	},
+	}	
+
+\newglossaryentry{obj}{
+	name={\scshape{Wavefront OBJ}},
+	text   = {OBJ},
+	description={Format de fichier contenant la description d'une géométrie 3D. Les fichiers OBJ sont au format ASCII et se présente de la façon suivante :\\
+	\begin{itemize}
+	\item Le nom de l'objet est précédé d'un o
+	\item Le nom du matériau est précédé de usemtl (un fichier .mtl accompagne en général les fichier obj
+	\item Les coordonnées de sommets sont précédés d'un v
+	\item Les coordonnées de textures sont précédés d'un vt
+	\item  Les coordonnées de normales sont précédés d'un vn
+	\item Chaque face est ensuite définie par un ensemble d'indices faisant référence aux coordonnées des points, de texture et des normales définies précédemment	
+	\end{itemize}
+	},
+	}	
+
+\newglossaryentry{octree}{
+	name={\scshape{Octree}},
+	text   = {octree},
+	description={Structure de données de type arbre dans laquelle chaque nœud peut compter jusqu'à huit enfants. En trois dimensions, créer un octree revient à découper une cube en son milieu sur chacun de ses axes.},
+	}
+	
+\newglossaryentry{wav}{
+	name={\scshape{Wavefront Audio File Format}},
+	text={WAV},
+	description={Le format RIFF, sur lequel repose le format WAV, définit une structure de fichier qui repose sur une succession de blocs de données (chunks).\\
+Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du bloc codé sur 4 octets. Si un lecteur rencontre un bloc qu'il ne connaît pas, il passe au suivant. Un fichier wav doit au minimum contenir un bloc appelé <fmt> (format) et un bloc appelé <data>. Le bloc <fmt > doit être positionné en amont du bloc <data>.\\
+	\begin{itemize}
+		\item Le bloc <fmt> contient les métadonnées techniques, c'est-à-dire les informations relatives au codage du flux audio, informations indispensables pour interpréter les données.
+		\item Le bloc <data> contient la charge (payload), c'est-à-dire les données audio utiles.
+	\end{itemize}
+	},
+	}		
+		
 %% BLENDER 
 \newglossaryentry{armature}{
 	name={\scshape{Armature}},
@@ -143,12 +228,6 @@
 	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
 	
-
-\newglossaryentry{complexite}{
-	name={\scshape{Complexité}},
-	text   = {complexité},
-	description={Domaine de l'informatique qui étudie la quantité de ressources (temps, espace mémoire, etc) dont a besoin un algorithme pour résoudre un problème},
-	}
 	
 \newglossaryentry{keyframe}{
 	name={\scshape{Keyframe}},
@@ -162,20 +241,7 @@
 	description={Action permettant d'interpoler une animation et d'affecter à chaque \gls{keyframe} les valeurs correspondantes}
 	}
 
-\newglossaryentry{obj}{
-	name={\scshape{Wavefront OBJ}},
-	text   = {OBJ},
-	description={Format de fichier contenant la description d'une géométrie 3D. Les fichiers OBJ sont au format ASCII et se présente de la façon suivante :\\
-	\begin{itemize}
-	\item Le nom de l'objet est précédé d'un o
-	\item Le nom du matériau est précédé de usemtl (un fichier .mtl accompagne en général les fichier obj
-	\item Les coordonnées de sommets sont précédés d'un v
-	\item Les coordonnées de textures sont précédés d'un vt
-	\item  Les coordonnées de normales sont précédés d'un vn
-	\item Chaque face est ensuite définie par un ensemble d'indices faisant référence aux coordonnées des points, de texture et des normales définies précédemment	
-	\end{itemize}
-	},
-	}				
+				
 	
 \newglossaryentry{mirror}{
 	name={\scshape{Modifier "Mirror"}},
@@ -190,11 +256,6 @@
 	description={Outil Blender permettant d'affecter automatiquement à des objets des opérations non-destructives},
 	}
 
-\newglossaryentry{octree}{
-	name={\scshape{Octree}},
-	text   = {octree},
-	description={Structure de données de type arbre dans laquelle chaque nœud peut compter jusqu'à huit enfants. En trois dimensions, créer un octree revient à découper une cube en son milieu sur chacun de ses axes.},
-	}
 
 \newglossaryentry{particule}{
 	name={\scshape{Particule}},
@@ -215,18 +276,7 @@
 	description={Permet de donner une épaisseur paramétrable à un objet plan. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}},
 	first={modifier "Solidify" qui permet de donner une épaisseur paramétrable à un objet plan}
 	}	
-	
-\newglossaryentry{wav}{
-	name={\scshape{Wavefront Audio File Format}},
-	text={WAV},
-	description={Le format RIFF, sur lequel repose le format WAV, définit une structure de fichier qui repose sur une succession de blocs de données (chunks).\\
-Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du bloc codé sur 4 octets. Si un lecteur rencontre un bloc qu'il ne connaît pas, il passe au suivant. Un fichier wav doit au minimum contenir un bloc appelé <fmt> (format) et un bloc appelé <data>. Le bloc <fmt > doit être positionné en amont du bloc <data>.\\
-	\begin{itemize}
-		\item Le bloc <fmt> contient les métadonnées techniques, c'est-à-dire les informations relatives au codage du flux audio, informations indispensables pour interpréter les données.
-		\item Le bloc <data> contient la charge (payload), c'est-à-dire les données audio utiles.
-	\end{itemize}
-	},
-	}		
+		
 	
 %% ARCHEO
 

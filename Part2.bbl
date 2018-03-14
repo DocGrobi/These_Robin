@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{22}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -29,6 +29,15 @@
   \enquote{Implementing real-time partitioned convolution algorithms on
   conventional operating systems}, \emph{DAFx-11}.
 
+\bibitem[{\textsc{CEI}(2015)}]{cei}
+\textsc{CEI}. 2015, \enquote{Ec 60050}, Vocabulaire {\'e}lectrotechnique
+  international.
+
+\bibitem[{\textsc{D'Alembert}(1747)}]{alembert}
+\textsc{D'Alembert, J. L.~R.} 1747, \emph{Recherches sur la courbe que forme
+  une corde tendue mise en vibration}, Histoire de l'Acad{\'e}mie des Sciences
+  et Belles-Lettre de Berlin.
+
 \bibitem[{\textsc{Funkhouser} \bbletal{}(2004)\textsc{Funkhouser},
   \textsc{Tsingos}, \textsc{Carlbom}, \textsc{Elko}, \textsc{Sondhi},
   \textsc{West}, \textsc{Pingali}, \textsc{Min} \bbland{}
@@ -42,6 +51,10 @@
 \bibitem[{\textsc{ISO-9613-1}(1993)}]{iso}
 \textsc{ISO-9613-1}. 1993, \enquote{Acoustics - attenuation of sound during
   propagation outdoors}, .
+
+\bibitem[{\textsc{Jot}(1992)}]{jot}
+\textsc{Jot, J.~M.} 1992, \emph{Etude et R{\'e}alisation d'un Spatialisateur de
+  Sons par Mod{\`e}les Physique et Perceptifs}, \bblphdthesis{}, Telecom Paris.
 
 \bibitem[{\textsc{Jouhaneau}(1997)}]{jouhaneau}
 \textsc{Jouhaneau, J.} 1997, \emph{Acoustique des salles et sonorisation},
@@ -89,9 +102,18 @@
   G{\'E}NIE CIVIL, Laboratoire Central des Ponts et Chauss{\'e}es, Centre de
   Nantes.
 
+\bibitem[{\textsc{PREMAT}(2000)}]{fem-bem}
+\textsc{PREMAT, E.} 2000, \emph{Prise en compte d'effets
+  m{\'e}t{\'e}orologiques dans une m{\'e}thode d'{\'e}l{\'e}ments finis de
+  fronti{\`e}re}, \bblphdthesis{}, L'Institut National des Sciences
+  Appliqu{\'e}es de Lyon.
+
 \bibitem[{\textsc{Sabine}(1900)}]{sabine}
 \textsc{Sabine, W.~C.} 1900, \emph{Architectural Acoustics}, \bblvol{} Part I.
   Reverberation, Reprints of the American Architect.
+
+\bibitem[{\textsc{Terra}()}]{aquaterra}
+\textsc{Terra, A.} \enquote{Encyclop{\'e}die du gabion}, .
 
 \bibitem[{\textsc{Wikip{\'e}dia}()}]{cone}
 \textsc{Wikip{\'e}dia}. \enquote{Angle solide},
