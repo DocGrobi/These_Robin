@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{25}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,6 +15,9 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{AquaTerra}()}]{aquaterra}
+\textsc{AquaTerra}. \enquote{Encyclop{\'e}die du gabion}, .
 
 \bibitem[{\textsc{Arenberg}(1988)}]{arenberg}
 \textsc{Arenberg, J.} 1988, \enquote{Ray/triangle intersection with barycentric
@@ -37,6 +40,11 @@
 \textsc{D'Alembert, J. L.~R.} 1747, \emph{Recherches sur la courbe que forme
   une corde tendue mise en vibration}, Histoire de l'Acad{\'e}mie des Sciences
   et Belles-Lettre de Berlin.
+
+\bibitem[{\textsc{Eyring}(1930)}]{eyring}
+\textsc{Eyring, C.~F.} 1930, \enquote{Reverberation time in ``dead'' rooms},
+  \emph{Journal of the Acoustical Society of America}, \bblvol{}~1,
+  \bblno{}~2A, \bblpp{} 217--241.
 
 \bibitem[{\textsc{Funkhouser} \bbletal{}(2004)\textsc{Funkhouser},
   \textsc{Tsingos}, \textsc{Carlbom}, \textsc{Elko}, \textsc{Sondhi},
@@ -108,12 +116,18 @@
   fronti{\`e}re}, \bblphdthesis{}, L'Institut National des Sciences
   Appliqu{\'e}es de Lyon.
 
+\bibitem[{\textsc{Sabine}(1932)}]{sabine2}
+\textsc{Sabine, P.} 1932, \enquote{Acoustics and architecture}, .
+
 \bibitem[{\textsc{Sabine}(1900)}]{sabine}
 \textsc{Sabine, W.~C.} 1900, \emph{Architectural Acoustics}, \bblvol{} Part I.
   Reverberation, Reprints of the American Architect.
 
-\bibitem[{\textsc{Terra}()}]{aquaterra}
-\textsc{Terra, A.} \enquote{Encyclop{\'e}die du gabion}, .
+\bibitem[{\textsc{Vorl{\"a}ndera} \bbland{}
+  \textsc{Mommertz}(2000)}]{diffusion}
+\textsc{Vorl{\"a}ndera, M.} \bbland{} \textsc{E.~Mommertz}. 2000,
+  \enquote{Definition and measurement of random-incidence scattering
+  coefficients}, \emph{Applied Acoustics}, \bblvol{}~60, \bblpp{} 187--199.
 
 \bibitem[{\textsc{Wikip{\'e}dia}()}]{cone}
 \textsc{Wikip{\'e}dia}. \enquote{Angle solide},
