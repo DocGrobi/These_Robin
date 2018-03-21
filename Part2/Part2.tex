@@ -58,16 +58,24 @@ On définit par intensité acoustique la puissance transportée par les ondes so
 L'intensité acoustique est un vecteur ayant pour origine le point de mesure et de même direction que le vecteur vitesse de l'onde. On peut l'écrire comme la moyenne dans le temps de l'intensité acoustique instantannée :
 
 \begin{equation} 
-\overrightarrow{I}(\overrightarrow{x},t) = \frac{1}{T} \int^T_0 p.\overrightarrow{v}dt
+\overrightarrow{I}(\overrightarrow{d},t) = \frac{1}{T} \int^T_0 p.\overrightarrow{v}dt
 \end{equation}
 
-Le flux de l'intensité acoustique instantanée à travers une surface $S$ donnée correspond à l'énergie acoustique $E$ transférée à travers cette surface, à l'instant considéré :
+Le flux de l'intensité acoustique instantanée à travers une surface sphérique $S(t)$ donnée correspond à l'énergie acoustique $E(t)$ transférée à travers cette surface, à l'instant considéré :
 
 \begin{equation} 
-E_i = \int_S \overrightarrow{I_i}.\overrightarrow{dS}
+E(t) = E_0 \int_{S(t)} \overrightarrow{I(t)}.\overrightarrow{dS} \qquad \forall t > 0
 \end{equation}
 
-Au niveau de la source, au temps 0, l'énergie totale est concentrée en un point et va ensuite être portée sur la surface d'une sphère dont le diamètre augmente avec le temps. L'acoustique suit le premier principe de la thermodynamique selon lequel il y a conservation d'énergie.
+L'acoustique suit le premier principe de la thermodynamique selon lequel il y a conservation d'énergie. Ainsi : 
+\begin{equation} 
+\int_{S(t)} \overrightarrow{I(t)}.\overrightarrow{dS} = 1 \qquad \forall t > 0
+\end{equation}
+
+Après intégration sur la surface sphérique, nous pouvons écrire l'intensité acoustique infinitésimale :
+\begin{equation} 
+ \overrightarrow{I(t)} = \frac{1}{4\pi  \overrightarrow{d}(t)^2} \qquad \forall t > 0
+\end{equation}
 
 \begin{figureth}
 	\includegraphics[width=0.5\linewidth]{images/flux}
@@ -75,17 +83,17 @@ Au niveau de la source, au temps 0, l'énergie totale est concentrée en un poin
 	\label{flux}
 \end{figureth}
 
-Une portion d'énergie considérée va donc être portée par un angle solide (voir fig. \ref{flux}). Ainsi la surface portant l'énergie augmente comme le carré de la distance :
-\begin{equation} 
-\overrightarrow{I}(\overrightarrow{d}) \propto \frac{\overrightarrow{u}}{d^2}
+On comprend que l'intensité décroit comme le carré de la distance et qu'une portion d'énergie considérée va donc être portée par un angle solide (voir fig. \ref{flux}). Sur une portion $\sigma$ l'énergie est portée par l'angle solide correspondant $\Omega_{\sigma}$ telle que :
+
+\begin{equation} \label{eq_energie}
+E_{\sigma}(t) = E_0 \int_{\sigma}  \frac{1}{4\pi  \overrightarrow{d}(t)^2} \overrightarrow{dS} = \frac{E_0}{4\pi}  \Omega_{\sigma}
 \end{equation}
 
-Par ailleurs en conditions de champ libre, l'intensité acoustique est proportionnelle au carré de la pression acoustique :
+
+Par ailleurs, l'étude d'un signal sonore qui interagit avec un milieu ou un obstacle tel qu'un tympan par exemple se fait en pression ($N/m^2$ ou $Pa$). En conditions de champ libre, l'énergie acoustique est proportionnelle au carré de la pression acoustique :
 \begin{equation} 
 E_i \propto p^2
 \end{equation}
-
-
 
 
 
@@ -129,6 +137,14 @@ Nous pouvons alors exprimer le coefficient d'absorption de l'air en dB/m en fonc
 	\caption{Courbes d'absorption de l'air en fonction de l'humidité relative (\%)}
 	\label{courbesAbs}
 \end{figureth}
+
+
+
+
+
+
+
+
 
 
 
@@ -290,16 +306,7 @@ G(S,M) = \frac{\exp{ikr(S,M)}}{2ik}
 \citefnt[eq. 2.29]{fem-bem} 
 
 
-Sachant cela, on comprend que l'implémentation mathématique est parfaitement réalisable mais un problème subvient lorsque la géométrie de la salle se complique. Effectivement, le nombre d'éléments et donc la taille de la matrice à résoudre, dépendra de la longueur d'onde \cite[p. 740]{beamtracing}. Dans un cas comme le théâtre d'Orange où les longueurs se comptent en dizaines de mètres et les fréquences en kilo-Hertz (fréquences audibles), il faudra raffiner les mailles à l'échelle du millimètre, ce qui générera des milliards d'éléments. Ce genre de problème est aujourd'hui quasi-impossible à mettre en place de part la puissance de calcul et l'espace mémoire nécessaire. Par ailleurs la création d'un maillage de ce type, qui plus est conforme, c'est à dire avec des triangles de taille régulière et dont les angles ne sont pas trop aigus, représente une difficulté à part entière.
-Au début du projet, nous avons tenté d'analyser une version très simplifiée du théâtre à des fréquences très faibles. Nous voulions notamment tester l'impact de la forme incurvée des gradins en comparant de manière récursive différents maillages. Le raffinement fut effectué à l'aide de l'outil "\textit{mmg}" développé à l'\gls{iscd}. Les calculs acoustiques ont été fait avec l'outil "\textit{MyBEM}" développé par le \gls{cmap}. En conservant à peu près des dimensions du théâtre, nous obtenions plusieurs centaines de milliers d'éléments et des temps de calcul déjà de quelques dizaines de minutes avec un ordinateur standard. Le constat a alors été que ce type d'étude serait trop complexe et les résultats difficiles à interpréter.
 
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/BEM}
-	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par méthode des éléments finis de frontière à 50Hz}
-	\label{BEM}
-\end{figureth}
-
-Il est alors possible de se tourner vers des solutions approchées utilisant des méthodes de calcul de type géométrique.
 
 	\subsection{Méthodes géométriques}
 	
@@ -316,7 +323,7 @@ En pratique certaines méthodes de calcul permet de simuler ce comportement. Tou
 Pour résoudre ce problème, une approche de type "lancer de particules"sert d'alternative au tracé de rayon. Dans ce concept, chaque particule est porteuse d’une énergie constante qui ne décroit donc pas comme la distance au carré. Lors du contact avec une paroi, la particule sera réfléchie de manière statistique. Par exemple, si $\alpha$ est le coefficient d'absorption de la paroi, alors, la particule aura une probabilité de $(1-\alpha)$ d'être réfléchie et une probabilité $\alpha$ d'être absorbée. En ce sens, il est également possible de déterminer, selon une loi de probabilité, l'angle de réflexion et simuler ainsi une "pseudo-diffusion" des matériaux. \cite[p. 62]{picaut}.
 
 
-Pour finir, il existe aussi la méthode dite des "source-images" très appréciée pour son approche spatialisée des réflexions sonores. Cette méthode est fondée sur la construction de sources virtuelles, images de la source réelle, construite par symétrie par rapport aux parois de l'enceinte. La contribution énergétique de chaque source-image est celle habituellement rencontrée dans le cas de la propagation en champ libre, pondérée par le coefficient d’absorption des parois considérées \cite[p. 60]{picaut}.
+Pour finir, il existe aussi la méthode dite des "sources-images" très appréciée pour son approche spatialisée des réflexions sonores. Cette méthode est fondée sur la construction de sources virtuelles, images de la source réelle, construite par symétrie par rapport aux parois de l'enceinte. La contribution énergétique de chaque source-image est celle habituellement rencontrée dans le cas de la propagation en champ libre, pondérée par le coefficient d’absorption des parois considérées \cite[p. 60]{picaut}.
 Le problème de cette méthode est que l'on génère l'ensemble des sources-images d'une salle et qu'il est ensuite difficile de discriminer celles qui sont perçues et celles qui sont bloquées par des obstacles. Cela est donc plutôt adapté aux pièces de forme concave et vide. Par ailleurs, comme pour le tracé de rayons, les effets de diffraction ne sont pas pris en compte. 
 
 
@@ -327,10 +334,8 @@ Le problème de cette méthode est que l'on génère l'ensemble des sources-imag
 \end{figureth}
 \citefnt[Fig. 61]{Kandelman}
 
-C'est sur ce type d'approche géométrique que le choix s'est porté dans le cadre du projet. Nous allons donc détailler dans le prochain chapitre comment coupler ces concepts géométriques afin de répondre à la problématique. 
+%C'est sur ce type d'approche géométrique que le choix s'est porté dans le cadre du projet. Nous allons donc détailler dans le prochain chapitre comment coupler ces concepts géométriques afin de répondre à la problématique. 
 
-		
-		
 		
 		
 		
@@ -365,7 +370,7 @@ Le projet a pour essence le calcul de l'acoustique du théâtre d'Orange. Cela s
 Ce dernier point permet d'étudier le déplacement de l'onde sonore. Par ailleurs, il faut pouvoir s'interfacer au modèle numérique réalisé sous Blender et décrit dans la partie \ref{part_1}. Pour cela, nous devons rajouter les caractéristiques suivantes au cahier des charges :
 
 \begin{itemize}
-	\item Utiliser un maillage surfacique sans contrainte sur la dimension ou le rafinement des faces 
+	\item Utiliser un maillage surfacique sans contrainte sur la dimension ou le raffinement des faces 
 	\item Pouvoir traiter plusieurs centaines de milliers de faces en un temps relativement court 
 	\item Pouvoir modifier facilement les coefficient d'absorption des matériaux
 \end{itemize}
@@ -373,6 +378,19 @@ Ce dernier point permet d'étudier le déplacement de l'onde sonore. Par ailleur
 Ces paramètres sont nécessaires afin de rendre l'étude acoustique du théâtre d'Orange ou de tout type de monument similaire accessible à des utilisateurs quelconques de Blender. Ainsi, la géométrie où la nature des matériaux pourra être facilement modifiable et une large série de tests comparatifs peut être mener rapidement. Le but étant de pouvoir tester des hypothèse de restitution sans avoir à multiplier les manipulations entre chaque calcul.
 
 %Afin de répondre à ces contraintes, nous avons opté pour certains choix technologiques. Premièrement, le code est développé en C++ pour des raisons de rapidité de calcul. Il s'agit d'un exécutable "client" paramètrable directement depuis l'interface Blender. Au lancement du programme, Blender exporte le maillage dans un fichier qui sera traité par le logiciel "client". Ainsi, l'outil acoustique est transparent pour l'utilisateur et l'accès au maillage est donc immédiat. Le format de fichier s'est porté sur le \gls{obj}. Celui-ci est un des formats les plus courants et il est disponible sur la plupart des logiciels de \gls{cao}. Ainsi, l'outil n'est pas exclusif et pourra travailler à partir de n'importe quel maillage au format \gls{obj}.
+
+Sachant cela, nous avons dans un premier temps tenté de réaliser des analyses par méthode de résolution exacte (voir section \ref{}) mais nous avons vite compris que la géométrie de la salle rendrait la résolution très difficile. Effectivement, le nombre d'éléments que doit comporter le maillage est dépendant de la longueur d'onde \cite[p. 740]{beamtracing}. Dans un cas comme le théâtre d'Orange où les longueurs se comptent en dizaines de mètres et les fréquences en kilo-Hertz (fréquences audibles), il faudra raffiner les mailles à l'échelle du millimètre, ce qui générera des milliards d'éléments. Ce genre de problème est aujourd'hui quasi-impossible à mettre en place de part la puissance de calcul et l'espace mémoire nécessaire. Par ailleurs la création d'un maillage de type conforme, c'est à dire avec des triangles de taille régulière et dont les angles ne sont pas trop aigus, représente une difficulté à part entière.
+Au début du projet, nous avions tenté d'analyser une version très simplifiée du théâtre à des fréquences très faibles. Nous voulions notamment tester l'impact de la forme incurvée des gradins en comparant de manière récursive différents maillages. Le raffinement fut effectué à l'aide de l'outil "\textit{mmg}" développé à l'\gls{iscd}. Les calculs acoustiques ont été fait avec l'outil "\textit{MyBEM}" développé par le \gls{cmap}. En conservant à peu près des dimensions du théâtre, nous obtenions plusieurs centaines de milliers d'éléments et des temps de calcul déjà de quelques dizaines de minutes avec un ordinateur standard. Le constat a alors été que ce type d'étude serait trop complexe et les résultats difficiles à interpréter.
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/BEM}
+	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par méthode des éléments finis de frontière à 50Hz}
+	\label{BEM}
+\end{figureth}
+
+La meilleure option fut alors de se tourner vers des solutions approchées utilisant des méthodes de calcul de type géométrique. La méthode développée est dite "couplée" qui consiste à propager des rayons à partir d'une source et, à chaque réflexion sur les parois, d'analyser ceux qui traversent une sphère-récepteur. Leur temps de parcours permet de créer la \gls{rir}. Celle-ci pourra alors être convoluée à un signal audio afin de pouvoir écouter le son réverbéré (voir section \ref{sect_TDS}). Le chemin de chacun de ces rayons permet aussi de situer dans l'espace les sources-images correspondantes, c'est à dire les images de la source suite aux divers réflexions sur les parois. Nous obtenons ainsi une constellation de sources-images portant des énergies atténuées par l'absorption des parois. Cela permettra par la suite de spatialiser le son, c'est à dire de savoir d'où proviennent les différents échos. Il sera alors possible d'écouter le son réverbéré en trois dimensions. Ce chapitre vise à détailler ce processus.
+
+\section{Notion d'onde sphérique discrétisée} \label{sect_discretise}
 
 Comme évoqué précédemment le choix de la méthode s'oriente vers une solution géométrique dans laquelle nous allons calculer la réponse impulsionnelle à l'aide de lancés de rayons tout en créant des sources images afin de conserver l'information du parcours de l'onde dans l'espace. Dans ce développement, nous choisissons d'utiliser des sources omnidirectionelles, c'est à dire qui propagent le son de manière uniforme dans toutes les directions de l'espace. Notons tout de même qu'il serait possible d'utiliser d'autres types de sources en changeant la répartitions des rayons émis. Par ailleurs, la diffraction ne sera pas traitée même si, comme nous l'avons évoqué précédemment, il est possible d'utiliser des lois de probabilité pour répartir les rayons réfléchis selon différentes directions \cite[p.187-199]{diffusion}. Nous choisissons néanmoins de ne fonctionner qu'avec des réflexions spéculaires car le sujet de la diffraction est extrêmement vaste et complexe. Il s'agit d'un sujet à part entière que l'on ne traitera pas durant ce projet de thèse mais qui pourra venir l'enrichir par la suite.
 
@@ -393,7 +411,18 @@ Comme évoqué précédemment le choix de la méthode s'oriente vers une solutio
 \end{figureth}
 \citefnt[image]{angle_solide}
 
-Par ailleurs nous travaillons à partir de sources impulsionnelles. Effectivement, un signal sonore continu peut-être discretisé par une suite d'impulsions. C'est d'ailleurs le cas de tout signal numérique qui est échantillonné à une certaine fréquence. Une impulsion étant un signal d'un temps infiniment court, l'énergie émise depuis la source sera répartie sur la surface d'une sphère en expansion comme nous l'avons vu dans la section \ref{sect_intensite} (voir fig. \ref{schema_propagation}). L'énergie perçue par le récepteur sera portée par l'angle solide d'un faisceau conique (voir fig. \ref{angle_solide}). Cependant, pour simplifier les calculs, la propagation de l'onde doit être discretisée en $N$ rayons émis depuis la source de manière uniforme. Chaque rayon porte l'énergie $\frac{E_{tot}}{N}$. Le problème de cette approximation est qu'elle apporte de l'erreur au résultat. Effectivement,  l'information n'est plus portée par un cône mais par des rayons. Toute mesure prise entre deux rayons sera donc impossible. Il faut donc limiter au maximum cette erreur et réduire l'écart entre deux rayons. On pourra alors considérer qu'une grande quantité de rayons peut être assimilée à un cône plein. Pour cela, on souhaite connaitre la distance au bout de laquelle les rayons sont trop séparés les uns des autres pour être considérés comme un cône. On se place alors dans le cas théorique d'une source et d'un récepteur en espace libre. Il faut alors exprimer le temps au bout duquel il est possible de capter moins d'un rayon dans la sphère de mesure. 
+Par ailleurs nous travaillons à partir de sources impulsionnelles. Effectivement, un signal sonore continu peut-être discretisé par une suite d'impulsions. C'est d'ailleurs le cas de tout signal numérique qui est échantillonné à une certaine fréquence. Une impulsion étant un signal d'un temps infiniment court, l'énergie émise depuis la source sera répartie sur la surface d'une sphère en expansion comme nous l'avons vu dans la section \ref{sect_intensite} (voir fig. \ref{schema_propagation}). L'énergie perçue par le récepteur sera portée par l'angle solide d'un faisceau conique (voir fig. \ref{angle_solide}). Cependant, pour simplifier les calculs, la propagation de l'onde doit être discretisée en $N$ rayons émis depuis la source de manière uniforme. Chaque rayon porte l'énergie $E_i$ tel que :
+
+\begin{equation}
+E(t) = \sum_{i=1}^N E_i(t) = \frac{E_0}{4\pi}  \sum_{i=1}^N \Omega_i
+\end{equation}
+
+Avec : \\
+$\Omega_i$ : l'angle solide élémentaire tel que $ \sum_{i=1}^N \Omega_i = 4\pi$ \\
+
+
+
+ Le problème de cette approximation est qu'elle apporte de l'erreur au résultat. Effectivement, l'information n'est plus portée par un cône mais par des rayons. Toute mesure prise entre deux rayons sera donc impossible. Il faut donc limiter au maximum cette erreur et réduire l'écart entre deux rayons. On pourra alors considérer qu'une grande quantité de rayons peut être assimilée à un cône plein. Pour cela, on souhaite connaitre la distance au bout de laquelle les rayons sont trop séparés les uns des autres pour être considérés comme un cône. On se place alors dans le cas théorique d'une source et d'un récepteur en espace libre. Il faut alors exprimer le temps au bout duquel il est possible de capter moins d'un rayon dans la sphère de mesure. 
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/schema_rayon}
@@ -403,18 +432,17 @@ Par ailleurs nous travaillons à partir de sources impulsionnelles. Effectivemen
 
 Pour cela, nous utilisons la formule de l'angle solide d'un cône de révolution de demi-angle au sommet $\alpha$ (voir fig. \ref{angle_solide}) :
 \begin{equation}
-	\Omega = 2\pi(1-cos(\alpha)) \footnotemark
+	\Omega_i = 2\pi(1-cos(\alpha)) \qquad \footnotemark 
 \end{equation}
 \citefnt[Angle solide d'un cône de révolution]{cone}
 
-Or, cet angle solide peut aussi s'exprimer comme l'énergie portée par un rayon, soit :
+Or, cet angle solide peut aussi s'exprimer par :
 \begin{equation}
-	\Omega = \frac{E_{tot}}{N}
+	\Omega_i = \frac{4\pi}{N}
 \end{equation}
-Avec : \\
-$E_{tot}$ : L'énergie totale portée sur l'ensemble de la sphère
 
-Pour : \\
+
+Ainsi, pour : \\
 $r$ : le rayon du récepteur \\
 $d$ : la distance maximale du récepteur à la source \\
 $N$ : le nombre de rayons total \\
@@ -430,12 +458,11 @@ On a, d'après Pythagore (voir fig. \ref{schema_rayon}) :
 En normalisant l'énergie ($E_{tot} = 1$), on obtient alors :
 
 \begin{align} 
-	%& 2\pi(1-(1-\frac{1}{2}\frac{r^2}{d^2})) = \frac{4\pi.d^2}{N} 
-	2\pi(1-\sqrt{1-\frac{r^2}{d^2}}) = \frac{1}{N} %\\
-	 \quad \Rightarrow  \quad %\\
-	 ... à \ completer ... %\\
-	 \quad \Rightarrow  \quad %\\
-	 \frac{r}{d} =  \frac{2}{N} \sqrt{N-1} \label{seuil_arret}
+	2\pi(1-\sqrt{1-\frac{r^2}{d^2}}) &= \frac{4\pi}{N} \\	
+	\sqrt{1-\frac{r^2}{d^2}} &= 1-\frac{2}{N} \\
+	1-\frac{r^2}{d^2} &= 1-\frac{2}{N} \\
+	\frac{r^2}{d^2} &= \frac{4}{N^2}(N-1) \\
+	 \frac{r}{d} &=  \frac{2}{N} \sqrt{N-1} \label{seuil_arret}
 \end{align}
 
 
@@ -443,7 +470,7 @@ Nous constatons alors qu'en fixant $N$, le nombre de rayons d'énergie total ém
 
 Pour établir la nouvelle expression, il suffit de refaire les mêmes calculs en considérant que :
 \begin{align}
-	\Omega &= n.\frac{E_{tot}}{N} \\
+	\Omega_i &= n.\frac{4\pi}{N} \\
 	&= \frac{n}{N}
 \end{align}
 
@@ -451,13 +478,18 @@ L'équation \ref{seuil_arret} s'écrit donc :
 \begin{align} 
 	\frac{r}{d} =  \frac{2n}{N} \sqrt{\frac{N}{n}-1} % \\
  	\quad \Rightarrow  \quad %\\
-	 d =  \frac{N}{2n\sqrt{\frac{N}{n}-1}} 
+	 d_{max} =  \frac{N.r}{2n\sqrt{\frac{N}{n}-1}} 
 \end{align}
 
-Nous limitons de cette façon le calcul des premières réflexions de la réponse impulsionnelle. Cependant, les \gls{rir} sont en général calculées jusqu'à ce que l'énergie diminue de $60dB$. Il s'agit d'un critère d'arrêt classique de car il assure de couvrir la plage d'audition humaine. Or avec notre méthode, nous ne prenons plus de mesure à partir d'un certain temps, correspondant à la distance $d$. Il faudra alors jouer sur les paramètres $N$, $r$ ou $n$ pour s'assurer de dépasser le \gls{RT60}. En pratique, le temps de calcul sera très sensible à ces paramètres et il sera plus judicieux d'arrêter la mesure avant. On pourra alors compléter le champs diffus de manière statistique d'après les hypothèses de Sabine. La réponse impulsionnelle obtenue par tracé de rayons sera prolongée par régression linéaire pour atteindre \gls{RT60}. \\
+Aussi, si $N >> n$ l'expression se simplifie par : 
+\begin{align} \label{eq_dmax}
+	 d_{max} \approx  \frac{r}{2} \sqrt{\frac{N}{n}}
+\end{align}
+
+Nous limitons de cette façon le calcul des premières réflexions de la réponse impulsionnelle. Cependant, les \gls{rir} sont en général calculées jusqu'à ce que l'énergie diminue de $60dB$. Il s'agit d'un critère d'arrêt classique de car il assure de couvrir la plage d'audition humaine. Or avec notre méthode, nous ne prenons plus de mesure à partir d'un certain temps, correspondant à la distance $d$. Il faudra alors jouer sur les paramètres $N$, $r$ ou $n$ pour s'assurer de dépasser le \gls{RT60}. En pratique, le temps de calcul sera très sensible à la valeur de $N$ tandis que la précision dépendra $r$ et $n$. Ainsi une possibilité est d'arrêter la mesure avant d'atteindre cette distance maximum. Il faudra alors compléter le champs diffus de manière statistique d'après les hypothèses de Sabine. La réponse impulsionnelle obtenue par tracé de rayons sera prolongée par régression linéaire pour atteindre \gls{RT60}. \\
 
 
-La méthode dite "couplée" consiste donc à propager des rayons à partir d'une source et d'analyser ceux qui traverseront une sphère-récepteur et ce, pour chaque réflexion sur les parois. Leur temps de parcours permet de créer la \gls{rir}. Celle-ci pourra alors être convoluée à un signal audio afin de pouvoir écouter le son réverbéré (voir section \ref{sect_TDS}). Le chemin de chacun de ces rayons permet aussi de situer dans l'espace la source-image correspondant, c'est à dire l'image de la source suite aux divers réflexions sur les parois. Nous obtenons ainsi une constellation de sources-images portant des énergies atténuées par l'absorption des parois. Cela permettra par la suite de spatialiser le son, c'est à dire de savoir d'où proviennent les différents échos. Il sera alors possible d'écouter le son réverbéré en trois dimensions. Ce chapitre vise à détailler ce processus.
+
 
 %\begin{figureth}
 %	\begin{subfigureth}{0.45\textwidth}
@@ -483,9 +515,9 @@ La méthode dite "couplée" consiste donc à propager des rayons à partir d'une
 
 
 
-\section{Préparation de l'environnement}
+\section{Environnement géométrique}
 
-\subsection{Gestion de maillage} \label{sect_lectMat}
+\subsection{Maillage de salle et matériaux} \label{sect_lectMat}
 %L'une des premières étape consiste à lire une base de données (issue du logiciel Odéon) pour récupérer les coefficients d'absorption des différents matériaux disponibles. Chaque matériau possède un numéro-référence qui devra être stipulé dans le nom du matériau sous Blender. Ces numéros sont associés dans la base de données à huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes de fréquence permettent de couvrir une large plage des fréquences audibles par l'être humain. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale et celle que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}
 
 Comme nous l'avons vu précédemment, nous allons travailler à partir d'un maillage existant, qui sera dans notre cas d'application le théâtre d'Orange (voir partie \ref{part_1}) mais qui pourrait être n'importe quel maillage de salle. La méthode se doit donc d'être générique. Cependant notons qu'il sera obligatoire d'avoir des faces triangulaires et que les normales devront être orientée vers l'intérieur de la salle (voir fig. \ref{normales}).
@@ -496,7 +528,7 @@ Comme nous l'avons vu précédemment, nous allons travailler à partir d'un mail
 	\label{normales}
 \end{figureth}
 
-Chaque face triangulaire est donc considérée comme une paroi à laquelle il faut affecter un matériau. A un matériau on associe huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes de fréquence permettent de couvrir une large plage des fréquences audibles par l'être humain. L'absorption de l'onde sonore dépendra donc de la fréquence et il faudra calculer huit réponse impulsionnelle. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale et celle que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}
+Chaque face triangulaire est donc considérée comme une paroi à laquelle il faut affecter un matériau. A un matériau on associe huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes de fréquence permettent de couvrir une large plage des fréquences audibles par l'être humain. L'absorption de l'onde sonore dépendra donc de la fréquence et il faudra calculer huit réponse impulsionnelle. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale et celle que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}.\\
 
 Voici quelques exemples de coefficients d'absorption :
 \begin{tableth}
@@ -816,17 +848,41 @@ Disposant de la distance temporelle entre les sources-images et le récepteur, i
 On a vu dans les sections \ref{sect_methodecouplee} et \ref{sect_rayon} que la mesure pouvait être arrêtée avant d'atteindre le seuil limite d'audition, c'est à dire -60dB. Ce cas se présente lorsque le nombre de rayons est faible, lorsque le diamètre de la sphère récepteur est petit ou bien lorsque les rayons ont une longue distance à parcourir avant d'être suffisamment atténué (dans le cas d'une pièce fermée avec des parois très réfléchissantes par exemple). Dans ce cas, la \gls{rir} doit être complétée pour pouvoir atteindre le niveau d'énergie minimum demandé (-60dB). Pour cela, chaque courbe va être prolongée par régression linéaire afin de générer de manière statistique la queue de réverbération. D'après Sabine \cite[]{sabine} \\
 A completer ...
 
-\section{Analyse de \gls{complexite}} \label{complexite}
+\chapter{Optimisation algorithmique}
+	\citationChap{
+	Un pessimiste voit la difficulté dans chaque opportunité, un optimiste voit l'opportunité dans chaque difficulté.
+	}{Winston Churchill}
+	\minitoc
+	\newpage
+	
+\section{Introduction} \label{complexite}
 
-Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. Ce coefficient vise à analyser et qualifier le temps de calcul d'un algorithme. Dans le cas de notre méthode couplée, nous devons analyser les différentes étapes. Pour cela, on note $N$ le nombre de rayons et $M$ le nombre de faces du maillage. Premièrement, la lecture du maillage ne dépend que du nombre de faces ; la complexité de cette opération est donc linéaire de type $O(M)$. De la même manière, la création des sources-images ne dépendant que du nombre de rayons sera de complexité linéaire en $O(N)$. Celle-ci se produit en boucle tant que tous les rayons n'ont pas atteint le seuil d'arrêt. Néanmoins cela ne rentre pas dans le calcul de complexité car le temps de calcul dépend alors de la géométrie de la salle et des matériaux. Effectivement plus la salle est grande et plus les matériaux sont absorbant, plus vite s'arrêtera la boucle. L'étape qui présente le plus fort temps de calcul est la boucle d'itération sur le calcul des rayons. Effectivement, lors de cette étape, chaque rayons est testé avec chaque face. La complexité de cet algorithme est donc quadratique en $O(N \times M)$. Il s'agit donc de l'étape critique de la méthode et la plus chronophage.
+Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. Ce coefficient vise à analyser et qualifier le temps de calcul d'un algorithme. Dans le cas de notre méthode couplée, nous devons analyser les différentes étapes. Pour cela, on note $N$ le nombre de rayons et $M$ le nombre de faces du maillage. Premièrement, la lecture du maillage ne dépend que du nombre de faces ; la complexité de cette opération est donc linéaire de type $O(M)$. De la même manière, la création des sources-images ne dépendant que du nombre de rayons sera de complexité linéaire en $O(N)$. Celle-ci se produit en boucle tant que tous les rayons n'ont pas atteint le seuil d'arrêt. Néanmoins on ne peut pas en déterminer la  complexité car le temps de calcul dépend alors de la géométrie de la salle et des matériaux. Effectivement plus la salle est grande et plus les matériaux sont absorbant, plus vite s'arrêtera la boucle. L'étape la plus complexe est la boucle d'itération sur le calcul des rayons. Lors de cette étape, chaque rayon est testé avec chaque face. La complexité de cet algorithme est donc quadratique en $O(N \times M)$. Il s'agit de l'étape critique de la méthode et la plus chronophage.
 
-Pour vérifier cela, nous mesurons le temps de calcul des intersection rayons-faces pour une itération.
+Pour vérifier cela, nous mesurons le temps de calcul des intersections rayons-faces pour une itération (voir tableaux \ref{tabComplexite1} et \ref{tabComplexite2} et fig. \ref{complexite}). Ce test est effectué sur un MacBook de procésseur 2,7GHz Intel Core i5 avec 8Go de RAM DDR3.
 
+ \begin{figureth}
+	\includegraphics[width=\linewidth]{images/complexite0}
+	\caption{Courbes de complexité donnant le temps (s) d'une itération en échelle logarithmique}
+	\label{complexite0}
+\end{figureth}
 
+On constate comme prévue que les temps de calcul sont linéaires par rapport au nombre de faces d'une part et au nombre de rayons d'autre part ce qui donne bien une complexité quadratique. Par ailleurs, dans le cas du théâtre d'Orange, le nombre de faces est supérieur à 100 000 éléments et le nombre de rayons à émettre doit être très important compte tenu de la taille du bâtiment (voir section \ref{sect_discretise}). En testant une géométrie simplifiée du bâtiment, nous constatons que son \gls{RT60} est de l'ordre de 2 secondes. Il faudra donc pouvoir réaliser des mesures pour des rayons d'environ 700m de long. D'après l'équation \ref{eq_dmax} :
 
+\begin{equation}
+N > n(\frac{2d}{r})^2
+\end{equation}
+
+Pour une sphère de mesure de quelques mètres (celle-ci ne doit pas trop s'étendre afin que la mesure reste localisée) et $n$ de l'ordre d'une centaine de rayons, il faudra que le nombre total de rayons $N$ soit supérieur à 50 millions. En prolongeant la courbe de complexité on obtient un temps de calcul d'une trentaine d'heure, ce qui n'est pas acceptable pour entrer dans le cahier des charges. Nous devons donc optimiser l'algorithme afin de résoudre ce problème.
 
 \section{Méthode d'octree}
 \subsection{Principe général}
+
+Comme nous l'avons vu précédemment (voir section \ref{complexite}), les maillages que nous devons traiter peuvent comporter plusieurs dizaines, voire centaines de milliers d'éléments. Les algorithmes permettant de gérer ce genre de cas utilisent souvent des méthodes de "diviser pour régner (\textit{divide and conquer})". Cela permet, notamment dans des environnements 3D de pré-trier les données afin de ne réaliser les calculs couteux en temps que sur une quantité de données restreinte. Dans notre cas, l'utilisation d'un arbre nous permettra de ne tester les interactions qu'entre certains rayons et certains éléments : ceux qui seront situés dans la même subdivision de l'espace. Sans ce tri, il serai nécessaire de tester l'intersection de chaque rayon avec chaque élément ce qui donne une complexité quadratique et ce, pour chaque itération. 
+
+Il existe plusieurs types d'arbres permettant l'optimisation des calculs tels que les arbres binaire ou les arbres kd \\
+(à compléter choix de l'arbre) ...
+
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octree}
@@ -834,7 +890,7 @@ Pour vérifier cela, nous mesurons le temps de calcul des intersection rayons-fa
 	\label{octree}
 \end{figureth}
 
-Afin d'améliorer la \gls{complexite} de l'algorithme, au moment de l'initialisation, le maillage va être classé dans un \gls{octree}. Cette méthode va permettre par la suite d'accélérer considérablement la vitesse de calcul \cite[p. 5]{octree} (voir \ref{complexite}). Le principe consiste à créer une boite cubique dite "boite mère" contenant l'ensemble des éléments du maillage, c'est à dire l'ensemble des faces triangulaires. Cette "boite mère" est alors subdivisée pour créer huit "boites filles" de taille identiques qui elles-mêmes vont être subdivisées en huit boites filles, etc (voir fig. \ref{octree}). De manière séquentielle et en descendant dans l'arborescence de l'arbre, chaque élément contenu dans une "boite mère" va être rangé dans la "boite fille" qui le contient jusqu'à atteindre une condition d'arrêt. Typiquement, l'\gls{octree} s'arrête lorsque plus aucune "boite fille" ne contient plus de $n$ éléments. Les boites seront donc raffinées de la même manière que le maillage (voir fig. \ref{octreeSuzanne}).
+Afin d'améliorer la complexité de l'algorithme décrite précedemment, le maillage va être classé dans un \gls{octree}. Cette méthode va permettre par la suite d'accélérer considérablement la vitesse de calcul \cite[p. 5]{octree} (voir section \ref{complexite}). Le principe consiste à créer une boite cubique dite "boite mère" contenant l'ensemble des éléments du maillage, c'est à dire l'ensemble des faces triangulaires. Cette "boite mère" est alors subdivisée pour créer huit "boites filles" de taille identiques qui elles-mêmes vont être subdivisées en huit "boites filles", etc (voir fig. \ref{octree}). De manière séquentielle et en descendant dans l'arborescence de l'arbre, chaque élément contenu dans une "boite mère" va être rangé dans la "boite fille" qui le contient jusqu'à atteindre une condition d'arrêt. Typiquement, l'\gls{octree} s'arrête lorsque plus aucune "boite fille" ne contient plus de $n$ éléments. Les boites seront donc raffinées de la même manière que le maillage (voir fig. \ref{octreeSuzanne}).
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octreeSuzanne}
@@ -843,14 +899,10 @@ Afin d'améliorer la \gls{complexite} de l'algorithme, au moment de l'initialisa
 \end{figureth}
 
 
-Les maillages que nous devons traiter peuvent comporter plusieurs dizaines, voire centaines de milliers d'éléments. Les algorithmes permettant de gérer ce genre de cas utilisent souvent des méthodes de "diviser pour régner (\textit{divide and conquer})". Cela permet, notamment dans des environnements 3D de pré-trier les données afin de ne réaliser les calculs couteux en temps que sur une quantité de données restreinte. Dans notre cas, l'utilisation d'un arbre nous permettra de ne tester les interactions qu'entre certains rayons et certains éléments : ceux qui seront situés dans la même subdivision de l'espace. Sans ce tri, il serai nécessaire de tester l'intersection de chaque rayon avec chaque élément et ce, pour chaque itération. Cela revient à assembler plusieurs fois une matrice pleine ce qui est extrêmement couteux en temps de calcul (voir \ref{complexite}).
-
-Il existe d'autres types d'arbres permettant également l'optimisation des calculs tels que les arbres binaire ou les arbres kd \\
-(à compléter choix de l'arbre) ...
 
 
 \subsection{Implémentation}
-Ainsi, l'algorithme a été développé de la manière suivante :
+L'algorithme a été développé de la manière suivante (voir fig \ref{DiagOctree}) :
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/DiagOctree}
@@ -863,11 +915,7 @@ Une première boite cubique englobant le maillage dans sa globalité est créée
 
 Il reste néanmoins une dernière étape qui permettra de s'assurer que les rayons rencontrent les bons éléments. Il s'agit de redimensionner les boites non-vides pour que cette fois, elles englobent bien géométriquement les faces qu'elles contiennent.
 
-\begin{figureth}
-	\includegraphics[width=0.7\linewidth]{images/DiagRay2}
-	\caption{Diagramme d'activité résumant le processus de création des rayons avec \gls{octree}}
-	\label{DiagRay2}
-\end{figureth}
+
 
  A chaque itération sur les rayons, on va alors pouvoir classer les rayons dans l'\gls{octree} (voir nouveau diagramme d'activité des rayons, fig. \ref{DiagRay2}). Pour cela, les rayons sont assignés aux boites qu'ils intersectent à partir de la "boite racine" et en descendant dans l'arborescence de chaque branche. De la même manière que pour les triangles, les rayons sont testés avec des "boites filles" que s'ils ont bien intersecté la "boite mère" correspondante. Pour savoir si l'indice d'un rayon doit être assigné à une boite, nous utilisons un algorithme optimisé d'intersection Rayon/Boite \cite{AABB}. La particularité des boites d'un \gls{octree} est qu'elles sont toutes alignées selon les axes du repère cartésien. On appel communément ce type de boite \gls{AABB} en opposition aux \gls{OBB}. Nous allons donc utiliser cette propriété pour vérifier si un rayon intersecte une boite. Pour cela rappelons qu'un rayons peut s'écrire sous la forme : 
 \begin{equation}
@@ -919,32 +967,58 @@ On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir d
 
 De cette façon les feuilles de l'\gls{octree}, c'est à dire les boites les plus basses dans l'arborescence, prendront comme arguments les indices des rayons les traversant. On pourra ainsi ne tester les intersections d'entre les rayons et les éléments situés dans les mêmes subdivisions de l'espace. Feuille par feuille, l'algorithme va donc déterminer pour chaque face les rayons qui l'intersecte et le cas échéant, sa longueur.
 
-\subsection{Analyse de \gls{complexite}}
-
-La lecture du maillage et le classement dans l'\gls{octree} est assez rapide puisque ceci s'effectue de manière linéaire. Cela va dépendre du nombre d'éléments triangles mais ne sera effectué qu'une fois au lancement du programme. La partie la plus complexe qui va nous intéresser est le calcul d'interactions entre les rayons et les éléments. Effectivement, sans utiliser d'\gls{octree}, chaque rayon doit être testé avec chaque triangle. Cela revient à assembler une matrice pleine et comporte une \gls{complexite} en $O(N \times M)$, avec $N$ le nombre de rayons et $M$ le nombre d'éléments. Cependant, lorsque l'on utilise un \gls{octree}, seules les interactions entre les rayons et les éléments compris dans la même boite sont calculées. Il faut par ailleurs classer les rayons dans les boites à chaque itération, mais cette opération est linéaire. Le calcul revient finalement à assembler une matrice creuse et porte une \gls{complexite} théorique de type $O(N\log{M})$. 
-Pour vérifier ce comportement nous mesurons les temps de calcul avec et sans utilisation d'\gls{octree}.
 
 
-\begin{figureth}
-	\begin{subfigureth}{0.7\textwidth}
-		\includegraphics[width=\linewidth]{images/complexite1}
-		\caption{Temps (s) d'une itération en fonction du nombre d'éléments pour 100000 rayons (échelle log)}
-		\label{complexite1}
-	\end{subfigureth} \\
-\bigskip
-	\begin{subfigureth}{0.7\textwidth}
-		\includegraphics[width=\linewidth]{images/complexite2}
-		\caption{Temps (s) d'une itération en fonction du nombre de rayons pour 100000 éléments (échelle log)}
-		\label{complexite2}
-	\end{subfigureth}
-	\caption{Courbes de complexité}
+
+\section{Analyse de \gls{complexite}}
+
+L'étape de création de l'\gls{octree} n'est pas critique car cette opération ne s'effectue qu'une seule fois au moment du chargement du maillage. Si $M$ est le nombre de faces du maillage et "e" le nombre d'étage de l'\gls{octree}, alors la complexité maximale de cette opération sera O(M.e). En pratique, comme certaines faces sont plus grande que d'autres, des feuilles vont être créées au fur et à mesure des étages et il n'y aura pas besoin de tester toutes les faces à chaque étage. La valeur de "e" dépend donc de $M$, du nombre d'éléments qu'il faut pour créer une feuille et sera fonction du raffinement du maillage. Pour une géométrie donnée, par exemple, un cube dont on augmente le raffinement [à compléter ...]
+
+ \begin{figureth}
+	\includegraphics[width=0.4\linewidth]{images/tempsOctree}
+	\caption{Temps (s) de création de l'octree sur un cube pour des feuilles comprenant 5 éléments maximum en échelle logarithmique}
+	\label{tempsOctree}
+\end{figureth}
+
+
+
+Comme évoqué précédemment, l'étape critique de l'algorithme est le test d'intersection rayons/éléments car la complexité initiale est quadratique et que ce processus se répète à chaque itérations jusqu'à atteindre \gls{RT60}. Pour une itération, nous avons donc une phase de complexité linéaire
+
+Le calcul revient finalement à assembler une matrice creuse et porte une complexité théorique de type $O(N\log{M})$. 
+Pour vérifier ce comportement nous mesurons les temps de calcul d'une itération avec l'\gls{octree} et comparons avec les courbes de la figures \ref{complexite0}.
+
+
+%\begin{figureth}
+%	\begin{subfigureth}{0.7\textwidth}
+%		\includegraphics[width=\linewidth]{images/complexite1}
+%		\caption{Temps (s) d'une itération en fonction du nombre d'éléments pour 100000 rayons (échelle log)}
+%		\label{complexite1}
+%	\end{subfigureth} \\
+%\bigskip
+%	\begin{subfigureth}{0.7\textwidth}
+%		\includegraphics[width=\linewidth]{images/complexite2}
+%		\caption{Temps (s) d'une itération en fonction du nombre de rayons pour 100000 éléments (échelle log)}
+%		\label{complexite2}
+%	\end{subfigureth}
+%	\caption{Courbes de complexité}
+%\end{figureth}
+
+
+ \begin{figureth}
+	\includegraphics[width=\linewidth]{images/complexiteBis}
+	\caption{Courbes de complexité donnant le temps (s) avec et sans octree d'une itération en échelle logarithmique}
+	\label{complexiteBis}
 \end{figureth}
 
 
 
 
 
-\chapter{Implémentation logiciel et validation}
+
+
+
+
+\chapter{Logiciel développé}
 	\citationChap{
 	L'observateur modifie ce qu'il observe. Certains événements ne se produisent que parce qu'ils sont observés. Sans personne pour les voir ils n'existeraient pas. 
 	}{Bernard Werber}
@@ -953,14 +1027,10 @@ Pour vérifier ce comportement nous mesurons les temps de calcul avec et sans ut
 	
 \section{Introduction}
 
+Dans le chapitre précédent, nous avons détaillé le fonctionnement de l'algorithme conçu pour analyser l'acoustique d'une salle. La méthode utilisée couple les principes de lancer de rayons, de sources-images et d'extrapolation stochastique. Elle vise à répondre aux problématiques de calcul acoustique en environnement complexe de manière géométrique et disrètisée. Géométrique, car seuls les effets de réflexion et absorption sont pris en compte et discrétisée car l'énergie d'onde n'est pas portée par une sphère mais par un grand nombre de rayons repartis de manière uniformes. Ainsi, il est essentiel de confirmer la justesse de ses approximations en les confrontant à des modèles théoriques. Dans ce chapitre, nous allons valider l'algorithme d'un point de vu physique et analyser ses performances. Nous présenterons ensuite son ergonomie pour l'utilisateur et et constaterons que la configuration peut se faire depuis Blender ainsi que l'analyse de certains résultats (comme l'affichage des rayons ou de la position de sources images par exemple). Nous finirons par une brève présentation du traitement du signal implémenté afin de rendre le résultat de calcul audible.
 
 
-
-
-
-Dans le chapitre précédent, nous avons détaillé le fonctionnement de l'algorithme conçu pour analyser l'acoustique d'une salle. La méthode utilisée couple les principes de lancer de rayons, de sources-images et d'extrapolation stochastique. Elle vise à répondre aux problématiques de calcul acoustique en environnement complexe de manière géométrique et disrètisée. Géométrique car seuls les effets de réflexion et absorption sont pris en compte et discrétisée car l'énergie d'onde n'est pas portée par une sphère mais par un grand nombre de rayons repartis de manière uniformes. Ainsi, il est essentiel de confirmer la justesse de ses approximations en les confrontant à des modèles théoriques. Dans ce chapitre, nous allons donc valider l'algorithme d'un point de vu physique et analyser ses performances.
-
-Avant toutes choses, il est bon de vérifier que les rayons ne traversent pas les parois et que la boite englobante assure bien son rôle. Pour cela, nous importons les rayons dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle. Nous confirmons également le bon fonctionnement de la boite englobante en utilisant une salle sans plafond ni plancher. Les rayons sont bien stoppés par une paroi invisible.
+Avant de tester la justesse des résultats d'un point de vu physique, il est bon d'en vérifier la justesse géométrique. Ainsi, nous analysons si les rayons ne traversent pas les parois et que la boite englobante assure bien son rôle. Pour cela, nous importons les rayons générés par notre logiciel dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle. Nous confirmons également le bon fonctionnement de la boite englobante en utilisant une salle sans plafond ni plancher. Les rayons sont bien stoppés par une paroi invisible.
 
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
@@ -992,68 +1062,11 @@ Nous vérifions aussi que les rayons captés par le récepteur sont bien portés
 	\end{subfigureth}
 \end{figureth}
 
-\section{Configuration logiciel}
-La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. Ce chapitre détaillera les différentes briques de l'outil de calcul acoustique. Nous traiterons d'abord de la partie algorithmique conçue en C++ et finirons par présenter l'interface homme-machine accessible depuis Blender.
-
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/synopsis}
-	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
-	\label{synopsis}
-\end{figureth}
 
 
-\subsection{Lecture de maillage}
-Comme évoqué précédemment, l'outil traite les données à partir d'un fichier \gls{obj}. Pour faciliter la lecture du maillages, on s'assurera de n'avoir que des faces triangulaires. Cela est réalisé automatiquement lors de l'exportation du fichier par un \gls{modifier} "triangulate" inclue dans le script d'export (voir section \ref{sect_add-on}). Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Un vecteur de sommets et un vecteur de normales sont remplis face par face en conservant le même ordre. Ces deux vecteurs stockent ainsi la totalité du maillage. Les textures quant à elles ne nous sont pas utiles. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant face par face en respectant l'ordre établi précédemment.
-Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure du récepteur correspond au rayon de la sphère circonscrite à l'objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources. L'ensemble des calculs se réaliseront séquentiellement pour une source après l'autre. Un seul récepteur est pris en compte. L'add-on Blender permet de mettre à jour les informations sur les sources et récepteurs simplement avant de relancer un nouveau calcul.
+\section{Validation}
 
-\section{Traitement du signal} \label{sect_TDS}
-
-L'analyse de résultats d'une étude acoustique peut parfois être délicate et difficile pour les personnes extérieurs au milieu. Le résultat final qui pourra être analysé par le plus grand nombre est le signal audio de sortie. Même si l'analyse d'un signal audio nécessite une grande finesse auditive, elle présente pour avantage d'être accessible par une simple écoute. Pour obtenir le son réverbéré, il s'agit de convoluer le signal d'origine avec les \gls{fir}. Un \gls{fir} est une \gls{rir} exprimé en pression tel que :
-
-\begin{equation}
-P = \sqrt{E}
-\end{equation}
-
-Avec : \\
-$P$ : La pression sonore normalisée \\
-$E$ : L'énergie normalisée \\
-
-Convoluer ces signaux revient à multiplier point par point le fichier audio avec les \gls{fir} dans le domaine de Fourier (fréquenciel).
-On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs signaux, il est judicieux d'utiliser une convolution partitionnée afin de réduire le stockage de données et accélérer les calculs \cite[2. Algorithm overview ]{partition}. 
-
-L'algorithme mis en place fonctionne de la manière suivante (voir fig. \ref{DiagTdS}) :
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/DiagTdS}
-	\caption{Schéma du processus de convolution partitionnée}
-	\label{DiagTdS}
-\end{figureth}
-
-Premièrement, on fixe la longueur des partitions à $n$ échantillons tel que $n$ soit une puissance de 2 (typiquement 1024). Dans un premier temps, le signal audio est découpé par tranches de $n$ échantillons et chaque tranche recouvre la précédente sur la moitié de sa taille. Chacune d'entre elles est ensuite passées dans le domaine spectral par \gls{fft}. Dans un second temps les \gls{fir} sont convolués temporellement à des filtres passe-bande (voir fig. \ref{filtres}), c'est à dire que chaque pic des \gls{fir} sera multiplié par le filtre passe-bande de la fréquence correspondante. Les huit signaux de sortie sont alors découpé par tranches de $n/2$ échantillons que l'on fait précéder de $n/2$ zéros. Ce procédé se nomme "\textit{ZeroPadding}" et permet d'éviter les effets de crénelage (\textit{aliasing}) lors de la convolution de deux signaux. En effet, les spectres des signaux présentent sur leur partie négative un repliement qui apporte de l'information redondante lors de la convolution. C'est pour cette même raison que les partitions du signal audio ont un recouvrement de $n/2$ échantillons. Ainsi, seuls les $n/2$ derniers échantillons du résultat de convolution sont utiles. Avant de pouvoir effectuer cette opération il faut passer les filtres dans le domaine spectral et sommer les huit bandes de fréquence. Une par une les partitions du signal audio sont convoluées aux filtres et à chaque nouvelle partition, on décale le résultat de $n/2$ échantillons. On pourra alors sommer les résultats et effectuer une transformée de Fourier inverse pour récupérer le signal de sortie. Celui-ci sera identique au signal d'entrée à la différence qu'il sera réverbéré, c'est à dire que chaque pic de la \gls{rir} répétera le signal d'entrée en écho.
-
-\begin{figureth}
-	\includegraphics[width=0.9\linewidth]{images/filtres}
-	\caption{Filtres fréquenciels passe-bande}
-	\label{filtres}
-\end{figureth}
-
-
-\section{Add-on Blender} \label{sect_add-on}
-La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel \gls{cao} et lancer le calcul. Blender permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de Blender est donc complètement modulable et personnalisable. Le add-on développé dans la cadre de ce projet possède quelques boutons. En utilisant le bouton "Run", Blender triangule les objets sélectionnés et les exporte au format \gls{obj} dans le répertoire où se trouve le logiciel "client". L'utilisateur pourra aussi positionner des objets de type "source" ou "récepteur" simplement en faisant apparaitre dans leur nom les mots "source" ou "listener". Par ailleurs l'utilisateur assignera aux différentes parois un type de matériau en faisant apparaitre dans son nom la référence du matériau issue de la base de donnée Odéon (voir section \ref{sect_lectMat}). 
-
-A completer ...
-
-
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/add-on}
-	\caption{Add-on Blender et assignation des matériaux}
-\end{figureth}
-
-
-
-
-
-\section{Comparaison aux cas test}
-		\subsection{Décroissance quadratique}
+\subsection{Décroissance quadratique}
 Suite à ces vérifications préliminaires, le premier test à réaliser pour analyser le comportement physique de l'algorithme est celui décrit dans la section \ref{sect_methodecouplee}. Il s'agit de vérifier si l'utilisation d'un grand nombre de rayons et d'un récepteur de diamètre fixe permet de retrouver la loi de décroissance en $d^2$. Pour effectuer ce test, nous plaçons une source et un récepteur de rayons $1m$ au centre d'un cube de $10m$ de coté. Afin de simuler des mesures en espace libre (c'est à dire sans aucune paroi) où le récepteur s'éloigne de la source, nous allons affecter au cube des matériaux $100\%$ absorbants sur toutes ses parois sauf celles sur l'axe des $X$ qui seront $100\%$ réfléchissantes. Ainsi, cela revient à effectuer une mesure tous les $10m$, soit le temps d'aller retour des rayons du centre du cube jusqu'aux parois. N'ayant des réflexions que sur un axe, on reproduit une propagation en espace libre puisque seuls les rayons contenus dans le cône autour de l'axe $X$ conserveront leur énergie. Cependant, les rayons se réfléchissant en X et en -X de manière synchrone, on aura deux fois plus de rayons que si l'on se plaçait en espace libre. Nous pouvons comparer le résultat pour 30 itérations avec la fonction :
 
 \begin{equation*}
@@ -1069,7 +1082,7 @@ f(x) = \frac{2}{x^2}
 Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en compte que la décroissance d'énergie portée par les rayons perçus. On observe bien sur la figure \ref{test1} que l'énergie suit la courbe de décroissance quadratique.
  		
 		
-\subsection{Salle sphérique}
+\subsection{Cas de la salle sphérique}
 
 Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons une source et un récepteur de diamètre $1m$ au centre d'une sphère $100\%$ réfléchissante de diamètre $4m$. Ainsi à chaque itération, l'ensemble des $1000$ rayons revient se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons une réponse impulsionnelle de la forme d'une peigne de Dirac (voir fig. \ref{test2RIR}). L'écart entre chaque pic est de $11,76 ms$ ce qui correspond bien à une distance de $4m$ parcourue à la vitesse du son fixée à $340m/s$. Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède $320000$ triangles. Par ailleurs, la fréquence d'échantillonnage est descendue à 1000Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisées dans le calcul de l'énergie. On pourra par ailleurs importer les source-images sous Blender et constater qu'elles sont bien réparties sur des sphères dont le diamètre est doublé à chaque itération (voir fig. \ref{test2SI})
 
@@ -1097,7 +1110,7 @@ Si l'on active l'absorption de l'air, on constate bien que les hautes fréquence
 	\label{test2absair}
 \end{figureth}
 
-\subsection{Salle rectangulaire}
+\subsection{Cas de la salle cubique}
 
 Le dernier test consiste à comparer les résultats de calcul avec une formule analytique pour une pièce de type pavé droit. La formule \cite[p. 182-189]{mcgovern} est la suivante : 
 
@@ -1144,6 +1157,51 @@ On constate que celle-ci à une valeur moyenne de $0,6\%$ est qu'elle reste touj
 	\end{subfigureth}
 \end{figureth}
 		
+		
+
+\section{Interface utilisateur} \label{sect_add-on}
+
+La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel \gls{cao} et lancer le calcul. Blender permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de Blender est donc complètement modulable et personnalisable. Le add-on développé dans la cadre de ce projet possède quelques boutons. En utilisant le bouton "Run", Blender transforme les faces des objets sélectionnés en triangle et les exporte au format \gls{obj} (dans le répertoire où se trouve l'exécutable créé en C++). Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Un vecteur de sommets et un vecteur de normales sont remplis face par face en conservant le même ordre. Ces deux vecteurs stockent ainsi la totalité du maillage. Les textures quant à elles ne nous sont pas utiles. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant face par face en respectant l'ordre établi précédemment.
+
+Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure du récepteur correspond au rayon de la sphère circonscrite à l'objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources. L'ensemble des calculs se réaliseront séquentiellement pour une source après l'autre. Un seul récepteur est pris en compte. L'add-on Blender permet de mettre à jour uniquement les informations sur les sources et récepteurs sans avoir besoin de recharger tout le maillage.
+Par ailleurs l'utilisateur assignera aux différentes parois un type de matériau en faisant apparaitre dans son nom la référence du matériau issue de la base de donnée Odéon (voir section \ref{sect_lectMat}). 
+
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/add-on}
+	\caption{Add-on Blender et assignation des matériaux}
+\end{figureth}
+
+\section{Traitement du signal} \label{sect_TDS}
+
+L'analyse de résultats d'une étude acoustique peut parfois être délicate et difficile pour les personnes extérieurs au milieu. Le résultat final qui pourra être analysé par le plus grand nombre est le signal audio de sortie. Même si l'analyse d'un signal audio nécessite une grande finesse auditive, elle présente pour avantage d'être accessible par une simple écoute. Pour obtenir le son réverbéré, il s'agit de convoluer le signal d'origine avec les \gls{fir}. Un \gls{fir} est une \gls{rir} exprimé en pression tel que :
+
+\begin{equation}
+P = \sqrt{E}
+\end{equation}
+
+Avec : \\
+$P$ : La pression sonore normalisée \\
+$E$ : L'énergie normalisée \\
+
+Convoluer ces signaux revient à multiplier point par point le fichier audio avec les \gls{fir} dans le domaine de Fourier (fréquenciel).
+On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs signaux, il est judicieux d'utiliser une convolution partitionnée afin de réduire le stockage de données et accélérer les calculs \cite[2. Algorithm overview ]{partition}. 
+
+L'algorithme mis en place fonctionne de la manière suivante (voir fig. \ref{DiagTdS}) :
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/DiagTdS}
+	\caption{Schéma du processus de convolution partitionnée}
+	\label{DiagTdS}
+\end{figureth}
+
+Premièrement, on fixe la longueur des partitions à $n$ échantillons tel que $n$ soit une puissance de 2 (typiquement 1024). Dans un premier temps, le signal audio est découpé par tranches de $n$ échantillons et chaque tranche recouvre la précédente sur la moitié de sa taille. Chacune d'entre elles est ensuite passées dans le domaine spectral par \gls{fft}. Dans un second temps les \gls{fir} sont convolués temporellement à des filtres passe-bande (voir fig. \ref{filtres}), c'est à dire que chaque pic des \gls{fir} sera multiplié par le filtre passe-bande de la fréquence correspondante. Les huit signaux de sortie sont alors découpé par tranches de $n/2$ échantillons que l'on fait précéder de $n/2$ zéros. Ce procédé se nomme "\textit{ZeroPadding}" et permet d'éviter les effets de crénelage (\textit{aliasing}) lors de la convolution de deux signaux. En effet, les spectres des signaux présentent sur leur partie négative un repliement qui apporte de l'information redondante lors de la convolution. C'est pour cette même raison que les partitions du signal audio ont un recouvrement de $n/2$ échantillons. Ainsi, seuls les $n/2$ derniers échantillons du résultat de convolution sont utiles. Avant de pouvoir effectuer cette opération il faut passer les filtres dans le domaine spectral et sommer les huit bandes de fréquence. Une par une les partitions du signal audio sont convoluées aux filtres et à chaque nouvelle partition, on décale le résultat de $n/2$ échantillons. On pourra alors sommer les résultats et effectuer une transformée de Fourier inverse pour récupérer le signal de sortie. Celui-ci sera identique au signal d'entrée à la différence qu'il sera réverbéré, c'est à dire que chaque pic de la \gls{rir} répétera le signal d'entrée en écho.
+
+\begin{figureth}
+	\includegraphics[width=0.9\linewidth]{images/filtres}
+	\caption{Filtres fréquenciels passe-bande}
+	\label{filtres}
+\end{figureth}
+
 
 
 
@@ -1153,7 +1211,14 @@ On constate que celle-ci à une valeur moyenne de $0,6\%$ est qu'elle reste touj
 
 Dans cette partie, nous avons présenté les problématiques soulevées par une étude acoustique d'un monument antique. La géométrie complexe de ce type de bâtiment et leur taille colossale impose l'utilisation de méthodes de calcul approchées. Ainsi, par simulation des réflexions et absorptions des parois, il est possible d'étudier la réverbération d'une salle. Malgré les approximations inéluctables du modèle, nous avons prouvé que les lois de la physique sont respectées. Un algorithme rapide a été mis en place pour permettre aux utilisateurs de tester facilement et rapidement leurs hypothèses architecturales. Ainsi, le temps de calcul devient peu sensible aux nombres d'éléments du maillage ce qui est souvent limitant dans ce genre d'étude. L'implémentation d'une \gls{ihm} sous Blender s'interface dans la continuité de l'étude présentée dans la partie \ref{part_1} de ce document. 
 
-Par ailleurs, le fonctionnement de l'algorithme développé a été présenté en détail de même que les différents outils d'analyse qui en découlent. Il est alors possible d'étudier le graphe temporel de réverbération du bâtiment ainsi que la position dans l'espace des différentes réflexions sonores. Ces résultats pourront aussi être analysés à l'oreille en écoutant le son réverbéré émis depuis une ou plusieurs sources et entendu par un auditeur virtuel placé dans le bâtiment.
+La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. 
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/synopsis}
+	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
+	\label{synopsis}
+\end{figureth}
+
+Le fonctionnement de l'algorithme développé a été présenté en détail de même que les différents outils d'analyse qui en découlent. Il est alors possible d'étudier le graphe temporel de réverbération du bâtiment ainsi que la position dans l'espace des différentes réflexions sonores. Ces résultats pourront aussi être analysés à l'oreille en écoutant le son réverbéré émis depuis une ou plusieurs sources et entendu par un auditeur virtuel placé dans le bâtiment.
 
 De nombreuses possibilités d'améliorations restent à l'étude comme par exemple l'écoute en temps réel. Il serait par exemple possible d'écouter les signaux réverbérés en 3D grâce à des filtres binauraux. Ceux-ci modifient le signal perçu par chacune des deux oreilles afin de donner l'illusion d'espace et de profondeur. Tout en restant en position statique, l'auditeur pourra orienter son regard selon différentes directions et écouter en temps réel le son changer. Cette option fonctionne sous Matlab avec un contrôle de la direction au clavier ou à l'aide d'un casque avec "\textit{Head Tracker"}. Ce type de casque possède un gyroscope qui actualise la direction du regard en temps réel et permet d'augmenter considérable la sensation immersive. Par ailleurs, ce code, que ce soit sous Matlab ou en C++ (avec add-on Blender), est distribué en open-source. 
 

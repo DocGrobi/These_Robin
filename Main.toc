@@ -53,35 +53,35 @@
 \contentsline {subsection}{\numberline {4.1.1}Notion de r\IeC {\'e}v\IeC {\'e}rberation}{56}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Notion de flux d'intensit\IeC {\'e} acoustique}{57}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Absorption atmostph\IeC {\'e}rique}{58}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{59}{section.4.2}
+\contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{60}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Principe statistique}{60}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}M\IeC {\'e}thode de r\IeC {\'e}solution exacte}{61}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}M\IeC {\'e}thodes g\IeC {\'e}om\IeC {\'e}triques}{64}{subsection.4.2.3}
 \contentsline {chapter}{\numberline {5}D\IeC {\'e}veloppement d'une m\IeC {\'e}thode coupl\IeC {\'e}e}{67}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{68}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pr\IeC {\'e}paration de l'environnement}{71}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Gestion de maillage}{71}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Cr\IeC {\'e}ation d'une boite englobante}{72}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Calcul des rayons}{73}{section.5.3}
-\contentsline {section}{\numberline {5.4}Calcul des sources-images}{77}{section.5.4}
-\contentsline {section}{\numberline {5.5}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnelle}{79}{section.5.5}
-\contentsline {section}{\numberline {5.6}Analyse de \gls {complexite}}{80}{section.5.6}
-\contentsline {section}{\numberline {5.7}M\IeC {\'e}thode d'octree}{80}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Principe g\IeC {\'e}n\IeC {\'e}ral}{80}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Impl\IeC {\'e}mentation}{82}{subsection.5.7.2}
-\contentsline {subsection}{\numberline {5.7.3}Analyse de \gls {complexite}}{85}{subsection.5.7.3}
-\contentsline {chapter}{\numberline {6}Impl\IeC {\'e}mentation logiciel et validation}{87}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{88}{section.6.1}
-\contentsline {section}{\numberline {6.2}Configuration logiciel}{89}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Lecture de maillage}{89}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Traitement du signal}{91}{section.6.3}
-\contentsline {section}{\numberline {6.4}Add-on Blender}{92}{section.6.4}
-\contentsline {section}{\numberline {6.5}Comparaison aux cas test}{93}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}D\IeC {\'e}croissance quadratique}{93}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Salle sph\IeC {\'e}rique}{94}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Salle rectangulaire}{94}{subsection.6.5.3}
-\contentsline {chapter}{Conclusion}{99}{chapter*.40}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{102}{chapter*.41}
+\contentsline {section}{\numberline {5.2}Notion d'onde sph\IeC {\'e}rique discr\IeC {\'e}tis\IeC {\'e}e}{69}{section.5.2}
+\contentsline {section}{\numberline {5.3}Environnement g\IeC {\'e}om\IeC {\'e}trique}{72}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Maillage de salle et mat\IeC {\'e}riaux}{72}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Cr\IeC {\'e}ation d'une boite englobante}{74}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Calcul des rayons}{74}{section.5.4}
+\contentsline {section}{\numberline {5.5}Calcul des sources-images}{79}{section.5.5}
+\contentsline {section}{\numberline {5.6}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnelle}{81}{section.5.6}
+\contentsline {chapter}{\numberline {6}Optimisation algorithmique}{83}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{84}{section.6.1}
+\contentsline {section}{\numberline {6.2}M\IeC {\'e}thode d'octree}{85}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Principe g\IeC {\'e}n\IeC {\'e}ral}{85}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Impl\IeC {\'e}mentation}{85}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Analyse de \gls {complexite}}{88}{section.6.3}
+\contentsline {chapter}{\numberline {7}Logiciel d\IeC {\'e}velopp\IeC {\'e}}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{92}{section.7.1}
+\contentsline {section}{\numberline {7.2}Validation}{93}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}D\IeC {\'e}croissance quadratique}{93}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Cas de la salle sph\IeC {\'e}rique}{93}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Cas de la salle cubique}{95}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Interface utilisateur}{96}{section.7.3}
+\contentsline {section}{\numberline {7.4}Traitement du signal}{97}{section.7.4}
+\contentsline {chapter}{Conclusion}{101}{chapter*.40}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{106}{chapter*.42}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{101}{part.3}
@@ -107,7 +107,7 @@
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}
 \contentsline {section}{\numberline {A.1}Figures annexes}{I}{section.A.1}
-\contentsline {section}{\numberline {A.2}Tableaux annexes}{X}{section.A.2}
+\contentsline {section}{\numberline {A.2}Tableaux annexes}{II}{section.A.2}
 \gdef \the@ipfilectr {}
-\contentsline {chapter}{\numberline {B}Liste des acronymes}{XIII}{appendix.B}
-\contentsline {chapter}{\numberline {C}Glossaire}{XV}{appendix.C}
+\contentsline {chapter}{\numberline {B}Liste des acronymes}{V}{appendix.B}
+\contentsline {chapter}{\numberline {C}Glossaire}{VII}{appendix.C}
