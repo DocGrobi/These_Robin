@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  21 MAR 2018 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  4 APR 2018 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2387,21 +2387,28 @@ Package: glossary-tree 2016/04/30 v4.23 (NLCT)
 \glo@main@file=\write6
 \openout6 = `Main.glo'.
 
-Package glossaries Info: Writing glossary file Main.glo on input line 152.
+Package glossaries Info: Writing glossary file Main.glo on input line 153.
 \glo@acronym@file=\write7
 \openout7 = `Main.acn'.
 
-Package glossaries Info: Writing glossary file Main.acn on input line 152.
+Package glossaries Info: Writing glossary file Main.acn on input line 153.
 \glo@notation@file=\write8
 \openout8 = `Main.ntn'.
 
-Package glossaries Info: Writing glossary file Main.ntn on input line 152.
+Package glossaries Info: Writing glossary file Main.ntn on input line 153.
  (./Glossaire.tex)) (./CommandesPerso.tex) (./PageDeGarde.tex) (./Main.aux
 (./Intro.aux) (./Part1.aux
 
 LaTeX Warning: Label `modCavea' multiply defined.
 
-) (./Part2.aux) (./Part3.aux) (./Annexes.aux))
+) (./Part2.aux
+
+LaTeX Warning: Label `complexite00' multiply defined.
+
+
+LaTeX Warning: Label `complexite' multiply defined.
+
+) (./Part3.aux) (./Annexes.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -2718,6 +2725,10 @@ Package minitoc Info: I0033
 (minitoc)             Writing Main.mtc23.
 \openout3 = `Main.mtc23'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing Main.mtc24.
+\openout3 = `Main.mtc24'.
+
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 59.
  (./Main.toc
@@ -2733,74 +2744,94 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (1.19994pt too wide) detected at line 77
+ []\T1/futs/m/n/12 102
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 78
+ []\T1/futs/m/n/12 103
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 87
+ []\T1/futs/m/n/12 112
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 88
+ []\T1/futs/m/n/12 112
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 89
+ []\T1/futs/m/n/12 112
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 91
- []\T1/futs/m/n/12 106
+ []\T1/futs/m/n/12 114
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 92
- []\T1/futs/m/n/12 106
+Overfull \hbox (1.19994pt too wide) detected at line 96
+ []\T1/futs/m/n/12 114
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 93
- []\T1/futs/m/n/12 106
+Overfull \hbox (1.19994pt too wide) detected at line 97
+ []\T1/futs/m/n/12 114
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 95
- []\T1/futs/m/n/12 108
+Overfull \hbox (1.19994pt too wide) detected at line 98
+ []\T1/futs/m/n/12 114
  []
 
-
-Overfull \hbox (1.19994pt too wide) detected at line 100
- []\T1/futs/m/n/12 108
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 101
- []\T1/futs/m/n/12 108
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 102
- []\T1/futs/m/n/12 108
- []
-
-[2])
+)
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
- [3] [4
-
-] (./Main.lof
+ [2] (./Main.lof
 Overfull \hbox (8.76581pt too wide) in paragraph at lines 45--45
  [][] [][][]\T1/futs/m/n/12 Représentation d'un maillages sur-fa-cique à faces 
 tri-an-gu-laires com-posé d'une 
  []
 
-[5]
-Overfull \hbox (6.75337pt too wide) in paragraph at lines 55--55
+[3
+
+]
+Overfull \hbox (6.75337pt too wide) in paragraph at lines 56--56
  [][] [][][]\T1/futs/m/n/12 Illustration du prin-cipe d'[][][]octree[][]. Sub-d
 i-vi-sion d'un cube en "oc-tants" (gauche) 
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 68
+Overfull \hbox (1.19994pt too wide) detected at line 69
  []\T1/futs/m/n/12 102
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 70
+ []\T1/futs/m/n/12 103
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 71
+ []\T1/futs/m/n/12 106
  []
 
 )
 \tf@lof=\write11
 \openout11 = `Main.lof'.
 
- [6] (./Main.lot)
+ [4] (./Main.lot)
 \tf@lot=\write12
 \openout12 = `Main.lot'.
 
- [7
+ [5
 
-] [8
+] [6
 
 
 ]
@@ -2873,7 +2904,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
 
-<Part2/images/schema_ecran_antibruit.jpg, id=460, 687.56876pt x 490.83376pt>
+<Part2/images/schema_ecran_antibruit.jpg, id=443, 687.56876pt x 490.83376pt>
 File: Part2/images/schema_ecran_antibruit.jpg Graphic file (type jpg)
 
 <use Part2/images/schema_ecran_antibruit.jpg>
@@ -2881,7 +2912,7 @@ Package pdftex.def Info: Part2/images/schema_ecran_antibruit.jpg used on input
 line 34.
 (pdftex.def)             Requested size: 220.50887pt x 157.41452pt.
 
-<Part2/images/RIR_schematique.png, id=467, 554.57187pt x 405.515pt>
+<Part2/images/RIR_schematique.png, id=450, 554.57187pt x 405.515pt>
 File: Part2/images/RIR_schematique.png Graphic file (type png)
 
 <use Part2/images/RIR_schematique.png>
@@ -2904,83 +2935,103 @@ e point de me-sure et de même
  []
 
 
-Overfull \hbox (1.44257pt too wide) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 71.
+
+[57 <./Part2/images/RIR_schematique.png>]
+
+LaTeX Warning: Command \' invalid in math mode on input line 77.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+
+ []
+
+
+Overfull \hbox (1.44257pt too wide) in paragraph at lines 86--87
 []\T1/futs/m/n/12 L'acoustique suit le pre-mier prin-cipe de la ther-mo-dy-na-m
 ique se-lon le-quel il y a conser-
  []
 
-<Part2/images/flux.png, id=489, 401.5pt x 401.5pt>
+<Part2/images/flux.png, id=487, 401.5pt x 401.5pt>
 File: Part2/images/flux.png Graphic file (type png)
  <use Part2/images/flux.png>
-Package pdftex.def Info: Part2/images/flux.png used on input line 81.
+Package pdftex.def Info: Part2/images/flux.png used on input line 98.
 (pdftex.def)             Requested size: 220.50887pt x 220.51323pt.
-
-[57 <./Part2/images/RIR_schematique.png>]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 102
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 119
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [58 <./Part2/images/flux.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 112--116
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
-<Part2/images/courbesAbs.png, id=530, 829.59938pt x 532.99126pt>
+<Part2/images/courbesAbs.png, id=515, 829.59938pt x 532.99126pt>
 File: Part2/images/courbesAbs.png Graphic file (type png)
 
 <use Part2/images/courbesAbs.png>
-Package pdftex.def Info: Part2/images/courbesAbs.png used on input line 136.
+Package pdftex.def Info: Part2/images/courbesAbs.png used on input line 153.
 (pdftex.def)             Requested size: 352.81552pt x 226.66875pt.
- [59] [60 <./Part2/images/courbesAbs.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 169--175
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+[59] [60 <./Part2/images/courbesAbs.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
-
-Overfull \hbox (9.42448pt too wide) in paragraph at lines 204--205
+[61]
+Overfull \hbox (9.42448pt too wide) in paragraph at lines 228--229
 []\T1/futs/m/n/12 les fluc-tua-tions dues aux dé-pla-ce-ments d'air sont faible
 s de-vant ces va-leurs moyennes 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
 
  []
 
-<Part2/images/green.png, id=605, 491.8375pt x 327.2225pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+<Part2/images/green.png, id=596, 491.8375pt x 327.2225pt>
 File: Part2/images/green.png Graphic file (type png)
 
 <use Part2/images/green.png>
-Package pdftex.def Info: Part2/images/green.png used on input line 245.
+Package pdftex.def Info: Part2/images/green.png used on input line 269.
 (pdftex.def)             Requested size: 264.61333pt x 176.0534pt.
-
-Overfull \hbox (10.80843pt too wide) detected at line 262
+ [62]
+Overfull \hbox (10.80843pt too wide) detected at line 286
 [] [][] \FML/futm/m/it/12 G\T1/futs/m/n/12 (\FML/futm/m/it/12 S; M\T1/futs/m/n/
 12 )\FML/futm/m/it/12 f\T1/futs/m/n/12 (\FML/futm/m/it/12 M\T1/futs/m/n/12 )\FM
 L/futm/m/it/12 dV \FMS/futm/m/n/12 ^^@ [][] \FML/futm/m/it/12 p\T1/futs/m/n/12 
@@ -2995,249 +3046,266 @@ L/futm/m/it/12 p\T1/futs/m/n/12 (\FML/futm/m/it/12 M\T1/futs/m/n/12 ) \FMS/futm
  []
 
 
-Overfull \hbox (14.15672pt too wide) in paragraph at lines 265--266
+Overfull \hbox (14.15672pt too wide) in paragraph at lines 289--290
 \T1/futs/m/n/12 à-dire le champ rayonné si l'en-semble de sources f(M) était se
 ul en mi-lieu in-fini. La deuxième
  []
 
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+[63 <./Part2/images/green.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-[63 <./Part2/images/green.png>]
-<Part2/images/geometrique.png, id=668, 654.445pt x 440.64626pt>
+<Part2/images/geometrique.png, id=660, 654.445pt x 440.64626pt>
 File: Part2/images/geometrique.png Graphic file (type png)
 
 <use Part2/images/geometrique.png>
-Package pdftex.def Info: Part2/images/geometrique.png used on input line 316.
+Package pdftex.def Info: Part2/images/geometrique.png used on input line 340.
 (pdftex.def)             Requested size: 352.81552pt x 237.55545pt.
- [64 <./Part2/images/geometrique.png>]
-<Part2/images/constellations.png, id=687, 656.4525pt x 529.98pt>
+
+Overfull \hbox (3.15332pt too wide) in paragraph at lines 345--346
+\T1/futs/m/n/12 dans les lo-gi-ciels d'acous-tique de salle. Cette ap-proche su
+p-pose que l'éner-gie so-nore émise
+ []
+
+[64 <./Part2/images/geometrique.png>]
+Overfull \hbox (0.60938pt too wide) in paragraph at lines 350--352
+\T1/futs/m/n/12 son ap-proche spa-tia-li-sée des ré-flexions so-nores. Cette mé
+-thode est fon-dée sur la construc-
+ []
+
+<Part2/images/constellations.png, id=688, 656.4525pt x 529.98pt>
 File: Part2/images/constellations.png Graphic file (type png)
 
 <use Part2/images/constellations.png>
-Package pdftex.def Info: Part2/images/constellations.png used on input line 331
+Package pdftex.def Info: Part2/images/constellations.png used on input line 355
 .
 (pdftex.def)             Requested size: 441.01773pt x 356.05516pt.
- [65 <./Part2/images/constellations.png>]
-[66
-
-]
+ [65] [66 <./Part2/images/constellations.png>]
 Chapitre 5.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc10) [67]
+(./Main.mtc10) [67
 
-LaTeX Warning: Reference `' on page 68 undefined on input line 382.
-
-<Part2/images/BEM.png, id=726, 531.48563pt x 112.42pt>
+] [68]
+<Part2/images/BEM.png, id=738, 531.48563pt x 112.42pt>
 File: Part2/images/BEM.png Graphic file (type png)
 
 <use Part2/images/BEM.png>
-Package pdftex.def Info: Part2/images/BEM.png used on input line 386.
+Package pdftex.def Info: Part2/images/BEM.png used on input line 410.
 (pdftex.def)             Requested size: 441.01773pt x 93.28627pt.
- [68]
-Overfull \hbox (9.94527pt too wide) in paragraph at lines 395--396
+
+Overfull \hbox (9.94527pt too wide) in paragraph at lines 419--420
 \T1/futs/m/n/12 toutes les di-rec-tions de l'es-pace. No-tons tout de même qu'i
 l se-rait pos-sible d'uti-li-ser d'autres
  []
 
-<Part2/images/schema_propagation.png, id=741, 318.18875pt x 218.8175pt>
+<Part2/images/schema_propagation.png, id=745, 318.18875pt x 218.8175pt>
 File: Part2/images/schema_propagation.png Graphic file (type png)
 
 <use Part2/images/schema_propagation.png>
 Package pdftex.def Info: Part2/images/schema_propagation.png used on input line
- 399.
+ 423.
 (pdftex.def)             Requested size: 242.5611pt x 166.80719pt.
 
-<Part2/images/angle_solide.png, id=742, 441.65pt x 441.65pt>
+<Part2/images/angle_solide.png, id=746, 441.65pt x 441.65pt>
 File: Part2/images/angle_solide.png Graphic file (type png)
 
 <use Part2/images/angle_solide.png>
-Package pdftex.def Info: Part2/images/angle_solide.png used on input line 405.
+Package pdftex.def Info: Part2/images/angle_solide.png used on input line 429.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
  [69 <./Part2/images/BEM.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 420--422
+Underfull \hbox (badness 10000) in paragraph at lines 444--448
 
  []
 
-<Part2/images/schema_rayon.png, id=759, 313.17pt x 199.74625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--458
+
+ []
+
+<Part2/images/schema_rayon.png, id=764, 372.39125pt x 226.8475pt>
 File: Part2/images/schema_rayon.png Graphic file (type png)
 
 <use Part2/images/schema_rayon.png>
-Package pdftex.def Info: Part2/images/schema_rayon.png used on input line 428.
-(pdftex.def)             Requested size: 352.81552pt x 225.0401pt.
+Package pdftex.def Info: Part2/images/schema_rayon.png used on input line 464.
+(pdftex.def)             Requested size: 308.71106pt x 188.06184pt.
+ [70 <./Part2/images/schema_propagation.png> <./Part2/images/angle_solide.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
-
- []
-
-[70 <./Part2/images/schema_propagation.png> <./Part2/images/angle_solide.png>]
-[71 <./Part2/images/schema_rayon.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
 
  []
 
-<Part2/images/normales.png, id=794, 1279.78125pt x 751.80875pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71 <./Part2/images/schema_rayon.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+[72] <Part2/images/normales.png, id=808, 1279.78125pt x 751.80875pt>
 File: Part2/images/normales.png Graphic file (type png)
 
 <use Part2/images/normales.png>
-Package pdftex.def Info: Part2/images/normales.png used on input line 526.
+Package pdftex.def Info: Part2/images/normales.png used on input line 562.
 (pdftex.def)             Requested size: 352.81552pt x 207.25853pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 536.
+(Font)              scaled to size 9.19998pt on input line 572.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 536.
+(Font)              scaled to size 6.99199pt on input line 572.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 536.
+(Font)              scaled to size 9.19998pt on input line 572.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 536.
+(Font)              scaled to size 6.99199pt on input line 572.
 
-Underfull \hbox (badness 7379) in paragraph at lines 538--538
+Underfull \hbox (badness 7379) in paragraph at lines 574--574
 []|\T1/futs/m/n/10 Nom du ma-té-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--545
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 []|\T1/futs/m/n/10 Concrete block,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--547
+Underfull \hbox (badness 10000) in paragraph at lines 583--583
 []|\T1/futs/m/n/10 Hollow woo-den
  []
 
-[72] [73 <./Part2/images/normales.png>]
-<Part2/images/boiteenglobante.png, id=817, 735.74875pt x 664.4825pt>
+<Part2/images/boiteenglobante.png, id=815, 735.74875pt x 664.4825pt>
 File: Part2/images/boiteenglobante.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante.png>
-Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 56
-4.
+Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 60
+0.
 (pdftex.def)             Requested size: 242.5611pt x 219.06697pt.
 
-<Part2/images/boiteenglobante2.png, id=818, 551.05875pt x 792.9625pt>
+<Part2/images/boiteenglobante2.png, id=816, 551.05875pt x 792.9625pt>
 File: Part2/images/boiteenglobante2.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante2.png>
-Package pdftex.def Info: Part2/images/boiteenglobante2.png used on input line 5
-70.
+Package pdftex.def Info: Part2/images/boiteenglobante2.png used on input line 6
+06.
 (pdftex.def)             Requested size: 154.35889pt x 222.11267pt.
-
-<Part2/images/DiagRay.png, id=820, 510.90875pt x 596.2275pt>
-File: Part2/images/DiagRay.png Graphic file (type png)
-
-<use Part2/images/DiagRay.png>
-Package pdftex.def Info: Part2/images/DiagRay.png used on input line 585.
-(pdftex.def)             Requested size: 308.71106pt x 360.25932pt.
- [74pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
-.114}) has been already used, duplicate ignored
+ [73pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
+.117}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.591 
-       <./Part2/images/boiteenglobante.png> <./Part2/images/boiteenglobante2.pn
-g>] [75 <./Part2/images/DiagRay.png>]
-<Part2/images/icosphere.png, id=834, 817.0525pt x 759.83875pt>
+l.611 \end{figureth}
+                     <./Part2/images/normales.png>]
+<Part2/images/DiagRay.png, id=828, 510.90875pt x 596.2275pt>
+File: Part2/images/DiagRay.png Graphic file (type png)
+
+<use Part2/images/DiagRay.png>
+Package pdftex.def Info: Part2/images/DiagRay.png used on input line 621.
+(pdftex.def)             Requested size: 308.71106pt x 360.25932pt.
+ [74 <./Part2/images/boiteenglobante.png> <./Part2/images/boiteenglobante2.png>
+] [75 <./Part2/images/DiagRay.png>]
+<Part2/images/icosphere.png, id=844, 817.0525pt x 759.83875pt>
 File: Part2/images/icosphere.png Graphic file (type png)
 
 <use Part2/images/icosphere.png>
-Package pdftex.def Info: Part2/images/icosphere.png used on input line 596.
+Package pdftex.def Info: Part2/images/icosphere.png used on input line 632.
 (pdftex.def)             Requested size: 198.45662pt x 184.55632pt.
 
-<Part2/images/fibonacci.png, id=835, 175.65625pt x 166.6225pt>
+<Part2/images/fibonacci.png, id=845, 175.65625pt x 166.6225pt>
 File: Part2/images/fibonacci.png Graphic file (type png)
 
 <use Part2/images/fibonacci.png>
-Package pdftex.def Info: Part2/images/fibonacci.png used on input line 602.
+Package pdftex.def Info: Part2/images/fibonacci.png used on input line 638.
 (pdftex.def)             Requested size: 198.45662pt x 188.26596pt.
  [76 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--647
+Underfull \hbox (badness 10000) in paragraph at lines 681--683
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--656
+Underfull \hbox (badness 10000) in paragraph at lines 690--692
 
  []
 
 [77]
-Underfull \hbox (badness 10000) in paragraph at lines 702--706
+Underfull \hbox (badness 10000) in paragraph at lines 738--742
 
  []
 
-[78] <Part2/images/rayRefl.png, id=914, 458.71375pt x 355.3275pt>
+[78] <Part2/images/rayRefl.png, id=923, 458.71375pt x 355.3275pt>
 File: Part2/images/rayRefl.png Graphic file (type png)
 
 <use Part2/images/rayRefl.png>
-Package pdftex.def Info: Part2/images/rayRefl.png used on input line 747.
+Package pdftex.def Info: Part2/images/rayRefl.png used on input line 783.
 (pdftex.def)             Requested size: 264.61333pt x 204.98402pt.
 
-Overfull \hbox (1.10966pt too wide) in paragraph at lines 754--755
+Overfull \hbox (1.10966pt too wide) in paragraph at lines 790--791
 \T1/futs/m/n/12 des pro-blèmes d'ar-rondi qui peuvent faire fuir des rayons (c'
 est à dire qu'ils ne ren-contrent
  []
 
-<Part2/images/DiagSi.png, id=916, 491.8375pt x 681.54625pt>
+<Part2/images/DiagSi.png, id=925, 491.8375pt x 681.54625pt>
 File: Part2/images/DiagSi.png Graphic file (type png)
 
 <use Part2/images/DiagSi.png>
-Package pdftex.def Info: Part2/images/DiagSi.png used on input line 759.
+Package pdftex.def Info: Part2/images/DiagSi.png used on input line 795.
 (pdftex.def)             Requested size: 308.71106pt x 427.79568pt.
 
-<Part2/images/touche.png, id=917, 647.41875pt x 423.5825pt>
+<Part2/images/touche.png, id=926, 647.41875pt x 423.5825pt>
 File: Part2/images/touche.png Graphic file (type png)
 
 <use Part2/images/touche.png>
-Package pdftex.def Info: Part2/images/touche.png used on input line 766.
+Package pdftex.def Info: Part2/images/touche.png used on input line 802.
 (pdftex.def)             Requested size: 242.5611pt x 158.70085pt.
 
-<Part2/images/schema_SI.png, id=918, 189.20688pt x 207.27437pt>
+<Part2/images/schema_SI.png, id=927, 189.20688pt x 207.27437pt>
 File: Part2/images/schema_SI.png Graphic file (type png)
 
 <use Part2/images/schema_SI.png>
-Package pdftex.def Info: Part2/images/schema_SI.png used on input line 772.
+Package pdftex.def Info: Part2/images/schema_SI.png used on input line 808.
 (pdftex.def)             Requested size: 154.35889pt x 169.09947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 784--788
+Underfull \hbox (badness 10000) in paragraph at lines 820--824
 
  []
 
 [79 <./Part2/images/rayRefl.png>] [80 <./Part2/images/DiagSi.png> <./Part2/imag
 es/touche.png> <./Part2/images/schema_SI.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 795--797
+Underfull \hbox (badness 10000) in paragraph at lines 831--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
+Underfull \hbox (badness 10000) in paragraph at lines 840--842
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--826
+Underfull \hbox (badness 10000) in paragraph at lines 857--862
+
+ []
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 882--886
 
  []
 
 
-Overfull \hbox (3.16241pt too wide) in paragraph at lines 841--842
-\T1/futs/m/n/12 ment, pour une fré-quence stan-dard de 44100Hz chaque échan-til
-lons conca-tè-nera les éner-
+Underfull \hbox (badness 10000) in paragraph at lines 893--896
+
  []
 
-[81] <Part2/images/rir.png, id=948, 662.475pt x 313.17pt>
+<Part2/images/rir.png, id=957, 662.475pt x 313.17pt>
 File: Part2/images/rir.png Graphic file (type png)
 
 <use Part2/images/rir.png>
-Package pdftex.def Info: Part2/images/rir.png used on input line 844.
+Package pdftex.def Info: Part2/images/rir.png used on input line 901.
 (pdftex.def)             Requested size: 396.91325pt x 187.63106pt.
  [82 <./Part2/images/rir.png>]
 Chapitre 6.
@@ -3248,228 +3316,286 @@ Chapitre 6.
 (./Main.mtc11) [83
 
 ]
-<Part2/images/complexite0.png, id=980, 893.3375pt x 303.1325pt>
+<Part2/images/complexite00.png, id=989, 681.54625pt x 400.49625pt>
+File: Part2/images/complexite00.png Graphic file (type png)
+
+<use Part2/images/complexite00.png>
+Package pdftex.def Info: Part2/images/complexite00.png used on input line 932.
+(pdftex.def)             Requested size: 352.81552pt x 207.32425pt.
+
+<Part2/images/complexite0.png, id=991, 820.06375pt x 287.0725pt>
 File: Part2/images/complexite0.png Graphic file (type png)
 
 <use Part2/images/complexite0.png>
-Package pdftex.def Info: Part2/images/complexite0.png used on input line 865.
-(pdftex.def)             Requested size: 441.01773pt x 149.65094pt.
- [84 <./Part2/images/complexite0.png>]
-<Part2/images/octree.png, id=991, 1204.5pt x 691.58376pt>
+Package pdftex.def Info: Part2/images/complexite0.png used on input line 946.
+(pdftex.def)             Requested size: 441.01773pt x 154.38606pt.
+ [84 <./Part2/images/complexite00.png>]
+<Part2/images/octree.png, id=1004, 1204.5pt x 691.58376pt>
 File: Part2/images/octree.png Graphic file (type png)
 
 <use Part2/images/octree.png>
-Package pdftex.def Info: Part2/images/octree.png used on input line 888.
+Package pdftex.def Info: Part2/images/octree.png used on input line 966.
 (pdftex.def)             Requested size: 264.61333pt x 151.92728pt.
-
-<Part2/images/octreeSuzanne.png, id=1002, 552.0625pt x 469.755pt>
+ [85 <./Part2/images/complexite0.png>]
+<Part2/images/octreeSuzanne.png, id=1021, 552.0625pt x 469.755pt>
 File: Part2/images/octreeSuzanne.png Graphic file (type png)
 
 <use Part2/images/octreeSuzanne.png>
-Package pdftex.def Info: Part2/images/octreeSuzanne.png used on input line 896.
+Package pdftex.def Info: Part2/images/octreeSuzanne.png used on input line 976.
 
 (pdftex.def)             Requested size: 264.61333pt x 225.17162pt.
-
-<Part2/images/DiagOctree.jpg, id=1006, 990.70125pt x 922.44624pt>
+ [86 <./Part2/images/octree.png> <./Part2/images/octreeSuzanne.png>]
+<Part2/images/DiagOctree.jpg, id=1038, 990.70125pt x 922.44624pt>
 File: Part2/images/DiagOctree.jpg Graphic file (type jpg)
 
 <use Part2/images/DiagOctree.jpg>
-Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 908.
+Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 1032.
 (pdftex.def)             Requested size: 308.71106pt x 287.43329pt.
- [85 <./Part2/images/octree.png>] [86 <./Part2/images/octreeSuzanne.png> <./Par
-t2/images/DiagOctree.jpg>]
-<Part2/images/AABB.png, id=1030, 367.87437pt x 297.61188pt>
+ [87] [88 <./Part2/images/DiagOctree.jpg>]
+<Part2/images/AABB.png, id=1064, 367.87437pt x 297.61188pt>
 File: Part2/images/AABB.png Graphic file (type png)
 
 <use Part2/images/AABB.png>
-Package pdftex.def Info: Part2/images/AABB.png used on input line 942.
+Package pdftex.def Info: Part2/images/AABB.png used on input line 1066.
 (pdftex.def)             Requested size: 198.45662pt x 160.55815pt.
 
-<Part2/images/AABB2.png, id=1031, 366.36874pt x 298.11375pt>
+<Part2/images/AABB2.png, id=1065, 366.36874pt x 298.11375pt>
 File: Part2/images/AABB2.png Graphic file (type png)
 
 <use Part2/images/AABB2.png>
-Package pdftex.def Info: Part2/images/AABB2.png used on input line 948.
+Package pdftex.def Info: Part2/images/AABB2.png used on input line 1072.
 (pdftex.def)             Requested size: 198.45662pt x 161.48395pt.
- [87]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 973.
+Underfull \vbox (badness 8151) has occurred while \output is active []
 
+ [89 <./Part2/images/AABB.png> <./Part2/images/AABB2.png>]
+<Part2/images/complexite.png, id=1093, 794.97pt x 390.45876pt>
+File: Part2/images/complexite.png Graphic file (type png)
 
-Overfull \hbox (3.27856pt too wide) in paragraph at lines 975--976
-[]\T1/futs/m/n/12 L'étape de créa-tion de l'[][][]octree[][] n'est pas cri-tiqu
-e car cette opé-ra-tion ne s'ef-fec-tue qu'une
+<use Part2/images/complexite.png>
+Package pdftex.def Info: Part2/images/complexite.png used on input line 1116.
+(pdftex.def)             Requested size: 396.91325pt x 194.95482pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+[]|\T1/futs/m/n/10 Nombre de
  []
 
-[88 <./Part2/images/AABB.png> <./Part2/images/AABB2.png>]
-<Part2/images/tempsOctree.png, id=1067, 457.71pt x 403.5075pt>
-File: Part2/images/tempsOctree.png Graphic file (type png)
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1185.
 
-<use Part2/images/tempsOctree.png>
-Package pdftex.def Info: Part2/images/tempsOctree.png used on input line 978.
-(pdftex.def)             Requested size: 176.40439pt x 155.51402pt.
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+[]|\T1/futs/m/n/10 Temps \T1/futs/b/n/10 sans
+ []
 
-<Part2/images/complexiteBis.png, id=1071, 904.37875pt x 355.3275pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+[]|\T1/futs/m/n/10 Temps \T1/futs/b/n/10 avec
+ []
+
+
+Overfull \hbox (9.85986pt too wide) in paragraph at lines 1183--1209
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
+[]|\T1/futs/m/n/10 Nombre de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
+[]|\T1/futs/m/n/10 Temps \T1/futs/b/n/10 sans
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
+[]|\T1/futs/m/n/10 Temps \T1/futs/b/n/10 avec
+ []
+
+
+Overfull \hbox (9.85986pt too wide) in paragraph at lines 1214--1234
+[][] 
+ []
+
+<Part2/images/complexiteBis.png, id=1107, 830.10126pt x 342.27875pt>
 File: Part2/images/complexiteBis.png Graphic file (type png)
 
 <use Part2/images/complexiteBis.png>
-Package pdftex.def Info: Part2/images/complexiteBis.png used on input line 1008
+Package pdftex.def Info: Part2/images/complexiteBis.png used on input line 1242
 .
-(pdftex.def)             Requested size: 441.01773pt x 173.27159pt.
- [89 <./Part2/images/tempsOctree.png> <./Part2/images/complexiteBis.png>] [90
-
-]
+(pdftex.def)             Requested size: 441.01773pt x 181.84557pt.
+ [90] [91 <./Part2/images/complexite.png>]
+[92 <./Part2/images/complexiteBis.png>]
 Chapitre 7.
 \openout3 = `Main.mtc'.
 
 \openout3 = `Main.mtc'.
 
-(./Main.mtc12) [91]
-<Part2/images/test0.png, id=1098, 648.4225pt x 621.32124pt>
+(./Main.mtc12) [93
+
+]
+<Part2/images/test0.png, id=1142, 648.4225pt x 621.32124pt>
 File: Part2/images/test0.png Graphic file (type png)
 
 <use Part2/images/test0.png>
-Package pdftex.def Info: Part2/images/test0.png used on input line 1037.
+Package pdftex.def Info: Part2/images/test0.png used on input line 1269.
 (pdftex.def)             Requested size: 198.45662pt x 190.1616pt.
 
-<Part2/images/test0bis.png, id=1099, 553.06625pt x 414.54875pt>
+<Part2/images/test0bis.png, id=1143, 553.06625pt x 414.54875pt>
 File: Part2/images/test0bis.png Graphic file (type png)
 
 <use Part2/images/test0bis.png>
-Package pdftex.def Info: Part2/images/test0bis.png used on input line 1043.
+Package pdftex.def Info: Part2/images/test0bis.png used on input line 1275.
 (pdftex.def)             Requested size: 198.45662pt x 148.75037pt.
 
-<Part2/images/testBeam.png, id=1100, 691.58376pt x 479.7925pt>
+<Part2/images/testBeam.png, id=1144, 691.58376pt x 479.7925pt>
 File: Part2/images/testBeam.png Graphic file (type png)
 
 <use Part2/images/testBeam.png>
-Package pdftex.def Info: Part2/images/testBeam.png used on input line 1053.
+Package pdftex.def Info: Part2/images/testBeam.png used on input line 1285.
 (pdftex.def)             Requested size: 198.45662pt x 137.67937pt.
 
-<Part2/images/testBeam2.png, id=1101, 582.175pt x 569.12625pt>
+<Part2/images/testBeam2.png, id=1145, 582.175pt x 569.12625pt>
 File: Part2/images/testBeam2.png Graphic file (type png)
 
 <use Part2/images/testBeam2.png>
-Package pdftex.def Info: Part2/images/testBeam2.png used on input line 1059.
+Package pdftex.def Info: Part2/images/testBeam2.png used on input line 1291.
 (pdftex.def)             Requested size: 198.45662pt x 194.00404pt.
 
-Underfull \hbox (badness 7649) in paragraph at lines 1060--1060
+Underfull \hbox (badness 7649) in paragraph at lines 1292--1292
 []\T1/futs/m/n/10.95 (b) |Pro-pa-ga-tion des rayons de-puis les
  []
 
-[92 <./Part2/images/test0.png> <./Part2/images/test0bis.png>]
-<Part2/images/test1.png, id=1110, 669.50125pt x 422.57875pt>
+[94 <./Part2/images/test0.png> <./Part2/images/test0bis.png>]
+<Part2/images/test1.png, id=1154, 669.50125pt x 422.57875pt>
 File: Part2/images/test1.png Graphic file (type png)
 
 <use Part2/images/test1.png>
-Package pdftex.def Info: Part2/images/test1.png used on input line 1077.
+Package pdftex.def Info: Part2/images/test1.png used on input line 1309.
 (pdftex.def)             Requested size: 352.81552pt x 222.70186pt.
- [93 <./Part2/images/testBeam.png> <./Part2/images/testBeam2.png>] <Part2/image
-s/test2RIR.png, id=1122, 414.54875pt x 309.155pt>
+ [95 <./Part2/images/testBeam.png> <./Part2/images/testBeam2.png>] <Part2/image
+s/test2RIR.png, id=1166, 414.54875pt x 309.155pt>
 File: Part2/images/test2RIR.png Graphic file (type png)
 
 <use Part2/images/test2RIR.png>
-Package pdftex.def Info: Part2/images/test2RIR.png used on input line 1091.
+Package pdftex.def Info: Part2/images/test2RIR.png used on input line 1323.
 (pdftex.def)             Requested size: 198.45662pt x 148.00116pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1092--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1324
 []\T1/futs/m/n/10.95 (a) |Ré-ponse im-pul-sion-nelle dans une
  []
 
-<Part2/images/test2SI.png, id=1123, 1001.7425pt x 880.28876pt>
+<Part2/images/test2SI.png, id=1167, 1001.7425pt x 880.28876pt>
 File: Part2/images/test2SI.png Graphic file (type png)
 
 <use Part2/images/test2SI.png>
-Package pdftex.def Info: Part2/images/test2SI.png used on input line 1097.
+Package pdftex.def Info: Part2/images/test2SI.png used on input line 1329.
 (pdftex.def)             Requested size: 198.45662pt x 174.38905pt.
 
-<Part2/images/test2absair.png, id=1125, 830.10126pt x 307.1475pt>
+<Part2/images/test2absair.png, id=1169, 830.10126pt x 307.1475pt>
 File: Part2/images/test2absair.png Graphic file (type png)
 
 <use Part2/images/test2absair.png>
-Package pdftex.def Info: Part2/images/test2absair.png used on input line 1108.
+Package pdftex.def Info: Part2/images/test2absair.png used on input line 1340.
 (pdftex.def)             Requested size: 441.01773pt x 163.18108pt.
- [94 <./Part2/images/test1.png> <./Part2/images/test2RIR.png> <./Part2/images/t
+ [96 <./Part2/images/test1.png> <./Part2/images/test2RIR.png> <./Part2/images/t
 est2SI.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1366
 
  []
 
-<Part2/images/test3.png, id=1138, 455.7025pt x 170.6375pt>
+<Part2/images/test3.png, id=1182, 455.7025pt x 170.6375pt>
 File: Part2/images/test3.png Graphic file (type png)
 
 <use Part2/images/test3.png>
-Package pdftex.def Info: Part2/images/test3.png used on input line 1148.
+Package pdftex.def Info: Part2/images/test3.png used on input line 1380.
 (pdftex.def)             Requested size: 352.81552pt x 132.1151pt.
 
-<Part2/images/test3bis.png, id=1139, 697.60625pt x 312.16624pt>
+<Part2/images/test3bis.png, id=1183, 697.60625pt x 312.16624pt>
 File: Part2/images/test3bis.png Graphic file (type png)
 
 <use Part2/images/test3bis.png>
-Package pdftex.def Info: Part2/images/test3bis.png used on input line 1154.
+Package pdftex.def Info: Part2/images/test3bis.png used on input line 1386.
 (pdftex.def)             Requested size: 352.81552pt x 157.87848pt.
- [95 <./Part2/images/test2absair.png>] [96 <./Part2/images/test3.png> <./Part2/
+ [97 <./Part2/images/test2absair.png>] [98 <./Part2/images/test3.png> <./Part2/
 images/test3bis.png>]
-<Part2/images/add-on.png, id=1165, 828.09375pt x 459.7175pt>
+<Part2/images/add-on.png, id=1209, 828.09375pt x 459.7175pt>
 File: Part2/images/add-on.png Graphic file (type png)
 
 <use Part2/images/add-on.png>
-Package pdftex.def Info: Part2/images/add-on.png used on input line 1171.
+Package pdftex.def Info: Part2/images/add-on.png used on input line 1403.
 (pdftex.def)             Requested size: 441.01773pt x 244.8346pt.
+ [99 <./Part2/images/add-on.png>] [100
 
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1186
+]
+Chapitre 8.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc13
+Overfull \hbox (1.98195pt too wide) detected at line 1
+ []\T1/futs/b/n/10.95 102
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 2
+ []\T1/futs/b/n/10.95 103
+ []
+
+) [101]
+Underfull \hbox (badness 10000) in paragraph at lines 1422--1425
 
  []
 
-[97 <./Part2/images/add-on.png>]
-<Part2/images/DiagTdS.png, id=1185, 840.13875pt x 499.8675pt>
+<Part2/images/DiagTdS.png, id=1236, 840.13875pt x 499.8675pt>
 File: Part2/images/DiagTdS.png Graphic file (type png)
 
 <use Part2/images/DiagTdS.png>
-Package pdftex.def Info: Part2/images/DiagTdS.png used on input line 1192.
+Package pdftex.def Info: Part2/images/DiagTdS.png used on input line 1431.
 (pdftex.def)             Requested size: 441.01773pt x 262.39622pt.
-
-<Part2/images/filtres.png, id=1191, 661.47125pt x 444.66125pt>
+ [102 <./Part2/images/DiagTdS.png>]
+<Part2/images/filtres.png, id=1255, 661.47125pt x 444.66125pt>
 File: Part2/images/filtres.png Graphic file (type png)
 
 <use Part2/images/filtres.png>
-Package pdftex.def Info: Part2/images/filtres.png used on input line 1200.
+Package pdftex.def Info: Part2/images/filtres.png used on input line 1439.
 (pdftex.def)             Requested size: 396.91325pt x 266.81236pt.
- [98 <./Part2/images/DiagTdS.png>] [99 <./Part2/images/filtres.png>] [100
+ [103 <./Part2/images/filtres.png>] [104
 
 ]
-Overfull \hbox (14.58931pt too wide) in paragraph at lines 1212--1213
+Overfull \hbox (14.58931pt too wide) in paragraph at lines 1452--1453
 \T1/futs/m/n/12 ce qui est sou-vent li-mi-tant dans ce genre d'étude. L'im-plé-
 men-ta-tion d'une [][][]In-ter-face Homme-
  []
 
-<Part2/images/synopsis.jpg, id=1213, 1603.9925pt x 2389.92876pt>
+<Part2/images/synopsis.jpg, id=1268, 1603.9925pt x 2389.92876pt>
 File: Part2/images/synopsis.jpg Graphic file (type jpg)
 
 <use Part2/images/synopsis.jpg>
-Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 1216.
+Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 1456.
 (pdftex.def)             Requested size: 441.01773pt x 657.10481pt.
 
-Overfull \hbox (18.09854pt too wide) in paragraph at lines 1223--1224
+Overfull \hbox (18.09854pt too wide) in paragraph at lines 1463--1464
 []\T1/futs/m/n/12 De nom-breuses pos-si-bi-li-tés d'amé-lio-ra-tions res-tent à
  l'étude comme par exemple l'écoute
  []
 
-[101] [102 <./Part2/images/synopsis.jpg>] [103] (./Part2.bbl (./Main.brf)
+[105] [106 <./Part2/images/synopsis.jpg>] [107] (./Part2.bbl (./Main.brf)
 \tf@brf=\write13
 \openout13 = `Main.brf'.
 
 
-[104
+[108
 
 ] (./francaisbst.tex)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 97.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 104.
+
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [105])) [106]
-[114
+) [109])) [110]
+[120
 
 
 
@@ -3479,22 +3605,24 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 
  (./Annexes/Annexes.tex
 Annexe A.
-<Annexes/images/DiagRay2.png, id=1288, 501.875pt x 671.50874pt>
+<Annexes/images/DiagRay2.png, id=1345, 501.875pt x 671.50874pt>
 File: Annexes/images/DiagRay2.png Graphic file (type png)
 
 <use Annexes/images/DiagRay2.png>
 Package pdftex.def Info: Annexes/images/DiagRay2.png used on input line 72.
 (pdftex.def)             Requested size: 308.71106pt x 413.07277pt.
-
+ (./Annexes.bbl (./Main.brf)
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
  [1
 
 
 
- <./Annexes/images/DiagRay2.png>] (./Annexes.bbl (./Main.brf) [2] (./francaisbs
-t.tex)))
-[3
+ <./Annexes/images/DiagRay2.png>] [2] (./francaisbst.tex)
+
+Package natbib Warning: Empty `thebibliography' environment on input line 19.
+
+)) [3
 
 ] (./Main.acr [4
 
@@ -3508,22 +3636,22 @@ Annexe B.
 ]
 Annexe C.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <12> not available
-(Font)              Font shape `T1/futs/b/sc' tried instead on input line 31.
-<glossaire/basiliques.jpg, id=1351, 1284.8pt x 702.625pt>
+(Font)              Font shape `T1/futs/b/sc' tried instead on input line 30.
+<glossaire/basiliques.jpg, id=1408, 1284.8pt x 702.625pt>
 File: glossaire/basiliques.jpg Graphic file (type jpg)
 
 <use glossaire/basiliques.jpg>
-Package pdftex.def Info: glossaire/basiliques.jpg used on input line 38.
+Package pdftex.def Info: glossaire/basiliques.jpg used on input line 37.
 (pdftex.def)             Requested size: 411.64304pt x 225.11261pt.
  [7
 
  <./glossaire/basiliques.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 
  []
 
@@ -3541,62 +3669,62 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: F338CC2F1FA59369331BEC55CB64F429;1869.
+(rerunfilecheck)             Checksum: 5CA10A8FFEDC57083BA0C769268FAFC3;1844.
 Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 3D6976DACE092576B262501DBB0C573C;5971.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 1FB1A9D6642239EB88BF775ED6C43C94;6123.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 53082 strings out of 493014
- 1140512 string characters out of 6133351
- 1395472 words of memory out of 5000000
- 54895 multiletter control sequences out of 15000+600000
- 186266 words of font info for 178 fonts, out of 8000000 for 9000
+ 53205 strings out of 493014
+ 1142362 string characters out of 6133351
+ 1406567 words of memory out of 5000000
+ 54994 multiletter control sequences out of 15000+600000
+ 190796 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,22n,87p,10450b,1390s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.XV} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.116} has been referenced but does not e
+xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{page.XVI} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{glo:RMS} has been referenced but does not exist, re
+placed by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.113} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{glo:spl} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.65} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter*.69} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.64} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter*.68} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.1} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{section.8.4} has been referenced but does not exist
-, replaced by a fixed one
-
 pdfTeX warning (dest): name{section.8.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.63} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter*.67} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{part.3} has been referenced but does not exist, rep
@@ -3606,9 +3734,6 @@ pdfTeX warning (dest): name{chapter*.27} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{chapter*.26} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
@@ -3625,9 +3750,6 @@ pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
 
 pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
 replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.11} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.2.10} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3662,9 +3784,6 @@ pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
-, replaced by a fixed one
-
 pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -3696,10 +3815,10 @@ ive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (74 pages, 5302612 bytes).
+Output written on Main.pdf (76 pages, 5434128 bytes).
 PDF statistics:
- 1551 PDF objects out of 1728 (max. 8388607)
- 1352 compressed objects within 14 object streams
- 396 named destinations out of 1000 (max. 500000)
- 467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1608 PDF objects out of 1728 (max. 8388607)
+ 1404 compressed objects within 15 object streams
+ 412 named destinations out of 1000 (max. 500000)
+ 464 words of extra memory for PDF output out of 10000 (max. 10000000)
 

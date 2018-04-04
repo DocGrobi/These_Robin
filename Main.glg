@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 14.03.2018  15:23:51
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/qtGSp0_bHM", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/L5ECvbT3wk", Output: "Main.gls"
+;; at 29.03.2018  11:55:54
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/3PV8Egg9oF", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/msJE0g2bG8", Output: "Main.gls"
 
 
 Building indexentry-tree:
@@ -50,10 +50,10 @@ Letter-group: "Ã†ÚË——" -> "O"
 Letter-group: "¨Ë¨†¤´—Ú" -> "D"
 Letter-group: "¼—à»€¼¼" -> "N"
 Letter-group: "¨Ë€†" -> "D"
-Letter-group: "æ€å—œËÃ¼Ú Ã„¬" -> "W"
 Letter-group: "€»„à´€†Ë—" -> "A"
 Letter-group: "È€Ë€Ð†€—¼¨à»" -> "P"
 Letter-group: "¤íÈÃÐ†€—¼¨à»" -> "H"
+Letter-group: "æ€å—œËÃ¼Ú Ã„¬" -> "W"
 Letter-group: "æ€å—œËÃ¼Ú €à¨Ã œ¨´— œÃË»€Ú" -> "W"
 Letter-group: "ÈÃ¨à»" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -81,3 +81,4 @@ Letter-group: "å—´à»" -> "V"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "æ€å—œËÃ¼Ú €à¨Ã œ¨´— œÃË»€Ú" -> "W"
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)
+WARNING: location-reference "{}{I}" did match multiple location-classes! (taking first one)

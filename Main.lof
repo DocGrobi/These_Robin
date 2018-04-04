@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Courbes d'absorption de l'air en fonction de l'humidit\IeC {\'e} relative (\%)\relax }}{60}{figure.caption.8}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Sch\IeC {\'e}ma g\IeC {\'e}n\IeC {\'e}ral pour l'\IeC {\'e}tablissement de la repr\IeC {\'e}sentation de Green}}{63}{figure.caption.9}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Vu 2D de la propagation d'une onde sph\IeC {\'e}rique dans une salle rectangulaire\relax }}{64}{figure.caption.10}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diff\IeC {\'e}rentes constellations de salle : la densit\IeC {\'e} de sources reste constante}}{65}{figure.caption.11}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diff\IeC {\'e}rentes constellations de salle : la densit\IeC {\'e} de sources reste constante}}{66}{figure.caption.11}
 \addvspace {10\p@ }
 \contentsline {xchapter}{D\IeC {\'e}veloppement d'une m\IeC {\'e}thode coupl\IeC {\'e}e}{67}{chapter.5}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Comparaison d'un th\IeC {\'e}\IeC {\^a}tre simplifi\IeC {\'e} avec gradins coniques ou gradins cubiques par m\IeC {\'e}thode des \IeC {\'e}l\IeC {\'e}ments finis de fronti\IeC {\`e}re \IeC {\`a} 50Hz\relax }}{69}{figure.caption.12}
@@ -51,35 +51,38 @@
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Exemple de \gls {rir} pour un cube de 50m d'arr\IeC {\^e}te, une source et un r\IeC {\'e}cepteur de 20m de diam\IeC {\`e}tre situ\IeC {\'e}s au centre, un million de rayons et une fr\IeC {\'e}quence d'\IeC {\'e}chantillonnage de 44100Hz\relax }}{82}{figure.caption.23}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Optimisation algorithmique}{83}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Courbes de complexit\IeC {\'e} donnant le temps (s) d'une it\IeC {\'e}ration en \IeC {\'e}chelle logarithmique\relax }}{84}{figure.caption.24}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration du principe d'\gls {octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite)\relax }}{85}{figure.caption.25}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Suzanne tri\IeC {\'e}e dans un \gls {octree}\relax }}{86}{figure.caption.26}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation d'un arbre d'octree\relax }}{86}{figure.caption.27}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Illustrations de l'intersection Rayon/Boite en 2D\relax }}{88}{figure.caption.28}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Temps (s) de cr\IeC {\'e}ation de l'octree sur un cube pour des feuilles comprenant 5 \IeC {\'e}l\IeC {\'e}ments maximum en \IeC {\'e}chelle logarithmique\relax }}{89}{figure.caption.29}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Courbes de complexit\IeC {\'e} donnant le temps (s) avec et sans octree d'une it\IeC {\'e}ration en \IeC {\'e}chelle logarithmique\relax }}{89}{figure.caption.30}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Courbe de complexit\IeC {\'e} donnant le temps (s) d'une it\IeC {\'e}ration pour N=M en \IeC {\'e}chelle logarithmique\relax }}{84}{figure.caption.24}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Courbes de complexit\IeC {\'e} donnant le temps (s) d'une it\IeC {\'e}ration en \IeC {\'e}chelle logarithmique\relax }}{85}{figure.caption.25}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration du principe d'\gls {octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite)\relax }}{86}{figure.caption.26}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Suzanne tri\IeC {\'e}e dans un \gls {octree}\relax }}{86}{figure.caption.27}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation d'un arbre d'octree\relax }}{88}{figure.caption.28}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Illustrations de l'intersection Rayon/Boite en 2D\relax }}{89}{figure.caption.29}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Courbe de complexit\IeC {\'e} donnant le logarithme du temps (s) d'une it\IeC {\'e}ration pour N=M\relax }}{91}{figure.caption.30}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Courbes de complexit\IeC {\'e} donnant le temps (s) avec et sans octree d'une it\IeC {\'e}ration en \IeC {\'e}chelle logarithmique\relax }}{92}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{91}{chapter.7}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces R\IeC {\'e}ponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) \IeC {\'e}chantillonn\IeC {\'e}e \IeC {\`a} 100Hz et fonction $f(x)=\frac {2}{x^2}$ (rouge)\relax }}{94}{figure.caption.33}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces R\IeC {\'e}ponse impulsionnelle dans une sph\IeC {\`e}re de $20m$ de diam\IeC {\`e}tre, 100\% r\IeC {\'e}fl\IeC {\'e}chissante, pour 30 it\IeC {\'e}rations avec absorption de l'air\relax }}{95}{figure.caption.35}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Add-on Blender et assignation des mat\IeC {\'e}riaux\relax }}{97}{figure.caption.37}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Sch\IeC {\'e}ma du processus de convolution partitionn\IeC {\'e}e\relax }}{98}{figure.caption.38}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Filtres fr\IeC {\'e}quenciels passe-bande\relax }}{99}{figure.caption.39}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Synopsis de l'architecture logiciel d\IeC {\'e}velopp\IeC {\'e} pour le calcul d'acoustique de salle\relax }}{102}{figure.caption.41}
+\contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{93}{chapter.7}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces R\IeC {\'e}ponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) \IeC {\'e}chantillonn\IeC {\'e}e \IeC {\`a} 100Hz et fonction $f(x)=\frac {2}{x^2}$ (rouge)\relax }}{96}{figure.caption.36}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces R\IeC {\'e}ponse impulsionnelle dans une sph\IeC {\`e}re de $20m$ de diam\IeC {\`e}tre, 100\% r\IeC {\'e}fl\IeC {\'e}chissante, pour 30 it\IeC {\'e}rations avec absorption de l'air\relax }}{97}{figure.caption.38}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Add-on Blender et assignation des mat\IeC {\'e}riaux\relax }}{99}{figure.caption.40}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Traitement du signal}{101}{chapter.8}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Sch\IeC {\'e}ma du processus de convolution partitionn\IeC {\'e}e\relax }}{102}{figure.caption.41}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Filtres fr\IeC {\'e}quenciels passe-bande\relax }}{103}{figure.caption.42}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Synopsis de l'architecture logiciel d\IeC {\'e}velopp\IeC {\'e} pour le calcul d'acoustique de salle\relax }}{106}{figure.caption.44}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{103}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{109}{part.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Configuration initiale}{105}{chapter.7}
+\contentsline {xchapter}{Configuration initiale}{111}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Test de configurations}{107}{chapter.8}
+\contentsline {xchapter}{Test de configurations}{113}{chapter.9}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{109}{chapter.9}
+\contentsline {xchapter}{Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{115}{chapter.10}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Annexes}{I}{appendix.A}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons avec \gls {octree}\relax }}{I}{figure.caption.43}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons avec \gls {octree}\relax }}{I}{figure.caption.46}
 \gdef \the@ipfilectr {}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Liste des acronymes}{V}{appendix.B}

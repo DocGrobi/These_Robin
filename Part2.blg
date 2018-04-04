@@ -3,59 +3,62 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
+Warning--entry type for "acouphile" isn't style-file defined
+--line 20 of file Part2/Biblio.bib
 Warning--entry type for "aquaterra" isn't style-file defined
---line 57 of file Part2/Biblio.bib
+--line 85 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 101 of file Part2/Biblio.bib
+--line 129 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 191 of file Part2/Biblio.bib
+--line 219 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty year in acouphile
 Warning--empty year in aquaterra
 Warning--there's a number but no volume in beamtracing
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 25 entries,
+You've used 27 entries,
             3493 wiz_defined-function locations,
-            838 strings with 9128 characters,
-and the built_in function-call counts, 14197 in all, are:
-= -- 1166
-> -- 428
-< -- 41
-+ -- 179
-- -- 127
-* -- 1007
-:= -- 1938
-add.period$ -- 51
-call.type$ -- 25
-change.case$ -- 160
-chr.to.int$ -- 26
-cite$ -- 31
-duplicate$ -- 1363
-empty$ -- 1141
-format.name$ -- 169
-if$ -- 2803
+            845 strings with 9236 characters,
+and the built_in function-call counts, 14985 in all, are:
+= -- 1215
+> -- 450
+< -- 44
++ -- 187
+- -- 133
+* -- 1059
+:= -- 2063
+add.period$ -- 54
+call.type$ -- 27
+change.case$ -- 170
+chr.to.int$ -- 28
+cite$ -- 34
+duplicate$ -- 1434
+empty$ -- 1217
+format.name$ -- 177
+if$ -- 2955
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 185
-newline$ -- 93
-num.names$ -- 100
-pop$ -- 511
+missing$ -- 199
+newline$ -- 99
+num.names$ -- 108
+pop$ -- 551
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 152
 quote$ -- 0
-skip$ -- 618
+skip$ -- 647
 stack$ -- 0
-substring$ -- 470
-swap$ -- 817
-text.length$ -- 19
+substring$ -- 492
+swap$ -- 843
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 213
-warning$ -- 6
-while$ -- 88
+type$ -- 228
+warning$ -- 7
+while$ -- 94
 width$ -- 0
-write$ -- 277
-(There were 9 warnings)
+write$ -- 295
+(There were 11 warnings)

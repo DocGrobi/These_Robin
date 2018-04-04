@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{27}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,6 +15,9 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{acouphile.fr}()}]{acouphile}
+\textsc{acouphile.fr}.
 
 \bibitem[{\textsc{AquaTerra}()}]{aquaterra}
 \textsc{AquaTerra}. \enquote{Encyclop{\'e}die du gabion}, .
@@ -79,6 +82,10 @@
 \textsc{Keinert, B.}, \textsc{M.~Innmann}, \textsc{M.~Sanger} \bbland{}
   \textsc{M.~Stamminger}. 2015, \enquote{Spherical fibonacci mapping},
   \emph{ACM Transactions on Graphics}, \bblvol{}~34.
+
+\bibitem[{\textsc{Kulowski}(1985)}]{raytracing}
+\textsc{Kulowski, A.} 1985, \emph{Algorithmic representation of the ray tracing
+  technique}, \bblvol{}~18, Applied Acoustics.
 
 \bibitem[{\textsc{McGovern}(2009)}]{mcgovern}
 \textsc{McGovern, S.} 2009, \enquote{Fast image method for impulse response
