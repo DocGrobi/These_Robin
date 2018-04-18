@@ -44,11 +44,11 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Sch\IeC {\'e}ma d'un r\IeC {\'e}cepteur captant au moins un rayon.\relax }}{71}{figure.caption.14}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Repr\IeC {\'e}sentation d'un maillages surfacique \IeC {\`a} faces triangulaires compos\IeC {\'e} d'une salle et d'un obstacle et dont les normales (en bleu) sont orient\IeC {\'e}es vers l'int\IeC {\'e}rieur de la salle.\relax }}{73}{figure.caption.15}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration d'une boite englobant un maillage quelconque (Suzanne)\relax }}{74}{figure.caption.17}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons\relax }}{75}{figure.caption.18}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sph\IeC {\`e}res permettant l'\IeC {\'e}mission omnidirectionnelle de rayons\relax }}{76}{figure.caption.19}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Calcul d'un rayon r\IeC {\'e}fl\IeC {\'e}chi \IeC {\`a} partir d'un rayon incident et d'une normale\relax }}{79}{figure.caption.20}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des sources-images\relax }}{80}{figure.caption.21}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Exemple de \gls {rir} pour un cube de 50m d'arr\IeC {\^e}te, une source et un r\IeC {\'e}cepteur de 20m de diam\IeC {\`e}tre situ\IeC {\'e}s au centre, un million de rayons et une fr\IeC {\'e}quence d'\IeC {\'e}chantillonnage de 44100Hz\relax }}{82}{figure.caption.23}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sph\IeC {\`e}res permettant l'\IeC {\'e}mission omnidirectionnelle de rayons\relax }}{75}{figure.caption.18}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons\relax }}{77}{figure.caption.19}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Calcul d'un rayon r\IeC {\'e}fl\IeC {\'e}chi \IeC {\`a} partir d'un rayon incident et d'une normale\relax }}{78}{figure.caption.20}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des sources-images\relax }}{80}{figure.caption.22}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces R\IeC {\'e}ponse impulsionnelle d'un cube}}{81}{figure.caption.23}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Optimisation algorithmique}{83}{chapter.6}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Courbe de complexit\IeC {\'e} donnant le temps (s) d'une it\IeC {\'e}ration pour N=M en \IeC {\'e}chelle logarithmique\relax }}{84}{figure.caption.24}
@@ -61,14 +61,13 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Courbes de complexit\IeC {\'e} donnant le temps (s) avec et sans octree d'une it\IeC {\'e}ration en \IeC {\'e}chelle logarithmique\relax }}{92}{figure.caption.33}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Logiciel d\IeC {\'e}velopp\IeC {\'e}}{93}{chapter.7}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces R\IeC {\'e}ponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) \IeC {\'e}chantillonn\IeC {\'e}e \IeC {\`a} 100Hz et fonction $f(x)=\frac {2}{x^2}$ (rouge)\relax }}{96}{figure.caption.36}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces R\IeC {\'e}ponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) \IeC {\'e}chantillonn\IeC {\'e}e \IeC {\`a} 100Hz et fonction $f(x)=\frac {2}{x^2}$ (rouge)\relax }}{95}{figure.caption.36}
 \contentsline {figure}{\numberline {7.5}{\ignorespaces R\IeC {\'e}ponse impulsionnelle dans une sph\IeC {\`e}re de $20m$ de diam\IeC {\`e}tre, 100\% r\IeC {\'e}fl\IeC {\'e}chissante, pour 30 it\IeC {\'e}rations avec absorption de l'air\relax }}{97}{figure.caption.38}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Add-on Blender et assignation des mat\IeC {\'e}riaux\relax }}{99}{figure.caption.40}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Traitement du signal}{101}{chapter.8}
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Sch\IeC {\'e}ma du processus de convolution partitionn\IeC {\'e}e\relax }}{102}{figure.caption.41}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Filtres fr\IeC {\'e}quenciels passe-bande\relax }}{103}{figure.caption.42}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Synopsis de l'architecture logiciel d\IeC {\'e}velopp\IeC {\'e} pour le calcul d'acoustique de salle\relax }}{106}{figure.caption.44}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Position des sources-images pour une salle cubique, 1~000~000 rayons\relax }}{98}{figure.caption.39}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Add-on Blender et assignation des mat\IeC {\'e}riaux\relax }}{100}{figure.caption.41}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Sch\IeC {\'e}ma du processus de convolution partitionn\IeC {\'e}e\relax }}{101}{figure.caption.42}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Filtres fr\IeC {\'e}quenciels passe-bande\relax }}{102}{figure.caption.43}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Synopsis de l'architecture logiciel d\IeC {\'e}velopp\IeC {\'e} pour le calcul d'acoustique de salle\relax }}{106}{figure.caption.45}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{109}{part.3}
@@ -82,7 +81,7 @@
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Annexes}{I}{appendix.A}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons avec \gls {octree}\relax }}{I}{figure.caption.46}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagramme d'activit\IeC {\'e} r\IeC {\'e}sumant le processus de cr\IeC {\'e}ation des rayons avec \gls {octree}\relax }}{I}{figure.caption.47}
 \gdef \the@ipfilectr {}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Liste des acronymes}{V}{appendix.B}

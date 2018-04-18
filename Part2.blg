@@ -4,13 +4,13 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 20 of file Part2/Biblio.bib
+--line 30 of file Part2/Biblio.bib
 Warning--entry type for "aquaterra" isn't style-file defined
---line 85 of file Part2/Biblio.bib
+--line 95 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 129 of file Part2/Biblio.bib
+--line 139 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 219 of file Part2/Biblio.bib
+--line 229 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile
@@ -20,45 +20,45 @@ Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 27 entries,
+You've used 28 entries,
             3493 wiz_defined-function locations,
-            845 strings with 9236 characters,
-and the built_in function-call counts, 14985 in all, are:
-= -- 1215
-> -- 450
+            852 strings with 9445 characters,
+and the built_in function-call counts, 15654 in all, are:
+= -- 1257
+> -- 497
 < -- 44
-+ -- 187
-- -- 133
-* -- 1059
-:= -- 2063
-add.period$ -- 54
-call.type$ -- 27
-change.case$ -- 170
-chr.to.int$ -- 28
-cite$ -- 34
-duplicate$ -- 1434
-empty$ -- 1217
-format.name$ -- 177
-if$ -- 2955
++ -- 203
+- -- 148
+* -- 1130
+:= -- 2164
+add.period$ -- 56
+call.type$ -- 28
+change.case$ -- 180
+chr.to.int$ -- 29
+cite$ -- 35
+duplicate$ -- 1487
+empty$ -- 1262
+format.name$ -- 195
+if$ -- 3079
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 199
-newline$ -- 99
-num.names$ -- 108
-pop$ -- 551
+missing$ -- 207
+newline$ -- 102
+num.names$ -- 112
+pop$ -- 569
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 161
 quote$ -- 0
-skip$ -- 647
+skip$ -- 664
 stack$ -- 0
-substring$ -- 492
-swap$ -- 843
+substring$ -- 503
+swap$ -- 873
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 228
+type$ -- 237
 warning$ -- 7
-while$ -- 94
+while$ -- 97
 width$ -- 0
-write$ -- 295
+write$ -- 305
 (There were 11 warnings)

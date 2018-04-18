@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -45,7 +45,7 @@
   et Belles-Lettre de Berlin.
 
 \bibitem[{\textsc{Eyring}(1930)}]{eyring}
-\textsc{Eyring, C.~F.} 1930, \enquote{Reverberation time in ``dead'' rooms},
+\textsc{Eyring, C.~F.} 1930, \enquote{Reverberation time in "dead" rooms},
   \emph{Journal of the Acoustical Society of America}, \bblvol{}~1,
   \bblno{}~2A, \bblpp{} 217--241.
 
@@ -129,6 +129,13 @@
 \bibitem[{\textsc{Sabine}(1900)}]{sabine}
 \textsc{Sabine, W.~C.} 1900, \emph{Architectural Acoustics}, \bblvol{} Part I.
   Reverberation, Reprints of the American Architect.
+
+\bibitem[{\textsc{Salmon} \bbletal{}(2017)\textsc{Salmon}, \textsc{Aussal},
+  \textsc{Hendrickx}, \textsc{Messonnier} \bbland{} \textsc{Millot}}]{myBino}
+\textsc{Salmon, F.}, \textsc{M.~Aussal}, \textsc{{\'E}.~Hendrickx},
+  \textsc{J.-C. Messonnier} \bbland{} \textsc{L.~Millot}. 2017,
+  \enquote{Optimization of interactive binaural processing}, Audio Engineering
+  Society.
 
 \bibitem[{\textsc{Vorl{\"a}ndera} \bbland{}
   \textsc{Mommertz}(2000)}]{diffusion}

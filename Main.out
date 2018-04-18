@@ -6,8 +6,8 @@
 \BOOKMARK [0][-]{chapter.5}{D\351veloppement d'une m\351thode coupl\351e}{part.2}% 31
 \BOOKMARK [1][-]{section.5.1}{Notion d'onde sph\351rique discr\351tis\351e}{chapter.5}% 32
 \BOOKMARK [1][-]{section.5.2}{Environnement g\351om\351trique}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{Calcul des rayons}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.4}{Calcul des sources-images}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Calcul de rayons}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 35
 \BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnelle}{chapter.5}% 36
 \BOOKMARK [0][-]{chapter.6}{Optimisation algorithmique}{part.2}% 37
 \BOOKMARK [1][-]{section.6.1}{M\351thode d'octree}{chapter.6}% 38
@@ -15,11 +15,9 @@
 \BOOKMARK [0][-]{chapter.7}{Logiciel d\351velopp\351}{part.2}% 40
 \BOOKMARK [1][-]{section.7.1}{Validation}{chapter.7}% 41
 \BOOKMARK [1][-]{section.7.2}{Interface utilisateur}{chapter.7}% 42
-\BOOKMARK [0][-]{chapter.8}{Traitement du signal}{part.2}% 43
-\BOOKMARK [1][-]{section.8.1}{Convolution partitionn\351e}{chapter.8}% 44
-\BOOKMARK [1][-]{section.8.2}{Signal binaural avec head-tracker}{chapter.8}% 45
-\BOOKMARK [0][-]{chapter*.43}{Conclusion}{part.2}% 46
-\BOOKMARK [0][-]{chapter*.45}{R\351f\351rences}{part.2}% 47
+\BOOKMARK [1][-]{section.7.3}{Auralisation}{chapter.7}% 43
+\BOOKMARK [0][-]{chapter*.44}{Conclusion}{part.2}% 44
+\BOOKMARK [0][-]{chapter*.46}{R\351f\351rences}{part.2}% 45
 \BOOKMARK [0][-]{appendix.A}{Annexes}{part.2}% 60
 \BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 61
 \BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 62
