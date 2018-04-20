@@ -8,7 +8,7 @@
 \newcommand{\alpt}{\ensuremath{\alpha_2}\xspace}
 \newcommand{\strt}{\gls{strt}\xspace}
 
-\renewcommand{\labelitemi}{\textbullet}
+
 
 % Tenseur des déformation cylindrique
 \newcommand{\epsrr}{\ensuremath{\varepsilon_{rr}}\xspace}
@@ -24,7 +24,7 @@
 
 %% Figures centrées, et en position 'here, top, bottom or page'
 \newenvironment{figureth}{%
-		\begin{figure}[htbp]
+		\begin{figure}[h]%[htbp]
 			\centering
 	}{
 		\end{figure}
@@ -71,3 +71,5 @@
 \newcommand*\citefnt[2][oeuvre intégrale]{\footnotetext{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
 
 %\newcommand{\footref}[1]{\textsuperscript{\ref{#1}}}
+
+%\renewcommand{\labelitemi}{\textbullet}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -19,12 +19,18 @@
 \bibitem[{\textsc{acouphile.fr}()}]{acouphile}
 \textsc{acouphile.fr}.
 
-\bibitem[{\textsc{AquaTerra}()}]{aquaterra}
-\textsc{AquaTerra}. \enquote{Encyclop{\'e}die du gabion}, .
-
 \bibitem[{\textsc{Arenberg}(1988)}]{arenberg}
 \textsc{Arenberg, J.} 1988, \enquote{Ray/triangle intersection with barycentric
   coordinates}, \emph{Ray Tracing News}, \bblvol{}~1, \bblno{}~11.
+
+\bibitem[{\textsc{Aussal}()}]{gypsilab}
+\textsc{Aussal, M.} \enquote{Gypsilab github},
+  \urlprefix\url{https://github.com/matthieuaussal/gypsilab}.
+
+\bibitem[{\textsc{Aussal}(2014)}]{BEM}
+\textsc{Aussal, M.} 2014, \emph{M{\'e}thodes num{\'e}riques pour la
+  spatialisation sonore, de la simulation {\`a} la synth{\`e}se binaurale},
+  \bblphdthesis{}, Ecole Polytechnique.
 
 \bibitem[{\textsc{Badouel}(1990)}]{badouel}
 \textsc{Badouel, D.} 1990, \enquote{An efficient ray-polygon intersection},
@@ -35,6 +41,10 @@
   \enquote{Implementing real-time partitioned convolution algorithms on
   conventional operating systems}, \emph{DAFx-11}.
 
+\bibitem[{\textsc{CATT-Acoustic}()}]{catt}
+\textsc{CATT-Acoustic}. \enquote{Catt-acoustic webpage},
+  \urlprefix\url{http://www.catt.se/}.
+
 \bibitem[{\textsc{CEI}(2015)}]{cei}
 \textsc{CEI}. 2015, \enquote{Ec 60050}, Vocabulaire {\'e}lectrotechnique
   international.
@@ -43,6 +53,12 @@
 \textsc{D'Alembert, J. L.~R.} 1747, \emph{Recherches sur la courbe que forme
   une corde tendue mise en vibration}, Histoire de l'Acad{\'e}mie des Sciences
   et Belles-Lettre de Berlin.
+
+\bibitem[{\textsc{Dapogny} \bbletal{}(2004)\textsc{Dapogny},
+  \textsc{Dobrzynski}, \textsc{Frey} \bbland{} \textsc{Froehly}}]{mmg}
+\textsc{Dapogny, C.}, \textsc{C.~Dobrzynski}, \textsc{P.~Frey} \bbland{}
+  \textsc{A.~Froehly}. 2004, \enquote{mmg github},
+  \urlprefix\url{https://github.com/MmgTools/mmg}.
 
 \bibitem[{\textsc{Eyring}(1930)}]{eyring}
 \textsc{Eyring, C.~F.} 1930, \enquote{Reverberation time in "dead" rooms},
@@ -96,8 +112,8 @@
 \textsc{Meagher, D.} 1982, \emph{Octree Generation, Analysis and Manipulation},
   \bblvol{}~TR, Image processing laboratory.
 
-\bibitem[{\textsc{M'HENNI}(2010)}]{angle_solide}
-\textsc{M'HENNI, H.} 2010, \enquote{L'angle solide correspond {\`a} un c{\^o}ne
+\bibitem[{\textsc{M'Henni}(2010)}]{angle_solide}
+\textsc{M'Henni, H.} 2010, \enquote{L'angle solide correspond {\`a} un c{\^o}ne
   de r{\'e}volution d'angle au sommet inscrit dans la sph{\`e}re de
   projection}, Wikip{\'e}dia.
   \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
@@ -117,8 +133,8 @@
   G{\'E}NIE CIVIL, Laboratoire Central des Ponts et Chauss{\'e}es, Centre de
   Nantes.
 
-\bibitem[{\textsc{PREMAT}(2000)}]{fem-bem}
-\textsc{PREMAT, E.} 2000, \emph{Prise en compte d'effets
+\bibitem[{\textsc{Premat}(2000)}]{fem-bem}
+\textsc{Premat, E.} 2000, \emph{Prise en compte d'effets
   m{\'e}t{\'e}orologiques dans une m{\'e}thode d'{\'e}l{\'e}ments finis de
   fronti{\`e}re}, \bblphdthesis{}, L'Institut National des Sciences
   Appliqu{\'e}es de Lyon.
