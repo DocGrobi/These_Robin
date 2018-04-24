@@ -9,15 +9,17 @@
 \BOOKMARK [1][-]{section.5.3}{Calcul de rayons}{chapter.5}% 34
 \BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 35
 \BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnelle}{chapter.5}% 36
-\BOOKMARK [0][-]{chapter.6}{Optimisation algorithmique}{part.2}% 37
-\BOOKMARK [1][-]{section.6.1}{M\351thode d'octree}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.2}{Analyse des r\351sultats}{chapter.6}% 39
-\BOOKMARK [0][-]{chapter.7}{Logiciel d\351velopp\351}{part.2}% 40
-\BOOKMARK [1][-]{section.7.1}{Validation}{chapter.7}% 41
-\BOOKMARK [1][-]{section.7.2}{Interface utilisateur}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.3}{Auralisation}{chapter.7}% 43
-\BOOKMARK [0][-]{chapter*.46}{Conclusion}{part.2}% 44
-\BOOKMARK [0][-]{chapter*.48}{R\351f\351rences}{part.2}% 45
+\BOOKMARK [1][-]{section.5.6}{Auralisation}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Optimisation algorithmique}{part.2}% 38
+\BOOKMARK [1][-]{section.6.1}{M\351thode d'octree}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Analyse des r\351sultats}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Validation}{part.2}% 41
+\BOOKMARK [1][-]{section.7.1}{Analyse visuelle}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{D\351croissance quadratique}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.3}{Cas de la salle sph\351rique}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.4}{Cas de la salle cubique}{chapter.7}% 45
+\BOOKMARK [0][-]{chapter*.49}{Conclusion}{part.2}% 46
+\BOOKMARK [0][-]{chapter*.52}{R\351f\351rences}{part.2}% 47
 \BOOKMARK [0][-]{appendix.A}{Annexes}{part.2}% 60
 \BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 61
 \BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 62
