@@ -69,7 +69,7 @@ avec :
 Le \gls{spl} repère la valeur efficace de la pression acoustique par rapport à une valeur de référence, $20 \mu Pa$. On utilise, plutôt que le rapport brut, le décibel, qui représente dix fois son logarithme décimal. Ce repère a été choisi parce que, tout en étant simple et utilisant des nombres ronds, un décibel (une variation de 12 \%) représente à peu près la plus faible variation de pression acoustique que les humains puissent distinguer. Le niveau de référence, correspond de la même manière à la pression acoustique (dont l'intensité est de $1 pW/m^2$) au seuil de la perception humaine. On obtient ainsi un repère pratique où tous les niveaux sont des nombres positifs, et se passent de décimales. On a alors :
 
 \begin{equation} 
-L_p = 10 \log_{10}(\frac{p_{eff}^2}{p_{réf}^2}),
+L_p = 10 \log_{10}\left(\frac{p_{eff}^2}{p_{réf}^2}\right),
 \end{equation}
 avec :
 \begin{itemize}
@@ -104,7 +104,7 @@ Après intégration sur la surface sphérique $S(t)$, nous pouvons écrire l'int
 On comprend que l'intensité décroit comme le carré de la distance et qu'une portion d'énergie considérée va donc être portée par un angle solide (voir fig. \ref{flux}). Ainsi, à une distance $d$ la même quantité d'énergie est répartie sur une surface de $a^2$ que à une distance de $2d$ sur une surface de $(2a)^2$. L'énergie se répartie donc sur une surface proportionnelle au carré de la distance. Sur une portion de $S(t)$ l'énergie est portée par un angle solide $\Omega_{S}$ tel que :
 
 \begin{equation} \label{eq_energie}
-E_{S}(t) = E_0 \int_{\sigma}  \frac{1}{4\pi  d(t)^2} dS = \frac{E_0}{4\pi}  \Omega_{S}.
+E_{S}(t) = E_0 \int_{S(t)}  \frac{1}{4\pi  d(t)^2} dS = \frac{E_0}{4\pi}  \Omega_{S}.
 \end{equation}
 
 Cela traduit le fait que l'énergie d'un angle solide est constante au cours du temps et correspond à une portion de l'énergie initiale $E_0$.
@@ -137,23 +137,23 @@ avec :
 Nous exprimons ensuite les fréquences de relaxation de l'oxygène et de l'azote \cite[6.2, eq. 3 et 4]{iso}:
 
 \begin{align*}
-	fr_O & =  P_r \times (24 + \frac{40400 \times h \times (0,02 + h)}{0,391 + h}),  \\
-	fr_A & =  \frac{P_r}{\sqrt{T_r}} \times (9 + 280 \times h \times \exp^{-4,17 \times (\frac{1}{\sqrt[3]{T_r}} - 1)}),
+	fr_O & =  P_r \times \left(24 + \frac{40400 \times h \times (0,02 + h)}{0,391 + h}\right),  \\
+	fr_A & =  \frac{P_r}{\sqrt{T_r}} \times \left(9 + 280 \times h \times \exp^{-4,17 \times (\frac{1}{\sqrt[3]{T_r}} - 1)}\right),
 \end{align*}
 avec :
 \begin{itemize}
-\item $T_r$ : La température relative à 20°C ($\frac{T}{293,15}$),
+\item $T_r$ : La température relative à 20°C $\left(\frac{T}{293,15}\right)$,
 \item $f$ : La fréquence en Hz.
 \end{itemize}
 
 Nous pouvons alors exprimer le coefficient d'absorption de l'air "$m$" (en dB/m) en fonction de la fréquence  \cite[6.2, eq. 5]{iso} :
 
 \begin{equation*}
-	m_{(dB/m)} = 8,686 \times f^2 \times (\frac{1,84 \times 10^{-11}}{P_r} \times \sqrt{T_r} + T_r^{\frac{-5}{2}} \times (0,01275 \times \frac{\exp{\frac{-2239,1}{T}}}{fr_O + \frac{f^2}{fr_O}} + 0,1068 \times  \frac{\exp{\frac{-3352}{T}}}{fr_A + \frac{f^2}{fr_A}})).
+	m_{(dB/m)} = 8,686 \times f^2 \times \left(\frac{1,84 \times 10^{-11}}{P_r} \times \sqrt{T_r} + T_r^{\frac{-5}{2}} \times \left(0,01275 \times \frac{\exp{\frac{-2239,1}{T}}}{fr_O + \frac{f^2}{fr_O}} + 0,1068 \times  \frac{\exp{\frac{-3352}{T}}}{fr_A + \frac{f^2}{fr_A}}\right)\right).
 \end{equation*}
 On obtient le facteur final (en $m^{-1}$) par la formule :
 \begin{equation}
-	m = 10\log_{10}{\frac{m_{(dB/m)}}{10}} - 1.
+	m = 10\log_{10}{\left(\frac{m_{(dB/m)}}{10}\right)} - 1.
 \end{equation}
 
 \begin{figureth}
@@ -531,9 +531,9 @@ avec  :
 En normalisant l'énergie ($E_0 = 1$), on obtient alors :
 
 \begin{align} 
-	2\pi(1-\sqrt{1-\frac{r^2}{d^2}}) &= \frac{4\pi}{N} \nonumber,\\	
+	2\pi \left(1-\sqrt{1-\frac{r^2}{d^2}} \right) &= \frac{4\pi}{N} \nonumber,\\	
 	\sqrt{1-\frac{r^2}{d^2}} &= 1-\frac{2}{N} \nonumber,\\
-	1-\frac{r^2}{d^2} &= (1-\frac{2}{N})^2 \nonumber,\\
+	1-\frac{r^2}{d^2} &= \left(1-\frac{2}{N}\right)^2 \nonumber,\\
 	\frac{r^2}{d^2} &= \frac{4}{N^2}(N-1) \nonumber,\\
 	 \frac{r}{d} &=  \frac{2}{N} \sqrt{N-1}. \label{seuil_arret}
 \end{align}
@@ -693,7 +693,7 @@ Les coordonnées sphériques sont données par :
   \left \{
    \begin{array}{r c l}
 \theta &=& \frac{2 \pi \times n}{\Gamma}  \pmod{2\pi},  \\
-\phi &=& \arcsin{(\frac{2n}{N-1}-1)}, 
+\phi &=& \arcsin{\left(\frac{2n}{N-1}-1\right)}, 
    \end{array}
    \right .
 \end{equation}
@@ -735,8 +735,7 @@ T(u,v) = (1-u-v)V_0 + uV_1 + vV_2, \ \ \ \footnotemark
 \end{equation}
 \citefnt[eq. 2]{moller}
 %
-avec 
-$(u,v)$ les coordonnées barycentriques tels que :
+avec $(u,v)$ les coordonnées barycentriques tels que :
 \begin{equation}
    \left \{
    \begin{array}{r c l}
@@ -939,7 +938,7 @@ avec $l$ la longueur du rayon. Pour finir, on s'assure que le rayon intersecte b
 Si ces conditions sont réunies, alors le rayon traverse bien le récepteur et une source-image est générée. Ses coordonnées sont obtenues en traçant un vecteur de même origine mais de sens opposé au rayon courant et dont la norme sera égale à la distance totale parcourue par le rayon avant sa dernière réflexion (voir fig. \ref{schema_SI}). On rétro-propage donc le rayon jusqu'à arriver à la source-image dont la position est le symétrique de la source par rapport à tous les plans rencontrés par le rayon. On assigne à cette source-image huit coefficients d'énergie correspondant aux coefficients d'énergie finaux du rayon, atténués par l'absorption de l'air sur le trajet total. Celle-ci est déterminée pour chaque bande de fréquence d'après les formules analytiques décrites dans la section \ref{sect_absAIr}. Le calcul des énergies se fait de la manière suivante :
 
 \begin{equation}
-E_{si, i} = E_{r, i} \times e^{\frac{-m_i \times l_{tot} }{10}},
+E_{si, i} = E_{r, i} \times e^{-m_i \times l_{tot}},
 \end{equation}
 avec : 
 \begin{itemize}
@@ -1054,7 +1053,7 @@ Dans un futur développement il sera possible de générer une \gls{rir} pour l'
 	
 \section*{Introduction} \label{sect_complexite}
 
-Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. Ce coefficient vise à analyser et qualifier le temps de calcul d'un algorithme. Pour rappel les grandes étapes de l'algorithme qui font appel à des boucle d'itérations importantes sont les suivantes :
+Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. Ce coefficient vise à analyser et qualifier le temps de calcul d'un algorithme. Pour rappel les grandes étapes de l'algorithme qui font appel à des boucles d'itérations importantes sont les suivantes :
 \begin{itemize}
 \item lecture du maillage,
 \item intersection des rayons et des faces,
@@ -1090,7 +1089,7 @@ Par ailleurs en fixant d'une part le nombre de face et d'autre part le nombre de
 Dans le cas du théâtre d'Orange, le nombre de faces est supérieur à 100~000 éléments et le nombre de rayons à émettre doit être très important compte tenu de la taille du bâtiment (voir section \ref{sect_discretise}). En testant une géométrie simplifiée du bâtiment, nous constatons que son \gls{RT60} est de l'ordre de 2 secondes. Il faudra donc pouvoir réaliser des mesures pour des rayons d'environ 700m de long. Or d'après l'équation \ref{eq_dmax} :
 
 \begin{equation}
-N > n(\frac{2d}{r})^2.
+N > n\left(\frac{2d}{r}\right)^2.
 \end{equation}
 
 Pour une sphère de mesure de quelques mètres (celle-ci ne doit pas trop s'étendre afin que la mesure reste localisée) et $n$ de l'ordre d'une centaine de rayons, il faudra que le nombre total de rayons $N$ soit supérieur à 50 millions. En prolongeant la courbe de la figure \ref{complexite0} on obtient un temps de calcul d'une trentaine d'heure, ce qui n'est pas acceptable pour entrer dans le cahier des charges. Nous devons donc optimiser l'algorithme afin de résoudre ce problème.
@@ -1239,14 +1238,14 @@ f(t) &= Z_{max}
 
 Ainsi, on peut exprimer les points d'intersection entre le rayon et les plans délimitant la boite avec le système d'équations suivant :
 
-\begin{align}
-X_{min} &= x_0 \times D_x - O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}, \\
-X_{max} &= x_1 \times D_x - O_x 	& \Rightarrow 	& &	x_1 = \frac{X_{max} - O_x}{D_x}, \\
-Y_{min} &= y_0 \times D_y - O_y 	& \Rightarrow	& &	y_0 = \frac{Y_{min} - O_y}{D_y}, \\
-Y_{max} &= y_1 \times D_y - O_y 	& \Rightarrow	& &	y_1 = \frac{Y_{max} - O_y}{D_y}, \\
-Z_{min} &= z_0 \times D_z - O_z	& \Rightarrow 	& &	z_0 = \frac{Z_{min} - O_z}{D_z}, \\
-Z_{max} &= z_1 \times D_z - O_z 	& \Rightarrow 	& &	z_1 = \frac{Z_{max} - O_z}{D_z}. 
-\end{align}
+\begin{align*}
+X_{min} &= x_0 \times D_x + O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}, \\
+X_{max} &= x_1 \times D_x + O_x 	& \Rightarrow 	& &	x_1 = \frac{X_{max} - O_x}{D_x}, \\
+Y_{min} &= y_0 \times D_y + O_y 	& \Rightarrow	& &	y_0 = \frac{Y_{min} - O_y}{D_y}, \\
+Y_{max} &= y_1 \times D_y + O_y 	& \Rightarrow	& &	y_1 = \frac{Y_{max} - O_y}{D_y}, \\
+Z_{min} &= z_0 \times D_z + O_z	& \Rightarrow 	& &	z_0 = \frac{Z_{min} - O_z}{D_z}, \\
+Z_{max} &= z_1 \times D_z + O_z 	& \Rightarrow 	& &	z_1 = \frac{Z_{max} - O_z}{D_z}. 
+\end{align*}
 
 On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boite en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boite (voir fig \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) .
 
@@ -1626,12 +1625,12 @@ avec :
 
 On constate alors qu'on a une superposition parfaite des sources-images dans l'espace (voir fig. \ref{test3}) puisque l'écart des positions des sources-images expérimentales obtenues par lancer de rayons et les sources-images théoriques obtenues par formule analytique est inférieur à la précision machine (soit $10^{-6}$m pour des float). On mesure également l'erreur relative des énergies source-image par source-image en prenant comme valeur théorique $\frac{1}{d^2}$ où $d$ est la distance de la source-image au récepteur. On a alors :
 \begin{align}
-\epsilon_{rel} = \frac{|D_{exp}-D_{theo}|}{D_{theo}}.
+\epsilon_{rel} = \frac{|E_{exp}-E_{theo}|}{E_{theo}}.
 \end{align}
 
 On note que la salle est un pavé dont les dimensions sont respectivement 2m, 3m et 4m sur les axes X, Y, Z. d'arrête, que le récepteur a un diamètre de 40cm et qu'il n'est pas superposé à la source. On peut observer que l'erreur moyenne est inférieure à 1\% avec des pics pouvant aller jusqu'à 3\%. Par ailleurs étant donné que plus les sources-images sont éloignées moins leur énergie sera importante, autrement dit elles seront moins entendues par l'auditeur, on peut résonner avec la norme infinie telle que :
 \begin{align}
-\epsilon_{\infty} = \frac{|D_{exp}-D_{theo}|}{\max(D_{theo})}.
+\epsilon_{\infty} = \frac{|E_{exp}-E_{theo}|}{\max(E_{theo})}.
 \end{align}
 
 On constate alors une erreur relative inférieure à 0,5\% pour 1~000~000 de rayons (voir fig. \ref{test3_2}). On voit également qu'en augmentant le nombre de rayons on améliore la précision des 150 premières sources-images et les 1300 sources-images suivantes reste bien dans une plage d'erreur inférieures à 5\% (voir fig. \ref{test3_3}) et 0,2\% en norme infinie (voir fig. \ref{test3_4}).
