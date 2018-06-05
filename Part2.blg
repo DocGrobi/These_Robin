@@ -4,66 +4,67 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "mmg" isn't style-file defined
---line 11 of file Part2/Biblio.bib
+--line 22 of file Part2/Biblio.bib
 Warning--entry type for "catt" isn't style-file defined
---line 19 of file Part2/Biblio.bib
+--line 31 of file Part2/Biblio.bib
 Warning--entry type for "gypsilab" isn't style-file defined
---line 27 of file Part2/Biblio.bib
+--line 39 of file Part2/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 54 of file Part2/Biblio.bib
+--line 66 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 163 of file Part2/Biblio.bib
+--line 175 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 253 of file Part2/Biblio.bib
+--line 265 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile
 Warning--empty year in gypsilab
 Warning--empty year in catt
 Warning--there's a number but no volume in beamtracing
+Warning--can't use both author and editor fields in binaire
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 31 entries,
+You've used 32 entries,
             3493 wiz_defined-function locations,
-            867 strings with 9811 characters,
-and the built_in function-call counts, 17027 in all, are:
-= -- 1358
-> -- 557
-< -- 46
-+ -- 224
-- -- 166
-* -- 1249
-:= -- 2386
-add.period$ -- 62
-call.type$ -- 31
-change.case$ -- 200
-chr.to.int$ -- 32
-cite$ -- 39
-duplicate$ -- 1600
-empty$ -- 1371
-format.name$ -- 218
-if$ -- 3340
+            873 strings with 9906 characters,
+and the built_in function-call counts, 17571 in all, are:
+= -- 1392
+> -- 570
+< -- 50
++ -- 230
+- -- 169
+* -- 1285
+:= -- 2461
+add.period$ -- 64
+call.type$ -- 32
+change.case$ -- 207
+chr.to.int$ -- 39
+cite$ -- 41
+duplicate$ -- 1651
+empty$ -- 1424
+format.name$ -- 222
+if$ -- 3453
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 223
-newline$ -- 111
-num.names$ -- 124
-pop$ -- 613
+missing$ -- 234
+newline$ -- 114
+num.names$ -- 128
+pop$ -- 637
 preamble$ -- 1
-purify$ -- 179
+purify$ -- 184
 quote$ -- 0
-skip$ -- 704
+skip$ -- 725
 stack$ -- 0
-substring$ -- 536
-swap$ -- 921
-text.length$ -- 20
+substring$ -- 553
+swap$ -- 945
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 264
-warning$ -- 8
-while$ -- 106
+type$ -- 270
+warning$ -- 9
+while$ -- 110
 width$ -- 0
-write$ -- 336
-(There were 14 warnings)
+write$ -- 348
+(There were 15 warnings)

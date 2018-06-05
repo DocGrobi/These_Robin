@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{7}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,5 +15,41 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Arnaud}(1808)}]{arnaud}
+\textsc{Arnaud, A.} 1808, \emph{Oeuvres compl{\`e}tes}, \bblvol{} Tome III,
+  L'imprimerie de Valade.
+
+\bibitem[{\textsc{Badie} \bbletal{}(2013)\textsc{Badie}, \textsc{Fincker},
+  \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso} \bbland{}
+  \textsc{Tardy}}]{orangeTxt}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}. 2013,
+  \enquote{Le th{\'e}{\^a}tre d'orange - rapport final d'op{\'e}ration -
+  texte}, \bbltechrep{}. PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84 087
+  0031 - Patriarche 9827 n2012-203.
+
+\bibitem[{\textsc{Barth{\'e}lemy-Saint-Hilaire}(1838)}]{aristote}
+\textsc{Barth{\'e}lemy-Saint-Hilaire, J.} 1838, \emph{Livre de la Po{\'e}tique
+  d'Aristote}, Ladrange.
+
+\bibitem[{\textsc{Canac}(1967)}]{canac}
+\textsc{Canac, F.} 1967, \emph{L'acoustique des th{\'e}{\^a}tres antiques. Ses
+  enseignements}, {\'E}ditions du centre national de la recherche scientifique,
+  15, quai Anatle-France - Paris VII.
+
+\bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
+\textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
+  th{\'e}{\^a}tres romains, {\`a} propose de ceux d'Arles et d'Orange},
+  \emph{Sujets Sujets divers d'{\'e}rudition}, \bblvol{}~13, M{\'e}moires
+  pr{\'e}sent{\'e}s par divers savants {\`a} l'Acad{\'e}mie des inscriptions et
+  belles-lettres de l'Institut de France.
+
+\bibitem[{\textsc{Maufras}(1847)}]{vitruve}
+\textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
+  \bblvol{}~V, Panckoucke.
+
+\bibitem[{\textsc{Odeon}()}]{odeon}
+\textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.
 
 \end{thebibliography}

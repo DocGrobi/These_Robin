@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -98,6 +98,10 @@
 \textsc{Keinert, B.}, \textsc{M.~Innmann}, \textsc{M.~Sanger} \bbland{}
   \textsc{M.~Stamminger}. 2015, \enquote{Spherical fibonacci mapping},
   \emph{ACM Transactions on Graphics}, \bblvol{}~34.
+
+\bibitem[{\textsc{Knuth}(1997)}]{binaire}
+\textsc{Knuth, D.} 1997, \emph{The Art of Computer Programming}, \bblvol{}~1,
+  \bblthirdo{} \bbledn{}, Fundamental Algorithms.
 
 \bibitem[{\textsc{Kulowski}(1985)}]{raytracing}
 \textsc{Kulowski, A.} 1985, \emph{Algorithmic representation of the ray tracing

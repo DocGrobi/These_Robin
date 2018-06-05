@@ -3,58 +3,61 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part1.aux
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
+Warning--entry type for "siteTheatre" isn't style-file defined
+--line 11 of file Part1/Biblio.bib
 Warning--entry type for "vuEnsemble" isn't style-file defined
---line 62 of file Part1/Biblio.bib
+--line 69 of file Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
---line 70 of file Part1/Biblio.bib
+--line 77 of file Part1/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--to sort, need author or key in charenton
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
 Warning--empty year in boissier
 Warning--empty year in vuEnsemble
+Warning--empty year in siteTheatre
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
 Warning--empty pages in rocheleau
-You've used 20 entries,
+You've used 21 entries,
             3493 wiz_defined-function locations,
-            811 strings with 9181 characters,
-and the built_in function-call counts, 12110 in all, are:
-= -- 1003
-> -- 346
-< -- 30
-+ -- 145
-- -- 103
-* -- 846
-:= -- 1574
-add.period$ -- 41
-call.type$ -- 20
-change.case$ -- 132
-chr.to.int$ -- 21
-cite$ -- 29
-duplicate$ -- 1186
-empty$ -- 995
-format.name$ -- 139
-if$ -- 2427
+            816 strings with 9266 characters,
+and the built_in function-call counts, 12482 in all, are:
+= -- 1032
+> -- 357
+< -- 31
++ -- 149
+- -- 106
+* -- 874
+:= -- 1637
+add.period$ -- 43
+call.type$ -- 21
+change.case$ -- 138
+chr.to.int$ -- 22
+cite$ -- 31
+duplicate$ -- 1216
+empty$ -- 1027
+format.name$ -- 143
+if$ -- 2498
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 166
-newline$ -- 78
-num.names$ -- 76
-pop$ -- 480
+missing$ -- 170
+newline$ -- 81
+num.names$ -- 80
+pop$ -- 494
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 119
 quote$ -- 0
-skip$ -- 547
+skip$ -- 558
 stack$ -- 0
-substring$ -- 408
-swap$ -- 722
+substring$ -- 419
+swap$ -- 732
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
-warning$ -- 7
-while$ -- 69
+type$ -- 174
+warning$ -- 8
+while$ -- 72
 width$ -- 0
-write$ -- 223
-(There were 9 warnings)
+write$ -- 232
+(There were 11 warnings)
