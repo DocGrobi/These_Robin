@@ -4,17 +4,17 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "mmg" isn't style-file defined
---line 22 of file Part2/Biblio.bib
+--line 41 of file Part2/Biblio.bib
 Warning--entry type for "catt" isn't style-file defined
---line 31 of file Part2/Biblio.bib
+--line 50 of file Part2/Biblio.bib
 Warning--entry type for "gypsilab" isn't style-file defined
---line 39 of file Part2/Biblio.bib
+--line 58 of file Part2/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 66 of file Part2/Biblio.bib
+--line 85 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 175 of file Part2/Biblio.bib
+--line 194 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 265 of file Part2/Biblio.bib
+--line 284 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile
@@ -26,45 +26,45 @@ Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--empty year in cone
 Warning--there's a number but no volume in AABB
-You've used 32 entries,
+You've used 34 entries,
             3493 wiz_defined-function locations,
-            873 strings with 9906 characters,
-and the built_in function-call counts, 17571 in all, are:
-= -- 1392
-> -- 570
-< -- 50
-+ -- 230
-- -- 169
-* -- 1285
-:= -- 2461
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 207
-chr.to.int$ -- 39
-cite$ -- 41
-duplicate$ -- 1651
-empty$ -- 1424
-format.name$ -- 222
-if$ -- 3453
+            887 strings with 10233 characters,
+and the built_in function-call counts, 18412 in all, are:
+= -- 1447
+> -- 592
+< -- 53
++ -- 238
+- -- 175
+* -- 1340
+:= -- 2592
+add.period$ -- 68
+call.type$ -- 34
+change.case$ -- 217
+chr.to.int$ -- 41
+cite$ -- 43
+duplicate$ -- 1731
+empty$ -- 1508
+format.name$ -- 230
+if$ -- 3620
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 234
-newline$ -- 114
-num.names$ -- 128
-pop$ -- 637
+missing$ -- 249
+newline$ -- 120
+num.names$ -- 136
+pop$ -- 669
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 194
 quote$ -- 0
-skip$ -- 725
+skip$ -- 758
 stack$ -- 0
-substring$ -- 553
-swap$ -- 945
-text.length$ -- 21
+substring$ -- 575
+swap$ -- 977
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 285
 warning$ -- 9
-while$ -- 110
+while$ -- 116
 width$ -- 0
-write$ -- 348
+write$ -- 370
 (There were 15 warnings)

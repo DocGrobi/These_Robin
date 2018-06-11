@@ -1713,37 +1713,141 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption de l'air pour 1~000~000 rayons}
 \end{figureth}
 
-
+\chapter{Outil logiciel}
+	\citationChap{
+	L'éducation est le logiciel de l'ordinateur central qui programme l'avenir des sociétés.
+	}{Joseph ki zerbo}
+	\minitoc
+	\newpage
 	
-\chapter*{Conclusion}
-\addcontentsline{toc}{chapter}{Conclusion}
-
-Dans cette partie, nous avons présenté les problématiques soulevées par une étude acoustique d'un monument antique. La géométrie complexe de ce type de bâtiment et leur taille colossale impose l'utilisation de méthodes de calcul approchées. Ainsi, par simulation des réflexions et absorptions des parois, il est possible d'étudier la réverbération d'une salle. Malgré les approximations inéluctables du modèle, nous avons prouvé que les lois de la physique sont respectées. Un algorithme rapide a été mis en place pour permettre aux utilisateurs de tester facilement et rapidement leurs hypothèses architecturales. Ainsi, le temps de calcul devient peu sensible aux nombres d'éléments du maillage ce qui est souvent limitant dans ce genre d'étude. Le fonctionnement de l'algorithme développé a été présenté en détail de même que les différents outils d'analyse qui en découlent. Celui-ci permet l'étude du graphe temporel de réverbération du bâtiment ainsi que la position dans l'espace des différentes réflexions sonores (voir fig \ref{orange}). 
+La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. 
 %
 \begin{figureth}
-	\includegraphics[width=0.9\linewidth]{images/orange}
-	\caption{Représentation des réflexions des rayons sonores par projection des sources-images dans le théâtre d'Orange}
-	\label{orange}
-\end{figureth}
-%
-Ces résultats pourront aussi être analysés à l'oreille en écoutant le son réverbéré émis depuis une ou plusieurs sources et entendu par un auditeur virtuel placé dans le bâtiment. La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. 
-
-\begin{figureth}
-	\includegraphics[width=\linewidth]{images/synopsis}
+	\includegraphics[width=0.9\linewidth]{images/synopsis}
 	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
 	\label{synopsis}
 \end{figureth}
 
-Cet outil de calcul acoustique s'interface au logiciel Blender dans la continuité de l'étude présentée dans la partie \ref{part_1} de ce document. La prochaine partie vise à présenter concrètement comment s'utilise cet outil. Cela sera fait autour de notre projet d'étude du théâtre antique d'Orange. Ainsi, nous tenterons d'analyser des hypothèses archéologiques précises grâce à l'étude acoustique du bâtiment.
+	
+\section{Utilisation générique du logiciel}
+	
+La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel \gls{cao} et lancer le calcul. Blender permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de Blender est donc complètement modulable et personnalisable. Un \textit{add-on} a donc été développé dans le cadre de ce projet et son rôle est de fournir un maillage adapté à un outil de calcul externe puis de réimporter les résultats dans Blender pour pouvoir les visualiser (voir fig. \ref{logiciel}). Le coeur du calcul s'effectue sur un programme séparé développé en C++ (via Qt creator). L'utilisation d'un langage compilé permet d'optimiser le temps de calcul et le fait d'être un programme séparé permet aux utilisateurs réticent à utiliser Blender pour pouvoir tout de même s'en servir. Il suffit de placer un fichier de maillage au format \gls{obj} dans le répertoire adéquate pour pouvoir lancer le calcul. A noter que le format \gls{obj} permet d'obtenir les informations sur les vertices, les normales et les faces ainsi que les matériaux. D'autres formats de maillages pourront être implémentés dans un développement futur.
+
+\begin{figureth}
+	\includegraphics[width=0.7\linewidth]{images/logiciel}
+	\caption{Communication entre l'add-on Blender et l'outil de calcul}
+	\label{logiciel}
+\end{figureth}
+
+
+Le add-on développé dans la cadre de ce projet possède quelques boutons (voir fig \ref{add-on}). La première étape consiste à notifier le répertoire de donnée de l'outil de calcul afin de pouvoir exporter le fichier de maillage. En utilisant le bouton "Run", Blender transforme les faces des objets sélectionnés en triangles et les exporte au format \gls{obj}. Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Un vecteur de sommets et un vecteur de normales sont remplis face par face en conservant le même ordre. Ces deux vecteurs stockent ainsi la totalité du maillage. Les textures quant à elles ne nous sont pas utiles. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant face par face en respectant l'ordre établi précédemment. Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure du récepteur correspond au rayon de la sphère circonscrite à l'objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources. L'ensemble des calculs se réaliseront séquentiellement pour une source après l'autre. Un seul récepteur est pris en compte. L'add-on Blender permet de mettre à jour uniquement les informations sur les sources et récepteurs sans avoir besoin de recharger tout le maillage. 
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/add-on}
+	\caption{Add-on Blender et assignation des matériaux}
+	\label{add-on}
+\end{figureth}
+Par ailleurs l'utilisateur assignera aux différentes parois un type de matériau en faisant apparaitre dans son nom la référence du matériau issue de la base de donnée Odéon (voir section \ref{sect_lectMat}). De nombreux autres paramètres sont configurables grâce à une \gls{ihm} générée par Qt (voir fig. \ref{ihm}). On peut alors paramètrer la température, la pression relative, le nombre de rayons, etc. L'outil permet donc d'afficher la \gls{rir} et d'écouter un fichier audio révérberé grace au calcul effectué. Il est ensuite possible de visualiser certains résultats directement sur Blender comme les rayons ou les sources-images par exemple (voir fig \ref{import}). Un option permet aussi de projeter les sources-images sur les parois de la salle afin de visualiser de manière plus intuitive d'où proviennent les reflexions (voir fig \ref{projete}).
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/import}
+	\caption{Affichage des rayons (une itération) et des sources-images (-60dB) dans le théâtre d'Orange}
+	\label{import}
+\end{figureth}
+
+
+\begin{figureth}
+	\includegraphics[width=0.8\linewidth]{images/projete}
+	\caption{Projeté des sources-images sur les parois du théâtre d'Orange}
+	\label{projete}
+\end{figureth}
+
+
+\section{Paramètres de sortie}
+L'étude de l'acoustique d'un bâtiment passe par le calcul de différents paramètres obtenus à partir de la \gls{rir}. Ceux-ci permettent de qualifier les qualités d'une salle. C'est Leo L. Beranek qui proposa le premier, bien après les études de Sabine, une approche de définition générale de la qualité acoustique d'une salle de spectacle. Il propose de comparer différentes salles de concert par des experts (chefs d’orchestre, interprètes et critiques musicaux). Ceux-ci ont permis de dégager sept facteurs perceptifs :
+\begin{itemize}
+	\item Reverberance : réverbérance, évaluation subjective du phénomène de réverbération ;
+	\item Loudness : puissance sonore ;
+	\item Spaciousness : spaciosité, sensation d'espace et d'enveloppement sonore ;
+	\item Clarity : clarté ou transparence ;
+	\item Intimacy : intimité, sensation de proximité sonore ;
+	\item Warmth : chaleur apportée par la coloration des timbres par la salle ;
+	\item Hearing on stage : aptitude pour les musiciens, les comédiens ou les conférenciers (donc dans le contexte d'une salle de spectacle uniquement) à s'entendre correctement. 
+\end{itemize}
+
+Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisions pout cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}. %Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
+\subsection{Réverbérance : $T_{30}$}
+Nous disposons de la réponse impulsionnelle de la salle et pouvons par consequent mesurer différent temps de réverbération. Un facteur qui est souvent utilisé dans les études acoustiques de bâtiments est le \gls{T30}. Celui-ci correspond au temps que l'énergie met pour passer de -5 à -35dB.
+
+\subsection{Early Decay Time : EDT}
+Il sera interessant de séparer les premières réflexions du champs diffus. Ce paramètre se nomme \gls{EDT} et correspond au temps pour que l'énergie diminue de 10dB.
+
+\subsection{Clarté : $C_{80}$}
+La clarté est un paramètre qui vise à exprimer la compréhensibilité exprimé en dB tel que :
+%
+\begin{equation}
+C_{80} = 10\log{\left( \frac{E_{0\to80}}{E_{80\to\infty}} \right)},
+\end{equation}
+%
+et $E_{a\to b}$ est la fraction d'énergie sonore comprise dans l'intervalle [a,b] telle que :
+%
+\begin{equation}
+E_{a\to b} = \int_a^b p^2(t) dt. \footnotemark
+\end{equation}
+\citefnt[eq 74, p. 221]{jouhaneau}
+Nous utilisons comme limite utile pour la compréhension de la parole la valeur de 80ms car c'est celle qui est le plus largement utilisée (introduite par Reichardt \cite[p.126]{Reichardt} en 1975). Précisons par ailleurs que ce facteur est subjectif, c'est à dire qu'il sera sensible à l'interpretation de l'auditeur en terme de psychoacoustique. Aussi, selon la répartition des premières réflexions, deux \gls{rir} dont la clarté calculée est identique pourra donner une clarté perçue différente \cite[p. 226]{jouhaneau}. %Il est d'usage de définir optimale entre -6 et 6 dB. Si la valeur est supérieure à cet intervalle, la salle répondra de manière sèche, et si elle est inférieure, le son direct sera noyé parmi les sons réverbérés et la salle sera dite « confuse » .
+	
+\subsection{Définition : $D_{50}$}
+Le paramètre de \gls{D50} exprime en pourcentage le ratio entre les premières réflexions et le son réverbéré total. Il se calcul par la formule suivante :
+\begin{equation}
+D_{50} = \frac{E_{0\to50}}{E_{0\to\infty}}.
+\end{equation}
+
+
+\subsection{Temps central : $T_s$}
+Le paramètre de \gls{D50} exprime le temps moyen de la répartition d'énergie :
+\begin{equation}
+T_s =  \frac{\sum\limits_{0}^{\infty} tE_t}{E_{0\to\infty}}.
+\end{equation}
+
+\subsection{Puissance sonore : SPL}
+Le niveau de pression acoustique en dB ou \gls{spl} est défini tel que :
+\begin{equation}
+SPL =  10\log{E_{0\to\infty}}.
+\end{equation}
+Il est équivalent au terme G (gain par rapport au niveau produit par une source omnidirectionnelle placée à 10m en espace libre \footnote{ISO 3382-1, 2009}.
+
+\subsection{Spaciosité : $LF_{80}$}
+Pour déterminer la spaciosité, c'est à dire la largeur apparente de la source et l'enveloppement des auditeurs, on étudie le rapport entre les réflexions latérales et l'ensemble des réflexions précoces. Ce paramètre se calcul avec la formule suivante :
+\begin{equation}
+LF_{80} =   \frac{\sum\limits_{t=5}^{80} E_t \cos^2(\beta_t)}{E_{0\to80}}. 
+\end{equation}
+
+
+%\subsection{Speech Transmission Index : STI}
+%Le \gls{STI} est un indice très interessant notamment pour l'étude de bâtiment où l'on transmet vocalement du texte.
+	
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+Dans cette partie, nous avons présenté les problématiques soulevées par une étude acoustique d'un monument antique. La géométrie complexe de ce type de bâtiment et leur taille colossale impose l'utilisation de méthodes de calcul approchées. Ainsi, par simulation des réflexions et absorptions des parois, il est possible d'étudier la réverbération d'une salle. Malgré les approximations inéluctables du modèle, nous avons prouvé que les lois de la physique sont respectées. Un algorithme rapide a été mis en place pour permettre aux utilisateurs de tester facilement et rapidement leurs hypothèses architecturales. Ainsi, le temps de calcul devient peu sensible aux nombres d'éléments du maillage ce qui est souvent limitant dans ce genre d'étude. Le fonctionnement de l'algorithme développé a été présenté en détail de même que les différents outils d'analyse qui en découlent. Celui-ci permet l'étude du graphe temporel de réverbération du bâtiment ainsi que la position dans l'espace des différentes réflexions sonores (voir fig \ref{projete}). Ces résultats pourront aussi être analysés à l'oreille en écoutant le son réverbéré émis depuis une ou plusieurs sources et entendu par un auditeur virtuel placé dans le bâtiment. %
+%
+%\begin{figureth}
+%	\includegraphics[width=0.9\linewidth]{images/orange}
+%	\caption{Représentation des réflexions des rayons sonores par projection des sources-images dans le théâtre d'Orange}
+%	\label{orange}
+%\end{figureth}
+%
+
+%Cet outil de calcul acoustique s'interface au logiciel Blender dans la continuité de l'étude présentée dans la partie \ref{part_1} de ce document.
 
 Il y a cependant de nombreuses possibilités d'améliorations qui restent à l'étude pour ce type d'outil logiciel. Premièrement, l'écoute du signal sonore pourrait être rendue en trois dimensions grâce à des filtres binauraux. Ceux-ci permettent par l'intermédiaire d'un casque audio de transmettre un signal différent à chacune des deux oreilles afin de donner l'illusion d'espace et de profondeur. Cela est réalisable grâce au calcul de positionnement des sources-images dans l'espace. Tout en restant en position statique, l'auditeur pourra donc orienter son regard selon différentes directions et écouter en temps réel le son changer. Le contrôle de la direction pourrait alors être effectué au clavier ou à l'aide d'un casque avec "\textit{Head Tracker"}. En se plaçant en vu subjective dans le modèle 3D de Blender, on peut faire un premier pas vers l'analyse audiovisuelle immersive. Dans un second temps, dans un contexte ou la réalité virtuelle prend de plus en plus d'importance dans les applications d'aujourd'hui, on pourrait envisager de déplacer l'auditeur en temps réel et permettre ainsi une visite virtuelle complète du bâtiment.
-
 
 Du point de vu des résultats d'analyse, il y a de nombreuses améliorations envisageables au niveau graphique. Cela pose certaines questions. Comment visualiser des résultats de calculs acoustiques ? Quelles sont les informations indispensables à recueillir pour un archéologue voulant étudier l'acoustique d'un monument ? 
 
 De la même manière, est-il essentiel d'ajouter les effets de diffraction au modèle ? Si oui, quelle est la meilleur méthode ? Pourrait-on traiter de manière locale certains comportements acoustiques et les insérer ensuite dans le modèle par lancer de rayons ? Typiquement, pourrait-on analyser par méthode de résolution exacte (voir section \ref{sect_resExacte}) le comportement acoustique d'une colonne, ou de tout autre ornement avec un fort niveau de détail, puis de l'incorporer de manière analytique dans l'outil de lancer de rayons ? Ou bien, peut-on résonner avec des résolutions exactes pour les faibles fréquences et conserver notre approche par méthode couplées pour les hautes fréquences ?
 
 Pour finir, nous l'avons déjà évoqué dans la section \ref{sect_rayon}, mais il serait également interessant d'utiliser des sources dont la directivité n'est pas uniforme. Cela serait d'ailleurs plus représentatif des cas réels et notamment de l'usage fait à Orange à l'origine du théâtre. Les sons étaient alors émis par des instruments de musique ou par la voix humaine éventuellement amplifiée par un masque.
+
+ La prochaine partie vise à présenter concrètement comment s'utilise cet outil dans son état actuel autour du cas d'étude du théâtre antique d'Orange. Ainsi, nous tenterons d'analyser des hypothèses archéologiques précises grâce à l'étude acoustique du bâtiment.
 
 %Ce sont des questions que nous allons pouvoir approfondir dans le partie suivante.
 

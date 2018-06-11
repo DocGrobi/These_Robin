@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{10}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -45,11 +45,25 @@
   pr{\'e}sent{\'e}s par divers savants {\`a} l'Acad{\'e}mie des inscriptions et
   belles-lettres de l'Institut de France.
 
+\bibitem[{\textsc{Haas}(1951)}]{haas}
+\textsc{Haas, H.} 1951, \emph{Influence de l'{\'e}cho sur la compr{\'e}hension
+  de la parole}, \bblvol{}~1, Acoustica.
+
+\bibitem[{\textsc{Jouhaneau}(1997)}]{jouhaneau}
+\textsc{Jouhaneau, J.} 1997, \emph{Acoustique des salles et sonorisation},
+  \emph{Acoustique appliqu{\'e}e}, \bblvol{}~3, Conservatoire national des arts
+  et m{\'e}tiers.
+
 \bibitem[{\textsc{Maufras}(1847)}]{vitruve}
 \textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
   \bblvol{}~V, Panckoucke.
 
 \bibitem[{\textsc{Odeon}()}]{odeon}
 \textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.
+
+\bibitem[{\textsc{Rindel}(2013)}]{rindel}
+\textsc{Rindel, J.~H.} 2013, \enquote{Roman theatres and revival of their
+  acoustics in the erato project}, \emph{ACTA ACUSTICA UNITED WITH ACUSTICA},
+  \bblvol{}~99, \bblpp{} 21--29.
 
 \end{thebibliography}

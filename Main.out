@@ -1,19 +1,43 @@
-\BOOKMARK [-1][-]{part.3}{III Analyse acoustique du th\351\342tre d'Orange}{}% 48
-\BOOKMARK [0][-]{chapter*.2}{Introduction}{part.3}% 49
-\BOOKMARK [0][-]{chapter.8}{Configuration initiale}{part.3}% 50
-\BOOKMARK [1][-]{section.8.1}{Utilisation g\351n\351rique du logiciel}{chapter.8}% 51
-\BOOKMARK [1][-]{section.8.2}{Configuration du maillage}{chapter.8}% 52
-\BOOKMARK [0][-]{chapter.9}{Test de configurations}{part.3}% 53
-\BOOKMARK [1][-]{section.9.1}{Position des spectateurs}{chapter.9}% 54
-\BOOKMARK [1][-]{section.9.2}{Pr\351sence de spectateurs}{chapter.9}% 55
-\BOOKMARK [1][-]{section.9.3}{Pr\351sence de velum}{chapter.9}% 56
-\BOOKMARK [1][-]{section.9.4}{Pr\351sence de la porticus isc}{chapter.9}% 57
-\BOOKMARK [1][-]{section.9.5}{Forme et mat\351riaux du toit}{chapter.9}% 58
-\BOOKMARK [0][-]{chapter.10}{Comparaison avec d'autres th\351\342tres antiques}{part.3}% 59
-\BOOKMARK [0][-]{chapter*.11}{Conclusion}{part.3}% 60
-\BOOKMARK [0][-]{chapter*.12}{R\351f\351rences}{part.3}% 61
-\BOOKMARK [0][-]{appendix.A}{Annexes}{part.3}% 62
-\BOOKMARK [1][-]{section.A.1}{Figures annexes}{appendix.A}% 63
-\BOOKMARK [1][-]{section.A.2}{Tableaux annexes}{appendix.A}% 64
-\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.3}% 65
-\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.3}% 66
+\BOOKMARK [-1][-]{part.2}{II Calculs acoustiques}{}% 26
+\BOOKMARK [0][-]{chapter*.2}{Introduction}{part.2}% 27
+\BOOKMARK [0][-]{chapter.4}{Acoustique de salle}{part.2}% 28
+\BOOKMARK [1][-]{section.4.1}{G\351n\351ralit\351s sur l'acoustique de salle}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{M\351thodes de calcul acoustique}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{D\351veloppement d'une m\351thode coupl\351e}{part.2}% 31
+\BOOKMARK [1][-]{section.5.1}{Notion d'onde sph\351rique discr\351tis\351e}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Environnement g\351om\351trique}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.3}{Calcul de rayons}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.4}{Calcul de sources-images}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.5}{G\351n\351ration de r\351ponse impulsionnelle}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.6}{Auralisation}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Optimisation algorithmique}{part.2}% 38
+\BOOKMARK [1][-]{section.6.1}{M\351thode d'octree}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Analyse des r\351sultats}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Validation}{part.2}% 41
+\BOOKMARK [1][-]{section.7.1}{Analyse visuelle}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{D\351croissance quadratique}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.3}{Cas de la salle sph\351rique}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.4}{Cas de la salle cubique}{chapter.7}% 45
+\BOOKMARK [0][-]{chapter.8}{Outil logiciel}{part.2}% 46
+\BOOKMARK [1][-]{section.8.1}{Utilisation g\351n\351rique du logiciel}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.2}{Param\350tres de sortie}{chapter.8}% 48
+\BOOKMARK [0][-]{chapter*.52}{Conclusion}{part.2}% 49
+\BOOKMARK [0][-]{chapter*.53}{R\351f\351rences}{part.2}% 50
+\BOOKMARK [-1][-]{part.3}{III Analyse acoustique du th\351\342tre d'Orange}{}% 51
+\BOOKMARK [0][-]{chapter*.54}{Introduction}{part.3}% 52
+\BOOKMARK [0][-]{chapter.9}{Analyse en configuration initiale}{part.3}% 53
+\BOOKMARK [1][-]{section.9.1}{Configuration du maillage}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.2}{Analyse de la r\351ponse impulsionnelle}{chapter.9}% 55
+\BOOKMARK [0][-]{chapter.10}{Test de configurations}{part.3}% 56
+\BOOKMARK [1][-]{section.10.1}{Position des spectateurs}{chapter.10}% 57
+\BOOKMARK [1][-]{section.10.2}{Forme du mur de sc\350ne}{chapter.10}% 58
+\BOOKMARK [1][-]{section.10.3}{Pr\351sence de spectateurs}{chapter.10}% 59
+\BOOKMARK [1][-]{section.10.4}{Pr\351sence de velum}{chapter.10}% 60
+\BOOKMARK [1][-]{section.10.5}{Pr\351sence de la porticus isc}{chapter.10}% 61
+\BOOKMARK [1][-]{section.10.6}{Forme et mat\351riaux du toit}{chapter.10}% 62
+\BOOKMARK [1][-]{section.10.7}{Impact du bruit ext\351rieur}{chapter.10}% 63
+\BOOKMARK [0][-]{chapter.11}{Comparaison avec d'autres th\351\342tres antiques}{part.3}% 64
+\BOOKMARK [0][-]{chapter*.60}{Conclusion}{part.3}% 65
+\BOOKMARK [0][-]{chapter*.61}{R\351f\351rences}{part.3}% 66
+\BOOKMARK [0][-]{appendix.B}{Liste des acronymes}{part.3}% 66
+\BOOKMARK [0][-]{appendix.C}{Glossaire}{part.3}% 67
