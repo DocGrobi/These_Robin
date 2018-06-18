@@ -1713,6 +1713,11 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption de l'air pour 1~000~000 rayons}
 \end{figureth}
 
+
+
+
+
+
 \chapter{Outil logiciel}
 	\citationChap{
 	L'éducation est le logiciel de l'ordinateur central qui programme l'avenir des sociétés.
@@ -1720,13 +1725,6 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 	\minitoc
 	\newpage
 	
-La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. 
-%
-\begin{figureth}
-	\includegraphics[width=0.9\linewidth]{images/synopsis}
-	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
-	\label{synopsis}
-\end{figureth}
 
 	
 \section{Utilisation générique du logiciel}
@@ -1760,9 +1758,17 @@ Par ailleurs l'utilisateur assignera aux différentes parois un type de matéria
 	\label{projete}
 \end{figureth}
 
+La figure \ref{synopsis} présente de manière synthétique l'architecture logicielle développée au cours du projet. 
+%
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/synopsis}
+	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
+	\label{synopsis}
+\end{figureth}
+
 
 \section{Paramètres de sortie}
-L'étude de l'acoustique d'un bâtiment passe par le calcul de différents paramètres obtenus à partir de la \gls{rir}. Ceux-ci permettent de qualifier les qualités d'une salle. C'est Leo L. Beranek qui proposa le premier, bien après les études de Sabine, une approche de définition générale de la qualité acoustique d'une salle de spectacle. Il propose de comparer différentes salles de concert par des experts (chefs d’orchestre, interprètes et critiques musicaux). Ceux-ci ont permis de dégager sept facteurs perceptifs :
+L'étude de l'acoustique d'un bâtiment passe par le calcul de différents paramètres obtenus à partir de la \gls{rir}. Ceux-ci permettent de qualifier les qualités d'une salle. C'est Leo L. Beranek qui proposa le premier, bien après les études de Sabine, une approche de définition générale de la qualité acoustique d'une salle de spectacle. Il propose à des experts (chefs d’orchestre, interprètes et critiques musicaux) de comparer différentes salles de concert. Ceux-ci ont permis de dégager sept facteurs perceptifs :
 \begin{itemize}
 	\item Reverberance : réverbérance, évaluation subjective du phénomène de réverbération ;
 	\item Loudness : puissance sonore ;
@@ -1773,57 +1779,89 @@ L'étude de l'acoustique d'un bâtiment passe par le calcul de différents param
 	\item Hearing on stage : aptitude pour les musiciens, les comédiens ou les conférenciers (donc dans le contexte d'une salle de spectacle uniquement) à s'entendre correctement. 
 \end{itemize}
 
-Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisions pout cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}. %Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
+Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisions pour cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}. %Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
+
 \subsection{Réverbérance : $T_{30}$}
-Nous disposons de la réponse impulsionnelle de la salle et pouvons par consequent mesurer différent temps de réverbération. Un facteur qui est souvent utilisé dans les études acoustiques de bâtiments est le \gls{T30}. Celui-ci correspond au temps que l'énergie met pour passer de -5 à -35dB.
+En pratique, le temps de réverbération est en général estimé grace au facteur $T_{30}$. Il correspond au double de l’intervalle de temps permettant de passer de entre -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir} :
+\begin{equation}
+E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau). \footnotemark
+\end{equation}
+\footnotetext{ISO 3382 part 1}
+Cette  extrapolation  permet  d’éviter les perturbations du signal souvent observées en début et en fin de réponse. 
+
 
 \subsection{Early Decay Time : EDT}
-Il sera interessant de séparer les premières réflexions du champs diffus. Ce paramètre se nomme \gls{EDT} et correspond au temps pour que l'énergie diminue de 10dB.
+Il sera également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30} établir la pente des courbes d'affaiblissement de 0 à -10dB. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en  compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  TR60 en fonction de la position d’écoute dans la salle.  
 
 \subsection{Clarté : $C_{80}$}
-La clarté est un paramètre qui vise à exprimer la compréhensibilité exprimé en dB tel que :
+La clarté est un paramètre qui vise à exprimer la compréhensibilité en dB tel que :
 %
 \begin{equation}
-C_{80} = 10\log{\left( \frac{E_{0\to80}}{E_{80\to\infty}} \right)},
+C_{80} = 10\log{\left( \frac{E_{0\to80}}{E_{80\to\infty}} \right)}.
 \end{equation}
 %
-et $E_{a\to b}$ est la fraction d'énergie sonore comprise dans l'intervalle [a,b] telle que :
+$E_{a\to b}$ est la fraction d'énergie sonore comprise dans l'intervalle [a,b] en ms telle que :
 %
 \begin{equation}
 E_{a\to b} = \int_a^b p^2(t) dt. \footnotemark
 \end{equation}
 \citefnt[eq 74, p. 221]{jouhaneau}
-Nous utilisons comme limite utile pour la compréhension de la parole la valeur de 80ms car c'est celle qui est le plus largement utilisée (introduite par Reichardt \cite[p.126]{Reichardt} en 1975). Précisons par ailleurs que ce facteur est subjectif, c'est à dire qu'il sera sensible à l'interpretation de l'auditeur en terme de psychoacoustique. Aussi, selon la répartition des premières réflexions, deux \gls{rir} dont la clarté calculée est identique pourra donner une clarté perçue différente \cite[p. 226]{jouhaneau}. %Il est d'usage de définir optimale entre -6 et 6 dB. Si la valeur est supérieure à cet intervalle, la salle répondra de manière sèche, et si elle est inférieure, le son direct sera noyé parmi les sons réverbérés et la salle sera dite « confuse » .
+Nous utilisons comme limite utile pour la compréhension de la parole la valeur de 80ms car c'est celle qui est le plus largement utilisée (introduite par Reichardt \cite[p.126]{Reichardt} en 1975). Précisons par ailleurs que ce facteur est subjectif, c'est à dire qu'il sera sensible à l'interpretation de l'auditeur en terme de psychoacoustique. Aussi, selon la répartition des premières réflexions, deux \gls{rir} dont la clarté "calculée" est identique pourra donner une clarté "perçue" différente \cite[p. 226]{jouhaneau}. %Il est d'usage de définir optimale entre -6 et 6 dB. Si la valeur est supérieure à cet intervalle, la salle répondra de manière sèche, et si elle est inférieure, le son direct sera noyé parmi les sons réverbérés et la salle sera dite « confuse » .
 	
 \subsection{Définition : $D_{50}$}
-Le paramètre de \gls{D50} exprime en pourcentage le ratio entre les premières réflexions et le son réverbéré total. Il se calcul par la formule suivante :
+Le paramètre \gls{D50} exprime en pourcentage le ratio entre les premières réflexions et le son réverbéré total. Il se calcul par la formule suivante :
 \begin{equation}
 D_{50} = \frac{E_{0\to50}}{E_{0\to\infty}}.
 \end{equation}
 
+On distingue généralement les intervalles décrit dans le tableau \ref{definition} \cite[p.59]{acoustique} pour juger de la qualité de la définition sonore dans une salle en fonction de la valeur mesurée ou calculée du critère  $D_{50}$. 
+
+\begin{tableth} \label{tab_definition}
+	\begin{tabular}{| *{7}{c|}}
+		\hline
+		 \gls{D50} & 0 à 30\% & 0 à 30\%& 30 à 45\%& 45 à 60\%& 60 à 75\% & 75 à 100\%\\
+		  \hline
+		   Définition & Mauvaise & Pauvre & Moyenne & Bonne & Excellente \\
+		   \hline
+			 \end{tabular}
+	\caption{Évaluation du critère de définition}
+\end{tableth}
+
 
 \subsection{Temps central : $T_s$}
-Le paramètre de \gls{D50} exprime le temps moyen de la répartition d'énergie :
+Le paramètre $T_s$ est le centre de gravité temporel de la réponse impulsionnelle de la salle c’est à dire le temps pour lequel la moitié de l’énergie sonore  totale  est  reçue.  Il  se  calcule  comme  le  barycentre continu  des  instants  de  réception  du  son  pondéré  par  l’énergie  sonore  en  ces  instants et s'exprime en milli-secondes. $T_s$  donne  un  ordre  d’idée  de  "l’étalement" de  la  réponse  impulsionnelle  c’est  à dire  du  temps moyen que prend un son pour parvenir aux auditeurs.
 \begin{equation}
 T_s =  \frac{\sum\limits_{0}^{\infty} tE_t}{E_{0\to\infty}}.
 \end{equation}
 
 \subsection{Puissance sonore : SPL}
-Le niveau de pression acoustique en dB ou \gls{spl} est défini tel que :
+Le niveau de pression acoustique ou \gls{spl} s'exprime en dB et est défini tel que :
 \begin{equation}
 SPL =  10\log{E_{0\to\infty}}.
 \end{equation}
-Il est équivalent au terme G (gain par rapport au niveau produit par une source omnidirectionnelle placée à 10m en espace libre \footnote{ISO 3382-1, 2009}.
+Pour pouvoir adapter la \gls{rir} dont le niveau est normalisé (le son direct est à 0dB) on retirera un offset. Celui-ci est calculé tel que l'énergie mesurée à 10m en champs libre doit être à -31dB \footnote{ISO 3382-1, 2009}. Cela permet de prendre en compte l'attenuation de l'énergie du son direct entre la source et le récepteur. On a alors :
+\begin{equation}
+E'(t) =  E(t) \frac{ 10^{-3,1}e^{-m.t.v}}{(t.v)^2},
+\end{equation}
+avec :
+\begin{itemize}
+	\item E'(t) : l'énergie adaptée pour valoir -31dB à 10m en champs libre,
+	\item E(t) : l'énergie normalisée pour que le son direct vale 0dB,
+	\item m : le coefficient d'absorption atmosphérique en fonction de la température, l'humidité et la fréquence,
+	\item v : la vitesse du son dans le milieu (=340m/s pour l'air).
+\end{itemize}
 
 \subsection{Spaciosité : $LF_{80}$}
 Pour déterminer la spaciosité, c'est à dire la largeur apparente de la source et l'enveloppement des auditeurs, on étudie le rapport entre les réflexions latérales et l'ensemble des réflexions précoces. Ce paramètre se calcul avec la formule suivante :
 \begin{equation}
-LF_{80} =   \frac{\sum\limits_{t=5}^{80} E_t \cos^2(\beta_t)}{E_{0\to80}}. 
+LF_{80} =   \frac{\sum\limits_{t=5}^{80} E_t \cos^2(\beta_t)}{E_{0\to80}}, 
 \end{equation}
-
-
+où $\beta_t$ est l'angle entre l'axe reliant la source-image au récepteur et l'axe reliant les deux oreilles du récepteur. Pour déterminer cet axe on orientera le regard de l'auditeur vers la source.
+Un  LF  important  correspond  à  une  impression  d’espace.  L’auditeur  se  sent  au  centre  du  son,  mais  pour  un  LF  trop  important  il  ne  peut  plus  localiser  la  source  qu’il  écoute. Inversement,  si  ce  critère  est  trop  faible  l’auditeur  se  sent  éloigné  de  la  source,  mis  à  l’écart. 
 %\subsection{Speech Transmission Index : STI}
 %Le \gls{STI} est un indice très interessant notamment pour l'étude de bâtiment où l'on transmet vocalement du texte.
+
+
 	
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
