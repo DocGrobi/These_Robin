@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{36}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -103,6 +103,12 @@
 \textsc{Knuth, D.} 1997, \emph{The Art of Computer Programming}, \bblvol{}~1,
   \bblthirdo{} \bbledn{}, Fundamental Algorithms.
 
+\bibitem[{\textsc{Krauss} \bbletal{}(2009)\textsc{Krauss}, \textsc{Yezou}
+  \bbland{} \textsc{Kuznik}}]{acoustique}
+\textsc{Krauss, G.}, \textsc{R.~Yezou} \bbland{} \textsc{F.~Kuznik}. 2009,
+  \enquote{Acoustique du batiment}, Cours-Institut national des sciences
+  appliqu{\'e}es de Lyon.
+
 \bibitem[{\textsc{Kulowski}(1985)}]{raytracing}
 \textsc{Kulowski, A.} 1985, \emph{Algorithmic representation of the ray tracing
   technique}, \bblvol{}~18, Applied Acoustics.
@@ -165,6 +171,10 @@
   \textsc{J.-C. Messonnier} \bbland{} \textsc{L.~Millot}. 2017,
   \enquote{Optimization of interactive binaural processing}, Audio Engineering
   Society.
+
+\bibitem[{\textsc{Schoreder}(1964)}]{schroeder}
+\textsc{Schoreder, M.} 1964, \enquote{New method of measuring reverberation
+  time}, \emph{Bell Telephone Laboratories}.
 
 \bibitem[{\textsc{Vorl{\"a}ndera} \bbland{}
   \textsc{Mommertz}(2000)}]{diffusion}

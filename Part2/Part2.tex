@@ -28,12 +28,12 @@ Pour débuter, nous ferons un tour d'horizon de la physique de l'acoustique et p
 			
 		
 \section{Généralités sur l'acoustique de salle}
-\subsection{Notion de révérberation}
+\subsection{Notion de reverberation}
 L'acoustique de salle est une discipline à part entière qui consiste principalement à étudier la réverbération d'une pièce excitée par des ondes sonores. Le principe de cette étude est le suivant : il s'agit en général de placer une source sonore ponctuelle à l'intérieur d'une salle, fermée ou non, et de la faire rayonner. L'onde se propage alors jusqu'aux parois et subit un phénomène de diffusion. Il s'agit en réalité d'une combinaison de trois phénomènes : la réflexion, la réfraction et la diffraction (fig. \ref{schema_absorption}). Par réfraction on entend la notion d'absorption suivant les lois de Descartes sur la propagation entre deux milieux \cite[p. 3]{jouhaneau}. La diffraction quant à elle opère lorsque la longueur d'onde est proche de la taille de l'obstacle. L'interaction entre une onde sonore et une paroi ou un obstacle dépend donc de leur forme et la nature de leur matériau.
 
 \begin{figureth}
 	\includegraphics[width=0.5\linewidth]{images/schema_absorption}
-	\caption[Les différents comportements d'une onde lorsqu'elle rencontre une paroi]{Les différents comportements d'une onde lorsqu'elle rencontre une paroi} %\footnotemark}
+	\caption[Les différents comportements d'une onde lorsqu'elle rencontre une paroi]{Les différents comportements d'une onde lorsqu'elle rencontre une paroi.} %\footnotemark}
 	\label{schema_absorption}
 \end{figureth}
 %\citefnt[Chap. 1]{aquaterra}
@@ -43,7 +43,7 @@ On comprend alors que les principaux facteurs qui vont influer sur l'acoustique 
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/RIR_schematique}
-	\caption{Réponse temporelle d'une impulsion sonore dans une salle}
+	\caption{Réponse temporelle d'une impulsion sonore dans une salle.}
 	\label{RIR_schematique}
 \end{figureth}
 
@@ -97,9 +97,10 @@ Après intégration sur la surface sphérique $S(t)$, nous pouvons écrire l'int
 
 \begin{figureth}
 	\includegraphics[width=0.5\linewidth]{images/flux}
-	\caption{Représentation de la répartition du flux énergétique dans la propagation d'une onde sphérique}
+	\caption[Représentation de la répartition du flux énergétique dans la propagation d'une onde sphérique.]{Représentation de la répartition du flux énergétique dans la propagation d'une onde sphérique \footnotemark.}
 	\label{flux}
 \end{figureth}
+\footnotetext{Intensité acoustique - Wikipédia}
 
 On comprend que l'intensité décroit comme le carré de la distance et qu'une portion d'énergie considérée va donc être portée par un angle solide (voir fig. \ref{flux}). Ainsi, à une distance $d$ la même quantité d'énergie est répartie sur une surface de $a^2$ que à une distance de $2d$ sur une surface de $(2a)^2$. L'énergie se répartie donc sur une surface proportionnelle au carré de la distance. Sur une portion de $S(t)$ l'énergie est portée par un angle solide $\Omega_{S}$ tel que :
 
@@ -117,7 +118,7 @@ Cela traduit le fait que l'énergie d'un angle solide est constante au cours du 
 
 
 
-\subsection{Absorption atmostphérique}
+\subsection{Absorption atmosphérique}
  \label{sect_absAIr}
 Pour se rapprocher d'un modèle réaliste de propagation d'onde, il est important de prendre en compte l'absorption atmosphérique. Ce phénomène est dû à la viscosité et la conduction thermique du milieu ainsi qu'à l'absorption des molécules. Ces effets vont provoquer une décroissance exponentielle de l'énergie d'onde \cite[p. 68-70]{jouhaneau}. Selon leur distance parcourue dans l'air, l'intensité acoustique va subir une atténuation en prenant en compte trois facteurs principaux : la température, l'humidité et le pression. La température et la pression atmosphérique de référence sont respectivement de 20°C et 101,325 kPa \footnote{International Standard Atmosphere}. Le coefficient d'atténuation dépend de la fréquence du son et peut être obtenue d'après les formules analytiques de la norme ISO-9613-1. Ces formules assez complexe ont été obtenue à l'aide de tables de mesures expérimentales.
 
@@ -146,7 +147,7 @@ avec :
 \item $f$ : La fréquence en Hz.
 \end{itemize}
 
-Nous pouvons alors exprimer le coefficient d'absorption de l'air "$m$" (en dB/m) en fonction de la fréquence  \cite[6.2, eq. 5]{iso} :
+Nous pouvons alors exprimer le coefficient d'absorption de l'air "$m$" (en dB/m) en fonction de la fréquence \cite[6.2, eq. 5]{iso} (voir fig. \ref{absorption}) :
 
 \begin{equation*}
 	m_{(dB/m)} = 8,686 \times f^2 \times \left(\frac{1,84 \times 10^{-11}}{P_r} \times \sqrt{T_r} + T_r^{\frac{-5}{2}} \times \left(0,01275 \times \frac{\exp{\frac{-2239,1}{T}}}{fr_O + \frac{f^2}{fr_O}} + 0,1068 \times  \frac{\exp{\frac{-3352}{T}}}{fr_A + \frac{f^2}{fr_A}}\right)\right).
@@ -159,15 +160,15 @@ On obtient le facteur final (en $m^{-1}$) par la formule :
 \begin{figureth}
 	\begin{subfigureth}{0.8\linewidth}
 		\includegraphics[width=\linewidth]{images/absorption}
-		\caption{m(h) - Absorption de l'air en fonction de l'humidité relative (\%) pour différentes fréquences}
-		\label{absorption}
+		\caption{m(h) - Absorption de l'air en fonction de l'humidité relative (\%) pour différentes fréquences.}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\linewidth}
 		\includegraphics[width=\linewidth]{images/absorptionbis}
-		\caption{m(h) - Absorption de l'air en fonction de l'humidité relative (\%) pour différentes températures}
-		\label{absorptionbis}
+		\caption{m(h) - Absorption de l'air en fonction de l'humidité relative (\%) pour différentes températures.}
+		%\label{absorptionbis}
 	\end{subfigureth}
-	\caption{Courbes d'absorption de l'air en fonction de l'humidité relative (\%) (ISO-9613) }
+	\label{absorption}
+	\caption{Courbes d'absorption de l'air en fonction de l'humidité relative (\%) (ISO-9613).}
 \end{figureth}
 
 Notons tout de même que l'on aurait pu utiliser une formule simplifiée issue de la norme AFNOR S.30 009 qui donne des résultats similaires entre 20 et 80\% d'humidité relative \cite[p. 68-70]{jouhaneau} :
@@ -178,7 +179,7 @@ Néanmoins cette norme étant obsolète depuis 2016 et les résultats étant lé
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/absorptionter}
-	\caption{m(h) - Courbes d'absorption de l'air en fonction de l'humidité relative (\%) pour différentes fréquences d'après l'équation \ref{afnor}}
+	\caption{m(h) - Courbes d'absorption de l'air en fonction de l'humidité relative (\%) pour différentes fréquences d'après l'équation \ref{afnor}.}
 	\label{absorptionter}
 \end{figureth}
 
@@ -307,7 +308,7 @@ avec : $\delta_s$ : la mesure de \gls{Dirac} centrée en S.
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/green}
-	\caption[Schéma général pour l'établissement de la représentation de Green]{Schéma général pour l'établissement de la représentation de Green \footnotemark}
+	\caption[Schéma général pour l'établissement de la représentation de Green]{Schéma général pour l'établissement de la représentation de Green \footnotemark.}
 	\label{schema_green}
 \end{figureth}
 \citefnt[fig. 2.1]{fem-bem}
@@ -374,11 +375,11 @@ Ainsi, si on connait $u$ et $\partial_n u $ la dérivée normale de u sur la sur
 
 	\subsection{Méthodes géométriques}
 	
-Les méthodes géométriques sont largement utilisées dans le domaine de l'acoustique de salle. Elles se basent sur le trajet que parcourt l'onde sonore entre une source et un récepteur (fig. \ref{geometrique}). L'onde, percutant les parois, subit un changement de direction de propagation. Par ailleurs, chaque paroi ou obstacle porte une \gls{impedance} lié à la nature de son matériau qui atténuera l'énergie de l'onde réfléchie en fonction de sa fréquence.
+Les méthodes géométriques sont largement utilisées dans le domaine de l'acoustique de salle. Elles se basent sur le trajet que parcourt l'onde sonore entre une source et un récepteur (voir fig. \ref{geometrique}). L'onde, percutant les parois, subit un changement de direction de propagation. Par ailleurs, chaque paroi ou obstacle porte une \gls{impedance} lié à la nature de son matériau qui atténuera l'énergie de l'onde réfléchie en fonction de sa fréquence.
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/geometrique}
-	\caption{Vu 2D de la propagation d'une onde sphérique dans une salle rectangulaire}
+	\caption{Vu 2D de la propagation d'une onde sphérique dans une salle rectangulaire.}
 	\label{geometrique}
 \end{figureth}
 
@@ -391,7 +392,7 @@ Le problème de cette méthode est que l'on génère l'ensemble des sources-imag
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/constellations}
-	\caption[Différentes constellations de salle : la densité de sources reste constante]{Différentes constellations de salle : la densité de sources reste constante \footnotemark}
+	\caption[Différentes constellations de salle : la densité de sources reste constante.]{Différentes constellations de salle : la densité de sources reste constante \footnotemark.}
 	\label{constellations}
 \end{figureth}
 \citefnt[Fig. 61]{Kandelman}
@@ -445,7 +446,7 @@ Au début du projet, nous avions tenté d'analyser une version très simplifiée
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/BEM}
-	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par méthode des éléments finis de frontière à 50Hz}
+	\caption{Comparaison d'un théâtre simplifié avec gradins coniques ou gradins cubiques par méthode des éléments finis de frontière à 50Hz.}
 	\label{BEM}
 \end{figureth}
 
@@ -460,17 +461,16 @@ Ce chapitre vise à détailler ce processus. Notons néanmoins que les effets de
 \begin{figureth}
 \begin{subfigureth}{0.55\textwidth}
 	\includegraphics[width=\linewidth]{images/schema_propagation}
-	\caption{Schéma en deux dimensions d'une onde sphérique dont une portion d'énergie est mesuré par un récepteur de rayon r.}
+	\caption{Schéma en deux dimensions d'une onde sphérique dont une portion d'énergie est mesurée par un récepteur de rayon r.}
 	\label{schema_propagation}
 \end{subfigureth}
 \qquad
 \begin{subfigureth}{0.35\textwidth}
 	\includegraphics[width=\linewidth]{images/angle_solide}
-	\caption{Représentation de l'angle solide d'un cône de révolution \footnotemark}
+	\caption{Représentation de l'angle solide d'un cône de révolution \footnotemark.}
 	\label{angle_solide}
 	\end{subfigureth}
-	\caption{Représentations du principe de mesure de l'angle solide}
-
+	\caption{Représentations du principe de mesure de l'angle solide.}
 \end{figureth}
 \citefnt[image]{angle_solide}
 
@@ -626,7 +626,7 @@ avec:
 		3000 & Hollow wooden podium\footnotemark & 0.4 & 0.4 & 0.3 & 0.2 & 0.17 & 0.15 & 0.1 & 0.1 \\
 	     \hline
 	 \end{tabular}
-	\caption{Exemples de coefficients d'absorption de la base de données Odéon}
+	\caption{Exemples de coefficients d'absorption de la base de données Odéon.}
 \end{tableth}
 \addtocounter{footnote}{-1}
 \footnotetext{Harris, 1991}
@@ -640,7 +640,7 @@ Notons par ailleurs que l'on défini la ou les sources sonores par une position 
 
 \subsection{Création d'une boite englobante}
 
-La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} qu'il est préférable que chaque rayon puisse rencontrer une paroi afin d'assurer le bon comptage des rayons et éviter ainsi les erreurs algorithmiques. Or, pour une salle ouverte, comme c'est le cas dans le théâtre d'Orange qui est à ciel ouvert, certains rayons peuvent ne rencontrer aucune face. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées systèmatiquement au maillage afin de créer une boite englobante. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par l'absence de paroi. Par ailleurs, cette boite ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondues avec une paroi réelle du maillage et que les rayons soient absorbés par la boite englobante au lieu d'être réfléchis par la paroi.
+La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} qu'il est préférable que chaque rayon puisse rencontrer une paroi afin d'assurer le bon comptage des rayons et éviter ainsi les erreurs algorithmiques. Or, pour une salle ouverte, comme c'est le cas dans le théâtre d'Orange qui est à ciel ouvert, certains rayons peuvent ne rencontrer aucune face. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées systématiquement au maillage afin de créer une boite englobante. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par l'absence de paroi. Par ailleurs, cette boite ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondues avec une paroi réelle du maillage et que les rayons soient absorbés par la boite englobante au lieu d'être réfléchis par la paroi.
 
 \begin{figureth}
 	\begin{subfigureth}{0.55\textwidth}
@@ -654,7 +654,7 @@ La technique de lancer de rayons présente une problématique pour des maillages
 		%\caption{Illustration d'une boite englobant un maillage quelconque}
 		\label{boiteenglobante2}
 	\end{subfigureth}
-	\caption{Illustration d'une boite englobant un maillage quelconque (Suzanne)}
+	\caption{Illustration d'une boite englobant un maillage quelconque (Suzanne).}
 \end{figureth}
 
 
@@ -663,21 +663,21 @@ La technique de lancer de rayons présente une problématique pour des maillages
 
 Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un triangle du maillage. Il est bon de noter que dans la nature, les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources sonores telles que les instruments de musique ou la voix humaine ne sont pas omnidirectionnelles mais possèdent une répartition de l'énergie qui leur est propre. Comme précisé précédemment, notre étude se place dans le cas général d'une source ayant une répartition uniforme de son énergie dans toutes les directions de l'espace et pourra, dans un second temps, être enrichie par d'autres types de sources. 
 
-Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par Blender. L'idée est d'utiliser le centre comme origine et chaque vertice pour calculer le vecteur directeur des rayons. Effectivement, Blender propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le rafinement voulu, Blender découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons. 
+Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par Blender. L'idée est d'utiliser le centre comme origine et chaque vertice pour calculer le vecteur directeur des rayons. Effectivement, Blender propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le rafinement voulu, Blender découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons (voir fig. \ref{fibonacci}). 
 
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/icosphere}
-		\caption{Icosphère de Blender subdivisée 2, 3, 4 et 5 fois}
+		\caption{Icosphère de Blender subdivisée 2, 3, 4 et 5 fois.}
 		\label{icosphere}
 	\end{subfigureth}
 	\qquad
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/fibonacci}
-		\caption[Sphère de Fibonacci]{Sphère de Fibonacci \footnotemark}
+		\caption[Sphère de Fibonacci]{Sphère de Fibonacci \footnotemark.}
 		\label{fibonacci}
 	\end{subfigureth}
-	\caption{Sphères permettant l'émission omnidirectionnelle de rayons}
+	\caption{Sphères permettant l'émission omnidirectionnelle de rayons.}
 
 \end{figureth}
 \citefnt[fig. 1]{fibonacci}
@@ -833,7 +833,7 @@ On peut alors connaitre toutes les faces que rencontre chaque rayon en conservan
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/DiagRay}
-	\caption{Diagramme d'activité résumant le processus de création des rayons}
+	\caption{Diagramme d'activité résumant le processus de création des rayons.}
 	\label{DiagRay}
 \end{figureth}
 
@@ -854,7 +854,7 @@ Pour calculer le vecteur directeur des rayons réfléchis, il suffit d'utiliser 
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/rayRefl}
-	\caption{Calcul d'un rayon réfléchi à partir d'un rayon incident et d'une normale}
+	\caption{Calcul d'un rayon réfléchi à partir d'un rayon incident et d'une normale.}
 	\label{rayRefl}
 \end{figureth}
 
@@ -884,13 +884,13 @@ avec $l$ la longueur du rayon.
 \begin{figureth}
 	\begin{subfigureth}{0.55\textwidth}
 			\includegraphics[width=\linewidth]{images/touche}
-			\caption{Schéma d'un rayon qui passe en frontière de la sphère récepteur de rayon r}
+			\caption{Schéma d'un rayon qui passe en frontière de la sphère récepteur de rayon r.}
 			\label{touche}
 		\end{subfigureth}
 		\qquad
 		\begin{subfigureth}{0.35\textwidth}
 			\includegraphics[width=\linewidth]{images/schema_SI}
-			\caption{Schéma de la création d'une source image par réflexions successives d'un rayon sur les parois d'une salle}
+			\caption{Schéma de la création d'une source image par réflexions successives d'un rayon sur les parois d'une salle.}
 			\label{schema_SI}
 	\end{subfigureth}
 \end{figureth}
@@ -929,7 +929,7 @@ avec $l$ la longueur du rayon. Pour finir, on s'assure que le rayon intersecte b
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.7\linewidth]{images/DiagSi}
-	\caption{Diagramme d'activité résumant le processus de création des sources-images}
+	\caption{Diagramme d'activité résumant le processus de création des sources-images.}
 	\label{DiagSi}
 \end{figure}
 
@@ -989,7 +989,7 @@ et avec :
 
  \begin{figureth}
 	\includegraphics[width=0.9\linewidth]{images/rir}
-	\caption[Réponse impulsionnelle d'un cube]{Exemple de \gls{rir} pour un cube de 50m d'arrête, une source et un récepteur de 20m de diamètre situés au centre, un million de rayons et une fréquence d'échantillonnage de 44100Hz}
+	\caption[Réponse impulsionnelle d'un cube.]{Exemple de \gls{rir} pour un cube de 50m d'arrête, une source et un récepteur de 20m de diamètre situés au centre, un million de rayons et une fréquence d'échantillonnage de 44100Hz.}
 	\label{rir}
 \end{figureth}
 
@@ -1020,7 +1020,7 @@ On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs sign
 L'algorithme mis en place fonctionne de la manière suivante (voir fig. \ref{DiagTdS}) :
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/DiagTdS}
-	\caption{Schéma du processus de convolution partitionnée}
+	\caption{Schéma du processus de convolution partitionnée.}
 	\label{DiagTdS}
 \end{figureth}
 
@@ -1028,7 +1028,7 @@ Premièrement, on fixe la longueur des partitions à $n$ échantillons tel que $
 
 \begin{figureth}
 	\includegraphics[width=0.9\linewidth]{images/filtres}
-	\caption{Filtres fréquenciels passe-bande}
+	\caption{Filtres fréquenciels passe-bande.}
 	\label{filtres}
 \end{figureth}
 
@@ -1065,7 +1065,7 @@ L'étape la plus complexe est la boucle d'itération sur le calcul des intersect
 
  \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/complexite00}
-	\caption{Courbe de complexité donnant le temps (s) d'une itération pour N=M en échelle logarithmique}
+	\caption{Courbe de complexité donnant le temps (s) d'une itération pour N=M en échelle logarithmique.}
 	\label{complexite00}
 \end{figureth}
 
@@ -1080,7 +1080,7 @@ Par ailleurs en fixant d'une part le nombre de face et d'autre part le nombre de
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite0}
-	\caption{Courbes de complexité donnant le temps (s) d'une itération en échelle logarithmique}
+	\caption{Courbes de complexité donnant le temps (s) d'une itération en échelle logarithmique.}
 	\label{complexite0}
 \end{figureth}
 
@@ -1100,7 +1100,7 @@ Comme nous l'avons vu précédemment, les maillages que nous devons traiter peuv
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octree}
-	\caption{Illustration du principe d'\gls{octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite)}
+	\caption{Illustration du principe d'\gls{octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite).}
 	\label{octree}
 \end{figureth}
 
@@ -1110,7 +1110,7 @@ Le principe général consiste à créer une boite cubique dite "boite-mère" co
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octreeSuzanne}
-	\caption{Suzanne triée dans un \gls{octree}}
+	\caption{Représentation d'un \gls{octree} créé à partir d'un maillage complexe (Suzanne) et dont le raffinement s'adapte au maillage.}
 	\label{octreeSuzanne}
 \end{figureth}
 
@@ -1189,7 +1189,7 @@ Le nombre d'étage nécessaire diminue donc d'un terme constant lié à $n$ et p
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/DiagOctree}
-	\caption{Diagramme d'activité résumant le processus de création d'un arbre d'octree}
+	\caption{Diagramme d'activité résumant le processus de création d'un \gls{octree}.}
 	\label{DiagOctree}
 \end{figureth}
 
@@ -1209,43 +1209,29 @@ avec :
 \item $O$ : le point d'origine du rayon de coordonnées $(O_x ; O_y ; O_z)$.
 \end{itemize}
 
-On peut également exprimer les plans délimitant la boite de type \gls{AABB} par les équations suivantes :
-\begin{align*}
-f(t) &= X_{min}  \\
-f(t) &= X_{max}  \\
-f(t) &= Y_{min}  \\
-f(t) &= Y_{max} \\
-f(t) &= Z_{min} \\
-f(t) &= Z_{max}
-\end{align*}
-
-
+On peut également exprimer dans un espace à deux dimensions les six plans délimitant la boite de type \gls{AABB} en utilisant les valeurs constantes [$X_{min} ; X_{max}  ; Y_{min}  ; Y_{max} ; Z_{min} ; Z_{max}$].
+%
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/AABB}
-		\caption{Vue 2D d'un rayon intersectant la boite}
+		\caption{Vue 2D d'un rayon intersectant la boite.}
 		\label{AABB}
 	\end{subfigureth}
 	\qquad
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/AABB2}
-		\caption{Vue 2D de rayons n'intersectant pas la boite}
+		\caption{Vue 2D de rayons n'intersectant pas la boite.}
 		\label{AABB2}
 	\end{subfigureth}
-	\caption{Illustrations de l'intersection Rayon/Boite en 2D}
+	\caption{Illustrations de l'intersection Rayon/Boite en 2D.}
 \end{figureth}
-
-Ainsi, on peut exprimer les points d'intersection entre le rayon et les plans délimitant la boite avec le système d'équations suivant :
-
+%
+Ainsi, on peut exprimer les points d'intersection entre le rayon et chacun des six plans délimitant la boite. Pour le plan $X_{min}$ par exemple on aura :
+%
 \begin{align*}
-X_{min} &= x_0 \times D_x + O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}, \\
-X_{max} &= x_1 \times D_x + O_x 	& \Rightarrow 	& &	x_1 = \frac{X_{max} - O_x}{D_x}, \\
-Y_{min} &= y_0 \times D_y + O_y 	& \Rightarrow	& &	y_0 = \frac{Y_{min} - O_y}{D_y}, \\
-Y_{max} &= y_1 \times D_y + O_y 	& \Rightarrow	& &	y_1 = \frac{Y_{max} - O_y}{D_y}, \\
-Z_{min} &= z_0 \times D_z + O_z	& \Rightarrow 	& &	z_0 = \frac{Z_{min} - O_z}{D_z}, \\
-Z_{max} &= z_1 \times D_z + O_z 	& \Rightarrow 	& &	z_1 = \frac{Z_{max} - O_z}{D_z}. 
+X_{min} &= x_0 \times D_x + O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}.
 \end{align*}
-
+%
 On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boite en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boite (voir fig \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) .
 
 De cette façon on saura quelles sont les boites traversées par chaque rayons. Pour chaque feuille de l'\gls{octree}, c'est à dire les boites non-vides les plus basses dans l'arborescence, on testera les intersections entre les rayons et les faces situés dans la subdivision de l'espace correspondante uniquement. Ainsi, le calcul d'intersection ne se fait qu'entre peu de rayons et peu de faces.
@@ -1267,7 +1253,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite}
-	\caption{Temps de calcul (s) d'une itération en fonction du nombre de rayons et de faces avec N=M (échelle log)}
+	\caption{Temps de calcul (s) d'une itération en fonction du nombre de rayons et de faces avec N=M (échelle log).}
 	\label{complexite}
 \end{figureth}
 
@@ -1302,7 +1288,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 		%$2^{21}$ (=2~097~152) & X & 45,83 \\
 		%\hline
 	 \end{tabular}
-	\caption{Temps de calcul (s) d'une itération pour $N = M$}
+	\caption{Temps de calcul (s) d'une itération pour $N = M$.}
 	\label{tabComplexite}
 \end{tableth}
 
@@ -1325,7 +1311,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite1}
-	\caption{Temps de calcul (s) d'une itération en fonction du nombre de faces pour 100k rayons (échelle log)}
+	\caption{Temps de calcul (s) d'une itération en fonction du nombre de faces pour 100k rayons (échelle log).}
 	\label{complexite1}
 \end{figureth}
 
@@ -1356,7 +1342,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 		3145728 & X & 6,1 \\
 		\hline
 	 \end{tabular}
-	\caption{Temps de calcul (s) d'une itération pour 100k rayons}
+	\caption{Temps de calcul (s) d'une itération pour 100k rayons.}
 	\label{tabComplexite1}
 \end{tableth}
 
@@ -1364,7 +1350,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite2}
-	\caption{Temps de calcul (s) d'une itération en fonction du nombre de rayons pour 50k faces (échelle log)}
+	\caption{Temps de calcul (s) d'une itération en fonction du nombre de rayons pour 50k faces (échelle log).}
 	\label{complexite2}
 \end{figureth}
 
@@ -1389,7 +1375,7 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 		10M & X &	73,7 \\
 		\hline
 	 \end{tabular}
-	\caption{Temps de calcul (s) d'une itération pour 50k faces}
+	\caption{Temps de calcul (s) d'une itération pour 50k faces.}
 	\label{tabComplexite2}
 \end{tableth}
 
@@ -1485,7 +1471,7 @@ Avant de tester la justesse des résultats d'un point de vu physique, il est bon
 
 \begin{figureth}
 		\includegraphics[width=0.5\linewidth]{images/test0}
-		\caption{Propagation des rayons dans un labyrinthe}
+		\caption{Propagation des rayons dans un labyrinthe.}
 		\label{test0}
 \end{figureth}		
 
@@ -1503,7 +1489,7 @@ De la même manière nous confirmons le bon fonctionnement de la boite englobant
 		\includegraphics[width=\linewidth]{images/testBEbis}
 		%\label{testBEbis}
 	\end{subfigureth}
-	\caption{Absorption des rayons par une boite englobante}
+	\caption{Absorption des rayons par une boite englobante.}
 	\label{testBE}
 \end{figureth}
 
@@ -1522,7 +1508,7 @@ Nous vérifions finalement que les rayons captés par le récepteur sont bien po
 		\caption{Propagation des rayons depuis les sources-images vers le récepteur à l'ordre 1.}
 		\label{testBeam2}
 	\end{subfigureth}
-	\caption{Visualisation des rayons captés par le récepteur à l'ordre 0 et 1 récepteur (100000 rayons au total)}
+	\caption{Visualisation des rayons captés par le récepteur à l'ordre 0 et 1 récepteur (100000 rayons au total).}
 \end{figureth}
 
 
@@ -1534,7 +1520,7 @@ Nous vérifions finalement que les rayons captés par le récepteur sont bien po
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/test1}
-	\caption{Réponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) échantillonnée à 100Hz et fonction $f(x)=\frac{2}{x^2}$ (rouge)}
+	\caption{Réponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) échantillonnée à 100Hz et fonction $f(x)=\frac{2}{x^2}$ (rouge).}
 	\label{test1}
 \end{figureth}
 
@@ -1569,13 +1555,13 @@ Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/test2RIR}
-		\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 12 itérations}
+		\caption{Réponse impulsionnelle dans une sphère 100\% réfléchissante pour 12 itérations.}
 		\label{test2RIR}
 	\end{subfigureth}
 	\quad
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/test2SI}
-		\caption{Position des sources images dans le cas d'une sphère 100\% réfléchissante pour 4 itérations}
+		\caption{Position des sources images dans le cas d'une sphère 100\% réfléchissante pour 4 itérations.}
 		\label{test2SI}
 	\end{subfigureth}
 	\caption{Cas d'une sphère 100\% réfléchissante}
@@ -1587,7 +1573,7 @@ Si l'on active l'absorption de l'air, on constate bien que les hautes fréquence
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/test2absair}
-	\caption{Réponse impulsionnelle dans une sphère de $20m$ de diamètre, 100\% réfléchissante, pour 30 itérations avec absorption de l'air}
+	\caption{Réponse impulsionnelle dans une sphère de $20m$ de diamètre, 100\% réfléchissante, pour 30 itérations avec absorption de l'air.}
 	\label{test2absair}
 \end{figureth}
 
@@ -1618,7 +1604,7 @@ avec :
 
 \begin{figureth}
 		\includegraphics[width=\linewidth]{images/test3_0}
-		\caption{Position des sources-images pour une salle cubique, 10 itérations}
+		\caption{Position des sources-images pour une salle cubique, 10 itérations.}
 		\label{test3}
 	\end{figureth}
 
@@ -1637,25 +1623,25 @@ On constate alors une erreur relative inférieure à 0,5\% pour 1~000~000 de ray
 \begin{figureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_1}
-		\caption{Erreur relative pour 1~000~000 rayons}
+		\caption{Erreur relative pour 1~000~000 rayons.}
 		\label{test3_1}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_2}
-		\caption{Erreur relative pour 4~000~000 rayons}
+		\caption{Erreur relative pour 4~000~000 rayons.}
 		\label{test3_2}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_3}
-		\caption{Erreur relative en norme infinie pour 1~000~000 rayons}
+		\caption{Erreur relative en norme infinie pour 1~000~000 rayons.}
 		\label{test3_3}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_4}
-		\caption{Erreur relative en norme infinie pour 4~000~000 rayons}
+		\caption{Erreur relative en norme infinie pour 4~000~000 rayons.}
 		\label{test3_4}
 	\end{subfigureth}
-	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique}
+	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique.}
 \end{figureth}
 		
 Dans un second temps, on assigne à chacune des six faces de la salle parallélépipédique des coefficients d'absorption différents. On met à jour les énergies des sources-images théoriques par la formule suivante :
@@ -1680,15 +1666,15 @@ avec :
 \begin{figureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_5}
-		\caption{Erreur relative}
+		\caption{Erreur relative.}
 		\label{test3_5}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_6}
-		\caption{Erreur relative en norme infinie}
+		\caption{Erreur relative en norme infinie.}
 		\label{test3_6}
 	\end{subfigureth}
-	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption des parois pour 4~000~000 rayons}
+	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption des parois pour 4~000~000 rayons.}
 \end{figureth}
 
 
@@ -1702,15 +1688,15 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 \begin{figureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_8}
-		\caption{Erreur relative avec absorption de l'air}
+		\caption{Erreur relative avec absorption de l'air.}
 		\label{test3_8}
 	\end{subfigureth}
 	\begin{subfigureth}{0.8\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_9}
-		\caption{Erreur relative en norme infinie}
+		\caption{Erreur relative en norme infinie.}
 		\label{test3_9}
 	\end{subfigureth}
-	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption de l'air pour 1~000~000 rayons}
+	\caption{Erreur relative des énergies des sources-images dans une salle parallélépipédique avec absorption de l'air pour 1~000~000 rayons.}
 \end{figureth}
 
 
@@ -1733,7 +1719,7 @@ La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'ef
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/logiciel}
-	\caption{Communication entre l'add-on Blender et l'outil de calcul}
+	\caption{Communication entre l'add-on Blender et l'outil de calcul.}
 	\label{logiciel}
 \end{figureth}
 
@@ -1741,20 +1727,20 @@ La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'ef
 Le add-on développé dans la cadre de ce projet possède quelques boutons (voir fig \ref{add-on}). La première étape consiste à notifier le répertoire de donnée de l'outil de calcul afin de pouvoir exporter le fichier de maillage. En utilisant le bouton "Run", Blender transforme les faces des objets sélectionnés en triangles et les exporte au format \gls{obj}. Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Un vecteur de sommets et un vecteur de normales sont remplis face par face en conservant le même ordre. Ces deux vecteurs stockent ainsi la totalité du maillage. Les textures quant à elles ne nous sont pas utiles. Les coefficients d'absorption des matériaux sont aussi assemblés dans un vecteur en les classant face par face en respectant l'ordre établi précédemment. Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure du récepteur correspond au rayon de la sphère circonscrite à l'objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources. L'ensemble des calculs se réaliseront séquentiellement pour une source après l'autre. Un seul récepteur est pris en compte. L'add-on Blender permet de mettre à jour uniquement les informations sur les sources et récepteurs sans avoir besoin de recharger tout le maillage. 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/add-on}
-	\caption{Add-on Blender et assignation des matériaux}
+	\caption{Add-on Blender et assignation des matériaux.}
 	\label{add-on}
 \end{figureth}
 Par ailleurs l'utilisateur assignera aux différentes parois un type de matériau en faisant apparaitre dans son nom la référence du matériau issue de la base de donnée Odéon (voir section \ref{sect_lectMat}). De nombreux autres paramètres sont configurables grâce à une \gls{ihm} générée par Qt (voir fig. \ref{ihm}). On peut alors paramètrer la température, la pression relative, le nombre de rayons, etc. L'outil permet donc d'afficher la \gls{rir} et d'écouter un fichier audio révérberé grace au calcul effectué. Il est ensuite possible de visualiser certains résultats directement sur Blender comme les rayons ou les sources-images par exemple (voir fig \ref{import}). Un option permet aussi de projeter les sources-images sur les parois de la salle afin de visualiser de manière plus intuitive d'où proviennent les reflexions (voir fig \ref{projete}).
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/import}
-	\caption{Affichage des rayons (une itération) et des sources-images (-60dB) dans le théâtre d'Orange}
+	\caption{Affichage des rayons (une itération) et des sources-images (-60dB) dans le théâtre d'Orange.}
 	\label{import}
 \end{figureth}
 
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/projete}
-	\caption{Projeté des sources-images sur les parois du théâtre d'Orange}
+	\caption{Projeté des sources-images sur les parois du théâtre d'Orange.}
 	\label{projete}
 \end{figureth}
 
@@ -1762,7 +1748,7 @@ La figure \ref{synopsis} présente de manière synthétique l'architecture logic
 %
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/synopsis}
-	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle}
+	\caption{Synopsis de l'architecture logiciel développé pour le calcul d'acoustique de salle.}
 	\label{synopsis}
 \end{figureth}
 
@@ -1779,10 +1765,10 @@ L'étude de l'acoustique d'un bâtiment passe par le calcul de différents param
 	\item Hearing on stage : aptitude pour les musiciens, les comédiens ou les conférenciers (donc dans le contexte d'une salle de spectacle uniquement) à s'entendre correctement. 
 \end{itemize}
 
-Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisions pour cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}. %Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
+Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisons pour cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}.%Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
 
-\subsection{Réverbérance : $T_{30}$}
-En pratique, le temps de réverbération est en général estimé grace au facteur $T_{30}$. Il correspond au double de l’intervalle de temps permettant de passer de entre -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir} :
+\subsection{Réverbérance : \gls{T30}}
+En pratique, le temps de réverbération est en général estimé grace au facteur \gls{T30}. Il correspond au double de l’intervalle de temps permettant de passer de -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir} :
 \begin{equation}
 E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau). \footnotemark
 \end{equation}
@@ -1790,10 +1776,10 @@ E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau). \footnote
 Cette  extrapolation  permet  d’éviter les perturbations du signal souvent observées en début et en fin de réponse. 
 
 
-\subsection{Early Decay Time : EDT}
+\subsection{Early Decay Time : \gls{EDT}}
 Il sera également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30} établir la pente des courbes d'affaiblissement de 0 à -10dB. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en  compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  TR60 en fonction de la position d’écoute dans la salle.  
 
-\subsection{Clarté : $C_{80}$}
+\subsection{Clarté :\gls{C80}}
 La clarté est un paramètre qui vise à exprimer la compréhensibilité en dB tel que :
 %
 \begin{equation}
@@ -1814,17 +1800,18 @@ Le paramètre \gls{D50} exprime en pourcentage le ratio entre les premières ré
 D_{50} = \frac{E_{0\to50}}{E_{0\to\infty}}.
 \end{equation}
 
-On distingue généralement les intervalles décrit dans le tableau \ref{definition} \cite[p.59]{acoustique} pour juger de la qualité de la définition sonore dans une salle en fonction de la valeur mesurée ou calculée du critère  $D_{50}$. 
+On distingue généralement les intervalles décrit dans le tableau \ref{tab_def} \cite[p.59]{acoustique} pour juger de la qualité de la définition sonore dans une salle en fonction de la valeur mesurée ou calculée du critère $D_{50}$. 
 
-\begin{tableth} \label{tab_definition}
+\begin{tableth}
 	\begin{tabular}{| *{7}{c|}}
 		\hline
-		 \gls{D50} & 0 à 30\% & 0 à 30\%& 30 à 45\%& 45 à 60\%& 60 à 75\% & 75 à 100\%\\
+		 \gls{D50} & 0 à 30\% & 30 à 45\%& 45 à 60\%& 60 à 75\% & 75 à 100\%\\
 		  \hline
 		   Définition & Mauvaise & Pauvre & Moyenne & Bonne & Excellente \\
 		   \hline
-			 \end{tabular}
-	\caption{Évaluation du critère de définition}
+	 \end{tabular}
+	\caption{Évaluation du critère de définition.}
+	 \label{tab_def}
 \end{tableth}
 
 
@@ -1834,6 +1821,12 @@ Le paramètre $T_s$ est le centre de gravité temporel de la réponse impulsionn
 T_s =  \frac{\sum\limits_{0}^{\infty} tE_t}{E_{0\to\infty}}.
 \end{equation}
 
+\begin{figureth}
+	\includegraphics[width=0.4\linewidth]{images/ts}
+	\caption{Représentation du temps central $T_s$ sur le graph de l'énérgie en fonction du temps.}
+	\label{ts}
+\end{figureth}
+
 \subsection{Puissance sonore : SPL}
 Le niveau de pression acoustique ou \gls{spl} s'exprime en dB et est défini tel que :
 \begin{equation}
@@ -1841,7 +1834,7 @@ SPL =  10\log{E_{0\to\infty}}.
 \end{equation}
 Pour pouvoir adapter la \gls{rir} dont le niveau est normalisé (le son direct est à 0dB) on retirera un offset. Celui-ci est calculé tel que l'énergie mesurée à 10m en champs libre doit être à -31dB \footnote{ISO 3382-1, 2009}. Cela permet de prendre en compte l'attenuation de l'énergie du son direct entre la source et le récepteur. On a alors :
 \begin{equation}
-E'(t) =  E(t) \frac{ 10^{-3,1}e^{-m.t.v}}{(t.v)^2},
+E'(t) =  E(t) \frac{ 10^{-1,1}e^{-m.t.v}}{(t.v)^2},
 \end{equation}
 avec :
 \begin{itemize}
