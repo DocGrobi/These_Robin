@@ -1768,11 +1768,11 @@ L'étude de l'acoustique d'un bâtiment passe par le calcul de différents param
 Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisons pour cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}.%Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
 
 \subsection{Réverbérance : \gls{T30}}
-En pratique, le temps de réverbération est en général estimé grace au facteur \gls{T30}. Il correspond au double de l’intervalle de temps permettant de passer de -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir} :
+En pratique, le temps de réverbération est en général estimé grace au facteur \gls{T30}. Il correspond au double de l’intervalle de temps permettant de passer de -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir}. Dans notre cas, cela revient à faire la somme cumulative des énergies en partant de la fin du signal :
 \begin{equation}
-E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau). \footnotemark
+E'(t)=\sum_\infty^t E(\tau)d(-\tau). \footnotemark
 \end{equation}
-\footnotetext{ISO 3382 part 1}
+\footnotetext{La norme ISO 3382 part 1 donne la formule : $E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau)$.}
 Cette  extrapolation  permet  d’éviter les perturbations du signal souvent observées en début et en fin de réponse. 
 
 
@@ -1815,24 +1815,24 @@ On distingue généralement les intervalles décrit dans le tableau \ref{tab_def
 \end{tableth}
 
 
-\subsection{Temps central : $T_s$}
-Le paramètre $T_s$ est le centre de gravité temporel de la réponse impulsionnelle de la salle c’est à dire le temps pour lequel la moitié de l’énergie sonore  totale  est  reçue.  Il  se  calcule  comme  le  barycentre continu  des  instants  de  réception  du  son  pondéré  par  l’énergie  sonore  en  ces  instants et s'exprime en milli-secondes. $T_s$  donne  un  ordre  d’idée  de  "l’étalement" de  la  réponse  impulsionnelle  c’est  à dire  du  temps moyen que prend un son pour parvenir aux auditeurs.
+\subsection{Temps central : \gls{Ts}}
+Le paramètre \gls{Ts} est le centre de gravité temporel de la réponse impulsionnelle de la salle c’est à dire le temps pour lequel la moitié de l’énergie sonore  totale  est  reçue.  Il  se  calcule  comme  le  barycentre continu  des  instants  de  réception  du  son  pondéré  par  l’énergie  sonore  en  ces  instants et s'exprime en milli-secondes. \gls{Ts}  donne  un  ordre  d’idée  de  "l’étalement" de  la  réponse  impulsionnelle  c’est  à dire  du  temps moyen que prend un son pour parvenir aux auditeurs.
 \begin{equation}
 T_s =  \frac{\sum\limits_{0}^{\infty} tE_t}{E_{0\to\infty}}.
 \end{equation}
 
 \begin{figureth}
 	\includegraphics[width=0.4\linewidth]{images/ts}
-	\caption{Représentation du temps central $T_s$ sur le graph de l'énérgie en fonction du temps.}
+	\caption{Représentation du temps central \gls{Ts} sur le graph de l'énérgie en fonction du temps.}
 	\label{ts}
 \end{figureth}
 
-\subsection{Puissance sonore : SPL}
-Le niveau de pression acoustique ou \gls{spl} s'exprime en dB et est défini tel que :
+\subsection{Sound Pressure Level : \gls{spl}}
+Il est possible de connaitre le gain \gls{G} en (dB) apporté par la réverbération de la salle par la formule :
 \begin{equation}
-SPL =  10\log{E_{0\to\infty}}.
+G =  10\log{E_{0\to\infty}}.
 \end{equation}
-Pour pouvoir adapter la \gls{rir} dont le niveau est normalisé (le son direct est à 0dB) on retirera un offset. Celui-ci est calculé tel que l'énergie mesurée à 10m en champs libre doit être à -31dB \footnote{ISO 3382-1, 2009}. Cela permet de prendre en compte l'attenuation de l'énergie du son direct entre la source et le récepteur. On a alors :
+Cependant, il faut par ailleurs connaitre l'attenuation du son direct avant qu'il n'atteigne l'auditeur afin d'obtenir le niveau réel d'énergie. Pour cela, on retirera un offset calculé tel que l'énergie mesurée à 10m en champs libre soit de -31dB \footnote{ISO 3382-1, 2009}. On a alors :
 \begin{equation}
 E'(t) =  E(t) \frac{ 10^{-1,1}e^{-m.t.v}}{(t.v)^2},
 \end{equation}
@@ -1843,8 +1843,9 @@ avec :
 	\item m : le coefficient d'absorption atmosphérique en fonction de la température, l'humidité et la fréquence,
 	\item v : la vitesse du son dans le milieu (=340m/s pour l'air).
 \end{itemize}
+La valeur du niveau de pression sonore \gls{spl} correspond au gain pour l'énergie $E'(t)$. 
 
-\subsection{Spaciosité : $LF_{80}$}
+\subsection{Spaciosité : \gls{LF80}}
 Pour déterminer la spaciosité, c'est à dire la largeur apparente de la source et l'enveloppement des auditeurs, on étudie le rapport entre les réflexions latérales et l'ensemble des réflexions précoces. Ce paramètre se calcul avec la formule suivante :
 \begin{equation}
 LF_{80} =   \frac{\sum\limits_{t=5}^{80} E_t \cos^2(\beta_t)}{E_{0\to80}}, 

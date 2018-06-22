@@ -79,30 +79,30 @@
 \contentsline {subsection}{\numberline {8.2.2}Early Decay Time : \gls {EDT}}{112}{subsection.8.2.2}
 \contentsline {subsection}{\numberline {8.2.3}Clart\IeC {\'e} :\gls {C80}}{113}{subsection.8.2.3}
 \contentsline {subsection}{\numberline {8.2.4}D\IeC {\'e}finition : $D_{50}$}{113}{subsection.8.2.4}
-\contentsline {subsection}{\numberline {8.2.5}Temps central : $T_s$}{113}{subsection.8.2.5}
-\contentsline {subsection}{\numberline {8.2.6}Puissance sonore : SPL}{114}{subsection.8.2.6}
-\contentsline {subsection}{\numberline {8.2.7}Spaciosit\IeC {\'e} : $LF_{80}$}{114}{subsection.8.2.7}
-\contentsline {chapter}{Conclusion}{115}{chapter*.54}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{119}{chapter*.55}
+\contentsline {subsection}{\numberline {8.2.5}Temps central : \gls {Ts}}{113}{subsection.8.2.5}
+\contentsline {subsection}{\numberline {8.2.6}Puissance sonore : \gls {spl}}{114}{subsection.8.2.6}
+\contentsline {subsection}{\numberline {8.2.7}Spaciosit\IeC {\'e} : \gls {LF80}}{114}{subsection.8.2.7}
+\contentsline {chapter}{Conclusion}{117}{chapter*.54}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{121}{chapter*.55}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{121}{part.3}
-\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{123}{part.3}
-\contentsline {chapter}{Introduction}{123}{chapter*.56}
-\contentsline {chapter}{\numberline {9}Analyse en configuration initiale}{125}{chapter.9}
-\contentsline {section}{\numberline {9.1}Configuration du maillage}{126}{section.9.1}
-\contentsline {section}{\numberline {9.2}Analyse de la r\IeC {\'e}ponse impulsionnelle}{128}{section.9.2}
-\contentsline {chapter}{\numberline {10}Test de configurations}{131}{chapter.10}
-\contentsline {section}{\numberline {10.1}Position des spectateurs}{132}{section.10.1}
-\contentsline {section}{\numberline {10.2}Forme du mur de sc\IeC {\`e}ne}{132}{section.10.2}
-\contentsline {section}{\numberline {10.3}Pr\IeC {\'e}sence de spectateurs}{132}{section.10.3}
-\contentsline {section}{\numberline {10.4}Pr\IeC {\'e}sence de velum}{132}{section.10.4}
-\contentsline {section}{\numberline {10.5}Pr\IeC {\'e}sence de la \gls {porticus isc}}{132}{section.10.5}
-\contentsline {section}{\numberline {10.6}Forme et mat\IeC {\'e}riaux du toit}{132}{section.10.6}
-\contentsline {section}{\numberline {10.7}Impact du bruit ext\IeC {\'e}rieur}{132}{section.10.7}
-\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{133}{chapter.11}
-\contentsline {chapter}{Conclusion}{135}{chapter*.62}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{137}{chapter*.63}
+\contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{123}{part.3}
+\contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{125}{part.3}
+\contentsline {chapter}{Introduction}{125}{chapter*.2}
+\contentsline {chapter}{\numberline {9}Analyse en configuration initiale}{127}{chapter.9}
+\contentsline {section}{\numberline {9.1}Configuration du maillage}{128}{section.9.1}
+\contentsline {section}{\numberline {9.2}Analyse de la r\IeC {\'e}ponse impulsionnelle}{130}{section.9.2}
+\contentsline {chapter}{\numberline {10}Test de configurations}{133}{chapter.10}
+\contentsline {section}{\numberline {10.1}Position des spectateurs}{134}{section.10.1}
+\contentsline {section}{\numberline {10.2}Forme du mur de sc\IeC {\`e}ne}{135}{section.10.2}
+\contentsline {section}{\numberline {10.3}Pr\IeC {\'e}sence de spectateurs}{135}{section.10.3}
+\contentsline {section}{\numberline {10.4}Pr\IeC {\'e}sence de velum}{136}{section.10.4}
+\contentsline {section}{\numberline {10.5}Pr\IeC {\'e}sence de la \gls {porticus isc}}{136}{section.10.5}
+\contentsline {section}{\numberline {10.6}Forme et mat\IeC {\'e}riaux du toit}{136}{section.10.6}
+\contentsline {section}{\numberline {10.7}Impact du bruit ext\IeC {\'e}rieur}{136}{section.10.7}
+\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{137}{chapter.11}
+\contentsline {chapter}{Conclusion}{139}{chapter*.10}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{141}{chapter*.11}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}

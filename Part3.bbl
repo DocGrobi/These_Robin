@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -53,6 +53,12 @@
 \textsc{Jouhaneau, J.} 1997, \emph{Acoustique des salles et sonorisation},
   \emph{Acoustique appliqu{\'e}e}, \bblvol{}~3, Conservatoire national des arts
   et m{\'e}tiers.
+
+\bibitem[{\textsc{Krauss} \bbletal{}(2009)\textsc{Krauss}, \textsc{Yezou}
+  \bbland{} \textsc{Kuznik}}]{acoustique}
+\textsc{Krauss, G.}, \textsc{R.~Yezou} \bbland{} \textsc{F.~Kuznik}. 2009,
+  \enquote{Acoustique du batiment}, Cours-Institut national des sciences
+  appliqu{\'e}es de Lyon.
 
 \bibitem[{\textsc{Maufras}(1847)}]{vitruve}
 \textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},

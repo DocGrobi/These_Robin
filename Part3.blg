@@ -4,51 +4,51 @@ The top-level auxiliary file: Part3.aux
 The style file: francaissc.bst
 Database file #1: Part3/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 80 of file Part3/Biblio.bib
+--line 89 of file Part3/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
 Warning--can't use both volume and number fields in haas
 Warning--empty year in odeon
-You've used 10 entries,
+You've used 11 entries,
             3493 wiz_defined-function locations,
-            758 strings with 7313 characters,
-and the built_in function-call counts, 5261 in all, are:
-= -- 359
-> -- 155
+            763 strings with 7472 characters,
+and the built_in function-call counts, 5792 in all, are:
+= -- 397
+> -- 184
 < -- 16
-+ -- 59
-- -- 46
-* -- 370
-:= -- 739
-add.period$ -- 21
-call.type$ -- 10
-change.case$ -- 60
-chr.to.int$ -- 11
-cite$ -- 13
-duplicate$ -- 502
-empty$ -- 485
-format.name$ -- 57
-if$ -- 1043
++ -- 69
+- -- 55
+* -- 421
+:= -- 822
+add.period$ -- 23
+call.type$ -- 11
+change.case$ -- 68
+chr.to.int$ -- 12
+cite$ -- 14
+duplicate$ -- 545
+empty$ -- 524
+format.name$ -- 69
+if$ -- 1143
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 93
-newline$ -- 48
-num.names$ -- 40
-pop$ -- 216
+missing$ -- 99
+newline$ -- 51
+num.names$ -- 44
+pop$ -- 230
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 62
 quote$ -- 0
-skip$ -- 218
+skip$ -- 233
 stack$ -- 0
-substring$ -- 147
-swap$ -- 260
+substring$ -- 158
+swap$ -- 282
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 69
+type$ -- 78
 warning$ -- 3
-while$ -- 33
+while$ -- 36
 width$ -- 0
-write$ -- 123
+write$ -- 133
 (There were 4 warnings)

@@ -94,22 +94,55 @@ La \gls{rir} de la configuration décrite précedemment pour un \gls{RT60} est p
 	\label{rirTheatre}
 \end{figureth}
 
-La figure \ref{rirTheatre} illustre le fait que le \gls{RT60} est atteint en 1,5 secondes environ (en négligeant les quelques pics résiduels de fin de queue de réverbération). Il est interessant de constater que ce temps est proche du temps de réverbération optimal pour la parole décrit par J.Jouhaneau \cite[p.209]{jouhaneau} et qui se trouve être légèrement inférieur à 2s. Celui-ci est obtenu à partir des courbes de pourcentage d'intelligibilité et de niveau sonore qui se croisent en ce point optimal. Effectivement, la réverbération d'une salle permet d'amplifier le niveau sonore de la voix, donc d'être mieux entendue mais, lorsque le signal se diffuse plus longtemps, il devient plus difficile de dissocier et comprendre les mots. Ce temsp optimal est empirique et discutable puisque J.Jouhaneau décrit lui-même les limites de cette analyse dépendant du volume et du signal émis \cite[p.218]{jouhaneau}. 
+La figure \ref{rirTheatre} illustre le fait que le \gls{RT60} est atteint en 1,7 secondes environ. Il est interessant de constater que ce temps est proche du temps de réverbération optimal pour la parole décrit par J.Jouhaneau \cite[p.209]{jouhaneau} et qui se trouve être légèrement inférieur à 2s. Ce dernier est obtenu à partir des courbes de pourcentage d'intelligibilité et de niveau sonore qui se croisent en ce point optimal. Effectivement, la réverbération d'une salle permet d'amplifier le niveau sonore de la voix, donc d'être mieux entendue mais, lorsque le signal se diffuse plus longtemps, il devient plus difficile de dissocier et comprendre les mots. Ce temps optimal est empirique et discutable puisque J.Jouhaneau décrit lui-même les limites de cette analyse dépendant du volume et du signal émis \cite[p.218]{jouhaneau}. 
 
-Le RT30 est atteint en 200ms environ ce qui montre que l'on passe rapidement en champs diffus. Nous allons analyser les premières réflexions grâce aux travaux de Haas et Meyer \cite[p.49]{haas} qui expliquent à quel moment une réflexion devient un écho :
+Nous pouvons analyser les premières réflexions grâce aux travaux de Haas et Meyer \cite[p.49]{haas} qui expliquent à quel moment une réflexion devient un écho :
 \begin{itemize}
 \item si l'intervalle entre le son direct et le son réfléchi est inférieur à 5ms, l'auditeur entend un son unique dont l'intensité est la somme des deux signaux. La direction perçu est la bissectrice de l'angle formé par les deux sources (réelle et virtuelle) ;
 \item si le temps entre les deux signaux est compris ente 5 et 35ms, l'intensité est encore la somme des intensités mais la direction est celle du premier signal ;
 \item si le temps entre les deux signaux est compris entre 35 et 50ms, les deux signaux sont distingués dans le temps mais la direction semble être celle du premier son ;
 \item au delà de 50ms, les deux signaux sont complètement distingués dans le tmps et l'espace.
 \end{itemize}
-Sur la figure \ref{rirTheatre} on constate la présence d'un pic de signal 4ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Il y a ensuite beaucoup de signal dispersé sur environ 50ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur. La moitié d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale et qui joue le rôle d'un miroir convergeant sur le récepteur. Celui-ci est retardé de plus de 35ms ce qui implique qu'il est entendu en écho bien que sa direction soit plutôt assimilée aux dossiers des gradins. Les pics postérieurs sont le résultat de la forme semi-circulaire de la \gls{cavea} (voir fig. \ref{si_configInitale}) qui renvoi les rayons vers le récepteur. Le dernier pic de la figure \ref{rirTheatre30} semble être du aux réflexions sur le bas de la porte royale et la scène. On considérera qu'au delà nous serons dans le champs diffus.
-
+Sur la figure \ref{rirTheatre} on constate la présence d'un pic de signal 4ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Il y a ensuite beaucoup de signal dispersé sur environ 50ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur. La moitié d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale et qui joue le rôle d'un miroir convergeant sur le récepteur. Celui-ci est retardé de plus de 35ms ce qui implique qu'il est entendu en écho bien que sa direction soit plutôt assimilée aux dossiers des gradins. Les pics postérieurs sont le résultat de la forme semi-circulaire de la \gls{cavea} (voir fig. \ref{si_configInitale}) qui renvoi les rayons vers le récepteur. Le dernier pic de la figure \ref{rirTheatre30} semble être du aux réflexions sur le bas de la porte royale et la scène. On considérera qu'au delà nous serons dans le champs diffus. 
+%
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/si_configInitale}
 	\caption{Première source-images projetée sur les parois du théâtre. Rouge correspond à l'énergie maximal et bleu l'énergie minimale}
 	\label{si_configInitale}
 \end{figureth}
+
+La tableau \ref{tab_fact_init} présente les facteurs perceptifs des cette configuration initiale. On constate clairement que le théâtre semble particulièrement bien adapté à la transmission de parole puisque plutôt qu'à la musique. Effectivement, la définition \gls{D50} est au delà de 75\% ce qui permet de comprendre que la contribution des premières réflexions est largement majoritaire sur le champs diffus. De même, la clarté \gls{C80} est élevée (on dit que pour la musique elle doit se situer entre -3dB et +3dB \cite[p.59]{acoustique}), or ici elle est supérieure à 7dB dés les plus basses fréquences ce qui présage d'une très bonne compréhensibilité de la parole. Le temps central \gls{Ts} étant inférieur à 50ms, on comprend que globalement la réverbération sera quasi-confondue avec le son direct. Par ailleurs, on voit que le théâtre amplifie de 4dB les basses fréquence et 3dB les hautes fréquences. On retrouve bien l'analyse faite précédemment sur l'orchestre qui double le niveau sonore de la source.
+%
+\begin{tableth} 
+ \begin{tabular}{| *{9}{c|}} 
+ \hline 
+ Facteur & 62,5Hz & 125Hz & 250Hz & 500Hz & 1kHz & 2kHz & 4kHz & 8kHz \\ 
+ \hline 
+ \hline 
+\gls{EDT} (ms)& 684& 684& 600& 419& 219& 190& 125& 18 \\ 
+ \hline 
+\gls{T30} (ms)& 2048& 2046& 1774& 1598& 1437& 1300& 1109& 439 \\ 
+ \hline 
+\gls{RT60} (ms)& 1776& 1776& 1776& 1658& 1286& 1140& 903& 571 \\ 
+ \hline 
+\gls{spl} (dB)& -34& -34& -34& -34& -35& -35& -37& -43 \\ 
+ \hline 
+\gls{G} (dB)& 4.3& 4.3& 3.9& 3.6& 3.5& 3.4& 3.2& 2.9 \\
+ \hline 
+\gls{C80} (dB)& 7.28& 7.31& 8.53& 9.91& 11.06& 11.52& 13.75& 18.69 \\ 
+ \hline 
+\gls{D50} (\%)& 82.61& 82.7& 85.68& 88.27& 90.15& 90.88& 93.68& 97.43 \\ 
+ \hline 
+\gls{Ts} (ms)& 38& 38& 28& 21& 17& 15& 10& 5 \\ 
+ \hline 
+\gls{LF80} (dB)& 0.002& 0.002& 0.002& 0.001& 0.001& 0.001& 0.001& 0.001 \\ 
+ \hline 
+\end{tabular} 
+ \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1~000~000 de rayons.} 
+ \label{tab_fact_init} 
+ \end{tableth}
+
+
 
 A partir de cette analyse pour allons pouvoir procéder par comparaison avec cette configuration initiale pour déterminer l'impact des modifications apportées au bâtiment sur l'acoustique.
 		
@@ -124,13 +157,59 @@ I'm having such a good time
 \section{Position des spectateurs}
 La première étape de ces tests comparatifs se fait sur la position des spectateurs. Nous savons que le placement dans la \gls{cavea} se faisait selon le rang social des spectateurs. Nous comprenons facilement que visuellement, les spectateurs les plus proches étaient ceux qui voyait le mieux les acteurs même ceux situés légèrement en recul avaient une meilleure vu d'ensemble. Ainsi vous avions les sénateurs sur des sièges mobiles dans l'orchestre.
 
-Nous testons donc 12 nouvelles positions d'auditeur afin de comparer le signal perçu avec la \gls{rir} de référence (voir fig. \ref{position_rece}).
+Nous testons donc 12 nouvelles positions d'auditeur afin de comparer le signal perçu avec la \gls{rir} de référence (voir fig. \ref{position_rece}). Nous positionnons des séries d'auditeurs sur des axes à 0°, 55° et à 90° (au dessus des \glspl{aditus}) par rapport à la perpendiculaire au mur de scène. Sur chaque de ces axes, on positionne des récepteurs sur les derniers gradins des chaque \gls{maenianum} et pour les axes n'étant pas au niveau de l'\gls{aditus} on ajoute également des récepteurs au niveau des premiers gradins et de ceux de l'orchestre. On notera que le récepteur 10 est situé sur la tribune occidentale.
 \begin{figureth}
-	\includegraphics[width=0.8\linewidth]{images/position_rece}
+	\includegraphics[width=\linewidth]{images/position_rece}
 	\caption{Douze positions d'auditeurs (jaune) à comparer à la position initiale (rouge).}
 	\label{position_rece}
 \end{figureth}
-		
+%
+\begin{tableth} 
+\footnotesize
+ \begin{tabular}{| *{9}{c|}} 
+ \hline 
+ Récepteur & [x ; y ; z] (m)  & \gls{EDT} (ms) & \gls{T30} (ms) & \gls{spl} (dB) & \gls{C80} (dB) & \gls{D50} (\%) & \gls{Ts} (ms) \\ %& \gls{LF80} (dB) \\ 
+ \hline 
+ \hline 
+1  & [0 ; -10.67 ; 41.44] & 611&  1466 &-31&8.2&86.51&28\\ %&0.008\\ 
+ \hline 
+ Réf    &[0 ; -16.5 ; 43.9] &419&1598& -34&9.91& 88.27&21\\ %&0.001\\ 
+ \hline 
+ 2  & [0 ; -28.23 ; 50.02] &  739  & 1614 & -38 &  8.64 & 85.77 & 32 \\ %& 0.003\\ 
+ \hline 
+ 3  &  [0 ; -37.86 ; 55.92] & 510 & 2093  & -40 & 8.05 & 81.77 & 36 \\ %& 0.007\\ 
+ \hline 
+ 4  &  [0 ; -44.36 ; 62.06] & 503 &  2932 &  -42 & 5.84 & 79.34 & 43 \\ %& 0.013\\ 
+ \hline 
+ \hline
+ 5  &   [-8.74 ; -6.12 ; 41.44] &578 & 1616 &  -29 & 8.78 & 76.2 & 35 \\ %& 0.123\\ 
+ \hline 
+ 6  &  [-13.51 ; -9.46 ; 43.86] &  948 &  1816 & -32 & 7.96 &  66.12 & 46\\ % & 0.07 \\ 
+ \hline 
+  7 &   [-23.12 ; -16.19 ; 50.02] &  1389 & 1855 &  -36 & 5.71 & 55.93 & 74 \\ %& 0.039\\ 
+ \hline 
+ 8  &  [-31.02 ; -21.72 ; 55.92] &  1473 & 2280 & -39 & 4.01 & 63.49 & 87 \\ %& 0.012 \\ 
+ \hline 
+ 9  & [-36.34 ; -25.44 ; 62.06] &  2056 & 2116& -41& 1.61& 59.15 & 136 \\ %& 0.008  \\ 
+ \hline 
+ \hline
+ 10  &  [-28.23 ; 1.66 ; 50.02] & 1760 & 4445 & -34 & 1.77 & 60.03 & 100 \\ %& 0.079   \\ 
+ \hline 
+11   & [-37.87 ; 1.66 ; 55.92] & 2575 & 3399 & -38 & 1.82 & 52.97 & 141 \\ %& 0.002 \\ 
+ \hline 
+12   & [-44.36 ; 1.66 ; 62.06] & 2564 & 2663 & -39 & 0.56 & 46.76 & 179 \\ %& 0  \\ 
+ \hline 
+\end{tabular} 
+ \caption{Facteurs perceptifs pour différents récepteurs sur la bande de fréquence de 500Hz pour 1~000~000 de rayons.} 
+ \label{tab_fac_rec} 
+ \end{tableth}
+On constate d'après le tableau \ref{tab_fac_rec} plusieurs choses. Tout d'abord, le niveau acoustique \gls{spl} diminue de 3dB entre les gradins mobiles de l'orchestre réservés aux sénateurs et les premiers gradins accessibles aux classes moins élevés tels que les chevaliers. Le son est donc entendu deux fois moins fort. La perte est de 10dB au sommet de la cavea ce qui implique que les classes les plus modestes entendaient le son de la scène dix fois moins fort que les sénateurs de l'orchestre. En ce qui concerne la compréhensibilité, on distinguera les trois axes.
+\begin{itemize}
+\item Pour l'axe perpendiculaire au mur de scène (récepteurs 1 à 4), la clarté (\gls{C80}) et la définition (\gls{D50}) reste bien adaptées à un signal audio de type texte. Le temps de réverbération double entre les premiers et derniers gradins ce qui dégrade légèrement ces paramètres. Néanmoins, le temps central (\gls{Ts}) restant inférieur à 50ms, on conserve un phénomène d'échos faible.
+\item Le long de l'axe décalé de 55° (récepteurs 5 à 9), le temps central (\gls{Ts}) se décale beaucoup plus loin (jusqu'à 136ms pour les derniers gradins) ce qui implique une moins bonne compréhensibilité. Effectivement lorsque l'auditeur n'est pas bien dans l'axe, le signal se réfléchi sur les cotés de la \gls{cavea} (notamment sur les murs lisses tels que les \glspl{podium}) ce qui ajoute beaucoup de signal au champs diffus.  
+\item Dans le troisième axe cet effet est encore amplifié puisque le son se réfléchi sur les \glspl{basilique}. Le temps de réverbération est plus important au niveau de la tribune car cet auditeur bénéficie de nombreuses réflexions sur le mur de scène que les auditeurs du deuxième et troisième \gls{maenianum} n'ont pas. On constate alors que sur cet axe, l'acoustique n'est plus vraiment adaptée à la parole mais plutôt à la musique.
+\end{itemize}
+Le paramètre \gls{LF80} (dB) n'apparait pas dans le tableau \ref{tab_fac_rec} car la valeur reste toujours très faible (<0,1dB) conséquence du fait que le son provenant de la scène est grandement majoritaire.
 
 \section{Forme du mur de scène}	
 \section{Présence de spectateurs}

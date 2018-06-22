@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{2}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -15,5 +15,23 @@
 \input{francaisbst.tex}
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangePl}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
+  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
+  d'op{\'e}ration - planches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
+  087 0031 - Patriarche 9827 n2012-203.
+
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{b}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangeTxt}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
+  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
+  d'op{\'e}ration - texte}, \bbltechrep{}. PACA Vaucluse, Orange
+  Th{\'e}{\^a}tre antique 84 087 0031 - Patriarche 9827 n2012-203.
 
 \end{thebibliography}
