@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  22 JUN 2018 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  27 JUN 2018 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2396,12 +2396,7 @@ Package glossaries Info: Writing glossary file Main.acn on input line 155.
 \openout8 = `Main.ntn'.
 
 Package glossaries Info: Writing glossary file Main.ntn on input line 155.
- (./Glossaire.tex)) (./CommandesPerso.tex) (./PageDeGarde.tex) (./Main.aux
-(./Intro.aux) (./Part1.aux
-
-LaTeX Warning: Label `modCavea' multiply defined.
-
-) (./Part2.aux) (./Part3.aux) (./Annexes.aux))
+ (./Glossaire.tex)) (./CommandesPerso.tex) (./PageDeGarde.tex) (./Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -2418,7 +2413,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 48.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 48.
-
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
@@ -2626,109 +2620,14 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM Main.toc on input line 60.
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc1.
-\openout3 = `Main.mtc1'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc2.
-\openout3 = `Main.mtc2'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc3.
-\openout3 = `Main.mtc3'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc4.
-\openout3 = `Main.mtc4'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc5.
-\openout3 = `Main.mtc5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc6.
-\openout3 = `Main.mtc6'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc7.
-\openout3 = `Main.mtc7'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc8.
-\openout3 = `Main.mtc8'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc9.
-\openout3 = `Main.mtc9'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc10.
-\openout3 = `Main.mtc10'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc11.
-\openout3 = `Main.mtc11'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc12.
-\openout3 = `Main.mtc12'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc13.
-\openout3 = `Main.mtc13'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc14.
-\openout3 = `Main.mtc14'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc15.
-\openout3 = `Main.mtc15'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc16.
-\openout3 = `Main.mtc16'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc17.
-\openout3 = `Main.mtc17'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc18.
-\openout3 = `Main.mtc18'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc19.
-\openout3 = `Main.mtc19'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc20.
-\openout3 = `Main.mtc20'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc21.
-\openout3 = `Main.mtc21'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc22.
-\openout3 = `Main.mtc22'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc23.
-\openout3 = `Main.mtc23'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing Main.mtc24.
-\openout3 = `Main.mtc24'.
-
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 60.
- (./Main.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
+
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write10
+\openout10 = `Main.toc'.
 
 [1
 
@@ -2737,86 +2636,13 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.19994pt too wide) detected at line 72
- []\T1/futs/m/n/12 100
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 73
- []\T1/futs/m/n/12 101
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 74
- []\T1/futs/m/n/12 102
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 76
- []\T1/futs/m/n/12 108
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 77
- []\T1/futs/m/n/12 112
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 93
- []\T1/futs/m/n/12 128
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 94
- []\T1/futs/m/n/12 130
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 96
- []\T1/futs/m/n/12 134
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 97
- []\T1/futs/m/n/12 135
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 98
- []\T1/futs/m/n/12 135
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 99
- []\T1/futs/m/n/12 135
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 100
- []\T1/futs/m/n/12 135
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 101
- []\T1/futs/m/n/12 135
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 102
- []\T1/futs/m/n/12 135
- []
-
-[2])
-\tf@toc=\write10
-\openout10 = `Main.toc'.
-
- [3] [4
+[2
 
 
 ]
 \openout2 = `Part3.aux'.
 
- (./Part3/Part3.tex [122
+ (./Part3/Part3.tex [1
 
 
 
@@ -2826,16 +2652,61 @@ Overfull \hbox (1.19994pt too wide) detected at line 102
 
 
 
-] [123] [124]
+] [2]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 8.
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 8.
+
+
+Package natbib Warning: Citation `vitruve' on page 3 undefined on input line 8.
+
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 8.
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 12.
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 13.
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 14.
+
+
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 15.
+
+
 Overfull \hbox (9.49644pt too wide) in paragraph at lines 15--16
 []\T1/futs/m/n/12 Le [][][]\T1/futs/m/it/12 pul-pi-tum[][] \T1/futs/m/n/12 qui 
 prÈ-sente des niches al-ter-na-ti-ve-ment rec-tan-gu-laires et semi-circulaire
  []
 
-[125
 
-] [126]
-Chapitre 9.
+Package natbib Warning: Citation `canac' on page 3 undefined on input line 16.
+
+[3
+
+]
+
+Package natbib Warning: Citation `aristote' on page 4 undefined on input line 1
+8.
+
+
+Package natbib Warning: Citation `canac' on page 4 undefined on input line 18.
+
+
+Package natbib Warning: Citation `arnaud' on page 4 undefined on input line 18.
+
+
+
+Package natbib Warning: Citation `formige' on page 4 undefined on input line 18
+.
+
+[4]
+Chapitre 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 27.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -2852,6 +2723,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 \openout3 = `Main.mtc'.
 
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
 (./Main.mtc17
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
@@ -2865,11 +2738,35 @@ Overfull \hbox (1.98195pt too wide) detected at line 2
  []\T1/futs/b/n/10.95 130
  []
 
-) [127
+) [5
 
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 32.
+
+
+Package natbib Warning: Citation `orangeTxt' on page 6 undefined on input line 
+33.
+
+
+Package natbib Warning: Citation `orangeTxt' on page 6 undefined on input line 
+33.
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 33.
+
+LaTeX Warning: Reference `part_1' on page 6 undefined on input line 33.
+
+
+Package natbib Warning: Citation `formige' on page 6 undefined on input line 33
+.
+
+
+Package natbib Warning: Citation `odeon' on page 6 undefined on input line 33.
+
+
+LaTeX Warning: Reference `matOdeon' on page 6 undefined on input line 33.
+
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 37.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -2936,66 +2833,98 @@ Overfull \hbox (31.82733pt too wide) in paragraph at lines 37--54
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/theatreMat.png, id=362, 698.61pt x 607.26875pt>
+<Part3/images/theatreMat.png, id=96, 983.675pt x 738.76pt>
 File: Part3/images/theatreMat.png Graphic file (type png)
 
 <use Part3/images/theatreMat.png>
 Package pdftex.def Info: Part3/images/theatreMat.png used on input line 69.
-(pdftex.def)             Requested size: 308.71106pt x 268.34808pt.
+(pdftex.def)             Requested size: 396.91325pt x 298.09145pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[128pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
-.168}) has been already used, duplicate ignored
+
+LaTeX Warning: Reference `theatreMat' on page 6 undefined on input line 74.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.2
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.77 \section
              {Analyse de la r√©ponse impulsionnelle}pdfTeX warning (ext4): dest
-ination with the same identifier (name{Hfootnote.168}) has been already used, d
-uplicate ignored
+ination with the same identifier (name{Hfootnote.21}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.77 \section
              {Analyse de la r√©ponse impulsionnelle}pdfTeX warning (ext4): dest
-ination with the same identifier (name{Hfootnote.168}) has been already used, d
-uplicate ignored
+ination with the same identifier (name{Hfootnote.21}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.77 \section
              {Analyse de la r√©ponse impulsionnelle}pdfTeX warning (ext4): dest
-ination with the same identifier (name{Hfootnote.168}) has been already used, d
-uplicate ignored
+ination with the same identifier (name{Hfootnote.21}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.77 \section
-             {Analyse de la r√©ponse impulsionnelle}] [129 <./Part3/images/thea
-treMat.png>] <Part3/images/rirTheatre.png, id=391, 632.86438pt x 253.94875pt>
+             {Analyse de la r√©ponse impulsionnelle}] [7 <./Part3/images/theatr
+eMat.png>]
+
+LaTeX Warning: Reference `rirTheatre' on page 8 undefined on input line 80.
+
+<Part3/images/rirTheatre.png, id=127, 944.52875pt x 368.37625pt>
 File: Part3/images/rirTheatre.png Graphic file (type png)
 
 <use Part3/images/rirTheatre.png>
 Package pdftex.def Info: Part3/images/rirTheatre.png used on input line 84.
-(pdftex.def)             Requested size: 441.01773pt x 176.96854pt.
+(pdftex.def)             Requested size: 441.01773pt x 172.00142pt.
 
-<Part3/images/rirTheatrezoom.png, id=392, 765.86125pt x 246.9225pt>
+<Part3/images/rirTheatrezoom.png, id=128, 768.8725pt x 412.54124pt>
 File: Part3/images/rirTheatrezoom.png Graphic file (type png)
 
 <use Part3/images/rirTheatrezoom.png>
 Package pdftex.def Info: Part3/images/rirTheatrezoom.png used on input line 89.
 
-(pdftex.def)             Requested size: 441.01773pt x 142.1903pt.
+(pdftex.def)             Requested size: 441.01773pt x 236.63654pt.
+
+
+LaTeX Warning: Reference `rirTheatre' on page 8 undefined on input line 97.
+
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 97.
- [130
+
+Package natbib Warning: Citation `jouhaneau' on page 8 undefined on input line 
+97.
+
+
+Package natbib Warning: Citation `jouhaneau' on page 8 undefined on input line 
+97.
+
+[8
 
  <./Part3/images/rirTheatre.png> <./Part3/images/rirTheatrezoom.png>]
-<Part3/images/si_configInitale.png, id=425, 635.37375pt x 582.175pt>
+
+Package natbib Warning: Citation `haas' on page 9 undefined on input line 99.
+
+
+LaTeX Warning: Reference `rirTheatre' on page 9 undefined on input line 106.
+
+
+LaTeX Warning: Reference `si_configInitale' on page 9 undefined on input line 1
+06.
+
+
+LaTeX Warning: Reference `rirTheatre30' on page 9 undefined on input line 106.
+
+<Part3/images/si_configInitale.png, id=147, 635.37375pt x 582.175pt>
 File: Part3/images/si_configInitale.png Graphic file (type png)
 
 <use Part3/images/si_configInitale.png>
@@ -3003,13 +2932,28 @@ Package pdftex.def Info: Part3/images/si_configInitale.png used on input line 1
 09.
 (pdftex.def)             Requested size: 352.81552pt x 323.28862pt.
 
-Overfull \hbox (14.73016pt too wide) in paragraph at lines 114--144
-[]\T1/futs/m/n/12 La ta-bleau [][]9.2[][] prÈ-sente les fac-teurs per-cep-tifs 
-des cette confi-gu-ra-tion ini-tiale. On constate
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `tab_fact_init' on page 9 undefined on input line 114.
+
+
+
+Package natbib Warning: Citation `acoustique' on page 9 undefined on input line
+ 114.
+
+
+Overfull \hbox (10.17018pt too wide) in paragraph at lines 114--144
+[]\T1/futs/m/n/12 La ta-bleau [] prÈ-sente les fac-teurs per-cep-tifs des cette
+ confi-gu-ra-tion ini-tiale. On constate
  []
 
-[131 <./Part3/images/si_configInitale.png>] [132]
-Chapitre 10.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./Part3/images/si_configInitale.png>]
+Chapitre 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
@@ -3028,307 +2972,381 @@ Overfull \hbox (1.98195pt too wide) detected at line 2
  []\T1/futs/b/n/10.95 135
  []
 
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 3.
 
 Overfull \hbox (1.98195pt too wide) detected at line 3
- []\T1/futs/b/n/10.95 135
+ []\T1/futs/b/n/10.95 137
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 4
- []\T1/futs/b/n/10.95 135
+ []\T1/futs/b/n/10.95 137
  []
 
-LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 5.
-
-Overfull \hbox (1.98195pt too wide) detected at line 5
- []\T1/futs/b/n/10.95 135
- []
-
-
-Overfull \hbox (1.98195pt too wide) detected at line 6
- []\T1/futs/b/n/10.95 135
- []
-
-
-Overfull \hbox (1.98195pt too wide) detected at line 7
- []\T1/futs/b/n/10.95 135
- []
-
-) [133
+) [11
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 160
+
+LaTeX Warning: Reference `position_rece' on page 12 undefined on input line 193
 .
- (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 193
+.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-<Part3/images/position_rece.png, id=483, 1188.44pt x 812.03375pt>
+<Part3/images/position_rece.png, id=215, 1188.44pt x 812.03375pt>
 File: Part3/images/position_rece.png Graphic file (type png)
 
 <use Part3/images/position_rece.png>
-Package pdftex.def Info: Part3/images/position_rece.png used on input line 162.
+Package pdftex.def Info: Part3/images/position_rece.png used on input line 195.
 
 (pdftex.def)             Requested size: 441.01773pt x 301.3399pt.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 169.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 202.
+
+
+LaTeX Warning: Reference `tab_fac_rec' on page 12 undefined on input line 239.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[134 <./Part3/images/position_rece.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12]
+
+LaTeX Warning: Reference `tab_fac_rec' on page 13 undefined on input line 245.
+
+[13 <./Part3/images/position_rece.png>]
+
+LaTeX Warning: Reference `test_source1' on page 14 undefined on input line 252.
+
+
+
+LaTeX Warning: Reference `test_source2' on page 14 undefined on input line 252.
+
+
+
+LaTeX Warning: Reference `test_source3' on page 14 undefined on input line 252.
+
+
+
+LaTeX Warning: Reference `test_source4' on page 14 undefined on input line 252.
+
+
+
+LaTeX Warning: Reference `test_source4' on page 14 undefined on input line 252.
+
+
+<Part3/images/test_source1.png, id=256, 1101.11375pt x 740.7675pt>
+File: Part3/images/test_source1.png Graphic file (type png)
+
+<use Part3/images/test_source1.png>
+Package pdftex.def Info: Part3/images/test_source1.png used on input line 256.
+(pdftex.def)             Requested size: 211.68661pt x 142.40884pt.
+
+<Part3/images/test_source2.png, id=257, 1098.1025pt x 743.77875pt>
+File: Part3/images/test_source2.png Graphic file (type png)
+
+<use Part3/images/test_source2.png>
+Package pdftex.def Info: Part3/images/test_source2.png used on input line 264.
+(pdftex.def)             Requested size: 211.68661pt x 143.37361pt.
+
+<Part3/images/test_source3.png, id=258, 1099.10625pt x 746.79pt>
+File: Part3/images/test_source3.png Graphic file (type png)
+
+<use Part3/images/test_source3.png>
+Package pdftex.def Info: Part3/images/test_source3.png used on input line 270.
+(pdftex.def)             Requested size: 211.68661pt x 143.82874pt.
+
+<Part3/images/test_source4.png, id=259, 1101.11375pt x 745.78625pt>
+File: Part3/images/test_source4.png Graphic file (type png)
+
+<use Part3/images/test_source4.png>
+Package pdftex.def Info: Part3/images/test_source4.png used on input line 276.
+(pdftex.def)             Requested size: 211.68661pt x 143.37369pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `angle_refl' on page 14 undefined on input line 284.
+
+[14] <Part3/images/angle_refl.png, id=269, 706.64pt x 396.48125pt>
+File: Part3/images/angle_refl.png Graphic file (type png)
+
+<use Part3/images/angle_refl.png>
+Package pdftex.def Info: Part3/images/angle_refl.png used on input line 295.
+(pdftex.def)             Requested size: 352.81552pt x 197.95578pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./Part3/images/test_source1.png> <./Part3/images/test_source2.png> <./Part
+3/images/test_source3.png> <./Part3/images/test_source4.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 218.
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 307.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 218.
+(hyperref)                removing `\gls' on input line 307.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `jouhaneau' on page 16 undefined on input line
+ 308.
 
- [135]
-[136]
-Chapitre 11.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 310.
+
+[16 <./Part3/images/angle_refl.png>]
+Chapitre 3.
 Package minitoc Info: I0006
-(minitoc)             Main.mtc19 is empty on input line 229.
-[137
+(minitoc)             Main.mtc19 is empty on input line 320.
+[17
 
-] [138] [139
+]
 
-] (./Part3.bbl (./Main.brf)
+Package natbib Warning: Citation `rindel' on page 18 undefined on input line 32
+2.
+
+<Part3/images/canac_comparaison.png, id=300, 872.25874pt x 649.42625pt>
+File: Part3/images/canac_comparaison.png Graphic file (type png)
+
+<use Part3/images/canac_comparaison.png>
+Package pdftex.def Info: Part3/images/canac_comparaison.png used on input line 
+325.
+(pdftex.def)             Requested size: 308.71106pt x 229.8394pt.
+
+Underfull \hbox (badness 1194) in paragraph at lines 326--326
+[]\T1/futs/m/sc/10.95 Figure \T1/futs/m/n/10.95 3.1 ^^U |Com-pa-rai-son de l'in
+-ten-sitÈ per-Áue entre les thÈ‚tre d'Epi-daure, As-pen-dos et
+ []
+
+
+Package natbib Warning: Citation `canac' on page 18 undefined on input line 329
+.
+
+<Part3/images/canac_comparaison2.png, id=303, 482.80376pt x 626.34pt>
+File: Part3/images/canac_comparaison2.png Graphic file (type png)
+
+<use Part3/images/canac_comparaison2.png>
+Package pdftex.def Info: Part3/images/canac_comparaison2.png used on input line
+ 332.
+(pdftex.def)             Requested size: 308.71106pt x 400.50261pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `canac' on page 18 undefined on input line 336
+.
+
+<Part3/images/dyonisos1.png, id=306, 1045.9075pt x 542.025pt>
+File: Part3/images/dyonisos1.png Graphic file (type png)
+
+<use Part3/images/dyonisos1.png>
+Package pdftex.def Info: Part3/images/dyonisos1.png used on input line 340.
+(pdftex.def)             Requested size: 211.68661pt x 109.70155pt.
+
+<Part3/images/dyonisos2.png, id=309, 733.74126pt x 498.86375pt>
+File: Part3/images/dyonisos2.png Graphic file (type png)
+
+<use Part3/images/dyonisos2.png>
+Package pdftex.def Info: Part3/images/dyonisos2.png used on input line 348.
+(pdftex.def)             Requested size: 211.68661pt x 143.92079pt.
+
+Underfull \hbox (badness 4181) in paragraph at lines 349--349
+\T1/futs/m/n/10.95 du thÈ‚tre de Dyo-ni-sos. Em-pla-ce-ment du
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `canac' on page 18 undefined on input line 357
+.
+
+
+Package natbib Warning: Citation `canac' on page 18 undefined on input line 359
+.
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
+31}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.361 \chapter
+              *{Conclusion} <./Part3/images/canac_comparaison.png>] [19 <./Part
+3/images/canac_comparaison2.png> <./Part3/images/dyonisos1.png> <./Part3/images
+/dyonisos2.png>] [20
+
+] [21] (./Part3.bbl (./Main.brf)
 \tf@brf=\write11
 \openout11 = `Main.brf'.
 
- [140
+ [22
 
 ] (./francaisbst.tex)
 LaTeX Font Info:    Try loading font information for T1+aett on input line 69.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))) [141] [142
+))) [23] [24
 
 
 ]
-(./Main.acr [14
+(./Main.acr
+Annexe A.
+) (./Main.gls [1
 
 
+
+
+] [2
 
 ]
 Annexe B.
-) (./Main.gls [15
-
-] [16
-
-]
-Annexe C.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <12> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 31.
 ) (./Main.not)
+
+Package natbib Warning: There were undefined citations.
+
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Main.maf file.
 \openout3 = `Main.maf'.
 
- [17
+[3
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (./Main.aux (./Intro.aux) (./Part1.aux) (./Part2.aux)
-(./Part3.aux) (./Annexes.aux))
+ (./Main.aux (./Intro.aux) (./Part1.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) (./Part2.aux) (./Part3.aux) (./Annexes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 25C1D54B85153990B3235A713A71EF88;1279.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 65114AA8AE0E227C5CDFCA2AE505BB97;7776.
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `Main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  F4858B67CDC562CDCB1C1951B645460F;1151.
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: 9E747F7F8E27608BF49691DB3057B10B;7960
+(rerunfilecheck)             After:  A8AB4C27653E0DFFCE13A59EE0833C59;6715.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 53028 strings out of 493014
- 1137774 string characters out of 6133351
- 1404137 words of memory out of 5000000
- 55128 multiletter control sequences out of 15000+600000
- 207260 words of font info for 172 fonts, out of 8000000 for 9000
+ 53027 strings out of 493014
+ 1138706 string characters out of 6133351
+ 1388924 words of memory out of 5000000
+ 55160 multiletter control sequences out of 15000+600000
+ 201178 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,18n,87p,10450b,1042s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist,
+ 64i,18n,87p,10450b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.135} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{page.133} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{page.XVII} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist, r
+eplaced by a fixed one
 
 pdfTeX warning (dest): name{page.XVIII} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.167} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{page.XVI} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.166} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{page.XV} has been referenced but does not exist, re
+placed by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.165} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{page.134} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.164} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{page.132} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.137} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.130} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{page.131} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.55} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.140} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.54} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.125} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.128} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{page.126} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{part.2} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.26} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.25} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.10} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.2.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.3} has been referenced but does not exist,
+pdfTeX warning (dest): name{glo:exedre} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{part.1} has been referenced but does not exist, rep
-laced by a fixed one
+pdfTeX warning (dest): name{section.10.4} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.2} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9.1} has been referenced but does not exist
+, replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
@@ -3338,10 +3356,10 @@ ve/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016
 -dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (29 pages, 714760 bytes).
+Output written on Main.pdf (29 pages, 5961499 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 174 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

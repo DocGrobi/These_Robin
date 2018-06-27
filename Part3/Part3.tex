@@ -66,7 +66,7 @@ Pour effectuer les tests nous mettons en place une configuration de référence.
 \footnotetext{Meyer, Kunstmann, Kuttruff, 1964}
 
 \begin{figureth}
-	\includegraphics[width=0.7\linewidth]{images/theatreMat}
+	\includegraphics[width=0.9\linewidth]{images/theatreMat}
 	\caption{Représentation des matériaux sur le théâtre d'Orange : Calcaire (beige), Marbre (vert), Bois (marron), Audience (gris), Sénateurs (rose) ainsi que la source et le récepteur de la configuration initiale.}
 	\label{theatreMat}
 \end{figureth}
@@ -103,16 +103,60 @@ Nous pouvons analyser les premières réflexions grâce aux travaux de Haas et M
 \item si le temps entre les deux signaux est compris entre 35 et 50ms, les deux signaux sont distingués dans le temps mais la direction semble être celle du premier son ;
 \item au delà de 50ms, les deux signaux sont complètement distingués dans le tmps et l'espace.
 \end{itemize}
-Sur la figure \ref{rirTheatre} on constate la présence d'un pic de signal 4ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Il y a ensuite beaucoup de signal dispersé sur environ 50ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur. La moitié d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale et qui joue le rôle d'un miroir convergeant sur le récepteur. Celui-ci est retardé de plus de 35ms ce qui implique qu'il est entendu en écho bien que sa direction soit plutôt assimilée aux dossiers des gradins. Les pics postérieurs sont le résultat de la forme semi-circulaire de la \gls{cavea} (voir fig. \ref{si_configInitale}) qui renvoi les rayons vers le récepteur. Le dernier pic de la figure \ref{rirTheatre30} semble être du aux réflexions sur le bas de la porte royale et la scène. On considérera qu'au delà nous serons dans le champs diffus. 
+Sur la figure \ref{rirTheatre} on constate la présence d'un pic de signal 4ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Il y a ensuite beaucoup de signal dispersé sur environ 50ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur. La moitié d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale et qui joue le rôle d'un miroir convergeant sur le récepteur. Celui-ci est retardé de plus de 35ms ce qui implique qu'il est entendu en écho bien que sa direction soit plutôt assimilée aux dossiers des gradins. Les pics postérieurs sont le résultat de la forme semi-circulaire de la \gls{cavea} (voir fig. \ref{si_configInitale}) qui renvoi les rayons vers le récepteur. Le dernier pic de la figure \ref{rirTheatre30} semble être dû aux réflexions sur le bas de la porte royale et la scène. On considérera qu'au delà nous serons dans le champs diffus. 
 %
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/si_configInitale}
-	\caption{Première source-images projetée sur les parois du théâtre. Rouge correspond à l'énergie maximal et bleu l'énergie minimale}
+	\caption{Source-images projetées sur les parois du théâtre pour les trois premiers rebonds.}
 	\label{si_configInitale}
 \end{figureth}
 
 La tableau \ref{tab_fact_init} présente les facteurs perceptifs des cette configuration initiale. On constate clairement que le théâtre semble particulièrement bien adapté à la transmission de parole puisque plutôt qu'à la musique. Effectivement, la définition \gls{D50} est au delà de 75\% ce qui permet de comprendre que la contribution des premières réflexions est largement majoritaire sur le champs diffus. De même, la clarté \gls{C80} est élevée (on dit que pour la musique elle doit se situer entre -3dB et +3dB \cite[p.59]{acoustique}), or ici elle est supérieure à 7dB dés les plus basses fréquences ce qui présage d'une très bonne compréhensibilité de la parole. Le temps central \gls{Ts} étant inférieur à 50ms, on comprend que globalement la réverbération sera quasi-confondue avec le son direct. Par ailleurs, on voit que le théâtre amplifie de 4dB les basses fréquence et 3dB les hautes fréquences. On retrouve bien l'analyse faite précédemment sur l'orchestre qui double le niveau sonore de la source.
 %
+\begin{tableth} 
+ \begin{tabular}{| *{9}{c|}} 
+ \hline 
+ Facteur & 62,5Hz & 125Hz & 250Hz & 500Hz & 1kHz & 2kHz & 4kHz & 8kHz \\ 
+ \hline 
+ \hline 
+\gls{EDT} (ms)& 1436& 1429& 1259& 1170& 1031& 747& 595& 349 \\ 
+ \hline 
+\gls{T30} (ms)& 2663& 2645& 2352& 2213& 2055& 1745& 1268& 656 \\ 
+ \hline 
+\gls{RT60} (ms)& 2057& 2057& 2001& 2001& 2001& 1794& 1218& 594 \\ 
+ \hline 
+\gls{spl} (dB)& -32& -32& -33& -33& -33& -34& -36& -42 \\ 
+ \hline 
+\gls{G} (dB)& 5.6& 5.6& 5.3& 5.1& 5& 4.7& 4.2& 3.4 \\ 
+ \hline 
+\gls{C80} (dB)& 3.68& 3.71& 4.24& 4.54& 4.89& 5.6& 7.47& 12.34 \\ 
+ \hline 
+\gls{D50} (\%)& 60.16& 60.3& 61.87& 62.42& 63.69& 66.53& 73.65& 87.08 \\ 
+ \hline 
+\gls{Ts} (ms)& 76& 75& 67& 63& 58& 49& 32& 13 \\ 
+ \hline 
+\gls{LF80} (dB)& 0.003& 0.003& 0.002& 0.002& 0.002& 0.001& 0.001& 0.001 \\ 
+ \hline 
+\end{tabular}  
+ \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1~000~000 de rayons dans la configuration de référence.} 
+ \label{tab_fact_init} 
+ \end{tableth}
+
+
+
+A partir de cette analyse pour allons pouvoir procéder par comparaison avec cette configuration initiale pour déterminer l'impact des modifications apportées au bâtiment sur l'acoustique.
+		
+\chapter{Test de configurations}
+	\citationChap{
+Don't stop me now \\
+I'm having such a good time
+		}{Queen}
+	\minitoc
+	\newpage
+
+\section{Décor du front de scène}
+
+
 \begin{tableth} 
  \begin{tabular}{| *{9}{c|}} 
  \hline 
@@ -138,21 +182,10 @@ La tableau \ref{tab_fact_init} présente les facteurs perceptifs des cette confi
 \gls{LF80} (dB)& 0.002& 0.002& 0.002& 0.001& 0.001& 0.001& 0.001& 0.001 \\ 
  \hline 
 \end{tabular} 
- \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1~000~000 de rayons.} 
+ \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1~000~000 de rayons sans décoration du front de scène.} 
  \label{tab_fact_init} 
  \end{tableth}
 
-
-
-A partir de cette analyse pour allons pouvoir procéder par comparaison avec cette configuration initiale pour déterminer l'impact des modifications apportées au bâtiment sur l'acoustique.
-		
-\chapter{Test de configurations}
-	\citationChap{
-Don't stop me now \\
-I'm having such a good time
-		}{Queen}
-	\minitoc
-	\newpage
 
 \section{Position des spectateurs}
 La première étape de ces tests comparatifs se fait sur la position des spectateurs. Nous savons que le placement dans la \gls{cavea} se faisait selon le rang social des spectateurs. Nous comprenons facilement que visuellement, les spectateurs les plus proches étaient ceux qui voyait le mieux les acteurs même ceux situés légèrement en recul avaient une meilleure vu d'ensemble. Ainsi vous avions les sénateurs sur des sièges mobiles dans l'orchestre.
@@ -207,17 +240,75 @@ On constate d'après le tableau \ref{tab_fac_rec} plusieurs choses. Tout d'abord
 \begin{itemize}
 \item Pour l'axe perpendiculaire au mur de scène (récepteurs 1 à 4), la clarté (\gls{C80}) et la définition (\gls{D50}) reste bien adaptées à un signal audio de type texte. Le temps de réverbération double entre les premiers et derniers gradins ce qui dégrade légèrement ces paramètres. Néanmoins, le temps central (\gls{Ts}) restant inférieur à 50ms, on conserve un phénomène d'échos faible.
 \item Le long de l'axe décalé de 55° (récepteurs 5 à 9), le temps central (\gls{Ts}) se décale beaucoup plus loin (jusqu'à 136ms pour les derniers gradins) ce qui implique une moins bonne compréhensibilité. Effectivement lorsque l'auditeur n'est pas bien dans l'axe, le signal se réfléchi sur les cotés de la \gls{cavea} (notamment sur les murs lisses tels que les \glspl{podium}) ce qui ajoute beaucoup de signal au champs diffus.  
-\item Dans le troisième axe cet effet est encore amplifié puisque le son se réfléchi sur les \glspl{basilique}. Le temps de réverbération est plus important au niveau de la tribune car cet auditeur bénéficie de nombreuses réflexions sur le mur de scène que les auditeurs du deuxième et troisième \gls{maenianum} n'ont pas. On constate alors que sur cet axe, l'acoustique n'est plus vraiment adaptée à la parole mais plutôt à la musique.
+\item Dans le troisième axe (récepteurs 10 à 12) cet effet est encore amplifié puisque le son se réfléchi sur les \glspl{basilique}. Le temps de réverbération est plus important au niveau de la tribune car cet auditeur bénéficie de nombreuses réflexions sur le mur de scène que les auditeurs du deuxième et troisième \gls{maenianum} n'ont pas. On constate alors que sur cet axe, l'acoustique n'est plus vraiment adaptée à la parole mais plutôt à la musique.
 \end{itemize}
 Le paramètre \gls{LF80} (dB) n'apparait pas dans le tableau \ref{tab_fac_rec} car la valeur reste toujours très faible (<0,1dB) conséquence du fait que le son provenant de la scène est grandement majoritaire.
 
-\section{Forme du mur de scène}	
-\section{Présence de spectateurs}
+Pour résumer, les spectateurs les plus éloignés entendait le son jusqu'à dix fois moins fort. Plus on se rapproche de l'axe central de la \gls{cavea}, plus l'acoustique est favorable à la parole tandis que lorsqu'on s'approche de l'axe des \glspl{aditus} l'acoustique est plus favorable à la musique.
+
+\section{La source et le mur de scène}
+
+Au théâtre d'Orange il est probable que les sources sonores étaient composés d' ... (à completer)
+ainsi leur directionnalité semble plutôt orienté vers le public et non vers le mur de scène. La fonction du mur semble donc dans un premier être décorative et isolante. Effectivement la structure complètement enclavante du théâtre coupe les spectateurs des bruits extérieurs. Par ailleurs la décoration détaillée du front de scène apporte inévitablement un effet de diffusion des  fréquences audibles. Néanmoins, on peut explorer l'impact de la forme caractéristique du mur de scène sur la réflexion du son. Cette dernière est liée est la position de la source sonore. La figure \ref{test_source1} montre les rayons se propageant vers le mur de scène et revenant vers les spectateurs (dans le plan à 1m60 au dessus de la scène). On constate que le mur autour de la porte centrale renvoi des rayons dans les gradins tandis que l'\gls{exedre} curviligne ainsi que ses têtes renvoient les rayons vers les tribunes. La figure \ref{test_source2} représente le même test pour une source située sur l'axe entre les portes latérales menant aux \glspl{parascaenium} c'est-à-dire à Y=9m. On constate dans ce cas que l'\gls{exedre} curviligne permet de concentrer une partie des rayons sur les extrémités de la \gls{cavea}. De la même manière, grâce aux figures \ref{test_source3} et \ref{test_source4}, on constate bien que plus on s'éloigne du bord de la scène, plus l'\gls{exedre} concentre les rayons vers l'axe central de la \gls{cavea}. On voit d'ailleurs sur la figure \ref{test_source4} que lorsque la source est sur l'escalier de la porte royale, (quasiment dans l'encadrement), les rayons reviennent de part et d'autre de l'escalier central de la \gls{cavea}. 
+
+\begin{figureth}
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/test_source1}
+		\caption{Reflexion des rayons sur le mur de scène pour une source située en [0 ; 3,6 ; 42,8].}
+		\label{test_source1}
+		\hfill
+		\quad
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/test_source2}
+		\caption{Reflexion des rayons sur le mur de scène pour une source située en [0 ; 9 ; 42,8].}
+		\label{test_source2}
+		\quad
+	\end{subfigureth} 
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/test_source3}
+		\caption{Reflexion des rayons sur le mur de scène pour une source située en [0 ; 14,5 ; 42,8].}
+		\label{test_source3}
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/test_source4}
+		\caption{Reflexion des rayons sur le mur de scène pour une source située en [0 ; 16,5 ; 42,8].}
+		\label{test_source4}
+	\end{subfigureth}
+\caption{Reflexion des rayons propagés depuis une source vers le mur de scène dans un plan horizontal.}	
+\label{test_source}
+\end{figureth}	
+
+Si on se place maintenant dans le plan vertical YZ (ou vu de profil). Nous avons vu précédemment que la reflexion sur l'orchestre est très importante puisqu'elle permet de renvoyer une grande partie des rayons vers les gradins. Cependant, plus la source va s'éloigner du bord de la scène moins il y aura de rayons réfléchis sur l'orchestre. Les rayons sont alors réfléchis sur la scène qui possèdes des coefficients d'absorption plus élevés. On peut alors calculer la distance $d$ de l'orchestre qui va réfléchir des rayons en fonction de la distance $d'$ de la source sur la scène par rapport au bord (voir fig \ref{angle_refl}). D'après le théorème de Thales on a :
+\begin{equation}
+d = \frac{h'}{h}\times d' = 1,33d',
+\end{equation}
+où :
+\begin{itemize}
+\item h est la hauteur de la scène (1,2m à Orange),
+\item h' est la hauteur de la source sur la scène (1,6 m en prenant en compte la taille moyenne d'un acteur).
+\end{itemize}
+Ainsi, lorsque que l'acteur s'éloignera du bord de la scène de 1m, les reflexions se feront sur 1,33m de moins sur l'orchestre. On note par ailleurs les escaliers de la porte royales se trouvent à 11m du bord de la scène ; lorsque l'acteur sera à cette position, les rayons ne toucherons l'orchestre qu'à 14,63m du bord de la scène ce qui tombe en plein dans les gradins mobile. Un acteur se trouvant en fond de scène ne bénéficiera donc pas de la reflexions sur l'orchestre pour amplifier le son.
+\begin{figureth}
+	\includegraphics[width=0.8\linewidth]{images/angle_refl}
+	\caption{Vu de profil de la propagation sonore à partir de deux sources S1 et S2. Proportion de signal réfléchi sur l'orchestre plus faible pour S2 que pour S1.}
+	\label{angle_refl}
+\end{figureth}
+
+%\section{L e mur de scène}	
+
+%on ajoute l'escalier central 
+
+%qt mettre niveau en db pour le nom des source images rvb
+
+
+\section{Absorption des spectateurs et du \gls{velum}}
 \cite[p.212]{jouhaneau}
-\section{Présence de velum}
-\section{Présence de la \gls{porticus isc}}
-\section{Forme et matériaux du toit}
-\section{Impact du bruit extérieur}
+%\section{Présence de velum}
+\section{Les couvertures de la scène et de la \gls{porticus isc}}
+%\section{Impact du bruit extérieur}
 
 \newpage
 
@@ -229,6 +320,43 @@ Si on veut connaitre un peuple, il faut écouter sa musique
 \newpage
 
 Citer  \cite[p.25]{rindel}
+
+\begin{figureth}
+	\includegraphics[width=0.7\linewidth]{images/canac_comparaison}
+	\caption[Comparaison de l'intensité perçue entre les théâtre d'Epidaure, Aspendos et Orange.]{Comparaison de l'intensité perçue entre les théâtre d'Epidaure, Aspendos et Orange \footnotemark.}
+	\label{canac_comparaison}
+\end{figureth}
+\citefnt[p.162]{canac}
+%
+\begin{figureth}
+	\includegraphics[width=0.7\linewidth]{images/canac_comparaison2}
+	\caption[Comparaison de la compréhensibilité à Orange, avec un mur (en haut) et à Vaison, sans mur (en bas).]{Comparaison de la compréhensibilité à Orange, avec un mur (en haut) et à Vaison, sans mur (en bas) \footnotemark.}
+	\label{canac_comparaison2}
+\end{figureth}
+\citefnt[p.152]{canac}
+
+\begin{figureth}
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/dyonisos1}
+		\caption[Mosaïque en losange dans l'orchestre du théâtre de Dyonisos à Athènes.]{Mosaïque en losange dans l'orchestre du théâtre de Dyonisos à Athènes \footnotemark.}
+		\label{dyonisos1}
+		\hfill
+		\quad
+	\end{subfigureth}
+	\quad
+	\begin{subfigureth}{0.48\textwidth}
+		\includegraphics[width=\linewidth]{images/dyonisos2}
+		\caption[Rôle supposé du losange dans l'orchestre du théâtre de Dyonisos. Emplacement du choeur.]{Rôle supposé du losange dans l'orchestre du théâtre de Dyonisos. Emplacement du choeur \footnotemark.}
+		\label{dyonisos2}
+		\quad
+	\end{subfigureth} 
+\caption{Analyse de l'orchestre du théâtre de Dyonisos à Athènes.}	
+\label{dyonisos}
+\end{figureth}	
+\addtocounter{footnote}{-1}
+\citefnt[Fig. V-7 bis - p.119]{canac}
+\addtocounter{footnote}{1}
+\citefnt[Fig. V-7 - p.118]{canac}
 
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
