@@ -46,9 +46,9 @@
 \contentsline {subsection}{\numberline {4.1.1}Notion de reverberation}{54}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Notion de flux d'intensit\IeC {\'e} acoustique}{55}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Absorption atmosph\IeC {\'e}rique}{57}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{60}{section.4.2}
+\contentsline {section}{\numberline {4.2}M\IeC {\'e}thodes de calcul acoustique}{59}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Principe statistique}{60}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}M\IeC {\'e}thode de r\IeC {\'e}solution exacte}{61}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}M\IeC {\'e}thodes de r\IeC {\'e}solution aux d\IeC {\'e}riv\IeC {\'e}es partielles}{61}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}M\IeC {\'e}thodes g\IeC {\'e}om\IeC {\'e}triques}{63}{subsection.4.2.3}
 \contentsline {chapter}{\numberline {5}D\IeC {\'e}veloppement d'une m\IeC {\'e}thode coupl\IeC {\'e}e}{67}{chapter.5}
 \contentsline {section}{\numberline {5.1}Notion d'onde sph\IeC {\'e}rique discr\IeC {\'e}tis\IeC {\'e}e}{69}{section.5.1}
@@ -56,7 +56,7 @@
 \contentsline {subsection}{\numberline {5.2.1}Maillage de salle et mat\IeC {\'e}riaux}{72}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Cr\IeC {\'e}ation d'une boite englobante}{74}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Calcul de rayons}{74}{section.5.3}
-\contentsline {section}{\numberline {5.4}Calcul de sources-images}{78}{section.5.4}
+\contentsline {section}{\numberline {5.4}Calcul de sources-images}{79}{section.5.4}
 \contentsline {section}{\numberline {5.5}G\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}ponse impulsionnelle}{81}{section.5.5}
 \contentsline {section}{\numberline {5.6}Auralisation}{82}{section.5.6}
 \contentsline {chapter}{\numberline {6}Optimisation algorithmique}{85}{chapter.6}
@@ -79,9 +79,9 @@
 \contentsline {subsection}{\numberline {8.2.2}Early Decay Time : \gls {EDT}}{112}{subsection.8.2.2}
 \contentsline {subsection}{\numberline {8.2.3}Clart\IeC {\'e} :\gls {C80}}{113}{subsection.8.2.3}
 \contentsline {subsection}{\numberline {8.2.4}D\IeC {\'e}finition : $D_{50}$}{113}{subsection.8.2.4}
-\contentsline {subsection}{\numberline {8.2.5}Temps central : \gls {Ts}}{113}{subsection.8.2.5}
-\contentsline {subsection}{\numberline {8.2.6}Puissance sonore : \gls {spl}}{114}{subsection.8.2.6}
-\contentsline {subsection}{\numberline {8.2.7}Spaciosit\IeC {\'e} : \gls {LF80}}{114}{subsection.8.2.7}
+\contentsline {subsection}{\numberline {8.2.5}Temps central : \gls {Ts}}{114}{subsection.8.2.5}
+\contentsline {subsection}{\numberline {8.2.6}Sound Pressure Level : \gls {spl}}{114}{subsection.8.2.6}
+\contentsline {subsection}{\numberline {8.2.7}Spaciosit\IeC {\'e} : \gls {LF80}}{115}{subsection.8.2.7}
 \contentsline {chapter}{Conclusion}{117}{chapter*.54}
 \contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{121}{chapter*.55}
 \gdef \the@ipfilectr {}
@@ -92,15 +92,15 @@
 \contentsline {chapter}{\numberline {9}Analyse en configuration initiale}{127}{chapter.9}
 \contentsline {section}{\numberline {9.1}Configuration du maillage}{128}{section.9.1}
 \contentsline {section}{\numberline {9.2}Analyse de la r\IeC {\'e}ponse impulsionnelle}{130}{section.9.2}
-\contentsline {chapter}{\numberline {10}Test de configurations}{135}{chapter.10}
-\contentsline {section}{\numberline {10.1}D\IeC {\'e}cor du front de sc\IeC {\`e}ne}{136}{section.10.1}
-\contentsline {section}{\numberline {10.2}Position des spectateurs}{136}{section.10.2}
-\contentsline {section}{\numberline {10.3}La source et le mur de sc\IeC {\`e}ne}{138}{section.10.3}
-\contentsline {section}{\numberline {10.4}Absorption des spectateurs et du \gls {velum}}{140}{section.10.4}
-\contentsline {section}{\numberline {10.5}Les couvertures de la sc\IeC {\`e}ne et de la \gls {porticus isc}}{140}{section.10.5}
-\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{141}{chapter.11}
-\contentsline {chapter}{Conclusion}{145}{chapter*.17}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{147}{chapter*.18}
+\contentsline {chapter}{\numberline {10}Test de configurations}{137}{chapter.10}
+\contentsline {section}{\numberline {10.1}D\IeC {\'e}cor du front de sc\IeC {\`e}ne}{138}{section.10.1}
+\contentsline {section}{\numberline {10.2}Position des spectateurs}{139}{section.10.2}
+\contentsline {section}{\numberline {10.3}La source et le mur de sc\IeC {\`e}ne}{141}{section.10.3}
+\contentsline {section}{\numberline {10.4}Absorption des spectateurs et du \gls {velum}}{143}{section.10.4}
+\contentsline {section}{\numberline {10.5}Les couvertures de la sc\IeC {\`e}ne et de la \gls {porticus isc}}{143}{section.10.5}
+\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{145}{chapter.11}
+\contentsline {chapter}{Conclusion}{149}{chapter*.18}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{151}{chapter*.19}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}

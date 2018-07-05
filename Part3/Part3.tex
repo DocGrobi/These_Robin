@@ -15,7 +15,7 @@
 \item Le \gls{pulpitum} qui présente des niches alternativement rectangulaires et semi-circulaire (mais qui est plat dans les \glspl{odeon}) pourrait servir soit à disperser les échos nuisibles soit à faire résonner la musique \cite[p.38]{canac}.
 \item Les gradins doivent permettre à l'acteur de s'entendre en retour afin d'avoir la sensation que sa voix porte \cite[p.42 - tab.II-4]{canac}
 \end{itemize}
-L'un des caractère essentiel de l'étude acoustique dans un théâtre est la compréhensibilité. Cependant, ne disposant que de peu de données dans ce domaine, nous n'étudierons pas ce paramètre en profondeur. Effectivement, l'usage de la parole dans les représentations théâtrales est difficile à comprendre. Outre le fait que l'élocution était probablement très différente de celle qu'on connait aujourd'hui (Aristote \cite[Chap IV - XIV]{aristote} et Plutarque ont insisté sur l'entrainement rigoureux des acteurs pour développer leur voix et leur aisance sur scène \cite[p.39]{canac}) les acteurs portait probablement des masques amplificateurs pour amplifier leur voix \cite[p.362]{arnaud}. Il est rapporté par Philostrate dans \textit{La vie d'Apollonios de Tyane}, V, 9 "qu'un acteur tragique se rendit en occident et y fit une tournée ... Arrivé à Hyspalis (Seville) il sembla aux indigènes déjà effrayant par son aspect,cbien qu'il n'eût pas encore prononcé une parole sur la scène. En le voyant marcher à grand pas, la bouche démesurément ouverte, monté sur des chaussures d'une hauteur extraordinaire, le corps dissimulé sous un étrange accoutrement, ces gens, n'étaient pas rassurés; mais quand il se mit à élever la voix et à déclamer sur un ton éclatant, la plupart prirent la fuite, comme poursuivis par les cris d'un démon. Il résulte donc de ce passage que la voix atteignait une sonorité considérable" \cite[p.43]{formige}. Il n'est pas impossible que certains spectacles de théâtre aient été non verbaux et plutôt de type pantomime. Nous restreindrons donc notre étude au critère de clarté \gls{C80}.
+L'un des caractère essentiel de l'étude acoustique dans un théâtre est la compréhensibilité. Nous ne disposons pourtant que de peu d'information dans ce domaine. Premièrement, il n'est pas impossible que certains spectacles de théâtre aient été non verbaux et plutôt de type pantomime. Par ailleurs, l'usage de la parole dans les représentations théâtrales est difficile à comprendre. Outre le fait que l'élocution était probablement très différente de celle qu'on connait aujourd'hui (Aristote \cite[Chap IV - XIV]{aristote} et Plutarque ont insisté sur l'entrainement rigoureux des acteurs pour développer leur voix et leur aisance sur scène \cite[p.39]{canac}) les acteurs portait probablement des masques amplificateurs pour amplifier leur voix \cite[p.362]{arnaud}. Il est rapporté par Philostrate dans \textit{La vie d'Apollonios de Tyane}, V, 9 "qu'un acteur tragique se rendit en occident et y fit une tournée ... Arrivé à Hyspalis (Seville) il sembla aux indigènes déjà effrayant par son aspect, bien qu'il n'eût pas encore prononcé une parole sur la scène. En le voyant marcher à grand pas, la bouche démesurément ouverte, monté sur des chaussures d'une hauteur extraordinaire, le corps dissimulé sous un étrange accoutrement, ces gens, n'étaient pas rassurés; mais quand il se mit à élever la voix et à déclamer sur un ton éclatant, la plupart prirent la fuite, comme poursuivis par les cris d'un démon. Il résulte donc de ce passage que la voix atteignait une sonorité considérable" \cite[p.43]{formige}. C'est donc avec ces réserves que nous tenterons de comprendre comment la voix pouvait être transmise à l'aide de critères tels que la clarté \gls{C80}.
 
 Dans ce chapitre nous allons tenter d'aller plus loin dans l'analyse acoustique des théâtres antiques en utilisant des outils numériques. Effectivement, nous disposons désormais d'une maquette virtuelle du théâtre d'Orange ainsi que d'un outil de simulation acoustique, nous allons donc pouvoir combiner les deux pour tester différentes hypothèses archéologiques. Quelle était l'impact de la position des spectateurs dans les gradins ? Le toit ou le \gls{velum} avaient-ils une incidence sur le son perçu ? Quels rôles jouent et jouaient les différents matériaux ? Voici quelques exemples auxquels nous tenterons d'apporter des réponses. Le premier chapitre présente comment utiliser le logiciel de calcul acoustique et comment le paramètrer pour la maquette virtuelle du théâtre d'Orange. Des calcul seront ensuite effectuer pour différentes configuration du théâtre afin de tenter d'éclairer certaines hypothèses de reconstitution. Nous verrons dans un contexte plus général comment se situe le théâtre d'Orange par rapport à d'autres théâtres en terme d'acoustique.	
 	
@@ -30,9 +30,9 @@ Dans ce chapitre nous allons tenter d'aller plus loin dans l'analyse acoustique 
 	
 
 	\section{Configuration du maillage}
-Pour effectuer les tests nous mettons en place une configuration de référence. Celle-ci sera détaillée et étudiée dans ce chapitre tandis que le chapitre suivant présentera l'impact des différents éléments sur l'acoustique du bâtiment. Nous pourrons alors procéder de manière relative en ôtant les éléments les uns après les autres pour constater leur impact. Cette configuration de référence est un parti pris de ce que nous pensons être le théâtre dans un état d'usage standard de représentation, c'est-à-dire restitué de manière quasi-complète, avec du public et sans \gls{velum}. Il est important de noter que cette configuration intègre des éléments hypothétiques (tel que de toit de la scène par exemple) mais dont l'aspect et la présence sont probables d'après ce que nous avons vu dans la partie \ref{part_1}. Cette configuration de référence est donc composée : du mur de scène et d'une partie de sa décoration (les colonnes, les \glspl{podium} et les entablements), de l'\gls{orchestra}, de la scène et de sa couverture, des basiliques, des \glspl{aditus} et de la \gls{cavea} ainsi que de la \gls{porticus isc} (voir fig. \ref{theatreMat}). On ajoute également les trois grandes portes du \gls{postscaenium} ainsi que les diverses niches qui ont été modélisées (voir Chap. \ref{mur}) sur le front de scène. Ceux sont les éléments qui peuvent avoir un impact non négligeable sur l'étude acoustique. Nous pouvons noter que le maillage ainsi constitué comporte environ 160~000 triangles. Notons également que le décor du front de scène est légèrement déraffiner grâce au \gls{decimate} afin d'alléger le maillage. Les tests acoustique auront tous lieu à l'intérieur du bâtiment, ainsi, certains éléments situés à l'extérieur de l'enceinte ont été ôtés du model tels que les arcades autour de la \gls{cavea}, les mâts de \gls{velum}, etc. Le calcul complet pour atteindre 60dB d'attenuation se fait en environ 12 minutes sur un ordinateur portable ce qui permet d'enchainer un nombre important de tests.
+Pour effectuer les tests nous mettons en place une configuration de référence. Celle-ci sera détaillée et étudiée dans ce chapitre tandis que le chapitre suivant présentera l'impact des différents éléments sur l'acoustique du bâtiment. Nous pourrons alors procéder de manière relative en ôtant les éléments les uns après les autres pour constater leur impact. Cette configuration de référence est un parti pris de ce que nous pensons être le théâtre dans un état d'usage standard de représentation, c'est-à-dire restitué de manière quasi-complète, avec du public et sans \gls{velum}. Il est important de noter que cette configuration intègre des éléments hypothétiques (tel que de toit de la scène par exemple) mais dont l'aspect et la présence sont probables d'après ce que nous avons vu dans la partie \ref{part_1}. Cette configuration de référence est donc composée : du mur de scène et d'une partie de sa décoration (les colonnes, les \glspl{podium} et les entablements), de l'\gls{orchestra}, de la scène et de sa couverture, des basiliques, des \glspl{aditus} et de la \gls{cavea} ainsi que de la \gls{porticus isc} (voir fig. \ref{theatreMat}). On ajoute également les trois grandes portes du \gls{postscaenium} ainsi que les diverses niches qui ont été modélisées (voir Chap. \ref{mur}) sur le front de scène. Ceux sont les éléments qui peuvent avoir un impact non négligeable sur l'étude acoustique. Nous pouvons noter que le maillage ainsi constitué comporte environ 160~000 triangles. Notons également que le décor du front de scène est légèrement déraffiner grâce au \gls{decimate} afin d'alléger le maillage. Les tests acoustique auront tous lieu à l'intérieur du bâtiment, ainsi, certains éléments situés à l'extérieur de l'enceinte ont été ôtés du model tels que les arcades autour de la \gls{cavea}, les mâts de \gls{velum}, etc. 
 
-En ce qui concerne les matériaux, nous avons tenté de se rapprocher de la réalité d'après les éléments disponibles aujourd'hui. Tous les éléments construits en grand appareil sont en calcaire de Courthezon \cite[p.43]{orangeTxt}. L'orchestre était à priori dallé avec un matériau de type marbre \cite[p.337]{orangeTxt}. On utilisera également du marbre pour le front du \gls{pulpitum}, le décor du front de scène et la \gls{porticus isc}. Le front de scène, derrière sa décoration était orné de panneaux mêlant probablement du marbre varié et polychrome ainsi que des mosaïques, nous lui assignerons donc également un matériau de type marbre. Le plancher de la scène, les portes du \gls{postscaenium} ainsi que les couvertures de la scène et de la \gls{porticus isc} étaient à priori en bois (probablement du chêne pour ses propriétés mécaniques et sa présence régionale). Notons que seules les faces donnant vers l'intérieur du théâtre nous importent, c'est pourquoi nous ne traiterons pas des matériaux recouvrant les toitures. Enfin, la configuration initiale se fait avec le public puisque c'est le cas d'utilisation le plus courant. Nous assignons donc aux gradins un matériau de type audience tout comme aux trois degrés bas situés sur l'orchestre et réservés au Sénateurs. Ceux-ci ne font pas partie de la modélisation décrite en partie \ref{part_1} car il s'agit de siège mobiles pour lesquels nous ne disposons que de peu d'information. "Dans les théâtres de Rome les sénateurs étaient placés immédiatement avant les chevaliers. Or, à Orange, la place des chevaliers est déterminée par une inscription deux fois répétée sur le premier gradin inférieur du premier \gls{maenianum} : EQjG-III. Il fallait donc que les décurions fussent avant eux, c'est-à-dire sur les gradins de l'orchestre" \cite[p.46]{formige}. Dans la base de donnée Odéon \cite[materials]{odeon} on trouve les matériaux qui se rapprochent le plus de ceux évoqué précédemment et on obtient les coefficients d'absorption correspondant (voir tab. \ref{matOdeon}). Ce qui saute aux yeux dans ce tableau c'est que le calcaire et le marbre sont extrêmement réfléchissant et semble tenir une fonction de miroir acoustique. A contrario le public est plutôt absorbant et on imagine que son rôle sera de limiter les échos. Quant au bois, il absorbe moyennement les basses fréquences et peu les hautes fréquences.
+En ce qui concerne les matériaux, nous avons tenté de se rapprocher de la réalité d'après les éléments disponibles aujourd'hui. Tous les éléments construits en grand appareil sont en calcaire de Courthezon \cite[p.43]{orangeTxt}. L'orchestre était à priori dallé avec un matériau de type marbre \cite[p.337]{orangeTxt}. On utilisera également du marbre pour le front du \gls{pulpitum}, le décor du front de scène et la \gls{porticus isc}. Le front de scène, derrière sa décoration était orné de panneaux mêlant probablement du marbre varié et polychrome ainsi que des mosaïques, nous lui assignerons donc également un matériau de type marbre. Le plancher de la scène, les portes du \gls{postscaenium} ainsi que les couvertures de la scène et de la \gls{porticus isc} étaient à priori en bois (probablement du chêne pour ses propriétés mécaniques et sa présence régionale). Notons que seules les faces donnant vers l'intérieur du théâtre nous importent, c'est pourquoi nous ne traiterons pas des matériaux recouvrant les toitures. Enfin, la configuration initiale se fait avec le public puisque c'est le cas d'utilisation le plus courant. Nous assignons donc aux gradins un matériau de type audience tout comme aux trois degrés bas situés sur l'orchestre et réservés au Sénateurs. Ceux-ci ne font pas partie de la modélisation décrite en partie \ref{part_1} car il s'agit de siège mobiles pour lesquels nous ne disposons que de peu d'information. "Dans les théâtres de Rome les sénateurs étaient placés immédiatement avant les chevaliers. Or, à Orange, la place des chevaliers est déterminée par une inscription deux fois répétée sur le premier gradin inférieur du premier \gls{maenianum} : EQjG-III. Il fallait donc que les décurions fussent avant eux, c'est-à-dire sur les gradins de l'orchestre" \cite[p.46]{formige}. Dans la base de donnée Odéon \cite[materials]{odeon} on trouve les matériaux qui se rapprochent le plus de ceux évoqué précédemment et on obtient les coefficients d'absorption correspondant (voir tab. \ref{matOdeon}). Ce qui saute aux yeux dans ce tableau c'est que le calcaire et le marbre sont extrêmement réfléchissant et semble tenir une fonction de miroir acoustique. A contrario le public est plutôt absorbant et on imagine que son rôle sera de limiter les échos. Quant au bois, il absorbe moyennement les basses fréquences et peu les hautes fréquences. Notons également que nous assignons aux ambulacres un matériau 100\% absorbant afin d'éviter que des rayons ne se perdent dans les couloirs sans en ressortir ce qui rallongerai le temps de clacul.
 %
 \begin{tableth} 
 \footnotesize
@@ -75,6 +75,9 @@ En ce qui concerne les matériaux, nous avons tenté de se rapprocher de la réa
 
 On peut voir sur la figure \ref{theatreMat} la répartition des différents matériaux sur sur le bâtiment. Nous plaçons une source sonore centrée sur la largeur de la scène à 160cm au dessus de celle-ci (environ la hauteur d'une bouche humaine) soit à une altitude de 42,8m et à 2m du bord. Nous choisissons cette position comme position de source initiale. Le récepteur initial est situé dans le même axe, c'est à dire au centre des gradins et à la même altitude. Sa distance par rapport au centre de l'orchestre est de 16,5m, ce qui correspond aux gradins 3 à 8 environ. Son rayon de mesure sera de 2m. 
 
+Nous testons le calcul complet avec un et deux millions de rayons. Nous constatons que les résultats sont quasiment identique à partir de 500Hz mais que les temps de réverbération sont un peu plus grand pour les basses fréquences à deux millions de rayons (moins de 10\% d'écart). Cela s'explique par le fait que l'atmosphère ainsi que les matériaux atténuent très peu ces fréquences. Cependant, ce faible écart de résultats reste acceptable compte tenu de la diminution du temps de calcul. Il est 50min pour deux millions de rayons et 20min pour un million. Nous testons aussi le calcul pour 500~000 rayons dont le temps est de 7min et retrouvons des résultats identiques à la configuration à deux millions de rayons au delà de 4kHz. Pour les plus basses fréquences l'écart va jusqu'à 17\%. Nous choisissons donc de de travailler avec un million de rayons.
+
+
 
 \section{Analyse de la réponse impulsionnelle}
 
@@ -101,18 +104,14 @@ On peut voir sur la figure \ref{theatreMat} la répartition des différents mat�
 	\label{rirTheatre}
 \end{figureth}
 
-La figure \ref{rirTheatre} et le tableau \ref{tab_fact_init} illustrent les caractéristiques de  la réponse impulsionnelle de la configuration initiale. On constate un \gls{RT60} de l'ordre de est atteint en 3 secondes environ. Grâce aux figures \ref{} et \ref{} nous allons pouvoir analyser d'où proviennent les pics d'énergies les plus forts. Pour cela, nous nous appuyons sur les travaux de Haas et Meyer \cite[p.49]{haas} qui expliquent à quel moment une réflexion devient un écho :
+La figure \ref{rirTheatre} et le tableau \ref{tab_fact_init} illustrent les caractéristiques de  la réponse impulsionnelle de la configuration initiale. On constate un \gls{RT60} de l'ordre de est atteint en 3 secondes environ. Grâce aux figures \ref{rirTheatre30} et \ref{rirTheatre20} nous allons pouvoir analyser d'où proviennent les pics d'énergies les plus forts. Pour cela, nous nous appuyons sur les travaux de Haas et Meyer \cite[p.49]{haas} qui expliquent à quel moment une réflexion devient un écho :
 \begin{itemize}
 \item si l'intervalle entre le son direct et le son réfléchi est inférieur à 5ms, l'auditeur entend un son unique dont l'intensité est la somme des deux signaux. La direction perçu est la bissectrice de l'angle formé par les deux sources (réelle et virtuelle) ;
 \item si le temps entre les deux signaux est compris ente 5 et 35ms, l'intensité est encore la somme des intensités mais la direction est celle du premier signal ;
 \item si le temps entre les deux signaux est compris entre 35 et 50ms, les deux signaux sont distingués dans le temps mais la direction semble être celle du premier son ;
 \item au delà de 50ms, les deux signaux sont complètement distingués dans le tmps et l'espace.
 \end{itemize}
-Sur la figure \ref{rirTheatre20} on constate la présence d'un pic de signal 5ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Sur la figure \ref{rirTheatre30} nous constatons qu'il y a ensuite beaucoup de signal dispersé sur environ 30ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur (voir fig \ref{SI30dB}). La une partie d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. D'après les critères évoqués précédemment, ces signaux sont parfaitement confondus avec le son direct. Il y a ensuite un trou de 20ms avant les prochains pics. Ceux-ci étant retardés de plus de 50ms par rapport au son direct, ils pourront être perçu comme un écho. Ceux-ci proviennent des réflexions sur les marches d'escalier de la porte royale. À 160ms les quelques pics présents sont dû à la réflexions sur les gradins qui, bien que fortement atténués par le matériau arrivent en phase et jouent donc un rôle non négligeable dans la réverbération.
-
-
-
-Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale et qui joue le rôle d'un miroir convergeant sur le récepteur. Celui-ci est retardé de plus de 35ms ce qui implique qu'il est entendu en écho bien que sa direction soit plutôt assimilée aux dossiers des gradins. Les pics postérieurs sont le résultat de la forme semi-circulaire de la \gls{cavea} (voir fig. \ref{si_configInitale}) qui renvoi les rayons vers le récepteur. Le dernier pic de la figure \ref{rirTheatre30} semble être dû aux réflexions sur le bas de la porte royale et la scène. On considérera qu'au delà nous serons dans le champs diffus. 
+Sur la figure \ref{rirTheatre20} on constate la présence d'un pic de signal 5ms après le son direct ce qui entre dans le premier cas décrit précédemment. Après analyse, nous constatons que celui-ci provient de la réflexion du l'orchestre. L'orchestre va donc doubler l'intensité sonore émise depuis l'avant scène. Sur la figure \ref{rirTheatre30} nous constatons qu'il y a ensuite beaucoup de signal dispersé sur environ 30ms qui correspond aux rayons réfléchis sur le dossier des gradins et qui reviennent converger sur le récepteur (voir fig \ref{SI30dB}). Une partie d'entre eux se sont également réfléchis sur l'orchestre ajoutant encore à l'impact de cette surface dallée. D'après les critères évoqués précédemment, ces signaux sont parfaitement confondus avec le son direct. Il y a ensuite un trou de 20ms avant les prochains pics. Ceux-ci étant retardés de plus de 50ms par rapport au son direct, ils pourront être perçu comme un écho. Ceux-ci proviennent des réflexions sur les marches d'escalier de la porte royale. Il est bon de rappeler que nous utilisons une source omnidirectionnelle et qui, à la différence de la voix humaine envoie autant d'énergie vers le mur que vers les gradins. Par ailleurs, nous sommes dans l'approximation haute fréquence où l'on néglige certains effet de diffraction. On peut donc s'attendre à avoir un signal un peu différent dans la réalité même si notre étude permet de se faire une bonne idée du comportement acoustique du bâtiment. À 160ms les quelques pics présents sont dû à la réflexions sur les gradins qui, bien que fortement atténués par le matériau arrivent en phase et jouent donc un rôle non négligeable dans la réverbération. Il y a ensuite deux grands pics à -10dB issus de multiples réflexions. Le premier est du aux réflexions successives sur le \gls{balteus} le font du \gls{pulpitum} et l'orchestre. Le deuxième provient de réflexions au niveau de la porte royale et de l'orchestre. L'agencement des ces deux parties (le \gls{balteus} et la porte royale) étant très hypothétiques, il faudra considérer la présence de ces deux pics comme peu fiable.
 %
 \begin{figureth}
 	\begin{subfigureth}{0.8\textwidth}
@@ -132,8 +131,13 @@ Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale
 \caption{Source-images dans le théâtre d'Orange dans sa configuration initiale pour 1 million de rayons.}	
 \label{SITheatre60}
 \end{figureth}
+%
+En ce qui concerne la position des sources-images on constate clairement que pour une mesure à -60dB il y a des sources-images tout autour du récepteur avec de fortes concentrations sur les premiers gradins, sur l'orchestre, sur la scène et sur le bas du mur (voir fig. \ref{SI60dB}). C'est finalement à proximité du plan source-récepteur que se concentrent la majeur partie des sources-images. Cependant on constate la présence de sources-images au niveau de la niche centrale, des différentes \glspl{precinction} ce qui implique que le son qui monte peut aussi redescendre vers les gradins du bas (voir fig. \ref{SI60dBbis}). En observant les sources-images dont le niveau est supérieur à -30dB par rapport au son direct (voir fig. \ref{SITheatre30}), on peut confirmer la provenance des pics d'énergie de la figure \ref{rirTheatre30} décrite précédemment. 
+
+La tableau \ref{tab_fact_init} présente les facteurs perceptifs de cette configuration initiale. Celui-ci confirme un temps de réverbération de l'ordre de 3s. Il est interessant de constater que ce temps est supérieur du temps de réverbération optimal pour la parole décrit par J.Jouhaneau \cite[p.209]{jouhaneau} et qui se trouve être légèrement inférieur à 2s. Ce dernier est obtenu à partir des courbes de pourcentage d'intelligibilité et de niveau sonore qui se croisent en ce point optimal. Effectivement, la réverbération d'une salle permet d'amplifier le niveau sonore de la voix, donc d'être mieux entendue mais, lorsque le signal se diffuse plus longtemps, il devient plus difficile de dissocier et comprendre les mots. Ce temps optimal est empirique et discutable puisque J.Jouhaneau décrit lui-même les limites de cette analyse dépendant du volume et du signal émis \cite[p.218]{jouhaneau}. Cela est corroboré par l'analyse des autres facteurs. Tout d'abord, on constate que la définition \gls{D50} et la clarté \gls{C80} augmentent avec la fréquence. Nous savons que les hommes lorsqu'ils utilisent une voix de poitrine émettent des fréquences de 80 à 400Hz environ tandis que les femmes, en voix de têtes, émettent des fréquences de 300 à 1500Hz \cite[Mécanismes vocaux]{voix}. Cependant, seuls les hommes étaient acteurs de théâtre à l'époque impériale. On en conclue que la compréhensibilté de leur voix n'était pas excellente mais plutôt moyenne. Elle serait plutôt adaptée à la musique puisqu'on dit que pour la dans ce cas la clarté doit se situer entre -3dB et +3dB \cite[p.59]{acoustique}. Le temps central \gls{Ts} étant supérieur à 50ms et l'\gls{EDT} étant supérieur à 1s, on comprend d'autant plus que le signal va s'étaler et que les syllabes seront peu distinctes. En ce qui concerne le niveau sonore, on constate que le théâtre présente un gain compris entre 3 et 6dB selon la fréquence. Cela signifie que le bâtiment a un effet bénéfique pour la transmission du son puisqu'il double le niveau sonore des plus hautes fréquences et quadruple celui des basses fréquences. On retrouve bien l'analyse faite précédemment sur l'orchestre qui double le niveau sonore de la source. Les autres facteurs ne nous apporte pour l'instant pas d'information interessante mais le ferons par la suite. Effectivement, c'est à partir de cette analyse initiale que nous allons pouvoir comparer différentes configurations du bâtiment et en déterminer l'impact sur l'acoustique.
+% 
 \begin{figureth}	
-	\begin{subfigureth}{0.37\textwidth}
+	\begin{subfigureth}{0.36\textwidth}
 		\includegraphics[width=\linewidth]{images/SI30dBbis}
 		\caption{Source-images spatialisées jusqu'à -30dB.}
 		\label{SI30dBbis}
@@ -147,39 +151,38 @@ Il y a ensuite un grand pic à -12dB qui est crée par la niche voutée centrale
 \label{SITheatre30}
 \end{figureth}
 
-La tableau \ref{tab_fact_init} présente les facteurs perceptifs des cette configuration initiale. On constate clairement que le théâtre semble particulièrement bien adapté à la transmission de parole puisque plutôt qu'à la musique. Effectivement, la définition \gls{D50} est au delà de 75\% ce qui permet de comprendre que la contribution des premières réflexions est largement majoritaire sur le champs diffus. De même, la clarté \gls{C80} est élevée (on dit que pour la musique elle doit se situer entre -3dB et +3dB \cite[p.59]{acoustique}), or ici elle est supérieure à 7dB dés les plus basses fréquences ce qui présage d'une très bonne compréhensibilité de la parole. Le temps central \gls{Ts} étant inférieur à 50ms, on comprend que globalement la réverbération sera quasi-confondue avec le son direct. Par ailleurs, on voit que le théâtre amplifie de 4dB les basses fréquence et 3dB les hautes fréquences. On retrouve bien l'analyse faite précédemment sur l'orchestre qui double le niveau sonore de la source.
-% 
-\begin{tableth} 
+
+\begin{tableth}
  \begin{tabular}{| *{9}{c|}} 
  \hline 
  Facteur & 62,5Hz & 125Hz & 250Hz & 500Hz & 1kHz & 2kHz & 4kHz & 8kHz \\ 
  \hline 
  \hline 
-\gls{EDT} (ms)& 1626& 1612& 1409& 1298& 1239& 962& 594& 374 \\ 
+\gls{EDT} (ms)& 1867& 1854& 1636& 1501& 1323& 1130& 623& 387 \\ 
  \hline 
-\gls{T30} (ms)& 3327& 3267& 2974& 2908& 2616& 2226& 1402& 670 \\ 
+\gls{T30} (ms)& 3417& 3416& 3211& 2966& 2700& 2218& 1383& 672 \\ 
  \hline 
-\gls{RT60} (ms)& 2633& 2633& 2520& 2456& 2456& 2079& 1393& 611 \\ 
+\gls{RT60} (ms)& 3155& 3130& 2822& 2606& 2420& 2057& 1425& 618 \\ 
  \hline 
-\gls{spl} (dB)& -32& -32& -33& -33& -33& -34& -36& -42 \\ 
+\gls{spl} (dB)& -32& -32& -32& -32& -33& -34& -36& -42 \\ 
  \hline 
-\gls{G} (dB)& 5.6& 5.6& 5.2& 5& 4.8& 4.5& 4& 3.1 \\ 
+\gls{G} (dB)& 6.4& 6.4& 5.9& 5.5& 5.3& 5& 4.4& 3.5 \\ 
  \hline 
-\gls{C80} (dB)& 3.32& 3.35& 3.93& 4.32& 4.67& 5.51& 7.49& 12.64 \\ 
+\gls{C80} (dB)& 2.4& 2.43& 3.14& 3.65& 4.1& 4.99& 7.01& 12.22 \\ 
  \hline 
-\gls{D50} (\%)& 57.51& 57.67& 59.65& 60.7& 62.05& 65.45& 73.06& 87.16 \\ 
+\gls{D50} (\%)& 53.78& 53.96& 56.75& 58.48& 60.3& 64.04& 72.12& 86.9 \\ 
  \hline 
-\gls{Ts} (ms)& 89& 88& 78& 73& 67& 54& 34& 13 \\ 
+\gls{Ts} (ms)& 106& 105& 89& 81& 73& 59& 37& 14 \\ 
  \hline 
-\gls{LF80} (dB)& 0.003& 0.003& 0.002& 0.002& 0.002& 0.002& 0.001& 0.001 \\ 
+\gls{LF80} (dB)& 0.003& 0.003& 0.003& 0.002& 0.002& 0.002& 0.001& 0.001 \\ 
  \hline 
 \end{tabular} 
- \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1000000 rayons dans la configuration de référence.} 
+ \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 42.8] et 1000000 rayons dans la configuration initiale.}
  \label{tab_fact_init} 
  \end{tableth}
 
 
-A partir de cette analyse pour allons pouvoir procéder par comparaison avec cette configuration initiale pour déterminer l'impact des modifications apportées au bâtiment sur l'acoustique.
+
 		
 \chapter{Test de configurations}
 	\citationChap{
@@ -191,7 +194,13 @@ I'm having such a good time
 
 \section{Décor du front de scène}
 
-Comme nous l'avons évoqué en introduction de ce chapitre, l'acoustique du théâtre d'Orange a déjà été étudié par F.Canac dans les années 60. Le problème de cette étude est qu'elle se base sur le théâtre tel qu'il existe aujourd'hui, c'est à dire dépouillé de l'ornementation du front de scène. Pour pouvoir comparer nos résultats à cette étude, nous ôtons la décoration du mur de scène ainsi que la \gls{porticus isc} pour mesurer la réponse impulsionnelle du théâtre dans un état proche de celui d'aujourd'hui. 
+Comme nous l'avons évoqué en introduction de ce chapitre, l'acoustique du théâtre d'Orange a déjà été étudié par F.Canac dans les années 60. Le problème de cette étude est qu'elle se base sur le théâtre tel qu'il existe aujourd'hui, c'est à dire dépouillé de l'ornementation du front de scène. Pour pouvoir comparer nos résultats à cette étude, nous ôtons la décoration du mur de scène ainsi que la \gls{porticus isc} pour mesurer la réponse impulsionnelle du théâtre dans un état proche de celui d'aujourd'hui. Le tableau \ref{tab_fact_sansdec} présente les facteurs perceptifs de cette configuration sans décor. En les comparant au tableau \ref{tab_fact_init} on constate que le décor dégrade la clarté  \gls{C80} puisque cette configuration gagne environ 1,5dB et que le définition \gls{D50} passe au dessus de 60\% quelle que soit la fréquence. Les facteurs \gls{EDT} et \gls{Ts} nous permettent de comprendre que les échos les plus forts parviennent plus rapidement à l'auditeur. Le décor a donc un effet de diffusion du son ce qui est favorable à l'écoute musicale et mais qui dégrade la transmission de la parole. Il est interessant de constater que c'est exactement le contraire de ce qu'expliquait Formigé au début du $XX^e$ siècle : " le \textit{frons scaenae} renvoyait le son sans échos, après les avoir brisés grâce à la multiplicité des plans et des ornements" \cite[p.43]{formige}.
+
+\begin{figureth}
+	\includegraphics[width=\linewidth]{images/SIsansDec}
+	\caption{Source-images projetées sur les parois du théâtre jusqu'à -60dB sans la décoration du front de scène.}
+	\label{SIsansDec}
+\end{figureth}
 
 \begin{tableth} 
  \begin{tabular}{| *{9}{c|}} 
@@ -199,30 +208,23 @@ Comme nous l'avons évoqué en introduction de ce chapitre, l'acoustique du thé
  Facteur & 62,5Hz & 125Hz & 250Hz & 500Hz & 1kHz & 2kHz & 4kHz & 8kHz \\ 
  \hline 
  \hline 
-\gls{EDT} (ms)& 684& 684& 600& 419& 219& 190& 125& 18 \\ 
+\gls{EDT} (ms)& 1436& 1387& 1211& 884& 709& 645& 594& 361 \\ 
  \hline 
-\gls{T30} (ms)& 2048& 2046& 1774& 1598& 1437& 1300& 1109& 439 \\ 
+\gls{T30} (ms)& 3886& 3827& 3049& 2745& 2477& 1969& 1315& 592 \\ 
  \hline 
-\gls{RT60} (ms)& 1776& 1776& 1776& 1658& 1286& 1140& 903& 571 \\ 
+\gls{G} (dB)& 5.8& 5.8& 5.4& 5& 4.8& 4.6& 4.1& 3.4 \\ 
  \hline 
-\gls{spl} (dB)& -34& -34& -34& -34& -35& -35& -37& -43 \\ 
+\gls{C80} (dB)& 4.01& 4.04& 4.83& 5.41& 5.89& 6.68& 8.51& 13.37 \\ 
  \hline 
-\gls{G} (dB)& 4.3& 4.3& 3.9& 3.6& 3.5& 3.4& 3.2& 2.9 \\
+\gls{D50} (\%)& 61.01& 61.17& 63.81& 65.42& 67.04& 69.84& 76.22& 88.34 \\ 
  \hline 
-\gls{C80} (dB)& 7.28& 7.31& 8.53& 9.91& 11.06& 11.52& 13.75& 18.69 \\ 
- \hline 
-\gls{D50} (\%)& 82.61& 82.7& 85.68& 88.27& 90.15& 90.88& 93.68& 97.43 \\ 
- \hline 
-\gls{Ts} (ms)& 38& 38& 28& 21& 17& 15& 10& 5 \\ 
- \hline 
-\gls{LF80} (dB)& 0.002& 0.002& 0.002& 0.001& 0.001& 0.001& 0.001& 0.001 \\ 
+\gls{Ts} (ms)& 84& 83& 68& 60& 53& 44& 28& 12 \\ 
  \hline 
 \end{tabular} 
  \caption{Facteurs perceptifs pour une source en [0 ; 5.6 ; 42.8] et un auditeur en [0 ; -16.5 ; 43.9] et 1~000~000 de rayons sans décoration du front de scène.} 
- \label{tab_fact_init} 
+ \label{tab_fact_sansdec} 
  \end{tableth}
 
-Il est interessant de constater que ce temps est proche du temps de réverbération optimal pour la parole décrit par J.Jouhaneau \cite[p.209]{jouhaneau} et qui se trouve être légèrement inférieur à 2s. Ce dernier est obtenu à partir des courbes de pourcentage d'intelligibilité et de niveau sonore qui se croisent en ce point optimal. Effectivement, la réverbération d'une salle permet d'amplifier le niveau sonore de la voix, donc d'être mieux entendue mais, lorsque le signal se diffuse plus longtemps, il devient plus difficile de dissocier et comprendre les mots. Ce temps optimal est empirique et discutable puisque J.Jouhaneau décrit lui-même les limites de cette analyse dépendant du volume et du signal émis \cite[p.218]{jouhaneau}. Cette faculté à transmettre correctement les discours parlés est corroboré dans l'étude de F.Canac ...
 
 \section{Position des spectateurs}
 La première étape de ces tests comparatifs se fait sur la position des spectateurs. Nous savons que le placement dans la \gls{cavea} se faisait selon le rang social des spectateurs. Nous comprenons facilement que visuellement, les spectateurs les plus proches étaient ceux qui voyait le mieux les acteurs même ceux situés légèrement en recul avaient une meilleure vu d'ensemble. Ainsi vous avions les sénateurs sur des sièges mobiles dans l'orchestre.
@@ -230,7 +232,7 @@ La première étape de ces tests comparatifs se fait sur la position des spectat
 Nous testons donc 12 nouvelles positions d'auditeur afin de comparer le signal perçu avec la \gls{rir} de référence (voir fig. \ref{position_rece}). Nous positionnons des séries d'auditeurs sur des axes à 0°, 55° et à 90° (au dessus des \glspl{aditus}) par rapport à la perpendiculaire au mur de scène. Sur chaque de ces axes, on positionne des récepteurs sur les derniers gradins des chaque \gls{maenianum} et pour les axes n'étant pas au niveau de l'\gls{aditus} on ajoute également des récepteurs au niveau des premiers gradins et de ceux de l'orchestre. On notera que le récepteur 10 est situé sur la tribune occidentale.
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/position_rece}
-	\caption{Douze positions d'auditeurs (jaune) à comparer à la position initiale (rouge).}
+	\caption{Douze positions d'auditeurs (rose) à comparer à la position initiale (jaune).}
 	\label{position_rece}
 \end{figureth}
 %
@@ -241,38 +243,40 @@ Nous testons donc 12 nouvelles positions d'auditeur afin de comparer le signal p
  Récepteur & [x ; y ; z] (m)  & \gls{EDT} (ms) & \gls{T30} (ms) & \gls{spl} (dB) & \gls{C80} (dB) & \gls{D50} (\%) & \gls{Ts} (ms) \\ %& \gls{LF80} (dB) \\ 
  \hline 
  \hline 
-1  & [0 ; -10.67 ; 41.44] & 611&  1466 &-31&8.2&86.51&28\\ %&0.008\\ 
+1  & [0 ; -10.67 ; 41.44] &1310  &2861   &-29  &2.98  &60.14  &81 \\%listener12
  \hline 
- Réf    &[0 ; -16.5 ; 43.9] &419&1598& -34&9.91& 88.27&21\\ %&0.001\\ 
+ Réf    &[0 ; -16.5 ; 43.9] &1501  &2966   &-32  &3.65  &58.48  &81 \\%listenerREF
  \hline 
- 2  & [0 ; -28.23 ; 50.02] &  739  & 1614 & -38 &  8.64 & 85.77 & 32 \\ %& 0.003\\ 
+ 2  & [0 ; -28.23 ; 50.02] &2163  &3690   &-35  &1.11  &42.03  &129 \\ %listener11
  \hline 
- 3  &  [0 ; -37.86 ; 55.92] & 510 & 2093  & -40 & 8.05 & 81.77 & 36 \\ %& 0.007\\ 
+ 3  &  [0 ; -37.86 ; 55.92] &2023  &4285   &-37  &0.31  &37.48  &133 \\ %listener10
  \hline 
- 4  &  [0 ; -44.36 ; 62.06] & 503 &  2932 &  -42 & 5.84 & 79.34 & 43 \\ %& 0.013\\ 
- \hline 
- \hline
- 5  &   [-8.74 ; -6.12 ; 41.44] &578 & 1616 &  -29 & 8.78 & 76.2 & 35 \\ %& 0.123\\ 
- \hline 
- 6  &  [-13.51 ; -9.46 ; 43.86] &  948 &  1816 & -32 & 7.96 &  66.12 & 46\\ % & 0.07 \\ 
- \hline 
-  7 &   [-23.12 ; -16.19 ; 50.02] &  1389 & 1855 &  -36 & 5.71 & 55.93 & 74 \\ %& 0.039\\ 
- \hline 
- 8  &  [-31.02 ; -21.72 ; 55.92] &  1473 & 2280 & -39 & 4.01 & 63.49 & 87 \\ %& 0.012 \\ 
- \hline 
- 9  & [-36.34 ; -25.44 ; 62.06] &  2056 & 2116& -41& 1.61& 59.15 & 136 \\ %& 0.008  \\ 
+ 4  &  [0 ; -44.36 ; 62.06] &2439  &4335   &-37  &-0.72  &34.69  &155 \\%listener9
  \hline 
  \hline
- 10  &  [-28.23 ; 1.66 ; 50.02] & 1760 & 4445 & -34 & 1.77 & 60.03 & 100 \\ %& 0.079   \\ 
+ 5  &   [-8.74 ; -6.12 ; 41.44] &1539  &2788   &-28  &3.81  &62.14  &80 \\%listener5
  \hline 
-11   & [-37.87 ; 1.66 ; 55.92] & 2575 & 3399 & -38 & 1.82 & 52.97 & 141 \\ %& 0.002 \\ 
+ 6  &  [-13.51 ; -9.46 ; 43.86] &1479  &3383   &-31  &4.78  &64.28  &79 \\%listener4
+  \hline 
+  7 &   [-23.12 ; -16.19 ; 50.02] &2130  &3892   &-34  &3.22  &52.99  &119 \\ %listener6
  \hline 
-12   & [-44.36 ; 1.66 ; 62.06] & 2564 & 2663 & -39 & 0.56 & 46.76 & 179 \\ %& 0  \\ 
+ 8  &  [-31.02 ; -21.72 ; 55.92] &2342  &3916   &-37  &1.89  &52.76  &140 \\ %listener7
+ \hline 
+ 9  & [-36.34 ; -25.44 ; 62.06] &2893  &4444   &-38  &0.17  &38.92  &177 \\ %listener8
+ \hline 
+ \hline
+ 10  &  [-28.23 ; 1.66 ; 50.02] &2650  &4507   &-33  &-0.32  &39.73  &168 \\ %listener3
+ \hline 
+11   & [-37.87 ; 1.66 ; 55.92] &3189  & 3951  &-37  & -1.24 &41.56  &205 \\%listener2
+ \hline 
+12   & [-44.36 ; 1.66 ; 62.06] &3611  & 4487  & -36 &-2.66  &31.9  & 256\\ %listener1
  \hline 
 \end{tabular} 
  \caption{Facteurs perceptifs pour différents récepteurs sur la bande de fréquence de 500Hz pour 1~000~000 de rayons.} 
  \label{tab_fac_rec} 
  \end{tableth}
+ 
+ 
 On constate d'après le tableau \ref{tab_fac_rec} plusieurs choses. Tout d'abord, le niveau acoustique \gls{spl} diminue de 3dB entre les gradins mobiles de l'orchestre réservés aux sénateurs et les premiers gradins accessibles aux classes moins élevés tels que les chevaliers. Le son est donc entendu deux fois moins fort. La perte est de 10dB au sommet de la cavea ce qui implique que les classes les plus modestes entendaient le son de la scène dix fois moins fort que les sénateurs de l'orchestre. En ce qui concerne la compréhensibilité, on distinguera les trois axes.
 \begin{itemize}
 \item Pour l'axe perpendiculaire au mur de scène (récepteurs 1 à 4), la clarté (\gls{C80}) et la définition (\gls{D50}) reste bien adaptées à un signal audio de type texte. Le temps de réverbération double entre les premiers et derniers gradins ce qui dégrade légèrement ces paramètres. Néanmoins, le temps central (\gls{Ts}) restant inférieur à 50ms, on conserve un phénomène d'échos faible.

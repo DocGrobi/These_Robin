@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -71,5 +71,9 @@
 \textsc{Rindel, J.~H.} 2013, \enquote{Roman theatres and revival of their
   acoustics in the erato project}, \emph{ACTA ACUSTICA UNITED WITH ACUSTICA},
   \bblvol{}~99, \bblpp{} 21--29.
+
+\bibitem[{\textsc{Wikip{\'e}dia}()}]{voix}
+\textsc{Wikip{\'e}dia}. \enquote{Voix humaine},
+  \urlprefix\url{https://fr.wikipedia.org/wiki/Voix_humaine}.
 
 \end{thebibliography}

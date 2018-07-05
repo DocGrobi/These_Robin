@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{37}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -182,9 +182,13 @@
   \enquote{Definition and measurement of random-incidence scattering
   coefficients}, \emph{Applied Acoustics}, \bblvol{}~60, \bblpp{} 187--199.
 
-\bibitem[{\textsc{Wikip{\'e}dia}()}]{cone}
-\textsc{Wikip{\'e}dia}. \enquote{Angle solide},
+\bibitem[{\textsc{Wikip{\'e}dia}({\natexlab{a}})}]{cone}
+\textsc{Wikip{\'e}dia}. {\natexlab{a}}, \enquote{Angle solide},
   \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
+
+\bibitem[{\textsc{Wikip{\'e}dia}({\natexlab{b}})}]{spl}
+\textsc{Wikip{\'e}dia}. {\natexlab{b}}, \enquote{Sound pressure},
+  \urlprefix\url{https://en.wikipedia.org/wiki/Sound_pressure}.
 
 \bibitem[{\textsc{Williams} \bbletal{}(2005)\textsc{Williams}, \textsc{Barrus},
   \textsc{Morley} \bbland{} \textsc{Shirley}}]{AABB}

@@ -3,52 +3,55 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part3.aux
 The style file: francaissc.bst
 Database file #1: Part3/Biblio.bib
+Warning--entry type for "voix" isn't style-file defined
+--line 11 of file Part3/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 89 of file Part3/Biblio.bib
+--line 96 of file Part3/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
 Warning--can't use both volume and number fields in haas
 Warning--empty year in odeon
-You've used 11 entries,
+Warning--empty year in voix
+You've used 12 entries,
             3493 wiz_defined-function locations,
-            763 strings with 7472 characters,
-and the built_in function-call counts, 5792 in all, are:
-= -- 397
-> -- 184
-< -- 16
-+ -- 69
-- -- 55
-* -- 421
-:= -- 822
-add.period$ -- 23
-call.type$ -- 11
-change.case$ -- 68
-chr.to.int$ -- 12
-cite$ -- 14
-duplicate$ -- 545
-empty$ -- 524
-format.name$ -- 69
-if$ -- 1143
+            767 strings with 7543 characters,
+and the built_in function-call counts, 6164 in all, are:
+= -- 426
+> -- 195
+< -- 17
++ -- 73
+- -- 58
+* -- 449
+:= -- 885
+add.period$ -- 25
+call.type$ -- 12
+change.case$ -- 74
+chr.to.int$ -- 13
+cite$ -- 16
+duplicate$ -- 575
+empty$ -- 556
+format.name$ -- 73
+if$ -- 1214
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 99
-newline$ -- 51
-num.names$ -- 44
-pop$ -- 230
+missing$ -- 103
+newline$ -- 54
+num.names$ -- 48
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 67
 quote$ -- 0
-skip$ -- 233
+skip$ -- 244
 stack$ -- 0
-substring$ -- 158
-swap$ -- 282
+substring$ -- 169
+swap$ -- 292
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 3
-while$ -- 36
+type$ -- 87
+warning$ -- 4
+while$ -- 39
 width$ -- 0
-write$ -- 133
-(There were 4 warnings)
+write$ -- 142
+(There were 6 warnings)
