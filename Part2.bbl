@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{36}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -93,12 +93,6 @@
   sources images}, \bblmthesis{}, Ecole Nationale Sup{\'e}rieur
   Louis-Lumi{\`e}re.
 
-\bibitem[{\textsc{Keinert} \bbletal{}(2015)\textsc{Keinert}, \textsc{Innmann},
-  \textsc{Sanger} \bbland{} \textsc{Stamminger}}]{fibonacci}
-\textsc{Keinert, B.}, \textsc{M.~Innmann}, \textsc{M.~Sanger} \bbland{}
-  \textsc{M.~Stamminger}. 2015, \enquote{Spherical fibonacci mapping},
-  \emph{ACM Transactions on Graphics}, \bblvol{}~34.
-
 \bibitem[{\textsc{Knuth}(1997)}]{binaire}
 \textsc{Knuth, D.} 1997, \emph{The Art of Computer Programming}, \bblvol{}~1,
   \bblthirdo{} \bbledn{}, Fundamental Algorithms.
@@ -121,12 +115,6 @@
 \bibitem[{\textsc{Meagher}(1982)}]{octree}
 \textsc{Meagher, D.} 1982, \emph{Octree Generation, Analysis and Manipulation},
   \bblvol{}~TR, Image processing laboratory.
-
-\bibitem[{\textsc{M'Henni}(2010)}]{angle_solide}
-\textsc{M'Henni, H.} 2010, \enquote{L'angle solide correspond {\`a} un c{\^o}ne
-  de r{\'e}volution d'angle au sommet inscrit dans la sph{\`e}re de
-  projection}, Wikip{\'e}dia.
-  \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
 
 \bibitem[{\textsc{M{\"o}ller} \bbland{} \textsc{Trumbore}(1997)}]{moller}
 \textsc{M{\"o}ller, T.} \bbland{} \textsc{B.~Trumbore}. 1997, \enquote{Fast,
@@ -186,8 +174,12 @@
 \textsc{Wikip{\'e}dia}. {\natexlab{a}}, \enquote{Angle solide},
   \urlprefix\url{https://fr.wikipedia.org/wiki/Angle_solide}.
 
-\bibitem[{\textsc{Wikip{\'e}dia}({\natexlab{b}})}]{spl}
-\textsc{Wikip{\'e}dia}. {\natexlab{b}}, \enquote{Sound pressure},
+\bibitem[{\textsc{Wikip{\'e}dia}({\natexlab{b}})}]{octree_diag}
+\textsc{Wikip{\'e}dia}. {\natexlab{b}}, \enquote{Octree},
+  \urlprefix\url{https://en.wikipedia.org/wiki/Octree}.
+
+\bibitem[{\textsc{Wikip{\'e}dia}({\natexlab{c}})}]{spl}
+\textsc{Wikip{\'e}dia}. {\natexlab{c}}, \enquote{Sound pressure},
   \urlprefix\url{https://en.wikipedia.org/wiki/Sound_pressure}.
 
 \bibitem[{\textsc{Williams} \bbletal{}(2005)\textsc{Williams}, \textsc{Barrus},

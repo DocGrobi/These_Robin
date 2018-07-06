@@ -451,9 +451,9 @@ Sachant cela, nous avons dans un premier temps tenté de réaliser des analyses 
 	\label{BEM}
 \end{figureth}
 
-La meilleure option fut alors de se tourner vers des solutions approchées utilisant des méthodes de calcul de type géométrique. Cela est acceptable en se plaçant dans l'approximation dite "hautes fréquences", soit typiquement lorsque $kv >> 1$ ($k$ étant le nombre d'onde et $v$ le volume de la salle). La méthode développée, dite "couplée", consiste à propager des rayons à partir d'une source et, à chaque réflexion sur les parois, d'analyser ceux qui traversent une sphère-récepteur pour créer des sources-images. Grâce au temps de parcours des rayons il est alors possible de créer la réponse impulsionnelle de la salle (\gls{rir}). Celle-ci pourra alors être convoluée à un signal audio afin d'écouter le son réverbéré (voir section \ref{sect_TDS}).
+La meilleure option fut alors de se tourner vers des solutions approchées utilisant des méthodes de calcul de type géométrique. Cela est acceptable en se plaçant dans l'approximation dite "hautes fréquences", soit typiquement lorsque $kv >> 1$ ($k$ étant le nombre d'onde et $v$ le volume de la salle). La méthode développée, dite "couplée", consiste à propager des rayons à partir d'une source et, à chaque réflexion sur les parois, d'analyser ceux qui traversent une sphère-récepteur pour créer des sources-images. Grâce au temps de parcours des rayons il est alors possible de créer la réponse impulsionnelle de la salle (\gls{rir}). Celle-ci pourra finalement être convoluée à un signal audio afin d'écouter le son réverbéré (voir section \ref{sect_TDS}).
 
-Le chemin de chacun des rayons permet de situer dans l'espace les sources-images correspondantes, c'est à dire les images de la source suite aux divers réflexions sur les parois. Nous obtenons ainsi une constellation de sources-images portant des énergies atténuées par l'absorption des parois et de l'atmosphère. Cela permettra par la suite de spatialiser le son, c'est à dire de savoir d'où proviennent les différents échos. Il est alors possible d'écouter le son réverbéré en trois dimensions. 
+Le chemin de chacun des rayons permet de situer dans l'espace les sources-images correspondantes, c'est à dire les images de la source suite aux divers réflexions sur les parois. Nous obtenons ainsi une constellation de sources-images portant des énergies atténuées par l'absorption des parois et de l'atmosphère. Cela permet de spatialiser le son, c'est-à-dire de savoir d'où proviennent les différents échos. Grâce à cela il serait alors possible d'écouter le son réverbéré en trois dimensions. %Cette dernière option n'a néanmoins pas été implémentée dans le projet faute de temps.
 
 Ce chapitre vise à détailler ce processus. Notons néanmoins que les effets de diffraction ne seront pas traités même si, comme nous l'avons évoqué précédemment au sujet du lancer de particules (voir section \ref{sect_methode_geo}), il est possible d'utiliser des lois de probabilité pour répartir les rayons réfléchis selon différentes directions \cite[p.187-199]{diffusion}. Nous choisissons néanmoins de ne fonctionner qu'avec des réflexions spéculaires car le sujet de la diffraction est extrêmement vaste et complexe. Il s'agit d'un sujet à part entière que l'on ne traitera pas durant ce projet de thèse mais qui pourra venir l'enrichir par la suite. Les grandes dimensions du théâtre d'Orange et la gamme de fréquences utilisée permettent de se placer dans l'approximation "hautes fréquences".
 
@@ -462,7 +462,7 @@ Ce chapitre vise à détailler ce processus. Notons néanmoins que les effets de
 \begin{figureth}
 %\begin{subfigureth}{0.55\textwidth}
 	\includegraphics[width=0.5\linewidth]{images/schema_propagation}
-	\caption{Schéma en deux dimensions d'une onde sphérique dont une portion d'énergie est mesurée par un récepteur de rayon r.}
+	\caption{Représentation d'une onde sphérique dont une portion d'énergie est mesurée par un récepteur de rayon r. L'angle solide $\Omega$ capté est donc celui d'un cône.}
 	\label{schema_propagation}
 %\end{subfigureth}
 %\qquad
@@ -541,7 +541,7 @@ Nous constatons qu'en fixant $N$ (le nombre de rayons total émis depuis la sour
 	\Omega_i = n.\frac{4\pi}{N}. \\
 \end{equation}
 %
-L'équation \ref{seuil_arret} s'écrit donc :
+L'équation \ref{seuil_arret} devient alors :
 \begin{align} 
 	\frac{r}{d} =  \frac{2n}{N} \sqrt{\frac{N}{n}-1} % \\
  	\quad \Rightarrow  \quad %\\
@@ -552,7 +552,7 @@ Aussi, si $N >> n$ l'expression se simplifie par :
 \begin{align} \label{eq_dmax}
 	 d_{max} \approx  \frac{r}{2} \sqrt{\frac{N}{n}}.
 \end{align}
-Cependant, lorsque $d_{max}$ est grand devant les dimensions de la salle, on peut se permettre d'arrêter la mesure à $n=1$. Lorsque la taille des rayons augmente, les mesures deviennent moins précise, par contre, leurs énergies seront de plus en plus faible et on entre dans le champs diffus. Il n'est alors plus vraiment nécessaire d'avoir une mesure très précise. Dans tous les cas, la réponse impulsionnelle est limitée dans le temps grâce à la distance $d_{max}$ avec $n$ supérieur ou égal à 1. Cependant, les \gls{rir} sont en général calculées jusqu'à ce que l'énergie diminue de $60dB$. Il s'agit d'un critère d'arrêt classique car, comme expliqué dans la section \ref{sect_sabine} il assure de couvrir la plage d'audition humaine. Il faudra alors jouer sur les paramètres $N$, $r$ ou éventuellement $n$ pour s'assurer de dépasser le \gls{RT60}. En pratique, le temps de calcul sera très sensible à la valeur de $N$ tandis que la précision dépendra de $r$ et $n$ c'est pourquoi la \gls{rir} n'ira pas toujours jusqu'à $-60dB$ ce qui n'impacte pas forcement l'analyse acoustique. Nous verrons de quelle manière lorsque nous présenterons les facteurs perceptifs dans la section \ref{sect_data}.
+Cependant, lorsque $d_{max}$ est grand devant les dimensions de la salle, on peut se permettre d'arrêter la mesure à $n=1$. Lorsque la taille des rayons augmente, les mesures deviennent moins précise, par contre, leurs énergies seront de plus en plus faible et on entre dans le champs diffus. Il n'est alors plus vraiment nécessaire d'avoir une mesure très précise. Dans tous les cas, la réponse impulsionnelle est limitée dans le temps grâce à la distance $d_{max}$ avec $n$ supérieur ou égal à 1. Par exemple pour un récepteur de rayon 2m, un million de rayons et $n=1$ on aura une distance maximum de 1km soit une réponse impulsionnelle qui s'arrêtera à 2,94s. Cependant, les \gls{rir} sont en général calculées jusqu'à ce que l'énergie diminue de $60dB$. Il s'agit d'un critère d'arrêt classique car, comme expliqué dans la section \ref{sect_sabine} il assure de couvrir la plage d'audition humaine. Il faudra alors jouer sur les paramètres $N$, $r$ ou éventuellement $n$ pour s'assurer de dépasser le \gls{RT60}. En pratique, le temps de calcul sera très sensible à la valeur de $N$ tandis que la précision dépendra de $r$ et $n$ c'est pourquoi la \gls{rir} n'ira pas toujours jusqu'à $-60dB$ ce qui n'impacte pas forcement l'analyse acoustique. Nous verrons de quelle manière lorsque nous présenterons les facteurs perceptifs dans la section \ref{sect_data}.
 
 %Ainsi, une possibilité est d'arrêter la mesure lorsque $d_{max}$ est atteinte et de compléter le champs diffus de manière statistique. Cela est envisageable d'après les hypothèses de Sabine qui supposent que le champs diffus devient pseudo-alétoire. La réponse impulsionnelle obtenue par tracé de rayons peut ainsi être prolongée par régression linéaire pour atteindre \gls{RT60}. \\
 
@@ -596,17 +596,14 @@ Comme nous l'avons vu précédemment, nous allons travailler à partir d'un mail
 	\label{normales}
 \end{figureth}
 
-Chaque face triangulaire est donc considérée comme une paroi à laquelle il faut affecter un matériau. A un matériau on associe huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes permettent de couvrir une large plage des fréquences audibles par l'être humain. L'absorption de l'onde sonore dépendra donc de la fréquence et il faudra calculer huit réponses impulsionnelles. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale dans un local spécialement aménagé. L'erreur est de l'ordre de 15\% \cite[]{acouphile}. La base que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}. Les coefficients sont sans unité et correspondent à un ratio d'absorption compris entre 0 et 1. Le tableau \ref{tab_coeff_abs} présente quelques exemples de coefficients d'absorption. L'énergie d'un rayon ayant été réfléchi par plusieurs parois sera proportionnelle à :
+Chaque face triangulaire est donc considérée comme une paroi à laquelle il faut affecter un matériau. A un matériau on associe huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes permettent de couvrir une large plage des fréquences audibles par l'être humain. L'absorption de l'onde sonore dépendra donc de la fréquence et il faudra calculer huit réponses impulsionnelles. 
+
+Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale dans un local spécialement aménagé. L'erreur est de l'ordre de 15\% \cite[]{acouphile}. La base que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}. Les coefficients sont sans unité et correspondent à un ratio d'absorption compris entre 0 et 1. Le tableau \ref{tab_coeff_abs} présente quelques exemples de coefficients d'absorption. L'énergie d'un rayon ayant été réfléchie par $n$ parois de coefficient d'absorption $\alpha_i$ sera proportionnelle à :
 \begin{equation} \label{eq_coeff_abs}
 E = \prod_{i=0}^n (1-\alpha_i),
 \end{equation}
-avec: 
-\begin{itemize}
-\item $n$ : le nombre de parois rencontrées,
-\item $\alpha_i$ : le coefficient d'absorption de la i-ème paroi.
-\end{itemize}
 %
-\begin{tableth} \label{tab_coeff_abs}
+\begin{tableth}
 \footnotesize
 	\begin{tabular}{| c | m{2.5cm} | *{8}{c|}}
 		\hline
@@ -623,6 +620,7 @@ avec:
 	     \hline
 	 \end{tabular}
 	\caption{Exemples de coefficients d'absorption de la base de données Odéon.}
+	 \label{tab_coeff_abs}
 \end{tableth}
 \addtocounter{footnote}{-1}
 \footnotetext{Harris, 1991}
@@ -631,63 +629,63 @@ avec:
 %
 
 
-Notons par ailleurs que l'on défini les sources sonores par une position ponctuelle dans l'espace délimité par la salle. De la même façon, les objets récepteurs se définissent par une position ponctuelle dans l'espace ainsi que par leur rayon de mesure. Dans les deux cas les positions sont données par le centre de l'objet dans Blender et le rayon du récepteur est le rayon de la sphère circonscrite.
+Notons par ailleurs que l'on défini les sources sonores et les récepteurs par une position ponctuelle dans l'espace délimité par la salle. En plus de cela, les récepteurs sont définis par un rayon de mesure (voir section \ref{sect_logiciel}). %Dans les deux cas les positions correspondent au centre de l'objet  et le rayon du récepteur est le rayon de la sphère circonscrite.
 
-\subsection{Création d'une boite englobante} \label{sect_boiteenglobante}
+\subsection{Création d'une boîte englobante} \label{sect_boîteenglobante}
 
-La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} qu'il est préférable que chaque rayon puisse rencontrer une paroi afin d'assurer le bon comptage des rayons et éviter ainsi les erreurs algorithmiques. Or, pour une salle ouverte, comme c'est le cas dans le théâtre d'Orange qui est à ciel ouvert, certains rayons peuvent ne rencontrer aucune face. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées systématiquement au maillage afin de créer une boite englobante. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par l'absence de paroi. Par ailleurs, cette boite ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondues avec une paroi réelle du maillage et que les rayons soient absorbés par la boite englobante au lieu d'être réfléchis par la paroi.
+La technique de lancer de rayons présente une problématique pour des maillages ouverts. Effectivement, nous verrons dans la section \ref{sect_rayon} qu'il est préférable que chaque rayon puisse rencontrer une paroi afin d'assurer le bon comptage des rayons et éviter ainsi les erreurs algorithmiques. Or, pour une salle ouverte, comme c'est le cas dans le théâtre d'Orange qui est à ciel ouvert, certains rayons peuvent ne rencontrer aucune face. Pour résoudre ce problème facilement et de manière transparente pour l'utilisateur, douze faces triangulaires sont ajoutées systématiquement au maillage afin de créer une boîte englobante. On assigne à ces faces un matériau 100\% absorbant afin de respecter la perte d'énergie provoquée par l'absence de paroi. Par ailleurs, cette boîte ne sera pas en contact avec le maillage mais sera légèrement plus grande. Ceci permet d'éviter qu'une de ces faces ne soit confondue avec une paroi réelle du maillage et que les rayons soient absorbés par la boîte englobante au lieu d'être réfléchis par la paroi.
 
 \begin{figureth}
 	\begin{subfigureth}{0.55\textwidth}
 		\includegraphics[width=\linewidth]{images/boiteenglobante}
-		%\caption{Illustration d'une boite englobant un maillage quelconque}
-		\label{boiteenglobante}
+		%\caption{Illustration d'une boîte englobant un maillage quelconque}
+		\label{boîteenglobante}
 	\end{subfigureth}
 	\qquad
 	\begin{subfigureth}{0.35\textwidth}
 		\includegraphics[width=\linewidth]{images/boiteenglobante2}
-		%\caption{Illustration d'une boite englobant un maillage quelconque}
-		\label{boiteenglobante2}
+		%\caption{Illustration d'une boîte englobant un maillage quelconque}
+		\label{boîteenglobante2}
 	\end{subfigureth}
-	\caption{Illustration d'une boite englobant un maillage quelconque (Suzanne).}
+	\caption{Illustration d'une boîte englobant un maillage quelconque (Suzanne).}
 \end{figureth}
 
 
 \section{Calcul de rayons} \label{sect_rayon}
 
 
-Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un triangle du maillage. Il est bon de noter que dans la nature, les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources sonores telles que les instruments de musique ou la voix humaine ne sont pas omnidirectionnelles mais possèdent une répartition de l'énergie qui leur est propre. Comme précisé précédemment, notre étude se place dans le cas général d'une source ayant une répartition uniforme de son énergie dans toutes les directions de l'espace et pourra, dans un second temps, être enrichie par d'autres types de sources. 
+Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un triangle du maillage. Il est bon de noter que dans la nature, les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources sonores telles que les instruments de musique ou la voix humaine ne sont pas omnidirectionnelles mais possèdent une répartition de l'énergie qui leur est propre. Comme précisé précédemment, notre étude se place dans le cas général d'une source ayant une répartition uniforme de son énergie dans toutes les directions de l'espace.
 
-Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par Blender. L'idée est d'utiliser le centre comme origine et chaque vertice pour calculer le vecteur directeur des rayons. Effectivement, Blender propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le rafinement voulu, Blender découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons (voir fig. \ref{fibonacci}). 
-
+Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par Blender. L'idée est d'utiliser le centre comme origine et chaque sommet pour calculer le vecteur directeur des rayons. En effet, Blender propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le raffinement voulu, Blender découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons (voir fig. \ref{fibonacci}). 
+%
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/icosphere}
-		\caption{Icosphère de Blender subdivisée 2, 3, 4 et 5 fois.}
+		\caption{\textit{Ico Sphère} de Blender subdivisée 2, 3, 4 et 5 fois.}
 		\label{icosphere}
 	\end{subfigureth}
 	\qquad
-	\begin{subfigureth}{0.45\textwidth}
+	\begin{subfigureth}{0.4\textwidth}
 		\includegraphics[width=\linewidth]{images/fibonacci}
-		\caption[Sphère de Fibonacci]{Sphère de Fibonacci \footnotemark.}
+		\caption[Sphère de Fibonacci]{Sommets d'une sphère de Fibonacci discretisée en 1000 points.}
 		\label{fibonacci}
 	\end{subfigureth}
 	\caption{Sphères permettant l'émission omnidirectionnelle de rayons.}
-
 \end{figureth}
-\citefnt[fig. 1]{fibonacci}
+%\citefnt[fig. 1]{fibonacci}
+
 
 On note $\Gamma$ le nombre d'or tel que :
-\begin{equation}
+\begin{equation*}
 \Gamma = \frac{1 + \sqrt{5}}{2}. \\
-\end{equation}
+\end{equation*}
 %
 Les coordonnées sphériques sont données par :
 \begin{equation}
   \left \{
    \begin{array}{r c l}
-\theta &=& \frac{2 \pi \times n}{\Gamma}  \pmod{2\pi},  \\
-\phi &=& \arcsin{\left(\frac{2n}{N-1}-1\right)}, 
+\theta &=& \frac{2 \pi \times i}{\Gamma}  \pmod{2\pi},  \\
+\phi &=& \arcsin{\left(\frac{2i}{N-1}-1\right)}, 
    \end{array}
    \right .
 \end{equation}
@@ -695,7 +693,7 @@ Les coordonnées sphériques sont données par :
 avec : 
 \begin{itemize}
 \item $N$ : le nombre total de rayons,
-\item $n \in[0, 1, 2, \ ... \ ,N-1]$ : le numéro du rayon.
+\item $i \in[0, 1, 2, \ ... \ ,N-1]$ : l'indice du rayon.
 \end{itemize}
 %
 A partir de ces coordonnées sphériques, on en déduit les coordonnées cartésiennes des vecteurs directeurs que l'on normalisera par la suite :
@@ -711,13 +709,13 @@ z &=& \sin{\phi}.
 \end{equation}
 
 
-À l'initialisation nous émettrons donc $N$ rayons depuis le centre de l'objet source et dirigés dans toutes les directions de manière uniforme. Une énergie normalisée à $1$ leur est assignée de sorte que l'énergie totale vaille $N$ et ceux pour chaque bande de fréquence. L'algorithme va ensuite propager les rayons sur les parois et à chaque intersection les énergie vont être atténuées par l'absorption des parois (voir eq. \ref{eq_coeff_abs}). Tant que les huit énergies de d'un rayons ne sont pas toutes inférieures à une valeur seuil alors celui-ci continu de se propager. 
+À l'initialisation $N$ rayons sont émis depuis le centre de l'objet source et dirigés dans toutes les directions de manière uniforme. Pour chacune des huit bandes de fréquence, une énergie normalisée à $1$ leur est assignée de sorte que l'énergie totale vaille $N$. L'algorithme propage ensuite les rayons sur les parois et, à chaque intersection, les énergies sont atténuées par l'absorption des parois (voir eq. \ref{eq_coeff_abs}). %Tant que les huit énergies d'un rayons ne sont pas toutes inférieures à une valeur seuil alors celui-ci continu de se propager. 
 
 Pour tester les intersections entre les rayons et les parois nous utilisons l'algorithme de Möller-Trumbore \cite[p. 2-3]{moller} développé à la fin des années 90 d'après les travaux de J.Arenberg \cite{arenberg} et D.Badouel \cite[p. 390-393]{badouel} et reconnu pour être rapide et efficace. Il s'agit d'opérer un changement de base pour le vecteur directeur du rayon et d'exprimer le point d'intersection à l'aide de coordonnées barycentriques. Cela permet d'éviter de devoir travailler avec des équations de plans et soulage les calculs.
 
 Nous cherchons donc l'intersection entre un rayons d'équation : 
 \begin{equation}
-R(t) = O + Dt,
+R(t) = O + Dt
 \end{equation}
 %
 et une face triangulaire de sommets $ V_0, V_1, V_2$. Un point T appartient au triangle si : 
@@ -738,29 +736,59 @@ v & \geqslant & 0,  \\
    \right .
 \end{equation}
 %
-Ainsi, l'intersection entre le rayon et le triangle s'écrit :
+En résolvant l'équation suivante :
 \begin{equation}
 O + Dt = (1-u-v)V_0 + uV_1 + vV_2, \ \ \ \footnotemark
 \end{equation}
 \citefnt[eq. 3]{moller}
 %
-avec $t$ la distance entre le point d'origine du rayon et le point d'intersection. D'après la règle de Cramer, nous pouvons réarranger cette équation sous la forme :
+%avec $t$ la distance entre le point d'origine du rayon et le point d'intersection. D'après la règle de Cramer, nous pouvons réarranger cette équation sous la forme :
 %
-\begin{equation}
-	\begin{bmatrix}
- 	  -D, & V_1-V_0, & V_2-V_0
-	\end{bmatrix}
-	\begin{bmatrix}
- 	 t \\
-	 u \\
-	 v
-	\end{bmatrix}
-	= O-V_0.
-	\ \ \ \footnotemark
-\end{equation}
-\citefnt[eq. 4]{moller}
+%\begin{equation}
+%	\begin{bmatrix}
+% 	  -D, & V_1-V_0, & V_2-V_0
+%	\end{bmatrix}
+%	\begin{bmatrix}
+% 	 t \\
+%	 u \\
+%	 v
+%	\end{bmatrix}
+%	= O-V_0.
+%	\ \ \ \footnotemark
+%\end{equation}
+%\citefnt[eq. 4]{moller}
+%%
+%Ainsi, on aura :
+%\begin{equation}
+%	\begin{bmatrix}
+% 	 t \\
+%	 u \\
+%	 v
+%	\end{bmatrix}
+%	=
+%	\frac{1}{
+%	\begin{vmatrix}
+% 	  -D, & E_1, & E_2
+%	\end{vmatrix}
+%	}
+%	\begin{bmatrix}
+% 	 	\begin{vmatrix}
+% 		  T, & E_1, & E_2
+%		\end{vmatrix} \\
+% 	 	\begin{vmatrix}
+% 		  -D, & T, & E_2
+%		\end{vmatrix} \\
+% 	 	\begin{vmatrix}
+% 		  -D, & E_1, & T
+%		\end{vmatrix}
+%	\end{bmatrix}	.
+%	\footnotemark
+%\end{equation}
+%\citefnt[eq. 5]{moller}
 %
-Ainsi, on aura :
+où $t$ est la distance entre le point d'origine du rayon et le point d'intersection avec le triangle, nous obtenons :
+%Ce qui équivaut à : 
+%
 \begin{equation}
 	\begin{bmatrix}
  	 t \\
@@ -769,25 +797,18 @@ Ainsi, on aura :
 	\end{bmatrix}
 	=
 	\frac{1}{
-	\begin{vmatrix}
- 	  -D, & E_1, & E_2
-	\end{vmatrix}
+ 	  (D \times E_2)\cdot E_1
 	}
 	\begin{bmatrix}
- 	 	\begin{vmatrix}
- 		  T, & E_1, & E_2
-		\end{vmatrix} \\
- 	 	\begin{vmatrix}
- 		  -D, & T, & E_2
-		\end{vmatrix} \\
- 	 	\begin{vmatrix}
- 		  -D, & E_1, & T
-		\end{vmatrix}
+ 		  (T \times E_1)\cdot E_2
+ \\ 
+ 		  (D \times E_2)\cdot T
+ \\
+ 		  (T \times E_1)\cdot D
 	\end{bmatrix}	.
 	\footnotemark
 \end{equation}
-\citefnt[eq. 5]{moller}
-%
+\citefnt[eq. 6]{moller}
 avec : 
 \begin{equation}
    \left \{
@@ -799,30 +820,8 @@ T &=& O - V_0.
    \right .
 \end{equation}
 %
-Ce qui équivaut à : 
-%
-\begin{equation}
-	\begin{bmatrix}
- 	 t \\
-	 u \\
-	 v
-	\end{bmatrix}
-	=
-	\frac{1}{
- 	  (D \times E_2).E_1
-	}
-	\begin{bmatrix}
- 		  (T \times E_1).E_2
- \\ 
- 		  (D \times E_2).T
- \\
- 		  (T \times E_1).D
-	\end{bmatrix}	.
-	\footnotemark
-\end{equation}
-\citefnt[eq. 6]{moller}
 
-On peut alors connaitre toutes les faces que rencontre chaque rayon en conservant le point d'intersection pour le rayon le plus court. Effectivement, on admet que les faces peuvent absorber les rayons mais pas les transmettre donc le rayon s'arrêtera à la première face rencontrée. En pratique il peut y avoir des phénomènes de vibro-acoustique et de résonance qui peuvent transmettre le son à travers des parois. Nous pouvons négliger ces phénomènes notamment dans un cas comme le théâtre d'Orange dont l'épaisseur et la densité des murs est importante. Il est tout de même bon de noter que, pour cette raison, certains cas d'utilisation ne pourront pas être testés comme par exemple l'écoute dernière une porte ou sous l'estrade de bois.
+On peut alors connaître toutes les faces que rencontre chaque rayon et nous conservons le point d'intersection donnant le rayon le plus court. Effectivement, le rayon s'arrête à la première face rencontrée car on admet que les faces peuvent absorber les rayons mais pas les transmettre. En pratique il peut y avoir des phénomènes de vibro-acoustique et de résonance qui peuvent transmettre le son à travers des parois. Nous pouvons négliger ces phénomènes notamment dans un cas comme le théâtre d'Orange où l'épaisseur et la densité des murs est importante. Il est tout de même bon de noter que, pour cette raison, certains cas d'utilisation ne pourront pas être testés comme par exemple l'écoute dernière une porte fermée ou bien de part et d'autre du rideau de scène.
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/DiagRay}
@@ -830,17 +829,17 @@ On peut alors connaitre toutes les faces que rencontre chaque rayon en conservan
 	\label{DiagRay}
 \end{figureth}
 
-Une fois que l'on sait sur quelle paroi chaque rayon va se réfléchir, on peut mettre à jour leurs énergies en les multipliant pour chaque bande de fréquence par $(1-\alpha_i)$, les $\alpha_i$ étant les coefficients d'absorption de la face rencontrée (voir section \ref{sect_lectMat}). La longueur totale du rayon doit être stockée afin de pouvoir prendre en compte l'absorption de l'air, de créer les sources-images (voir section \ref{sect_si}) et de calculer la \gls{rir}  (voir section \ref{sect_rir}). Il y a alors trois possibilités pour qu'un rayon arrête de se propager : 
+Une fois que l'on sait sur quelle paroi chaque rayon se réfléchi, on peut mettre à jour leurs énergies en les multipliant pour chaque bande de fréquence par $(1-\alpha_i)$, les $\alpha_i$ étant les coefficients d'absorption de la face rencontrée (voir section \ref{sect_lectMat}). La longueur totale du rayon doit être stockée afin de pouvoir prendre en compte l'absorption de l'air, de créer les sources-images (voir section \ref{sect_si}) et de calculer la \gls{rir}  (voir section \ref{sect_rir}). Il y a alors trois possibilités pour qu'un rayon arrête de se propager : 
 \begin{itemize}
-	\item Les énergies des huit bandes de fréquence portées par le rayon sont toutes à 0. Ce cas se présente lorsque le rayon rencontre une surface 100\% absorbante telle que la boite englobante (voir section \ref{sect_boiteenglobante}) par exemple.
-	\item La distance totale parcourue par le rayon jusqu'au récepteur a dépassé le seuil déterminé par l'équation \ref{seuil_arret}. Cette condition est nécessaire dans le cas d'un modèle discret (voir section \ref{sect_discretise}).
-	\item Le rayon réfléchi est colinéaire au rayon incident deux fois consécutives. Ce cas de figure particulier implique que le rayon est piégé entre deux surfaces parallèles. Dans le cas où celui-ci traverse le récepteur, son énergie va apparaitre dans la réponse impulsionnelle à chaque itération. Or, comme le rayon est unique, on perd le principe de l'approche par faisceau et son énergie ne diminuera pas en fonction de la distance. La mesure va être biaisée par l'énergie de cet unique rayon qui apparaîtra à chaque itération. Notons que ce phénomène pourrait également se produire si le rayon se trouve bloqué dans une boucle composée de plus de deux surfaces, par exemple une salle dont les murs formeraient un triangle équilatéral. Nous avons jugé ce type de cas comme peu probable et n'avons pas implémenté de sécurité pour les contrer. L'utilisateur pourra s'en affranchir en jouant sur le maillage pour casser la boucle. 
+	\item Les énergies des huit bandes de fréquence portées par le rayon sont toutes à 0. Ce cas se présente lorsque le rayon rencontre une surface 100\% absorbante telle que la boîte englobante par exemple (voir section \ref{sect_boîteenglobante}).
+	\item La distance totale parcourue par le rayon jusqu'au récepteur a dépassé le seuil déterminé par l'équation \ref{seuil_arret}. Cette condition est nécessaire dans le cas d'un modèle discret pour s'assurer de pouvoir capter statistiquement au moins $n$ rayons (voir section \ref{sect_discretise}).
+	\item Le rayon réfléchi est colinéaire au rayon incident deux fois consécutives. Ce cas de figure particulier implique que le rayon est piégé entre deux surfaces parallèles. Dans le cas où celui-ci traverse le récepteur, son énergie va apparaitre dans la réponse impulsionnelle à chaque itération. Or, comme le rayon est unique, son énergie ne diminuera pas en fonction de la distance car la décroissance quadratique de l'énergie n'est liée qu'au nombre de rayons captés (voir sections \ref{sect_intensite} et \ref{sect_discretise}). La mesure va donc être biaisée par l'énergie de cet unique rayon qui apparaîtra à chaque itération. Notons que ce phénomène pourrait également se produire si le rayon se trouvait bloqué dans une boucle composée de plus de deux surfaces, par exemple une salle dont les murs formeraient un triangle équilatéral. Nous avons jugé ce type de cas peu probable et n'avons pas traité ces cas. L'utilisateur pourra s'en affranchir en jouant sur le maillage pour casser la boucle. 
 \end{itemize}
 %
-Les rayons pour lesquels aucun de ces deux critères n'est atteint donnent alors naissance à un rayon réfléchi, les autres arrêtent de se propager. Pour calculer le vecteur directeur des rayons réfléchis, il suffit d'utiliser le vecteur normal à la face rencontrée (de norme 1) et d'utiliser la formule suivante :
+Les rayons pour lesquels aucun de ces trois critères n'est atteint donnent alors naissance à un rayon réfléchi, les autres arrêtent de se propager. Pour calculer le vecteur directeur des rayons réfléchis, il suffit d'utiliser le vecteur normal à la face rencontrée (de norme 1) et d'utiliser la formule suivante :
 
 \begin{equation}
-\overrightarrow{r} - \overrightarrow{i} = 2 \times (-\overrightarrow{i}.\overrightarrow{n})\overrightarrow{n}.
+\overrightarrow{r} - \overrightarrow{i} = 2(-\overrightarrow{i}\cdot \overrightarrow{n})\overrightarrow{n}.
 \end{equation}
 
 \begin{figureth}
@@ -871,45 +870,27 @@ avec $l$ la longueur du rayon.
 \section{Calcul de sources-images} \label{sect_si}
 
 
+A chaque itération, c'est à dire à chaque fois que les $N$ rayons sont entrés en contact avec une paroi et avant qu'ils ne soient réfléchis, on détermine ceux qui ont traversé le récepteur. Nous allons ainsi pouvoir ajouter au fur et à mesure des itérations de nouvelles sources-images. Pour savoir si un rayon (parmi les rayons qui n'ont pas atteint de critère d'arrêt) donne naissance à une source-image (voir fig. \ref{touche}), on vérifie différents points dans l'ordre suivant :
 
-\begin{figureth}
-	\begin{subfigureth}{0.55\textwidth}
-			\includegraphics[width=\linewidth]{images/touche}
-			\caption{Schéma d'un rayon qui passe en frontière de la sphère récepteur de rayon r.}
-			\label{touche}
-		\end{subfigureth}
-		\qquad
-		\begin{subfigureth}{0.35\textwidth}
-			\includegraphics[width=\linewidth]{images/schema_SI}
-			\caption{Schéma de la création d'une source image par réflexions successives d'un rayon sur les parois d'une salle.}
-			\label{schema_SI}
-	\end{subfigureth}
-\end{figureth}
-
-A chaque itération, c'est à dire à chaque fois que les $N$ rayons sont entrés en contact avec une paroi et avant qu'ils ne soient réfléchis, on détermine ceux qui ont traversé le récepteur. Nous allons ainsi pouvoir ajouter au fur et à mesure des itérations de nouvelles sources-images. Pour savoir si un rayon (parmi les rayons qui n'ont pas atteint le critère d'arrêt) donne naissance à une source image, on vérifie dans un premier temps si le point d'origine du rayon est à l'intérieur de la sphère-récepteur:
-
-\begin{equation}
-||\overrightarrow{OL}|| \leqslant r,
-\end{equation}
-avec :
-\begin{itemize}
-\item$O$ : L'origine du rayon,
-\item$L$ : Le centre du récepteur (Listener),
-\item$r$ : Le rayon de la sphère récepteur.
-\end{itemize}
-%
-Si c'est le cas, alors le rayon est perçu par le récepteur et une source image va être créée. Sinon, on vérifie si le rayon se dirige bien vers le récepteur. Pour cela il suffit de vérifier que :
-%
-\begin{equation}
-\cos{\alpha} \geqslant 0,
-\end{equation}
-avec $\alpha$ l'angle entre le rayon de vecteur directeur $\overrightarrow{D}$ et $\overrightarrow{OL}$. Par ailleurs, on vérifie que le rayon est assez grand pour atteindre le récepteur (donc qu'il n'est pas interrompu par une paroi avant) :
+\begin{enumerate}
+\item Le point d'origine du rayon est à l'intérieur de la sphère-récepteur, soit :
+	\begin{equation}
+		||\overrightarrow{OL}|| \leqslant r,
+	\end{equation}
+où $O$ est le point d'origine du rayon, $L$ le centre du récepteur (Listener) et $r$ le rayon de la sphère récepteur.
+\item Le rayon se dirige bien vers le récepteur, soit :
+	\begin{equation}
+		\cos{\alpha} \geqslant 0,
+	\end{equation}
+avec $\alpha$ l'angle entre le rayon (de vecteur directeur $\overrightarrow{D}$) et $\overrightarrow{OL}$.
+\item Le rayon est assez grand pour atteindre le récepteur (donc qu'il n'est pas interrompu par une paroi avant), soit :
 %
 \begin{equation}
 ||\overrightarrow{OL}|| \leqslant l,
 \end{equation}
 %
-avec $l$ la longueur du rayon. Pour finir, on s'assure que le rayon intersecte bien la sphère-récepteur :
+avec $l$ la longueur du rayon.
+\item Le rayon intersecte bien la sphère-récepteur, soit :
 %
 \begin{align}
 \sin{\alpha} \times ||\overrightarrow{OL}||  \leqslant r 
@@ -917,15 +898,41 @@ avec $l$ la longueur du rayon. Pour finir, on s'assure que le rayon intersecte b
 \alpha  \leqslant \arcsin{\frac{r}{||\overrightarrow{OL}||}}
 \end{align}
 %
-\begin{figure}[h]
-\centering
-	\includegraphics[width=0.7\linewidth]{images/DiagSi}
-	\caption{Diagramme d'activité résumant le processus de création des sources-images.}
-	\label{DiagSi}
-\end{figure}
+\end{enumerate}
+%
+%dans un premier temps si le point d'origine du rayon est à l'intérieur de la sphère-récepteur:
+%
+%\begin{equation}
+%||\overrightarrow{OL}|| \leqslant r,
+%\end{equation}
+%avec :
+%\begin{itemize}
+%\item$O$ : L'origine du rayon,
+%\item$L$ : Le centre du récepteur (Listener),
+%\item$r$ : Le rayon de la sphère récepteur.
+%\end{itemize}
+%%
+%Si c'est le cas, alors le rayon est perçu par le récepteur et une source image va être créée. Sinon, on vérifie si le rayon se dirige bien vers le récepteur. Pour cela il suffit de vérifier que :
+%%
+%\begin{equation}
+%\cos{\alpha} \geqslant 0,
+%\end{equation}
+%avec $\alpha$ l'angle entre le rayon de vecteur directeur $\overrightarrow{D}$ et $\overrightarrow{OL}$. Par ailleurs, on vérifie que le rayon est assez grand pour atteindre le récepteur (donc qu'il n'est pas interrompu par une paroi avant) :
+%%
+%\begin{equation}
+%||\overrightarrow{OL}|| \leqslant l,
+%\end{equation}
+%%
+%avec $l$ la longueur du rayon. Pour finir, on s'assure que le rayon intersecte bien la sphère-récepteur :
+%%
+%\begin{align}
+%\sin{\alpha} \times ||\overrightarrow{OL}||  \leqslant r 
+%\quad \Rightarrow \quad
+%\alpha  \leqslant \arcsin{\frac{r}{||\overrightarrow{OL}||}}
+%\end{align}
 %
 Si ces conditions sont réunies, alors le rayon traverse bien le récepteur et une source-image est générée. Ses coordonnées sont obtenues en traçant un vecteur de même origine mais de sens opposé au rayon courant et dont la norme sera égale à la distance totale parcourue par le rayon avant sa dernière réflexion (voir fig. \ref{schema_SI}). On rétro-propage donc le rayon jusqu'à arriver à la source-image dont la position est le symétrique de la source par rapport à tous les plans rencontrés par le rayon. On assigne à cette source-image huit coefficients d'énergie correspondant aux coefficients d'énergie finaux du rayon, atténués par l'absorption de l'air sur le trajet total. Celle-ci est déterminée pour chaque bande de fréquence d'après les formules analytiques décrites dans la section \ref{sect_absAIr}. Le calcul des énergies se fait de la manière suivante :
-
+%
 \begin{equation}
 E_{si, i} = E_{r, i} \times e^{-m_i \times l_{tot}},
 \end{equation}
@@ -947,11 +954,33 @@ avec :
 \item$v$ : la vitesse du son dans le milieu (air : 340m/s).
 \end{itemize}
 La dernière étape consiste à supprimer les sources images dont les huit énergies sont toutes inférieures à un seuil limite préalablement fixé (typiquement $-60dB$).
-
+%
+\begin{figureth}
+	\begin{subfigureth}{0.55\textwidth}
+			\includegraphics[width=\linewidth]{images/touche}
+			\caption{Schéma d'un rayon qui passe en frontière de la sphère récepteur de rayon r et qui va pouvoir générer une source-image.}
+			\label{touche}
+		\end{subfigureth}
+		\qquad
+		\begin{subfigureth}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{images/schema_SI}
+			\caption{Schéma de la création d'une source image par réflexions successives d'un rayon sur les parois d'une salle.}
+			\label{schema_SI}
+	\end{subfigureth}
+	\caption{Processus de création d'une source-image : Vérification d'intersection rayon/récepteur (gauche) puis retro-propagation du rayon pour positionnement de la source-image dans l'espace (droite).}
+\end{figureth}
+%
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.8\linewidth]{images/DiagSi}
+	\caption{Diagramme d'activité résumant le processus de création des sources-images.}
+	\label{DiagSi}
+\end{figure}
+%
 
 \section{Génération de réponse impulsionnelle} \label{sect_rir}
 
-Disposant de la distance temporelle entre les sources-images et le récepteur, il est possible d'afficher les courbes d'énergie sonore en fonction du temps. Aussi, pour chaque bande d'octave nous sommons les énergies par tranches temporelles. Ces tranches sont déterminées par la fréquence d'échantillonnage $f_s$. Celle-ci devra être identique à celle du signal audio avec lequel la réponse impulsionnelle sera convoluée (voir section \ref{sect_TDS}). Ainsi :
+Maintenant que l'on dispose de la distance temporelle entre les sources-images et le récepteur, il est possible d'afficher les courbes d'énergie sonore en fonction du temps. Aussi, pour chaque bande d'octave nous sommons les énergies par tranches temporelles. Ces tranches sont déterminées par la fréquence d'échantillonnage $f_s$. Celle-ci devra être identique à celle du signal audio avec lequel la réponse impulsionnelle sera convoluée (voir section \ref{sect_TDS}). Ainsi :
 \begin{align}
 nb_{ech} = f_s \times t_{max}, 
 \end{align}
@@ -959,7 +988,7 @@ avec :
 \begin{itemize}
 \item$nb_{ech}$ : le nombre total d'échantillon,
 \item$f_s$ : la fréquence d'échantillonnage,
-\item$t_{max}$ : le temps de parcours de la source image la plus éloignée,
+\item$t_{max}$ : le temps de parcours de la source-image la plus éloignée,
 \end{itemize}
 %
 et pour chaque bande d'octave on somme les énergies par échantillon. On a alors : 
@@ -976,11 +1005,11 @@ et avec :
 %
  \begin{figureth}
 	\includegraphics[width=0.9\linewidth]{images/rir}
-	\caption[Réponse impulsionnelle d'un cube.]{Exemple de \gls{rir} pour un cube de 50m d'arrête, une source et un récepteur de 20m de diamètre situés au centre, un million de rayons et une fréquence d'échantillonnage de 44100Hz.}
+	\caption[Réponse impulsionnelle d'un cube.]{Exemple de \gls{rir} pour un cube de 50m d'arrête, une source et un récepteur (de 20m de diamètre) situés au centre, un million de rayons et une fréquence d'échantillonnage de 44100Hz.}
 	\label{rir}
 \end{figureth}
 %
-Typiquement, pour une fréquence standard de 44100Hz chaque échantillon sommera les énergies des sources-images par tranches de $22,7\mu s$. Les énergies seront ensuite normalisées pour obtenir la \gls{rir} (voir fig. \ref{rir}).
+Typiquement, pour une fréquence standard de 44100Hz chaque échantillon sommera les énergies des sources-images par tranches de $22,67\mu s$. Les énergies seront ensuite normalisées pour obtenir la \gls{rir} (voir fig. \ref{rir}).
 
 %On a vu dans les sections \ref{sect_discretise} et \ref{sect_rayon} que la mesure pouvait être arrêtée avant d'atteindre le seuil limite d'audition, c'est à dire -60dB. Ce cas se présente lorsque le nombre de rayons est faible, lorsque le diamètre de la sphère récepteur est petit ou bien lorsque les rayons ont une longue distance à parcourir avant d'être suffisamment atténué (dans le cas d'une pièce fermée avec des parois très réfléchissantes par exemple). Dans ce cas, la \gls{rir} doit être complétée pour pouvoir atteindre le niveau d'énergie minimum demandé (-60dB). Pour cela, chaque courbe va être prolongée par régression linéaire afin de générer de manière statistique la queue de réverbération. D'après Sabine \cite[]{sabine} \\
 %A completer ...
@@ -990,8 +1019,8 @@ Typiquement, pour une fréquence standard de 44100Hz chaque échantillon sommera
 \section{Auralisation}
  \label{sect_TDS}
 
-L'analyse de résultats d'une étude acoustique peut parfois être délicate et difficile pour les personnes extérieurs au milieu. Le résultat final qui pourra être analysé par le plus grand nombre est le signal audio de sortie. Même si l'analyse d'un signal audio nécessite une grande finesse auditive, elle présente pour avantage d'être accessible par une simple écoute. Pour obtenir le son réverbéré, il s'agit de convoluer le signal d'origine avec les \gls{fir}. Un \gls{fir} est une \gls{rir} exprimé en pression telle que :
-
+L'analyse de résultats d'une étude acoustique peut parfois être délicate et difficile pour les personnes extérieures au milieu. Le résultat final qui pourra être analysé par le plus grand nombre est le signal audio de sortie. Même si l'analyse d'un signal audio nécessite une grande finesse auditive, elle présente pour avantage d'être accessible par une simple écoute. Pour obtenir le son réverbéré, il s'agit de convoluer le signal d'origine avec les \gls{fir}. Un \gls{fir} est une \gls{rir} exprimé en pression telle que :
+%
 \begin{equation}
 P = \sqrt{E},
 \end{equation}
@@ -1000,18 +1029,18 @@ avec :
 \item $P$ : La pression sonore normalisée,
 \item $E$ : L'énergie normalisée.
 \end{itemize}
-
+%
 Convoluer ces signaux revient à multiplier point par point le fichier audio avec les \gls{fir} dans le domaine de Fourier (fréquenciel).
 On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs signaux, il est judicieux d'utiliser une convolution partitionnée afin de réduire le stockage de données et accélérer les calculs \cite[2. Algorithm overview ]{partition}. 
 
-L'algorithme mis en place fonctionne de la manière suivante (voir fig. \ref{DiagTdS}) :
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/DiagTdS}
 	\caption{Schéma du processus de convolution partitionnée.}
 	\label{DiagTdS}
 \end{figureth}
+L'algorithme mis en place fonctionne de la manière suivante (voir fig. \ref{DiagTdS}). Premièrement, on fixe la longueur des partitions à $n$ échantillons tel que $n$ soit une puissance de 2 (typiquement 1024). Dans un premier temps, le signal audio est découpé par tranches de $n$ échantillons et chaque tranche recouvre la précédente sur la moitié de sa taille. Chacune d'entre elles est ensuite passées dans le domaine spectral par \gls{fft}. Dans un second temps, les \gls{fir} sont convolués temporellement à des filtres passe-bande (voir fig. \ref{filtres}), c'est à dire que chaque pic des \gls{fir} sera multiplié par le filtre passe-bande de la fréquence correspondante. Les huit signaux de sortie sont alors découpés par tranches de $n/2$ échantillons que l'on fait précéder de $n/2$ zéros (\textit{ZeroPadding}). Cela permet d'éviter les effets de crénelage (\textit{aliasing}) lors de la convolution de deux signaux. En effet, les spectres des signaux présentent sur leur partie négative un repliement qui apporte de l'information redondante lors de la convolution. C'est pour cette même raison que les partitions du signal audio ont un recouvrement de $n/2$ échantillons. Ainsi, seuls les $n/2$ derniers échantillons du résultat de convolution sont utiles. Avant de pouvoir effectuer cette opération il faut passer les filtres dans le domaine spectral et sommer les huit bandes de fréquence. Une par une les partitions du signal audio sont convoluées aux filtres et à chaque nouvelle partition, on décale le résultat de $n/2$ échantillons. On pourra alors sommer les résultats et effectuer une transformée de Fourier inverse pour récupérer le signal de sortie. Celui-ci sera identique au signal d'entrée à la différence qu'il sera réverbéré, c'est à dire que chaque pic de la \gls{rir} répétera le signal d'entrée en écho.
+%
 
-Premièrement, on fixe la longueur des partitions à $n$ échantillons tel que $n$ soit une puissance de 2 (typiquement 1024). Dans un premier temps, le signal audio est découpé par tranches de $n$ échantillons et chaque tranche recouvre la précédente sur la moitié de sa taille. Chacune d'entre elles est ensuite passées dans le domaine spectral par \gls{fft}. Dans un second temps, les \gls{fir} sont convolués temporellement à des filtres passe-bande (voir fig. \ref{filtres}), c'est à dire que chaque pic des \gls{fir} sera multiplié par le filtre passe-bande de la fréquence correspondante. Les huit signaux de sortie sont alors découpés par tranches de $n/2$ échantillons que l'on fait précéder de $n/2$ zéros. Ce procédé se nomme "\textit{ZeroPadding}" et permet d'éviter les effets de crénelage (\textit{aliasing}) lors de la convolution de deux signaux. En effet, les spectres des signaux présentent sur leur partie négative un repliement qui apporte de l'information redondante lors de la convolution. C'est pour cette même raison que les partitions du signal audio ont un recouvrement de $n/2$ échantillons. Ainsi, seuls les $n/2$ derniers échantillons du résultat de convolution sont utiles. Avant de pouvoir effectuer cette opération il faut passer les filtres dans le domaine spectral et sommer les huit bandes de fréquence. Une par une les partitions du signal audio sont convoluées aux filtres et à chaque nouvelle partition, on décale le résultat de $n/2$ échantillons. On pourra alors sommer les résultats et effectuer une transformée de Fourier inverse pour récupérer le signal de sortie. Celui-ci sera identique au signal d'entrée à la différence qu'il sera réverbéré, c'est à dire que chaque pic de la \gls{rir} répétera le signal d'entrée en écho.
 
 \begin{figureth}
 	\includegraphics[width=0.9\linewidth]{images/filtres}
@@ -1040,14 +1069,14 @@ Dans un futur développement il sera possible de générer une \gls{rir} pour l'
 \section*{Introduction} \label{sect_complexite}
 
 Afin de pouvoir qualifier les performances de l'algorithme, il est d'usage d'en mesurer la \gls{complexite}. Ce coefficient vise à analyser et qualifier le temps de calcul d'un algorithme. Pour rappel les grandes étapes de l'algorithme qui font appel à des boucles d'itérations importantes sont les suivantes :
-\begin{itemize}
-\item lecture du maillage,
-\item intersection des rayons et des faces,
-\item création des sources-images.
-\end{itemize}
-On note $N$ le nombre de rayons et $M$ le nombre de faces du maillage. Nous allons donc pouvoir analyser la complexité de ces différentes étapes. La lecture du maillage ne dépend que du nombre de faces ; la complexité de cette opération est donc linéaire de type $O(M)$. Par ailleurs cette étape n'est réalisée qu'une fois à l'initialisation. La création des sources-images ne dépend que du nombre de rayons sera elle aussi de complexité linéaire en $O(N)$. Celle-ci se produit en boucle tant que tous les rayons n'ont pas atteint le seuil d'arrêt. Néanmoins on ne peut pas en déterminer le nombre de boucles car celui-ci dépend de la géométrie de la salle et des matériaux. Effectivement plus la salle est grande et plus les matériaux sont absorbants, plus vite s'arrêtera la boucle. 
+\begin{enumerate}
+\item Lecture du maillage.
+\item Intersection des rayons et des faces.
+\item Création des sources-images.
+\end{enumerate}
+Nous allons analyser la complexité de ces différentes étapes. Pour cela, on note $N$ le nombre de rayons et $M$ le nombre de faces du maillage. La lecture du maillage ne dépend que du nombre de faces ; la complexité de cette opération est donc linéaire de type $O(M)$. Par ailleurs cette étape n'est réalisée qu'une fois à l'initialisation. La création des sources-images ne dépend que du nombre de rayons et sera elle aussi de complexité linéaire en $O(N)$. Celle-ci se produit en boucle tant que tous les rayons n'ont pas atteint un critère d'arrêt (voir section \ref{sect_rayon}). Néanmoins on ne peut pas en déterminer le nombre de boucles car celui-ci dépend de la géométrie de la salle et des matériaux. Effectivement plus la salle est grande et plus les matériaux sont absorbants, plus vite s'arrêtera la boucle. 
 
-L'étape la plus complexe est la boucle d'itération sur le calcul des intersection entre les rayons et les faces. Lors de cette étape, chaque rayon est testé avec chaque face. La complexité de cet algorithme est donc quadratique en $O(N \times M)$. Il s'agit de l'étape critique de la méthode et la plus chronophage. Pour vérifier cela, nous mesurons le temps de calcul des intersections rayons-faces pour une itération (voir fig. \ref{complexite00} et tab. \ref{tabComplexite}). Ce test est effectué sur un MacBook de procésseur 2,7GHz Intel Core i5 avec 8Go de RAM DDR3. La géométrie utilisée est un tétraèdre dont le nombre de faces est multiplié par deux à chaque mesure.
+L'étape la plus complexe est la boucle d'itération sur le calcul des intersections entre les rayons et les faces. Lors de cette étape, chaque rayon est testé avec chaque face. La complexité de cet algorithme est donc quadratique en $O(N \times M)$. Il s'agit de l'étape critique de la méthode et la plus chronophage. Pour vérifier cela, nous mesurons le temps de calcul des intersections rayons-faces pour une itération (voir fig. \ref{complexite00} et tab. \ref{tabComplexite}). Ce test est effectué sur un MacBook de processeur 2,7GHz Intel Core i5 avec 8Go de RAM DDR3. La géométrie utilisée est un tétraèdre dont le nombre de faces est multiplié par deux à chaque mesure.
 
 
  \begin{figureth}
@@ -1056,44 +1085,45 @@ L'étape la plus complexe est la boucle d'itération sur le calcul des intersect
 	\label{complexite00}
 \end{figureth}
 
-La courbe \ref{complexite00} illustrant le temps de calcul en faisant varier le nombre N de rayons et le nombre M de faces tel que $N=M$ comporte bien une pente de 2 en échelle logarithmique. Effectivement :
-%
-\begin{equation}
-T \propto N^2 \qquad \Rightarrow \qquad \ln{(T)} \propto 2 \ln{(N)}.
-\end{equation}
-On constate comme prévu que le temps de calcul évolue comme le produit du nombre de faces par le nombre de rayons ce qui donne bien une complexité quadratique. 
+La courbe \ref{complexite00} illustrant le temps de calcul en faisant varier le nombre N de rayons et le nombre M de faces tel que $N=M$ comporte bien une pente de 2 en échelle logarithmique. On constate comme prévu que le temps de calcul évolue comme le produit du nombre de faces par le nombre de rayons ce qui donne bien une complexité quadratique. 
+%Effectivement :
+%%
+%\begin{equation}
+%T \propto N^2 \qquad \Rightarrow \qquad \ln{(T)} \propto 2 \ln{(N)}.
+%\end{equation}
 
 Par ailleurs en fixant d'une part le nombre de face et d'autre part le nombre de rayons on constate que le temps augmente bien linéairement par rapport à chacun de ces paramètres (voir fig . \ref{complexite0}).
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite0}
-	\caption{Courbes de complexité donnant le temps (s) d'une itération en échelle logarithmique.}
+	\caption{Courbes de complexité donnant le temps (s) d'une itération en fonction du nombre de face (à gauche) pour 100k rayons et du nombre de rayons (à droite) pour 50k faces. Les deux courbes sont en échelle logarithmique.}
 	\label{complexite0}
 \end{figureth}
 
 
-Dans le cas du théâtre d'Orange, le nombre de faces est supérieur à 100~000 éléments et le nombre de rayons à émettre doit être très important compte tenu de la taille du bâtiment (voir section \ref{sect_discretise}). En testant une géométrie simplifiée du bâtiment, nous constatons que son \gls{RT60} est de l'ordre de 2 secondes. Il faudra donc pouvoir réaliser des mesures pour des rayons d'environ 700m de long. Or d'après l'équation \ref{eq_dmax} :
-
+Dans le cas du théâtre d'Orange, le nombre de faces est supérieur à 100~000 et le nombre de rayons à émettre doit être très important compte tenu de la taille du bâtiment (voir section \ref{sect_discretise}). En testant une géométrie simplifiée du bâtiment, nous constatons que son \gls{RT60} est de l'ordre de 3 secondes. Il faudra donc pouvoir réaliser des mesures pour des rayons d'environ 1km de long. Or d'après l'équation \ref{eq_dmax} :
+%
 \begin{equation}
 N > n\left(\frac{2d}{r}\right)^2.
 \end{equation}
-
-Pour une sphère de mesure de quelques mètres (celle-ci ne doit pas trop s'étendre afin que la mesure reste localisée) et $n$ de l'ordre d'une centaine de rayons, il faudra que le nombre total de rayons $N$ soit supérieur à 50 millions. En prolongeant la courbe de la figure \ref{complexite0} on obtient un temps de calcul d'une trentaine d'heure, ce qui n'est pas acceptable pour entrer dans le cahier des charges. Nous devons donc optimiser l'algorithme afin de résoudre ce problème.
+%
+Pour une sphère de mesure de 2m de rayon (celle-ci ne doit pas trop s'étendre afin que la mesure reste localisée) et $n=1$, il faudra que le nombre total de rayons $N$ soit environ de un million. On constate d'après les courbes de la figure \ref{complexite0} que cela amènerait à plus d'une heure de calcul par itération. Or il faut plusieurs dizaines d'itérations pour générer la réponse impulsionnelle à \gls{RT60}. Cela n'est donc pas acceptable pour entrer dans le cahier des charges et nous devons optimiser l'algorithme afin de résoudre ce problème.
 
 \section{Méthode d'octree}
 \subsection{Principe général} \label{sect_octree_gene}
 
 Comme nous l'avons vu précédemment, les maillages que nous devons traiter peuvent comporter plusieurs dizaines, voire centaines de milliers d'éléments. Les algorithmes permettant de gérer ce genre de cas utilisent souvent des méthodes dites de "diviser pour régner" (\textit{divide and conquer}). Cela permet, notamment dans des environnements 3D de pré-trier les données afin de ne réaliser les calculs couteux en temps que sur une quantité de données restreinte. %Dans notre cas, l'utilisation d'un arbre nous permettra de ne tester les interactions qu'entre certains rayons et certaines faces : ceux et celles qui seront situés dans la même subdivision de l'espace. 
 
+
+Il existe plusieurs types d'arbres permettant l'optimisation des calculs par partitionnage de données. On pourra citer l'exemple des arbres binaires qui subdivisent les données en deux de manière récursive \cite[p. 318–348]{binaire}. Nous avons choisi d'utiliser un arbre assez similaire à la différence prés qu'il sépare l'espace en 2 sur chacune des dimensions de l'espace et crée des subdivisions de taille identiques alignées avec les axes. Chaque itération découpe la partition de l'espace précédente en 8 (soit $2^3$) ce qui donne le nom d'\gls{octree} à ce procédé \cite[p. 5]{octree}. 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octree}
-	\caption{Illustration du principe d'\gls{octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite).}
+	\caption[Illustration du principe d'\gls{octree}]{Illustration du principe d'\gls{octree}. Subdivision d'un cube en "octants" (gauche) et l'arbre correspondant (droite). \footnotemark}
 	\label{octree}
 \end{figureth}
+\citefnt[Image]{octree_diag}
 
-Il existe plusieurs types d'arbres permettant l'optimisation des calculs par partitionnage de données. On pourra citer l'exemple bien connu des arbres binaires qui subdivisent les données en deux de manière récursive \cite[p. 318–348]{binaire}. Nous avons choisi d'utiliser un arbre assez similaire à la différence prés qu'il sépare l'espace en 2 sur chacune des dimensions de l'espace et crée des subdivisions de taille identiques alignées avec les axes. Chaque itération découpe la partition de l'espace précédente en 8 (soit $2^3$) ce qui donne le nom d'\gls{octree} à ce procédé \cite[p. 5]{octree}. 
-
-Le principe général consiste à créer une boite cubique dite "boite-mère" contenant l'ensemble des éléments du maillage, c'est à dire l'ensemble des faces triangulaires. Cette boite-mère est alors subdivisée pour créer huit "boites-filles" de taille identique qui elles-mêmes vont être subdivisées en huit boites-filles, etc (voir fig. \ref{octree}). De manière récursive, chaque élément contenu dans une boite-mère va être rangé dans la boite-fille qui le contient. On descend de cette façon dans l'arborescence de l'arbre jusqu'à atteindre une condition d'arrêt. Typiquement, l'\gls{octree} s'arrête lorsque plus aucune boite-fille ne contient plus de $n$ éléments. Les boites sont donc raffinées de la même manière que le maillage (voir fig. \ref{octreeSuzanne}) puisque que les boites vides ne génère pas de boites-filles.
+Le principe général consiste à créer une boîte cubique dite "boîte-mère" contenant l'ensemble des éléments du maillage, c'est à dire l'ensemble des faces triangulaires. Cette boîte-mère est alors subdivisée pour créer huit "boîtes-filles", de taille identique, qui elles-mêmes vont être subdivisées en huit boîtes-filles, etc (voir fig. \ref{octree}). De manière récursive, chaque élément contenu dans une boîte-mère va être rangé dans la boîte-fille qui le contient. On descend de cette façon dans l'arborescence de l'arbre jusqu'à atteindre une condition d'arrêt. Typiquement, l'\gls{octree} s'arrête lorsque plus aucune boîte-fille ne contient plus de $n$ éléments. Les boîtes sont donc raffinées de la même manière que le maillage puisque que les boîtes vides ne génèrent pas de boîtes-filles (voir fig. \ref{octreeSuzanne}).
 
 \begin{figureth}
 	\includegraphics[width=0.6\linewidth]{images/octreeSuzanne}
@@ -1101,7 +1131,7 @@ Le principe général consiste à créer une boite cubique dite "boite-mère" co
 	\label{octreeSuzanne}
 \end{figureth}
 
-Vérifions si ce système de tri permet de réduire la complexité du calcul. Nous avons vu que l'étape la plus chronophage de l'algorithme est l'interaction des rayons et des faces. Avec le partitionnage spatial de l'\gls{octree} nous ne testons que les rayons et les faces d'une même boite. Nous nommons \textit{objet} : un rayon ou une face. Dans un premier temps, voyons la complexité de la répartition des \textit{objets} dans les boites. Nous nous plaçons dans le cas idéal où N \textit{objets} sont repartis de manière uniforme dans l'espace. On nomme \textit{opérations} le rangement des \textit{objets} dans les boites. On note $p$ le nombre d'étages de l'\gls{octree}. Pour $p=0$, c'est à dire lorsque l'\gls{octree} n'est composée que de sa boite-racine, la boite-mère contient N \textit{objets}. Pour $p=1$ il faut ranger N élément dans 8 boites-filles. Il y aura donc $8N$ \textit{opérations}. A l'étage suivant, chaque boite-fille contenant $\frac{N}{8}$ \textit{objets} devient alors un boite mère traitée comme précédemment. Ainsi il faut $8$ \textit{opérations} par boite-mère pour ranger leurs $\frac{N}{8}$ \textit{objets}. Nous avons donc à cette étape :
+Vérifions si ce système de tri permet de réduire la complexité du calcul. Nous avons vu que l'étape la plus chronophage de l'algorithme est l'interaction des rayons et des faces. Avec le partitionnage spatial de l'\gls{octree} nous ne testons que les rayons et les faces d'une même boîte. Nous nommons \textit{objet} : un rayon ou une face. Dans un premier temps, voyons la complexité de la répartition des \textit{objets} dans les boîtes. Nous nous plaçons dans le cas idéal où N \textit{objets} sont repartis de manière uniforme dans l'espace. On nomme \textit{opérations} le rangement des \textit{objets} dans les boîtes. On note $p$ le nombre d'étages de l'\gls{octree}. Pour $p=0$, c'est à dire lorsque l'\gls{octree} n'est composé que de sa boîte-racine, la boîte-mère contient N \textit{objets}. Pour $p=1$ il faut ranger N éléments dans 8 boîtes-filles. Il y aura donc $8N$ \textit{opérations}. A l'étage suivant, chaque boîte-fille contenant $\frac{N}{8}$ \textit{objets} devient alors un boîte mère traitée comme précédemment. Ainsi il faut $8$ \textit{opérations} par boîte-mère pour ranger leurs $\frac{N}{8}$ \textit{objets}. Nous avons donc à cette étape :
 %
 \begin{center}
 $8\times 8\times \frac{N}{8}$ = $8N$ \textit{opérations}.
@@ -1117,13 +1147,13 @@ Que l'on peut écrire dans le cas général :
 8^p\frac{N}{8^{p-1}} = 8N \ \textit{opérations}.
 \end{equation}
 %
-On constate qu'il faut faire $p$ fois $8N$ \textit{opérations} pour arriver à l'étage $p$. Il y aura donc $p \times 8N$ \textit{opérations} au total. %qu'à chaque étage on a un nombre constant d'\textit{opérations} proportionnel au nombre d'\textit{objets} à ranger dans les boites et que le nombre total d'\textit{opérations} est proportionnel à $p.N$.
+On constate qu'il faut faire $p$ fois $8N$ \textit{opérations} pour arriver à l'étage $p$. Il y aura donc $p \times 8N$ \textit{opérations} au total. %qu'à chaque étage on a un nombre constant d'\textit{opérations} proportionnel au nombre d'\textit{objets} à ranger dans les boîtes et que le nombre total d'\textit{opérations} est proportionnel à $p.N$.
 
-Voyons maintenant comment déterminer $p$. Nous nous plaçons dans le cas où les boites du dernier étage ne contiennent qu'un unique \textit{objet}. Nous avons donc autant de boites que d'\textit{objets}. Ainsi :
+Voyons maintenant comment déterminer $p$. Nous nous plaçons dans le cas où les boîtes du dernier étage ne contiennent qu'un unique \textit{objet}. Nous avons donc autant de boîtes que d'\textit{objets}. Ainsi :
 
 \begin{align}  \label{nbEtage}
 8^p &= N \nonumber, \\
-p.\ln{8} &= \ln{N} \nonumber, \\
+%p.\ln{8} &= \ln{N} \nonumber, \\
 p &= \frac{1}{\ln{8}}\ln{N}.
 \end{align}
 %
@@ -1131,12 +1161,12 @@ Le nombre total d'\textit{opérations} $C$ est donc :
 \begin{equation}
 C = p.8N = \frac{8N}{\ln8}\ln{N}.
 \end{equation}
-Le rangement des \textit{objets} dans les boites est donc proportionnel à $N.\ln{N}$. À cela il faudra ajouter les calculs des intersections rayons/faces qui ne sont fait que $N$ fois, c'est à dire une fois par boite (puisqu'on n'a qu'un rayon et qu'une face par boite). La complexité totale devient :
+Le rangement des \textit{objets} dans les boîtes est donc proportionnel à $N.\ln{N}$. À cela il faut ajouter les calculs des intersections rayons/faces qui ne sont fait que $N$ fois, c'est à dire une fois par boîte (puisqu'on n'a qu'un rayon et qu'une face par boîte). La complexité totale devient :
 \begin{equation}
 C_{tot} = p.8N = \frac{8N}{\ln8}\ln{N} + N.
 \end{equation}
 
-Dans le cas général où les \textit{objets} ne sont pas répartis de manière uniforme, la démonstration est plus complexe. Effectivement, on ne peut pas prédire quelles boites vont être vides avant les autres et donc combien il y aura de boites par étages (voir fig. \ref{octree}). Cela est dû au fait que l'espace est divisé en $8^p$ à chaque étage et que selon la répartition des éléments certaines boites vont se retrouver vide et ne plus se subdiviser. La démonstration générale pourrait par contre fonctionner dans le cas d'un arbre binaire par exemple puisque le découpage dans l'espace se fait de manière à avoir un nombre équivalent d'éléments dans chaque boite quelque soit leur répartition. L'équation \ref{operation} donne :
+Dans le cas général où les \textit{objets} ne sont pas répartis de manière uniforme, la démonstration est plus complexe. Effectivement, on ne peut pas prédire quelles boîtes vont être vides avant les autres et donc combien il y aura de boîtes par étages (voir fig. \ref{octree}). Cela est dû au fait que l'espace est divisé en $8^p$ à chaque étage et que selon la répartition des éléments certaines boîtes vont se retrouver vide et ne plus se subdiviser. La démonstration générale pourrait par contre fonctionner dans le cas d'un arbre binaire par exemple puisque le découpage dans l'espace se fait de manière à avoir un nombre équivalent d'éléments dans chaque boîte quelque soit leur répartition. L'équation \ref{operation} devient :
 
 \begin{center}
 $2^p\frac{N}{2^{p-1}}$ = $2N$ \textit{opérations}.
@@ -1145,9 +1175,9 @@ On obtient alors :
 \begin{equation}
 C = p.2N = \frac{2N}{\ln2}\ln{N}.
 \end{equation} 
-Or, comme $\frac{2}{\ln2} > \frac{2}{\ln2}$ il faudra descendre plus loin dans les étages de l'arbre ce qui en pratique peut s'avérer être plus coûteux en temps.
+Or, comme $\frac{1}{\ln2} > \frac{1}{\ln8}$ il faudra descendre plus loin dans les étages de l'arbre ce qui en pratique peut s'avérer être plus coûteux en temps.
 
-De la même manière, en revenant au cas de l'\gls{octree} il pourra être plus judicieux de ne pas garder un unique \textit{objet} par boite dans le dernier étage mais plutôt d'arrêter l'arbre lorsque les boites possèdent toutes moins de $n$ \textit{objets}. L'équation \ref{nbEtage} devient :
+De la même manière, en revenant au cas de l'\gls{octree} il pourra être plus judicieux de ne pas garder un unique \textit{objet} par boîte dans le dernier étage mais plutôt d'arrêter l'arbre lorsque les boîtes possèdent toutes moins de $n$ \textit{objets}. L'équation \ref{nbEtage} devient :
 
 \begin{equation} 
 8^p = \frac{N}{n}.
@@ -1163,11 +1193,11 @@ et
 C &=  p.8N = \frac{8N}{\ln8}\ln{N} - \frac{\ln n }{\ln8}8N.
 \end{align}
 
-Pour obtenir la complexité totale il faut ajouter le nombre d'opérations qu'il faut pour calculer les intersection rayons/faces par boite, c'est à dire $n^2$. On obtient :
+Pour obtenir la complexité totale il faut ajouter le nombre d'opérations qu'il faut pour calculer les intersection rayons/faces par boîte, c'est à dire $n^2$. On obtient :
 \begin{equation}
 C_{tot} = \frac{8N}{\ln8}\ln{N} - \frac{\ln n }{\ln8}8N + n^2.
 \end{equation}
-Le nombre d'étage nécessaire diminue donc d'un terme constant lié à $n$ et pour $n << N$ le temps de calcul sera proportionnel à ($aN\ln{N} + bN + c$) avec $a$, $b$ et $c$ des constantes non significatives. La complexité est donc en $O(N.\ln{N})$.
+Le nombre d'étages nécessaires diminue donc d'un terme constant lié à $n$ et pour $n << N$ le temps de calcul sera proportionnel à ($aN\ln{N} + bN + c$) avec $a$, $b$ et $c$ des constantes non significatives. La complexité est donc en $O(N.\ln{N})$.
 
 
 
@@ -1180,13 +1210,10 @@ Le nombre d'étage nécessaire diminue donc d'un terme constant lié à $n$ et p
 	\label{DiagOctree}
 \end{figureth}
 
-L'algorithme a été développé comme décrit sur la figure \ref{DiagOctree}). Une première boite cubique englobant le maillage dans sa globalité est créée. On y associe les indices de l'ensemble des faces puisqu'elles sont toutes contenues dans cette boite-racine. On va ensuite, de manière récursive descendre dans des étages successifs. Passer de l'étage $p$ à l'étage $p+1$ revient à découper toutes les boites non-vides de l'étage $p$ en huit boites-filles de tailles égales qui deviendront à leur tour les boites-mères de l'étage $p+1$. Les indices des faces assignés à une boite-mère sont répartis dans les huit boites-filles. Pour savoir quel face appartient à quelle boite, on utilise les coordonnées du centre de la face. Effectivement, une face peut géométriquement rencontrer plusieurs boites mais il est nécessaire de les considérer comme ponctuelle afin qu'une face ne puisse se retrouver que dans une boite à la fois. La boucle récursive s'arrête lorsque les boites possèdent toutes moins d'éléments qu'une valeur seuil. Ainsi nous nous assurons que l'\gls{octree} se raffine de la même manière que le maillage et que chaque boite ne contient qu'un faible nombre d'éléments.
+L'algorithme a été développé comme décrit sur la figure \ref{DiagOctree}). Une première boîte cubique englobant le maillage dans sa globalité est créée. On y associe les indices de l'ensemble des faces puisqu'elles sont toutes contenues dans cette boîte-racine. On va ensuite, de manière récursive descendre dans des étages successifs. Passer de l'étage $p$ à l'étage $p+1$ revient à découper toutes les boîtes non-vides de l'étage $p$ en huit boîtes-filles de tailles égales qui deviendront à leur tour les boîtes-mères de l'étage $p+1$. Les indices des faces assignés à une boîte-mère sont répartis dans les huit boîtes-filles. Pour savoir quelle face appartient à quelle boîte, on utilise les coordonnées du centre de la face. Effectivement, une face peut géométriquement rencontrer plusieurs boîtes mais il est nécessaire de les considérer comme ponctuelle afin qu'une face ne puisse se retrouver que dans une boîte à la fois. La boucle récursive s'arrête lorsque les boîtes possèdent toutes moins d'éléments qu'une valeur seuil. Ainsi nous nous assurons que l'\gls{octree} se raffine de la même manière que le maillage et que chaque boîte ne contient qu'un faible nombre d'éléments. Il reste néanmoins une dernière étape qui permettra de s'assurer que les rayons rencontrent les bonnes faces. Il s'agit de redimensionner les boîtes non-vides pour que cette fois, elles englobent bien géométriquement les faces qu'elles contiennent.
 
 
-Il reste néanmoins une dernière étape qui permettra de s'assurer que les rayons rencontrent les bonnes faces. Il s'agit de redimensionner les boites non-vides pour que cette fois, elles englobent bien géométriquement les faces qu'elles contiennent.
-
-
-À chaque itération, on va alors pouvoir répartir les rayons dans l'\gls{octree} (voir nouveau diagramme d'activité des rayons, fig. \ref{DiagRay2}). Pour cela, les rayons sont assignés aux boites qu'ils intersectent à partir de la boite-racine et en descendant dans l'arborescence de chaque branche. De la même manière que pour les triangles, les rayons sont testés avec des boites-filles que s'ils ont bien intersecté la boite-mère correspondante. Pour savoir si l'indice d'un rayon doit être assigné à une boite, nous utilisons un algorithme optimisé d'intersection Rayon/Boite \cite{AABB}. La particularité des boites d'un \gls{octree} est qu'elles sont toutes alignées selon les axes du repère cartésien. On appel communément ce type de boite \gls{AABB} en opposition aux \gls{OBB}. Nous allons donc utiliser cette propriété pour vérifier si un rayon intersecte une boite. Pour cela rappelons qu'un rayons peut s'écrire sous la forme : 
+À chaque itération, on va alors pouvoir répartir les rayons dans l'\gls{octree} (voir nouveau diagramme d'activité des rayons, fig. \ref{DiagRay2}). Pour cela, les rayons sont assignés aux boîtes qu'ils intersectent à partir de la boîte-racine et en descendant dans l'arborescence de chaque branche. De la même manière que pour les triangles, les rayons sont testés avec des boîtes-filles que s'ils ont bien intersecté la boîte-mère correspondante. Pour savoir si l'indice d'un rayon doit être assigné à une boîte, nous utilisons un algorithme optimisé d'intersection rayon/boîte \cite{AABB}. La particularité des boîtes d'un \gls{octree} est qu'elles sont toutes alignées selon les axes du repère cartésien. On appel communément ce type de boîte \gls{AABB} en opposition aux \gls{OBB}. Nous allons donc utiliser cette propriété pour vérifier si un rayon intersecte une boîte. Pour cela rappelons qu'un rayons peut s'écrire sous la forme : 
 \begin{equation}
 f(t) = D \times t + O
 \end{equation}
@@ -1196,38 +1223,38 @@ avec :
 \item $O$ : le point d'origine du rayon de coordonnées $(O_x ; O_y ; O_z)$.
 \end{itemize}
 
-On peut également exprimer dans un espace à deux dimensions les six plans délimitant la boite de type \gls{AABB} en utilisant les valeurs constantes [$X_{min} ; X_{max}  ; Y_{min}  ; Y_{max} ; Z_{min} ; Z_{max}$].
+On peut également exprimer dans un espace à deux dimensions les six plans délimitant la boîte de type \gls{AABB} en utilisant les valeurs constantes [$X_{min} ; X_{max}  ; Y_{min}  ; Y_{max} ; Z_{min} ; Z_{max}$].
 %
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/AABB}
-		\caption{Vue 2D d'un rayon intersectant la boite.}
+		\caption{Vue 2D d'un rayon intersectant la boîte.}
 		\label{AABB}
 	\end{subfigureth}
 	\qquad
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/AABB2}
-		\caption{Vue 2D de rayons n'intersectant pas la boite.}
+		\caption{Vue 2D de rayons n'intersectant pas la boîte.}
 		\label{AABB2}
 	\end{subfigureth}
-	\caption{Illustrations de l'intersection Rayon/Boite en 2D.}
+	\caption{Illustrations de l'intersection Rayon/boîte en 2D.}
 \end{figureth}
 %
-Ainsi, on peut exprimer les points d'intersection entre le rayon et chacun des six plans délimitant la boite. Pour le plan $X_{min}$ par exemple on aura :
+Ainsi, on peut exprimer les points d'intersection entre le rayon et chacun des six plans délimitant la boîte. Pour le plan $X_{min}$ par exemple on aura :
 %
 \begin{align*}
 X_{min} &= x_0 \times D_x + O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}.
 \end{align*}
 %
-On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boite en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boite (voir fig \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) .
+On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boîte en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boîte (voir fig \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) . De cette façon on saura quelles sont les boîtes traversées par chaque rayons. 
 
-De cette façon on saura quelles sont les boites traversées par chaque rayons. Pour chaque feuille de l'\gls{octree}, c'est à dire les boites non-vides les plus basses dans l'arborescence, on testera les intersections entre les rayons et les faces situés dans la subdivision de l'espace correspondante uniquement. Ainsi, le calcul d'intersection ne se fait qu'entre peu de rayons et peu de faces.
+Pour chaque feuille de l'\gls{octree}, c'est-à-dire les boîtes non-vides les plus basses dans l'arborescence, on testera les intersections entre les rayons et les faces situés dans la subdivision de l'espace correspondante uniquement. Ainsi, le calcul d'intersection ne se fait qu'entre peu de rayons et peu de faces.
 
 
 
 \section{Analyse des résultats} \label{sect_resultatOctree}
 
-Nous allons maintenant vérifier si l'implémentation de cette méthode permet d'accélérer le temps de calcul et sous quelles conditions. Comme évoqué précédemment, l'étape critique de l'algorithme est le test d'intersection rayons/éléments car la complexité initiale est quadratique et que ce processus se répète à chaque itérations jusqu'à atteindre \gls{RT60}. La complexité théorique en utilisant un \gls{octree} est de type $O(N\ln{M})$. 
+Nous allons maintenant vérifier si l'implémentation de cette méthode permet d'accélérer le temps de calcul et sous quelles conditions. Comme évoqué précédemment, l'étape critique de l'algorithme est le test d'intersection rayons/éléments car la complexité initiale est quadratique et que ce processus se répète à chaque itération jusqu'à atteindre \gls{RT60}. La complexité théorique en utilisant un \gls{octree} est de type $O(N\ln{M})$. 
 Pour vérifier ce comportement nous rétitérons le même test qu'en introduction du chapitre \ref{sect_complexite} afin de comparer les résultats (voir tab. \ref{tabComplexite} et fig. \ref{complexite}). Ainsi, nous faisons varier le nombre $N$ de rayons et le nombre $M$ de triangles du maillage tels que $N = M$. À chaque mesure $N$ et $M$ sont multipliés par 2.
 
 On constate dans un premier temps que le régime stationnaire commence plus tard en utilisant l'\gls{octree}. Effectivement, le temps d'une itération reste inférieur à $1s$ tant que $N$ est inférieur à 70~000 éléments contre 4~000 sans \gls{octree}. Ensuite on voit que la pente est quasiment linéaire ce qui coïncide à la complexité théorique établie dans la section \ref{sect_octree_gene} puisque en échelle logarithmique :
@@ -1236,7 +1263,7 @@ y = x\ln{x}  && \Rightarrow  && \ln{y} = \ln{x} + \ln{(\ln{x})} \approx \ln{x}.
 \end{align*}
 En observant le tableau \ref{tabComplexite}, on constate par exemple que pour $N = 262~144$ on divise par 1000 le temps de calcul par itération ce qui est très prometteur pour le calcul dans le théâtre d'Orange.
 
-Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesurons l'impact sur le temps de calcul (voir tab. \ref{tabComplexite1},  \ref{tabComplexite2} et fig. \ref{complexite1} et \ref{complexite2}). Sur ces figures on constate que le temps de calcul redevient quadratique lorsque le nombre de faces ou le nombre de rayons devient majoritaire sur l'autre paramètre. On constate par ailleurs qu'en fixant un nombre important de rayons le temps de calcul ne dépendra pas du nombre de faces du maillage. Cela est encourageant dans le cadre du théâtre d'Orange puisque des surfaces plus détaillées pourront être implementées sans grand impact sur le temps de calcul.
+Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesurons l'impact sur le temps de calcul (voir tab. \ref{tabComplexite1},  \ref{tabComplexite2} et fig. \ref{complexite1} et \ref{complexite2}). Sur ces figures on constate que le temps de calcul redevient quadratique lorsque le nombre de faces ou le nombre de rayons devient majoritaire sur l'autre paramètre. On constate par ailleurs sur le figure \ref{complexite1} qu'en fixant un nombre important de rayons, le temps de calcul ne dépend pas du nombre de faces du maillage. Cela est encourageant dans le cadre du théâtre d'Orange puisque des surfaces plus détaillées pourront être implémentées sans grand impact sur le temps de calcul.
 
  \begin{figureth}
 	\includegraphics[width=\linewidth]{images/complexite}
@@ -1453,7 +1480,7 @@ Dans le chapitre précédent, nous avons détaillé le fonctionnement de l'algor
 \section{Analyse visuelle}
 \subsection{Propagation de rayons}
 
-Avant de tester la justesse des résultats d'un point de vu physique, il est bon d'en vérifier la justesse géométrique. Ainsi, nous analysons si les rayons ne traversent pas les parois et que la boite englobante assure bien son rôle. Pour cela, nous importons les rayons générés par notre logiciel dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle. 
+Avant de tester la justesse des résultats d'un point de vu physique, il est bon d'en vérifier la justesse géométrique. Ainsi, nous analysons si les rayons ne traversent pas les parois et que la boîte englobante assure bien son rôle. Pour cela, nous importons les rayons générés par notre logiciel dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle. 
 
 
 \begin{figureth}
@@ -1462,9 +1489,9 @@ Avant de tester la justesse des résultats d'un point de vu physique, il est bon
 		\label{test0}
 \end{figureth}		
 
-\subsection{Boite englobante}
+\subsection{boîte englobante}
 
-De la même manière nous confirmons le bon fonctionnement de la boite englobante en utilisant une salle cubique dont on n'a gardé que les coins. On voit sur la figure \ref{testBE} que les rayons sont bien stoppés par une paroi invisible. Par ailleurs en effectuant une rotation de $45\degres$ sur chacun des axes on constate bien que la boite invisible englobe la salle.
+De la même manière nous confirmons le bon fonctionnement de la boîte englobante en utilisant une salle cubique dont on n'a gardé que les coins. On voit sur la figure \ref{testBE} que les rayons sont bien stoppés par une paroi invisible. Par ailleurs en effectuant une rotation de $45\degres$ sur chacun des axes on constate bien que la boîte invisible englobe la salle.
 \begin{figureth}		
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/testBE}
@@ -1476,7 +1503,7 @@ De la même manière nous confirmons le bon fonctionnement de la boite englobant
 		\includegraphics[width=\linewidth]{images/testBEbis}
 		%\label{testBEbis}
 	\end{subfigureth}
-	\caption{Absorption des rayons par une boite englobante.}
+	\caption{Absorption des rayons par une boîte englobante.}
 	\label{testBE}
 \end{figureth}
 
@@ -1700,7 +1727,7 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 	
 
 	
-\section{Utilisation générique du logiciel}
+\section{Utilisation générique du logiciel}\label{sect_logiciel}
 	
 La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel \gls{cao} et lancer le calcul. Blender permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de Blender est donc complètement modulable et personnalisable. Un \textit{add-on} a donc été développé dans le cadre de ce projet et son rôle est de fournir un maillage adapté à un outil de calcul externe puis de réimporter les résultats dans Blender pour pouvoir les visualiser (voir fig. \ref{logiciel}). Le coeur du calcul s'effectue sur un programme séparé développé en C++ (via Qt creator). L'utilisation d'un langage compilé permet d'optimiser le temps de calcul et le fait d'être un programme séparé permet aux utilisateurs réticent à utiliser Blender pour pouvoir tout de même s'en servir. Il suffit de placer un fichier de maillage au format \gls{obj} dans le répertoire adéquate pour pouvoir lancer le calcul. A noter que le format \gls{obj} permet d'obtenir les informations sur les vertices, les normales et les faces ainsi que les matériaux. D'autres formats de maillages pourront être implémentés dans un développement futur.
 

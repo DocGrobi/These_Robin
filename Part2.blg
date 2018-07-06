@@ -3,20 +3,22 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
+Warning--entry type for "octree_diag" isn't style-file defined
+--line 11 of file Part2/Biblio.bib
 Warning--entry type for "spl" isn't style-file defined
---line 17 of file Part2/Biblio.bib
+--line 18 of file Part2/Biblio.bib
 Warning--entry type for "mmg" isn't style-file defined
---line 73 of file Part2/Biblio.bib
+--line 74 of file Part2/Biblio.bib
 Warning--entry type for "catt" isn't style-file defined
---line 82 of file Part2/Biblio.bib
+--line 83 of file Part2/Biblio.bib
 Warning--entry type for "gypsilab" isn't style-file defined
---line 90 of file Part2/Biblio.bib
+--line 91 of file Part2/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 117 of file Part2/Biblio.bib
+--line 118 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 226 of file Part2/Biblio.bib
+--line 227 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 316 of file Part2/Biblio.bib
+--line 317 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile
@@ -27,45 +29,45 @@ Warning--can't use both author and editor fields in binaire
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
 Warning--there's a number but no volume in AABB
-You've used 37 entries,
+You've used 36 entries,
             3493 wiz_defined-function locations,
-            899 strings with 10544 characters,
-and the built_in function-call counts, 19750 in all, are:
-= -- 1546
-> -- 645
-< -- 55
-+ -- 257
-- -- 190
-* -- 1446
-:= -- 2808
-add.period$ -- 74
-call.type$ -- 37
-change.case$ -- 237
-chr.to.int$ -- 44
-cite$ -- 45
-duplicate$ -- 1845
-empty$ -- 1621
-format.name$ -- 250
-if$ -- 3880
-int.to.chr$ -- 2
+            893 strings with 10326 characters,
+and the built_in function-call counts, 19067 in all, are:
+= -- 1502
+> -- 609
+< -- 54
++ -- 245
+- -- 178
+* -- 1380
+:= -- 2708
+add.period$ -- 71
+call.type$ -- 36
+change.case$ -- 228
+chr.to.int$ -- 43
+cite$ -- 44
+duplicate$ -- 1782
+empty$ -- 1567
+format.name$ -- 235
+if$ -- 3749
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 266
-newline$ -- 129
-num.names$ -- 148
-pop$ -- 711
+missing$ -- 255
+newline$ -- 126
+num.names$ -- 144
+pop$ -- 693
 preamble$ -- 1
-purify$ -- 211
+purify$ -- 203
 quote$ -- 0
-skip$ -- 799
+skip$ -- 778
 stack$ -- 0
-substring$ -- 608
-swap$ -- 1026
-text.length$ -- 22
+substring$ -- 597
+swap$ -- 992
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 312
+type$ -- 303
 warning$ -- 8
-while$ -- 125
+while$ -- 122
 width$ -- 0
-write$ -- 401
-(There were 15 warnings)
+write$ -- 389
+(There were 16 warnings)
