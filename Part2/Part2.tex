@@ -6,7 +6,7 @@ Dans cette partie, nous allons traiter d'acoustique, d'algorithme et de mathéma
 
 \textit{\textbf{Pourquoi ?}} L'objectif de notre projet, maintenant que nous disposons d'une maquette virtuelle du théâtre d'Orange, est d'en étudier l'acoustique. Nous souhaitons simuler, étudier et écouter le son qui était perçu dans ce lieu il y a deux mille ans. En outre, nous avons vu que les restitutions de certaines parties du théâtre étaient plus ou moins hypothétiques. Nous voulons comparer différentes tentatives de restitution et en mesurer l'impact visuel mais également auditif. Les rares écrits antiques et les récentes études acoustiques sous-entendent que les Romains, et avant eux les Grecs, se basaient sur la physique des matériaux et la géométrie des monuments pour optimiser la propagation sonore. En outre, les moyens d'analyse  deviennent également une problématique. Comment visualiser des résultats acoustiques ? Peut-on, par une écoute d'un signal sonore, conclure des résultats de manière non-équivoque ? Peut-on trouver des méthodes ergonomiques d'analyse ? Nous allons donc tenter d'apporter notre pierre à l'édifice au sujet de ces questions. 
 
-\textit{\textbf{Quoi ?}} Cet objectif nous a amené à développer un outil de calcul numérique répondant à des problématiques précises. Il complète ainsi la première partie de notre projet en s'interfaçant directement au logiciel Blender qui a permis la modélisation visuelle. Nous pourrons alors facilement étudier la maquette virtuelle du théâtre d'Orange précédemment présentée. Néanmoins, il est important de noter que cet outil est générique. Il pourra donc agir sur différents types de problèmes. Dans cette partie nous verrons quelle méthode de calcul a été développée et les raisons qui ont poussé à faire ce choix. D'un point de vue technique, le théâtre d'Orange est un problème complexe car le maillage comporte plusieurs centaines de milliers d'éléments et sa géométrie peut inclure des surfaces concaves, convexes ou toutes sortes d'obstacles. Les outils présents sur le marché ont des limites par rapport à ce cas d'utilisation. Par ailleurs, l'une de nos contraintes est d'obtenir des résultats sur l'acoustique selon différentes géométries du bâtiment et divers matériaux. Il faut donc pouvoir effectuer les calculs dans un temps relativement court afin de multiplier les configurations.C'est pourquoi un outil adapté à ce cahier des charges a été développé pendant ce projet.
+\textit{\textbf{Quoi ?}} Cet objectif nous a amené à développer un outil de calcul numérique répondant à des problématiques précises. Il complète ainsi la première partie de notre projet en s'interfaçant directement au logiciel \textit{Blender} qui a permis la modélisation visuelle. Nous pourrons alors facilement étudier la maquette virtuelle du théâtre d'Orange précédemment présentée. Néanmoins, il est important de noter que cet outil est générique. Il pourra donc agir sur différents types de problèmes. Dans cette partie nous verrons quelle méthode de calcul a été développée et les raisons qui ont poussé à faire ce choix. D'un point de vue technique, le théâtre d'Orange est un problème complexe car le maillage comporte plusieurs centaines de milliers d'éléments et sa géométrie peut inclure des surfaces concaves, convexes ou toutes sortes d'obstacles. Les outils présents sur le marché ont des limites par rapport à ce cas d'utilisation. Par ailleurs, l'une de nos contraintes est d'obtenir des résultats sur l'acoustique selon différentes géométries du bâtiment et divers matériaux. Il faut donc pouvoir effectuer les calculs dans un temps relativement court afin de multiplier les configurations.C'est pourquoi un outil adapté à ce cahier des charges a été développé pendant ce projet.
 
 
 \textit{\textbf{Comment ?}} Tout code informatique présente une part de calcul, et qui dit calcul, sous-entend mathématiques. Ainsi, nous verrons les méthodes et techniques mathématiques qui ont permis de développer ce programme. Nous détaillerons les notions de lancer de rayons statistique, de sources images spatialisées et de réponse impulsionnelle. Aussi, nous verrons comment sont optimisées les performances par un procédé de "\textit{divide and conquer}" utilisant des \gls{octree}. \\
@@ -431,7 +431,7 @@ Le projet a pour essence le calcul de l'acoustique du théâtre d'Orange. Cela s
 	\item Calculer les résultats sur une large plage de fréquences audibles par l'être humain (50-15000Hz),
 	\item Permettre l'étude du déplacement de l'onde sonore dans l'espace.
 \end{itemize}
-Par ailleurs, il faut pouvoir s'interfacer au modèle numérique réalisé sous Blender et décrit dans la partie \ref{part_1}. Pour cela, nous devons rajouter les caractéristiques suivantes au cahier des charges :
+Par ailleurs, il faut pouvoir s'interfacer au modèle numérique réalisé sous \textit{Blender} et décrit dans la partie \ref{part_1}. Pour cela, nous devons rajouter les caractéristiques suivantes au cahier des charges :
 
 \begin{itemize}
 	\item Utiliser un maillage surfacique sans contrainte sur la dimension ou le raffinement des faces.
@@ -439,9 +439,9 @@ Par ailleurs, il faut pouvoir s'interfacer au modèle numérique réalisé sous 
 	\item Pouvoir modifier facilement les coefficients d'absorption des matériaux.
 \end{itemize}
 
-Ces contraintes sont nécessaires afin de rendre l'étude acoustique du théâtre d'Orange (ou de tout type de monument similaire) accessible à des utilisateurs de Blender. Ainsi, la géométrie où la nature des matériaux peut être facilement modifiable et une large série de tests comparatifs peut être menée rapidement. Le but étant de pouvoir tester des hypothèses de restitution sans avoir à multiplier les manipulations entre chaque calcul.
+Ces contraintes sont nécessaires afin de rendre l'étude acoustique du théâtre d'Orange (ou de tout type de monument similaire) accessible à des utilisateurs de \textit{Blender}. Ainsi, la géométrie où la nature des matériaux peut être facilement modifiable et une large série de tests comparatifs peut être menée rapidement. Le but étant de pouvoir tester des hypothèses de restitution sans avoir à multiplier les manipulations entre chaque calcul.
 
-%Afin de répondre à ces contraintes, nous avons opté pour certains choix technologiques. Premièrement, le code est développé en C++ pour des raisons de rapidité de calcul. Il s'agit d'un exécutable "client" paramètrable directement depuis l'interface Blender. Au lancement du programme, Blender exporte le maillage dans un fichier qui sera traité par le logiciel "client". Ainsi, l'outil acoustique est transparent pour l'utilisateur et l'accès au maillage est donc immédiat. Le format de fichier s'est porté sur le \gls{obj}. Celui-ci est un des formats les plus courants et il est disponible sur la plupart des logiciels de \gls{cao}. Ainsi, l'outil n'est pas exclusif et pourra travailler à partir de n'importe quel maillage au format \gls{obj}.
+%Afin de répondre à ces contraintes, nous avons opté pour certains choix technologiques. Premièrement, le code est développé en C++ pour des raisons de rapidité de calcul. Il s'agit d'un exécutable "client" paramètrable directement depuis l'interface \textit{Blender}. Au lancement du programme, \textit{Blender} exporte le maillage dans un fichier qui sera traité par le logiciel "client". Ainsi, l'outil acoustique est transparent pour l'utilisateur et l'accès au maillage est donc immédiat. Le format de fichier s'est porté sur le \gls{obj}. Celui-ci est un des formats les plus courants et il est disponible sur la plupart des logiciels de \gls{cao}. Ainsi, l'outil n'est pas exclusif et pourra travailler à partir de n'importe quel maillage au format \gls{obj}.
 
 Sachant cela, nous avons dans un premier temps tenté de réaliser des analyses par méthode de résolution aux dérivées partielles (voir section \ref{sect_resExacte}) mais nous avons vite compris que la géométrie de la salle rendrait la résolution très difficile. Effectivement, le nombre d'éléments que doit comporter le maillage est dépendant de la longueur d'onde \cite[p. 740]{beamtracing}. Dans un cas comme le théâtre d'Orange où les longueurs se comptent en dizaines de mètres et les fréquences en kilo-Hertz (fréquences audibles), il faudrait raffiner les mailles à l'échelle du millimètre, ce qui génère des milliards d'éléments. Ce genre de problème est aujourd'hui particulièrement complexe à mettre en place de part la puissance de calcul et l'espace mémoire nécessaire. Par ailleurs la création d'un maillage qui puisse être utilisé pour ce type de calcul représente une difficulté à part entière. Au début du projet, nous avions tenté d'analyser une version très simplifiée du théâtre à des fréquences très faibles. Nous voulions notamment tester l'impact de la forme incurvée des gradins en comparant de manière relative différents maillages. Le raffinement fut effectué à l'aide de l'outil "\textit{mmg}" \cite[github]{mmg} développé en partie à l'\gls{iscd}. Les calculs acoustiques ont été fait avec l'outil "\textit{Gypsilab}" \cite[github]{gypsilab} développé par le \gls{cmap}. En conservant à peu près des dimensions du théâtre et pour de faibles fréquences, nous obtenions déjà plusieurs centaines de milliers d'éléments et des temps de calcul de quelques dizaines de minutes (sur un ordinateur standard). En augmentant la fréquence et donc le raffinement du maillage nous aurions rapidement atteint les limites des machines en terme de mémoire avec des temps de calcul considérables. Or cela ne coïncidait pas du tout avec les objectifs établis. Le constat a alors été que ce type d'étude n'était pas adaptée au cahier des charges.
 
@@ -586,7 +586,7 @@ Cependant, lorsque $d_{max}$ est grand devant les dimensions de la salle, on peu
 \section{Environnement géométrique}
 
 \subsection{Maillage de salle et matériaux} \label{sect_lectMat}
-%L'une des premières étape consiste à lire une base de données (issue du logiciel Odéon) pour récupérer les coefficients d'absorption des différents matériaux disponibles. Chaque matériau possède un numéro-référence qui devra être stipulé dans le nom du matériau sous Blender. Ces numéros sont associés dans la base de données à huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes de fréquence permettent de couvrir une large plage des fréquences audibles par l'être humain. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale et celle que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}
+%L'une des premières étape consiste à lire une base de données (issue du logiciel Odéon) pour récupérer les coefficients d'absorption des différents matériaux disponibles. Chaque matériau possède un numéro-référence qui devra être stipulé dans le nom du matériau sous \textit{Blender}. Ces numéros sont associés dans la base de données à huit coefficients d'absorption correspondant aux bandes d'octave : 62,5Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz. Ces huit bandes de fréquence permettent de couvrir une large plage des fréquences audibles par l'être humain. Il existe de nombreuses bases de données recensant ces coefficients d'absorption pour tout type de matériaux. Elles sont en générales créées de manière expérimentale et celle que nous utilisons a l'avantage d'être très complète et en libre accès sur le site d'Odéon \cite[Materials]{odeon}
 
 Comme nous l'avons vu précédemment, nous allons travailler à partir d'un maillage existant, qui sera dans notre cas d'application le théâtre d'Orange (voir partie \ref{part_1}) mais qui pourrait être n'importe quel maillage de salle. La méthode se doit donc d'être générique. Cependant notons qu'il sera obligatoire d'avoir des faces triangulaires et que les normales devront être orientées vers l'intérieur de la salle (voir fig. \ref{normales}).
 
@@ -656,12 +656,12 @@ La technique de lancer de rayons présente une problématique pour des maillages
 
 Le principe de la méthode utilisée est d'émettre depuis une source des rayons se propageant en ligne droite jusqu'à atteindre un triangle du maillage. Il est bon de noter que dans la nature, les ondes sonores peuvent suivre des trajectoires courbes à cause de certains paramètres comme les gradients de température ou la présence de vent. Néanmoins nous ferons l'approximation que la propagation se fait en ligne droite. Par ailleurs, les sources sonores telles que les instruments de musique ou la voix humaine ne sont pas omnidirectionnelles mais possèdent une répartition de l'énergie qui leur est propre. Comme précisé précédemment, notre étude se place dans le cas général d'une source ayant une répartition uniforme de son énergie dans toutes les directions de l'espace.
 
-Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par Blender. L'idée est d'utiliser le centre comme origine et chaque sommet pour calculer le vecteur directeur des rayons. En effet, Blender propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le raffinement voulu, Blender découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, Blender bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti Blender, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons (voir fig. \ref{fibonacci}). 
+Pour générer une émission omnidirectionnelle de rayons, nous avons dans un premier temps évalué l'utilisation d'une "\textit{Ico Sphère}" générée par \textit{Blender}. L'idée est d'utiliser le centre comme origine et chaque sommet pour calculer le vecteur directeur des rayons. En effet, \textit{Blender} propose dans ses objets de base une sphère formée par un icosaèdre régulier. Selon le raffinement voulu, \textit{Blender} découpe chaque segment en son milieu et déforme la surface pour obtenir un modèle sphérique (voir fig. \ref{icosphere}). La répartition est donc uniforme puisque l'"\textit{Ico Sphère}" n'est composée que de triangles équilatéraux identiques. Cependant, \textit{Blender} bride ces subdivisions à l'ordre 8, ce qui limite l'"\textit{Ico Sphère}" à 163842 points. Outre le fait que cette manipulation aurait largement ralenti \textit{Blender}, nous souhaitons pouvoir traiter un nombre de rayons bien plus important et de valeur quelconque. Nous utilisons donc une sphère de Fibonacci afin de générer les vecteurs directeurs des rayons (voir fig. \ref{fibonacci}). 
 %
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/icosphere}
-		\caption{\textit{Ico Sphère} de Blender subdivisée 2, 3, 4 et 5 fois.}
+		\caption{\textit{Ico Sphère} de \textit{Blender} subdivisée 2, 3, 4 et 5 fois.}
 		\label{icosphere}
 	\end{subfigureth}
 	\qquad
@@ -1475,12 +1475,12 @@ Dans un second temps nous ne faisons varier qu'un des deux paramètres et mesuro
 	
 \section*{Introduction}
 
-Dans le chapitre précédent, nous avons détaillé le fonctionnement de l'algorithme conçu pour analyser l'acoustique d'une salle. La méthode utilisée couple les principes de lancer de rayons, de sources-images et d'extrapolation stochastique. Elle vise à répondre aux problématiques de calcul acoustique en environnement complexe de manière géométrique et disrètisée. Géométrique, car seuls les effets de réflexion et absorption sont pris en compte et discrétisée car l'énergie d'onde n'est pas portée par une sphère mais par un grand nombre de rayons repartis de manière uniformes. Ainsi, il est essentiel de confirmer la justesse de ses approximations en les confrontant à des modèles théoriques. Dans ce chapitre, nous allons valider l'algorithme d'un point de vu physique et analyser ses performances. Nous allons donc choisir salles bien particulières afin d'effectuer cette validation de manière expérimentale. Tout d'abord nous vérifierons le bon comportement des rayons grâce à une analyse visuelle. Ensuite nous validerons la mesure d'un point de vu physique en comparant des réponses impulsionnelles obtenue avec des résultats théoriques.
+Dans le chapitre précédent, nous avons détaillé le fonctionnement de l'algorithme conçu pour analyser l'acoustique d'une salle. La méthode utilisée couple les principes de lancer de rayons, de sources-images et d'extrapolation stochastique. Elle vise à répondre aux problématiques de calcul acoustique en environnement complexe de manière géométrique et disrètisée. Géométrique, car seuls les effets de réflexion et absorption sont pris en compte et discrétisée car l'énergie d'onde n'est pas portée par une sphère mais par un grand nombre de rayons repartis de manière uniformes. Ainsi, il est essentiel de confirmer la justesse de ses approximations en les confrontant à des modèles théoriques. Dans ce chapitre, nous allons valider l'algorithme d'un point de vue physique et analyser ses performances. Nous allons donc étudier des salles bien particulières afin d'effectuer cette validation de manière expérimentale. Tout d'abord nous vérifierons le bon comportement des rayons grâce à une analyse visuelle. Ensuite nous validerons la mesure d'un point de vue physique en comparant des réponses impulsionnelles obtenue avec des calculs théoriques.
 
 \section{Analyse visuelle}
 \subsection{Propagation de rayons}
 
-Avant de tester la justesse des résultats d'un point de vu physique, il est bon d'en vérifier la justesse géométrique. Ainsi, nous analysons si les rayons ne traversent pas les parois et que la boîte englobante assure bien son rôle. Pour cela, nous importons les rayons générés par notre logiciel dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle. 
+Avant de tester la justesse des résultats d'un point de vu physique, il est bon d'en vérifier la justesse géométrique. Ainsi, nous analysons si les rayons ne traversent pas les parois et que la boîte englobante assure bien son rôle. Pour cela, nous importons les rayons générés par notre logiciel dans des configurations de salles simples. En propageant les rayons dans un petit labyrinthe nous confirmons qu'ils s'arrêtent bien à la paroi la plus proche et qu'ils sont ainsi contenus à l'intérieur de la salle (voir fig. \ref{test0}). 
 
 
 \begin{figureth}
@@ -1508,13 +1508,13 @@ De la même manière nous confirmons le bon fonctionnement de la boîte engloban
 \end{figureth}
 
 \subsection{Rayons captés}
-Nous vérifions finalement que les rayons captés par le récepteur sont bien portés par des cônes. Pour cela nous affichons sur blender uniquement les rayons générant une source image et les traçons depuis celle-ci.
+Nous vérifions finalement que les rayons captés par le récepteur sont bien portés par des cônes. Pour cela nous affichons sur \textit{Blender} uniquement les rayons générant une source-image et les traçons depuis celle-ci (voir fig. \ref{testBeam}).
 
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/testBeam}
 		\caption{Propagation des rayons depuis la source vers le récepteur.}
-		\label{testBeam}
+		\label{testBeam1}
 	\end{subfigureth}
 	\quad
 	\begin{subfigureth}{0.45\textwidth}
@@ -1522,7 +1522,8 @@ Nous vérifions finalement que les rayons captés par le récepteur sont bien po
 		\caption{Propagation des rayons depuis les sources-images vers le récepteur à l'ordre 1.}
 		\label{testBeam2}
 	\end{subfigureth}
-	\caption{Visualisation des rayons captés par le récepteur à l'ordre 0 et 1 récepteur (100000 rayons au total).}
+	\caption{Visualisation des rayons captés par le récepteur à l'ordre 0 (gauche) et 1 (droite) pour 100~000 rayons au total.}
+	\label{testBeam}
 \end{figureth}
 
 
@@ -1534,38 +1535,34 @@ Nous vérifions finalement que les rayons captés par le récepteur sont bien po
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/test1}
-	\caption{Réponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) échantillonnée à 100Hz et fonction $f(x)=\frac{2}{x^2}$ (rouge).}
+	\caption{Réponse impulsionnelle en espace libre pour 3 millions de rayons (bleu) échantillonnée à 100Hz et fonction $f(d)=\frac{2}{d^2}$ (rouge).}
 	\label{test1}
 \end{figureth}
 
 
-Suite à ces vérifications préliminaires, le premier test à réaliser pour analyser le comportement physique de l'algorithme est celui décrit dans la section \ref{sect_discretise}. Il s'agit de vérifier si l'utilisation d'un grand nombre de rayons et d'un récepteur de diamètre fixe permet de retrouver la loi de décroissance en $d^2$. Effectivement :
+Suite à ces vérifications préliminaires, le premier test à réaliser pour analyser le comportement physique de l'algorithme est celui décrit dans la section \ref{sect_discretise}. Il s'agit de vérifier si l'utilisation d'un grand nombre de rayons et d'un récepteur de diamètre fixe permet de retrouver la loi de décroissance en $d^2$. Effectivement l'énergie au niveau d'un récepteur de rayon constant $r$ peut s'écrire comme le nombre $n$ de rayons captés sur le nombre $N$ de rayons total :
 \begin{equation}
-\frac{n}{N} = \frac{\int_s dS}{\int_{\sigma} dS} = \frac{\pi r^2}{4\pi d^2},
+E = \frac{n}{N} = \frac{\int_s dS}{\int_{\sigma} dS} = \frac{\pi r^2}{4\pi d^2},
 \end{equation}
 avec :
 \begin{itemize}
-\item$n$ : le nombre de rayons captés,
-\item$N$ : le nombre de rayons total,
 \item$s$ : la surface (disque) constante du récepteur captant des rayons,
 \item$\sigma$ : la surface de la sphère d'émission,
-\item$r$ : le rayon constant du récépteur,
-\item$d$ : le rayons de la sphère d'émission, autrement dit la distance entre le source-image et le récepteur.
+\item$d$ : le rayons de la sphère d'émission, autrement dit, la distance entre la source-image et le récepteur.
 \end{itemize}
+On a alors une valeur inversement proportionnelle à $d^2$.
 
-
-Pour effectuer ce test, nous plaçons une source et un récepteur de rayons $1m$ au centre d'un cube de $10m$ de coté. Afin de simuler des mesures en espace libre (c'est à dire sans aucune paroi) où le récepteur s'éloigne de la source, nous allons affecter au cube des matériaux $100\%$ absorbants sur toutes ses parois sauf celles sur l'axe des $X$ qui seront $100\%$ réfléchissantes. Ainsi, cela revient à effectuer une mesure tous les $10m$, soit le temps d'aller retour des rayons du centre du cube jusqu'aux parois. N'ayant des réflexions que sur un axe, on reproduit une propagation en espace libre puisque seuls les rayons contenus dans le cône autour de l'axe $X$ conserveront leur énergie. Cependant, les rayons se réfléchissant en X et en -X de manière synchrone, on aura deux fois plus de rayons que si l'on se plaçait en espace libre. Nous pouvons comparer le résultat pour 30 itérations avec la fonction :
+Pour effectuer ce test, nous plaçons une source et un récepteur (de rayons 1m) au centre d'un cube de 10m de coté. Afin de simuler des mesures en espace libre (c'est à dire sans aucune paroi) où le récepteur s'éloigne de la source, nous allons affecter au cube des matériaux $100\%$ absorbants sur toutes ses parois sauf celles sur l'axe des $X$ qui seront 100\% réfléchissantes. Ainsi, cela revient à effectuer une mesure tous les 10m, soit le temps d'aller retour des rayons du centre du cube jusqu'aux parois. N'ayant des réflexions que sur un axe, on reproduit une propagation en espace libre puisque seuls les rayons contenus dans le cône autour de l'axe $X$ conserveront leur énergie. Cependant, les rayons se réfléchissant en X et en -X de manière synchrone, on aura deux fois plus de rayons que si l'on se plaçait en espace libre. Nous pouvons comparer le résultat pour 30 itérations avec la fonction :
 
 \begin{equation*}
-f(x) = \frac{2}{x^2}.
+f(d) = \frac{2}{d^2}.
 \end{equation*}
 Pour ce test, l'absorption de l'air a été désactivée afin de ne prendre en compte que la décroissance d'énergie portée par les rayons perçus. On observe bien sur la figure \ref{test1} que l'énergie suit la courbe de décroissance quadratique.
  		
 		
 \section{Cas de la salle sphérique}
 
-Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons une source et un récepteur de diamètre $1m$ au centre d'une sphère $100\%$ réfléchissante de diamètre $4m$. Ainsi à chaque itération, l'ensemble des $1000$ rayons revient se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons une réponse impulsionnelle de la forme d'une peigne de Dirac (voir fig. \ref{test2RIR}). L'écart entre chaque pic est de $11,76 ms$ ce qui correspond bien à une distance de $4m$ parcourue à la vitesse du son fixée à $340m/s$. Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède $320000$ triangles. Notons que nous pouvons traiter rapidement ce nombre conséquent de triangles grâce à l'utilisation de l'\gls{octree}. Par ailleurs, la fréquence d'échantillonnage est descendue à 1000Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisées dans le calcul de l'énergie. On pourra par ailleurs importer les sources-images sous Blender et constater qu'elles sont bien réparties sur des sphères dont le diamètre augmente de $4m$ à chaque itération (voir fig. \ref{test2SI})
-
+Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour cela, nous plaçons une source et un récepteur (de rayon 1m) au centre d'une sphère 100\% réfléchissante de diamètre 4m. Ainsi, à chaque itération, les 1000 rayons reviennent se croiser au centre de la sphère et sont donc tous captés par le récepteur. Nous obtenons une réponse impulsionnelle de la forme d'une peigne de Dirac (voir fig. \ref{test2RIR}). L'écart entre chaque pic est de 11,76 ms ce qui correspond bien à une distance de 4m parcourue à la vitesse du son fixée à 340m/s. Pour éviter la dispersion des rayons il est nécessaire d'avoir une sphère très bien raffinée. Celle utilisée pour le test possède 320~000 triangles. Notons que nous pouvons traiter rapidement ce nombre conséquent de triangles grâce à l'utilisation de l'\gls{octree}. Par ailleurs, la fréquence d'échantillonnage est définie à 1000Hz pour s'assurer que les sources-images de chaque itération soient parfaitement synchronisées dans le calcul de l'énergie. On pourra par ailleurs importer les sources-images sous \textit{Blender} et constater qu'elles sont bien réparties sur des sphères dont le diamètre augmente de 4m à chaque itération (voir fig. \ref{test2SI}). Il y a $N$ sources-images par sphère et chacune porte une énergie de $\frac{E_{tot}}{N}$. Comme elles sont équidistantes du récepteur, on observe bien des pics réguliers valant $E_{tot}$.
 \begin{figureth}
 	\begin{subfigureth}{0.45\textwidth}
 		\includegraphics[width=\linewidth]{images/test2RIR}
@@ -1583,7 +1580,7 @@ Le deuxième test consiste à vérifier que l'énergie est bien conservée. Pour
 
 Si l'on active l'absorption de l'air, on constate bien que les hautes fréquences sont plus absorbées que les basses fréquences en fonction de la distance (voir fig. \ref{test2absair}). Notamment au bout de 1700ms soit 578m, les fréquences à 8kHz ont quasiment totalement été absorbées par l'air, pour une température de 20°C et une pression relative de 50\%.
 
-%On peut aussi vérifier ce comportement dans le cas plus général d'un ellipsoïde de révolution. Celui-ci peut être créé sous Blender à l'aide de l'add-on "\textit{Extra Objects}" en configurant un objet de type "\textit{XYZ Math Surface}". Nous créons alors un ellipsoïde avec les équations suivantes :
+%On peut aussi vérifier ce comportement dans le cas plus général d'un ellipsoïde de révolution. Celui-ci peut être créé sous \textit{Blender} à l'aide de l'add-on "\textit{Extra Objects}" en configurant un objet de type "\textit{XYZ Math Surface}". Nous créons alors un ellipsoïde avec les équations suivantes :
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/test2absair}
@@ -1622,17 +1619,19 @@ avec :
 		\label{test3}
 	\end{figureth}
 
-On constate alors qu'on a une superposition parfaite des sources-images dans l'espace (voir fig. \ref{test3}) puisque l'écart des positions des sources-images expérimentales obtenues par lancer de rayons et les sources-images théoriques obtenues par formule analytique est inférieur à la précision machine (soit $10^{-6}$m pour des float). On mesure également l'erreur relative des énergies source-image par source-image en prenant comme valeur théorique $\frac{1}{d^2}$ où $d$ est la distance de la source-image au récepteur. On a alors :
+On constate alors qu'on a une superposition parfaite des sources-images dans l'espace (voir fig. \ref{test3}) puisque l'écart des positions des sources-images expérimentales obtenues par lancer de rayons et des sources-images théoriques obtenues par formule analytique est inférieur à la précision machine (soit $10^{-6}$m pour des variables de type \textit{float}). 
+
+On mesure également l'erreur relative des énergies source-image par source-image en prenant comme valeur théorique $\frac{1}{d^2}$ où $d$ est la distance de la source-image au récepteur. On a alors :
 \begin{align}
 \epsilon_{rel} = \frac{|E_{exp}-E_{theo}|}{E_{theo}}.
 \end{align}
-
-On note que la salle est un pavé dont les dimensions sont respectivement 2m, 3m et 4m sur les axes X, Y, Z. d'arrête, que le récepteur a un diamètre de 40cm et qu'il n'est pas superposé à la source. On peut observer que l'erreur moyenne est inférieure à 1\% avec des pics pouvant aller jusqu'à 3\%. Par ailleurs étant donné que plus les sources-images sont éloignées moins leur énergie sera importante, autrement dit elles seront moins entendues par l'auditeur, on peut résonner avec la norme infinie telle que :
+%
+Pour ce test, la salle est un pavé dont les dimensions sont respectivement 2m, 3m et 4m sur les axes X, Y, Z ; le récepteur a un diamètre de 40cm et il n'est pas superposé à la source. On peut observer que l'erreur moyenne est inférieure à 1\% avec des pics pouvant aller jusqu'à 3\%. Par ailleurs étant donné que plus les sources-images sont éloignées moins leur énergie sera importante, autrement dit elles seront moins entendues par l'auditeur, on peut résonner avec la norme infinie telle que :
 \begin{align}
 \epsilon_{\infty} = \frac{|E_{exp}-E_{theo}|}{\max(E_{theo})}.
 \end{align}
-
-On constate alors une erreur relative inférieure à 0,5\% pour 1~000~000 de rayons (voir fig. \ref{test3_2}). On voit également qu'en augmentant le nombre de rayons on améliore la précision des 150 premières sources-images et les 1300 sources-images suivantes reste bien dans une plage d'erreur inférieures à 5\% (voir fig. \ref{test3_3}) et 0,2\% en norme infinie (voir fig. \ref{test3_4}).
+%
+On constate alors une erreur relative inférieure à 0,5\% pour 1~000~000 de rayons (voir fig. \ref{test3_2}). On voit également qu'en augmentant le nombre de rayons on améliore la précision des 150 premières sources-images et les 1300 sources-images suivantes restent bien dans une plage d'erreur inférieure à 5\% (voir fig. \ref{test3_3}) et à 0,2\% en norme infinie (voir fig. \ref{test3_4}).
 
 \begin{figureth}
 	\begin{subfigureth}{0.8\textwidth}
@@ -1692,11 +1691,11 @@ avec :
 \end{figureth}
 
 
-On constate que l'erreur relative source-image par source-image ainsi que l'erreur en norme infinie restent bien inférieures aux valeurs indiquées précédemment (voir fig. \ref{test3_5} et \ref{test3_6}). De la même manière, on implemente l'absorption atmosphérique dans le calcul de l'énergie théorique telle que :
+On constate que l'erreur relative source-image par source-image ainsi que l'erreur en norme infinie restent bien inférieures aux valeurs indiquées précédemment (voir fig. \ref{test3_5} et \ref{test3_6}). De la même manière, on implémente l'absorption atmosphérique dans le calcul de l'énergie théorique telle que :
 \begin{align}
 E_{si} = \frac{1}{d} \times \prod_{j=0}^{6}{(1-a_j^{\alpha_j})} \times e^{-m.d}, 
 \end{align}
-avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. La température est fixée à $20°C$ et l'humidité relative à $30\%$. On obtient encore une fois pour un million de rayons des erreurs relatives sur l'énergie inférieures à 5\% (voir fig. \ref{test3_8}) et à 0,2\% en norme infinie (voir fig. \ref{test3_9}).
+avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. La température est fixée à 20°C et l'humidité relative à 30\%. On obtient encore une fois pour un million de rayons des erreurs relatives sur l'énergie inférieures à 5\% (voir fig. \ref{test3_8}) et à 0,2\% en norme infinie (voir fig. \ref{test3_9}).
 
 
 \begin{figureth}
@@ -1729,22 +1728,25 @@ avec $m$ le coefficient d'absorption décrit dans la section \ref{sect_absAIr}. 
 	
 \section{Utilisation générique du logiciel}\label{sect_logiciel}
 	
-La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel \gls{cao} et lancer le calcul. Blender permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de Blender est donc complètement modulable et personnalisable. Un \textit{add-on} a donc été développé dans le cadre de ce projet et son rôle est de fournir un maillage adapté à un outil de calcul externe puis de réimporter les résultats dans Blender pour pouvoir les visualiser (voir fig. \ref{logiciel}). Le coeur du calcul s'effectue sur un programme séparé développé en C++ (via Qt creator). L'utilisation d'un langage compilé permet d'optimiser le temps de calcul et le fait d'être un programme séparé permet aux utilisateurs réticent à utiliser Blender pour pouvoir tout de même s'en servir. Il suffit de placer un fichier de maillage au format \gls{obj} dans le répertoire adéquate pour pouvoir lancer le calcul. A noter que le format \gls{obj} permet d'obtenir les informations sur les vertices, les normales et les faces ainsi que les matériaux. D'autres formats de maillages pourront être implémentés dans un développement futur.
+La force de ce développement logiciel est que l'utilisateur n'a pas besoin d'effectuer de manipulations complexes pour obtenir les résultats de calcul d'acoustique de salle. Il pourra travailler directement sur son maillage dans le logiciel de \gls{cao} et lancer le calcul. \textit{Blender} permet de développer des scripts en Python qui peuvent par la suite être installés sous forme de \textit{add-on}. L'interface homme-machine de \textit{Blender} est ainsi complètement modulable et personnalisable. Un \textit{add-on} a donc été développé dans le cadre de ce projet. Son rôle est de fournir un maillage adapté à un outil de calcul externe puis de réimporter les résultats dans \textit{Blender} pour pouvoir les visualiser (voir fig. \ref{logiciel}). Le coeur du calcul s'effectue sur un programme séparé développé en C++ (via \textit{Qt creator}). L'utilisation d'un langage compilé permet d'optimiser le temps de calcul, et, utiliser un logiciel séparé donne la liberté de se servir de n'importe que outil de \gls{cao}. Il suffit de placer un fichier de maillage au format \gls{obj} dans le répertoire adéquate pour pouvoir lancer le calcul. Le format \gls{obj} permet d'obtenir les informations sur les sommets, les normales et les faces ainsi que les matériaux. Le choix s'est porté sur ce format car il est très couramment utilisé et recense toutes les informations requises. Néanmoins, d'autres formats de maillages pourraient être implémentés dans un développement futur. Nous pouvons noter également que, tout comme \textit{Blender}, les applications développées sous \textit{Qt creator} sont multiplateformes ce qui rend l'outil déployable sur n'importe quel ordinateur. Cela est un vrai plus pour la diffusion du logiciel car peu de logiciels commerciaux équivalents présentent cette fonctionnalité. 
 
 \begin{figureth}
 	\includegraphics[width=0.7\linewidth]{images/logiciel}
-	\caption{Communication entre l'add-on Blender et l'outil de calcul.}
+	\caption{Communication entre l'add-on \textit{Blender} et l'outil de calcul.}
 	\label{logiciel}
 \end{figureth}
 
 
-Le add-on développé dans la cadre de ce projet possède quelques boutons (voir fig \ref{add-on}). La première étape consiste à notifier le répertoire de donnée de l'outil de calcul afin de pouvoir exporter le fichier de maillage. En utilisant le bouton "Run", Blender transforme les faces des objets sélectionnés en triangles et les exporte au format \gls{obj}. Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Par lecture de ce fichier, le logiciel stock les sommets, les normales et les coefficients d'absorption des matériaux face par face. Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur par défaut est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans Blender. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure d'un récepteur correspond au rayon de la sphère circonscrite à cet objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources et plusieurs récepteurs. Pour ce qui est des sources, comme la position de départ impact sur la trajectoire des rayons, on peut les traiter les unes après les autres en réalisant la chaine de calcul complète à chaque fois. Les récepteur par contre n'impact pas la trajectoire des rayons celle-ci ne sera calculée qu'une fois pour tous les récepteurs. À chaque combinaison source-récepteur on obtient une réponse impulsionnelle et des sources-images dans l'espace. Il suffit de sélectionner la combinaison pour afficher les résultats. L'add-on Blender permet par ailleurs de mettre à jour uniquement les informations sur les sources et récepteurs sans avoir besoin de recharger tout le maillage. 
+Le \textit{add-on} développé dans la cadre de ce projet possède quelques boutons (voir fig \ref{add-on}). Pour l'utiliser, la première étape consiste à notifier le répertoire de données de l'outil de calcul afin de pouvoir exporter le fichier de maillage. En utilisant le bouton "Run", \textit{Blender} transforme les faces des objets sélectionnés en triangles et les exporte au format \gls{obj}. Dans le fichier de maillage, chaque objet est différencié par un en-tête comprenant son nom. S'en suit les coordonnées de l'ensemble de ses sommets (ou vertices), de ses textures et de ses normales. Ensuite sont regroupées par matériaux, les faces par combinaison de trois vertices, d'une texture et d'une normale. Par lecture de ce fichier, le logiciel stock les sommets, les normales et les coefficients d'absorption des matériaux face par face. Ces coefficients d'absorption sont récupérés dans une base de donnée à l'aide de leur référence (voir section \ref{sect_lectMat}). Celle-ci doit être le premier mot du nom du matériau inscrit dans \textit{Blender} suivi d'un espace.
+
+Par défaut, une source et un récepteur sont positionnés au point [0, 0, 0]. Le rayon de mesure du récepteur par défaut est de 1m. Cependant, l'utilisateur pourra changer ces paramètres en créant des objets source et récepteur dans \textit{Blender}. Pour être reconnus et discriminés du maillage, ces objets doivent respectivement comporter les mots "\textit{source}" et "\textit{listener}" dans leur nom. L'algorithme déterminera alors le centre des objets sources et des récepteurs en calculant la moyenne des coordonnées des sommets. Le rayon de mesure d'un récepteur correspond au rayon de la sphère circonscrite à cet objet "\textit{listener}". Notons qu'il est possible de placer plusieurs sources et plusieurs récepteurs. Pour ce qui est des sources, comme la position de départ impact sur la trajectoire des rayons, elles sont traitées les unes après les autres en réalisant la chaine de calcul complète à chaque fois. Les récepteurs par contre n'impactent pas la trajectoire des rayons, ainsi, celle-ci ne sera calculée qu'une fois pour tous les récepteurs. À chaque combinaison source-récepteur on obtient une réponse impulsionnelle et des sources-images dans l'espace. Il suffit de sélectionner la combinaison pour afficher les résultats. L'\textit{add-on} \textit{Blender} permet par ailleurs de mettre à jour uniquement les informations sur les sources et récepteurs sans avoir besoin de recharger tout le maillage. 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/add-on}
-	\caption{Add-on Blender et assignation des matériaux.}
+	\caption{Add-on \textit{Blender} et assignation des matériaux.}
 	\label{add-on}
 \end{figureth}
-L'utilisateur peut assigner aux différentes parois un type de matériau en faisant apparaitre dans son nom la référence du matériau issue de la base de donnée Odéon (voir section \ref{sect_lectMat}). De nombreux autres paramètres sont configurables grâce à une \gls{ihm} générée par Qt (voir fig. \ref{ihm}). On peut alors paramètrer la température, la pression relative, le nombre de rayons, etc. L'outil permet donc d'afficher la \gls{rir} et d'écouter un fichier audio révérberé grâce au calcul effectué. Il est ensuite possible de visualiser certains résultats directement sur Blender comme les rayons ou les sources-images par exemple (voir fig \ref{import}). Un option permet aussi de projeter les sources-images sur les parois de la salle afin de visualiser de manière plus intuitive d'où proviennent les reflexions (voir fig \ref{projete}). L'utilisateur peut aussi entrer les coordonnées d'une source image pour afficher la trajectoire des rayons l'ayant créé ou bien de sélectionner une plage de la \gls{rir} pour connaitre les sources-images et les rayons concernés à l'origine de ce signal.
+
+De nombreux autres paramètres sont configurables grâce à une \gls{ihm} générée par \textit{Qt creator} (voir fig. \ref{ihm}). On peut alors paramètrer la température, la pression relative, le nombre de rayons, etc. L'outil permet d'afficher la \gls{rir} et d'écouter un fichier audio réverbéré grâce au calcul effectué. Il est ensuite possible de visualiser certains résultats directement sur \textit{Blender} comme les rayons ou les sources-images par exemple (voir fig \ref{import}). Celles-ci sont importées par défaut dans \textit{Blender} comme un plan orienté vers le récepteur. En cliquant sur le bouton "\textit{Spherical SI}" elle sont transformée en sphères de 1m de rayon. Elle sont colorées en fonction de la moyenne de leurs énergies (bleu étant le plus faible et rouge le plus fort). Une option permet aussi de projeter les sources-images sur les parois de la salle afin de visualiser de manière plus intuitive d'où proviennent les réflexions (voir fig \ref{projete}). L'utilisateur peut aussi entrer les coordonnées d'une source image pour afficher la trajectoire des rayons l'ayant créé ou bien sélectionner une plage de la \gls{rir} pour connaitre les sources-images et afficher les rayons à l'origine de ce signal.
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/import}
 	\caption{Affichage des rayons (une itération) et des sources-images (-60dB) dans le théâtre d'Orange.}
@@ -1782,18 +1784,18 @@ L'étude de l'acoustique d'un bâtiment passe par le calcul de différents param
 Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisons pour cela les formules implémentées dans le logiciel Odéon \cite[p.87-92]{odeonManuel}.%Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
 
 \subsection{Réverbérance : \gls{T30}}
-En pratique, le temps de réverbération est en général estimé grace au facteur \gls{T30}. Il correspond au double de l’intervalle de temps permettant de passer de -5 à -35dB sur les courbes d'affaiblissement ce qui ramène bien à 60dB. Ces courbes sont calculées par integration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir}. Dans notre cas, cela revient à faire la somme cumulative des énergies en partant de la fin du signal :
+En pratique, le temps de réverbération est en général estimé grâce au facteur \gls{T30}. Son nom peut porter à confusion mais il s'agit bien d'un indice mesurant le \gls{RT60}. Il se nomme ainsi car il est obtenu en mesurant l’intervalle de temps permettant de passer de -5 à -35dB et en doublant la valeur. Cette extrapolation permet d’éviter les perturbations du signal souvent observées en début et en fin de réponse. Il ne se mesure pas directement sur la réponse impulsionnelle mais sur les courbes d'affaiblissement. Ces courbes sont calculées par intégration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir}. Dans notre cas, cela revient à faire la somme cumulative des énergies en partant de la fin du signal :
 \begin{equation}
 E'(t)=\sum_\infty^t E(\tau)d(-\tau). \footnotemark
 \end{equation}
 \footnotetext{La norme ISO 3382 part 1 donne la formule : $E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau)$.}
-Cette extrapolation permet d’éviter les perturbations du signal souvent observées en début et en fin de réponse. Cependant, il est possible que, si la réponse impulsionnelle s'arrête avant $-35dB$, on ait un résultat tronqué. En échelle logarithmique on effectue donc une régression linéaire de ces courbes de décroissance pour atteindre la valeur seuil demandée.
+ Cependant, il est possible que, si la réponse impulsionnelle s'arrête avant $-35dB$, le résultat soit tronqué. Pour éviter cela, on effectue donc une régression linéaire de ces courbes de décroissance en échelle logarithmique pour atteindre la valeur seuil demandée (typiquement -60dB).
 
 
 \subsection{Early Decay Time : \gls{EDT}}
-Il sera également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30} établir la pente des courbes d'affaiblissement de 0 à -10dB. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en  compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  TR60 en fonction de la position d’écoute dans la salle.  
+Lors des études d'acoustique de salle il également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30} mesurer le temps nécessaire pour passer de 0 à -10dB sur les courbes d'affaiblissement. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle, ce qui est  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  \gls{RT60} en fonction de la position d’écoute dans la salle.  
 
-\subsection{Clarté :\gls{C80}}
+\subsection{Clarté : \gls{C80}}
 La clarté est un paramètre qui vise à exprimer la compréhensibilité en dB tel que :
 %
 \begin{equation}
@@ -1803,18 +1805,18 @@ C_{80} = 10\log{\left( \frac{E_{0\to80}}{E_{80\to\infty}} \right)}.
 $E_{a\to b}$ est la fraction d'énergie sonore comprise dans l'intervalle [a,b] en ms telle que :
 %
 \begin{equation}
-E_{a\to b} = \int_a^b p^2(t) dt. \footnotemark
+E_{a\to b} = \int_a^b E(t) dt. \footnotemark
 \end{equation}
 \citefnt[eq 74, p. 221]{jouhaneau}
 Nous utilisons comme limite utile pour la compréhension de la parole la valeur de 80ms car c'est celle qui est le plus largement utilisée (introduite par Reichardt \cite[p.126]{Reichardt} en 1975). Précisons par ailleurs que ce facteur est subjectif, c'est à dire qu'il sera sensible à l'interpretation de l'auditeur en terme de psychoacoustique. Aussi, selon la répartition des premières réflexions, deux \gls{rir} dont la clarté "calculée" est identique pourra donner une clarté "perçue" différente \cite[p. 226]{jouhaneau}. %Il est d'usage de définir optimale entre -6 et 6 dB. Si la valeur est supérieure à cet intervalle, la salle répondra de manière sèche, et si elle est inférieure, le son direct sera noyé parmi les sons réverbérés et la salle sera dite « confuse » .
 	
-\subsection{Définition : $D_{50}$}
+\subsection{Définition : \gls{D50}}
 Le paramètre \gls{D50} exprime en pourcentage le ratio entre les premières réflexions et le son réverbéré total. Il se calcul par la formule suivante :
 \begin{equation}
 D_{50} = \frac{E_{0\to50}}{E_{0\to\infty}}.
 \end{equation}
 
-On distingue généralement les intervalles décrit dans le tableau \ref{tab_def} \cite[p.59]{acoustique} pour juger de la qualité de la définition sonore dans une salle en fonction de la valeur mesurée ou calculée du critère $D_{50}$. 
+On distingue généralement les intervalles décrit dans le tableau \ref{tab_def} \cite[p.59]{acoustique} pour juger de la qualité de la définition sonore dans une salle en fonction de la valeur du critère \gls{D50}. 
 
 \begin{tableth}
 	\begin{tabular}{| *{7}{c|}}
@@ -1830,23 +1832,24 @@ On distingue généralement les intervalles décrit dans le tableau \ref{tab_def
 
 
 \subsection{Temps central : \gls{Ts}}
-Le paramètre \gls{Ts} est le centre de gravité temporel de la réponse impulsionnelle de la salle c’est à dire le temps pour lequel la moitié de l’énergie sonore  totale  est  reçue.  Il  se  calcule  comme  le  barycentre continu  des  instants  de  réception  du  son  pondéré  par  l’énergie  sonore  en  ces  instants et s'exprime en milli-secondes. \gls{Ts}  donne  un  ordre  d’idée  de  "l’étalement" de  la  réponse  impulsionnelle  c’est  à dire  du  temps moyen que prend un son pour parvenir aux auditeurs.
+Le paramètre \gls{Ts} est le centre de gravité temporel de la réponse impulsionnelle de la salle, c’est-à-dire le temps pour lequel la moitié de l’énergie sonore  totale  est  reçue.  Il  se  calcule  comme  le  barycentre continu  des  instants  de  réception  du  son  pondéré  par  l’énergie  sonore  en  ces  instants et s'exprime en milli-secondes. \gls{Ts}  donne  un  ordre  d’idée  de  "l’étalement" de  la  réponse  impulsionnelle  c’est  à dire  du  temps moyen que prend un son pour parvenir aux auditeurs.
 \begin{equation}
 T_s =  \frac{\sum\limits_{0}^{\infty} tE_t}{E_{0\to\infty}}.
 \end{equation}
 
 \begin{figureth}
 	\includegraphics[width=0.4\linewidth]{images/ts}
-	\caption{Représentation du temps central \gls{Ts} sur le graph de l'énérgie en fonction du temps.}
+	\caption[Représentation du temps central \gls{Ts} sur le graphe de l'énergie en fonction du temps.]{Représentation du temps central \gls{Ts} sur le graphe de l'énergie en fonction du temps \footnotemark.}
 	\label{ts}
 \end{figureth}
+\citefnt[p.58]{acoustique}
 
 \subsection{Sound Pressure Level : \gls{spl}}
 Il est possible de connaitre le gain \gls{G} en (dB) apporté par la réverbération de la salle par la formule :
 \begin{equation}
 G =  10\log{E_{0\to\infty}}.
 \end{equation}
-Cependant, il faut par ailleurs connaitre l'attenuation du son direct avant qu'il n'atteigne l'auditeur afin d'obtenir le niveau réel d'énergie. Pour cela, on retirera un offset calculé tel que l'énergie mesurée à 10m en champs libre soit de -31dB \footnote{ISO 3382-1, 2009}. On a alors :
+Cependant, il faut par ailleurs connaitre l'attenuation du son direct avant qu'il n'atteigne l'auditeur afin d'obtenir le niveau réel d'énergie. Pour cela, on retirera un \textit{offset} calculé tel que l'énergie mesurée à 10m en champs libre soit de -31dB \footnote{ISO 3382-1, 2009}. On a alors :
 \begin{equation}
 E'(t) =  E(t) \frac{ 10^{-1,1}e^{-m.t.v}}{(t.v)^2},
 \end{equation}
@@ -1865,7 +1868,7 @@ Pour déterminer la spaciosité, c'est à dire la largeur apparente de la source
 LF_{80} =   \frac{\sum\limits_{t=5}^{80} E_t \cos^2(\beta_t)}{E_{0\to80}}, 
 \end{equation}
 où $\beta_t$ est l'angle entre l'axe reliant la source-image au récepteur et l'axe reliant les deux oreilles du récepteur. Pour déterminer cet axe on orientera le regard de l'auditeur vers la source.
-Un  LF  important  correspond  à  une  impression  d’espace.  L’auditeur  se  sent  au  centre  du  son,  mais  pour  un  LF  trop  important  il  ne  peut  plus  localiser  la  source  qu’il  écoute. Inversement,  si  ce  critère  est  trop  faible  l’auditeur  se  sent  éloigné  de  la  source,  mis  à  l’écart. 
+Un   \gls{LF80}  important  correspond  à  une  impression  d’espace.  L’auditeur  se  sent  au  centre  du  son,  mais  pour  un   \gls{LF80}  trop  important  il  ne  peut  plus  localiser  la  source  qu’il  écoute. Inversement,  si  ce  critère  est  trop  faible  l’auditeur  se  sent  éloigné  de  la  source,  mis  à  l’écart. 
 %\subsection{Speech Transmission Index : STI}
 %Le \gls{STI} est un indice très interessant notamment pour l'étude de bâtiment où l'on transmet vocalement du texte.
 
@@ -1883,15 +1886,15 @@ Dans cette partie, nous avons présenté les problématiques soulevées par une 
 %\end{figureth}
 %
 
-%Cet outil de calcul acoustique s'interface au logiciel Blender dans la continuité de l'étude présentée dans la partie \ref{part_1} de ce document.
+%Cet outil de calcul acoustique s'interface au logiciel \textit{Blender} dans la continuité de l'étude présentée dans la partie \ref{part_1} de ce document.
 
-Il y a cependant de nombreuses possibilités d'améliorations qui restent à l'étude pour ce type d'outil logiciel. Premièrement, l'écoute du signal sonore pourrait être rendue en trois dimensions grâce à des filtres binauraux. Ceux-ci permettent par l'intermédiaire d'un casque audio de transmettre un signal différent à chacune des deux oreilles afin de donner l'illusion d'espace et de profondeur. Cela est réalisable grâce au calcul de positionnement des sources-images dans l'espace. Tout en restant en position statique, l'auditeur pourra donc orienter son regard selon différentes directions et écouter en temps réel le son changer. Le contrôle de la direction pourrait alors être effectué au clavier ou à l'aide d'un casque avec "\textit{Head Tracker"}. En se plaçant en vu subjective dans le modèle 3D de Blender, on peut faire un premier pas vers l'analyse audiovisuelle immersive. Dans un second temps, dans un contexte ou la réalité virtuelle prend de plus en plus d'importance dans les applications d'aujourd'hui, on pourrait envisager de déplacer l'auditeur en temps réel et permettre ainsi une visite virtuelle complète du bâtiment.
+Il y a cependant de nombreuses possibilités d'améliorations qui restent à l'étude pour ce type d'outil logiciel. Premièrement, l'écoute du signal sonore pourrait être rendue en trois dimensions grâce à des filtres binauraux. Ceux-ci permettent par l'intermédiaire d'un casque audio de transmettre un signal différent à chacune des deux oreilles afin de donner l'illusion d'espace et de profondeur. Cela est réalisable grâce au calcul de positionnement des sources-images dans l'espace. Tout en restant en position statique, l'auditeur pourra donc orienter son regard selon différentes directions et écouter en temps réel le son changer. Le contrôle de la direction pourrait alors être effectué au clavier ou à l'aide d'un casque avec "\textit{Head Tracker"}. En se plaçant en vu subjective dans le modèle 3D de \textit{Blender}, on peut faire un premier pas vers l'analyse audiovisuelle immersive. Dans un second temps, dans un contexte ou la réalité virtuelle prend de plus en plus d'importance dans les applications d'aujourd'hui, on pourrait envisager de déplacer l'auditeur en temps réel et permettre ainsi une visite virtuelle complète du bâtiment.
 
 Du point de vu des résultats d'analyse, il y a de nombreuses améliorations envisageables au niveau graphique. Cela pose certaines questions. Comment visualiser des résultats de calculs acoustiques ? Quelles sont les informations indispensables à recueillir pour un archéologue voulant étudier l'acoustique d'un monument ? 
 
-De la même manière, est-il essentiel d'ajouter les effets de diffraction au modèle ? Si oui, quelle est la meilleur méthode ? Pourrait-on traiter de manière locale certains comportements acoustiques et les insérer ensuite dans le modèle par lancer de rayons ? Typiquement, pourrait-on analyser par méthode de résolution exacte (voir section \ref{sect_resExacte}) le comportement acoustique d'une colonne, ou de tout autre ornement avec un fort niveau de détail, puis de l'incorporer de manière analytique dans l'outil de lancer de rayons ? Ou bien, peut-on résonner avec des résolutions exactes pour les faibles fréquences et conserver notre approche par méthode couplées pour les hautes fréquences ?
+De la même manière, est-il essentiel d'ajouter les effets de diffraction au modèle ? Si oui, quelle est la meilleur méthode ? Pourrait-on traiter de manière locale certains comportements acoustiques et les insérer ensuite dans le modèle par lancer de rayons ? Typiquement, pourrait-on analyser par méthode de résolution aux dérivées partielles (voir section \ref{sect_resExacte}) le comportement acoustique d'une colonne, ou de tout autre ornement avec un fort niveau de détail, puis de l'incorporer de manière analytique dans l'outil de lancer de rayons ? Ou bien, peut-on résonner avec ce type de résolutions pour les faibles fréquences et conserver notre approche par méthode couplées pour les hautes fréquences ?
 
-Pour finir, nous l'avons déjà évoqué dans la section \ref{sect_rayon}, mais il serait également interessant d'utiliser des sources dont la directivité n'est pas uniforme. Cela serait d'ailleurs plus représentatif des cas réels et notamment de l'usage fait à Orange à l'origine du théâtre. Les sons étaient alors émis par des instruments de musique ou par la voix humaine éventuellement amplifiée par un masque.
+Pour finir, il serait également interessant d'utiliser des sources dont la directivité n'est pas uniforme. Cela serait d'ailleurs plus représentatif des cas réels et notamment de l'usage fait à Orange à l'origine du théâtre. Les sons étaient alors émis par des instruments de musique ou par la voix humaine éventuellement amplifiée par un masque.
 
  La prochaine partie vise à présenter concrètement comment s'utilise cet outil dans son état actuel autour du cas d'étude du théâtre antique d'Orange. Ainsi, nous tenterons d'analyser des hypothèses archéologiques précises grâce à l'étude acoustique du bâtiment.
 

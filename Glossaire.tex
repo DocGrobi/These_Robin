@@ -289,30 +289,30 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 	},
 	}		
 		
-%% BLENDER 
+%% \textit{Blender} 
 \newglossaryentry{armature}{
 	name={\scshape{Armature}},
 	text   = {armature},
-	description={Une Armature dans Blender peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, une Armature peut être constituée de nombreux Os. Ces Os peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \footnote{Manuel Blender - Armatures}}
+	description={Une Armature dans \textit{Blender} peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, une Armature peut être constituée de nombreux Os. Ces Os peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \footnote{Manuel \textit{Blender} - Armatures}}
 	}
 
 \newglossaryentry{array}{
-	name={\scshape{Modifier "Array"}},
-	text   = {modifier "Array"},
-	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modifier à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}},
-	first={modifier "Array" qui permet de répéter n fois un objet}
+	name={\scshape{Modificateur "Tableau"}},
+	text   = {modificateur de type "Tableau"},
+	description={Permet de répéter n fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modificateur à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonne de la \gls{porticus isc}},
+	first={Modificateur "Tableau" qui permet de répéter n fois un objet}
 	}
 	
 \newglossaryentry{boolean}{
-	name={\scshape{Modifier "Boolean"}},
-	text   = {modifier "Boolean"},
+	name={\scshape{Modificateur "Booléen"}},
+	text   = {modificateur de type "Booléen"},
 	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes},
-	first={modifier "Boolean" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
+	first={Modificateur "Booléen" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
 
 \newglossaryentry{decimate}{
-	name={\scshape{Modifier "Decimate"}},
-	text   = {modifier "Decimate"},
+	name={\scshape{modificateur "Décimer"}},
+	text   = {modificateur de type "Decimer"},
 	description={Permet de réduire le nombre de vertices ou de faces d'un objet tout en conservant au maximum sa forme.}
 	}	
 	
@@ -331,16 +331,16 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 				
 	
 \newglossaryentry{mirror}{
-	name={\scshape{Modifier "Mirror"}},
-	text   = {modifier "Mirror"},
+	name={\scshape{Modificateur "Miroir"}},
+	text   = {modificateur de type "miroir"},
 	description={Permet de recopier un objet en miroir par rapport à un ou plusieurs axes. Il est utilisé par exemple pour symétriser les marches d'escalier longeant les \gls{aditus}},
-	first={modifier "Mirror" (qui permet de recopier des objets en symétrie)}
+	first={Modificateur "miroir" (qui permet de recopier des objets en symétrie)}
 	}	
 
 \newglossaryentry{modifier}{
-	name={\scshape{Modifier}},
-	text   = {modifier},
-	description={Outil Blender permettant d'affecter automatiquement à des objets des opérations non-destructives},
+	name={\scshape{Modificateur}},
+	text   = {modificateur},
+	description={Outil \textit{Blender} permettant d'affecter automatiquement à des objets des opérations non-destructives},
 	}
 
 
@@ -351,17 +351,17 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 	}
 	
 \newglossaryentry{screw}{
-	name={\scshape{Modifier "Screw"}},
-	text   = {modifier "Screw"},
+	name={\scshape{Modificateur "Visser"}},
+	text   = {modificateur de type "Visser"},
 	description={Permet de faire une extrusion circulaire autour du centre de l'objet. Il est possible de choisir le raffinement de l'extrusion donc le nombre d'extrusion linéaire. Il est utilisé par exemple pour créer la \gls{cavea} à partir de son plan de coupe},
-	first={modifier "Screw" qui permet de faire une extrusion circulaire autour du centre de l'objet}
+	first={Modificateur "Visser" qui permet de faire une extrusion circulaire autour du centre de l'objet}
 	}	
 	
 \newglossaryentry{solidify}{
-	name={\scshape{Modifier "Solidify"}},
-	text   = {modifier "Solidify"},
+	name={\scshape{Modificateur "Solidifier"}},
+	text   = {modificateur de type "Solidifier"},
 	description={Permet de donner une épaisseur paramétrable à un objet plan. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}},
-	first={modifier "Solidify" qui permet de donner une épaisseur paramétrable à un objet plan}
+	first={Modificateur "Solidifier" qui permet de donner une épaisseur paramétrable à un objet plan}
 	}	
 		
 	
@@ -377,7 +377,7 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{aretier}{
 	name={\scshape{Arêtier}},
 	text={arêtier},
-	description={Pièce de charpente ou d'étencheité qui forme l’angle saillant ou l’arête de la croupe d’un toit},
+	description={Pièce de charpente ou d'étanchéité qui forme l’angle saillant ou l’arête de la croupe d’un toit},
 	}	
 	
 \newglossaryentry{ambulacre}{
