@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  7 JUL 2018 02:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  7 JUL 2018 04:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2401,7 +2401,11 @@ Package glossaries Info: Writing glossary file Main.ntn on input line 155.
 
 LaTeX Warning: Label `modCavea' multiply defined.
 
-) (./Part2.aux) (./Part3.aux) (./Annexes.aux))
+) (./Part2.aux) (./Part3.aux
+
+LaTeX Warning: Label `listener10' multiply defined.
+
+) (./Annexes.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -2737,63 +2741,68 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.19994pt too wide) detected at line 68
- []\T1/futs/m/n/12 100
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 69
- []\T1/futs/m/n/12 101
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 70
+Overfull \hbox (1.19994pt too wide) detected at line 64
  []\T1/futs/m/n/12 102
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 72
- []\T1/futs/m/n/12 108
+Overfull \hbox (1.19994pt too wide) detected at line 68
+ []\T1/futs/m/n/12 104
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 73
+Overfull \hbox (1.19994pt too wide) detected at line 69
+ []\T1/futs/m/n/12 105
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 70
+ []\T1/futs/m/n/12 106
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 72
  []\T1/futs/m/n/12 112
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 73
+ []\T1/futs/m/n/12 116
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 89
- []\T1/futs/m/n/12 128
+ []\T1/futs/m/n/12 132
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 90
- []\T1/futs/m/n/12 130
+ []\T1/futs/m/n/12 134
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 92
- []\T1/futs/m/n/12 138
+ []\T1/futs/m/n/12 142
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 93
- []\T1/futs/m/n/12 139
+ []\T1/futs/m/n/12 143
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 94
- []\T1/futs/m/n/12 141
+ []\T1/futs/m/n/12 146
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 95
- []\T1/futs/m/n/12 143
+ []\T1/futs/m/n/12 148
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 96
- []\T1/futs/m/n/12 143
+ []\T1/futs/m/n/12 148
  []
 
 [2])
@@ -2804,6 +2813,37 @@ Overfull \hbox (1.19994pt too wide) detected at line 96
 
 
 ]
+\openout2 = `Intro.aux'.
+
+ (./Intro/Intro.tex
+Overfull \hbox (3.58061pt too wide) in paragraph at lines 10--11
+\T1/futs/m/n/12 et du [][][]CNRS[][] s'as-so-cient à l'[][][]Institut des Scien
+ces du Cal-cul et des Don-nées (ISCD)[][] de l'[][][]UPMC[][]
+ []
+
+
+Overfull \hbox (15.2065pt too wide) in paragraph at lines 12--13
+[]\T1/futs/m/n/12 Cette dé-marche a na-tu-rel-le-ment ou-vert la voie à une étu
+de plus large du théâtre d'Orange.
+ []
+
+)
+Overfull \hbox (7.92613pt too wide) in paragraph at lines 14--76
+[]\T1/futs/m/n/12 Ce do-cu-ment se dé-com-pose en trois par-ties. La pre-mière 
+est dé-diée au théâtre d'Orange,
+ []
+
+
+Overfull \hbox (5.12128pt too wide) in paragraph at lines 14--76
+\T1/futs/m/n/12 à sa pré-sen-ta-tion et à l'ex-pli-ca-tion dé-taillée de sa mo-
+dé-li-sa-tion. La deuxième traite d'acous-
+ []
+
+[1
+
+
+
+]
 \openout2 = `Part1.aux'.
 
  (./Part1/Part1.tex [2
@@ -2811,11 +2851,10 @@ Overfull \hbox (1.19994pt too wide) detected at line 96
 
 
 
-
 ] [3] [4] [5
 
 ]
-<Part1/images/av_deblaiement.png, id=328, 1001.7425pt x 584.1825pt>
+<Part1/images/av_deblaiement.png, id=464, 1001.7425pt x 584.1825pt>
 File: Part1/images/av_deblaiement.png Graphic file (type png)
 
 <use Part1/images/av_deblaiement.png>
@@ -2835,7 +2874,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 22.
 
-<Part1/images/asselineau.jpg, id=332, 1834.855pt x 1110.1475pt>
+<Part1/images/asselineau.jpg, id=468, 1834.855pt x 1110.1475pt>
 File: Part1/images/asselineau.jpg Graphic file (type jpg)
 
 <use Part1/images/asselineau.jpg>
@@ -2865,7 +2904,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 44.
 
-<Part1/images/vuensemble.jpg, id=392, 1445.4pt x 962.59625pt>
+<Part1/images/vuensemble.jpg, id=527, 1445.4pt x 962.59625pt>
 File: Part1/images/vuensemble.jpg Graphic file (type jpg)
 
 <use Part1/images/vuensemble.jpg>
@@ -2899,7 +2938,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <Part1/images/rideau.png, id=482, 570.13pt x 604.2575pt>
+[9] <Part1/images/rideau.png, id=618, 570.13pt x 604.2575pt>
 File: Part1/images/rideau.png Graphic file (type png)
 
 <use Part1/images/rideau.png>
@@ -2935,7 +2974,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./Part1/images/rideau.png>]
-<Part1/images/1erniveau.jpg, id=574, 1591.9475pt x 1187.43625pt>
+<Part1/images/1erniveau.jpg, id=709, 1591.9475pt x 1187.43625pt>
 File: Part1/images/1erniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/1erniveau.jpg>
@@ -2952,7 +2991,7 @@ n/12 , ou [][][]\T1/futs/m/it/12 me-dia ca-vea[][]\T1/futs/m/n/12 , re-pose, da
 ns sa par-tie in-fé-rieure, sur l'[][][]ambulacre[][]
  []
 
-<Part1/images/2emeniveau.jpg, id=593, 1606.0pt x 1179.40625pt>
+<Part1/images/2emeniveau.jpg, id=728, 1606.0pt x 1179.40625pt>
 File: Part1/images/2emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/2emeniveau.jpg>
@@ -2968,7 +3007,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] <Part1/images/3emeniveau.jpg, id=639, 1597.97pt x 1192.455pt>
+[12] <Part1/images/3emeniveau.jpg, id=774, 1597.97pt x 1192.455pt>
 File: Part1/images/3emeniveau.jpg Graphic file (type jpg)
 
 <use Part1/images/3emeniveau.jpg>
@@ -2998,7 +3037,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/it' tried instead on input line 117.
-<Part1/images/couvertureBadie.png, id=666, 369.38pt x 315.67938pt>
+<Part1/images/couvertureBadie.png, id=801, 369.38pt x 315.67938pt>
 File: Part1/images/couvertureBadie.png Graphic file (type png)
 
 <use Part1/images/couvertureBadie.png>
@@ -3020,14 +3059,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
 [15
 
  <./Part1/images/couvertureBadie.png>]
-<Part1/images/toitCaristie.png, id=712, 307.1475pt x 204.26312pt>
+<Part1/images/toitCaristie.png, id=848, 307.1475pt x 204.26312pt>
 File: Part1/images/toitCaristie.png Graphic file (type png)
 
 <use Part1/images/toitCaristie.png>
 Package pdftex.def Info: Part1/images/toitCaristie.png used on input line 136.
 (pdftex.def)             Requested size: 216.1011pt x 143.71565pt.
 
-<Part1/images/toitBadie.png, id=713, 289.08pt x 201.75375pt>
+<Part1/images/toitBadie.png, id=849, 289.08pt x 201.75375pt>
 File: Part1/images/toitBadie.png Graphic file (type png)
 
 <use Part1/images/toitBadie.png>
@@ -3051,14 +3090,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
                                                   \fi \fi 
 l.151 
        <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
-<Part1/images/velumArles.png, id=747, 101.37875pt x 95.35625pt>
+<Part1/images/velumArles.png, id=882, 101.37875pt x 95.35625pt>
 File: Part1/images/velumArles.png Graphic file (type png)
 
 <use Part1/images/velumArles.png>
 Package pdftex.def Info: Part1/images/velumArles.png used on input line 157.
 (pdftex.def)             Requested size: 154.35889pt x 145.19324pt.
 
-<Part1/images/velumCaristie.jpg, id=750, 622.325pt x 448.67625pt>
+<Part1/images/velumCaristie.jpg, id=885, 622.325pt x 448.67625pt>
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
@@ -3100,28 +3139,28 @@ Overfull \hbox (6.34222pt too wide) in paragraph at lines 198--199
 f-fec-ti-ve-ment, jus-qu'à ces quelques
  []
 
-[20] [21] <Part1/images/array.jpeg, id=850, 992.70876pt x 573.14125pt>
+[20] [21] <Part1/images/array.jpeg, id=986, 992.70876pt x 573.14125pt>
 File: Part1/images/array.jpeg Graphic file (type jpg)
 
 <use Part1/images/array.jpeg>
 Package pdftex.def Info: Part1/images/array.jpeg used on input line 239.
 (pdftex.def)             Requested size: 198.45662pt x 114.57375pt.
 
-<Part1/images/boolean.png, id=853, 689.57625pt x 520.94624pt>
+<Part1/images/boolean.png, id=989, 689.57625pt x 520.94624pt>
 File: Part1/images/boolean.png Graphic file (type png)
 
 <use Part1/images/boolean.png>
 Package pdftex.def Info: Part1/images/boolean.png used on input line 246.
 (pdftex.def)             Requested size: 198.45662pt x 149.92589pt.
 
-<Part1/images/screw.jpeg, id=856, 964.60374pt x 304.13625pt>
+<Part1/images/screw.jpeg, id=992, 964.60374pt x 304.13625pt>
 File: Part1/images/screw.jpeg Graphic file (type jpg)
 
 <use Part1/images/screw.jpeg>
 Package pdftex.def Info: Part1/images/screw.jpeg used on input line 251.
 (pdftex.def)             Requested size: 198.45662pt x 62.57108pt.
 
-<Part1/images/solidify.jpeg, id=859, 868.24374pt x 236.885pt>
+<Part1/images/solidify.jpeg, id=995, 868.24374pt x 236.885pt>
 File: Part1/images/solidify.jpeg Graphic file (type jpg)
 
 <use Part1/images/solidify.jpeg>
@@ -3136,7 +3175,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 269.
 
-<Part1/images/modCavea.png, id=885, 1094.0875pt x 771.88374pt>
+<Part1/images/modCavea.png, id=1020, 1094.0875pt x 771.88374pt>
 File: Part1/images/modCavea.png Graphic file (type png)
 
 <use Part1/images/modCavea.png>
@@ -3161,7 +3200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 346.
 
-<Part1/images/modMaenianum.png, id=1035, 998.73125pt x 578.16pt>
+<Part1/images/modMaenianum.png, id=1170, 998.73125pt x 578.16pt>
 File: Part1/images/modMaenianum.png Graphic file (type png)
 
 <use Part1/images/modMaenianum.png>
@@ -3172,14 +3211,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 [28 <./Part1/images/modMaenianum.png>]
-<Part1/images/gradinCoupe.png, id=1083, 510.90875pt x 409.53pt>
+<Part1/images/gradinCoupe.png, id=1218, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
 Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 362.
 (pdftex.def)             Requested size: 189.03328pt x 151.52371pt.
 
-<Part1/images/escaliers.png, id=1088, 910.40125pt x 744.7825pt>
+<Part1/images/escaliers.png, id=1223, 910.40125pt x 744.7825pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
@@ -3200,7 +3239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--372
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 379.
 
-<Part1/images/modAditus.png, id=1130, 984.67876pt x 782.925pt>
+<Part1/images/modAditus.png, id=1265, 984.67876pt x 782.925pt>
 File: Part1/images/modAditus.png Graphic file (type png)
 
 <use Part1/images/modAditus.png>
@@ -3211,7 +3250,7 @@ Package pdftex.def Info: Part1/images/modAditus.png used on input line 382.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 393.
 
-<Part1/images/modMur2.png, id=1194, 957.5775pt x 339.2675pt>
+<Part1/images/modMur2.png, id=1329, 957.5775pt x 339.2675pt>
 File: Part1/images/modMur2.png Graphic file (type png)
 
 <use Part1/images/modMur2.png>
@@ -3230,14 +3269,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 413.
 
-<Part1/images/modOrchestre.png, id=1299, 1097.09875pt x 523.9575pt>
+<Part1/images/modOrchestre.png, id=1435, 1097.09875pt x 523.9575pt>
 File: Part1/images/modOrchestre.png Graphic file (type png)
 
 <use Part1/images/modOrchestre.png>
 Package pdftex.def Info: Part1/images/modOrchestre.png used on input line 416.
 (pdftex.def)             Requested size: 441.01773pt x 210.61862pt.
  [34 <./Part1/images/modOrchestre.png>]
-<Part1/images/modCouvertures.png, id=1354, 1151.30125pt x 600.2425pt>
+<Part1/images/modCouvertures.png, id=1489, 1151.30125pt x 600.2425pt>
 File: Part1/images/modCouvertures.png Graphic file (type png)
 
 <use Part1/images/modCouvertures.png>
@@ -3249,7 +3288,7 @@ Package pdftex.def Info: Part1/images/modCouvertures.png used on input line 429
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 438.
 
-<Part1/images/modPorticus.png, id=1391, 978.65625pt x 578.16pt>
+<Part1/images/modPorticus.png, id=1526, 978.65625pt x 578.16pt>
 File: Part1/images/modPorticus.png Graphic file (type png)
 
 <use Part1/images/modPorticus.png>
@@ -3261,14 +3300,14 @@ Package pdftex.def Info: Part1/images/modPorticus.png used on input line 441.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 494.
 
-<Part1/images/parodos.png, id=1467, 372.39125pt x 331.2375pt>
+<Part1/images/parodos.png, id=1602, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
 Package pdftex.def Info: Part1/images/parodos.png used on input line 501.
 (pdftex.def)             Requested size: 216.1011pt x 192.22401pt.
 
-<Part1/images/acces10emegradin.png, id=1474, 863.225pt x 917.4275pt>
+<Part1/images/acces10emegradin.png, id=1609, 863.225pt x 917.4275pt>
 File: Part1/images/acces10emegradin.png Graphic file (type png)
 
 <use Part1/images/acces10emegradin.png>
@@ -3276,7 +3315,7 @@ Package pdftex.def Info: Part1/images/acces10emegradin.png used on input line 5
 06.
 (pdftex.def)             Requested size: 176.40439pt x 187.47191pt.
 
-<Part1/images/modColline.png, id=1481, 720.6925pt x 494.84875pt>
+<Part1/images/modColline.png, id=1616, 720.6925pt x 494.84875pt>
 File: Part1/images/modColline.png Graphic file (type png)
 
 <use Part1/images/modColline.png>
@@ -3305,21 +3344,21 @@ e maillage n'est fait que de formes
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 562.
 
-<Part1/images/modVelum.png, id=1525, 986.68625pt x 708.6475pt>
+<Part1/images/modVelum.png, id=1660, 986.68625pt x 708.6475pt>
 File: Part1/images/modVelum.png Graphic file (type png)
 
 <use Part1/images/modVelum.png>
 Package pdftex.def Info: Part1/images/modVelum.png used on input line 566.
 (pdftex.def)             Requested size: 441.01773pt x 316.74744pt.
  [42 <./Part1/images/modVelum.png>] [43]
-<Part1/images/velum2.png, id=1586, 501.875pt x 225.84375pt>
+<Part1/images/velum2.png, id=1721, 501.875pt x 225.84375pt>
 File: Part1/images/velum2.png Graphic file (type png)
 
 <use Part1/images/velum2.png>
 Package pdftex.def Info: Part1/images/velum2.png used on input line 611.
 (pdftex.def)             Requested size: 216.1011pt x 97.2453pt.
 
-<Part1/images/dessinvelum.png, id=1589, 703.62875pt x 294.09875pt>
+<Part1/images/dessinvelum.png, id=1724, 703.62875pt x 294.09875pt>
 File: Part1/images/dessinvelum.png Graphic file (type png)
 
 <use Part1/images/dessinvelum.png>
@@ -3330,14 +3369,14 @@ Package pdftex.def Info: Part1/images/dessinvelum.png used on input line 617.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 632.
 
-<Part1/images/modPublic.png, id=1613, 1182.4175pt x 836.12375pt>
+<Part1/images/modPublic.png, id=1748, 1182.4175pt x 836.12375pt>
 File: Part1/images/modPublic.png Graphic file (type png)
 
 <use Part1/images/modPublic.png>
 Package pdftex.def Info: Part1/images/modPublic.png used on input line 637.
 (pdftex.def)             Requested size: 441.01773pt x 311.84879pt.
  [45 <./Part1/images/modPublic.png>]
-<Part1/images/modDecor.png, id=1630, 1044.90375pt x 312.16624pt>
+<Part1/images/modDecor.png, id=1765, 1044.90375pt x 312.16624pt>
 File: Part1/images/modDecor.png Graphic file (type png)
 
 <use Part1/images/modDecor.png>
@@ -3361,14 +3400,14 @@ range a ou-vert les voies d'autres
  []
 
 [46 <./Part1/images/modDecor.png>]
-<Part1/images/graphique1.png, id=1651, 1245.65375pt x 697.60625pt>
+<Part1/images/graphique1.png, id=1784, 1245.65375pt x 697.60625pt>
 File: Part1/images/graphique1.png Graphic file (type png)
 
 <use Part1/images/graphique1.png>
 Package pdftex.def Info: Part1/images/graphique1.png used on input line 667.
 (pdftex.def)             Requested size: 441.01773pt x 246.98666pt.
 
-<Part1/images/graphique2.png, id=1654, 1241.63875pt x 649.42625pt>
+<Part1/images/graphique2.png, id=1787, 1241.63875pt x 649.42625pt>
 File: Part1/images/graphique2.png Graphic file (type png)
 
 <use Part1/images/graphique2.png>
@@ -3393,11 +3432,1239 @@ Underfull \hbox (badness 1478) in paragraph at lines 94--94
 héâtres d'afrique pro-con-su-laire^^T, \T1/futs/m/it/12 Aix-en-
  []
 
-[51])) [52] [152
+[51])) [52]
+\openout2 = `Part2.aux'.
+
+ (./Part2/Part2.tex [53
 
 
 
 
+] [54]
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Overfull \hbox (12.15335pt too wide) in paragraph at lines 14--15
+\T1/futs/m/n/12 tiques que ce der-nier per-met de cal-cu-ler. Cette par-tie pré
+-sente donc l'ou-til dans son contexte
+ []
+
+[55
+
+] [56]
+Chapitre 4.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc9) [57
+
+]
+<Part2/images/schema_absorption.png, id=1936, 331.2375pt x 474.77374pt>
+File: Part2/images/schema_absorption.png Graphic file (type png)
+
+<use Part2/images/schema_absorption.png>
+Package pdftex.def Info: Part2/images/schema_absorption.png used on input line 
+31.
+(pdftex.def)             Requested size: 220.50887pt x 316.06107pt.
+ [58 <./Part2/images/schema_absorption.png>] <Part2/images/RIR_schematique.png,
+ id=1949, 554.57187pt x 405.515pt>
+File: Part2/images/RIR_schematique.png Graphic file (type png)
+
+<use Part2/images/RIR_schematique.png>
+Package pdftex.def Info: Part2/images/RIR_schematique.png used on input line 41
+.
+(pdftex.def)             Requested size: 308.71106pt x 225.73793pt.
+ [59 <./Part2/images/RIR_schematique.png>]
+
+LaTeX Warning: Command \' invalid in math mode on input line 68.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 75.
+
+
+Overfull \hbox (1.44257pt too wide) in paragraph at lines 84--85
+[]\T1/futs/m/n/12 L'acoustique suit le pre-mier prin-cipe de la ther-mo-dy-na-m
+ique se-lon le-quel il y a conser-
+ []
+
+<Part2/images/flux.png, id=1976, 401.5pt x 401.5pt>
+File: Part2/images/flux.png Graphic file (type png)
+
+<use Part2/images/flux.png>
+Package pdftex.def Info: Part2/images/flux.png used on input line 96.
+(pdftex.def)             Requested size: 220.50887pt x 220.51323pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60] [61 <./Part2/images/flux.png>]
+Overfull \hbox (37.74614pt too wide) detected at line 152
+\FML/futm/m/it/12 m[] \T1/futs/m/n/12 = 8\FML/futm/m/it/12 ; \T1/futs/m/n/12 68
+6 \FMS/futm/m/n/12 ^^B \FML/futm/m/it/12 f[] \FMS/futm/m/n/12 ^^B [] \FML/futm/
+m/it/12 :
+ []
+
+<Part2/images/absorptionter.png, id=2022, 605.26125pt x 263.98625pt>
+File: Part2/images/absorptionter.png Graphic file (type png)
+
+<use Part2/images/absorptionter.png>
+Package pdftex.def Info: Part2/images/absorptionter.png used on input line 165.
+
+(pdftex.def)             Requested size: 352.81552pt x 153.88148pt.
+
+<Part2/images/absorption.png, id=2026, 544.0325pt x 242.9075pt>
+File: Part2/images/absorption.png Graphic file (type png)
+
+<use Part2/images/absorption.png>
+Package pdftex.def Info: Part2/images/absorption.png used on input line 183.
+(pdftex.def)             Requested size: 352.81552pt x 157.53587pt.
+
+<Part2/images/absorptionbis.png, id=2027, 518.93875pt x 289.08pt>
+File: Part2/images/absorptionbis.png Graphic file (type png)
+
+<use Part2/images/absorptionbis.png>
+Package pdftex.def Info: Part2/images/absorptionbis.png used on input line 187.
+
+(pdftex.def)             Requested size: 352.81552pt x 196.54973pt.
+ [62 <./Part2/images/absorptionter.png>]
+Underfull \vbox (badness 1616) has occurred while \output is active []
+
+ [63 <./Part2/images/absorption.png> <./Part2/images/absorptionbis.png>] [64]
+Overfull \hbox (12.13647pt too wide) in paragraph at lines 260--261
+[]\T1/futs/m/n/12 les fluc-tua-tions dues aux dé-pla-ce-ments d'air sont faible
+s de-vant ces va-leurs moyennes. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Overfull \hbox (0.47612pt too wide) in paragraph at lines 274--275
+\T1/futs/m/n/12 condi-tions ini-tiales. Elles re-pré-sentent res-pec-ti-ve-ment
+ une onde se pro-pa-geant sans
+ []
+
+[65] <Part2/images/green.png, id=2120, 491.8375pt x 327.2225pt>
+File: Part2/images/green.png Graphic file (type png)
+
+<use Part2/images/green.png>
+Package pdftex.def Info: Part2/images/green.png used on input line 312.
+(pdftex.def)             Requested size: 264.61333pt x 176.0534pt.
+ [66 <./Part2/images/green.png>]
+<Part2/images/geometrique.png, id=2153, 654.445pt x 440.64626pt>
+File: Part2/images/geometrique.png Graphic file (type png)
+
+<use Part2/images/geometrique.png>
+Package pdftex.def Info: Part2/images/geometrique.png used on input line 383.
+(pdftex.def)             Requested size: 352.81552pt x 237.55545pt.
+ [67 <./Part2/images/geometrique.png>]
+Overfull \hbox (9.33333pt too wide) in paragraph at lines 391--393
+\T1/futs/m/n/12 proche spa-tia-li-sée des ré-flexions so-nores. Cette mé-thode 
+est ba-sée sur la créa-tion de sources
+ []
+
+<Part2/images/constellations.png, id=2192, 656.4525pt x 529.98pt>
+File: Part2/images/constellations.png Graphic file (type png)
+
+<use Part2/images/constellations.png>
+Package pdftex.def Info: Part2/images/constellations.png used on input line 396
+.
+(pdftex.def)             Requested size: 441.01773pt x 356.05516pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[68] [69 <./Part2/images/constellations.png>] [70
+
+]
+Chapitre 5.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc10) [71] <Part2/images/BEM.png, id=2242, 531.48563pt x 112.42pt>
+File: Part2/images/BEM.png Graphic file (type png)
+
+<use Part2/images/BEM.png>
+Package pdftex.def Info: Part2/images/BEM.png used on input line 449.
+(pdftex.def)             Requested size: 441.01773pt x 93.28627pt.
+ [72]
+<Part2/images/schema_propagation.png, id=2260, 409.02812pt x 368.87813pt>
+File: Part2/images/schema_propagation.png Graphic file (type png)
+
+<use Part2/images/schema_propagation.png>
+Package pdftex.def Info: Part2/images/schema_propagation.png used on input line
+ 464.
+(pdftex.def)             Requested size: 220.50887pt x 198.86475pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[73 <./Part2/images/BEM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 495--497
+
+ []
+
+<Part2/images/schema_rayon.png, id=2271, 372.39125pt x 226.8475pt>
+File: Part2/images/schema_rayon.png Graphic file (type png)
+
+<use Part2/images/schema_rayon.png>
+Package pdftex.def Info: Part2/images/schema_rayon.png used on input line 501.
+(pdftex.def)             Requested size: 308.71106pt x 188.06184pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[74 <./Part2/images/schema_propagation.png>] [75 <./Part2/images/schema_rayon.p
+ng>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 555.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 555.
+ <Part2/images/normales.png, id=2306, 1279.78125pt x 751.80875pt>
+File: Part2/images/normales.png Graphic file (type png)
+
+<use Part2/images/normales.png>
+Package pdftex.def Info: Part2/images/normales.png used on input line 594.
+(pdftex.def)             Requested size: 352.81552pt x 207.25853pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (0.19467pt too wide) in paragraph at lines 601--602
+[]\T1/futs/m/n/12 Il existe de nom-breuses bases de don-nées re-cen-sant ces co
+-ef-fi-cients d'ab-sorp-tion pour
+ []
+
+[76]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 608.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 608.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 608.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 608.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 608.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 608.
+
+Underfull \hbox (badness 7379) in paragraph at lines 610--610
+[]|\T1/futs/m/n/10 Nom du ma-té-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
+[]|\T1/futs/m/n/10 Concrete block,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--619
+[]|\T1/futs/m/n/10 Hollow woo-den
+ []
+
+[77pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
+128}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.637 
+       <./Part2/images/normales.png>]
+<Part2/images/boiteenglobante.png, id=2336, 735.74875pt x 664.4825pt>
+File: Part2/images/boiteenglobante.png Graphic file (type png)
+
+<use Part2/images/boiteenglobante.png>
+Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 64
+0.
+(pdftex.def)             Requested size: 242.5611pt x 219.06697pt.
+
+<Part2/images/boiteenglobante2.png, id=2337, 551.05875pt x 792.9625pt>
+File: Part2/images/boiteenglobante2.png Graphic file (type png)
+
+<use Part2/images/boiteenglobante2.png>
+Package pdftex.def Info: Part2/images/boiteenglobante2.png used on input line 6
+46.
+(pdftex.def)             Requested size: 154.35889pt x 222.11267pt.
+
+<Part2/images/icosphere.png, id=2340, 817.0525pt x 759.83875pt>
+File: Part2/images/icosphere.png Graphic file (type png)
+
+<use Part2/images/icosphere.png>
+Package pdftex.def Info: Part2/images/icosphere.png used on input line 663.
+(pdftex.def)             Requested size: 198.45662pt x 184.55632pt.
+
+<Part2/images/fibonacci.png, id=2341, 451.6875pt x 464.73625pt>
+File: Part2/images/fibonacci.png Graphic file (type png)
+
+<use Part2/images/fibonacci.png>
+Package pdftex.def Info: Part2/images/fibonacci.png used on input line 669.
+(pdftex.def)             Requested size: 176.40439pt x 181.5017pt.
+
+Underfull \hbox (badness 1496) in paragraph at lines 670--670
+[]\T1/futs/m/n/10.95 (b) |Som-mets d'une sphère de Fi-bo-
+ []
+
+[78 <./Part2/images/boiteenglobante.png> <./Part2/images/boiteenglobante2.png>]
+[79 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>]
+<Part2/images/DiagRay.jpeg, id=2381, 1024.82875pt x 932.48375pt>
+File: Part2/images/DiagRay.jpeg Graphic file (type jpg)
+
+<use Part2/images/DiagRay.jpeg>
+Package pdftex.def Info: Part2/images/DiagRay.jpeg used on input line 827.
+(pdftex.def)             Requested size: 308.71106pt x 280.88556pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[80] <Part2/images/rayRefl.png, id=2408, 458.71375pt x 355.3275pt>
+File: Part2/images/rayRefl.png Graphic file (type png)
+
+<use Part2/images/rayRefl.png>
+Package pdftex.def Info: Part2/images/rayRefl.png used on input line 846.
+(pdftex.def)             Requested size: 264.61333pt x 204.98402pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[81 <./Part2/images/DiagRay.jpeg>] [82 <./Part2/images/rayRefl.png>]
+<Part2/images/touche.png, id=2433, 522.95375pt x 334.24875pt>
+File: Part2/images/touche.png Graphic file (type png)
+
+<use Part2/images/touche.png>
+Package pdftex.def Info: Part2/images/touche.png used on input line 960.
+(pdftex.def)             Requested size: 242.5611pt x 155.03644pt.
+
+<Part2/images/schema_SI.png, id=2434, 189.20688pt x 207.27437pt>
+File: Part2/images/schema_SI.png Graphic file (type png)
+
+<use Part2/images/schema_SI.png>
+Package pdftex.def Info: Part2/images/schema_SI.png used on input line 966.
+(pdftex.def)             Requested size: 154.35889pt x 169.09947pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
+[]\T1/futs/m/sc/10.95 Figure \T1/futs/m/n/10.95 5.9 ^^U |Pro-ces-sus de créa-ti
+on d'une source-image : Vé-ri-fi-ca-tion d'in-ter-sec-tion
+ []
+
+<Part2/images/DiagSi.png, id=2435, 1192.455pt x 1796.7125pt>
+File: Part2/images/DiagSi.png Graphic file (type png)
+
+<use Part2/images/DiagSi.png>
+Package pdftex.def Info: Part2/images/DiagSi.png used on input line 975.
+(pdftex.def)             Requested size: 352.81552pt x 531.58829pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[83] [84 <./Part2/images/touche.png> <./Part2/images/schema_SI.png>] [85 <./Par
+t2/images/DiagSi.png>] <Part2/images/rir.png, id=2458, 662.475pt x 313.17pt>
+File: Part2/images/rir.png Graphic file (type png)
+
+<use Part2/images/rir.png>
+Package pdftex.def Info: Part2/images/rir.png used on input line 1007.
+(pdftex.def)             Requested size: 396.91325pt x 187.63106pt.
+ [86
+
+ <./Part2/images/rir.png>]
+<Part2/images/DiagTdS.png, id=2479, 840.13875pt x 499.8675pt>
+File: Part2/images/DiagTdS.png Graphic file (type png)
+
+<use Part2/images/DiagTdS.png>
+Package pdftex.def Info: Part2/images/DiagTdS.png used on input line 1037.
+(pdftex.def)             Requested size: 441.01773pt x 262.39622pt.
+ [87 <./Part2/images/DiagTdS.png>]
+<Part2/images/filtres.png, id=2502, 661.47125pt x 444.66125pt>
+File: Part2/images/filtres.png Graphic file (type png)
+
+<use Part2/images/filtres.png>
+Package pdftex.def Info: Part2/images/filtres.png used on input line 1046.
+(pdftex.def)             Requested size: 396.91325pt x 266.81236pt.
+ [88 <./Part2/images/filtres.png>]
+Chapitre 6.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1065.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc11) [89
+
+]
+Overfull \hbox (5.93806pt too wide) in paragraph at lines 1077--1078
+\T1/futs/m/n/12 Nous al-lons ana-ly-ser la com-plexité de ces dif-fé-rentes éta
+pes. Pour cela, on note $\FML/futm/m/it/12 N$ \T1/futs/m/n/12 le nombre
+ []
+
+<Part2/images/complexite00.png, id=2528, 681.54625pt x 400.49625pt>
+File: Part2/images/complexite00.png Graphic file (type png)
+
+<use Part2/images/complexite00.png>
+Package pdftex.def Info: Part2/images/complexite00.png used on input line 1083.
+
+(pdftex.def)             Requested size: 352.81552pt x 207.32425pt.
+ [90 <./Part2/images/complexite00.png>]
+<Part2/images/complexite0.png, id=2542, 798.985pt x 286.06876pt>
+File: Part2/images/complexite0.png Graphic file (type png)
+
+<use Part2/images/complexite0.png>
+Package pdftex.def Info: Part2/images/complexite0.png used on input line 1098.
+(pdftex.def)             Requested size: 441.01773pt x 157.90138pt.
+
+Overfull \hbox (1.1192pt too wide) in paragraph at lines 1115--1116
+[]\T1/futs/m/n/12 Comme nous l'avons vu pré-cé-dem-ment, les maillages que nous
+ de-vons trai-ter peuvent
+ []
+
+<Part2/images/octree.png, id=2555, 1204.5pt x 691.58376pt>
+File: Part2/images/octree.png Graphic file (type png)
+
+<use Part2/images/octree.png>
+Package pdftex.def Info: Part2/images/octree.png used on input line 1120.
+(pdftex.def)             Requested size: 264.61333pt x 151.92728pt.
+ [91 <./Part2/images/complexite0.png>]
+Overfull \hbox (0.7389pt too wide) in paragraph at lines 1126--1127
+\T1/futs/m/n/12 boîte-mère est alors sub-di-vi-sée pour créer huit "boîtes-fill
+es", de taille iden-tique, qui elles-
+ []
+
+<Part2/images/octreeSuzanne.png, id=2574, 552.0625pt x 469.755pt>
+File: Part2/images/octreeSuzanne.png Graphic file (type png)
+
+<use Part2/images/octreeSuzanne.png>
+Package pdftex.def Info: Part2/images/octreeSuzanne.png used on input line 1129
+.
+(pdftex.def)             Requested size: 264.61333pt x 225.17162pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[92 <./Part2/images/octree.png>] [93 <./Part2/images/octreeSuzanne.png>]
+<Part2/images/DiagOctree.jpg, id=2605, 990.70125pt x 922.44624pt>
+File: Part2/images/DiagOctree.jpg Graphic file (type jpg)
+
+<use Part2/images/DiagOctree.jpg>
+Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 1208.
+(pdftex.def)             Requested size: 308.71106pt x 287.43329pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[94] <Part2/images/AABB.png, id=2630, 367.87437pt x 297.61188pt>
+File: Part2/images/AABB.png Graphic file (type png)
+
+<use Part2/images/AABB.png>
+Package pdftex.def Info: Part2/images/AABB.png used on input line 1230.
+(pdftex.def)             Requested size: 198.45662pt x 160.55815pt.
+
+<Part2/images/AABB2.png, id=2631, 366.36874pt x 298.11375pt>
+File: Part2/images/AABB2.png Graphic file (type png)
+
+<use Part2/images/AABB2.png>
+Package pdftex.def Info: Part2/images/AABB2.png used on input line 1236.
+(pdftex.def)             Requested size: 198.45662pt x 161.48395pt.
+
+Overfull \hbox (35.92572pt too wide) in paragraph at lines 1226--1245
+\T1/futs/m/n/12 tant la boîte de type [][][]AABB[][] en uti-li-sant les va-leur
+s constantes [$\FML/futm/m/it/12 X[]\T1/futs/m/n/12 ; \FML/futm/m/it/12 X[]\T1/
+futs/m/n/12 ; \FML/futm/m/it/12 Y[]\T1/futs/m/n/12 ; \FML/futm/m/it/12 Y[]\T1/f
+uts/m/n/12 ; \FML/futm/m/it/12 Z[]\T1/futs/m/n/12 ; \FML/futm/m/it/12 Z[]$\T1/f
+uts/m/n/12 ].
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[95 <./Part2/images/DiagOctree.jpg>] [96 <./Part2/images/AABB.png> <./Part2/ima
+ges/AABB2.png>] <Part2/images/complexite.png, id=2669, 794.97pt x 390.45876pt>
+File: Part2/images/complexite.png Graphic file (type png)
+
+<use Part2/images/complexite.png>
+Package pdftex.def Info: Part2/images/complexite.png used on input line 1269.
+(pdftex.def)             Requested size: 441.01773pt x 216.6178pt.
+ [97 <./Part2/images/complexite.png>]
+<Part2/images/complexite1.png, id=2681, 536.50438pt x 339.2675pt>
+File: Part2/images/complexite1.png Graphic file (type png)
+
+<use Part2/images/complexite1.png>
+Package pdftex.def Info: Part2/images/complexite1.png used on input line 1327.
+(pdftex.def)             Requested size: 441.01773pt x 278.88448pt.
+ [98
+
+ <./Part2/images/complexite1.png>]
+<Part2/images/complexite2.png, id=2689, 542.025pt x 262.9825pt>
+File: Part2/images/complexite2.png Graphic file (type png)
+
+<use Part2/images/complexite2.png>
+Package pdftex.def Info: Part2/images/complexite2.png used on input line 1366.
+(pdftex.def)             Requested size: 441.01773pt x 213.98172pt.
+ [99
+
+ <./Part2/images/complexite2.png>]
+[100
+
+]
+Chapitre 7.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc12
+Overfull \hbox (1.98195pt too wide) detected at line 1
+ []\T1/futs/b/n/10.95 102
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 2
+ []\T1/futs/m/n/10.95 102
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 3
+ []\T1/futs/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 4
+ []\T1/futs/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 5
+ []\T1/futs/b/n/10.95 104
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 6
+ []\T1/futs/b/n/10.95 105
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 7
+ []\T1/futs/b/n/10.95 106
+ []
+
+) [101] <Part2/images/test0.png, id=2717, 648.4225pt x 621.32124pt>
+File: Part2/images/test0.png Graphic file (type png)
+
+<use Part2/images/test0.png>
+Package pdftex.def Info: Part2/images/test0.png used on input line 1487.
+(pdftex.def)             Requested size: 220.50887pt x 211.29382pt.
+
+<Part2/images/testBE.png, id=2719, 440.64626pt x 452.69125pt>
+File: Part2/images/testBE.png Graphic file (type png)
+
+<use Part2/images/testBE.png>
+Package pdftex.def Info: Part2/images/testBE.png used on input line 1497.
+(pdftex.def)             Requested size: 198.45662pt x 203.88187pt.
+
+<Part2/images/testBEbis.png, id=2720, 386.44376pt x 346.29375pt>
+File: Part2/images/testBEbis.png Graphic file (type png)
+
+<use Part2/images/testBEbis.png>
+Package pdftex.def Info: Part2/images/testBEbis.png used on input line 1503.
+(pdftex.def)             Requested size: 198.45662pt x 177.83864pt.
+
+Underfull \vbox (badness 2057) has occurred while \output is active []
+
+ [102 <./Part2/images/test0.png>]
+<Part2/images/testBeam.png, id=2728, 691.58376pt x 479.7925pt>
+File: Part2/images/testBeam.png Graphic file (type png)
+
+<use Part2/images/testBeam.png>
+Package pdftex.def Info: Part2/images/testBeam.png used on input line 1515.
+(pdftex.def)             Requested size: 198.45662pt x 137.67937pt.
+
+<Part2/images/testBeam2.png, id=2729, 866.23625pt x 661.47125pt>
+File: Part2/images/testBeam2.png Graphic file (type png)
+
+<use Part2/images/testBeam2.png>
+Package pdftex.def Info: Part2/images/testBeam2.png used on input line 1521.
+(pdftex.def)             Requested size: 198.45662pt x 151.53969pt.
+
+Underfull \hbox (badness 7649) in paragraph at lines 1522--1522
+[]\T1/futs/m/n/10.95 (b) |Pro-pa-ga-tion des rayons de-puis les
+ []
+
+<Part2/images/test1.png, id=2730, 669.50125pt x 422.57875pt>
+File: Part2/images/test1.png Graphic file (type png)
+
+<use Part2/images/test1.png>
+Package pdftex.def Info: Part2/images/test1.png used on input line 1537.
+(pdftex.def)             Requested size: 352.81552pt x 222.70186pt.
+ [103 <./Part2/images/testBE.png> <./Part2/images/testBEbis.png> <./Part2/image
+s/testBeam.png> <./Part2/images/testBeam2.png>]
+[104 <./Part2/images/test1.png>]
+<Part2/images/test2RIR.png, id=2753, 414.54875pt x 309.155pt>
+File: Part2/images/test2RIR.png Graphic file (type png)
+
+<use Part2/images/test2RIR.png>
+Package pdftex.def Info: Part2/images/test2RIR.png used on input line 1568.
+(pdftex.def)             Requested size: 198.45662pt x 148.00116pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1569
+[]\T1/futs/m/n/10.95 (a) |Ré-ponse im-pul-sion-nelle dans une
+ []
+
+<Part2/images/test2SI.png, id=2754, 1001.7425pt x 880.28876pt>
+File: Part2/images/test2SI.png Graphic file (type png)
+
+<use Part2/images/test2SI.png>
+Package pdftex.def Info: Part2/images/test2SI.png used on input line 1574.
+(pdftex.def)             Requested size: 198.45662pt x 174.38905pt.
+
+<Part2/images/test2absair.png, id=2756, 830.10126pt x 307.1475pt>
+File: Part2/images/test2absair.png Graphic file (type png)
+
+<use Part2/images/test2absair.png>
+Package pdftex.def Info: Part2/images/test2absair.png used on input line 1586.
+(pdftex.def)             Requested size: 441.01773pt x 163.18108pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[105 <./Part2/images/test2RIR.png> <./Part2/images/test2SI.png>]
+<Part2/images/test3_0.png, id=2769, 914.41624pt x 682.55pt>
+File: Part2/images/test3_0.png Graphic file (type png)
+
+<use Part2/images/test3_0.png>
+Package pdftex.def Info: Part2/images/test3_0.png used on input line 1617.
+(pdftex.def)             Requested size: 441.01773pt x 329.18251pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[106 <./Part2/images/test2absair.png>]
+<Part2/images/test3_1.png, id=2787, 526.96875pt x 238.8925pt>
+File: Part2/images/test3_1.png Graphic file (type png)
+
+<use Part2/images/test3_1.png>
+Package pdftex.def Info: Part2/images/test3_1.png used on input line 1638.
+(pdftex.def)             Requested size: 352.81552pt x 159.95142pt.
+
+<Part2/images/test3_2.png, id=2788, 548.0475pt x 234.8775pt>
+File: Part2/images/test3_2.png Graphic file (type png)
+
+<use Part2/images/test3_2.png>
+Package pdftex.def Info: Part2/images/test3_2.png used on input line 1643.
+(pdftex.def)             Requested size: 352.81552pt x 151.2099pt.
+
+<Part2/images/test3_3.png, id=2789, 540.0175pt x 240.9pt>
+File: Part2/images/test3_3.png Graphic file (type png)
+
+<use Part2/images/test3_3.png>
+Package pdftex.def Info: Part2/images/test3_3.png used on input line 1648.
+(pdftex.def)             Requested size: 352.81552pt x 157.39182pt.
+
+<Part2/images/test3_4.png, id=2790, 546.04pt x 225.84375pt>
+File: Part2/images/test3_4.png Graphic file (type png)
+
+<use Part2/images/test3_4.png>
+Package pdftex.def Info: Part2/images/test3_4.png used on input line 1653.
+(pdftex.def)             Requested size: 352.81552pt x 145.92482pt.
+
+
+LaTeX Warning: Float too large for page by 2.46844pt on input line 1658.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part2/images/test3_5.png, id=2791, 548.0475pt x 194.7275pt>
+File: Part2/images/test3_5.png Graphic file (type png)
+
+<use Part2/images/test3_5.png>
+Package pdftex.def Info: Part2/images/test3_5.png used on input line 1681.
+(pdftex.def)             Requested size: 352.81552pt x 125.36205pt.
+
+<Part2/images/test3_6.png, id=2792, 558.085pt x 193.72375pt>
+File: Part2/images/test3_6.png Graphic file (type png)
+
+<use Part2/images/test3_6.png>
+Package pdftex.def Info: Part2/images/test3_6.png used on input line 1686.
+(pdftex.def)             Requested size: 352.81552pt x 122.47226pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[107 <./Part2/images/test3_0.png>]
+<Part2/images/test3_8.png, id=2806, 579.16376pt x 233.87375pt>
+File: Part2/images/test3_8.png Graphic file (type png)
+
+<use Part2/images/test3_8.png>
+Package pdftex.def Info: Part2/images/test3_8.png used on input line 1703.
+(pdftex.def)             Requested size: 352.81552pt x 142.47005pt.
+
+<Part2/images/test3_9.png, id=2807, 511.9125pt x 227.85126pt>
+File: Part2/images/test3_9.png Graphic file (type png)
+
+<use Part2/images/test3_9.png>
+Package pdftex.def Info: Part2/images/test3_9.png used on input line 1708.
+(pdftex.def)             Requested size: 352.81552pt x 157.03674pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[108] [109 <./Part2/images/test3_1.png> <./Part2/images/test3_2.png> <./Part2/i
+mages/test3_3.png> <./Part2/images/test3_4.png>] [110 <./Part2/images/test3_5.p
+ng> <./Part2/images/test3_6.png> <./Part2/images/test3_8.png> <./Part2/images/t
+est3_9.png>]
+Chapitre 8.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc13
+Overfull \hbox (1.98195pt too wide) detected at line 1
+ []\T1/futs/b/n/10.95 112
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 2
+ []\T1/futs/b/n/10.95 116
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 3
+ []\T1/futs/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 4
+ []\T1/futs/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 5
+ []\T1/futs/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 6
+ []\T1/futs/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 7
+ []\T1/futs/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 8
+ []\T1/futs/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 9
+ []\T1/futs/m/n/10.95 119
+ []
+
+) [111
+
+] <Part2/images/logiciel.png, id=2869, 811.03pt x 257.96375pt>
+File: Part2/images/logiciel.png Graphic file (type png)
+
+<use Part2/images/logiciel.png>
+Package pdftex.def Info: Part2/images/logiciel.png used on input line 1734.
+(pdftex.def)             Requested size: 308.71106pt x 98.19255pt.
+
+<Part2/images/add-on.png, id=2873, 757.83125pt x 324.21124pt>
+File: Part2/images/add-on.png Graphic file (type png)
+
+<use Part2/images/add-on.png>
+Package pdftex.def Info: Part2/images/add-on.png used on input line 1744.
+(pdftex.def)             Requested size: 441.01773pt x 188.67587pt.
+ [112 <./Part2/images/logiciel.png>]
+<Part2/images/import.png, id=2888, 1005.7575pt x 641.39626pt>
+File: Part2/images/import.png Graphic file (type png)
+
+<use Part2/images/import.png>
+Package pdftex.def Info: Part2/images/import.png used on input line 1751.
+(pdftex.def)             Requested size: 441.01773pt x 281.24632pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part2/images/projete.png, id=2889, 891.33pt x 617.30624pt>
+File: Part2/images/projete.png Graphic file (type png)
+
+<use Part2/images/projete.png>
+Package pdftex.def Info: Part2/images/projete.png used on input line 1758.
+(pdftex.def)             Requested size: 352.81552pt x 244.34665pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part2/images/synopsis.jpg, id=2891, 1603.9925pt x 2389.92876pt>
+File: Part2/images/synopsis.jpg Graphic file (type jpg)
+
+<use Part2/images/synopsis.jpg>
+Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 1766.
+(pdftex.def)             Requested size: 441.01773pt x 657.10481pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[113 <./Part2/images/add-on.png>] [114 <./Part2/images/import.png> <./Part2/ima
+ges/projete.png>] [115 <./Part2/images/synopsis.jpg>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 1786.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1786.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1786.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 1786.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1786.
+ [116
+
+] [117]
+<Part2/images/ts.png, id=2981, 454.69875pt x 395.4775pt>
+File: Part2/images/ts.png Graphic file (type png)
+
+<use Part2/images/ts.png>
+Package pdftex.def Info: Part2/images/ts.png used on input line 1841.
+(pdftex.def)             Requested size: 176.40439pt x 153.42697pt.
+ [118 <./Part2/images/ts.png>] [119] [120
+
+]
+Overfull \hbox (5.93973pt too wide) in paragraph at lines 1895--1896
+\T1/futs/m/n/12 fré-quences et conser-ver notre ap-proche par mé-thode cou-plée
+s pour les hautes fré-quences ? 
+ []
+
+
+Overfull \hbox (3.5493pt too wide) in paragraph at lines 1897--1898
+\T1/futs/m/n/12 pas uni-forme. Cela se-rait d'ailleurs plus re-pré-sen-ta-tif d
+es cas réels et no-tam-ment de l'usage
+ []
+
+[121] [122] (./Part2.bbl (./Main.brf) (./francaisbst.tex) [123
+
+]
+Underfull \hbox (badness 7613) in paragraph at lines 184--184
+[]\T1/futs/m/sc/12 Wikipédia\T1/futs/m/n/12 . c, ^^SSound pres-sure^^T, URL [][
+]$\T1/aett/m/n/12 https : / / en . wikipedia . org / wiki / Sound _
+ []
+
+[124])) [125]
+\openout2 = `Part3.aux'.
+
+ (./Part3/Part3.tex [126
+
+
+
+
+] [127] [128]
+Overfull \hbox (9.49644pt too wide) in paragraph at lines 15--16
+[]\T1/futs/m/n/12 Le [][][]\T1/futs/m/it/12 pul-pi-tum[][] \T1/futs/m/n/12 qui 
+pré-sente des niches al-ter-na-ti-ve-ment rec-tan-gu-laires et semi-circulaire
+ []
+
+[129
+
+] [130]
+Chapitre 9.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc17
+Overfull \hbox (1.98195pt too wide) detected at line 1
+ []\T1/futs/b/n/10.95 132
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 2
+ []\T1/futs/b/n/10.95 134
+ []
+
+) [131
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/futs/m/n/10 Equivalent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\T1/futs/m/n/10 Smooth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/futs/m/n/10 bri-ck-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/futs/m/n/10 with flush
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\T1/futs/m/n/10 Marble or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\T1/futs/m/n/10 Hollow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/futs/m/n/10 woo-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]|\T1/futs/m/n/10 Audience,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/futs/m/n/10 lightly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/futs/m/n/10 uphol-ste-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\T1/futs/m/n/10 Public
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\T1/futs/m/n/10 Audience
+ []
+
+
+Overfull \hbox (7.68059pt too wide) in paragraph at lines 39--56
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/theatreMat.png, id=3216, 1262.7175pt x 932.48375pt>
+File: Part3/images/theatreMat.png Graphic file (type png)
+
+<use Part3/images/theatreMat.png>
+Package pdftex.def Info: Part3/images/theatreMat.png used on input line 71.
+(pdftex.def)             Requested size: 441.01773pt x 325.677pt.
+
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+ [132]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[133pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
+.170}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \section
+             {Analyse de la rÃ©ponse impulsionnelle}pdfTeX warning (ext4): dest
+ination with the same identifier (name{Hfootnote.170}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \section
+             {Analyse de la rÃ©ponse impulsionnelle}pdfTeX warning (ext4): dest
+ination with the same identifier (name{Hfootnote.170}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \section
+             {Analyse de la rÃ©ponse impulsionnelle}pdfTeX warning (ext4): dest
+ination with the same identifier (name{Hfootnote.170}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \section
+             {Analyse de la rÃ©ponse impulsionnelle}]
+<Part3/images/rirTheatreAvecDecor.png, id=3242, 665.48625pt x 362.35374pt>
+File: Part3/images/rirTheatreAvecDecor.png Graphic file (type png)
+
+<use Part3/images/rirTheatreAvecDecor.png>
+Package pdftex.def Info: Part3/images/rirTheatreAvecDecor.png used on input lin
+e 89.
+(pdftex.def)             Requested size: 441.01773pt x 240.13286pt.
+
+<Part3/images/rirTheatre30bis.png, id=3243, 674.52pt x 282.05376pt>
+File: Part3/images/rirTheatre30bis.png Graphic file (type png)
+
+<use Part3/images/rirTheatre30bis.png>
+Package pdftex.def Info: Part3/images/rirTheatre30bis.png used on input line 94
+.
+(pdftex.def)             Requested size: 441.01773pt x 184.41731pt.
+
+<Part3/images/rirTheatre20.png, id=3244, 659.46375pt x 272.01625pt>
+File: Part3/images/rirTheatre20.png Graphic file (type png)
+
+<use Part3/images/rirTheatre20.png>
+Package pdftex.def Info: Part3/images/rirTheatre20.png used on input line 99.
+(pdftex.def)             Requested size: 441.01773pt x 181.91788pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/SI60dB.png, id=3261, 1177.39874pt x 799.98875pt>
+File: Part3/images/SI60dB.png Graphic file (type png)
+
+<use Part3/images/SI60dB.png>
+Package pdftex.def Info: Part3/images/SI60dB.png used on input line 118.
+(pdftex.def)             Requested size: 352.81552pt x 239.71771pt.
+
+<Part3/images/SI60dBbis.png, id=3262, 896.34875pt x 724.7075pt>
+File: Part3/images/SI60dBbis.png Graphic file (type png)
+
+<use Part3/images/SI60dBbis.png>
+Package pdftex.def Info: Part3/images/SI60dBbis.png used on input line 126.
+(pdftex.def)             Requested size: 352.81552pt x 285.25557pt.
+ [134 <./Part3/images/theatreMat.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[135] <Part3/images/SI30dBbis.png, id=3306, 559.08875pt x 830.10126pt>
+File: Part3/images/SI30dBbis.png Graphic file (type png)
+
+<use Part3/images/SI30dBbis.png>
+Package pdftex.def Info: Part3/images/SI30dBbis.png used on input line 143.
+(pdftex.def)             Requested size: 158.76665pt x 235.72pt.
+
+<Part3/images/SI30dB.png, id=3307, 885.3075pt x 786.94pt>
+File: Part3/images/SI30dB.png Graphic file (type png)
+
+<use Part3/images/SI30dB.png>
+Package pdftex.def Info: Part3/images/SI30dB.png used on input line 148.
+(pdftex.def)             Requested size: 269.02107pt x 239.13377pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[136] [137 <./Part3/images/rirTheatreAvecDecor.png> <./Part3/images/rirTheatre3
+0bis.png> <./Part3/images/rirTheatre20.png>] [138 <./Part3/images/SI60dB.png> <
+./Part3/images/SI60dBbis.png>] [139 <./Part3/images/SI30dBbis.png> <./Part3/ima
+ges/SI30dB.png>] [140
+
+]
+Chapitre 10.
+\openout3 = `Main.mtc'.
+
+\openout3 = `Main.mtc'.
+
+(./Main.mtc18
+Overfull \hbox (1.98195pt too wide) detected at line 1
+ []\T1/futs/b/n/10.95 142
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 2
+ []\T1/futs/b/n/10.95 143
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 3
+ []\T1/futs/b/n/10.95 146
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 4
+ []\T1/futs/b/n/10.95 148
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 5
+ []\T1/futs/b/n/10.95 148
+ []
+
+) [141] <Part3/images/SIsansDec.png, id=3369, 1155.31625pt x 779.91376pt>
+File: Part3/images/SIsansDec.png Graphic file (type png)
+
+<use Part3/images/SIsansDec.png>
+Package pdftex.def Info: Part3/images/SIsansDec.png used on input line 202.
+(pdftex.def)             Requested size: 441.01773pt x 297.71507pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[142 <./Part3/images/SIsansDec.png>]
+<Part3/images/position_rece.png, id=3389, 949.5475pt x 708.6475pt>
+File: Part3/images/position_rece.png Graphic file (type png)
+
+<use Part3/images/position_rece.png>
+Package pdftex.def Info: Part3/images/position_rece.png used on input line 236.
+
+(pdftex.def)             Requested size: 441.01773pt x 329.12842pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `listener11' on page 143 undefined on input line 282.
+
+<Part3/images/Listener11.png, id=3406, 1130.2225pt x 719.68875pt>
+File: Part3/images/Listener11.png Graphic file (type png)
+
+<use Part3/images/Listener11.png>
+Package pdftex.def Info: Part3/images/Listener11.png used on input line 286.
+(pdftex.def)             Requested size: 441.01773pt x 280.82024pt.
+
+<Part3/images/Listener10.png, id=3407, 1072.005pt x 606.265pt>
+File: Part3/images/Listener10.png Graphic file (type png)
+
+<use Part3/images/Listener10.png>
+Package pdftex.def Info: Part3/images/Listener10.png used on input line 291.
+(pdftex.def)             Requested size: 441.01773pt x 249.41208pt.
+ [143]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[144 <./Part3/images/position_rece.png>] [145 <./Part3/images/Listener11.png> <
+./Part3/images/Listener10.png>]
+<Part3/images/test_source1.png, id=3444, 1101.11375pt x 740.7675pt>
+File: Part3/images/test_source1.png Graphic file (type png)
+
+<use Part3/images/test_source1.png>
+Package pdftex.def Info: Part3/images/test_source1.png used on input line 312.
+(pdftex.def)             Requested size: 211.68661pt x 142.40884pt.
+
+<Part3/images/test_source2.png, id=3445, 1098.1025pt x 743.77875pt>
+File: Part3/images/test_source2.png Graphic file (type png)
+
+<use Part3/images/test_source2.png>
+Package pdftex.def Info: Part3/images/test_source2.png used on input line 320.
+(pdftex.def)             Requested size: 211.68661pt x 143.37361pt.
+
+<Part3/images/test_source3.png, id=3446, 1099.10625pt x 746.79pt>
+File: Part3/images/test_source3.png Graphic file (type png)
+
+<use Part3/images/test_source3.png>
+Package pdftex.def Info: Part3/images/test_source3.png used on input line 326.
+(pdftex.def)             Requested size: 211.68661pt x 143.82874pt.
+
+<Part3/images/test_source4.png, id=3447, 1101.11375pt x 745.78625pt>
+File: Part3/images/test_source4.png Graphic file (type png)
+
+<use Part3/images/test_source4.png>
+Package pdftex.def Info: Part3/images/test_source4.png used on input line 332.
+(pdftex.def)             Requested size: 211.68661pt x 143.37369pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/angle_refl.png, id=3449, 706.64pt x 396.48125pt>
+File: Part3/images/angle_refl.png Graphic file (type png)
+
+<use Part3/images/angle_refl.png>
+Package pdftex.def Info: Part3/images/angle_refl.png used on input line 351.
+(pdftex.def)             Requested size: 352.81552pt x 197.95578pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[146
+
+] [147 <./Part3/images/test_source1.png> <./Part3/images/test_source2.png> <./P
+art3/images/test_source3.png> <./Part3/images/test_source4.png> <./Part3/images
+/angle_refl.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 363.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 366.
+
+[148
+
+]
+Chapitre 11.
+Package minitoc Info: I0006
+(minitoc)             Main.mtc19 is empty on input line 376.
+[149
+
+] <Part3/images/canac_comparaison.png, id=3486, 872.25874pt x 649.42625pt>
+File: Part3/images/canac_comparaison.png Graphic file (type png)
+
+<use Part3/images/canac_comparaison.png>
+Package pdftex.def Info: Part3/images/canac_comparaison.png used on input line 
+381.
+(pdftex.def)             Requested size: 308.71106pt x 229.8394pt.
+
+<Part3/images/canac_comparaison2.png, id=3491, 482.80376pt x 626.34pt>
+File: Part3/images/canac_comparaison2.png Graphic file (type png)
+
+<use Part3/images/canac_comparaison2.png>
+Package pdftex.def Info: Part3/images/canac_comparaison2.png used on input line
+ 388.
+(pdftex.def)             Requested size: 308.71106pt x 400.50261pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/dyonisos1.png, id=3496, 1045.9075pt x 542.025pt>
+File: Part3/images/dyonisos1.png Graphic file (type png)
+
+<use Part3/images/dyonisos1.png>
+Package pdftex.def Info: Part3/images/dyonisos1.png used on input line 396.
+(pdftex.def)             Requested size: 211.68661pt x 109.70155pt.
+
+<Part3/images/dyonisos2.png, id=3499, 733.74126pt x 498.86375pt>
+File: Part3/images/dyonisos2.png Graphic file (type png)
+
+<use Part3/images/dyonisos2.png>
+Package pdftex.def Info: Part3/images/dyonisos2.png used on input line 404.
+(pdftex.def)             Requested size: 211.68661pt x 143.92079pt.
+
+Underfull \hbox (badness 4181) in paragraph at lines 405--405
+\T1/futs/m/n/10.95 du théâtre de Dyo-ni-sos. Em-pla-ce-ment du
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[150pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
+.182}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.417 \chapter
+              *{Conclusion} <./Part3/images/canac_comparaison.png>] [151 <./Par
+t3/images/canac_comparaison2.png> <./Part3/images/dyonisos1.png> <./Part3/image
+s/dyonisos2.png>] [152
+
+] [153] (./Part3.bbl (./Main.brf) [154
+
+]
+(./francaisbst.tex))) [155] [156
 
 
 ]
@@ -3405,14 +4672,14 @@ héâtres d'afrique pro-con-su-laire^^T, \T1/futs/m/it/12 Aix-en-
 
  (./Annexes/Annexes.tex
 Annexe A.
-<Annexes/images/CoupeCavea.jpg, id=1766, 2343.75626pt x 1427.3325pt>
+<Annexes/images/CoupeCavea.jpg, id=3566, 2343.75626pt x 1427.3325pt>
 File: Annexes/images/CoupeCavea.jpg Graphic file (type jpg)
 
 <use Annexes/images/CoupeCavea.jpg>
 Package pdftex.def Info: Annexes/images/CoupeCavea.jpg used on input line 12.
 (pdftex.def)             Requested size: 441.01773pt x 268.5607pt.
 
-<Annexes/images/caristieDessus.jpg, id=1773, 1922.18124pt x 2571.6075pt>
+<Annexes/images/caristieDessus.jpg, id=3573, 1922.18124pt x 2571.6075pt>
 File: Annexes/images/caristieDessus.jpg Graphic file (type jpg)
 
 <use Annexes/images/caristieDessus.jpg>
@@ -3423,7 +4690,7 @@ Package pdftex.def Info: Annexes/images/caristieDessus.jpg used on input line 1
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/cotes.jpg, id=1778, 1092.08pt x 2484.28125pt>
+<Annexes/images/cotes.jpg, id=3578, 1092.08pt x 2484.28125pt>
 File: Annexes/images/cotes.jpg Graphic file (type jpg)
 
 <use Annexes/images/cotes.jpg>
@@ -3433,7 +4700,7 @@ Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 24.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/aditusOccidental.jpg, id=1783, 2581.645pt x 2370.8575pt>
+<Annexes/images/aditusOccidental.jpg, id=3583, 2581.645pt x 2370.8575pt>
 File: Annexes/images/aditusOccidental.jpg Graphic file (type jpg)
 
 <use Annexes/images/aditusOccidental.jpg>
@@ -3444,7 +4711,7 @@ Package pdftex.def Info: Annexes/images/aditusOccidental.jpg used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/aditusOriental.jpg, id=1790, 1919.17pt x 1755.55875pt>
+<Annexes/images/aditusOriental.jpg, id=3590, 1919.17pt x 1755.55875pt>
 File: Annexes/images/aditusOriental.jpg Graphic file (type jpg)
 
 <use Annexes/images/aditusOriental.jpg>
@@ -3455,7 +4722,7 @@ Package pdftex.def Info: Annexes/images/aditusOriental.jpg used on input line 3
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/frontdescene.jpg, id=1797, 1694.33pt x 1696.3375pt>
+<Annexes/images/frontdescene.jpg, id=3597, 1694.33pt x 1696.3375pt>
 File: Annexes/images/frontdescene.jpg Graphic file (type jpg)
 
 <use Annexes/images/frontdescene.jpg>
@@ -3466,7 +4733,7 @@ Package pdftex.def Info: Annexes/images/frontdescene.jpg used on input line 42.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/retourOccidentalMur.jpg, id=1802, 965.6075pt x 2384.91pt>
+<Annexes/images/retourOccidentalMur.jpg, id=3602, 965.6075pt x 2384.91pt>
 File: Annexes/images/retourOccidentalMur.jpg Graphic file (type jpg)
 
 <use Annexes/images/retourOccidentalMur.jpg>
@@ -3477,7 +4744,7 @@ ine 48.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/grenierOcci.png, id=1807, 961.5925pt x 449.68pt>
+<Annexes/images/grenierOcci.png, id=3607, 961.5925pt x 449.68pt>
 File: Annexes/images/grenierOcci.png Graphic file (type png)
 
 <use Annexes/images/grenierOcci.png>
@@ -3487,7 +4754,7 @@ Package pdftex.def Info: Annexes/images/grenierOcci.png used on input line 54.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/colonneCaristie.png, id=1812, 414.54875pt x 424.58624pt>
+<Annexes/images/colonneCaristie.png, id=3612, 414.54875pt x 424.58624pt>
 File: Annexes/images/colonneCaristie.png Graphic file (type png)
 
 <use Annexes/images/colonneCaristie.png>
@@ -3498,7 +4765,7 @@ Package pdftex.def Info: Annexes/images/colonneCaristie.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/colline.png, id=1819, 556.0775pt x 720.6925pt>
+<Annexes/images/colline.png, id=3619, 556.0775pt x 720.6925pt>
 File: Annexes/images/colline.png Graphic file (type png)
 
 <use Annexes/images/colline.png>
@@ -3508,7 +4775,7 @@ Package pdftex.def Info: Annexes/images/colline.png used on input line 66.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Annexes/images/DiagRay2.png, id=1824, 1096.095pt x 1160.335pt>
+<Annexes/images/DiagRay2.png, id=3624, 1096.095pt x 1160.335pt>
 File: Annexes/images/DiagRay2.png Graphic file (type png)
 
 <use Annexes/images/DiagRay2.png>
@@ -3518,7 +4785,7 @@ Package pdftex.def Info: Annexes/images/DiagRay2.png used on input line 72.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Annexes/images/ihm.png, id=1827, 927.465pt x 891.33pt>
+<Annexes/images/ihm.png, id=3627, 927.465pt x 891.33pt>
 File: Annexes/images/ihm.png Graphic file (type png)
 
 <use Annexes/images/ihm.png>
@@ -3548,10 +4815,6 @@ ng>] [10 <./Annexes/images/DiagRay2.png>] [11 <./Annexes/images/ihm.png>]
 
 ]
 Annexe B.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
 ) (./Main.gls [15
 
 ] [16
@@ -3579,60 +4842,42 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: DC4E08D0C104DAF9D5D5E57A00FCB4B3;1960.
+(rerunfilecheck)             Checksum: 0CA243E15DB96DC4B36F2798A970F794;4821.
 Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 1A7839051FB69773B8FB1A5D78CF0BFE;8102.
+(rerunfilecheck)             Checksum: C76D75E2D5F938D8C2E9DDCA4AD9831B;8058.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 53591 strings out of 493014
- 1148475 string characters out of 6133351
- 1409182 words of memory out of 5000000
- 55420 multiletter control sequences out of 15000+600000
- 192857 words of font info for 162 fonts, out of 8000000 for 9000
+ 54792 strings out of 493014
+ 1169826 string characters out of 6133351
+ 1419393 words of memory out of 5000000
+ 56050 multiletter control sequences out of 15000+600000
+ 262995 words of font info for 235 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,87p,10450b,1020s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.126} has been referenced but does not exist,
+ 64i,22n,87p,10450b,1075s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist,
  replaced by a fixed one
-
-pdfTeX warning (dest): name{page.135} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{page.133} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{page.125} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{page.131} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{page.XIX} has been referenced but does not exist, r
-eplaced by a fixed one
 
 pdfTeX warning (dest): name{page.XVIII} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{page.128} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.192} has been referenced but does not exi
+st, replaced by a fixed one
 
-pdfTeX warning (dest): name{page.130} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.191} has been referenced but does not exi
+st, replaced by a fixed one
 
-pdfTeX warning (dest): name{page.134} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.190} has been referenced but does not exi
+st, replaced by a fixed one
 
-pdfTeX warning (dest): name{page.132} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:ihm} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:octree} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.189} has been referenced but does not exi
+st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.188} has been referenced but does not exi
 st, replaced by a fixed one
@@ -3652,23 +4897,83 @@ st, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.183} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.182} has been referenced but does not exi
-st, replaced by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.181} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.180} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.169} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.179} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.168} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.167} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.166} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:decimate} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ihm} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:obj} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:OBB} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:AABB} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:complexite} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:fft} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:wav} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:fir} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.127} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:speculaire} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:impedance} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Dirac} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Neumann} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Dirichlet} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:fdtd} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:fem} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:bem} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:RMS} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:octree} has been referenced but does not exist,
+ replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:RVB} has been referenced but does not exist, re
 placed by a fixed one
-
-pdfTeX warning (dest): name{glo:iscd} has been referenced but does not exist, r
-eplaced by a fixed one
 
 pdfTeX warning (dest): name{glo:armature} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3745,147 +5050,42 @@ t exist, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:cnrs} has been referenced but does not exist, r
-eplaced by a fixed one
-
 pdfTeX warning (dest): name{glo:iraa} has been referenced but does not exist, r
 eplaced by a fixed one
 
 pdfTeX warning (dest): name{glo:hyposcaenium} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.98} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{glo:cmap} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.97} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{glo:iscd} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.11} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{glo:cnrs} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{section.10.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.81} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{part.3} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.80} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.79} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.27} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{part.2} has been referenced but does not exist, rep
-laced by a fixed one
+pdfTeX warning (dest): name{glo:upmc} has been referenced but does not exist, r
+eplaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/adobe/utopia/putri8a.pfb>
-Output written on Main.pdf (73 pages, 40965175 bytes).
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/adobe/utopia/putri8a.pfb>
+Output written on Main.pdf (177 pages, 54182387 bytes).
 PDF statistics:
- 2136 PDF objects out of 2487 (max. 8388607)
- 1876 compressed objects within 19 object streams
- 380 named destinations out of 1000 (max. 500000)
- 472 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4011 PDF objects out of 4296 (max. 8388607)
+ 3453 compressed objects within 35 object streams
+ 808 named destinations out of 1000 (max. 500000)
+ 1192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
