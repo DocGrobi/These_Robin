@@ -84,7 +84,7 @@
 \gdef \the@ipfilectr {@-4}
 \contentsline {part}{III\hspace {1em}Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{127}{part.3}
 \contentsline {xpart}{Analyse acoustique du th\IeC {\'e}\IeC {\^a}tre d'Orange}{129}{part.3}
-\contentsline {chapter}{Introduction}{129}{chapter*.86}
+\contentsline {chapter}{Introduction}{129}{chapter*.2}
 \contentsline {chapter}{\numberline {9}Analyse en configuration initiale}{131}{chapter.9}
 \contentsline {section}{\numberline {9.1}Configuration du maillage}{132}{section.9.1}
 \contentsline {section}{\numberline {9.2}Analyse de la r\IeC {\'e}ponse impulsionnelle}{134}{section.9.2}
@@ -92,11 +92,11 @@
 \contentsline {section}{\numberline {10.1}D\IeC {\'e}cor du front de sc\IeC {\`e}ne}{142}{section.10.1}
 \contentsline {section}{\numberline {10.2}Position des spectateurs}{143}{section.10.2}
 \contentsline {section}{\numberline {10.3}La source et le mur de sc\IeC {\`e}ne}{146}{section.10.3}
-\contentsline {section}{\numberline {10.4}Absorption des spectateurs et du \gls {velum}}{148}{section.10.4}
-\contentsline {section}{\numberline {10.5}Les couvertures de la sc\IeC {\`e}ne et de la \gls {porticus isc}}{148}{section.10.5}
-\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{149}{chapter.11}
-\contentsline {chapter}{Conclusion}{153}{chapter*.104}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{155}{chapter*.105}
+\contentsline {section}{\numberline {10.4}Pr\IeC {\'e}sence de spectateurs}{151}{section.10.4}
+\contentsline {section}{\numberline {10.5}Les couvertures}{151}{section.10.5}
+\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{155}{chapter.11}
+\contentsline {chapter}{Conclusion}{159}{chapter*.30}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{161}{chapter*.31}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}
