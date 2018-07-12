@@ -94,9 +94,8 @@
 \contentsline {section}{\numberline {10.3}La source et le mur de sc\IeC {\`e}ne}{146}{section.10.3}
 \contentsline {section}{\numberline {10.4}Pr\IeC {\'e}sence de spectateurs}{151}{section.10.4}
 \contentsline {section}{\numberline {10.5}Les couvertures}{151}{section.10.5}
-\contentsline {chapter}{\numberline {11}Comparaison avec d'autres th\IeC {\'e}\IeC {\^a}tres antiques}{155}{chapter.11}
-\contentsline {chapter}{Conclusion}{159}{chapter*.30}
-\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{161}{chapter*.31}
+\contentsline {chapter}{Conclusion}{155}{chapter*.30}
+\contentsline {chapter}{R\IeC {\'e}f\IeC {\'e}rences}{160}{chapter*.33}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Annexes}{I}{appendix.A}

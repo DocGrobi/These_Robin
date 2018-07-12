@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -47,6 +47,12 @@
 \textsc{Badie, A.}, \textsc{J.-C. Moretti} \bbland{} \textsc{D.~Tardy}. 2007,
   \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
   recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
+
+\bibitem[{\textsc{Bartette} \bbletal{}()\textsc{Bartette}, \textsc{Rosso}
+  \bbland{} \textsc{Gall}}]{titien}
+\textsc{Bartette, T.}, \textsc{E.~Rosso} \bbland{} \textsc{S.~L. Gall}.
+  \enquote{L'apport de l'imagerie num{\'e}rique {\`a} l'{\'e}tude et {\`a} la
+  restitution du th{\'e}{\^a}tre antique d'orange et de son d{\'e}cor}, .
 
 \bibitem[{\textsc{Boissier}()}]{boissier}
 \textsc{Boissier, G.} \enquote{article mimvs}, \emph{Dictionnaire des

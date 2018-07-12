@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{17}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -16,18 +16,35 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
+\bibitem[{\textsc{acouphile.fr}()}]{acouphile}
+\textsc{acouphile.fr}.
+
 \bibitem[{\textsc{Arnaud}(1808)}]{arnaud}
 \textsc{Arnaud, A.} 1808, \emph{Oeuvres compl{\`e}tes}, \bblvol{} Tome III,
   L'imprimerie de Valade.
 
-\bibitem[{\textsc{Badie} \bbletal{}(2013)\textsc{Badie}, \textsc{Fincker},
-  \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso} \bbland{}
-  \textsc{Tardy}}]{orangeTxt}
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{a}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangePl}
 \textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
-  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}. 2013,
-  \enquote{Le th{\'e}{\^a}tre d'orange - rapport final d'op{\'e}ration -
-  texte}, \bbltechrep{}. PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84 087
-  0031 - Patriarche 9827 n2012-203.
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
+  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
+  d'op{\'e}ration - planches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
+  087 0031 - Patriarche 9827 n2012-203.
+
+\bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{b}})\textsc{Badie},
+  \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
+  \bbland{} \textsc{Tardy}}]{orangeTxt}
+\textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
+  \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
+  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
+  d'op{\'e}ration - texte}, \bbltechrep{}. PACA Vaucluse, Orange
+  Th{\'e}{\^a}tre antique 84 087 0031 - Patriarche 9827 n2012-203.
+
+\bibitem[{\textsc{Barker}(2008)}]{voixRomain}
+\textsc{Barker, A.} 2008, \enquote{The care and training of the voice in the
+  roman empire}, \emph{The International Society for the Study of Greek and
+  Roman Music and its Cultural Heritage}.
 
 \bibitem[{\textsc{Barth{\'e}lemy-Saint-Hilaire}(1838)}]{aristote}
 \textsc{Barth{\'e}lemy-Saint-Hilaire, J.} 1838, \emph{Livre de la Po{\'e}tique
@@ -71,6 +88,18 @@
 \textsc{Rindel, J.~H.} 2013, \enquote{Roman theatres and revival of their
   acoustics in the erato project}, \emph{ACTA ACUSTICA UNITED WITH ACUSTICA},
   \bblvol{}~99, \bblpp{} 21--29.
+
+\bibitem[{\textsc{Rocconi}(2008)}]{rocconi}
+\textsc{Rocconi, E.} 2008, \enquote{Music in the roman empire - theoretical
+  evidence and archaeological findings}, \emph{The International Society for
+  the Study of Greek and Roman Music and its Cultural Heritage}.
+
+\bibitem[{\textsc{Vassilantonopoulos} \bbland{}
+  \textsc{Mourjopoulos}(2009)}]{roofodeon}
+\textsc{Vassilantonopoulos, S.~L.} \bbland{} \textsc{J.~N. Mourjopoulos}. 2009,
+  \enquote{The acoustics of roofed ancient odeia: The case of herodes atticus
+  odeion}, \emph{Acta Acustica united with Acustica}, \bblvol{}~95, \bblpp{}
+  291--299.
 
 \bibitem[{\textsc{Wikip{\'e}dia}()}]{voix}
 \textsc{Wikip{\'e}dia}. \enquote{Voix humaine},

@@ -1,0 +1,28 @@
+\begin{tableth} 
+ \begin{tabular}{| *{9}{c|}} 
+ \hline 
+ Facteur & 62,5Hz & 125Hz & 250Hz & 500Hz & 1kHz & 2kHz & 4kHz & 8kHz \\ 
+ \hline 
+ \hline 
+\gls{EDT} (ms)& 2337& 2322& 2188& 2093& 1937& 1590& 1266& 565 \\ 
+ \hline 
+\gls{T30} (ms)& 4388& 4297& 3849& 3597& 3325& 2666& 1558& 695 \\ 
+ \hline 
+\gls{RT60} (ms)& 3984& 3944& 3672& 3441& 3183& 2699& 1703& 691 \\ 
+ \hline 
+\gls{spl} (dB)& -32& -32& -33& -33& -33& -35& -38& -50 \\ 
+ \hline 
+\gls{G} (dB)& 10.6& 10.6& 10.1& 9.8& 9.5& 9& 7.9& 5.9 \\ 
+ \hline 
+\gls{C80} (dB)& 0.29& 0.32& 0.2& -0.01& 0.14& 0.89& 2.75& 8.06 \\ 
+ \hline 
+\gls{D50} (\%)& 40.56& 40.74& 41.08& 40.71& 41.74& 45.83& 55.71& 78.28 \\ 
+ \hline 
+\gls{Ts} (ms)& 154& 152& 144& 141& 132& 110& 74& 32 \\ 
+ \hline 
+\gls{LF80} (dB)& 0.159& 0.159& 0.116& 0.084& 0.07& 0.064& 0.057& 0.045 \\ 
+ \hline 
+\end{tabular} 
+ \caption{Facteurs perceptifs pour une source en [-19.61 ; 9 ; 42.8] et un auditeur en [13.52 ; -9.46 ; 43.86] et 1000000 rayons.} 
+ \label{tab_fact} 
+ \end{tableth}

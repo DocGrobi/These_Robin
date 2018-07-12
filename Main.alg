@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 07.07.2018  05:03:41
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/WDxtUi9ffi", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/lpm0oJ_WL7", Output: "Main.acr"
+;; at 10.07.2018  17:22:39
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/1jeBz7P1nE", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/EBVuhMvCRX", Output: "Main.acr"
 
 
 Building indexentry-tree:
