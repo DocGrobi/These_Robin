@@ -4,21 +4,21 @@ The top-level auxiliary file: Part2.aux
 The style file: francaissc.bst
 Database file #1: Part2/Biblio.bib
 Warning--entry type for "octree_diag" isn't style-file defined
---line 11 of file Part2/Biblio.bib
+--line 20 of file Part2/Biblio.bib
 Warning--entry type for "spl" isn't style-file defined
---line 18 of file Part2/Biblio.bib
+--line 28 of file Part2/Biblio.bib
 Warning--entry type for "mmg" isn't style-file defined
---line 74 of file Part2/Biblio.bib
+--line 85 of file Part2/Biblio.bib
 Warning--entry type for "catt" isn't style-file defined
---line 83 of file Part2/Biblio.bib
+--line 94 of file Part2/Biblio.bib
 Warning--entry type for "gypsilab" isn't style-file defined
---line 91 of file Part2/Biblio.bib
+--line 102 of file Part2/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 118 of file Part2/Biblio.bib
+--line 129 of file Part2/Biblio.bib
 Warning--entry type for "cone" isn't style-file defined
---line 227 of file Part2/Biblio.bib
+--line 238 of file Part2/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 317 of file Part2/Biblio.bib
+--line 328 of file Part2/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile
@@ -28,46 +28,47 @@ Warning--there's a number but no volume in beamtracing
 Warning--can't use both author and editor fields in binaire
 Warning--can't use both volume and number fields in octree
 Warning--empty year in odeon
+Warning--empty pages in hautes_freq
 Warning--there's a number but no volume in AABB
 You've used 36 entries,
             3493 wiz_defined-function locations,
-            893 strings with 10326 characters,
-and the built_in function-call counts, 19067 in all, are:
-= -- 1502
-> -- 609
-< -- 54
-+ -- 245
-- -- 178
-* -- 1380
-:= -- 2708
+            892 strings with 10336 characters,
+and the built_in function-call counts, 19349 in all, are:
+= -- 1517
+> -- 636
+< -- 53
++ -- 254
+- -- 187
+* -- 1422
+:= -- 2741
 add.period$ -- 71
 call.type$ -- 36
-change.case$ -- 228
+change.case$ -- 232
 chr.to.int$ -- 43
-cite$ -- 44
-duplicate$ -- 1782
-empty$ -- 1567
-format.name$ -- 235
-if$ -- 3749
+cite$ -- 45
+duplicate$ -- 1807
+empty$ -- 1582
+format.name$ -- 246
+if$ -- 3799
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 255
+missing$ -- 258
 newline$ -- 126
 num.names$ -- 144
-pop$ -- 693
+pop$ -- 704
 preamble$ -- 1
-purify$ -- 203
+purify$ -- 206
 quote$ -- 0
-skip$ -- 778
+skip$ -- 782
 stack$ -- 0
 substring$ -- 597
-swap$ -- 992
+swap$ -- 1009
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 303
-warning$ -- 8
+type$ -- 306
+warning$ -- 9
 while$ -- 122
 width$ -- 0
 write$ -- 389
-(There were 16 warnings)
+(There were 17 warnings)

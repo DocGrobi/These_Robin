@@ -4,11 +4,11 @@ The top-level auxiliary file: Part3.aux
 The style file: francaissc.bst
 Database file #1: Part3/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 37 of file Part3/Biblio.bib
+--line 46 of file Part3/Biblio.bib
 Warning--entry type for "voix" isn't style-file defined
---line 64 of file Part3/Biblio.bib
+--line 73 of file Part3/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 150 of file Part3/Biblio.bib
+--line 159 of file Part3/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty year in acouphile

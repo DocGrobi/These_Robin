@@ -49,11 +49,6 @@
 \textsc{CEI}. 2015, \enquote{Ec 60050}, Vocabulaire {\'e}lectrotechnique
   international.
 
-\bibitem[{\textsc{D'Alembert}(1747)}]{alembert}
-\textsc{D'Alembert, J. L.~R.} 1747, \emph{Recherches sur la courbe que forme
-  une corde tendue mise en vibration}, Histoire de l'Acad{\'e}mie des Sciences
-  et Belles-Lettre de Berlin.
-
 \bibitem[{\textsc{Dapogny} \bbletal{}(2004)\textsc{Dapogny},
   \textsc{Dobrzynski}, \textsc{Frey} \bbland{} \textsc{Froehly}}]{mmg}
 \textsc{Dapogny, C.}, \textsc{C.~Dobrzynski}, \textsc{P.~Frey} \bbland{}
@@ -127,6 +122,13 @@
 \bibitem[{\textsc{Odeon}(2016)}]{odeonManuel}
 \textsc{Odeon}. 2016, \emph{ODEON Room Acoustics Software}, Odeon A/S, Scion
   DTU Diplomvej, building 381 DK- 2800 Kgs. Lyngby Denmark.
+
+\bibitem[{\textsc{Perrey-Debaina} \bbletal{}(2016)\textsc{Perrey-Debaina},
+  \textsc{Yanga}, \textsc{Nennigb} \bbland{} \textsc{Chazota}}]{hautes_freq}
+\textsc{Perrey-Debaina, E.}, \textsc{M.~Yanga}, \textsc{B.~Nennigb} \bbland{}
+  \textsc{J.-D. Chazota}. 2016, \enquote{Approximation par ondes planes et son
+  utilisation pour la m{\'e}thode des {\'e}l{\'e}ments finis}, \bblin{}
+  \emph{CFA/VISHNO}.
 
 \bibitem[{\textsc{Picaut}(2005)}]{picaut}
 \textsc{Picaut, J.} 2005, \enquote{Application num{\'e}rique du concept de
