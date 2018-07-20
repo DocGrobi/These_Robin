@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -53,6 +53,10 @@
 \textsc{Bartette, T.}, \textsc{E.~Rosso} \bbland{} \textsc{S.~L. Gall}.
   \enquote{L'apport de l'imagerie num{\'e}rique {\`a} l'{\'e}tude et {\`a} la
   restitution du th{\'e}{\^a}tre antique d'orange et de son d{\'e}cor}, .
+
+\bibitem[{\textsc{Blender}(2017)}]{doc_blender}
+\textsc{Blender}. 2017, \enquote{Manuel blender},
+  \urlprefix\url{https://docs.blender.org/manual/fr/dev/}.
 
 \bibitem[{\textsc{Boissier}()}]{boissier}
 \textsc{Boissier, G.} \enquote{article mimvs}, \emph{Dictionnaire des
@@ -113,15 +117,15 @@
 
 \bibitem[{\textsc{Rocheleau}(2010)}]{rocheleau}
 \textsc{Rocheleau, M.} 2010, \enquote{La mod{\'e}lisation 3d comme m{\'e}thode
-  de recherche en sciences historiques}, \bblin{} \emph{ACTES DU 10e COLLOQUE
-  INTERNATIONAL {\'E}TUDIANT DU D{\'E}PARTEMENT D'HISTOIRE}.
+  de recherche en sciences historiques}, \bblin{} \emph{Actes du 10e colloque
+  international {\'e}tudiant du d{\'e}partement d'histoire}.
 
 \bibitem[{\textsc{Roum{\'e}gous} \bbland{}
   \textsc{Provost}(2009)}]{carteArcheo}
-\textsc{Roum{\'e}gous, A.} \bbland{} \textsc{M.~Provost}. 2009, \emph{CARTE
-  ARCHEOLOGIQUE DE LA GAULE}, Acad{\'e}mie des Inscriptions et Belles-Lettres
-  Minist{\`e}re de l'Education Nationale, Minist{\`e}re de la Recherche
-  Minist{\`e}re de la Culture et de la Communication Acad{\'e}mie des
+\textsc{Roum{\'e}gous, A.} \bbland{} \textsc{M.~Provost}. 2009, \emph{Carte
+  arch{\'e}ologique de la Gaule}, Acad{\'e}mie des Inscriptions et
+  Belles-Lettres Minist{\`e}re de l'Education Nationale, Minist{\`e}re de la
+  Recherche Minist{\`e}re de la Culture et de la Communication Acad{\'e}mie des
   Inscriptions et Belles-Lettres Minist{\`e}re de l'Education Nationale,
   Minist{\`e}re de la Recherche Minist{\`e}re de la Culture et de la
   Communication.
