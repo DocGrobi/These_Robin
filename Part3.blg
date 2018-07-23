@@ -4,57 +4,58 @@ The top-level auxiliary file: Part3.aux
 The style file: francaissc.bst
 Database file #1: Part3/Biblio.bib
 Warning--entry type for "acouphile" isn't style-file defined
---line 46 of file Part3/Biblio.bib
+--line 40 of file Part3/Biblio.bib
 Warning--entry type for "voix" isn't style-file defined
---line 73 of file Part3/Biblio.bib
+--line 95 of file Part3/Biblio.bib
 Warning--entry type for "odeon" isn't style-file defined
---line 159 of file Part3/Biblio.bib
+--line 181 of file Part3/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty year in acouphile
 Warning--missing institution in orangeTxt
+Warning--empty year in acouphile
 Warning--can't use both volume and number fields in haas
 Warning--empty year in odeon
+Warning--can't use both author and editor fields in vitruve
 Warning--empty year in voix
 You've used 17 entries,
             3493 wiz_defined-function locations,
-            786 strings with 8076 characters,
-and the built_in function-call counts, 9282 in all, are:
-= -- 690
+            789 strings with 8157 characters,
+and the built_in function-call counts, 9321 in all, are:
+= -- 696
 > -- 306
 < -- 23
 + -- 122
 - -- 91
-* -- 680
-:= -- 1297
-add.period$ -- 34
+* -- 688
+:= -- 1301
+add.period$ -- 35
 call.type$ -- 17
-change.case$ -- 110
+change.case$ -- 111
 chr.to.int$ -- 18
-cite$ -- 22
-duplicate$ -- 871
-empty$ -- 786
+cite$ -- 23
+duplicate$ -- 874
+empty$ -- 790
 format.name$ -- 117
-if$ -- 1827
+if$ -- 1837
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 141
 newline$ -- 69
 num.names$ -- 68
-pop$ -- 367
+pop$ -- 362
 preamble$ -- 1
 purify$ -- 98
 quote$ -- 0
 skip$ -- 374
 stack$ -- 0
 substring$ -- 279
-swap$ -- 478
+swap$ -- 481
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 132
-warning$ -- 5
+warning$ -- 6
 while$ -- 57
 width$ -- 0
-write$ -- 190
-(There were 8 warnings)
+write$ -- 192
+(There were 9 warnings)

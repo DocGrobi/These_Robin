@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -16,10 +16,6 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
-\bibitem[{cha(1856)}]{charenton}
- 1856, \enquote{Vue de la sc{\`e}ne avant le d{\'e}blaiement par a.caristie},
-  M{\'e}diath{\`e}que de l'Architecture et du Patrimoine de Charenton.
-
 \bibitem[{\textsc{Asselineau}(XIX\up{e} si{\`e}cle)}]{museeOrange}
 \textsc{Asselineau}. XIX\up{e} si{\`e}cle, \enquote{Vue int{\'e}rieure du
   th{\'e}{\^a}tre}, Mus{\'e}e d'Art et d'Histoire d'Orange.
@@ -29,69 +25,74 @@
   \bbland{} \textsc{Tardy}}]{orangePl}
 \textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
   \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
-  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
-  d'op{\'e}ration - planches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
-  087 0031 - Patriarche 9827 n2012-203.
+  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'{O}range - {R}apport final
+  d'op{\'e}ration - {P}lanches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique
+  84 087 0031 - Patriarche 9827 n2012-203.
 
 \bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{b}})\textsc{Badie},
   \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
   \bbland{} \textsc{Tardy}}]{orangeTxt}
 \textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
   \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
-  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
-  d'op{\'e}ration - texte}, \bbltechrep{}. PACA Vaucluse, Orange
+  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'{O}range - {R}apport final
+  d'op{\'e}ration - {T}exte}, \bbltechrep{}. PACA Vaucluse, Orange
   Th{\'e}{\^a}tre antique 84 087 0031 - Patriarche 9827 n2012-203.
 
 \bibitem[{\textsc{Badie} \bbletal{}(2007)\textsc{Badie}, \textsc{Moretti}
   \bbland{} \textsc{Tardy}}]{PouvoirDuTheatre}
 \textsc{Badie, A.}, \textsc{J.-C. Moretti} \bbland{} \textsc{D.~Tardy}. 2007,
-  \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir. nouvelles
-  recherches sur le th{\'e}{\^a}tre d'orange}, \emph{Arch{\'e}opages}.
+  \enquote{Pouvoir du th{\`e}{\^a}tre et th{\'e}{\^a}tre du pouvoir.
+  {N}ouvelles recherches sur le th{\'e}{\^a}tre d'{O}range},
+  \emph{Arch{\'e}opages}.
 
 \bibitem[{\textsc{Bartette} \bbletal{}()\textsc{Bartette}, \textsc{Rosso}
   \bbland{} \textsc{Gall}}]{titien}
 \textsc{Bartette, T.}, \textsc{E.~Rosso} \bbland{} \textsc{S.~L. Gall}.
   \enquote{L'apport de l'imagerie num{\'e}rique {\`a} l'{\'e}tude et {\`a} la
-  restitution du th{\'e}{\^a}tre antique d'orange et de son d{\'e}cor}, .
+  restitution du th{\'e}{\^a}tre antique d'{O}range et de son d{\'e}cor}, .
 
 \bibitem[{\textsc{Blender}(2017)}]{doc_blender}
-\textsc{Blender}. 2017, \enquote{Manuel blender},
+\textsc{Blender}. 2017, \enquote{Manuel \textit{{B}lender}},
   \urlprefix\url{https://docs.blender.org/manual/fr/dev/}.
 
 \bibitem[{\textsc{Boissier}()}]{boissier}
-\textsc{Boissier, G.} \enquote{article mimvs}, \emph{Dictionnaire des
+\textsc{Boissier, G.} \enquote{article {MIMVS}}, \emph{Dictionnaire des
   Antiquit{\'e}s grecques et romaines}.
 
 \bibitem[{\textsc{Bourdereaux}()}]{vuEnsemble}
-\textsc{Bourdereaux}. \enquote{Vue d'ensemble du th{\'e}{\^a}tre d'orange},
-  \urlprefix\url{choregies.fr}.
+\textsc{Bourdereaux}. \enquote{Vue d'ensemble du th{\'e}{\^a}tre d'{O}range},
+  \urlprefix\url{http://www.orange-tourisme.fr}.
+
+\bibitem[{\textsc{Caristie}(1856)}]{charenton}
+\textsc{Caristie, A.} 1856, \enquote{Vue de la sc{\`e}ne avant le
+  d{\'e}blaiement}, M{\'e}diath{\`e}que de l'Architecture et du Patrimoine de
+  Charenton.
 
 \bibitem[{\textsc{Culturespaces}()}]{siteTheatre}
-\textsc{Culturespaces}. \enquote{Th{\'e}{\^a}tre d'orange},
+\textsc{Culturespaces}. \enquote{Th{\'e}{\^a}tre d'{O}range},
   \urlprefix\url{http://theatre-antique.com}.
 
 \bibitem[{\textsc{Ducaroy} \bbland{} \textsc{Audin}(1960)}]{rideau2}
 \textsc{Ducaroy, A.} \bbland{} \textsc{A.~Audin}. 1960, \enquote{Le rideau de
-  sc{\`e}ne du th{\'e}{\^a}tre de lyon}, \emph{Gallia}, \bblvol{}~18,
+  sc{\`e}ne du th{\'e}{\^a}tre de {L}yon}, \emph{Gallia}, \bblvol{}~18,
   \bblno{}~1, \bblpp{} 57--82.
 
 \bibitem[{\textsc{Fleury} \bbland{} \textsc{Madeleine}(2007)}]{fleury}
 \textsc{Fleury, P.} \bbland{} \textsc{S.~Madeleine}. 2007,
-  \enquote{R{\'e}alit{\'e} virtuelle et restitution de la rome antique du ive
-  si{\`e}cle apr{\`e}s j.-c}, \emph{Histoire urbaine}, \bblvol{}~1,
+  \enquote{R{\'e}alit{\'e} virtuelle et restitution de la {R}ome antique du
+  ${IV}^e$ si{\`e}cle apr{\`e}s {J.-C}}, \emph{Histoire urbaine}, \bblvol{}~1,
   \bblno{}~18, \bblpp{} 157--165.
 
 \bibitem[{\textsc{Formige}(1916)}]{formigeBis}
 \textsc{Formige, J.} 1916, \enquote{Observations sur le th{\'e}{\^a}tre romain
-  d'orange}, \emph{Comptes rendus des s{\'e}ances de l'Acad{\'e}mie des
+  d'{O}range}, \emph{Comptes rendus des s{\'e}ances de l'Acad{\'e}mie des
   Inscriptions et Belles-Lettres}, \bblvol{}~5, \bblpp{} 455--458.
 
 \bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
 \textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
-  th{\'e}{\^a}tres romains, {\`a} propose de ceux d'Arles et d'Orange},
-  \emph{Sujets Sujets divers d'{\'e}rudition}, \bblvol{}~13, M{\'e}moires
-  pr{\'e}sent{\'e}s par divers savants {\`a} l'Acad{\'e}mie des inscriptions et
-  belles-lettres de l'Institut de France.
+  th{\'e}{\^a}tres romains, {\`a} propos de ceux d'{A}rles et d'{O}range},
+  \emph{Sujets divers d'{\'e}rudition}, \bblvol{}~13, Acad{\'e}mie des
+  inscriptions et belles-lettres de l'Institut de France.
 
 \bibitem[{\textsc{Golvin}(2005)}]{golvin}
 \textsc{Golvin, J.-C.} 2005, \enquote{L'image de restitution et la restitution
@@ -99,31 +100,32 @@
 
 \bibitem[{\textsc{Lachaux}(1970)}]{lachaux}
 \textsc{Lachaux, J.~C.} 1970, \enquote{Th{\'e}{\^a}tres et
-  amphith{\'e}{\^a}tres d'afrique proconsulaire}, \emph{Aix-en-Provence :
+  amphith{\'e}{\^a}tres d'{A}frique proconsulaire}, \emph{Aix-en-Provence :
   Diffusion {\'E}disud}.
 
-\bibitem[{\textsc{Littr{\'e}}(1848-1850)}]{pline}
-\textsc{Littr{\'e}, {\'E}.} 1848-1850, \emph{Pline l'ancien : Histoire
-  Naturelle}, \bblvol{} XIX, Dubochet.
-
-\bibitem[{\textsc{Maufras}(1847)}]{vitruve}
-\textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
-  \bblvol{}~V, Panckoucke.
+\bibitem[{\textsc{Lucr{\`e}ce}(Traduction 1899)}]{lucrece}
+\textsc{Lucr{\`e}ce}. Traduction 1899, \emph{De natura rerum},
+  \emph{Soci{\'e}t{\'e} d'{\'e}ditions litt{\'e}raire}, \bblvol{} Livre IV,
+  Andr{\'e} Lef{\`e}vre.
 
 \bibitem[{\textsc{Moretti}(1993)}]{moretti}
 \textsc{Moretti, J.-C.} 1993, \emph{{\'E}tude sur la nomenclature grecque de
   l'architecture th{\'e}{\^a}trale. $\Pi$ETA$\Sigma$O$\Sigma$ et la
   d{\'e}nomination grecque des v{\'e}lums}, \bblvol{}~2, Anatolia Antiqua.
 
+\bibitem[{\textsc{Pline}(Traduction 1848-1850)}]{pline}
+\textsc{Pline}. Traduction 1848-1850, \emph{{H}istoire {N}aturelle}, \bblvol{}
+  XIX, {\'E}mile Littr{\'e}.
+
 \bibitem[{\textsc{Rocheleau}(2010)}]{rocheleau}
-\textsc{Rocheleau, M.} 2010, \enquote{La mod{\'e}lisation 3d comme m{\'e}thode
-  de recherche en sciences historiques}, \bblin{} \emph{Actes du 10e colloque
-  international {\'e}tudiant du d{\'e}partement d'histoire}.
+\textsc{Rocheleau, M.} 2010, \enquote{La mod{\'e}lisation 3{D} comme
+  m{\'e}thode de recherche en sciences historiques}, \bblin{} \emph{Actes du
+  10e colloque international {\'e}tudiant du d{\'e}partement d'histoire}.
 
 \bibitem[{\textsc{Roum{\'e}gous} \bbland{}
   \textsc{Provost}(2009)}]{carteArcheo}
 \textsc{Roum{\'e}gous, A.} \bbland{} \textsc{M.~Provost}. 2009, \emph{Carte
-  arch{\'e}ologique de la Gaule}, Acad{\'e}mie des Inscriptions et
+  arch{\'e}ologique de la {G}aule}, Acad{\'e}mie des Inscriptions et
   Belles-Lettres Minist{\`e}re de l'Education Nationale, Minist{\`e}re de la
   Recherche Minist{\`e}re de la Culture et de la Communication Acad{\'e}mie des
   Inscriptions et Belles-Lettres Minist{\`e}re de l'Education Nationale,
@@ -134,6 +136,10 @@
 \textsc{Vergnieux, R.} 2005, \enquote{Arch{\'e}ogrid : vers un conservatoire
   national des donn{\'e}es}, \bblin{} \emph{Virtual Retrospect}, \bblpp{}
   157--162.
+
+\bibitem[{\textsc{Vitruve}(Traduction 1847)}]{vitruve}
+\textsc{Vitruve}. Traduction 1847, \emph{De l'architecture}, \bblvol{}~V, M.
+  Ch.-L. Maufras.
 
 \bibitem[{\textsc{Wikip{\'e}dia}(2017)}]{precisionmachine}
 \textsc{Wikip{\'e}dia}. 2017, \enquote{Epsilon d'une machine},

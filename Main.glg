@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 17.07.2018  02:50:19
-;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/KxlNDVKGB7", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/z_ZVqt_F2U", Output: "Main.gls"
+;; at 23.07.2018  21:18:30
+;; Indexstyle: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/5Tgx1Tm2sN", Rawindex: "/var/folders/tt/615w205s26146h55mgkt1dyw0000gn/T/fLJhA_BfPw", Output: "Main.gls"
 
 
 Building indexentry-tree:
@@ -135,5 +135,4 @@ Letter-group: "å—´à»" -> "V"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "æ€å—œËÃ¼Ú €à¨Ã œ¨´— œÃË»€Ú" -> "W"
 WARNING: location-reference "{}{I}" did match multiple location-classes! (taking first one)
-WARNING: location-reference "{}{V}" did match multiple location-classes! (taking first one)
 WARNING: location-reference "{}{X}" did match multiple location-classes! (taking first one)

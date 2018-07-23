@@ -8,7 +8,10 @@
 \newcommand{\alpt}{\ensuremath{\alpha_2}\xspace}
 \newcommand{\strt}{\gls{strt}\xspace}
 
-
+%% Theorème
+\newtheorem{theo}{Règle des cotes contradictoires :} 
+\labelformat{theo}{règle des cotes contradictoires}
+\renewcommand{\thetheo}{}
 
 % Tenseur des déformation cylindrique
 \newcommand{\epsrr}{\ensuremath{\varepsilon_{rr}}\xspace}
@@ -65,10 +68,11 @@
 
 %Macro pour mettre les citations en bas de page
 \let\oldcite\cite
-\renewcommand*\cite[2][oeuvre intégrale]{\footnote{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
+\renewcommand*\cite[2][]{\footnote{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
 \let\oldcitep\citep
-\renewcommand*\citep[2][oeuvre intégrale]{\footnote{\oldcitep[#1]{#2}}\futurelet\nextToken\iscite}
-\newcommand*\citefnt[2][oeuvre intégrale]{\footnotetext{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
+\renewcommand*\citep[2][]{\footnote{\oldcitep[#1]{#2}}\futurelet\nextToken\iscite}
+\newcommand*\citefnt[2][]{\footnotetext{\oldcite[#1]{#2}}\futurelet\nextToken\iscite}
+%\interfootnotelinepenalty=10000
 
 %\newcommand{\footref}[1]{\textsuperscript{\ref{#1}}}
 

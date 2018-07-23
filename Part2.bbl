@@ -16,9 +16,6 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
-\bibitem[{\textsc{acouphile.fr}()}]{acouphile}
-\textsc{acouphile.fr}.
-
 \bibitem[{\textsc{Arenberg}(1988)}]{arenberg}
 \textsc{Arenberg, J.} 1988, \enquote{Ray/triangle intersection with barycentric
   coordinates}, \emph{Ray Tracing News}, \bblvol{}~1, \bblno{}~11.
@@ -40,6 +37,10 @@
 \textsc{Battenberg, E.} \bbland{} \textsc{R.~Avizienis}. 2011,
   \enquote{Implementing real-time partitioned convolution algorithms on
   conventional operating systems}, \emph{DAFx-11}.
+
+\bibitem[{\textsc{Carr{\'e}}()}]{acouphile}
+\textsc{Carr{\'e}, P.} \enquote{Les mat{\'e}riaux absorbants acoustiques},
+  \urlprefix\url{acouphile.fr}.
 
 \bibitem[{\textsc{CATT-Acoustic}()}]{catt}
 \textsc{CATT-Acoustic}. \enquote{Catt-acoustic webpage},

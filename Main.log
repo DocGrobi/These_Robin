@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  20 JUL 2018 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  23 JUL 2018 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -979,8 +979,6 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
-\c@theo=\count131
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen128
 )
@@ -996,12 +994,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen136
 \cmidrulekern=\dimen137
 \defaultaddspace=\dimen138
-\@cmidla=\count132
-\@cmidlb=\count133
+\@cmidla=\count131
+\@cmidlb=\count132
 \@aboverulesep=\dimen139
 \@belowrulesep=\dimen140
-\@thisruleclass=\count134
-\@lastruleclass=\count135
+\@thisruleclass=\count133
+\@lastruleclass=\count134
 \@thisrulewidth=\dimen141
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/colortbl/colortbl.sty
@@ -1032,7 +1030,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count136
+\Gread@gobject=\count135
 ))
 \everycr=\toks28
 \minrowclearance=\skip79
@@ -1044,7 +1042,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@old@col=\dimen146
 \TX@target=\dimen147
 \TX@delta=\dimen148
-\TX@cols=\count137
+\TX@cols=\count136
 \TX@ftn=\toks29
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/threeparttable/threeparttable.sty
@@ -1052,7 +1050,7 @@ Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box32
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count138
+\etb@tempcnta=\count137
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -1073,23 +1071,23 @@ Package graphics Info: Driver file: pdftex.def on input line 96.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count139
-\c@subtable=\count140
+\c@subfigure=\count138
+\c@subtable=\count139
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count141
-\calc@Bcount=\count142
+\calc@Acount=\count140
+\calc@Bcount=\count141
 \calc@Adimen=\dimen151
 \calc@Bdimen=\dimen152
 \calc@Askip=\skip80
 \calc@Bskip=\skip81
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count143
+\calc@Ccount=\count142
 \calc@Cskip=\skip82
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -1110,12 +1108,12 @@ File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 \AM@pagebox=\box33
 \AM@global@opts=\toks30
 \AM@toc@title=\toks31
-\c@AM@survey=\count144
+\c@AM@survey=\count143
 \AM@templatesizebox=\box34
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count145
+\c@r@tfl@t=\count144
 \rotFPtop=\skip83
 \rotFPbot=\skip84
 \rot@float@box=\box35
@@ -1166,10 +1164,10 @@ ode.tex
 \pgf@yc=\dimen164
 \w@pgf@writea=\write4
 \r@pgf@reada=\read1
-\c@pgf@counta=\count146
-\c@pgf@countb=\count147
-\c@pgf@countc=\count148
-\c@pgf@countd=\count149
+\c@pgf@counta=\count145
+\c@pgf@countb=\count146
+\c@pgf@countc=\count147
+\c@pgf@countd=\count148
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
@@ -1190,8 +1188,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count150
-\pgfsyssoftpath@bigbuffer@items=\count151
+\pgfsyssoftpath@smallbuffer@items=\count149
+\pgfsyssoftpath@bigbuffer@items=\count150
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -1221,7 +1219,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen165
-\pgfmath@count=\count152
+\pgfmath@count=\count151
 \pgfmath@box=\box37
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
@@ -1246,7 +1244,7 @@ code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count153
+\c@pgfmathroundto@lastzeros=\count152
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -1284,7 +1282,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box38
 \pgf@hbox=\box39
 \pgf@layerbox@main=\box40
-\pgf@picture@serial@count=\count154
+\pgf@picture@serial@count=\count153
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -1319,7 +1317,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count155
+\pgf@sys@shading@range@num=\count154
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1382,7 +1380,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count156
+\pgf@plot@mark@count=\count155
 \pgfplotmarksize=\dimen194
 )
 \tikz@lastx=\dimen195
@@ -1395,19 +1393,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box44
 \tikz@tempbox=\box45
 \tikz@tempbox@bg=\box46
-\tikztreelevel=\count157
-\tikznumberofchildren=\count158
-\tikznumberofcurrentchild=\count159
-\tikz@fig@count=\count160
+\tikztreelevel=\count156
+\tikznumberofchildren=\count157
+\tikznumberofcurrentchild=\count158
+\tikz@fig@count=\count159
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count161
-\pgfmatrixcurrentcolumn=\count162
-\pgf@matrix@numberofcolumns=\count163
+\pgfmatrixcurrentrow=\count160
+\pgfmatrixcurrentcolumn=\count161
+\pgf@matrix@numberofcolumns=\count162
 )
-\tikz@expandcount=\count164
+\tikz@expandcount=\count163
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1419,8 +1417,8 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 \t@pgfplots@tokb=\toks46
 \t@pgfplots@tokc=\toks47
 \pgfplots@tmpa=\dimen257
-\c@pgfplots@coordindex=\count165
-\c@pgfplots@scanlineindex=\count166
+\c@pgfplots@coordindex=\count164
+\c@pgfplots@scanlineindex=\count165
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1436,7 +1434,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count167
+\c@pgfmathroundto@lastzeros=\count166
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
@@ -1446,13 +1444,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count168
+\c@pgfplotsarray@tmp=\count167
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count169
+\c@pgfplotstable@counta=\count168
 \t@pgfplotstable@a=\toks48
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1465,7 +1463,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count170
+\c@pgfplotslibrarysurf@no=\count169
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1502,7 +1500,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen260
 \pgfdecoratedinputsegmentremainingdistance=\dimen261
 \pgf@decorate@distancetomove=\dimen262
-\pgf@decorate@repeatstate=\count171
+\pgf@decorate@repeatstate=\count170
 \pgfdecorationsegmentamplitude=\dimen263
 \pgfdecorationsegmentlength=\dimen264
 )
@@ -1516,7 +1514,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count172
+\pgfplots@numplots=\count171
 \pgfplots@xmin@reg=\dimen265
 \pgfplots@xmax@reg=\dimen266
 \pgfplots@ymin@reg=\dimen267
@@ -1534,9 +1532,9 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
-\pgfplots@group@current@plot=\count173
-\pgfplots@group@current@row=\count174
-\pgfplots@group@current@column=\count175
+\pgfplots@group@current@plot=\count172
+\pgfplots@group@current@row=\count173
+\pgfplots@group@current@column=\count174
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -1599,24 +1597,24 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count176
-\l_tmpa_int=\count177
-\l_tmpb_int=\count178
-\g_tmpa_int=\count179
-\g_tmpb_int=\count180
+\c_max_int=\count175
+\l_tmpa_int=\count176
+\l_tmpb_int=\count177
+\g_tmpa_int=\count178
+\g_tmpb_int=\count179
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count181
+\g__prg_map_int=\count180
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count182
-\l__iow_target_count_int=\count183
-\l__iow_current_line_int=\count184
-\l__iow_current_word_int=\count185
-\l__iow_current_indentation_int=\count186
+\l_iow_line_count_int=\count181
+\l__iow_target_count_int=\count182
+\l__iow_current_line_int=\count183
+\l__iow_current_word_int=\count184
+\l__iow_current_indentation_int=\count185
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen271
 \c_max_dim=\dimen272
@@ -1637,18 +1635,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count187
-\l_keys_choice_int=\count188
+\g__keyval_level_int=\count186
+\l_keys_choice_int=\count187
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count189
-\c__fp_middle_shift_int=\count190
-\c__fp_trailing_shift_int=\count191
-\c__fp_big_leading_shift_int=\count192
-\c__fp_big_middle_shift_int=\count193
-\c__fp_big_trailing_shift_int=\count194
-\c__fp_Bigg_leading_shift_int=\count195
-\c__fp_Bigg_middle_shift_int=\count196
-\c__fp_Bigg_trailing_shift_int=\count197
+\c__fp_leading_shift_int=\count188
+\c__fp_middle_shift_int=\count189
+\c__fp_trailing_shift_int=\count190
+\c__fp_big_leading_shift_int=\count191
+\c__fp_big_middle_shift_int=\count192
+\c__fp_big_trailing_shift_int=\count193
+\c__fp_Bigg_leading_shift_int=\count194
+\c__fp_Bigg_middle_shift_int=\count195
+\c__fp_Bigg_trailing_shift_int=\count196
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box70
 \l_tmpa_box=\box71
@@ -1698,16 +1696,16 @@ L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count198
+\l__driver_color_stack_int=\count197
 \l__driver_tmp_box=\box85
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count199
-\l__xparse_m_args_int=\count266
-\l__xparse_mandatory_args_int=\count267
-\l__xparse_processor_int=\count268
-\l__xparse_v_nesting_int=\count269
+\l__xparse_current_arg_int=\count198
+\l__xparse_m_args_int=\count199
+\l__xparse_mandatory_args_int=\count266
+\l__xparse_processor_int=\count267
+\l__xparse_v_nesting_int=\count268
 )
 Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 
@@ -1716,27 +1714,27 @@ Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box86
 \l__siunitx_tmp_dim=\dimen302
-\l__siunitx_tmp_int=\count270
-\l__siunitx_number_mantissa_length_int=\count271
-\l__siunitx_number_uncert_length_int=\count272
-\l__siunitx_round_int=\count273
-\l__siunitx_process_decimal_int=\count274
-\l__siunitx_process_uncertainty_int=\count275
-\l__siunitx_process_fixed_int=\count276
-\l__siunitx_process_integer_min_int=\count277
-\l__siunitx_process_precision_int=\count278
-\l__siunitx_group_min_int=\count279
+\l__siunitx_tmp_int=\count269
+\l__siunitx_number_mantissa_length_int=\count270
+\l__siunitx_number_uncert_length_int=\count271
+\l__siunitx_round_int=\count272
+\l__siunitx_process_decimal_int=\count273
+\l__siunitx_process_uncertainty_int=\count274
+\l__siunitx_process_fixed_int=\count275
+\l__siunitx_process_integer_min_int=\count276
+\l__siunitx_process_precision_int=\count277
+\l__siunitx_group_min_int=\count278
 \l__siunitx_angle_marker_box=\box87
 \l__siunitx_angle_unit_box=\box88
 \l__siunitx_angle_marker_dim=\dimen303
 \l__siunitx_angle_unit_dim=\dimen304
-\l__siunitx_unit_int=\count280
-\l__siunitx_unit_denominator_int=\count281
-\l__siunitx_unit_numerator_int=\count282
-\l__siunitx_unit_prefix_int=\count283
-\l__siunitx_unit_prefix_base_int=\count284
-\l__siunitx_unit_prefix_gram_int=\count285
-\l__siunitx_number_product_int=\count286
+\l__siunitx_unit_int=\count279
+\l__siunitx_unit_denominator_int=\count280
+\l__siunitx_unit_numerator_int=\count281
+\l__siunitx_unit_prefix_int=\count282
+\l__siunitx_unit_prefix_base_int=\count283
+\l__siunitx_unit_prefix_gram_int=\count284
+\l__siunitx_number_product_int=\count285
 \c__siunitx_one_fill_skip=\skip91
 \l__siunitx_table_unit_align_skip=\skip92
 \l__siunitx_table_exponent_dim=\dimen305
@@ -1880,8 +1878,8 @@ uage-mappings.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xymtex/chemist/chemist.sty
 Package `chemist' (ver5.01) <June 6, 2013> [SF]
 chemist.sty ver5.01 (for LaTeX2e) 2013/06/06[SF]
-\c@compd=\count287
-\c@deriv=\count288
+\c@compd=\count286
+\c@deriv=\count287
 \reactarrowsep=\dimen314
 \verbatimleftmargin=\dimen315
 \verbatimbaselineskip=\dimen316
@@ -1891,14 +1889,14 @@ chemist.sty ver5.01 (for LaTeX2e) 2013/06/06[SF]
 \hwgr@d=\dimen320
 \vsepgr@d=\dimen321
 \hsepgr@d=\dimen322
-\nrep=\count289
-\nrepmax=\count290
+\nrep=\count288
+\nrepmax=\count289
 \ybaselineshift=\dimen323
 \tbaselineshift=\dimen324
 \@savetbaselineshift=\dimen325
 LaTeX Info: Redefining \rm on input line 788.
 LaTeX Info: Redefining \mathversion on input line 892.
-\c@mv@chem=\count291
+\c@mv@chem=\count290
 LaTeX Font Info:    Encoding `FML' has changed to `OT1' for symbol font
 (Font)              `letters' in the math version `chem' on input line 965.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `chem'
@@ -1911,7 +1909,7 @@ LaTeX Font Info:    Encoding `FMS' has changed to `OMS' for symbol font
 (Font)              `symbols' in the math version `chem' on input line 965.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `chem'
 (Font)                  FMS/futm/m/n --> OMS/cmsy/m/n on input line 965.
-\c@mv@boldchem=\count292
+\c@mv@boldchem=\count291
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
 (Font)              `operators' in the math version `boldchem' on input line 96
 5.
@@ -1927,7 +1925,7 @@ LaTeX Font Info:    Encoding `FMS' has changed to `OMS' for symbol font
 
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldchem'
 (Font)                  FMS/futm/m/n --> OMS/cmsy/b/n on input line 965.
-\TestCount=\count293
+\TestCount=\count292
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xymtex/chemist/assurechemist.sty
 Part of XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
@@ -1941,16 +1939,16 @@ Package: l3regex 2016/05/14 v6492 L3 Experimental regular expressions
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.s
 ty
 Package: l3tl-build 2016/05/14 v6492 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count294
-\l__tl_build_index_int=\count295
+\l__tl_build_start_index_int=\count293
+\l__tl_build_index_int=\count294
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysi
 s.sty
 Package: l3tl-analysis 2016/03/24 v6443 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count296
-\l__tl_analysis_index_int=\count297
-\l__tl_analysis_nesting_int=\count298
-\l__tl_analysis_type_int=\count299
+\l__tl_analysis_normal_int=\count295
+\l__tl_analysis_index_int=\count296
+\l__tl_analysis_nesting_int=\count297
+\l__tl_analysis_type_int=\count298
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
 Package: l3flag 2016/05/14 v6492 L3 Experimental flags
@@ -1959,51 +1957,51 @@ Package: l3flag 2016/05/14 v6492 L3 Experimental flags
 t.sty
 Package: l3str-convert 2016/03/24 v6443 L3 Experimental string encoding convers
 ions
-\l__str_internal_int=\count300
-\c__str_replacement_char_int=\count301
+\l__str_internal_int=\count299
+\c__str_replacement_char_int=\count300
 )
-\l__regex_internal_a_int=\count302
-\l__regex_internal_b_int=\count303
-\l__regex_internal_c_int=\count304
-\l__regex_balance_int=\count305
-\l__regex_group_level_int=\count306
-\l__regex_mode_int=\count307
-\l__regex_catcodes_int=\count308
-\l__regex_default_catcodes_int=\count309
-\c__regex_catcode_D_int=\count310
-\c__regex_catcode_S_int=\count311
-\c__regex_catcode_L_int=\count312
-\c__regex_catcode_O_int=\count313
-\c__regex_catcode_A_int=\count314
-\c__regex_all_catcodes_int=\count315
-\l__regex_show_lines_int=\count316
-\l__regex_min_state_int=\count317
-\l__regex_max_state_int=\count318
-\l__regex_left_state_int=\count319
-\l__regex_right_state_int=\count320
-\l__regex_capturing_group_int=\count321
-\l__regex_min_pos_int=\count322
-\l__regex_max_pos_int=\count323
-\l__regex_current_pos_int=\count324
-\l__regex_start_pos_int=\count325
-\l__regex_success_pos_int=\count326
-\l__regex_current_char_int=\count327
-\l__regex_current_catcode_int=\count328
-\l__regex_last_char_int=\count329
-\l__regex_case_changed_char_int=\count330
-\l__regex_current_state_int=\count331
-\l__regex_step_int=\count332
-\l__regex_min_active_int=\count333
-\l__regex_max_active_int=\count334
-\l__regex_replacement_csnames_int=\count335
-\l__regex_match_count_int=\count336
-\l__regex_submatch_int=\count337
-\l__regex_zeroth_submatch_int=\count338
+\l__regex_internal_a_int=\count301
+\l__regex_internal_b_int=\count302
+\l__regex_internal_c_int=\count303
+\l__regex_balance_int=\count304
+\l__regex_group_level_int=\count305
+\l__regex_mode_int=\count306
+\l__regex_catcodes_int=\count307
+\l__regex_default_catcodes_int=\count308
+\c__regex_catcode_D_int=\count309
+\c__regex_catcode_S_int=\count310
+\c__regex_catcode_L_int=\count311
+\c__regex_catcode_O_int=\count312
+\c__regex_catcode_A_int=\count313
+\c__regex_all_catcodes_int=\count314
+\l__regex_show_lines_int=\count315
+\l__regex_min_state_int=\count316
+\l__regex_max_state_int=\count317
+\l__regex_left_state_int=\count318
+\l__regex_right_state_int=\count319
+\l__regex_capturing_group_int=\count320
+\l__regex_min_pos_int=\count321
+\l__regex_max_pos_int=\count322
+\l__regex_current_pos_int=\count323
+\l__regex_start_pos_int=\count324
+\l__regex_success_pos_int=\count325
+\l__regex_current_char_int=\count326
+\l__regex_current_catcode_int=\count327
+\l__regex_last_char_int=\count328
+\l__regex_case_changed_char_int=\count329
+\l__regex_current_state_int=\count330
+\l__regex_step_int=\count331
+\l__regex_min_active_int=\count332
+\l__regex_max_active_int=\count333
+\l__regex_replacement_csnames_int=\count334
+\l__regex_match_count_int=\count335
+\l__regex_submatch_int=\count336
+\l__regex_zeroth_submatch_int=\count337
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2016/02/10 v1.0e interfaceforuprightgreeklettersforuseinchem
 istry (CN)
-\l__chemgreek_tmpa_int=\count339
-\g__chemgreek_tmpa_int=\count340
+\l__chemgreek_tmpa_int=\count338
+\g__chemgreek_tmpa_int=\count339
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2055,7 +2053,7 @@ istry (CN)
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count341
+\l__mhchem_ce_distanceFromLastComma_int=\count340
 \__mhchem_arrow_extPgfLength_skip=\skip95
 \mhchem@minispace@tmp=\skip96
 \mhchem@minibackspace@tmp=\skip97
@@ -2066,7 +2064,7 @@ istry (CN)
 \mhchem@smallbondwidth=\skip102
 \mhchem@bondtmp@minussidebearingleft=\skip103
 \mhchem@bondtmp@minussidebearingright=\skip104
-\l__mhchem_option_version_int=\count342
+\l__mhchem_option_version_int=\count341
 \mhchem@option@minusmathsidebearingleft=\dimen326
 \mhchem@option@minusmathsidebearingright=\dimen327
 \mhchem@option@minustextsidebearingleft=\dimen328
@@ -2132,15 +2130,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen330
-\Hy@linkcounter=\count343
-\Hy@pagecounter=\count344
+\Hy@linkcounter=\count342
+\Hy@pagecounter=\count343
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count345
+\Hy@SavedSpaceFactor=\count344
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -2162,7 +2160,7 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count346
+\c@Hy@tempcnt=\count345
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -2170,7 +2168,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen331
-\Fld@menulength=\count347
+\Fld@menulength=\count346
 \Field@Width=\dimen332
 \Fld@charsize=\dimen333
 Package hyperref Info: Hyper figures OFF on input line 6298.
@@ -2182,18 +2180,22 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count348
-\c@Item=\count349
-\c@Hfootnote=\count350
+\Hy@abspage=\count347
+\c@Item=\count348
+\c@Hfootnote=\count349
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count351
-\c@bookmark@seq@number=\count352
+\Fld@listcount=\count350
+\c@bookmark@seq@number=\count351
 \Hy@SectionHShift=\skip105
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2016/02/16 v1.5c package for extended references (FMi)
+\c@vrcnt=\count352
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -2396,7 +2398,9 @@ Package glossaries Info: Writing glossary file Main.acn on input line 155.
 \openout8 = `Main.ntn'.
 
 Package glossaries Info: Writing glossary file Main.ntn on input line 155.
- (./Glossaire.tex)) (./CommandesPerso.tex) (./PageDeGarde.tex) (./Main.aux
+ (./Glossaire.tex)) (./CommandesPerso.tex
+\c@theo=\count383
+) (./PageDeGarde.tex) (./Main.aux
 (./Remerciements.aux) (./Part1.aux
 
 LaTeX Warning: Label `modCavea' multiply defined.
@@ -2477,16 +2481,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count383
+\scratchcounter=\count384
 \scratchdimen=\dimen354
 \scratchbox=\box98
-\nofMPsegments=\count384
-\nofMParguments=\count385
+\nofMPsegments=\count385
+\nofMParguments=\count386
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count386
+\MPscratchCnt=\count387
 \MPscratchDim=\dimen355
-\MPnumerator=\count387
-\makeMPintoPDFobject=\count388
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
 \everyMPtoPDFconversion=\toks62
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2538,7 +2542,8 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count389
+\c@section@level=\count390
+LaTeX Info: Redefining \Ref on input line 513.
 )
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
@@ -2548,6 +2553,7 @@ LaTeX Info: Redefining \nameref on input line 49.
 \@outlinefile=\write9
 \openout9 = `Main.out'.
 
+LaTeX Info: Redefining \Ref on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2583,7 +2589,7 @@ LaTeX Info: Redefining \nameref on input line 49.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c__siunitx_mathsf_int=\count390
+\c__siunitx_mathsf_int=\count391
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 49.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -2617,7 +2623,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmss on input line 49.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count391
+\c__siunitx_mathtt_int=\count392
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 49.
 
 
@@ -2853,22 +2859,22 @@ Overfull \hbox (1.19994pt too wide) detected at line 94
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 95
- []\T1/futs/m/n/12 144
+ []\T1/futs/m/n/12 145
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 96
- []\T1/futs/m/n/12 149
+ []\T1/futs/m/n/12 150
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 97
- []\T1/futs/m/n/12 149
+ []\T1/futs/m/n/12 150
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 98
- []\T1/futs/m/n/12 152
+ []\T1/futs/m/n/12 153
  []
 
 [10])
@@ -3113,21 +3119,15 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
-42}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.169 
-       <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
-<Part1/images/velumArles.png, id=920, 101.37875pt x 95.35625pt>
+[16 <./Part1/images/toitCaristie.png> <./Part1/images/toitBadie.png>]
+<Part1/images/velumArles.png, id=923, 101.37875pt x 95.35625pt>
 File: Part1/images/velumArles.png Graphic file (type png)
 
 <use Part1/images/velumArles.png>
 Package pdftex.def Info: Part1/images/velumArles.png used on input line 175.
 (pdftex.def)             Requested size: 154.35889pt x 145.19324pt.
 
-<Part1/images/velumCaristie.jpg, id=923, 622.325pt x 448.67625pt>
+<Part1/images/velumCaristie.jpg, id=926, 622.325pt x 448.67625pt>
 File: Part1/images/velumCaristie.jpg Graphic file (type jpg)
 
 <use Part1/images/velumCaristie.jpg>
@@ -3142,7 +3142,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
-47}) has been already used, duplicate ignored
+48}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3164,28 +3164,28 @@ Chapitre 2.
 \openout3 = `Main.mtc'.
 
 (./Main.mtc4) [19] [20] [21]
-<Part1/images/array.jpeg, id=1029, 992.70876pt x 573.14125pt>
+<Part1/images/array.jpeg, id=1033, 992.70876pt x 573.14125pt>
 File: Part1/images/array.jpeg Graphic file (type jpg)
 
 <use Part1/images/array.jpeg>
 Package pdftex.def Info: Part1/images/array.jpeg used on input line 259.
 (pdftex.def)             Requested size: 198.45662pt x 114.57375pt.
 
-<Part1/images/boolean.png, id=1032, 689.57625pt x 520.94624pt>
+<Part1/images/boolean.png, id=1036, 689.57625pt x 520.94624pt>
 File: Part1/images/boolean.png Graphic file (type png)
 
 <use Part1/images/boolean.png>
 Package pdftex.def Info: Part1/images/boolean.png used on input line 266.
 (pdftex.def)             Requested size: 198.45662pt x 149.92589pt.
 
-<Part1/images/screw.jpeg, id=1035, 964.60374pt x 304.13625pt>
+<Part1/images/screw.jpeg, id=1039, 964.60374pt x 304.13625pt>
 File: Part1/images/screw.jpeg Graphic file (type jpg)
 
 <use Part1/images/screw.jpeg>
 Package pdftex.def Info: Part1/images/screw.jpeg used on input line 271.
 (pdftex.def)             Requested size: 198.45662pt x 62.57108pt.
 
-<Part1/images/solidify.jpeg, id=1038, 868.24374pt x 236.885pt>
+<Part1/images/solidify.jpeg, id=1042, 868.24374pt x 236.885pt>
 File: Part1/images/solidify.jpeg Graphic file (type jpg)
 
 <use Part1/images/solidify.jpeg>
@@ -3197,7 +3197,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [22] [23 <./Part1/images/array.jpeg> <./Part1/images/boolean.png> <./Part1/imag
 es/screw.jpeg> <./Part1/images/solidify.jpeg>]
-<Part1/images/metodo.jpg, id=1084, 1020.81375pt x 1061.9675pt>
+<Part1/images/metodo.jpg, id=1088, 1020.81375pt x 1061.9675pt>
 File: Part1/images/metodo.jpg Graphic file (type jpg)
 
 <use Part1/images/metodo.jpg>
@@ -3208,13 +3208,19 @@ Package pdftex.def Info: Part1/images/metodo.jpg used on input line 299.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 306.
 
-<Part1/images/modCavea.png, id=1086, 1094.0875pt x 771.88374pt>
+<Part1/images/modCavea.png, id=1090, 1094.0875pt x 771.88374pt>
 File: Part1/images/modCavea.png Graphic file (type png)
 
 <use Part1/images/modCavea.png>
 Package pdftex.def Info: Part1/images/modCavea.png used on input line 311.
 (pdftex.def)             Requested size: 441.01773pt x 311.13895pt.
- [24 <./Part1/images/metodo.jpg>] [25 <./Part1/images/modCavea.png>] [26]
+ [24 <./Part1/images/metodo.jpg>] [25 <./Part1/images/modCavea.png>]
+Overfull \hbox (0.5906pt too wide) in paragraph at lines 332--333
+[]\T1/futs/m/n/12 Pour créer la sub-struc-ture du troi-sième [][][]\T1/futs/m/i
+t/12 mae-nia-num[][] \T1/futs/m/n/12 nous ap-pli-quons la [][]règle des cotes
+ []
+
+[26]
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
  [27]
@@ -3222,7 +3228,7 @@ Underfull \vbox (badness 1137) has occurred while \output is active []
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 363.
 
-<Part1/images/modMaenianum.png, id=1226, 998.73125pt x 578.16pt>
+<Part1/images/modMaenianum.png, id=1233, 998.73125pt x 578.16pt>
 File: Part1/images/modMaenianum.png Graphic file (type png)
 
 <use Part1/images/modMaenianum.png>
@@ -3238,14 +3244,14 @@ Overfull \hbox (0.55827pt too wide) in paragraph at lines 372--373
 ire ap-pa-rais-sant dans le théâtre
  []
 
-[28] <Part1/images/gradinCoupe.png, id=1271, 510.90875pt x 409.53pt>
+[28] <Part1/images/gradinCoupe.png, id=1278, 510.90875pt x 409.53pt>
 File: Part1/images/gradinCoupe.png Graphic file (type png)
 
 <use Part1/images/gradinCoupe.png>
 Package pdftex.def Info: Part1/images/gradinCoupe.png used on input line 381.
 (pdftex.def)             Requested size: 189.03328pt x 151.52371pt.
 
-<Part1/images/escaliers.png, id=1276, 910.40125pt x 744.7825pt>
+<Part1/images/escaliers.png, id=1283, 910.40125pt x 744.7825pt>
 File: Part1/images/escaliers.png Graphic file (type png)
 
 <use Part1/images/escaliers.png>
@@ -3275,7 +3281,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 399.
 
-<Part1/images/modAditus.png, id=1316, 984.67876pt x 782.925pt>
+<Part1/images/modAditus.png, id=1323, 984.67876pt x 782.925pt>
 File: Part1/images/modAditus.png Graphic file (type png)
 
 <use Part1/images/modAditus.png>
@@ -3287,16 +3293,13 @@ rt1/images/modAditus.png>]
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 414.
 
-<Part1/images/modMur2.png, id=1391, 957.5775pt x 339.2675pt>
+<Part1/images/modMur2.png, id=1398, 957.5775pt x 339.2675pt>
 File: Part1/images/modMur2.png Graphic file (type png)
 
 <use Part1/images/modMur2.png>
 Package pdftex.def Info: Part1/images/modMur2.png used on input line 419.
 (pdftex.def)             Requested size: 441.01773pt x 156.2513pt.
- [32 <./Part1/images/modMur2.png>]
-Underfull \vbox (badness 4341) has occurred while \output is active []
-
- [33]
+ [32 <./Part1/images/modMur2.png>] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 433.
@@ -3305,7 +3308,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 433.
 
-<Part1/images/modOrchestre.png, id=1482, 1097.09875pt x 523.9575pt>
+<Part1/images/modOrchestre.png, id=1495, 1097.09875pt x 523.9575pt>
 File: Part1/images/modOrchestre.png Graphic file (type png)
 
 <use Part1/images/modOrchestre.png>
@@ -3315,7 +3318,7 @@ Package pdftex.def Info: Part1/images/modOrchestre.png used on input line 436.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34] <Part1/images/modCouvertures.png, id=1536, 1151.30125pt x 600.2425pt>
+[34] <Part1/images/modCouvertures.png, id=1550, 1151.30125pt x 600.2425pt>
 File: Part1/images/modCouvertures.png Graphic file (type png)
 
 <use Part1/images/modCouvertures.png>
@@ -3331,7 +3334,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 458.
 
-<Part1/images/modPorticus.png, id=1588, 978.65625pt x 578.16pt>
+<Part1/images/modPorticus.png, id=1602, 978.65625pt x 578.16pt>
 File: Part1/images/modPorticus.png Graphic file (type png)
 
 <use Part1/images/modPorticus.png>
@@ -3342,14 +3345,14 @@ Package pdftex.def Info: Part1/images/modPorticus.png used on input line 461.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 514.
 
-[38] <Part1/images/parodos.png, id=1667, 372.39125pt x 331.2375pt>
+[38] <Part1/images/parodos.png, id=1681, 372.39125pt x 331.2375pt>
 File: Part1/images/parodos.png Graphic file (type png)
 
 <use Part1/images/parodos.png>
 Package pdftex.def Info: Part1/images/parodos.png used on input line 521.
 (pdftex.def)             Requested size: 216.1011pt x 192.22401pt.
 
-<Part1/images/acces10emegradin.png, id=1674, 863.225pt x 917.4275pt>
+<Part1/images/acces10emegradin.png, id=1688, 863.225pt x 917.4275pt>
 File: Part1/images/acces10emegradin.png Graphic file (type png)
 
 <use Part1/images/acces10emegradin.png>
@@ -3357,7 +3360,7 @@ Package pdftex.def Info: Part1/images/acces10emegradin.png used on input line 5
 26.
 (pdftex.def)             Requested size: 180.81888pt x 192.1615pt.
 
-<Part1/images/modColline.png, id=1685, 720.6925pt x 494.84875pt>
+<Part1/images/modColline.png, id=1699, 720.6925pt x 494.84875pt>
 File: Part1/images/modColline.png Graphic file (type png)
 
 <use Part1/images/modColline.png>
@@ -3381,21 +3384,21 @@ Chapitre 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 583.
 
-<Part1/images/modVelum.png, id=1721, 986.68625pt x 708.6475pt>
+<Part1/images/modVelum.png, id=1740, 986.68625pt x 708.6475pt>
 File: Part1/images/modVelum.png Graphic file (type png)
 
 <use Part1/images/modVelum.png>
 Package pdftex.def Info: Part1/images/modVelum.png used on input line 587.
 (pdftex.def)             Requested size: 441.01773pt x 316.74744pt.
  [42 <./Part1/images/modVelum.png>] [43]
-<Part1/images/velum2.png, id=1787, 501.875pt x 225.84375pt>
+<Part1/images/velum2.png, id=1811, 501.875pt x 225.84375pt>
 File: Part1/images/velum2.png Graphic file (type png)
 
 <use Part1/images/velum2.png>
 Package pdftex.def Info: Part1/images/velum2.png used on input line 632.
 (pdftex.def)             Requested size: 216.1011pt x 97.2453pt.
 
-<Part1/images/dessinvelum.png, id=1790, 703.62875pt x 294.09875pt>
+<Part1/images/dessinvelum.png, id=1814, 703.62875pt x 294.09875pt>
 File: Part1/images/dessinvelum.png Graphic file (type png)
 
 <use Part1/images/dessinvelum.png>
@@ -3406,7 +3409,7 @@ Package pdftex.def Info: Part1/images/dessinvelum.png used on input line 638.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\glspl' on input line 653.
 
-<Part1/images/modPublic.png, id=1818, 1182.4175pt x 836.12375pt>
+<Part1/images/modPublic.png, id=1842, 1182.4175pt x 836.12375pt>
 File: Part1/images/modPublic.png Graphic file (type png)
 
 <use Part1/images/modPublic.png>
@@ -3416,26 +3419,21 @@ Package pdftex.def Info: Part1/images/modPublic.png used on input line 660.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45] <Part1/images/modDecor.png, id=1833, 1044.90375pt x 312.16624pt>
+[45] <Part1/images/modDecor.png, id=1857, 1044.90375pt x 312.16624pt>
 File: Part1/images/modDecor.png Graphic file (type png)
 
 <use Part1/images/modDecor.png>
 Package pdftex.def Info: Part1/images/modDecor.png used on input line 681.
 (pdftex.def)             Requested size: 441.01773pt x 131.75673pt.
  [46 <./Part1/images/modPublic.png> <./Part1/images/modDecor.png>]
-Overfull \hbox (9.54247pt too wide) in paragraph at lines 686--687
-[]\T1/futs/m/n/12 La mo-dé-li-sa-tion de la ma-quette vir-tuelle du théâtre d'O
-range a ou-vert les voies à d'autres
- []
-
-<Part1/images/graphique1.png, id=1852, 1245.65375pt x 697.60625pt>
+<Part1/images/graphique1.png, id=1876, 1245.65375pt x 697.60625pt>
 File: Part1/images/graphique1.png Graphic file (type png)
 
 <use Part1/images/graphique1.png>
 Package pdftex.def Info: Part1/images/graphique1.png used on input line 690.
 (pdftex.def)             Requested size: 441.01773pt x 246.98666pt.
 
-<Part1/images/graphique2.png, id=1855, 1241.63875pt x 649.42625pt>
+<Part1/images/graphique2.png, id=1879, 1241.63875pt x 649.42625pt>
 File: Part1/images/graphique2.png Graphic file (type png)
 
 <use Part1/images/graphique2.png>
@@ -3455,14 +3453,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [50
 
 ] (./francaisbst.tex)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 60.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 57.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [51]
-Underfull \hbox (badness 1478) in paragraph at lines 104--104
+)
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/futs/m/sc/12 Bourdereaux\T1/futs/m/n/12 . ^^SVue d'en-semble du théâtre d
+'Orange^^T, URL [][]$\T1/aett/m/n/12 http : / / www .
+ []
+
+[51]
+Underfull \hbox (badness 1320) in paragraph at lines 105--105
 []\T1/futs/m/sc/12 Lachaux, J. C. \T1/futs/m/n/12 1970, ^^SThéâtres et am-phi-t
-héâtres d'afrique pro-con-su-laire^^T, \T1/futs/m/it/12 Aix-en-
+héâtres d'Afrique pro-con-su-laire^^T, \T1/futs/m/it/12 Aix-en-
  []
 
 )) [52]
@@ -3494,7 +3498,7 @@ Chapitre 4.
 (./Main.mtc9) [57
 
 ]
-<Part2/images/schema_absorption.png, id=2011, 331.2375pt x 474.77374pt>
+<Part2/images/schema_absorption.png, id=2038, 331.2375pt x 474.77374pt>
 File: Part2/images/schema_absorption.png Graphic file (type png)
 
 <use Part2/images/schema_absorption.png>
@@ -3502,7 +3506,7 @@ Package pdftex.def Info: Part2/images/schema_absorption.png used on input line
 31.
 (pdftex.def)             Requested size: 220.50887pt x 316.06107pt.
  [58 <./Part2/images/schema_absorption.png>] <Part2/images/RIR_schematique.png,
- id=2024, 554.57187pt x 405.515pt>
+ id=2051, 554.57187pt x 405.515pt>
 File: Part2/images/RIR_schematique.png Graphic file (type png)
 
 <use Part2/images/RIR_schematique.png>
@@ -3522,7 +3526,7 @@ Overfull \hbox (1.44257pt too wide) in paragraph at lines 84--85
 ique se-lon le-quel il y a conser-
  []
 
-<Part2/images/flux.png, id=2051, 401.5pt x 401.5pt>
+<Part2/images/flux.png, id=2078, 401.5pt x 401.5pt>
 File: Part2/images/flux.png Graphic file (type png)
 
 <use Part2/images/flux.png>
@@ -3539,7 +3543,7 @@ Overfull \hbox (37.74614pt too wide) detected at line 152
 m/it/12 :
  []
 
-<Part2/images/absorptionter.png, id=2097, 605.26125pt x 263.98625pt>
+<Part2/images/absorptionter.png, id=2125, 605.26125pt x 263.98625pt>
 File: Part2/images/absorptionter.png Graphic file (type png)
 
 <use Part2/images/absorptionter.png>
@@ -3547,14 +3551,14 @@ Package pdftex.def Info: Part2/images/absorptionter.png used on input line 165.
 
 (pdftex.def)             Requested size: 352.81552pt x 153.88148pt.
 
-<Part2/images/absorption.png, id=2101, 544.0325pt x 242.9075pt>
+<Part2/images/absorption.png, id=2129, 544.0325pt x 242.9075pt>
 File: Part2/images/absorption.png Graphic file (type png)
 
 <use Part2/images/absorption.png>
 Package pdftex.def Info: Part2/images/absorption.png used on input line 183.
 (pdftex.def)             Requested size: 352.81552pt x 157.53587pt.
 
-<Part2/images/absorptionbis.png, id=2102, 518.93875pt x 289.08pt>
+<Part2/images/absorptionbis.png, id=2130, 518.93875pt x 289.08pt>
 File: Part2/images/absorptionbis.png Graphic file (type png)
 
 <use Part2/images/absorptionbis.png>
@@ -3565,37 +3569,32 @@ Package pdftex.def Info: Part2/images/absorptionbis.png used on input line 187.
 Underfull \vbox (badness 1616) has occurred while \output is active []
 
  [63 <./Part2/images/absorption.png> <./Part2/images/absorptionbis.png>] [64]
-Overfull \hbox (12.13647pt too wide) in paragraph at lines 254--255
-[]\T1/futs/m/n/12 les fluc-tua-tions dues aux dé-pla-ce-ments d'air sont faible
-s de-vant ces va-leurs moyennes. 
- []
-
-
 Overfull \hbox (8.65767pt too wide) in paragraph at lines 257--271
 \T1/futs/m/n/12 L'équa-tion d'Helm-holtz ap-pa-rait lorsque l'on cherche des so
 -lu-tions har-mo-niques de l'équa-
  []
 
-[65] <Part2/images/green.png, id=2199, 491.8375pt x 327.2225pt>
+[65] <Part2/images/green.png, id=2229, 491.8375pt x 327.2225pt>
 File: Part2/images/green.png Graphic file (type png)
 
 <use Part2/images/green.png>
 Package pdftex.def Info: Part2/images/green.png used on input line 305.
 (pdftex.def)             Requested size: 264.61333pt x 176.0534pt.
 
-Overfull \hbox (6.03448pt too wide) in paragraph at lines 373--374
-\T1/futs/m/n/12 per-cu-tant les pa-rois, su-bit un chan-ge-ment de di-rec-tion 
-de pro-pa-ga-tion. Par ailleurs, chaque
+Overfull \hbox (5.2905pt too wide) in paragraph at lines 373--374
+\T1/futs/m/n/12 L'onde, per-cu-tant les pa-rois, su-bit un chan-ge-ment de di-r
+ec-tion de pro-pa-ga-tion. Par ailleurs,
  []
 
-<Part2/images/geometrique.png, id=2212, 654.445pt x 440.64626pt>
+[66 <./Part2/images/green.png>]
+<Part2/images/geometrique.png, id=2261, 654.445pt x 440.64626pt>
 File: Part2/images/geometrique.png Graphic file (type png)
 
 <use Part2/images/geometrique.png>
 Package pdftex.def Info: Part2/images/geometrique.png used on input line 376.
 (pdftex.def)             Requested size: 352.81552pt x 237.55545pt.
- [66 <./Part2/images/green.png>] [67 <./Part2/images/geometrique.png>]
-<Part2/images/constellations.png, id=2269, 656.4525pt x 529.98pt>
+ [67 <./Part2/images/geometrique.png>]
+<Part2/images/constellations.png, id=2299, 656.4525pt x 529.98pt>
 File: Part2/images/constellations.png Graphic file (type png)
 
 <use Part2/images/constellations.png>
@@ -3616,7 +3615,7 @@ Overfull \hbox (0.99037pt too wide) in paragraph at lines 440--441
 rait raf-fi-ner les mailles à l'échelle
  []
 
-<Part2/images/BEM.png, id=2309, 531.48563pt x 112.42pt>
+<Part2/images/BEM.png, id=2340, 531.48563pt x 112.42pt>
 File: Part2/images/BEM.png Graphic file (type png)
 
 <use Part2/images/BEM.png>
@@ -3626,7 +3625,7 @@ Package pdftex.def Info: Part2/images/BEM.png used on input line 443.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70] <Part2/images/schema_propagation.png, id=2329, 409.02812pt x 368.87813pt>
+[70] <Part2/images/schema_propagation.png, id=2360, 409.02812pt x 368.87813pt>
 File: Part2/images/schema_propagation.png Graphic file (type png)
 
 <use Part2/images/schema_propagation.png>
@@ -3642,7 +3641,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
-<Part2/images/schema_rayon.png, id=2343, 372.39125pt x 226.8475pt>
+<Part2/images/schema_rayon.png, id=2375, 372.39125pt x 226.8475pt>
 File: Part2/images/schema_rayon.png Graphic file (type png)
 
 <use Part2/images/schema_rayon.png>
@@ -3658,7 +3657,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 550.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 550.
- <Part2/images/normales.png, id=2380, 1279.78125pt x 751.80875pt>
+ <Part2/images/normales.png, id=2411, 1279.78125pt x 751.80875pt>
 File: Part2/images/normales.png Graphic file (type png)
 
 <use Part2/images/normales.png>
@@ -3700,7 +3699,7 @@ Overfull \hbox (0.19467pt too wide) in paragraph at lines 598--624
 -ef-fi-cients d'ab-sorp-tion pour
  []
 
-<Part2/images/boiteenglobante.png, id=2397, 735.74875pt x 664.4825pt>
+<Part2/images/boiteenglobante.png, id=2428, 735.74875pt x 664.4825pt>
 File: Part2/images/boiteenglobante.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante.png>
@@ -3708,7 +3707,7 @@ Package pdftex.def Info: Part2/images/boiteenglobante.png used on input line 63
 9.
 (pdftex.def)             Requested size: 242.5611pt x 219.06697pt.
 
-<Part2/images/boiteenglobante2.png, id=2398, 551.05875pt x 792.9625pt>
+<Part2/images/boiteenglobante2.png, id=2429, 551.05875pt x 792.9625pt>
 File: Part2/images/boiteenglobante2.png Graphic file (type png)
 
 <use Part2/images/boiteenglobante2.png>
@@ -3720,20 +3719,20 @@ Package pdftex.def Info: Part2/images/boiteenglobante2.png used on input line 6
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
-132}) has been already used, duplicate ignored
+136}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.653 \section
               {Calcul de rayons} \label{sect_rayon}]
-<Part2/images/icosphere.png, id=2412, 817.0525pt x 759.83875pt>
+<Part2/images/icosphere.png, id=2443, 817.0525pt x 759.83875pt>
 File: Part2/images/icosphere.png Graphic file (type png)
 
 <use Part2/images/icosphere.png>
 Package pdftex.def Info: Part2/images/icosphere.png used on input line 662.
 (pdftex.def)             Requested size: 198.45662pt x 184.55632pt.
 
-<Part2/images/fibonacci.png, id=2413, 451.6875pt x 464.73625pt>
+<Part2/images/fibonacci.png, id=2444, 451.6875pt x 464.73625pt>
 File: Part2/images/fibonacci.png Graphic file (type png)
 
 <use Part2/images/fibonacci.png>
@@ -3749,28 +3748,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [76 <./Part2/images/boiteenglobante.png> <./Part2/images/boiteenglobante2.png>]
 [77 <./Part2/images/icosphere.png> <./Part2/images/fibonacci.png>]
-<Part2/images/DiagRay.jpeg, id=2461, 1024.82875pt x 932.48375pt>
+<Part2/images/DiagRay.jpeg, id=2492, 1024.82875pt x 932.48375pt>
 File: Part2/images/DiagRay.jpeg Graphic file (type jpg)
 
 <use Part2/images/DiagRay.jpeg>
 Package pdftex.def Info: Part2/images/DiagRay.jpeg used on input line 806.
 (pdftex.def)             Requested size: 308.71106pt x 280.88556pt.
  [78 <./Part2/images/DiagRay.jpeg>]
-<Part2/images/rayRefl.png, id=2481, 458.71375pt x 355.3275pt>
+<Part2/images/rayRefl.png, id=2513, 458.71375pt x 355.3275pt>
 File: Part2/images/rayRefl.png Graphic file (type png)
 
 <use Part2/images/rayRefl.png>
 Package pdftex.def Info: Part2/images/rayRefl.png used on input line 826.
 (pdftex.def)             Requested size: 264.61333pt x 204.98402pt.
  [79 <./Part2/images/rayRefl.png>] [80]
-<Part2/images/touche.png, id=2510, 522.95375pt x 334.24875pt>
+<Part2/images/touche.png, id=2541, 522.95375pt x 334.24875pt>
 File: Part2/images/touche.png Graphic file (type png)
 
 <use Part2/images/touche.png>
 Package pdftex.def Info: Part2/images/touche.png used on input line 934.
 (pdftex.def)             Requested size: 242.5611pt x 155.03644pt.
 
-<Part2/images/schema_SI.png, id=2511, 189.20688pt x 207.27437pt>
+<Part2/images/schema_SI.png, id=2542, 189.20688pt x 207.27437pt>
 File: Part2/images/schema_SI.png Graphic file (type png)
 
 <use Part2/images/schema_SI.png>
@@ -3782,34 +3781,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 944--944
 on d'une source-image : Vé-ri-fi-ca-tion d'in-ter-sec-tion
  []
 
-<Part2/images/DiagSi.png, id=2512, 1192.455pt x 1796.7125pt>
+<Part2/images/DiagSi.png, id=2543, 1192.455pt x 1796.7125pt>
 File: Part2/images/DiagSi.png Graphic file (type png)
 
 <use Part2/images/DiagSi.png>
 Package pdftex.def Info: Part2/images/DiagSi.png used on input line 949.
-(pdftex.def)             Requested size: 352.81552pt x 531.58829pt.
+(pdftex.def)             Requested size: 396.91325pt x 598.04369pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [81 <./Part2/images/touche.png> <./Part2/images/schema_SI.png>] [82 <./Part2/im
-ages/DiagSi.png>] <Part2/images/rir.png, id=2526, 662.475pt x 313.17pt>
+ages/DiagSi.png>] <Part2/images/rir.png, id=2557, 662.475pt x 313.17pt>
 File: Part2/images/rir.png Graphic file (type png)
 
 <use Part2/images/rir.png>
 Package pdftex.def Info: Part2/images/rir.png used on input line 981.
-(pdftex.def)             Requested size: 396.91325pt x 187.63106pt.
+(pdftex.def)             Requested size: 441.01773pt x 208.48001pt.
  [83
 
  <./Part2/images/rir.png>]
-<Part2/images/DiagTdS.png, id=2547, 840.13875pt x 499.8675pt>
+<Part2/images/DiagTdS.png, id=2578, 840.13875pt x 499.8675pt>
 File: Part2/images/DiagTdS.png Graphic file (type png)
 
 <use Part2/images/DiagTdS.png>
 Package pdftex.def Info: Part2/images/DiagTdS.png used on input line 1011.
 (pdftex.def)             Requested size: 441.01773pt x 262.39622pt.
  [84 <./Part2/images/DiagTdS.png>]
-<Part2/images/filtres.png, id=2568, 661.47125pt x 444.66125pt>
+<Part2/images/filtres.png, id=2599, 661.47125pt x 444.66125pt>
 File: Part2/images/filtres.png Graphic file (type png)
 
 <use Part2/images/filtres.png>
@@ -3826,7 +3825,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 \openout3 = `Main.mtc'.
 
 (./Main.mtc11) [87]
-<Part2/images/complexite00.png, id=2599, 681.54625pt x 400.49625pt>
+<Part2/images/complexite00.png, id=2631, 681.54625pt x 400.49625pt>
 File: Part2/images/complexite00.png Graphic file (type png)
 
 <use Part2/images/complexite00.png>
@@ -3834,87 +3833,87 @@ Package pdftex.def Info: Part2/images/complexite00.png used on input line 1058.
 
 (pdftex.def)             Requested size: 352.81552pt x 207.32425pt.
 
-<Part2/images/complexite0.png, id=2602, 798.985pt x 286.06876pt>
+<Part2/images/complexite0.png, id=2634, 798.985pt x 286.06876pt>
 File: Part2/images/complexite0.png Graphic file (type png)
 
 <use Part2/images/complexite0.png>
-Package pdftex.def Info: Part2/images/complexite0.png used on input line 1073.
+Package pdftex.def Info: Part2/images/complexite0.png used on input line 1066.
 (pdftex.def)             Requested size: 441.01773pt x 157.90138pt.
  [88 <./Part2/images/complexite00.png>]
-Overfull \hbox (1.1192pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (1.1192pt too wide) in paragraph at lines 1083--1084
 []\T1/futs/m/n/12 Comme nous l'avons vu pré-cé-dem-ment, les maillages que nous
  de-vons trai-ter peuvent
  []
 
-<Part2/images/octree.png, id=2626, 1204.5pt x 691.58376pt>
+<Part2/images/octree.png, id=2658, 1204.5pt x 691.58376pt>
 File: Part2/images/octree.png Graphic file (type png)
 
 <use Part2/images/octree.png>
-Package pdftex.def Info: Part2/images/octree.png used on input line 1095.
+Package pdftex.def Info: Part2/images/octree.png used on input line 1088.
 (pdftex.def)             Requested size: 264.61333pt x 151.92728pt.
  [89 <./Part2/images/complexite0.png>]
-Overfull \hbox (0.7389pt too wide) in paragraph at lines 1101--1102
+Overfull \hbox (0.7389pt too wide) in paragraph at lines 1094--1095
 \T1/futs/m/n/12 boîte-mère est alors sub-di-vi-sée pour créer huit "boîtes-fill
 es", de taille iden-tique, qui elles-
  []
 
-<Part2/images/octreeSuzanne.png, id=2646, 552.0625pt x 469.755pt>
+<Part2/images/octreeSuzanne.png, id=2677, 552.0625pt x 469.755pt>
 File: Part2/images/octreeSuzanne.png Graphic file (type png)
 
 <use Part2/images/octreeSuzanne.png>
-Package pdftex.def Info: Part2/images/octreeSuzanne.png used on input line 1104
+Package pdftex.def Info: Part2/images/octreeSuzanne.png used on input line 1097
 .
 (pdftex.def)             Requested size: 264.61333pt x 225.17162pt.
  [90 <./Part2/images/octree.png> <./Part2/images/octreeSuzanne.png>] [91]
-<Part2/images/DiagOctree.jpg, id=2677, 990.70125pt x 922.44624pt>
+<Part2/images/DiagOctree.jpg, id=2708, 990.70125pt x 922.44624pt>
 File: Part2/images/DiagOctree.jpg Graphic file (type jpg)
 
 <use Part2/images/DiagOctree.jpg>
-Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 1185.
+Package pdftex.def Info: Part2/images/DiagOctree.jpg used on input line 1178.
 (pdftex.def)             Requested size: 308.71106pt x 287.43329pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[92] <Part2/images/AABB.png, id=2701, 367.87437pt x 297.61188pt>
+[92] <Part2/images/AABB.png, id=2732, 367.87437pt x 297.61188pt>
 File: Part2/images/AABB.png Graphic file (type png)
 
 <use Part2/images/AABB.png>
-Package pdftex.def Info: Part2/images/AABB.png used on input line 1207.
+Package pdftex.def Info: Part2/images/AABB.png used on input line 1200.
 (pdftex.def)             Requested size: 198.45662pt x 160.55815pt.
 
-<Part2/images/AABB2.png, id=2702, 366.36874pt x 298.11375pt>
+<Part2/images/AABB2.png, id=2733, 366.36874pt x 298.11375pt>
 File: Part2/images/AABB2.png Graphic file (type png)
 
 <use Part2/images/AABB2.png>
-Package pdftex.def Info: Part2/images/AABB2.png used on input line 1213.
+Package pdftex.def Info: Part2/images/AABB2.png used on input line 1206.
 (pdftex.def)             Requested size: 198.45662pt x 161.48395pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [93 <./Part2/images/DiagOctree.jpg>] [94 <./Part2/images/AABB.png> <./Part2/ima
-ges/AABB2.png>] <Part2/images/complexite.png, id=2744, 794.97pt x 390.45876pt>
+ges/AABB2.png>] <Part2/images/complexite.png, id=2776, 794.97pt x 390.45876pt>
 File: Part2/images/complexite.png Graphic file (type png)
 
 <use Part2/images/complexite.png>
-Package pdftex.def Info: Part2/images/complexite.png used on input line 1246.
+Package pdftex.def Info: Part2/images/complexite.png used on input line 1239.
 (pdftex.def)             Requested size: 441.01773pt x 216.6178pt.
  [95 <./Part2/images/complexite.png>]
-<Part2/images/complexite1.png, id=2752, 536.50438pt x 339.2675pt>
+<Part2/images/complexite1.png, id=2784, 536.50438pt x 339.2675pt>
 File: Part2/images/complexite1.png Graphic file (type png)
 
 <use Part2/images/complexite1.png>
-Package pdftex.def Info: Part2/images/complexite1.png used on input line 1304.
+Package pdftex.def Info: Part2/images/complexite1.png used on input line 1297.
 (pdftex.def)             Requested size: 441.01773pt x 278.88448pt.
  [96
 
  <./Part2/images/complexite1.png>]
-<Part2/images/complexite2.png, id=2761, 542.025pt x 262.9825pt>
+<Part2/images/complexite2.png, id=2792, 542.025pt x 262.9825pt>
 File: Part2/images/complexite2.png Graphic file (type png)
 
 <use Part2/images/complexite2.png>
-Package pdftex.def Info: Part2/images/complexite2.png used on input line 1343.
+Package pdftex.def Info: Part2/images/complexite2.png used on input line 1336.
 (pdftex.def)             Requested size: 441.01773pt x 213.98172pt.
  [97
 
@@ -3962,54 +3961,54 @@ Overfull \hbox (1.98195pt too wide) detected at line 7
  []\T1/futs/b/n/10.95 104
  []
 
-) [99] <Part2/images/test0.png, id=2789, 648.4225pt x 621.32124pt>
+) [99] <Part2/images/test0.png, id=2820, 648.4225pt x 621.32124pt>
 File: Part2/images/test0.png Graphic file (type png)
 
 <use Part2/images/test0.png>
-Package pdftex.def Info: Part2/images/test0.png used on input line 1464.
+Package pdftex.def Info: Part2/images/test0.png used on input line 1457.
 (pdftex.def)             Requested size: 220.50887pt x 211.29382pt.
 
-<Part2/images/testBE.png, id=2791, 440.64626pt x 452.69125pt>
+<Part2/images/testBE.png, id=2822, 440.64626pt x 452.69125pt>
 File: Part2/images/testBE.png Graphic file (type png)
 
 <use Part2/images/testBE.png>
-Package pdftex.def Info: Part2/images/testBE.png used on input line 1474.
+Package pdftex.def Info: Part2/images/testBE.png used on input line 1467.
 (pdftex.def)             Requested size: 198.45662pt x 203.88187pt.
 
-<Part2/images/testBEbis.png, id=2792, 386.44376pt x 346.29375pt>
+<Part2/images/testBEbis.png, id=2823, 386.44376pt x 346.29375pt>
 File: Part2/images/testBEbis.png Graphic file (type png)
 
 <use Part2/images/testBEbis.png>
-Package pdftex.def Info: Part2/images/testBEbis.png used on input line 1480.
+Package pdftex.def Info: Part2/images/testBEbis.png used on input line 1473.
 (pdftex.def)             Requested size: 198.45662pt x 177.83864pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [100 <./Part2/images/test0.png>]
-<Part2/images/testBeam.png, id=2801, 691.58376pt x 479.7925pt>
+<Part2/images/testBeam.png, id=2832, 691.58376pt x 479.7925pt>
 File: Part2/images/testBeam.png Graphic file (type png)
 
 <use Part2/images/testBeam.png>
-Package pdftex.def Info: Part2/images/testBeam.png used on input line 1492.
+Package pdftex.def Info: Part2/images/testBeam.png used on input line 1485.
 (pdftex.def)             Requested size: 198.45662pt x 137.67937pt.
 
-<Part2/images/testBeam2.png, id=2802, 866.23625pt x 661.47125pt>
+<Part2/images/testBeam2.png, id=2833, 866.23625pt x 661.47125pt>
 File: Part2/images/testBeam2.png Graphic file (type png)
 
 <use Part2/images/testBeam2.png>
-Package pdftex.def Info: Part2/images/testBeam2.png used on input line 1498.
+Package pdftex.def Info: Part2/images/testBeam2.png used on input line 1491.
 (pdftex.def)             Requested size: 198.45662pt x 151.53969pt.
 
-Underfull \hbox (badness 7649) in paragraph at lines 1499--1499
+Underfull \hbox (badness 7649) in paragraph at lines 1492--1492
 []\T1/futs/m/n/10.95 (b) |Pro-pa-ga-tion des rayons de-puis les
  []
 
-<Part2/images/test1.png, id=2803, 669.50125pt x 422.57875pt>
+<Part2/images/test1.png, id=2834, 669.50125pt x 422.57875pt>
 File: Part2/images/test1.png Graphic file (type png)
 
 <use Part2/images/test1.png>
-Package pdftex.def Info: Part2/images/test1.png used on input line 1514.
+Package pdftex.def Info: Part2/images/test1.png used on input line 1507.
 (pdftex.def)             Requested size: 352.81552pt x 222.70186pt.
 
 
@@ -4017,125 +4016,132 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [101 <./Part2/images/testBE.png> <./Part2/images/testBEbis.png> <./Part2/images
 /testBeam.png> <./Part2/images/testBeam2.png>]
-<Part2/images/test2RIR.png, id=2818, 414.54875pt x 309.155pt>
+<Part2/images/test2RIR.png, id=2849, 414.54875pt x 309.155pt>
 File: Part2/images/test2RIR.png Graphic file (type png)
 
 <use Part2/images/test2RIR.png>
-Package pdftex.def Info: Part2/images/test2RIR.png used on input line 1545.
+Package pdftex.def Info: Part2/images/test2RIR.png used on input line 1538.
 (pdftex.def)             Requested size: 198.45662pt x 148.00116pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1546
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1539
 []\T1/futs/m/n/10.95 (a) |Ré-ponse im-pul-sion-nelle dans une
  []
 
-<Part2/images/test2SI.png, id=2819, 1001.7425pt x 880.28876pt>
+<Part2/images/test2SI.png, id=2850, 1001.7425pt x 880.28876pt>
 File: Part2/images/test2SI.png Graphic file (type png)
 
 <use Part2/images/test2SI.png>
-Package pdftex.def Info: Part2/images/test2SI.png used on input line 1551.
+Package pdftex.def Info: Part2/images/test2SI.png used on input line 1544.
 (pdftex.def)             Requested size: 198.45662pt x 174.38905pt.
  [102 <./Part2/images/test1.png>]
-<Part2/images/test2absair.png, id=2828, 830.10126pt x 307.1475pt>
+<Part2/images/test2absair.png, id=2859, 830.10126pt x 307.1475pt>
 File: Part2/images/test2absair.png Graphic file (type png)
 
 <use Part2/images/test2absair.png>
-Package pdftex.def Info: Part2/images/test2absair.png used on input line 1563.
+Package pdftex.def Info: Part2/images/test2absair.png used on input line 1556.
 (pdftex.def)             Requested size: 441.01773pt x 163.18108pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [103 <./Part2/images/test2RIR.png> <./Part2/images/test2SI.png>]
-<Part2/images/test3_0.png, id=2841, 914.41624pt x 682.55pt>
+<Part2/images/test3_0.png, id=2872, 914.41624pt x 682.55pt>
 File: Part2/images/test3_0.png Graphic file (type png)
 
 <use Part2/images/test3_0.png>
-Package pdftex.def Info: Part2/images/test3_0.png used on input line 1594.
+Package pdftex.def Info: Part2/images/test3_0.png used on input line 1587.
 (pdftex.def)             Requested size: 441.01773pt x 329.18251pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (9.45859pt too wide) in paragraph at lines 1601--1602
+Overfull \hbox (9.45859pt too wide) in paragraph at lines 1594--1595
 []\T1/futs/m/n/12 On me-sure éga-le-ment l'er-reur re-la-tive des éner-gies par
  source-image en pre-nant comme
  []
 
-<Part2/images/test3_1.png, id=2846, 526.96875pt x 238.8925pt>
+<Part2/images/test3_1.png, id=2877, 369.38pt x 231.86626pt>
 File: Part2/images/test3_1.png Graphic file (type png)
 
 <use Part2/images/test3_1.png>
-Package pdftex.def Info: Part2/images/test3_1.png used on input line 1615.
-(pdftex.def)             Requested size: 352.81552pt x 159.95142pt.
+Package pdftex.def Info: Part2/images/test3_1.png used on input line 1608.
+(pdftex.def)             Requested size: 216.1011pt x 135.65004pt.
 
-<Part2/images/test3_2.png, id=2847, 548.0475pt x 234.8775pt>
+<Part2/images/test3_2.png, id=2878, 398.48875pt x 227.85126pt>
 File: Part2/images/test3_2.png Graphic file (type png)
 
 <use Part2/images/test3_2.png>
-Package pdftex.def Info: Part2/images/test3_2.png used on input line 1620.
-(pdftex.def)             Requested size: 352.81552pt x 151.2099pt.
+Package pdftex.def Info: Part2/images/test3_2.png used on input line 1613.
+(pdftex.def)             Requested size: 216.1011pt x 123.56282pt.
 
-<Part2/images/test3_3.png, id=2848, 540.0175pt x 240.9pt>
+<Part2/images/test3_3.png, id=2879, 387.4475pt x 230.8625pt>
 File: Part2/images/test3_3.png Graphic file (type png)
 
 <use Part2/images/test3_3.png>
-Package pdftex.def Info: Part2/images/test3_3.png used on input line 1625.
-(pdftex.def)             Requested size: 352.81552pt x 157.39182pt.
+Package pdftex.def Info: Part2/images/test3_3.png used on input line 1619.
+(pdftex.def)             Requested size: 216.1011pt x 128.76779pt.
 
-<Part2/images/test3_4.png, id=2849, 546.04pt x 225.84375pt>
+Underfull \hbox (badness 7522) in paragraph at lines 1620--1620
+[]\T1/futs/m/n/10.95 (c) |Er-reur re-la-tive en norme in-fi-nie pour
+ []
+
+<Part2/images/test3_4.png, id=2880, 357.335pt x 220.825pt>
 File: Part2/images/test3_4.png Graphic file (type png)
 
 <use Part2/images/test3_4.png>
-Package pdftex.def Info: Part2/images/test3_4.png used on input line 1630.
-(pdftex.def)             Requested size: 352.81552pt x 145.92482pt.
+Package pdftex.def Info: Part2/images/test3_4.png used on input line 1624.
+(pdftex.def)             Requested size: 216.1011pt x 133.5473pt.
 
-
-LaTeX Warning: Float too large for page by 2.46844pt on input line 1635.
+Underfull \hbox (badness 6859) in paragraph at lines 1625--1625
+[]\T1/futs/m/n/10.95 (d) |Er-reur re-la-tive en norme in-fi-nie pour
+ []
 
 [104 <./Part2/images/test2absair.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part2/images/test3_5.png, id=2861, 548.0475pt x 194.7275pt>
+<Part2/images/test3_5.png, id=2893, 548.0475pt x 194.7275pt>
 File: Part2/images/test3_5.png Graphic file (type png)
 
 <use Part2/images/test3_5.png>
-Package pdftex.def Info: Part2/images/test3_5.png used on input line 1658.
+Package pdftex.def Info: Part2/images/test3_5.png used on input line 1652.
 (pdftex.def)             Requested size: 352.81552pt x 125.36205pt.
 
-<Part2/images/test3_6.png, id=2862, 558.085pt x 193.72375pt>
+<Part2/images/test3_6.png, id=2894, 558.085pt x 193.72375pt>
 File: Part2/images/test3_6.png Graphic file (type png)
 
 <use Part2/images/test3_6.png>
-Package pdftex.def Info: Part2/images/test3_6.png used on input line 1663.
+Package pdftex.def Info: Part2/images/test3_6.png used on input line 1657.
 (pdftex.def)             Requested size: 352.81552pt x 122.47226pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [105 <./Part2/images/test3_0.png>]
-<Part2/images/test3_8.png, id=2876, 579.16376pt x 233.87375pt>
+<Part2/images/test3_8.png, id=2908, 579.16376pt x 233.87375pt>
 File: Part2/images/test3_8.png Graphic file (type png)
 
 <use Part2/images/test3_8.png>
-Package pdftex.def Info: Part2/images/test3_8.png used on input line 1680.
+Package pdftex.def Info: Part2/images/test3_8.png used on input line 1674.
 (pdftex.def)             Requested size: 352.81552pt x 142.47005pt.
 
-<Part2/images/test3_9.png, id=2877, 511.9125pt x 227.85126pt>
+<Part2/images/test3_9.png, id=2909, 511.9125pt x 227.85126pt>
 File: Part2/images/test3_9.png Graphic file (type png)
 
 <use Part2/images/test3_9.png>
-Package pdftex.def Info: Part2/images/test3_9.png used on input line 1685.
+Package pdftex.def Info: Part2/images/test3_9.png used on input line 1679.
 (pdftex.def)             Requested size: 352.81552pt x 157.03674pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[106] [107 <./Part2/images/test3_1.png> <./Part2/images/test3_2.png> <./Part2/i
-mages/test3_3.png> <./Part2/images/test3_4.png>] [108 <./Part2/images/test3_5.p
-ng> <./Part2/images/test3_6.png> <./Part2/images/test3_8.png> <./Part2/images/t
-est3_9.png>]
+[106 <./Part2/images/test3_1.png> <./Part2/images/test3_2.png> <./Part2/images/
+test3_3.png> <./Part2/images/test3_4.png>] [107 <./Part2/images/test3_5.png> <.
+/Part2/images/test3_6.png> <./Part2/images/test3_8.png> <./Part2/images/test3_9
+.png>] [108
+
+]
 Chapitre 8.
 \openout3 = `Main.mtc'.
 
@@ -4191,37 +4197,35 @@ Overfull \hbox (1.09499pt too wide) detected at line 10
  []\T1/futs/m/n/10.95 117
  []
 
-) [109
-
-] <Part2/images/logiciel.png, id=2942, 811.03pt x 257.96375pt>
+) [109] <Part2/images/logiciel.png, id=2973, 811.03pt x 257.96375pt>
 File: Part2/images/logiciel.png Graphic file (type png)
 
 <use Part2/images/logiciel.png>
-Package pdftex.def Info: Part2/images/logiciel.png used on input line 1711.
+Package pdftex.def Info: Part2/images/logiciel.png used on input line 1705.
 (pdftex.def)             Requested size: 308.71106pt x 98.19255pt.
 
-<Part2/images/add-on.png, id=2946, 757.83125pt x 324.21124pt>
+<Part2/images/add-on.png, id=2977, 757.83125pt x 324.21124pt>
 File: Part2/images/add-on.png Graphic file (type png)
 
 <use Part2/images/add-on.png>
-Package pdftex.def Info: Part2/images/add-on.png used on input line 1721.
+Package pdftex.def Info: Part2/images/add-on.png used on input line 1715.
 (pdftex.def)             Requested size: 441.01773pt x 188.67587pt.
  [110 <./Part2/images/logiciel.png>]
-<Part2/images/ihm.png, id=2960, 927.465pt x 891.33pt>
+<Part2/images/ihm.png, id=2991, 927.465pt x 891.33pt>
 File: Part2/images/ihm.png Graphic file (type png)
 
 <use Part2/images/ihm.png>
-Package pdftex.def Info: Part2/images/ihm.png used on input line 1728.
+Package pdftex.def Info: Part2/images/ihm.png used on input line 1722.
 (pdftex.def)             Requested size: 441.01773pt x 423.83498pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part2/images/synopsis.jpg, id=2964, 1603.9925pt x 2389.92876pt>
+<Part2/images/synopsis.jpg, id=2995, 1603.9925pt x 2389.92876pt>
 File: Part2/images/synopsis.jpg Graphic file (type jpg)
 
 <use Part2/images/synopsis.jpg>
-Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 1748.
+Package pdftex.def Info: Part2/images/synopsis.jpg used on input line 1742.
 (pdftex.def)             Requested size: 441.01773pt x 657.10481pt.
 
 
@@ -4230,32 +4234,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [111 <./Part2/images/add-on.png>] [112 <./Part2/images/ihm.png>] [113 <./Part2/
 images/synopsis.jpg>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 1768.
+(Font)              scaled to size 13.24796pt on input line 1762.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1768.
+(Font)              scaled to size 7.35999pt on input line 1762.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 1768.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1762.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 1768.
+(Font)              scaled to size 13.24796pt on input line 1762.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1768.
+(Font)              scaled to size 7.35999pt on input line 1762.
  [114
 
 ] [115]
-<Part2/images/ts.png, id=3051, 454.69875pt x 395.4775pt>
+<Part2/images/ts.png, id=3082, 454.69875pt x 395.4775pt>
 File: Part2/images/ts.png Graphic file (type png)
 
 <use Part2/images/ts.png>
-Package pdftex.def Info: Part2/images/ts.png used on input line 1823.
+Package pdftex.def Info: Part2/images/ts.png used on input line 1816.
 (pdftex.def)             Requested size: 176.40439pt x 153.42697pt.
  [116 <./Part2/images/ts.png>] [117] [118
 
 ]
 
-LaTeX Warning: Reference `projete' on page 119 undefined on input line 1891.
+LaTeX Warning: Reference `projete' on page 119 undefined on input line 1884.
 
 [119]
-Overfull \hbox (3.5493pt too wide) in paragraph at lines 1908--1909
+Overfull \hbox (3.5493pt too wide) in paragraph at lines 1901--1902
 \T1/futs/m/n/12 pas uni-forme. Cela se-rait d'ailleurs plus re-pré-sen-ta-tif d
 es cas réels et no-tam-ment de l'usage
  []
@@ -4263,7 +4267,7 @@ es cas réels et no-tam-ment de l'usage
 [120] (./Part2.bbl (./Main.brf) (./francaisbst.tex) [121
 
 ]
-Underfull \hbox (badness 7613) in paragraph at lines 186--186
+Underfull \hbox (badness 7613) in paragraph at lines 187--187
 []\T1/futs/m/sc/12 Wikipédia\T1/futs/m/n/12 . c, ^^SSound pres-sure^^T, URL [][
 ]$\T1/aett/m/n/12 https : / / en . wikipedia . org / wiki / Sound _
  []
@@ -4377,7 +4381,7 @@ Overfull \hbox (7.68059pt too wide) in paragraph at lines 42--59
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/theatreMat.png, id=3308, 1262.7175pt x 932.48375pt>
+<Part3/images/theatreMat.png, id=3340, 1262.7175pt x 932.48375pt>
 File: Part3/images/theatreMat.png Graphic file (type png)
 
 <use Part3/images/theatreMat.png>
@@ -4388,34 +4392,34 @@ Package pdftex.def Info: Part3/images/theatreMat.png used on input line 74.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [131pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
-.177}) has been already used, duplicate ignored
+.181}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 \section
              {Analyse de la rÃ©ponse impulsionnelle} \label{sect_analyse_rir}pd
-fTeX warning (ext4): destination with the same identifier (name{Hfootnote.177})
+fTeX warning (ext4): destination with the same identifier (name{Hfootnote.181})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 \section
              {Analyse de la rÃ©ponse impulsionnelle} \label{sect_analyse_rir}pd
-fTeX warning (ext4): destination with the same identifier (name{Hfootnote.177})
+fTeX warning (ext4): destination with the same identifier (name{Hfootnote.181})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 \section
              {Analyse de la rÃ©ponse impulsionnelle} \label{sect_analyse_rir}pd
-fTeX warning (ext4): destination with the same identifier (name{Hfootnote.177})
+fTeX warning (ext4): destination with the same identifier (name{Hfootnote.181})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 \section
              {Analyse de la rÃ©ponse impulsionnelle} \label{sect_analyse_rir}]
-<Part3/images/rirTheatreAvecDecor.png, id=3336, 655.44875pt x 346.29375pt>
+<Part3/images/rirTheatreAvecDecor.png, id=3368, 655.44875pt x 346.29375pt>
 File: Part3/images/rirTheatreAvecDecor.png Graphic file (type png)
 
 <use Part3/images/rirTheatreAvecDecor.png>
@@ -4423,7 +4427,7 @@ Package pdftex.def Info: Part3/images/rirTheatreAvecDecor.png used on input lin
 e 92.
 (pdftex.def)             Requested size: 441.01773pt x 233.00371pt.
 
-<Part3/images/rirTheatre20.png, id=3337, 780.9175pt x 330.23375pt>
+<Part3/images/rirTheatre20.png, id=3369, 780.9175pt x 330.23375pt>
 File: Part3/images/rirTheatre20.png Graphic file (type png)
 
 <use Part3/images/rirTheatre20.png>
@@ -4433,14 +4437,14 @@ Package pdftex.def Info: Part3/images/rirTheatre20.png used on input line 97.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/dyonisos1.png, id=3358, 1045.9075pt x 542.025pt>
+<Part3/images/dyonisos1.png, id=3390, 1045.9075pt x 542.025pt>
 File: Part3/images/dyonisos1.png Graphic file (type png)
 
 <use Part3/images/dyonisos1.png>
 Package pdftex.def Info: Part3/images/dyonisos1.png used on input line 115.
 (pdftex.def)             Requested size: 211.68661pt x 109.70155pt.
 
-<Part3/images/dyonisos2.png, id=3361, 733.74126pt x 498.86375pt>
+<Part3/images/dyonisos2.png, id=3393, 733.74126pt x 498.86375pt>
 File: Part3/images/dyonisos2.png Graphic file (type png)
 
 <use Part3/images/dyonisos2.png>
@@ -4451,21 +4455,21 @@ Underfull \hbox (badness 4181) in paragraph at lines 124--124
 \T1/futs/m/n/10.95 du théâtre de Dyo-ni-sos. Em-pla-ce-ment du
  []
 
-<Part3/images/rirTheatre30.png, id=3368, 748.7975pt x 334.24875pt>
+<Part3/images/rirTheatre30.png, id=3400, 748.7975pt x 334.24875pt>
 File: Part3/images/rirTheatre30.png Graphic file (type png)
 
 <use Part3/images/rirTheatre30.png>
 Package pdftex.def Info: Part3/images/rirTheatre30.png used on input line 138.
 (pdftex.def)             Requested size: 374.86775pt x 167.33307pt.
 
-<Part3/images/SI30dBbis.png, id=3369, 559.08875pt x 830.10126pt>
+<Part3/images/SI30dBbis.png, id=3401, 559.08875pt x 830.10126pt>
 File: Part3/images/SI30dBbis.png Graphic file (type png)
 
 <use Part3/images/SI30dBbis.png>
 Package pdftex.def Info: Part3/images/SI30dBbis.png used on input line 143.
 (pdftex.def)             Requested size: 158.76665pt x 235.72pt.
 
-<Part3/images/SI30dB.png, id=3370, 885.3075pt x 786.94pt>
+<Part3/images/SI30dB.png, id=3402, 885.3075pt x 786.94pt>
 File: Part3/images/SI30dB.png Graphic file (type png)
 
 <use Part3/images/SI30dB.png>
@@ -4476,14 +4480,14 @@ Package pdftex.def Info: Part3/images/SI30dB.png used on input line 148.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/SI60dB.png, id=3392, 1146.2825pt x 784.9325pt>
+<Part3/images/SI60dB.png, id=3424, 1146.2825pt x 784.9325pt>
 File: Part3/images/SI60dB.png Graphic file (type png)
 
 <use Part3/images/SI60dB.png>
 Package pdftex.def Info: Part3/images/SI60dB.png used on input line 160.
 (pdftex.def)             Requested size: 352.81552pt x 241.58987pt.
 
-<Part3/images/SI60dBbis.png, id=3393, 1138.2525pt x 822.07124pt>
+<Part3/images/SI60dBbis.png, id=3425, 1138.2525pt x 822.07124pt>
 File: Part3/images/SI60dBbis.png Graphic file (type png)
 
 <use Part3/images/SI60dBbis.png>
@@ -4494,7 +4498,7 @@ Package pdftex.def Info: Part3/images/SI60dBbis.png used on input line 167.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [134pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote
-.181}) has been already used, duplicate ignored
+.185}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -4522,25 +4526,25 @@ Overfull \hbox (1.98195pt too wide) detected at line 2
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 3
- []\T1/futs/b/n/10.95 144
+ []\T1/futs/b/n/10.95 145
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 4
- []\T1/futs/b/n/10.95 149
+ []\T1/futs/b/n/10.95 150
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 5
- []\T1/futs/b/n/10.95 149
+ []\T1/futs/b/n/10.95 150
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 6
- []\T1/futs/b/n/10.95 152
+ []\T1/futs/b/n/10.95 153
  []
 
-) [139] <Part3/images/SIsansDec.png, id=3486, 1155.31625pt x 779.91376pt>
+) [139] <Part3/images/SIsansDec.png, id=3518, 1155.31625pt x 779.91376pt>
 File: Part3/images/SIsansDec.png Graphic file (type png)
 
 <use Part3/images/SIsansDec.png>
@@ -4551,7 +4555,7 @@ Package pdftex.def Info: Part3/images/SIsansDec.png used on input line 229.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [140 <./Part3/images/SIsansDec.png>]
-<Part3/images/position_rece.png, id=3506, 949.5475pt x 708.6475pt>
+<Part3/images/position_rece.png, id=3538, 949.5475pt x 708.6475pt>
 File: Part3/images/position_rece.png Graphic file (type png)
 
 <use Part3/images/position_rece.png>
@@ -4562,79 +4566,83 @@ Package pdftex.def Info: Part3/images/position_rece.png used on input line 263.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/Listener11.png, id=3525, 1123.19624pt x 595.22375pt>
+<Part3/images/Listener11.png, id=3557, 1123.19624pt x 595.22375pt>
 File: Part3/images/Listener11.png Graphic file (type png)
 
 <use Part3/images/Listener11.png>
-Package pdftex.def Info: Part3/images/Listener11.png used on input line 312.
-(pdftex.def)             Requested size: 441.01773pt x 233.70758pt.
+Package pdftex.def Info: Part3/images/Listener11.png used on input line 313.
+(pdftex.def)             Requested size: 396.91325pt x 210.33864pt.
 
-<Part3/images/Listener10.png, id=3530, 1154.3125pt x 777.90625pt>
+<Part3/images/Listener10.png, id=3562, 1154.3125pt x 777.90625pt>
 File: Part3/images/Listener10.png Graphic file (type png)
 
 <use Part3/images/Listener10.png>
-Package pdftex.def Info: Part3/images/Listener10.png used on input line 317.
-(pdftex.def)             Requested size: 441.01773pt x 297.20987pt.
+Package pdftex.def Info: Part3/images/Listener10.png used on input line 319.
+(pdftex.def)             Requested size: 396.91325pt x 267.4877pt.
  [141]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [142 <./Part3/images/position_rece.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[143 <./Part3/images/Listener11.png>] [144 <./Part3/images/Listener10.png>]
-<Part3/images/test_source1.png, id=3585, 1101.11375pt x 740.7675pt>
+ [143 <./Part3/images/Listener11.png> <./Part3/images/Listener10.png>]
+<Part3/images/test_source1.png, id=3606, 1101.11375pt x 740.7675pt>
 File: Part3/images/test_source1.png Graphic file (type png)
 
 <use Part3/images/test_source1.png>
-Package pdftex.def Info: Part3/images/test_source1.png used on input line 337.
+Package pdftex.def Info: Part3/images/test_source1.png used on input line 341.
 (pdftex.def)             Requested size: 211.68661pt x 142.40884pt.
 
-<Part3/images/test_source2.png, id=3586, 1098.1025pt x 743.77875pt>
+<Part3/images/test_source2.png, id=3607, 1098.1025pt x 743.77875pt>
 File: Part3/images/test_source2.png Graphic file (type png)
 
 <use Part3/images/test_source2.png>
-Package pdftex.def Info: Part3/images/test_source2.png used on input line 345.
+Package pdftex.def Info: Part3/images/test_source2.png used on input line 349.
 (pdftex.def)             Requested size: 211.68661pt x 143.37361pt.
 
-<Part3/images/test_source3.png, id=3587, 1099.10625pt x 746.79pt>
+<Part3/images/test_source3.png, id=3608, 1099.10625pt x 746.79pt>
 File: Part3/images/test_source3.png Graphic file (type png)
 
 <use Part3/images/test_source3.png>
-Package pdftex.def Info: Part3/images/test_source3.png used on input line 351.
+Package pdftex.def Info: Part3/images/test_source3.png used on input line 355.
 (pdftex.def)             Requested size: 211.68661pt x 143.82874pt.
 
-<Part3/images/test_source4.png, id=3588, 1101.11375pt x 745.78625pt>
+<Part3/images/test_source4.png, id=3609, 1101.11375pt x 745.78625pt>
 File: Part3/images/test_source4.png Graphic file (type png)
 
 <use Part3/images/test_source4.png>
-Package pdftex.def Info: Part3/images/test_source4.png used on input line 357.
+Package pdftex.def Info: Part3/images/test_source4.png used on input line 361.
 (pdftex.def)             Requested size: 211.68661pt x 143.37369pt.
- [145 <./Part3/images/test_source1.png> <./Part3/images/test_source2.png> <./Pa
-rt3/images/test_source3.png> <./Part3/images/test_source4.png>]
-<Part3/images/angle_refl.png, id=3602, 706.64pt x 396.48125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/angle_refl.png, id=3611, 706.64pt x 396.48125pt>
 File: Part3/images/angle_refl.png Graphic file (type png)
 
 <use Part3/images/angle_refl.png>
-Package pdftex.def Info: Part3/images/angle_refl.png used on input line 376.
+Package pdftex.def Info: Part3/images/angle_refl.png used on input line 380.
 (pdftex.def)             Requested size: 352.81552pt x 197.95578pt.
+ [144]
 
-<Part3/images/RIR20sourcelat.png, id=3606, 667.49374pt x 344.28625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/RIR20sourcelat.png, id=3628, 667.49374pt x 344.28625pt>
 File: Part3/images/RIR20sourcelat.png Graphic file (type png)
 
 <use Part3/images/RIR20sourcelat.png>
-Package pdftex.def Info: Part3/images/RIR20sourcelat.png used on input line 385
+Package pdftex.def Info: Part3/images/RIR20sourcelat.png used on input line 389
 .
 (pdftex.def)             Requested size: 308.71106pt x 159.23514pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/sourcelat.png, id=3609, 1136.245pt x 702.625pt>
+<Part3/images/sourcelat.png, id=3631, 1136.245pt x 702.625pt>
 File: Part3/images/sourcelat.png Graphic file (type png)
 
 <use Part3/images/sourcelat.png>
-Package pdftex.def Info: Part3/images/sourcelat.png used on input line 393.
+Package pdftex.def Info: Part3/images/sourcelat.png used on input line 397.
 (pdftex.def)             Requested size: 396.91325pt x 245.43997pt.
 
 
@@ -4643,34 +4651,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Part3/images/voute.png, id=3620, 1196.47pt x 865.2325pt>
+
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+ [145 <./Part3/images/test_source1.png> <./Part3/images/test_source2.png> <./Pa
+rt3/images/test_source3.png> <./Part3/images/test_source4.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Part3/images/voute.png, id=3663, 1196.47pt x 865.2325pt>
 File: Part3/images/voute.png Graphic file (type png)
 
 <use Part3/images/voute.png>
-Package pdftex.def Info: Part3/images/voute.png used on input line 436.
-(pdftex.def)             Requested size: 352.81552pt x 255.13576pt.
- [146 <./Part3/images/angle_refl.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: Part3/images/voute.png used on input line 468.
+(pdftex.def)             Requested size: 441.01773pt x 318.9296pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[147 <./Part3/images/RIR20sourcelat.png> <./Part3/images/sourcelat.png>]
-[148 <./Part3/images/voute.png>]
+[146 <./Part3/images/angle_refl.png> <./Part3/images/RIR20sourcelat.png>]
+[147 <./Part3/images/sourcelat.png>] [148 <./Part3/images/voute.png>]
 Overfull \hbox (3.13522pt too wide) in paragraph at lines 475--476
 []\T1/futs/m/n/12 La pré-sence d'un pu-blic mo-di-fie le temps de ré-ver-bé-ra-
 tion des salles, ainsi se-lon qu'elle
  []
 
-<Part3/images/caisson_toit.png, id=3674, 754.82pt x 297.11pt>
+<Part3/images/caisson_toit.png, id=3705, 754.82pt x 297.11pt>
 File: Part3/images/caisson_toit.png Graphic file (type png)
 
 <use Part3/images/caisson_toit.png>
 Package pdftex.def Info: Part3/images/caisson_toit.png used on input line 530.
 (pdftex.def)             Requested size: 441.01773pt x 173.59329pt.
 
-<Part3/images/toit.png, id=3679, 1172.38pt x 619.31375pt>
+<Part3/images/toit.png, id=3710, 1172.38pt x 619.31375pt>
 File: Part3/images/toit.png Graphic file (type png)
 
 <use Part3/images/toit.png>
@@ -4679,7 +4692,7 @@ Package pdftex.def Info: Part3/images/toit.png used on input line 537.
  [149
 
 ]
-<Part3/images/diff_toit.png, id=3688, 416.55624pt x 295.1025pt>
+<Part3/images/diff_toit.png, id=3720, 416.55624pt x 295.1025pt>
 File: Part3/images/diff_toit.png Graphic file (type png)
 
 <use Part3/images/diff_toit.png>
@@ -4693,7 +4706,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [150 <./Part3/images/caisson_toit.png> <./Part3/images/toit.png>]
-<Part3/images/Listener4.png, id=3720, 1189.44376pt x 776.9025pt>
+<Part3/images/Listener4.png, id=3753, 1189.44376pt x 776.9025pt>
 File: Part3/images/Listener4.png Graphic file (type png)
 
 <use Part3/images/Listener4.png>
@@ -4704,7 +4717,7 @@ Package pdftex.def Info: Part3/images/Listener4.png used on input line 580.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [151 <./Part3/images/diff_toit.png>]
-<Part3/images/canac_comparaison.png, id=3749, 872.25874pt x 649.42625pt>
+<Part3/images/canac_comparaison.png, id=3780, 872.25874pt x 649.42625pt>
 File: Part3/images/canac_comparaison.png Graphic file (type png)
 
 <use Part3/images/canac_comparaison.png>
@@ -4716,17 +4729,23 @@ Package pdftex.def Info: Part3/images/canac_comparaison.png used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [152 <./Part3/images/Listener4.png>]
-<Part3/images/rindel.png, id=3773, 817.55438pt x 225.84375pt>
+<Part3/images/rindel.png, id=3804, 1293.33188pt x 1101.61563pt>
 File: Part3/images/rindel.png Graphic file (type png)
 
 <use Part3/images/rindel.png>
 Package pdftex.def Info: Part3/images/rindel.png used on input line 618.
-(pdftex.def)             Requested size: 441.01773pt x 121.82974pt.
+(pdftex.def)             Requested size: 352.81552pt x 300.5163pt.
 
 Overfull \hbox (1.77332pt too wide) in paragraph at lines 615--646
 \T1/futs/m/n/12 des écarts d'un bâ-ti-ment à l'autre faus-sant la com-pa-rai-so
 n. Il semble donc que la meilleure
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4766,155 +4785,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 (./Annexes/Annexes.tex
 Annexe A.
-<Annexes/images/CoupeCavea.jpg, id=3900, 2343.75626pt x 1427.3325pt>
+<Annexes/images/CoupeCavea.jpg, id=3932, 2343.75626pt x 1427.3325pt>
 File: Annexes/images/CoupeCavea.jpg Graphic file (type jpg)
 
 <use Annexes/images/CoupeCavea.jpg>
 Package pdftex.def Info: Annexes/images/CoupeCavea.jpg used on input line 14.
 (pdftex.def)             Requested size: 441.01773pt x 268.5607pt.
+ [1
 
-<Annexes/images/caristieDessus.jpg, id=3907, 1922.18124pt x 2571.6075pt>
+
+
+ <./Annexes/images/CoupeCavea.jpg>]
+<Annexes/images/aditusOccidental.jpg, id=3946, 2581.645pt x 2370.8575pt>
+File: Annexes/images/aditusOccidental.jpg Graphic file (type jpg)
+
+<use Annexes/images/aditusOccidental.jpg>
+Package pdftex.def Info: Annexes/images/aditusOccidental.jpg used on input line
+ 23.
+(pdftex.def)             Requested size: 441.01773pt x 404.99397pt.
+ [2 <./Annexes/images/aditusOccidental.jpg>] <Annexes/images/aditusOriental.jpg
+, id=3958, 1919.17pt x 1755.55875pt>
+File: Annexes/images/aditusOriental.jpg Graphic file (type jpg)
+
+<use Annexes/images/aditusOriental.jpg>
+Package pdftex.def Info: Annexes/images/aditusOriental.jpg used on input line 3
+1.
+(pdftex.def)             Requested size: 441.01773pt x 403.42178pt.
+ [3 <./Annexes/images/aditusOriental.jpg>] <Annexes/images/colline.png, id=3970
+, 307.64937pt x 371.88937pt>
+File: Annexes/images/colline.png Graphic file (type png)
+
+<use Annexes/images/colline.png>
+Package pdftex.def Info: Annexes/images/colline.png used on input line 39.
+(pdftex.def)             Requested size: 441.01773pt x 533.14264pt.
+ [4 <./Annexes/images/colline.png>]
+<Annexes/images/frontdescene.jpg, id=3982, 1694.33pt x 1696.3375pt>
+File: Annexes/images/frontdescene.jpg Graphic file (type jpg)
+
+<use Annexes/images/frontdescene.jpg>
+Package pdftex.def Info: Annexes/images/frontdescene.jpg used on input line 47.
+
+(pdftex.def)             Requested size: 441.01773pt x 441.52914pt.
+ [5 <./Annexes/images/frontdescene.jpg>]
+<Annexes/images/grenierOcci.png, id=3992, 961.5925pt x 449.68pt>
+File: Annexes/images/grenierOcci.png Graphic file (type png)
+
+<use Annexes/images/grenierOcci.png>
+Package pdftex.def Info: Annexes/images/grenierOcci.png used on input line 55.
+(pdftex.def)             Requested size: 441.01773pt x 206.23776pt.
+
+<Annexes/images/colonneCaristie.png, id=3997, 414.54875pt x 424.58624pt>
+File: Annexes/images/colonneCaristie.png Graphic file (type png)
+
+<use Annexes/images/colonneCaristie.png>
+Package pdftex.def Info: Annexes/images/colonneCaristie.png used on input line 
+61.
+(pdftex.def)             Requested size: 264.61333pt x 271.02809pt.
+
+<Annexes/images/caristieDessus.jpg, id=4004, 1922.18124pt x 2571.6075pt>
 File: Annexes/images/caristieDessus.jpg Graphic file (type jpg)
 
 <use Annexes/images/caristieDessus.jpg>
-Package pdftex.def Info: Annexes/images/caristieDessus.jpg used on input line 2
-0.
+Package pdftex.def Info: Annexes/images/caristieDessus.jpg used on input line 6
+9.
 (pdftex.def)             Requested size: 441.01773pt x 590.00543pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Annexes/images/cotes.jpg, id=3912, 1092.08pt x 2484.28125pt>
+<Annexes/images/cotes.jpg, id=4009, 1092.08pt x 2484.28125pt>
 File: Annexes/images/cotes.jpg Graphic file (type jpg)
 
 <use Annexes/images/cotes.jpg>
-Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 26.
+Package pdftex.def Info: Annexes/images/cotes.jpg used on input line 77.
 (pdftex.def)             Requested size: 297.18181pt x 676.04005pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Annexes/images/aditusOccidental.jpg, id=3917, 2581.645pt x 2370.8575pt>
-File: Annexes/images/aditusOccidental.jpg Graphic file (type jpg)
-
-<use Annexes/images/aditusOccidental.jpg>
-Package pdftex.def Info: Annexes/images/aditusOccidental.jpg used on input line
- 32.
-(pdftex.def)             Requested size: 441.01773pt x 404.99397pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/aditusOriental.jpg, id=3924, 1919.17pt x 1755.55875pt>
-File: Annexes/images/aditusOriental.jpg Graphic file (type jpg)
-
-<use Annexes/images/aditusOriental.jpg>
-Package pdftex.def Info: Annexes/images/aditusOriental.jpg used on input line 3
-8.
-(pdftex.def)             Requested size: 441.01773pt x 403.42178pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/frontdescene.jpg, id=3931, 1694.33pt x 1696.3375pt>
-File: Annexes/images/frontdescene.jpg Graphic file (type jpg)
-
-<use Annexes/images/frontdescene.jpg>
-Package pdftex.def Info: Annexes/images/frontdescene.jpg used on input line 44.
-
-(pdftex.def)             Requested size: 441.01773pt x 441.52914pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/retourOccidentalMur.jpg, id=3936, 965.6075pt x 2384.91pt>
+<Annexes/images/retourOccidentalMur.jpg, id=4014, 965.6075pt x 2384.91pt>
 File: Annexes/images/retourOccidentalMur.jpg Graphic file (type jpg)
 
 <use Annexes/images/retourOccidentalMur.jpg>
 Package pdftex.def Info: Annexes/images/retourOccidentalMur.jpg used on input l
-ine 50.
+ine 84.
 (pdftex.def)             Requested size: 273.71286pt x 676.04005pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Annexes/images/grenierOcci.png, id=3941, 961.5925pt x 449.68pt>
-File: Annexes/images/grenierOcci.png Graphic file (type png)
-
-<use Annexes/images/grenierOcci.png>
-Package pdftex.def Info: Annexes/images/grenierOcci.png used on input line 56.
-(pdftex.def)             Requested size: 441.01773pt x 206.23776pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/colonneCaristie.png, id=3946, 414.54875pt x 424.58624pt>
-File: Annexes/images/colonneCaristie.png Graphic file (type png)
-
-<use Annexes/images/colonneCaristie.png>
-Package pdftex.def Info: Annexes/images/colonneCaristie.png used on input line 
-62.
-(pdftex.def)             Requested size: 441.01773pt x 451.71133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/colline.png, id=3953, 307.64937pt x 371.88937pt>
-File: Annexes/images/colline.png Graphic file (type png)
-
-<use Annexes/images/colline.png>
-Package pdftex.def Info: Annexes/images/colline.png used on input line 68.
-(pdftex.def)             Requested size: 441.01773pt x 533.14264pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Annexes/images/DiagRay2.png, id=3958, 1096.095pt x 1160.335pt>
+[6 <./Annexes/images/grenierOcci.png> <./Annexes/images/colonneCaristie.png>]
+<Annexes/images/DiagRay2.png, id=4030, 1096.095pt x 1160.335pt>
 File: Annexes/images/DiagRay2.png Graphic file (type png)
 
 <use Annexes/images/DiagRay2.png>
-Package pdftex.def Info: Annexes/images/DiagRay2.png used on input line 74.
+Package pdftex.def Info: Annexes/images/DiagRay2.png used on input line 94.
 (pdftex.def)             Requested size: 396.91325pt x 420.18132pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
+[7 <./Annexes/images/caristieDessus.jpg>] [8 <./Annexes/images/cotes.jpg>]
+[9 <./Annexes/images/retourOccidentalMur.jpg>] [10 <./Annexes/images/DiagRay2.p
+ng>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 141.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 141.
 
-
-
- <./Annexes/images/CoupeCavea.jpg>] [2 <./Annexes/images/caristieDessus.jpg>] [
-3 <./Annexes/images/cotes.jpg>] [4 <./Annexes/images/aditusOccidental.jpg>]
-[5 <./Annexes/images/aditusOriental.jpg>] [6 <./Annexes/images/frontdescene.jpg
->] [7 <./Annexes/images/retourOccidentalMur.jpg>] [8 <./Annexes/images/grenierO
-cci.png> <./Annexes/images/colonneCaristie.png>] [9 <./Annexes/images/colline.p
-ng>] [10 <./Annexes/images/DiagRay2.png>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4024, 597.50829pt x 845.0471pt>
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4060, 597.50829pt x 845.0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf used on inpu
-t line 122.
+t line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf used on inpu
-t line 122.
+t line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4027, page=1, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4063, page=1, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 1>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page1 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 1>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page1 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [11
 
@@ -4923,119 +4927,119 @@ File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 1>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page1 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 1>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page1 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 1>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page1 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [12 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4081, page=2, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4120, page=2, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 2>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page2 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 2>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page2 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 2>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page2 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [13 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4093, page=3, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4132, page=3, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 3>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page3 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 3>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page3 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 3>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page3 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [14 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4104, page=4, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4143, page=4, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 4>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page4 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 4>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page4 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 4>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page4 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [15 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4117, page=5, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4156, page=5, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 5>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page5 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 5>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page5 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 5>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page5 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [16 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>]
-<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4126, page=6, 597.50829pt x 845.
+<Annexes/images/CFA2018_Aussal_Gueguen.pdf, id=4164, page=6, 597.50829pt x 845.
 0471pt>
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
  <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 6>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page6 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 6>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page6 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Annexes/images/CFA2018_Aussal_Gueguen.pdf Graphic file (type pdf)
 
 <use Annexes/images/CFA2018_Aussal_Gueguen.pdf, page 6>
 Package pdftex.def Info: Annexes/images/CFA2018_Aussal_Gueguen.pdf, page6 used 
-on input line 122.
+on input line 143.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [17 <./Annexes/images/CFA2018_Aussal_Gueguen.pdf>] (./Annexes.bbl (./Main.brf)
  [18
@@ -5053,12 +5057,12 @@ Annexe C.
 
 
 ] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 
  []
 
@@ -5076,10 +5080,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9744E450B4AD022A073CA4C14AC12DA7;4786.
-Package rerunfilecheck Info: File `Main.brf' has not changed.
-(rerunfilecheck)             Checksum: 3AE64A6D34AEF74DCDA305E9EC6A4D0E;9147.
+(rerunfilecheck)             Checksum: 1F84191C3A4A9C67CE0CF97FF2549EDA;4786.
 
+
+Package rerunfilecheck Warning: File `Main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Main.brf':
+(rerunfilecheck)             Before: 962F7B71B953BC1BFD6B82B9E1FBF9BD;9824
+(rerunfilecheck)             After:  02A329892EB742ABDEDE44D3878D3FF6;9824.
 
 LaTeX Warning: There were undefined references.
 
@@ -5088,62 +5097,32 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 54993 strings out of 493014
- 1173824 string characters out of 6133351
- 1426281 words of memory out of 5000000
- 56148 multiletter control sequences out of 15000+600000
- 290691 words of font info for 253 fonts, out of 8000000 for 9000
+ 55096 strings out of 493014
+ 1175183 string characters out of 6133351
+ 1427418 words of memory out of 5000000
+ 56238 multiletter control sequences out of 15000+600000
+ 297120 words of font info for 262 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,22n,87p,10450b,1408s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.213} has been referenced but does not e
+ 64i,22n,87p,10450b,1430s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.184} has been referenced but does not e
 xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.212} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.211} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.210} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.209} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.208} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.207} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.206} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.205} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.204} has been referenced but does not exi
-st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.180} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.176} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.179} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.175} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.178} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.174} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.177} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.173} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.135} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.131} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.46} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.47} has been referenced but does not exis
 t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
@@ -5173,10 +5152,10 @@ ve/2016/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Main.pdf (200 pages, 59239729 bytes).
+Output written on Main.pdf (200 pages, 64835755 bytes).
 PDF statistics:
- 4867 PDF objects out of 5155 (max. 8388607)
- 4229 compressed objects within 43 object streams
- 880 named destinations out of 1000 (max. 500000)
+ 4910 PDF objects out of 5155 (max. 8388607)
+ 4291 compressed objects within 43 object streams
+ 889 named destinations out of 1000 (max. 500000)
  1264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

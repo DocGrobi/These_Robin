@@ -15,14 +15,14 @@
 	type=\acronymtype,
 	name={AABB},
 	description={ \emph{Axis-Aligned Bounding Box}},
-	first={Axis-Aligned Bounding Box (AABB)},
+	first={\textit{Axis-Aligned Bounding Box} (AABB)},
 	}
 
 \newglossaryentry{OBB}{
 	type=\acronymtype,
 	name={OBB},
 	description={ \emph{Oriented Bounding Box}},
-	first={Oriented Bounding Box (OBB)},
+	first={\textit{Oriented Bounding Box} (OBB)},
 	}		
 	
 	
@@ -145,7 +145,7 @@
 \newglossaryentry{EDT}{
 	type=\acronymtype,
 	name={EDT},
-	description={\gls{RT60} exprimé à partir de l'extrapolation de l'énergie entre -0 et -10dB, ou \emph{Early Decay Time}},
+	description={\gls{RT60} exprimé à partir de l'extrapolation de l'énergie entre -0 et -10dB, ou \emph{Early Decay Time}}
 	%first={Early Decay Time (EDT)}
 	}	
 
@@ -224,8 +224,8 @@ où $f$ est une fonction définie sur la frontière $\partial \Omega$
 \newglossaryentry{Dirac}{
 	name={\scshape{Dirac}},
 	text   = {Dirac},
-	description={La distribution de Dirac vérifie la propriété fondamentale que, pour toute fonction :
-$x \mapsto  \varphi (x)$ lisse : $< \delta , \varphi > = \varphi(0)$
+	description={La distribution de Dirac peut être informellement considérée comme une fonction qui prend une « valeur » infinie en 0, et la valeur zéro partout ailleurs
+	% vérifie la propriété fondamentale que, pour toute fonction :$x \mapsto  \varphi (x)$ lisse : $< \delta , \varphi > = \varphi(0)$
 	},
 	}	
 	
@@ -274,7 +274,7 @@ où $f$ est une fonction scalaire connue définie sur la limite $\partial \Omega
 \newglossaryentry{octree}{
 	name={\scshape{Octree}},
 	text   = {\textit{octree}},
-	description={Structure de données de type arbre dans laquelle chaque nœud peut compter jusqu'à huit enfants. En trois dimensions, créer un octree revient à découper une cube en son milieu sur chacun de ses axes.},
+	description={Structure de données de type arbre dans laquelle chaque nœud peut compter jusqu'à huit enfants. En trois dimensions, créer un \gls{octree} revient à découper un cube en son milieu sur chacun de ses axes},
 	}
 	
 \newglossaryentry{wav}{
@@ -293,27 +293,29 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{armature}{
 	name={\scshape{Armature}},
 	text   = {armature},
-	description={Une Armature dans \textit{Blender} peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, une Armature peut être constituée de nombreux Os. Ces Os peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \footnote{Manuel \textit{Blender} - Armatures}}
+	description={Une armature dans \textit{Blender} peut être considérée comme semblable à l’armature d’un vrai squelette, et tout comme un squelette réel, elle peut être constituée de nombreux os. Ceux-ci peuvent être déplacés et tout ce à quoi ils sont attachés ou associés se déplacera et se déformera de manière similaire \footnote{Manuel \textit{Blender} - Armatures}}
 	}
 
 \newglossaryentry{array}{
 	name={\scshape{Modificateur "Tableau"}},
 	text   = {modificateur de type "Tableau"},
-	description={Permet de répéter plusieurs fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modificateur à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonnes de la \gls{porticus isc}},
+	description={Permet de répéter plusieurs fois un objet en disposant les copies dans le repère absolu, le repère relatif à l'objet source ou bien par rapport à un objet tiers%. Il est par exemple utilisé pour créer des escaliers en répétant n fois la première marche. Pour répéter l'objet selon une courbe, on peut lier le modificateur à un objet vide (empty) qui aura subit une rotation. Cela est utilisé par exemple pour répéter les colonnes de la \gls{porticus isc}
+	},
 	first={Modificateur "Tableau" qui permet de répéter plusieurs fois un objet}
 	}
 	
 \newglossaryentry{boolean}{
 	name={\scshape{Modificateur "Booléen"}},
 	text   = {modificateur de type "Booléen"},
-	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets. Il est utilisé par exemple pour faire des trous dans les murs pour les portes},
+	description={Permet des opérations d'addition, de soustraction ou d'intersection entre objets%. Il est utilisé par exemple pour faire des trous dans les murs pour les portes
+	},
 	first={Modificateur "Booléen" qui permet des opérations d'addition, de soustraction ou d'intersection entre objets}
 	}
 
 \newglossaryentry{decimate}{
 	name={\scshape{modificateur "Décimer"}},
 	text   = {modificateur de type "Décimer"},
-	description={Permet de réduire le nombre de vertices ou de faces d'un objet tout en conservant au maximum sa forme.}
+	description={Permet de réduire le nombre de vertices ou de faces d'un objet tout en conservant au maximum sa forme}
 	}	
 	
 \newglossaryentry{keyframe}{
@@ -332,8 +334,9 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 	
 \newglossaryentry{mirror}{
 	name={\scshape{Modificateur "Miroir"}},
-	text   = {modificateur de type "miroir"},
-	description={Permet de recopier un objet en miroir par rapport à un ou plusieurs axes. Il est utilisé par exemple pour symétriser les marches d'escalier longeant les \gls{aditus}},
+	text   = {modificateur de type "Miroir"},
+	description={Permet de recopier un objet en miroir par rapport à un ou plusieurs axes%. Il est utilisé par exemple pour symétriser les marches d'escalier longeant les \gls{aditus}
+	},
 	first={Modificateur "miroir" (qui permet de recopier des objets en symétrie)}
 	}	
 
@@ -353,14 +356,16 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{screw}{
 	name={\scshape{Modificateur "Visser"}},
 	text   = {modificateur de type "Visser"},
-	description={Permet de faire une extrusion circulaire autour du centre de l'objet. Il est possible de choisir le raffinement de l'extrusion donc le nombre d'extrusion linéaire. Il est utilisé par exemple pour créer la \gls{cavea} à partir de son plan de coupe},
+	description={Permet de faire une extrusion circulaire autour du centre de l'objet. Il est possible de choisir le raffinement de l'extrusion donc le nombre d'extrusion linéaire%. Il est utilisé par exemple pour créer la \gls{cavea} à partir de son plan de coupe
+	},
 	first={Modificateur "Visser" qui permet de faire une extrusion circulaire autour du centre de l'objet}
 	}	
 	
 \newglossaryentry{solidify}{
 	name={\scshape{Modificateur "Solidifier"}},
 	text   = {modificateur de type "Solidifier"},
-	description={Permet de donner une épaisseur paramétrable à un objet plan. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}},
+	description={Permet de donner une épaisseur paramétrable à un objet plan%. Il est utilisé par exemple pour créer la largeur d'une marche d'escalier ou pour les \gls{aditus}
+	},
 	first={Modificateur "Solidifier" qui permet de donner une épaisseur paramétrable à un objet plan}
 	}	
 		
@@ -390,7 +395,7 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{ambulacre}{
 	name={\scshape{Ambulacre}},
 	text={am\-bulacre},
-	description={Galerie circulaire permettant de se déplacer sour la \gls{cavea}},
+	description={Galerie circulaire permettant de se déplacer sous la \gls{cavea}},
 	}	
 	
 \newglossaryentry{architrave}{
@@ -411,7 +416,7 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{balteus}{
 	name={\scshape{Blateus}},
 	text={\textit{balteus}},
-	description={Balustrade de pierre ne dépassant pas un mètre de hauteur qui ceinturait l'arrière de l'\gls{orchestra} et le séparait de la \gls{cavea}. Il ménageait un couloir de circulation au pied de la \gls{cavea} et isolait les sièges des notables placés sur les gradins de l'\gls{orchestra}},
+	description={Balustrade de pierre qui ceinturait l'arrière de l'\gls{orchestra} et le séparait de la \gls{cavea}. Il ménageait un couloir de circulation au pied de la \gls{cavea} et isolait les sièges des notables placés sur les gradins de l'\gls{orchestra}},
 	plural={\textit{baltei}},
 	}	
 		
@@ -424,19 +429,19 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{ima cavea}{
 	name={\scshape{Ima cavea}},
 	text={\textit{ima cavea}},
-	description={Désigne le premier niveau (niveau inférieur) de la cavea},
+	description={Désigne le premier niveau (niveau inférieur) de la \gls{cavea}},
 	}
 
 \newglossaryentry{media cavea}{
 	name={\scshape{Media cavea}},
 	text={\textit{media cavea}},
-	description={Désigne le deuxième niveau (niveau médian) de la cavea},
+	description={Désigne le deuxième niveau (niveau médian) de la \gls{cavea}},
 	}
 	
 \newglossaryentry{summa cavea}{
 	name={\scshape{Summa cavea}},
 	text={\textit{summa cavea}},
-	description={Désigne le troisième niveau (niveau supérieur) de la cavea},
+	description={Désigne le troisième niveau (niveau supérieur) de la \gls{cavea}},
 	}	
 	
 \newglossaryentry{console}{
@@ -467,13 +472,13 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 \newglossaryentry{hyposcaenium}{
 	name={\scshape{Hyposcaenium}},
 	text={\textit{hyposcaenium}},
-	description={Fosse situé sous la scène comportant notamment le mécanisme du rideau de scène},
+	description={Fosse située sous la scène comportant notamment le mécanisme du rideau de scène},
 	}
 	
 \newglossaryentry{maenianum}{
 	name={\scshape{Maenianum}},
 	text={\textit{maenianum}},
-	description={Portions de la cavea séparées par un \gls{podium} et rassemblant un ensemble de gradins},
+	description={Portion de la \gls{cavea} séparée par un \gls{podium} et rassemblant un ensemble de gradins},
 	plural={\textit{maeniana}},
 	}
 \newglossaryentry{odeon}{
@@ -521,7 +526,7 @@ Chaque bloc est identifié par 4 octets (4 symboles ASCII) suivi de la taille du
 	}
 
 \newglossaryentry{precinction}{
-	name={\scshape{Precinction}},
+	name={\scshape{Précinction}},
 	text={précinction},
 	description={Palier (aussi appelé \textit{diazoma} chez les grecs) situé au-dessus de chaque \gls{maenianum} et sur lequel s’ouvre les \gls{vomitorium}},
 	}

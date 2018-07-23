@@ -16,9 +16,6 @@
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 
-\bibitem[{\textsc{acouphile.fr}()}]{acouphile}
-\textsc{acouphile.fr}.
-
 \bibitem[{\textsc{Arnaud}(1808)}]{arnaud}
 \textsc{Arnaud, A.} 1808, \emph{Oeuvres compl{\`e}tes}, \bblvol{} Tome III,
   L'imprimerie de Valade.
@@ -28,17 +25,17 @@
   \bbland{} \textsc{Tardy}}]{orangePl}
 \textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
   \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
-  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
-  d'op{\'e}ration - planches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique 84
-  087 0031 - Patriarche 9827 n2012-203.
+  2013{\natexlab{a}}, \enquote{Le th{\'e}{\^a}tre d'{O}range - {R}apport final
+  d'op{\'e}ration - {P}lanches}, PACA Vaucluse, Orange Th{\'e}{\^a}tre antique
+  84 087 0031 - Patriarche 9827 n2012-203.
 
 \bibitem[{\textsc{Badie} \bbletal{}(2013{\natexlab{b}})\textsc{Badie},
   \textsc{Fincker}, \textsc{Moretti}, \textsc{Rabatel}, \textsc{Rosso}
   \bbland{} \textsc{Tardy}}]{orangeTxt}
 \textsc{Badie, A.}, \textsc{M.~Fincker}, \textsc{J.-C. Moretti},
   \textsc{L.~Rabatel}, \textsc{E.~Rosso} \bbland{} \textsc{D.~Tardy}.
-  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'orange - rapport final
-  d'op{\'e}ration - texte}, \bbltechrep{}. PACA Vaucluse, Orange
+  2013{\natexlab{b}}, \enquote{Le th{\'e}{\^a}tre d'{O}range - {R}apport final
+  d'op{\'e}ration - {T}exte}, \bbltechrep{}. PACA Vaucluse, Orange
   Th{\'e}{\^a}tre antique 84 087 0031 - Patriarche 9827 n2012-203.
 
 \bibitem[{\textsc{Barker}(2008)}]{voixRomain}
@@ -54,6 +51,10 @@
 \textsc{Canac, F.} 1967, \emph{L'acoustique des th{\'e}{\^a}tres antiques. Ses
   enseignements}, {\'E}ditions du centre national de la recherche scientifique,
   15, quai Anatle-France - Paris VII.
+
+\bibitem[{\textsc{Carr{\'e}}()}]{acouphile}
+\textsc{Carr{\'e}, P.} \enquote{Les mat{\'e}riaux absorbants acoustiques},
+  \urlprefix\url{acouphile.fr}.
 
 \bibitem[{\textsc{Formig{\'e}}(1923)}]{formige}
 \textsc{Formig{\'e}, J.} 1923, \emph{Remarques diverses sur les
@@ -77,20 +78,16 @@
   \enquote{Acoustique du batiment}, Cours-Institut national des sciences
   appliqu{\'e}es de Lyon.
 
-\bibitem[{\textsc{Maufras}(1847)}]{vitruve}
-\textsc{Maufras, M. C.-L.} 1847, \emph{Vitruve : De l'architecture},
-  \bblvol{}~V, Panckoucke.
-
 \bibitem[{\textsc{Odeon}()}]{odeon}
 \textsc{Odeon}. \enquote{Odeon webpage}, \urlprefix\url{https://odeon.dk/}.
 
 \bibitem[{\textsc{Rindel}(2013)}]{rindel}
 \textsc{Rindel, J.~H.} 2013, \enquote{Roman theatres and revival of their
-  acoustics in the erato project}, \emph{Acta Acustica united with Acustica},
+  acoustics in the {ERATO} project}, \emph{Acta Acustica united with Acustica},
   \bblvol{}~99, \bblpp{} 21--29.
 
 \bibitem[{\textsc{Rocconi}(2008)}]{rocconi}
-\textsc{Rocconi, E.} 2008, \enquote{Music in the roman empire - theoretical
+\textsc{Rocconi, E.} 2008, \enquote{Music in the roman empire - {T}heoretical
   evidence and archaeological findings}, \emph{The International Society for
   the Study of Greek and Roman Music and its Cultural Heritage}.
 
@@ -100,6 +97,10 @@
   \enquote{The acoustics of roofed ancient odeia: The case of herodes atticus
   odeion}, \emph{Acta Acustica united with Acustica}, \bblvol{}~95, \bblpp{}
   291--299.
+
+\bibitem[{\textsc{Vitruve}(Traduction 1847)}]{vitruve}
+\textsc{Vitruve}. Traduction 1847, \emph{De l'architecture}, \bblvol{}~V, M.
+  Ch.-L. Maufras.
 
 \bibitem[{\textsc{Wikip{\'e}dia}()}]{voix}
 \textsc{Wikip{\'e}dia}. \enquote{Voix humaine},

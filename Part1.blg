@@ -4,15 +4,14 @@ The top-level auxiliary file: Part1.aux
 The style file: francaissc.bst
 Database file #1: Part1/Biblio.bib
 Warning--entry type for "siteTheatre" isn't style-file defined
---line 26 of file Part1/Biblio.bib
+--line 68 of file Part1/Biblio.bib
 Warning--entry type for "vuEnsemble" isn't style-file defined
---line 85 of file Part1/Biblio.bib
+--line 128 of file Part1/Biblio.bib
 Warning--entry type for "precisionmachine" isn't style-file defined
---line 93 of file Part1/Biblio.bib
+--line 136 of file Part1/Biblio.bib
 Warning--entry type for "doc_blender" isn't style-file defined
---line 169 of file Part1/Biblio.bib
+--line 200 of file Part1/Biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--to sort, need author or key in charenton
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in orangeTxt
 Warning--empty year in titien
@@ -23,46 +22,48 @@ Warning--empty year in vuEnsemble
 Warning--empty year in siteTheatre
 Warning--empty pages in golvin
 Warning--can't use both volume and number fields in moretti
+Warning--can't use both author and editor fields in pline
 Warning--empty pages in rocheleau
-You've used 23 entries,
+Warning--can't use both author and editor fields in vitruve
+You've used 24 entries,
             3493 wiz_defined-function locations,
-            823 strings with 9543 characters,
-and the built_in function-call counts, 13465 in all, are:
-= -- 1096
-> -- 397
-< -- 32
-+ -- 163
-- -- 118
-* -- 959
-:= -- 1785
-add.period$ -- 47
-call.type$ -- 23
-change.case$ -- 152
-chr.to.int$ -- 24
+            833 strings with 9687 characters,
+and the built_in function-call counts, 14019 in all, are:
+= -- 1125
+> -- 419
+< -- 35
++ -- 170
+- -- 124
+* -- 1004
+:= -- 1878
+add.period$ -- 49
+call.type$ -- 24
+change.case$ -- 158
+chr.to.int$ -- 25
 cite$ -- 36
-duplicate$ -- 1302
-empty$ -- 1113
-format.name$ -- 159
-if$ -- 2685
+duplicate$ -- 1354
+empty$ -- 1163
+format.name$ -- 167
+if$ -- 2788
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 184
-newline$ -- 87
-num.names$ -- 88
-pop$ -- 537
+missing$ -- 195
+newline$ -- 90
+num.names$ -- 96
+pop$ -- 554
 preamble$ -- 1
-purify$ -- 131
+purify$ -- 137
 quote$ -- 0
-skip$ -- 591
+skip$ -- 609
 stack$ -- 0
-substring$ -- 441
-swap$ -- 766
-text.length$ -- 14
+substring$ -- 450
+swap$ -- 794
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
-warning$ -- 11
-while$ -- 78
+type$ -- 198
+warning$ -- 12
+while$ -- 84
 width$ -- 0
-write$ -- 250
-(There were 15 warnings)
+write$ -- 262
+(There were 16 warnings)

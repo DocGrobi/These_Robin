@@ -198,7 +198,7 @@ Le calcul de l'acoustique d'une salle peut se faire selon différentes méthodes
 
 	\subsection{Principe statistique} \label{sect_sabine}
 
-P. E. Sabine écrit en 1932 "\textit{Acoustics and architecture}" en reprenant les principes de son homonyme W. Sabine. Ce dernier décrivait 20 ans plus tôt des protocoles de test pour mesurer des temps de réverbération dans les salles. P. E. Sabine considère que la réverbération suit un modèle purement statistique. De son point de vue, la densité d'échos à prendre en compte est suffisamment importante pour considérer le phénomène comme pseudo-aléatoire \cite[p. 19]{Kandelman}. Il suppose ainsi que l’énergie sonore et le temps de réverbération sont uniformes en tout point de la salle. Il exprime la notion de libre parcours moyen en ces termes : "\textit{Pour former l’image 2D des réflexions dans une salle, on peut imaginer une boule de billard lancée au hasard sur une table et noter la variation des longueurs des trajets entre deux impacts successifs. (…) La distance moyenne de ces longueurs peut être assimilée au libre parcours moyen d’une onde sonore dans la salle}" \cite[]{sabine2}. Ces considérations permettent d'exprimer le \gls{RT60} en fonction du volume de salle et de l'absorption des parois, comme par exemple, dans la formule dite "de Sabine" \cite[p. 71-81]{jouhaneau}: 
+P. E. Sabine écrit en 1932 "\textit{Acoustics and architecture}" \cite{sabine2} en reprenant les principes de son homonyme W. Sabine. Ce dernier décrivait 20 ans plus tôt des protocoles de test pour mesurer des temps de réverbération dans les salles. P. E. Sabine considère que la réverbération suit un modèle purement statistique. De son point de vue, la densité d'échos à prendre en compte est suffisamment importante pour considérer le phénomène comme pseudo-aléatoire \cite[p. 19]{Kandelman}. Il suppose ainsi que l’énergie sonore et le temps de réverbération sont uniformes en tout point de la salle. Il exprime la notion de libre parcours moyen en ces termes : "\textit{Pour former l’image 2D des réflexions dans une salle, on peut imaginer une boule de billard lancée au hasard sur une table et noter la variation des longueurs des trajets entre deux impacts successifs. (…) La distance moyenne de ces longueurs peut être assimilée au libre parcours moyen d’une onde sonore dans la salle}" \cite[p. 22]{Kandelman}. Ces considérations permettent d'exprimer le \gls{RT60} en fonction du volume de salle et de l'absorption des parois, comme par exemple, dans la formule dite "de Sabine" \cite[p. 71-81]{jouhaneau}: 
 
 \begin{equation}
    	RT_{60} = \frac{k.V}{A},
@@ -251,7 +251,7 @@ où $c$ est la célérité de l'onde. Pour cela, il faudra se placer dans les co
 \item l'air est un fluide parfait,
 \item la température et la pression restent constantes,
 \item la vitesse macroscopique du fluide est faible devant la célérité du son,
-\item les fluctuations dues aux déplacements d'air sont faibles devant ces valeurs moyennes.
+\item les fluctuations dues aux déplacements d'air sont faibles devant ces valeurs moy\-ennes.
 \end{itemize}
 %
 On pourra ensuite définir différentes conditions parois de la salle comme par exemple des conditions de \gls{Dirichlet}, de \gls{Neumann}, ou des les impédances réelles ou complexes.
@@ -370,7 +370,7 @@ Ainsi, si on connait $u$ et $\partial_n u $ la dérivée normale de $u$ sur la s
 
 	\subsection{Méthodes géométriques} \label{sect_methode_geo}
 	
-Les méthodes géométriques sont largement utilisées dans le domaine de l'acoustique de salle car elles utilisent des modèles approchés. Cela les rend en général plus faciles à mettre en \oe{}vre que les méthodes de résolution aux dérivées partielles. Elles se basent sur le trajet que parcourt l'onde sonore entre une source et un récepteur (voir fig. \ref{geometrique}). L'onde, percutant les parois, subit un changement de direction de propagation. Par ailleurs, chaque paroi ou obstacle porte une \gls{impedance} liée à la nature de son matériau qui atténue l'énergie de l'onde réfléchie en fonction de sa fréquence.
+Les méthodes géométriques sont largement utilisées dans le domaine de l'acoustique de salle car elles utilisent des modèles approchés. Cela les rend en général plus faciles à mettre en \oe{}uvre que les méthodes de résolution aux dérivées partielles. Elles se basent sur le trajet que parcourt l'onde sonore entre une source et un récepteur (voir fig. \ref{geometrique}). L'onde, percutant les parois, subit un changement de direction de propagation. Par ailleurs, chaque paroi ou obstacle porte une \gls{impedance} liée à la nature de son matériau qui atténue l'énergie de l'onde réfléchie en fonction de sa fréquence.
 
 \begin{figureth}
 	\includegraphics[width=0.8\linewidth]{images/geometrique}
@@ -946,7 +946,7 @@ La dernière étape consiste à supprimer les sources images dont les huit éner
 %
 \begin{figure}[h]
 \centering
-	\includegraphics[width=0.8\linewidth]{images/DiagSi}
+	\includegraphics[width=0.9\linewidth]{images/DiagSi}
 	\caption{Diagramme d'activité résumant le processus de création des sources-images.}
 	\label{DiagSi}
 \end{figure}
@@ -978,7 +978,7 @@ et avec :
 \end{itemize}
 %
  \begin{figureth}
-	\includegraphics[width=0.9\linewidth]{images/rir}
+	\includegraphics[width=\linewidth]{images/rir}
 	\caption[Réponse impulsionnelle d'un cube.]{Exemple de \gls{rir} pour un cube de 50m d'arrête, une source et un récepteur (de 20m de diamètre) situés au centre, un million de rayons et une fréquence d'échantillonnage de 44100Hz.}
 	\label{rir}
 \end{figureth}
@@ -1005,7 +1005,7 @@ avec :
 \end{itemize}
 %
 Convoluer ces signaux revient à multiplier point par point le fichier audio avec les \gls{fir} dans le domaine de Fourier (fréquenciel).
-On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs signaux, il est judicieux d'utiliser une convolution partitionnée afin de réduire le stockage de données et accélérer les calculs \cite[2. Algorithm overview ]{partition}. 
+On utilise pour cela des fichiers au format \gls{wav}. Dans le cas de longs signaux, il est judicieux d'utiliser une convolution partitionnée afin de réduire le stockage de données et accélérer les calculs \cite[2. Algorithm overview]{partition}. 
 
 \begin{figureth}
 	\includegraphics[width=\linewidth]{images/DiagTdS}
@@ -1060,20 +1060,13 @@ L'étape la plus complexe est la boucle d'itération sur le calcul des intersect
 	\label{complexite00}
 \end{figureth}
 
-La courbe \ref{complexite00} illustrant le temps de calcul en faisant varier le nombre N de rayons et le nombre M de faces tel que $N=M$ comporte bien une pente de 2 en échelle logarithmique. On constate comme prévu que le temps de calcul évolue comme le produit du nombre de faces par le nombre de rayons ce qui donne bien une complexité quadratique. 
-%Effectivement :
-%%
-%\begin{equation}
-%T \propto N^2 \qquad \Rightarrow \qquad \ln{(T)} \propto 2 \ln{(N)}.
-%\end{equation}
+La courbe \ref{complexite00} illustrant le temps de calcul en faisant varier le nombre N de rayons et le nombre M de faces tel que $N=M$ comporte bien une pente de 2 en échelle logarithmique. On constate comme prévu que le temps de calcul évolue comme le produit du nombre de faces par le nombre de rayons ce qui donne bien une complexité quadratique. Par ailleurs, en fixant d'une part le nombre de faces et d'autre part le nombre de rayons, on constate que le temps augmente bien linéairement par rapport à chacun de ces paramètres (voir fig . \ref{complexite0}).
 
-Par ailleurs, en fixant d'une part le nombre de faces et d'autre part le nombre de rayons, on constate que le temps augmente bien linéairement par rapport à chacun de ces paramètres (voir fig . \ref{complexite0}).
-
- \begin{figureth}
+ \begin{figure}[t]
 	\includegraphics[width=\linewidth]{images/complexite0}
 	\caption{Courbes de complexité donnant le temps (s) d'une itération en fonction du nombre de face (à gauche) pour 100k rayons et du nombre de rayons (à droite) pour 50k faces. Les deux courbes sont en échelle logarithmique.}
 	\label{complexite0}
-\end{figureth}
+\end{figure}
 
 
 Dans le cas du théâtre d'Orange, le nombre de faces est supérieur à 100~000 et le nombre de rayons à émettre doit être très important compte tenu de la taille du bâtiment (voir section \ref{sect_discretise}). En testant une géométrie simplifiée du bâtiment, nous constatons que son \gls{RT60} est de l'ordre de 3 secondes. Il faudra donc pouvoir réaliser des mesures pour des rayons d'environ 1km de long. Or d'après l'équation (\ref{eq_dmax}) :
@@ -1223,7 +1216,7 @@ Ainsi, on peut exprimer les points d'intersection entre le rayon et chacun des s
 X_{min} &= x_0 \times D_x + O_x 	& \Rightarrow 	& &	 x_0 = \frac{X_{min} - O_x}{D_x}.
 \end{align*}
 %
-On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boîte en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boîte (voir fig \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) . De cette façon on saura quelles sont les boîtes traversées par chaque rayons. 
+On comprend d'après les figures \ref{AABB} et \ref{AABB2} que l'on va pouvoir déterminer si un rayon intersecte une boîte en comparant les coordonnées des points d'intersection avec les plans. Notamment, si $x_0 > y_1$ ou $y_0 > x_1$ le rayon n'intersectera pas la boîte (voir fig. \ref{AABB2}). Dans le cas contraire, on appliquera le même principe sur $z$. Il n'y aura alors pas d'intersection si $max(x_0 ; y_0) > z_1$ ou $ z_0 > min(x_1 ; y_1)$. On notera que si le rayon est dirigé dans le sens inverse il faudra inverser les $\alpha_0$ et $\alpha_1$ ($\alpha$ correspondant aux coordonnées $x,y,z$) . De cette façon on saura quelles sont les boîtes traversées par chaque rayons. 
 
 Pour chaque feuille de l'\gls{octree}, c'est-à-dire les boîtes non-vides les plus basses dans l'arborescence, on testera les intersections entre les rayons et les faces situés dans la subdivision de l'espace correspondante uniquement. Ainsi, le calcul d'intersection ne se fait qu'entre peu de rayons et peu de faces.
 
@@ -1466,7 +1459,7 @@ Avant de tester la justesse des résultats d'un point de vu physique, il est bon
 		\label{test0}
 \end{figureth}		
 
-\subsection{boîte englobante}
+\subsection{Boîte englobante}
 
 De la même manière nous confirmons le bon fonctionnement de la boîte englobante en utilisant une salle cubique dont on n'a gardé que les coins. On voit sur la figure \ref{testBE} que les rayons sont bien stoppés par une paroi invisible. Par ailleurs en effectuant une rotation de $45\degres$ sur chacun des axes on constate bien que la boîte invisible englobe la salle.
 \begin{figureth}		
@@ -1569,7 +1562,7 @@ Si l'on active l'absorption de l'air, on constate bien que les hautes fréquence
 
 \section{Cas de la salle cubique}
 
-Le dernier test consiste à comparer les résultats de calcul avec une formule analytique pour une pièce de type pavé droit. La formule \cite[p. 182-189]{mcgovern} est la suivante : 
+Le dernier test consiste à comparer les résultats de calcul avec une formule analytique pour une pièce de type pavé droit \cite[p. 182-189]{mcgovern} : 
 
 %\begin{align}
 %A &=  (-1)^i \\
@@ -1611,22 +1604,23 @@ Pour ce test, la salle est un pavé dont les dimensions sont respectivement 2m, 
 On constate alors une erreur relative inférieure à 0,5\% pour 1~000~000 de rayons (voir fig. \ref{test3_2}). On voit également qu'en augmentant le nombre de rayons on améliore la précision des 150 premières sources-images et les 1300 sources-images suivantes restent bien dans une plage d'erreur inférieure à 5\% (voir fig. \ref{test3_3}) et à 0,2\% en norme infinie (voir fig. \ref{test3_4}).
 
 \begin{figureth}
-	\begin{subfigureth}{0.8\textwidth}
+	\begin{subfigureth}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_1}
 		\caption{Erreur relative pour 1~000~000 rayons.}
 		\label{test3_1}
 	\end{subfigureth}
-	\begin{subfigureth}{0.8\textwidth}
+	\begin{subfigureth}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_2}
 		\caption{Erreur relative pour 4~000~000 rayons.}
 		\label{test3_2}
 	\end{subfigureth}
-	\begin{subfigureth}{0.8\textwidth}
+	\par\vspace{0.5cm}
+	\begin{subfigureth}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_3}
 		\caption{Erreur relative en norme infinie pour 1~000~000 rayons.}
 		\label{test3_3}
 	\end{subfigureth}
-	\begin{subfigureth}{0.8\textwidth}
+	\begin{subfigureth}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{images/test3_4}
 		\caption{Erreur relative en norme infinie pour 4~000~000 rayons.}
 		\label{test3_4}
@@ -1766,16 +1760,15 @@ L'étude de l'acoustique d'un bâtiment passe par le calcul de différents param
 Dans notre étude nous nous appuierons sur certains de ces paramètres et calculerons ceux qui sont le plus couramment utilisés. Nous utilisons pour cela les formules implémentées dans le logiciel \textit{Odeon} \cite[p.87-92]{odeonManuel}.%Les autres, moins pertinent pourront être implémentés à posteriori. Par exemple la spaciosité est pertinente dans les environnements où l'auditeur est proche de la source et où la source est volumineuse.
 
 \subsection{Réverbérance : \gls{T30}}
-En pratique, le temps de réverbération est en général estimé grâce au facteur \gls{T30}. Son nom peut porter à confusion mais il s'agit bien d'un indice mesurant le \gls{RT60}. Il se nomme ainsi car il est obtenu en mesurant l’intervalle de temps permettant de passer de -5 à -35dB et en doublant la valeur. Cette extrapolation permet d’éviter les perturbations du signal souvent observées en début et en fin de réponse. Il ne se mesure pas directement sur la réponse impulsionnelle mais sur les courbes d'affaiblissement. Ces courbes sont calculées par intégration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir}. Dans notre cas, cela revient à faire la somme cumulative des énergies en partant de la fin du signal :
+En pratique, le temps de réverbération est en général estimé grâce au facteur \gls{T30}. Son nom peut porter à confusion mais il s'agit bien d'un indice mesurant le \gls{RT60}. Il se nomme ainsi car il est obtenu en mesurant l’intervalle de temps permettant de passer de $-5$ à $-35$dB et en doublant la valeur. Cette extrapolation permet d’éviter les perturbations du signal souvent observées en début et en fin de réponse. Il ne se mesure pas directement sur la réponse impulsionnelle mais sur les courbes d'affaiblissement. Ces courbes sont calculées par intégration inverse de Schroeder \cite[p.410]{schroeder} sur la \gls{rir}. Dans notre cas, cela revient à faire la somme cumulative des énergies en partant de la fin du signal :
 \begin{equation}
 E'(t)=\sum_\infty^t E(\tau)d(-\tau). \footnotemark
 \end{equation}
 \footnotetext{La norme ISO 3382 part 1 donne la formule : $E(t)=\int_0^\infty p^2(\tau) d(\tau)=\int_\infty^t p^2(\tau) d(-\tau)$.}
- Cependant, il est possible que, si la réponse impulsionnelle s'arrête avant $-35dB$, le résultat soit tronqué. Pour éviter cela, on effectue donc une régression linéaire de ces courbes de décroissance en échelle logarithmique pour atteindre la valeur seuil demandée (typiquement -60dB).
-
+ Cependant, il est possible que, si la réponse impulsionnelle s'arrête avant $-35$dB, le résultat soit tronqué. Pour éviter cela, on effectue donc une régression linéaire de ces courbes de décroissance en échelle logarithmique pour atteindre la valeur seuil demandée (typiquement $-60$dB).
 
 \subsection{Early Decay Time : \gls{EDT}}
-Lors des études d'acoustique de salle il également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30} mesurer le temps nécessaire pour passer de 0 à -10dB sur les courbes d'affaiblissement. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle, ce qui est  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  \gls{RT60} en fonction de la position d’écoute dans la salle.  
+Lors des études d'acoustique de salle il également interessant de séparer les premières réflexions du champs diffus. Pour cela, nous pouvons, comme pour le \gls{T30}, mesurer le temps nécessaire pour passer de $0$ à $-10$dB sur les courbes d'affaiblissement. En multipliant ce temps par 6 on obtient le paramètre \gls{EDT}. Celui-ci permet d’apprécier l’influence de la salle sur la netteté des attaques et la dynamique des sources en prenant mieux en compte  l’influence  des  premières  réflexions.  La  valeur  de  l’\gls{EDT}  est  à  comparer  à  celle  du \gls{RT60} : plus l’EDT sera faible devant le \gls{RT60}, plus la pente initiale de la décroissance sera forte, révélant  une  concentration  de  l’énergie  sonore  dans  le  début  de  la  réponse  impulsionnelle, ce qui est  favorable  à  une  bonne  intelligibilité.  Notons  également  que  l’\gls{EDT}  varie  plus  facilement  que  le  \gls{RT60} en fonction de la position d’écoute dans la salle.  
 
 \subsection{Clarté : \gls{C80}}
 La clarté est un paramètre qui vise à exprimer la compréhensibilité en dB tel que :
@@ -1855,7 +1848,7 @@ Un   \gls{LF80}  important  correspond  à  une  impression  d’espace.  L’au
 %Le \gls{STI} est un indice très interessant notamment pour l'étude de bâtiment où l'on transmet vocalement du texte.
 
 
-\subsection{Validation} \label{sect_val_odeon}
+\subsection{Comparaison au logiciel \textit{Odeon}} \label{sect_val_odeon}
 Nous comparons les résultats obtenus avec le logiciel \textit{Odeon} dans le cas d'une salle cubique de 10~000 éléments et 100~000 rayons. On assigne aux parois un matériau 50\% réfléchissant sur toutes les fréquences. Le tableau \ref{tab_fact_compOdeon} montre que les résultats obtenus sont quasi-identiques entre les deux logiciels. Nous verrons dans la section \ref{sect_comptheatre} que pour un cas plus complexe comme le théâtre d'Orange, les résultats sont également similaires.
 \begin{tableth} 
  \begin{tabular}{| *{3}{c|}} 
@@ -1883,7 +1876,7 @@ Nous comparons les résultats obtenus avec le logiciel \textit{Odeon} dans le ca
  \end{tableth}
  
 
-Avec le logiciel \textit{Odeon}, le temps de calcul de ce cas-test est de 15min avec un ordinateur Windows 7 Pro de processeur Intel Core 2 Duo 2,4GHz avec 4Go de RAM. Le temps de calcul est de 5sec avec notre logiciel sur un MacBook de processeur 2,7GHz Intel Core i5 avec 8Go de RAM. Notons néanmoins que notre maitrise du logiciel \textit{Odeon} n'est pas maximum et que la configuration des paramètres pourraient peut-être être optimisée.
+Avec le logiciel \textit{Odeon}, le temps de calcul de ce cas-test est de 15min avec un ordinateur Windows 7 Pro de processeur Intel Core 2 Duo 2,4GHz avec 4Go de RAM. Le temps de calcul est de 5sec avec notre logiciel sur un MacBook de processeur 2,7GHz Intel Core i5 avec 8Go de RAM. Notons néanmoins que nous utilisons le logiciel \textit{Odeon} dans sa configuration par défaut et qu'en jouant sur les paramètres, le calcul pourraient peut-être être optimisé.
 	
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
