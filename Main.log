@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  23 JUL 2018 22:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.18)  12 SEP 2018 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2859,22 +2859,22 @@ Overfull \hbox (1.19994pt too wide) detected at line 94
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 95
- []\T1/futs/m/n/12 145
+ []\T1/futs/m/n/12 144
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 96
- []\T1/futs/m/n/12 150
+ []\T1/futs/m/n/12 149
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 97
- []\T1/futs/m/n/12 150
+ []\T1/futs/m/n/12 149
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 98
- []\T1/futs/m/n/12 153
+ []\T1/futs/m/n/12 152
  []
 
 [10])
@@ -4254,11 +4254,7 @@ Package pdftex.def Info: Part2/images/ts.png used on input line 1816.
 (pdftex.def)             Requested size: 176.40439pt x 153.42697pt.
  [116 <./Part2/images/ts.png>] [117] [118
 
-]
-
-LaTeX Warning: Reference `projete' on page 119 undefined on input line 1884.
-
-[119]
+] [119]
 Overfull \hbox (3.5493pt too wide) in paragraph at lines 1901--1902
 \T1/futs/m/n/12 pas uni-forme. Cela se-rait d'ailleurs plus re-pré-sen-ta-tif d
 es cas réels et no-tam-ment de l'usage
@@ -4526,22 +4522,22 @@ Overfull \hbox (1.98195pt too wide) detected at line 2
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 3
- []\T1/futs/b/n/10.95 145
+ []\T1/futs/b/n/10.95 144
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 4
- []\T1/futs/b/n/10.95 150
+ []\T1/futs/b/n/10.95 149
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 5
- []\T1/futs/b/n/10.95 150
+ []\T1/futs/b/n/10.95 149
  []
 
 
 Overfull \hbox (1.98195pt too wide) detected at line 6
- []\T1/futs/b/n/10.95 153
+ []\T1/futs/b/n/10.95 152
  []
 
 ) [139] <Part3/images/SIsansDec.png, id=3518, 1155.31625pt x 779.91376pt>
@@ -5081,26 +5077,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 1F84191C3A4A9C67CE0CF97FF2549EDA;4786.
-
-
-Package rerunfilecheck Warning: File `Main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `Main.brf':
-(rerunfilecheck)             Before: 962F7B71B953BC1BFD6B82B9E1FBF9BD;9824
-(rerunfilecheck)             After:  02A329892EB742ABDEDE44D3878D3FF6;9824.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `Main.brf' has not changed.
+(rerunfilecheck)             Checksum: 02A329892EB742ABDEDE44D3878D3FF6;9824.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 55096 strings out of 493014
- 1175183 string characters out of 6133351
+ 55095 strings out of 493014
+ 1175174 string characters out of 6133351
  1427418 words of memory out of 5000000
- 56238 multiletter control sequences out of 15000+600000
+ 56237 multiletter control sequences out of 15000+600000
  297120 words of font info for 262 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,22n,87p,10450b,1430s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5152,7 +5140,7 @@ ve/2016/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Main.pdf (200 pages, 64835755 bytes).
+Output written on Main.pdf (200 pages, 64844719 bytes).
 PDF statistics:
  4910 PDF objects out of 5155 (max. 8388607)
  4291 compressed objects within 43 object streams
